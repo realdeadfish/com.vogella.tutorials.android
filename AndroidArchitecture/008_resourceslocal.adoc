@@ -1,0 +1,5 @@
+== Android Architecture resources
+
+http://martinfowler.com/eaaDev/uiArchs.html[Martin Fowler about GUI Architectures]
+
+http://www.tinmegali.com/en/model-view-presenter-android-part-1 [MVP compared with MVC]

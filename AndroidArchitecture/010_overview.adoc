@@ -1,0 +1,25 @@
+== The Model View Presenter architecture for Android
+
+The programming model emphasis the creation of large activities or fragments, containing both business and UI logic. 
+This makes testing and maintenance of Android applications more difficult.
+
+The Model View Presenter (MVP) architecture pattern tries to improve the application architecture to improve its testability and to ease future maintenance.
+
+=== The view in MVP
+
+The view includes the visual part of our app. 
+It contains only the UI and it does not contain any logic or knowledge of the data displayed.
+Activities, fragments and dialogs would belong to this category. 
+In typical implementations the View components in MVP exports an interface that is used by the Presenter.
+The presenter uses these interface methods to manipulate the view.
+Example method names would be: `showProgressBar`, `updateData`.
+
+=== The presenter in MVP
+
+The presenter contains the logic when to update the view.
+It also interacts with the model and fetches and transforms data from the model to update the view.
+The presenter should not have, if possible, a dependency to the Android SDK, e.g., to the `Context` or `Activity`.
+
+=== The model in MVP
+
+Contains the data and the code to fetch and update the data. This part of MVP updates the database or communicate with a webserver.
