@@ -1,0 +1,75 @@
+[[androidtesting]]
+== Why is testing important for Android applications?
+
+=== Android and testing
+
+In 2015 the tool and framework support for Android applications was hugely improved.
+The Android test system has been updated to be based on JUnit 4 and you can run unit tests either on the Java virtual machine or on an Android runtime.
+Also, Google introduced a user interface testing framework called Espresso which makes is easy to develop user interface tests for Android applications.
+
+
+Android applications run on devices with limited memory, CPU power and power supply. The behavior of the application also depends on external factors like connectivity, general system utilization, etc.
+
+Therefore, it is very important to debug, test and optimize your Android application. Having a reasonable test coverage for your Android application helps you to enhance and maintain the Android application.
+
+
+As it is not possible to test Android applications on all possible device configurations, it is a common practice to run Android tests on typical device configurations.
+You should test your application at least on one device with the lowest possible configuration.
+In addition you should test on one device with the highest available configuration, e.g., pixel density, screen resolution to ensure that it works fine on these devices.
+
+[[androidtesting_overview]]
+=== Categories of Android unit tests
+
+Android testing is based on JUnit. Unit testing for Android can be classified into:
+
+* Local unit tests - tests which can run on the JVM
+* Instrumented unit tests - tests which require the Android system
+
+image::img/androidtestcategories10.png[Android testing categories]
+
+
+If possible, you should prefer to use local tests as the test execution is much faster compared to the time required to deploy and run the test on an Android device.
+
+[[androidtesting_standardjava]]
+
+=== Unit tests (local tests)
+
+The Android Gradle plug-in supports running Android unit tests on the JVM. 
+To enable this, this Gradle plug-in creates a special version of the android.jar (also known as the `Android mockable jar`).
+This file is provided to the unit test so that all fields, methods and classes are available. 
+Any call to the Android mockable JAR results, by default, in an exception.
+
+
+Therefore, if your classes do not call the Android API, you can use the _JUnit_ test framework (or any other Java testing framework) without any restrictions. 
+If you have dependencies to the Android API, these dependencies in your code must be replaced for the unit tests, e.g., via a mocking framework like Mockito. 
+See <<androidtesting_projectstructure_mockingmethods>> for information how to define that default values should be returned from the Android mockable jar.
+
+
+The advantages of running your tests on the JVM is that the execution speed of the tests is extremely fast compared to tests running on Android.
+
+[[androidtesting_androidapi]]
+=== Instrumented tests for testing Java classes which use the Android API
+
+If you want to test code which use the Android API, you need to run these tests on an Android device.
+Unfortunately, this makes the execution time of the tests longer.
+
+[[androidtesting_what]]
+=== What to test on Android applications
+
+You should focus your Android tests on testing the business logic of your application. 
+A good rule of thumb is to have the following distribution of tests:
+
+* 70-80 % unit tests to ensure stability of your code basis
+* 20-30 % functional tests to ensure that the application really works
+* some cross functional tests if your application integrates intensively with other Application components
+
+image::img/testingstrategy.png[Testing Strategy for Android]
+
+Another important criteria for testing is if you only test your own application or if you test the integration with other applications. 
+If you run tests within your application you can use testing frameworks which require some knowledge about your application, e.g., the view IDs.
+
+[[androidtesting_preconditions]]
+=== Testing preconditions
+        
+It is good practice in Android testing to have one method called `testPreconditions()` which tests the pre-conditions for all other tests. 
+If this method fails, you know immediately that the assumptions for the other tests have been violated.

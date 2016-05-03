@@ -1,0 +1,3 @@
+# outfile is the path qualified name
+# of the output file
+monkeyrunner help.py help <outfile>

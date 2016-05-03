@@ -1,0 +1,1 @@
+adb shell monkey -p de.vogella.android.test.target -v 2000

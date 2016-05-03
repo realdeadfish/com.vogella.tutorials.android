@@ -1,0 +1,57 @@
+
+[[androidtesting_deeper]]
+== More on Android testing
+
+[[androidtesting_assertions]]
+=== Android additional assertion
+
+The Android testing API provides the `MoreAsserts` and `ViewAsserts` classes
+in addition to the standard JUnit `Assert` class.
+
+[[androidtesting_testgroups]]
+=== Test groups
+
+The `@SmallTest`, `@MediumTest`and `@LargeTest`annotations allows to classify tests.
+
+
+This allows you to run, for example, only tests which do not run very long. 
+Long running tests could than run only in the continuous integration server.
+
+
+To run only selected tests you can configure the `InstrumentationTestRunner` via your Gradle plug-in.
+The following listing is an example for your `build.gradle` file to run only the tests annotated with `@SmallTests`.
+
+[source,gradle]
+----
+include::examples/testgroups/build.gradle[]
+----
+
+[source,java]
+----
+include::examples/groups/SecondActivityFunctionalTest.java[]
+----
+
+
+[[androidtesting_testfilter]]
+=== Test filtering
+
+You can annotate tests with annotations. The Android test runner allows to filter these tests.
+
+.Table Annotations for filtering tests
+|===
+|Annotation |Description
+
+|@RequiresDevice
+|Specifies that the test should run only on physical devices, not on emulators.
+
+|@SdkSupress
+|@SDKSupress(minSdkVersion=18)
+|===
+
+[[androidtesting_flaky]]
+===	Flaky tests
+
+Actions in Android are sometimes time dependent. 
+To tell Android to repeat a test once it fails, use the `@FlakyTest` annotation. 
+Via the `tolerance` attribute of this annotation you can define how often the Android test framework should try to repeat a test before marking it as failed.
+

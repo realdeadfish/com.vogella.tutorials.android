@@ -1,0 +1,26 @@
+[[androidtesting_projectstructureandrun]]
+== Android project structure and test folder creation
+
+[[androidtesting_projectstructure]]
+=== Android project organization for tests
+
+The preferred way of organizing tests is based on a convention. 
+In your application project, you should use the following base folder structure for your code organization, this is also the structure the project wizard creates.
+
+* `app/src/main/java`- for your source code of your main application build
+* `app/src/test/java` - for any unit test which can run on the JVM
+* `app/src/androidTest/java` - for any test which should run on an Android device
+
+
+If you follow this conversion than the Android build system can automatically run the unit tests on the JVM and the Android tests on the Android device.
+
+[[androidtesting_licensebuilderror]]
+
+=== Solving the "error duplicate files in path" error
+
+If you receive the following error message: "error duplicate files in path. Path in archive: LICENSE.txt" you can add the following to your `app/gradle.build` file.
+
+[source,text]
+----
+include::examples/unittests/licence.txt[]
+----

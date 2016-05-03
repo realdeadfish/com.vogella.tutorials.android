@@ -1,0 +1,53 @@
+
+[[tutorial_activitylifecycle]]
+== Exercise: Life cycle test
+
+
+[[tutorial_activitylifecycle_target]]
+=== Target of this
+exercise
+
+In this exercise the instrumentation test framework is demonstrated. For such test you would typically use
+higher level frameworks, like Espresso.
+
+
+[[tutorial_activitylifecycle1]]
+=== Create project which is tested
+
+Create a new
+Android project called _com.vogella.android.test.simpleactivity_ with the activity called _MainActivity_.
+
+
+Add a second
+activity called `SecondActivity` to your project.
+This activity should use a layout with at least one `TextView`. The id of the `TextView` should be "resultText" and its text
+should be set to "Started".
+
+Add an `EditText` field to the layout of the `MainActivity` class.
+
+Add a button to the layout
+used by your `MainActivity` activity.
+If this button is clicked, the second activity should be started.
+
+Put the text `EditText` field as extra into the intent
+using "text" as key. Also put the "http://www.vogella.com" String as extra into the intent and use the key "URL" for
+this.
+
+Here is some example code for the `MainActivity`.
+
+[source,java]
+----
+include::examples/activity/MainActivity.java[]
+----
+
+[[tutorial_activitylifecycle2]]
+=== Create test project and class
+
+Create a new instrumentation test similar to the
+following.
+
+[source,java]
+----
+include::examples/activity/SecondActivityFunctionalTest.java[]
+----
+

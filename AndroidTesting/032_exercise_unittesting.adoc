@@ -1,0 +1,34 @@
+[[firstandroidjunittest]]
+== Exercise: Create unit test for your Android project
+
+[[firstandroidjunittest_target]]
+=== Target of this exercise
+
+In this exercise you learn how to create a simple JUnit4 test for an Android project.
+
+
+[[firstandroidjunittest_dependencies]]
+=== Add JUnit dependency
+
+Ensure you have the dependency to Junit in your app/build.gradle file. 
+If the test folder structure is missing in your project, follow the process described in <<androidtesting_creatingtestfolders>> to create it.
+
+[source,grade]
+----
+include::examples/temperature/build.gradle[]
+----
+
+[[firstandroidjunittest_firsttest]]
+=== Create test
+
+In your `app/src/test` directory create the following two test methods for the `ConverterUtil` class.
+
+[source,java]
+----
+include::examples/temperature/ConverterUtilTest.java[]
+----
+
+[[firstandroidjunittest_rununittest]]
+=== Run unit tests
+
+Ensure your unit tests are correctly implemented by running test tests. They should run successfully.

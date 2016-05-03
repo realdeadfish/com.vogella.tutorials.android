@@ -1,0 +1,12 @@
+[[androidtestinresources]]
+== Android testing resources
+
+https://github.com/googlesamples/android-testing[Android examples for testing from Google]
+
+https://github.com/googlesamples/android-testing-templates[Android testing template project from Google]
+
+http://tools.android.com/tech-docs/unit-testing-support[Unit test support description from Google]
+
+http://www.vogella.com/tutorials/Robolectric/article.html [Using Robolectric for Android unit testing on the JVM]
+
+http://www.vogella.com/tutorials/AndroidTestingEspresso/article.html [Android user interface testing with Espresso]

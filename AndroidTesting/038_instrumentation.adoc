@@ -1,0 +1,86 @@
+[[androidsystem_tests]]
+==	Instrumentation - The underlying Android testing API
+
+[[androidtesting_instrumentation]]
+=== Instrumentation
+
+The Android testing API provides hooks into the Android component and application life cycle. 
+These hooks are called the _instrumentation API_ and allow your tests to control the life cycle and user interaction events.
+
+Under normal circumstances your application cannot control the life cycle events and the user drives the application.
+For example, if Android creates your activity the `onCreate()` method is called. 
+Or if the user presses a button your corresponding code is called. 
+Via instrumentation you can control these events via your software tests.
+
+[[androidtesting_instrumentation_tests]]
+=== Instrumentation tests
+
+Instrumented unit tests are unit tests that run on Android devices and emulators instead of running on the Java virtual machine. 
+These tests have access to the real device and its resources and are useful to unit test functionality which cannot be easily mocked by mocking frameworks. 
+Also developer uses these tests if the framework functionality must be used to validate a functionality. 
+An example is a test which validates a `Parelable` implementation.
+
+Mockito as mocking framework can still be used to mock the parts of the Android system which are not interesting for the test.
+
+An instrumentation-based test class allows you to send key events (or touch events) to the application under test.
+
+For example, your instrumentation test can start the activity.
+Afterwards, it can call the `finish()` and restart the activity to test if the instance state of the activitiy is correctly restored.
+
+With user interface testing framework like Espresso, the developer rarely has to use the instrumentation API directly.
+
+
+[[androidtesting_process]]
+=== How the Android system executes tests
+
+The `InstrumentationTestRunner` is the base test runner for Android tests. 
+This test runner starts and loads the test methods. 
+Via the instrumentation API it communicates with the Android system. 
+If you start a test for an Android application, the Android system kills any process of the application under test and then loads a new instance. 
+It does not start the application, this is the responsibility of the test methods. 
+The test method controls the life cycle of the components of the application.
+
+The test runner also calls the `onCreate()` method of the application and activity under test during its initialization.
+
+
+[[androidtesting_instrumentationtests_location]]
+=== Location of instrumentation tests
+
+As described in <<androidtesting_projectstructure>> the unit tests of an Android project should be located in the `app/src/androidTest/java` folder. 
+See <<androidtesting_creatingtestfolders>> for the creation of such a test folder.
+
+[[androidtesting_instrumentationtests_gradledependencies]]
+=== Define dependencies and testInstrumentationRunner in the Gradle build file
+
+To use JUnit tests for your Android application you need to add the dependency to JUnit and you other test dependencies to your Gradle build file. 
+You needs also to specify the default testInstrumentationRunner runner as `android.support.test.runner.AndroidJUnitRunner`.
+
+[source,grade]
+----
+include::examples/instrumentedtests/simple.gradle[]
+----
+
+[[androidtesting_instrumentationtests_testrunner]]
+=== Using the @RunWith(AndroidJUnit4.class)
+
+It is also recommended annotating the test with the `@RunWith(AndroidJUnit4.class)` annotation. 
+AndroidJUnit4 extends JUnit4, so if you use pure Junit4 syntax and ActivityTestRule it is not required.
+But you need it, if you want to run, i.e., Espresso tests with `ActivityTestRule` and JUnit4.
+
+[[androidtesting_instrumentationtests_runtunittestsgradle]]
+=== Run the unit tests from Gradle
+
+Run your unit tests with the `gradlew connectedCheck` command.
+
+[[androidtesting_instrumentationtests_runtunittestsas]]
+=== Run the unit tests from Android Studio
+
+Right-click on your test class in the _Project_ window and select _Run_.
+
+[[androidtesting_instrumentationtests_testresults]]
+=== Location of test reports
+
+The test reports are created in the `app/build/reports/androidTests/connected/` directory. 
+The `index.html` gives an overview and links to the individual test pages.
+
+

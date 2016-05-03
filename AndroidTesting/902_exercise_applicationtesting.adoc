@@ -1,0 +1,38 @@
+[[exercise_applicationtesting]]
+== Exercise: Testing the Android application
+
+[[exercise_applicationtesting_project]]	
+=== Create project
+
+Create a new Android application with the `com.vogella.android.testing.applicationtest` package name based on the _Blank Activity_ template.
+
+Add the following application object to your application.
+
+[source,java]
+----
+include::examples/application/MyApplication.java[]
+----
+
+Also declare the application it in your manifest file.
+
+[source,xml]
+----
+include::examples/application/AndroidManifest.xml[]
+----
+
+[[exercise_applicationtesting_test]] 
+=== Create unit test for application object
+
+In your `app/src/test`directory create a new unit test and assert that the `MyApplication.list` field is not empty and has initially a size of zero.
+
+[[exercise_applicationtesting_instrumentationtest]] 
+=== Create instrumented test for application object
+
+Create the following unit test based on the JUnit 3 testing framework.
+
+[source,java]
+----
+include::examples/application/RssApplicationTest.java[]
+----
+
+

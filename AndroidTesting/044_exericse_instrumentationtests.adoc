@@ -1,0 +1,9 @@
+<section id="exercise_androidtesting_instrumentationtests">
+	Exercise: Create simple instrumented unit test
+
+		You will later learn to create more complex tests but for now duplicate your test you created in
+		<xref linkend="firstandroidjunittest" />
+		and also run it as instrumentation test.
+
+
+</section>

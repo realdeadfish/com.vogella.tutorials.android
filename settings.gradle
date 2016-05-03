@@ -1,5 +1,5 @@
 rootProject.name = 'com.vogella.tutorials.technology'
 
 include 'AndroidArchitecture'
-
+include 'AndroidTesting'
 
