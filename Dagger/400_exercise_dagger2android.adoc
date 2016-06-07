@@ -1,0 +1,100 @@
+[[exercise_androiddagger]]
+== Exercise: Dependency injection in Android with Dagger 2
+
+[[exercise_androiddagger_target]]
+=== Target of this exercise
+		
+In this exercise Dagger 2 is demonstrated in an Android application.
+In our simple app, there is an activity that allows a user to authenticate some credentials. 
+The result value of the implementation is displayed in a text field.
+
+[[exercise_androiddagger_project]]
+=== Create project
+		
+Create a new project with the top level package `com.vogella.android.dagger2simple`.
+		
+Adjust the layout file of the generated activity. 
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/activity_main.xml" />
+			</programlisting>
+			
+[[exercise_androiddagger_gradle]]
+=== Enter Gradle dependencies
+		
+Add the following entries to your <filename>build.gradle</filename> project file.
+		
+			<programlisting language="json">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/build.gradle" />
+			</programlisting>
+		
+		
+Add the following entries to your <filename>app/build.gradle</filename> file.
+		
+			<programlisting language="json">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/appbuild.gradle" />
+			</programlisting>
+		
+[[exercise_androiddagger_di]]
+=== Define your dependencies graph
+
+Create the following classes for providing dependencies and wiring them up.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/NetworkApi.java" />
+			</programlisting>
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/NetworkApiModule.java" />
+			</programlisting>
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/DiComponent.java" />
+			</programlisting>
+		
+[[exercise_androiddagger_using]]
+=== Wiring up the application
+		
+Create the following implementation for your `Application` class. 
+This class builds up the dependency injection context and gives access to it, via the `getComponent` method.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/MyApplication.java" />
+			</programlisting>
+		
+
+		Of course this class needs to registered via the manifest. 
+
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/AndroidManifest.xml" />
+			</programlisting>
+		
+
+
+
+		The activity injects the created values into it via the method defined on the @Component class.  
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/MainActivity.java" />
+			</programlisting>
+
+[[exercise_androiddagger_validate]]
+=== Validate
+		
+Run your application, the user interface should report that dependency injection worked. 
+If not, have a look at the generated classes in the <filename>app/build/generated/apt</filename> folder. 
+The generated classes by Dagger are well structured and should give a hint what went wrong.
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/androiddaggervalidateresult.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Running application</phrase>
+				</textobject>
+			</mediaobject>

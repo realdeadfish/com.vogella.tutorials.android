@@ -1,0 +1,126 @@
+<section id="deployondevice" role="wrapper">
+	<title>Deployment
+	<section id="deployondevice_overview">
+		<title>Overview
+		In general there are restrictions how to deploy an Android
+			application to your device. You can deploy the application via USB in
+			test mode onto your device , email yourself the
+			application or use one
+			of the many Android markets to install the
+			application. The following
+			description highlights the most common
+			ones.
+		
+	</section>
+
+	<section id="deployondevice_uses-feature">
+		<title>Defining software and hardware requirements for the application
+		
+		
+			The application can define via a <![CDATA[<uses-feature> ]]>
+			declaration in the manifest file define which hardware of software
+			features is requires. Via the
+			<parameter>android:required</parameter>
+			property the application can define if such a feature is required for
+			the application to work correctly (true) or if
+			application prefers to
+			use the feature if present on the device, but
+			that it is designed to
+			function without the specified feature, if
+			necessary.
+		
+		Examples for such definitions are the presence of a certain
+			hardware sensor or the availability of a camera.
+		
+			For an overview of the available restrictions see
+			<ulink
+				url="http://developer.android.com/guide/topics/manifest/uses-feature-element.html">uses-features official documentation.</ulink>
+		
+	</section>
+	<section id="deployondevice_export">
+		<title>Signing your application for the release
+		Android applications must be signed before they can get
+			installed
+			on an Android device. During development Eclipse signs your
+			application automatically with a debug key.
+		
+		To install the Android application via another channel you need
+			to sign the Android apk with a self-created signature key.
+		
+		 Please note that you need to use the same signature key in
+			Google Play (Google Market) to update your application. If you lose
+			the key, you will NOT be able to update your application ever again.
+		
+		Make sure to backup your key.
+	</section>
+
+	<section id="deployondevice_export_androidstudio">
+		<title>Export your application via Android Studio
+		
+			Use the
+			<menuchoice>
+				<guimenu>Build</guimenu>
+				<guisubmenu>Generate Signed APK...</guisubmenu>
+			</menuchoice>
+			menu entry to start the export from Android Studio.
+		
+
+	</section>
+	<section id="deployondevice_export_viaeclipse">
+		<title>Export your application via the Eclipse IDE
+		
+			If you want to export your production application via the Eclipse
+			IDE, you
+			can right-click on it and select
+			<menuchoice>
+				<guimenu>Android Tools</guimenu>
+				<guisubmenu>Export Signed Application Package</guisubmenu>
+			</menuchoice>
+			.
+		
+		This wizard allows to use an existing key or to create a new
+			one.
+		
+
+	</section>
+
+
+	<section id="deployondevice_externalsources">
+		<title>Via external sources
+		
+			Android also allows to install applications directly. Just click
+			on a
+			link which points to an
+			<filename>.apk</filename>
+			file, e.g., in an email attachment
+			or on a webpage. Android will
+			prompt you if you want to install this
+			application.
+		
+		This requires a setting on the Android device which allows the
+			installation of non-market application. Typically this setting can
+			be
+			found under the "Security" settings.
+		
+	</section>
+	<section id="deployondevice_play">
+		<title>Google Play (Market)
+		
+			Google Play requires a one time fee, currently 25 Dollar. After
+			that
+			the developer can directly upload his application and the required
+			icons, under
+			<ulink url="https://play.google.com/apps/publish">Google Play Publishing</ulink>
+			.
+		
+		
+			Google performs some automatic scanning of applications, but no
+			approval process is in place. All application, which do not contain
+			malware, will be published. Usually a few minutes after upload,
+			the
+			application is
+			available.
+		
+
+	</section>
+</section>

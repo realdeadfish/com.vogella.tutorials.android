@@ -1,0 +1,247 @@
+<section id="androiddevelopment" role="wrapper">
+	<title>Android Development Tools
+	<section id="overview_androidsdk">
+		<title>Android SDK
+		
+			The
+			_Android Software Development Kit_
+			(Android SDK) contains the necessary tools to create, compile
+			and
+			package
+			Android applications. Most of these tools are
+			command line
+			based. The
+			primary way to develop
+			Android applications is based on the
+			Java
+			programming
+			language.
+		
+	</section>
+	<section id="overview_androidadb">
+		<title>Android debug bridge (adb)
+		
+			The Android SDK contains the
+			_
+				Android debug bridge
+			_
+			(adb), which is a tool that allows you to connect to a virtual or
+			real
+			Android
+			device, for the purpose of managing the
+			device or
+			debugging your
+			application.
+		
+	</section>
+
+	<section id="overview_gradle">
+		<title>Gradle and the Android plug-in for Gradle
+		The Android tooling uses Gradle as build system. The Android team provides a Gradle plug-in for build Android
+			applications which is entered in the build.gradle file in the top root of the Android project. It typically looks
+			like the following, please note that the version might be different in your case.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/build/build.gradle" />
+			</programlisting>
+		
+		
+			You find the available versions of this plug-in under the following URL:
+			<ulink url="https://jcenter.bintray.com/com/android/tools/build/gradle/">Available Android Gradle plug-in versions. </ulink>
+		
+
+	</section>
+	<section id="overview_androidstudio">
+		<title>Android Developer Tools and Android Studio
+		
+			Google provides an IDE called
+			_Android Studio_
+			as the preferred development environment for creating Android applications. This IDE is based on the
+			IntelliJ
+			IDE.
+		
+
+
+		The Android tools provide specialized editors
+			for Android specific
+			files. Most of Android's configuration files
+			are
+			based
+			on XML. In
+			this
+			case
+			these
+			editors allow you to switch
+			between the XML
+			representation of
+			the
+			file and
+			a structured
+			user
+			interface for entering
+			the data.
+		
+		
+			This description uses Android Studio as IDE.
+		
+	</section>
+
+
+
+	<section id="androiddevelopment_art">
+		<title>Android RunTime (ART)
+		
+			Android 5.0 uses the
+			_Android RunTime_
+			(ART) as
+			runtime for all Android applications.
+		
+
+		
+			ART uses
+			_Ahead Of Time_
+			compilation. During the deployment process of an application on an
+			Android
+			device, the application code is translated
+			into machine code.
+			This
+			results in approx. 30% larger compile code, but allows faster
+			execution from the beginning of
+			the application.
+		
+		This also saves battery life, as the compilation is only done
+			once, during the first start of the application.
+		
+		
+			The
+			`dex2oat`
+			tool takes the .dex file created by the Android tool change and
+			compiles that into an Executable and Linkable Format
+			(ELF file).
+			This
+			file contains the
+			dex code, compiled native code and
+			meta-data.
+			Keeping
+			the .dex code
+			allows that existing
+			tools still
+			work.
+		
+		The garbage collection in ART has been optimized to reduce times
+			in which the application freezes.
+		
+	</section>
+
+	<section id="androiddevelopment_tool">
+		<title>Conversion process from source code to Android application
+		
+			The Java source files are converted to Java
+			class files by
+			the
+			Java
+			compiler.
+		
+		
+			The Android SDK contains a tool called
+			_dx_
+			which
+			converts Java
+			class
+			files
+			into a
+			<filename>.dex</filename>
+			(Dalvik Executable)
+			file. All class files of the application are
+			placed in this
+			<filename>.dex</filename>
+			file. During this conversion process
+			redundant
+			information in the class
+			files are optimized in the
+			<filename>.dex</filename>
+			file.
+		
+		
+			For example, if the same
+			`String`
+			is found in different class
+			files,
+			the
+			<filename>.dex</filename>
+			file
+			contains only one reference of this
+			`String`
+			.
+		
+		
+			These
+			<filename>.dex</filename>
+			files are therefore
+			much smaller in size
+			than the
+			corresponding
+			class
+			files.
+		
+		
+			The
+			<filename>.dex</filename>
+			file and the resources of an Android project, e.g., the
+			images and
+			XML
+			files, are packed into an
+			<filename>.apk</filename>
+			(Android Package)
+			file. The program
+			_aapt_
+			(Android Asset Packaging Tool) performs this step.
+		
+
+		
+			The resulting
+			<filename>.apk</filename>
+			file contains all necessary data to run the
+			Android application and
+			can be deployed to an Android device via the
+			_adb_
+			tool.
+		
+	</section>
+	<section id="androiddevelopment_java8">
+		<title>Using Java 8 in Android applications
+		
+			The latest Gradle plug-in supports the usage of Java 8, with some restrictions. As of Android Gingebread (API 9)
+			and
+			above you can use:
+			<itemizedlist>
+				<listitem>
+					Lambda expressions
+				</listitem>
+				<listitem>
+					java.util.function
+				</listitem>
+			</itemizedlist>
+		
+		
+			As of Android N you can use:
+			<itemizedlist>
+				<listitem>
+					Default and static interface methods
+				</listitem>
+				<listitem>
+					Repeatable annotations
+				</listitem>
+				<listitem>
+					Streams
+				</listitem>
+				<listitem>
+					Reflection APIs
+				</listitem>
+			</itemizedlist>
+		
+		To enable Java 8 in your project use the following settings. Important is the jackOptions part and the compileOptions.
+	</section>
+
+</section>

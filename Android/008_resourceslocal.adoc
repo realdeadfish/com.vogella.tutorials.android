@@ -1,0 +1,44 @@
+<section id="androidonline" role="wrapper">
+	<title>Android online resources
+	<section id="androidonline1" role="wrapper">
+		<title>Android core resources
+		
+			<ulink url="http://developer.android.com"> Android Developer Homepage </ulink>
+		
+		
+			<ulink url="http://www.vogella.com/android.html">vogella Android online tutorials</ulink>
+		
+		
+			<ulink url="http://code.google.com/p/android/issues/list">Android bug tracker</ulink>
+		
+		
+			<ulink url="http://groups.google.com/group/android-developers">Android Google Groups</ulink>
+		
+		
+			<ulink url="http://source.android.com/devices/graphics/architecture.html">Android graphics framework</ulink>
+		
+		
+			<ulink url="https://github.com/googlesamples/android-RuntimePermissions">Code example for demonstrating runtime permissions</ulink>
+		
+	</section>
+	<section id="androidonline1" role="wrapper">
+		<title>Android learning resources
+
+		<ulink url="http://androidbackstage.blogspot.de/">Podcast from the Google developers about Android</ulink>
+		<ulink url="http://fragmentedpodcast.com/">Fragmented - An Android Developer Podcast</ulink>
+
+	</section>
+
+	<section id="androidtools">
+		<title>Android tools
+
+		<ulink url="http://tools.android.com/recent">Recent changes in the Android tooling</ulink>
+		<ulink url="https://github.com/skylot/jadx">Command line and GUI tools for produce Java source code from Android Dex and Apk files</ulink>
+
+
+
+	</section>
+
+
+
+</section>

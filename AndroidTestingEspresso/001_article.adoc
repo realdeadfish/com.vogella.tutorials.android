@@ -1,0 +1,11 @@
+= Android user interface testing with Espresso - Tutorial
+:linkcss:
+(c) 2012, 2016 vogella GmbH
+Version 1.8, 18.06.2016
+
+[abstract]
+This tutorial describes how to developer user interface tests for Android applications with the Espresso testing framework.
+This tutorial assumes that you are familiar with Android programming in general.
+
+include::010_overview.adoc[]
+include::008_resourceslocal.adoc[]

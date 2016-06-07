@@ -1,0 +1,24 @@
+[[android_dagger]]
+== Dagger 2 and Android
+
+[[android_dagger_problem]]
+=== Using dependency injection with Android
+		
+Many Android components, e.g. activities, are instantiated by the Android framework and not in your code.
+This makes it difficult to supply dependencies via constructors to Android components.
+		
+[[android_dagger_using]]
+== Using Dagger 2 in Android
+		
+If you want to ues Dagger 2 in Android you have to adjust your _build.gradle_ project file.
+		
+			<programlisting language="json">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/build.gradle" />
+			</programlisting>
+		
+		
+Add the following entries to your _app/build.gradle_ file.
+		
+			<programlisting language="json">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/appbuild.gradle" />
+			</programlisting>

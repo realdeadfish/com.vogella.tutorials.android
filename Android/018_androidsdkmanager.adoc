@@ -1,0 +1,127 @@
+<section id="androidapiversion_installation" role="wrapper">
+	<title>Android SDK Manager
+	<section id="androidapiversion_sdk">
+		<title>Using the Android SDK manager
+		
+			The
+			_Android SDK Manager_
+			allows you to install specific versions of the
+			Android API.
+		
+		
+			The Android SDK Manager allows you to install and delete
+			Android
+			packages.
+		
+	</section>
+
+	<section id="androidapiversion_openinandroidstudio">
+		<title>Open the Android SDK manager in Android Studio
+		
+			Select
+			<menuchoice>
+				<guimenu>Tools</guimenu>
+				<guisubmenu>Android</guisubmenu>
+				<guisubmenu>SDK Manager</guisubmenu>
+			</menuchoice>
+			or the
+			<guilabel>SDK Manager</guilabel>
+			icon in the toolbar of Android Studio to open the Android SDK
+			manager.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/androidsdkmanager_androidstudio10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Android SDK manager in Android Studio</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+	</section>
+
+	<section id="androidapiversion_installtationoftools">
+		<title>Install selected Android version or library
+
+		
+			In the Android SDK manager
+			select the version of Android you would like
+			to develop
+			for from the
+			tree and
+			press
+			the
+			<guibutton>Install</guibutton>
+			button. The following screenshot shows the selection for the
+			<guilabel>API 18</guilabel>
+			version of Android.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/androidstudiosdkmanager10.png" scale="45" />
+				</imageobject>
+				<textobject>
+					<phrase>Install Android API</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			Press the
+			<guibutton>OK</guibutton>
+			button to start he installation.After the
+			installation
+			is completed the select option is available.
+		
+		
+			The
+			<guilabel>SDK Platforms</guilabel>
+			tab is used to install API versions, which the
+			<guilabel>SDK Tools</guilabel>
+			is used to install the development tools.
+		
+	</section>
+	<section id="adtinstallation_supportlibrary">
+		<title>Install support library
+		The support library allows you to use functionality provided by
+			higher Android releases in lower Android
+			versions.
+		
+		
+			In the
+			_Android SDK Manager_
+			select
+			<guilabel>Extras</guilabel>
+			and install the
+			<guilabel>Android Support Repository</guilabel>
+			. The
+			<guilabel>Android Support Library</guilabel>
+			is for the usage of the Eclipse ADT tooling.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/androidstudiosdkmanager20.png" scale="45" />
+				</imageobject>
+				<textobject>
+					<phrase>Installing the support library</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			Android currently has several versions of the library, the v4,
+			v7
+			and v13 version which are valid as of the
+			respective API level of
+			Android. For example, the support library v7 works as of Android
+			devices with version API 7.
+			Higher versions of the support library
+			require also the lower versions to work. For example, support
+			library v7
+			requires the v4 library.
+		
+	</section>
+
+</section>

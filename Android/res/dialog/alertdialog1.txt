@@ -1,0 +1,7 @@
+
+// Constant for identifying the dialog
+private static final int DIALOG_ALERT = 10;
+
+public void onClick(View view) {
+		showDialog(DIALOG_ALERT);
+}

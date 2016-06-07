@@ -1,0 +1,50 @@
+<chapter id="android_updatetodate">
+	<title>Warning messages and screenshots
+	<section id="android_warnings">
+		<title>Warning messages
+
+		
+			The Android development tools show warnings in certain cases.
+			This is most notable in case you use
+			hard-coded
+			strings in layout
+			files. This is
+			a valid warning, for real
+			applications
+			you should use
+			resource files.
+			But to
+			simplify the
+			creation of the
+			example projects, we
+			use
+			Strings
+			directly.
+		
+		<note>
+			For simplification of the exercise description, certain steps
+				are not described, e.g. the extraction of the Strings. Please ignore
+				these warnings or perform the necessary steps to avoid them in
+				addition to the exercise description.
+			
+		</note>
+	</section>
+
+	<section id="android_screenshots">
+		<title>Screenshots and description
+
+		Google is actively developing the tooling for Android
+			development. Therefore screenshots or certain
+			descriptions in
+			this
+			$book may
+			differ from the latest released version of the tooling.
+		
+		
+			I hope that you are able
+			to adjust the description to the latest
+			tooling in case this happens.
+		
+	</section>
+
+</chapter>

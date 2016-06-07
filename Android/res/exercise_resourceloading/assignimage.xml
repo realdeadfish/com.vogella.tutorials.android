@@ -1,0 +1,10 @@
+ <!--
+        NOTE: More attributes are required 
+        for the correct layout of the ImageView. These are left 
+        out for brevity
+    -->
+
+<ImageView
+  android:id="@+id/myicon"
+  .... more attributes
+  android:src="@drawable/ic_offline" />

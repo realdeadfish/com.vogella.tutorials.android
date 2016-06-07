@@ -1,0 +1,38 @@
+<section id="asynctasktesting_espresso">
+	<title>Using Espresso to test asynchronous code
+	
+		Testing asynchronous without framework support is challenging. The typical approach before Espresso was to wait for a
+		predefined time or to use an
+		instance of the
+		`CountDownLatch`
+		class
+		in your test code and signal from the asynchronous processing
+		that the processing was done. Espresso makes this
+		much easier as it monitors automatically the thread pool behind the
+		`AsynchronousTask`
+		and the event queue of the user interface
+		and continues only with its test once no task is running.
+	
+	
+		If you use different resources, like an IntentService you need to implement an
+		`IdlingResource`
+		which can monitor this resource and register this monitor with the Espresso framework.
+	
+
+	
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+				href="./examples/intentservice/IntentServiceIdlingResource.java" />
+		</programlisting>
+	
+
+	
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+				href="./examples/intentservice/IntegrationTest.java" />
+		</programlisting>
+	
+
+
+
+</section>

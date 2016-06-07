@@ -1,0 +1,382 @@
+<section id="tutorialtemperature" role="wrapper">
+	<title>Exercise: Create a temperature converter
+	<section id="tutorialtemperature_installation">
+		<title>Target of this exercise
+		In this exercise you learn how to create and consume Android
+			resources and repeat the creation of an interactive
+			application.
+		
+		
+			This application is available on Google Play under the following URL:
+			<ulink url="http://play.google.com/store/apps/details?id=de.vogella.android.temperature">Android Temperature converter</ulink>
+		
+		Alternatively you can also scan the following barcode with your
+			Android phone to install it via the Google Play
+			application.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/temparaturebarcode.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>QR Code to install the Android Temperature converter</phrase>
+				</textobject>
+			</mediaobject>
+		
+	</section>
+	<section id="tutorialtemperature_project">
+		<title>Create Project
+
+		
+			Create a new
+			Android project with the following data.
+		
+
+		
+			<table frame='all'>
+				<title>New Android project
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<thead>
+						<row>
+							<entry>Property</entry>
+							<entry>Value</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>Application Name</entry>
+							<entry>Temperature Converter</entry>
+						</row>
+						<row>
+							<entry>Package name</entry>
+							<entry>com.vogella.android.temperatureconverter</entry>
+						</row>
+						<row>
+							<entry>API (Minimum, Target, Compile with)</entry>
+							<entry>Latest</entry>
+						</row>
+						<row>
+							<entry>Template</entry>
+							<entry>Empty Activity</entry>
+						</row>
+						<row>
+							<entry>Activity</entry>
+							<entry>MainActivity</entry>
+						</row>
+
+						<row>
+							<entry>Layout</entry>
+							<entry>activity_main</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		
+
+	</section>
+
+	<section id="tutorialtemperature_attributes">
+		<title>Create attributes
+		
+			Select the
+			<filename>res/values/strings.xml</filename>
+			file to open the editor for this file. Add the
+			`Color`
+			and String definitions to the file as described by the following table.
+		
+
+		
+			<table frame='all'>
+				<title>New attributes to add
+				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<colspec colname='c3' />
+					<thead>
+						<row>
+							<entry>Type</entry>
+							<entry>Name</entry>
+							<entry>Value</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>Color</entry>
+							<entry>myColor</entry>
+							<entry>#F5F5F5</entry>
+						</row>
+						<row>
+							<entry>String</entry>
+							<entry>celsius</entry>
+							<entry>to Celsius</entry>
+						</row>
+						<row>
+							<entry>String</entry>
+							<entry>fahrenheit</entry>
+							<entry>to Fahrenheit</entry>
+						</row>
+						<row>
+							<entry>String</entry>
+							<entry>calc</entry>
+							<entry>Calculate</entry>
+						</row>
+
+					</tbody>
+				</tgroup>
+			</table>
+		
+
+		 The entered values should be similar to the following listing.
+		
+
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/strings.xml" />
+			</programlisting>
+		
+	</section>
+
+	<section id="tutorialtemperature_palette">
+		<title>Creating the layout
+
+		
+			Select the
+			<filename>res/layout/activity_main.xml</filename>
+			file and open the associated Android editor via a
+			double-click on the
+			file.
+		
+
+		
+			Remove any existing view from your layout, either directly from the XML source or via the graphical editor.
+		
+		
+			Afterwards add an LinearLayout, another LinearLayout with one ViewText, EditText as children. Afterwards a
+			RadioGroup
+			with two radio buttons and a Button to your layout. Do this
+			either
+			directly in the XML file or via the
+			graphical editor.
+			A simple way of organizing the components is to drag and drop them onto the
+			<guilabel>Component Tree</guilabel>
+			view.
+		
+
+
+
+		
+			The result
+			should look like the
+			following screenshots. The first one shows the component view the second one the
+			preview.
+		
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/temperature_componentview.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Component view</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/temperature80.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Current layout of activity_main.xml</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+		
+			Switch to the XML tab of your layout file
+			and verify that the
+			file looks similar to the
+			following listing. The
+			Android tools team
+			changes the generated code
+			from time to time, so your XML might look slightly different.
+		
+		
+			<programlisting language="xml" linenumbering="numbered">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/mainfirst.xml" />
+			</programlisting>
+		
+		<note>
+			You see some warning messages. You fix these in the following section of this
+				exercise.
+			
+		</note>
+	</section>
+	<section id="tutorialtemperature_uiproperties">
+		<title>Edit view properties
+		
+			Switch to the XML representation of the file and assign the
+			`@string/celsius`
+			value to the
+			<parameter>android:text</parameter>
+			property of the first radio button. Assign the
+			<parameter>fahrenheit</parameter>
+			string attribute to the
+			<parameter>text</parameter>
+			property of the second radio
+			button.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/temperature90.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Change the text property of the radio button</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+		
+			Ensure that the
+			<parameter>Checked</parameter>
+			property is set to
+			`true`
+			for the first
+			`RadioButton`
+			.
+		
+		
+			Assign
+			<parameter>@string/calc</parameter>
+			to
+			the text property of your button and
+			assign the value
+			<parameter>onClick</parameter>
+			to the
+			<parameter>OnClick</parameter>
+			property.
+		
+		
+			Set
+			the
+			<parameter>inputType</parameter>
+			property
+			to
+			<parameter>numberSigned</parameter>
+			and
+			<parameter>numberDecimal</parameter>
+			on the
+			`EditText`
+			. As an example you can use the last line in the following XML
+			snippet. Also change its ID to "inputValue".
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/edittext.txt" />
+			</programlisting>
+		
+
+
+		
+			All your user interface components are contained in a
+			layout. Assign
+			the
+			background color to this
+			`Layout`
+			.
+
+			Select
+			<guilabel>Color</guilabel>
+			and
+			then select
+			<parameter>myColor</parameter>
+			in the dialog. As an example you can use the last line in the
+			following XML
+			snippet.
+		
+
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/backgroundcolor.txt" />
+			</programlisting>
+		
+		
+			Afterwards the background should change to the
+			<parameter>whitesmoke</parameter>
+			color. It might be difficult to see the difference.
+		
+
+		
+			Switch to the
+			<filename>activity_main.xml</filename>
+			tab and verify that the XML is
+			correct.
+		
+
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/main.xml" />
+			</programlisting>
+		
+
+	</section>
+	<section id="tutorialtemperature_utility">
+		<title>Create utility class
+
+		Create the following utility class to convert from celsius to
+			fahrenheit and vice versa.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/ConverterUtil.java" />
+			</programlisting>
+		
+	</section>
+
+	<section id="tutorialtemperature_code">
+		<title>Change the activity code
+		
+			The Android project wizard created the corresponding
+			`MainActivity`
+			class for your activity code.
+			Adjust this class so that it is similar to the following code.
+		
+
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/MainActivity.java" />
+			</programlisting>
+		
+
+	</section>
+
+	<section id="tutorialtemperature_start">
+		<title>Start the application
+		
+			Start your Android application and type in a number, select your conversion and press the button.
+			The result
+			should be
+			displayed and the other
+			option should get
+			selected.
+		
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/temperature96.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Change the text property of the radio button</phrase>
+				</textobject>
+			</mediaobject>
+		
+	</section>
+
+
+</section>

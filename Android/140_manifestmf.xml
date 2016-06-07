@@ -1,0 +1,53 @@
+<section id="manifest" role="wrapper">
+	<title>The Android manifest
+	<section id="manifest_overview">
+		<title>Configuration of your Android application
+		
+			The components, settings and metadata of an Android application are described
+			in the
+			<filename>AndroidManifest.xml</filename>
+			file. This file is known as the
+			_manifest file_
+			or the
+			_manifest_
+			.
+		
+		
+			All
+			activities,
+			services
+			and
+			content provider
+			components of the
+			application
+			must be statically declared in this
+			file.
+			Broadcast receiver
+			can be defined statically in the manifest file or dynamically at
+			runtime in the application. This
+			file is read by the Android system during installation of
+			the application. The Android system evaluates this configuration file
+			and determines the capabilities of the application.
+		
+		The Gradle build system for building and packaging Android application can modify the manifest file. For
+			example,
+			the  application version is typically supplied by the Gradle build file.
+		
+	</section>
+
+	<section id="manifestdetails_example">
+		<title>Android manifest example
+		
+			The following listing shows an example for a simple
+			Android manifest
+			file.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/manifest/AndroidManifest.xml" />
+			</programlisting>
+		
+	</section>
+
+
+</section>

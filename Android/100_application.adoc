@@ -1,0 +1,230 @@
+<section id="applicationparts" role="wrapper">
+	<title>Parts of an Android application
+	<section id="theandroidapplication">
+		<title>Android application
+		
+			An
+			_Android application_
+			is a single installable unit which can be started and used
+			independently of other Android applications.
+		
+		
+			An Android application consists of
+			Android
+			components, Java source
+			and
+			resource files.
+		
+		
+			Android application components can connect to
+			components of other
+			Android applications based on a task description
+			represented by an
+			`Intent`
+			object.
+			This way
+			they can create
+			cross-application
+			tasks. The integration of these
+			components can be done in a way that
+			the Android application can still
+			work flawless, even if the additional
+			components are not installed or
+			if different
+			components perform the
+			same task.
+		
+	</section>
+
+	<section id="androidcomponents_overview">
+		<title>Android software components
+		
+			The following Android components can be defined:
+			<itemizedlist>
+				<listitem>
+					Application
+					
+				</listitem>
+				<listitem>
+					Activities
+				</listitem>
+				<listitem>
+					Services
+				</listitem>
+				<listitem>
+					Broadcast receivers (short: receivers)
+				</listitem>
+				<listitem>
+					Content providers (short: providers)
+				</listitem>
+			</itemizedlist>
+		
+	</section>
+
+	<section id="components_application">
+		<title>Application
+		
+			An Android application can have one
+			`Application`
+			class which is
+			instantiated as soon as the application starts and
+			it is the last
+			component which is stopped during
+			application shutdown.
+		
+		If not explicitly defined, Android creates a default application object for your application.
+	</section>
+	<section id="components_activity">
+		<title>Activity
+		
+			An
+			_activity_
+			is the visual representation of an Android
+			application.
+			An
+			Android
+			application
+			can
+			have
+			several
+			activities.
+		
+		
+			Activities
+			use
+			<xref linkend="view_class" />
+			,
+			<xref linkend="layoutmanager_overview" />
+			and
+			fragments
+			to create the user interface and to interact with the user. Both
+			elements are
+			described in the
+			next
+			sections.
+		
+	</section>
+	<section id="components_broadcastreceiver">
+		<title>BroadcastReceiver
+		
+			A
+			_broadcast receiver_
+			(receiver)
+			can be registered to
+			listen to system messages and
+			intents. A
+			receiver
+			gets notified by the Android system if
+			the specified event
+			occurs.
+		
+		
+			For example, you can register a
+			receiver
+			for the event that the
+			Android system finished the boot
+			process. Or you
+			can
+			register for
+			the
+			event that the state of the phone changes, e.g.,
+			someone is
+			calling.
+		
+	</section>
+
+
+
+	<section id="components_services">
+		<title>Service
+		
+			A
+			_service_
+			performs tasks without providing an user interface.
+			They can
+			communicate
+			with other Android components, for example,
+			via
+			broadcast
+			receivers and
+			notify
+			the
+			user via the
+			notification
+			framework in
+			Android.
+		
+	</section>
+	<section id="components_contentprovider">
+		<title>ContentProvider
+		
+			A
+			_content provider_
+			(provider)
+			defines a structured interface to application data. A
+			provider can be used for accessing data within one
+			application, but
+			can also be used to
+			share data with other
+			applications.
+		
+		
+			Android
+			contains an SQLite
+			database which is frequently used in
+			conjunction
+			with a
+			content provider. The SQLite
+			database would store
+			the data, which would be accessed
+			via the provider.
+		
+	</section>
+
+
+
+	<section id="overview_context">
+		<title>Context
+		
+			Instances of the class
+			`android.content.Context`
+			provide the connection to
+			the
+			Android system which executes theapplication
+			application. It also gives access to the
+			resources of
+			the project and
+			the global information about the application environment.
+
+		
+		
+
+			For example,
+			you can check
+			the size of the current device
+			display
+			via the
+			`Context`
+			.
+		
+		
+			The
+			`Context`
+			class
+			also
+			provides access to Android
+			_services_
+			, e.g., the alarm manager to trigger time based events.
+		
+		
+			Activities
+			and
+			services
+			extend the
+			`Context`
+			class. Therefore, they can be directly used to access the
+			`Context`
+			.
+		
+	</section>
+</section>

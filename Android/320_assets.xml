@@ -1,0 +1,73 @@
+<section id="androidassets" role="wrapper">
+	<title>Assets
+	<section id="androidassets_overview">
+		<title>Whats are assets?
+		
+			While the
+			<filename class="directory">res</filename>
+			directory
+			contains structured values which
+			are
+			known to the
+			Android
+			platform, the
+			<filename class="directory">assets</filename>
+			directory
+			can be used
+			to
+			store any kind
+			of
+			data.
+		
+		
+			You can access files stored in this folder based on their path. The
+			<filename class="directory">assets</filename>
+			directory also allows you to have sub-folders.
+		
+		<note>
+			
+				You could also store unstructured data in the
+				<filename class="directory">/res/raw</filename>
+				folder, but it is considered good practice to use the
+				<filename class="directory">assets</filename>
+				directory for such data.
+			
+		</note>
+	</section>
+	<section id="androidassets_assets">
+		<title>Accessing assets
+		
+			You access this
+			data
+			via the
+			`AssetsManager`
+			which you can access via the
+			`getAssets()`
+			method from an instance of the
+			`Context`
+			class.
+		
+		
+			The
+			`AssetsManager`
+			class
+			allows you to read a file in the
+			<filename class="directory">assets</filename>
+			folder as
+			`InputStream`
+			with the
+			`open()`
+			method. The following code shows an example for this.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/assets/assets.java" />
+			</programlisting>
+		
+
+	</section>
+
+
+</section>

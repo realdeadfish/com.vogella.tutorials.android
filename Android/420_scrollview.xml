@@ -1,0 +1,52 @@
+<section id="scrollview">
+	<title>Exercise: Using ScrollView
+	
+		This exercise demonstrates the usage of the
+		`ScrollView`
+		view to provide a scrollable user interface component.
+		Create an
+		android project
+		_de.vogella.android.scrollview_
+		with
+		the
+		activity called
+		_ScrollViewActivity_
+		. Use `activity_main.xml` as layout file.
+	
+	Change the layout file used in the activity to the following.
+	
+	
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/scrollview/main.xml" />
+		</programlisting>
+	
+	
+		Change your
+		`ScrollViewActivity`
+		class to the following code.
+	
+	
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/scrollview/ScrollViewActivity.java" />
+		</programlisting>
+	
+
+
+
+	Start your application and ensure that you can scroll down to the
+		buttons.
+	
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/scrollview10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Showing the running application with the ScrollView in
+					action</phrase>
+			</textobject>
+		</mediaobject>
+	
+</section>

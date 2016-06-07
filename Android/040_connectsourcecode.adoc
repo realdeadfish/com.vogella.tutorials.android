@@ -1,0 +1,72 @@
+<section id="exercise_sourcecodeconnect" role="wrapper">
+	<title>Connect with the Android source code
+	<section id="exercise_sourcecodeconnect1">
+		<title>Connect the source to your Android JAR file
+		
+			Now that you have already created an Android Application
+			Project, you
+			are able to connect it with the Android source code. See
+			<xref linkend="android_sourcecodeinstallation" />
+			how to download the source code.
+		
+		
+			To connect the sources with the
+			<filename>android.jar</filename>
+			file in your Android
+			project, right-click on your
+			<filename>android.jar</filename>
+			in the
+			<guilabel>Package Explorer</guilabel>
+			view
+			and
+			select
+			<menuchoice>
+				<guimenu>Properties</guimenu>
+				<guisubmenu>Java Source Attachment</guisubmenu>
+			</menuchoice>
+			.
+		
+		
+			Select
+			<guilabel>External location</guilabel>
+			and press the
+			<guibutton>External Folder...</guibutton>
+			button. Browse to the
+			<filename class="directory">path_to_android_sdk/sources/android-xx
+			</filename>
+			location and press the
+			<guibutton>OK</guibutton>
+			button.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/androidsources20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Assignment of the Android sources zip to android.jar</phrase>
+				</textobject>
+			</mediaobject>
+		
+	</section>
+
+	<section id="exercise_sourcecodeconnect2">
+		<title>Validating
+		
+			Validate that you can see the Android source code. For example, open
+			the
+			`View`
+			class via
+			the
+			_Open Type_
+			dialog (Shortcut:
+			<keycombo>
+				<keycap>Ctrl</keycap>
+				<keycap>Shift</keycap>
+				<keycap>T</keycap>
+			</keycombo>
+			)
+			and ensure that you can see the source code.
+		
+	</section>
+</section>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Using the Gradle build with the IntelliJ IDE- Tutorial
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>09.12.2015</pubdate>
+		<releaseinfo>
+			Version 0.1
+		</releaseinfo>
+
+		<abstract id="abstract">
+			<title>Using Gradle with IntelliJ
+			
+				This tutorial describes how to use
+				the Gradle build tool with the IntelliJ IDE.
+			
+		</abstract>
+	</articleinfo>
+
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/Gradle"?>
+</article>

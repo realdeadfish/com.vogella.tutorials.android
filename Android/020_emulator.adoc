@@ -1,0 +1,417 @@
+<section id="emulator" role="wrapper">
+	<title>Using Android Virtual Devices or real devices for testing
+	
+	<section id="emulator_create">
+		<title>Android emulator and Android Virtual Device
+		
+			The Android tooling contains an Android device emulator. This
+			emulator
+			can
+			be
+			used to run an
+			_Android Virtual Device_
+			(AVD), which
+			emulates a real Android phone.
+		
+
+		
+			AVDs allow
+			you to test your
+			Android
+			applications on different
+			Android
+			versions and
+			configurations without
+			access to the
+			real hardware.
+			Even if you have a
+			real
+			Android device available, you
+			should get
+			familiar with the
+			creation and
+			usage of
+			AVDs. Virtual devices give you
+			the possibility
+			to test
+			your
+			application for selected Android versions
+			and a specific
+			configurations.
+		
+
+		
+			During the creation of your AVD you define the configuration for
+			the virtual device. This includes, for
+			example,
+			the resolution, the
+			Android API version and the
+			density of your display.
+		
+		
+			You can
+			define multiple AVDs with
+			different
+			configurations
+			and start
+			them in parallel. This allows you to test
+			different device
+			configurations at once.
+		
+
+		<note>
+			If you stop and AVD during startup
+				process the AVD might get
+				corrupted. The first start may take up
+				to 10 minutes
+				on an older
+				machine.
+				On a modern machine it typically takes 1-3 minutes for a new
+				AVD to
+				start.
+			
+		</note>
+
+		After the AVD has started, you can control the GUI with
+			the
+			mouse.
+			The
+			emulator also provides access to the phone
+			buttons via a
+			menu on
+			the
+			right side of the emulator.
+		
+		Once started,
+			don't stop the AVD during your development. If you
+			change your
+			application and want to test a new
+			version, you simply
+			re-deploy
+			your
+			application
+			on the AVD.
+		
+	</section>
+
+	<section id="deployondevice_expiredebug">
+		<title>Debug certificate and expire date
+		<indexterm>
+			<primary>Debug certificate
+			</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Debug certificate
+			</primary>
+			<secondary>Expired
+			</secondary>
+		</indexterm>
+		
+			Android applications must be signed before they can get
+			installed
+			on an
+			Android device. During development Eclipse signs
+			your
+			application
+			automatically with a self-signed certificate called the
+			_debug key_
+			.
+		
+		
+			This debug certificate has an expiration date of 365 days from
+			its creation date. When
+			the certificate expires,
+			you will get a build
+			error that the certificate has been expired.
+		
+		
+			To fix this
+			problem, delete the
+			<filename>debug.keystore</filename>
+			file. The
+			default
+			storage
+			location is in
+			<filename>~/.android/</filename>
+			on OS X and Linux,
+			in
+			<filename>C:\Documents andSettings\[username]\.android\</filename>
+			on Windows XP, and in
+			<filename>C:\Users\[username]]\.android\</filename>
+			on Windows Vista and Windows 7.
+		
+		The next time you
+			build, the build tools will regenerate a new
+			keystore and debug key.
+		
+	</section>
+
+	<section id="emulator_using">
+		<title>Android device emulator shortcuts
+		
+			The following table lists useful shortcuts for working with an AVD.
+			<table frame='all'>
+				<title>Android device emulator shortcuts
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="2*" />
+					<thead>
+						<row>
+							<entry>
+								Shortcut
+							</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>
+								<keycombo action='simul'>
+									<keycap>Alt</keycap>
+									<keycap>Enter</keycap>
+								</keycombo>
+							</entry>
+							<entry>Maximizes the emulator.</entry>
+						</row>
+
+						<row>
+							<entry>
+								<keycombo action='simul'>
+									<keycap>Ctrl</keycap>
+									<keycap>F11</keycap>
+								</keycombo>
+							</entry>
+							<entry>Changes the orientation of the emulator from landscape to
+								portrait
+								and vice
+								versa.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<keycombo action='simul'>
+									<keycap>F8</keycap>
+								</keycombo>
+							</entry>
+							<entry>Turns the network on and off.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		
+	</section>
+
+
+	<section id="emulator_google">
+		<title>Google vs. Android AVD
+
+		
+			During the creation of an AVD you decide if
+			you want to create an
+			Android
+			device or a
+			Google device.
+		
+		
+			An AVD created for
+			Android contains the programs from the
+			_Android Open Source Project_
+			.
+			An AVD created for the Google API's contains additional Google
+			specific code.
+		
+		AVDs created for the
+			Google API allow you to test applications
+			which use Google Play services, e.g., the new
+			Google maps API or the
+			new
+			location services.
+		
+
+	</section>
+
+	<section id="emulator_speedoptimization">
+		<title>Speed optimization with GPU rendering
+		
+			During the creation of an emulator you can choose if you either want
+			<guilabel>Snapshot</guilabel>
+			or
+			<guilabel>Use Host GPU</guilabel>
+			enabled.
+
+		
+		<note>
+			The dialog implies that you can select both options, but if you
+				do, you get an error message that these options
+				can not be selected
+				together.
+			
+		</note>
+
+		
+			If you select the
+			<guilabel>Snapshot</guilabel>
+			option, the second time you start the device it is started very fast,
+			because the AVD stores its state if you close
+			it. If you select
+			<guilabel>Use Host GPU</guilabel>
+			the AVD uses the graphics card of your host computer directly which
+			makes the
+			rendering on the emulated device much
+			faster.
+		
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/emulator_faststartup.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Startup options of the emulator</phrase>
+				</textobject>
+			</mediaobject>
+		
+	</section>
+
+	<section id="emulator_intel">
+		<title>Speed optimization with the Intel system image
+		It is possible to run an AVD with an image based on the ARM CPU
+			architecture or based on the Intel CPI
+			architecture.
+		
+		An Android virtual device which uses the Intel system image is
+			much faster in
+			execution on Intel / AMD hardware
+			compared to the ARM
+			based system image. This is because the emulator
+			does not need to
+			translate the ARM CPU instructions
+			to the Intel / AMD
+			CPU on your
+			computer.
+		
+		
+			The Intel image for an API can be installed via the Android SDK Manager. In Android Studio this happens
+			automatically if you create an device. If is possible to
+			configure this via the package details.
+		
+
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/intelemulator10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Intel emulator</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+		<note>
+			An Intel image is not available for all API levels.
+		</note>
+		
+			At the time of this writing your also need to download and
+			install
+			extra drivers for MS windows.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/intelemulator20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Intel emulator</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+
+		
+			After the download you find the driver
+			in your Android installation
+			directory in the
+			<filename>extras/intel</filename>
+			folder. You need to install the drivers by running starting the
+			.exe
+			file.
+			This additional installation step is required on Window to
+			accelerate the
+			Intel emulator. Only downloading the
+			driver via the
+			Android does not make a
+			difference.
+		
+
+		After the download you can create a new AVD based on the Intel
+			emulator. The emulator does not start faster but
+			is way faster during
+			the execution of your Android application.
+		
+		<tip>
+			
+				Linux requires a more complex setup. For a detailed installation
+				description see the
+				<ulink url="https://software.intel.com/en-us/android/articles/intel-hardware-accelerated-execution-manager"> Intel emulator installation guide
+				</ulink>
+				which also includes detailed instructions for Windows.
+
+			
+		</tip>
+	</section>
+
+	<section id="emulator_alternatives">
+		<title>Genymotion as alternative emulator
+		
+			There are alternatives to the default Android emulator available.
+			For
+			example, the
+			<ulink url="http://www.genymotion.com/">Genymotion emulator</ulink>
+			is relatively fast in startup and execution of Android projects.
+		
+	</section>
+	<section id="deployondevice_testing">
+		<title>Using a real Android device for testing
+		
+			Turn on
+			<guilabel>USB Debugging</guilabel>
+			on your device in the settings. Select
+			<menuchoice>
+				<guimenu>Settings</guimenu>
+				<guisubmenu>Development Options</guisubmenu>
+			</menuchoice>
+			, then enable the
+			<guilabel>USB-Debugging</guilabel>
+			option.
+		
+		
+			You may
+			also need to install the driver for
+			your mobile phone.
+			Linux and Mac OS usually work out of the box while
+			Windows
+			typically
+			requires the installation of a driver.
+		
+		
+			For details on the driver installation on Windows
+			please see
+			<ulink url="http://developer.android.com/guide/developing/device.html">Google guide for device deployment</ulink>
+			.
+		
+		<note>
+			The minimum Android version of your Android application needs
+				to fit to the Android version on your device.
+			
+		</note>
+		 If you have several devices connected to your computer, you can
+			select which one should be
+			used. If only one
+			device is connected, the
+			application is automatically deployed on this device.
+		
+
+	</section>
+
+</section>

@@ -1,0 +1,110 @@
+<section id="tutorial_unittestactivity">
+	<title>Exercise: unit test for an activity
+	<section id="tutorial_unittestactivity1">
+		<title>Create project which is tested
+		
+			Create a new Android project with the
+			_testing.android.vogella.com.simpleactivity_
+			package and the Blank Activity template.
+		
+		
+			Add a second
+			activity
+			called
+			`SecondActivity`
+			to your project via
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Activity</guisubmenu>
+				<guisubmenu>Blank Activity</guisubmenu>
+			</menuchoice>
+			This
+			activity
+			should use a layout with at least one
+			`TextView`
+			. The id of the
+			`TextView`
+			should be "resultText" and its text should be set to "Started".
+		
+		
+			Add an
+			`EditText`
+			field to the layout of the
+			`MainActivity`
+			class.
+		
+		
+			Add a button to the layout used by
+			_MainActivity_
+			. If this button is clicked, the second
+			activity
+			should be started.
+		
+
+
+		
+			Put the text
+			`EditText`
+			field as extra into the intent using "text" as key. Also put
+			the
+			"http://www.vogella.com" String as extra
+			into the
+			intent
+			and
+			use the
+			key
+			"URL" for this.
+		
+		
+			Here is some example code for the
+			`MainActivity`
+			.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/activity/MainActivity.java" />
+			</programlisting>
+		
+	</section>
+
+	<section id="tutorial_unittestactivity3">
+		<title>Write tests
+		
+			Write a Espresso test for the activity which tests the following:
+			<itemizedlist>
+				<listitem>
+					
+						Check that the layout of the MainActivity contains a button with
+						the
+						`R.id.button`
+						ID
+					
+				</listitem>
+				<listitem>
+					Ensure that the text on the button is "Start new activity"
+				</listitem>
+				<listitem>
+					
+						Ensure that if the getActivity.onClick() method is called, that
+						the correct intent is triggered containing the
+						String extra (hasExtra("URL", "http://www.vogella.com").
+					
+				</listitem>
+			</itemizedlist>
+		
+	</section>
+	<section id="tutorial_unittestactivity4">
+		<title>Validating
+		Your test code should look similar to the following example
+			code.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/activity/TestIntent.java" />
+			</programlisting>
+		
+
+	</section>
+</section>

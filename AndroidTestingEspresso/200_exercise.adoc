@@ -1,0 +1,64 @@
+[[espresso_exercisesimple]]
+== Exercise: A first Espresso test
+
+[[espresso_exercisesimple1]]
+=== Create project under test
+		
+Create a new Android project called _Espresso First_ with the package name _com.vogella.android.espressofirst_. 
+Use the _Blank Template_ as basis for this project.
+		
+Change the generated <filename>activity_main.xml</filename> layout file to the following.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/activity_main.xml" />
+			</programlisting>
+		
+		
+Create a new file called <filename>activity_second.xml</filename>.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/activity_second.xml" />
+			</programlisting>
+		
+
+Create a new activity with the following code.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/SecondActivity.java" />
+			</programlisting>
+		
+		
+Also adjust your `MainActivity` class.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/MainActivity.java" />
+			</programlisting>
+		
+[[espresso_exercisesimple2]]
+=== Adjust the app build.gradle
+		
+Add the AndroidJUnitRunner as value for the <parameter>testInstrumentationRunner</parameter> parameter. 
+Also add the corresponding entry in the <filename>app/build.gradle</filename> file.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/build.gradle" />
+			</programlisting>
+		
+[[espresso_exercisesimple3]]
+=== Create first Espresso test
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/simple/MainActivityEspressoTest.java" />
+			</programlisting>
+[[espresso_exercisesimple4]]
+=== Run your test
+
+		
+Ensure that you have selected <guilabel>Android Instrumentation Tests</guilabel> in the <guilabel>Build Variants</guilabel>.
+Run your tests via your IDE or directly via Gradle. 
+See <<espresso_runningespressotests>> for details.

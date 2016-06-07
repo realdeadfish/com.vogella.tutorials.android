@@ -1,0 +1,3 @@
+<instrumentation
+  android:name="com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
+  android:targetPackage="your_package"/>
