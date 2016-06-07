@@ -5,34 +5,32 @@
 		
 Dagger 2 does not inject fields automatically. 
 It can also not inject private fields. 
-If you want to use field injection you have to define a method in your @Component interface which takes the instance into which you want to inject as parameter.
+If you want to use field injection you have to define a method in your `@Component` interface which takes the instance into which you want to inject as parameter.
 
 [[dagger2_fieldinjection_example]]
 === Example
 
 Assume you modify your BackendServer class to the following. 
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/fields/BackendService.java" />
-			</programlisting>
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/fields/BackEndServiceModule.java" />
-			</programlisting>
-		
+
+[source,java]
+----
+include::res/fields/BackendService.java[]
+----	
+
+[source,java]
+----
+include::res/fields/BackEndServiceModule.java[]
+----		
 		
 In this case you have to define a method which allows injecting into `BackendServer` and use it in your final wiring.
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/fields/MyComponent.java" />
-			</programlisting>
-		
 
+[source,java]
+----
+include::res/fields/MyComponent.java[]
+----		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/fields/Main.java" />
-			</programlisting>
-		
+[source,java]
+----
+include::res/fields/Main.java[]
+----
 

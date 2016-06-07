@@ -6,12 +6,22 @@ The generated builder of Dagger contains methods to set the module.
 You can use the Dagger build to replace the generated class with the one which should be used for testing.
 	
 This works also well with Mockito. Assume you have the following class you want to test.
-	
+
+[source,xml]
+----
+include::res/
+----
+
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/mockito/ImportantClass.txt" />
 		</programlisting>
 	
 You can test this class with Mockito.
+
+[source,xml]
+----
+include::res/
+----
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/mockito/Tester.txt" />

@@ -1,19 +1,12 @@
-<section id="resourcesdagger">
-	<title>Dagger resources
+[[resourcesdagger]]
+== Dagger resources
 	
-		<ulink url="http://code.tutsplus.com/tutorials/dependency-injection-with-dagger-2-on-android--cms-23345"> Dependency injection with Dagger 2</ulink>
+http://code.tutsplus.com/tutorials/dependency-injection-with-dagger-2-on-android--cms-23345-  Dependency injection with Dagger 2
 	
+https://speakerdeck.com/jakewharton/dependency-injection-with-dagger-2-devoxx-2014 - Presentation from Jake Wharton about Dagger 2
 	
-		<ulink url="https://speakerdeck.com/jakewharton/dependency-injection-with-dagger-2-devoxx-2014">Presentation from Jake Wharton about Dagger 2</ulink>
+http://artemzin.com/blog/jfyi-overriding-module-classes-with-dagger2/ - Overriding @Module classes with Dagger 2 in tests
 	
-	
-		<ulink url="http://artemzin.com/blog/jfyi-overriding-module-classes-with-dagger2/">Overriding @Module classes with Dagger 2 in tests</ulink>
-	
-	   
-        <ulink url="http://blog.sqisland.com/2015/04/dagger-2-espresso-2-mockito.html">Testing with Dagger, Mockito, and Espresso</ulink>
-    
-	
-		<ulink url="http://engineering.circle.com/instrumentation-testing-with-dagger-mockito-and-espresso/">Instrumentation Testing with Dagger, Mockito, and Espresso</ulink>
-	
+http://blog.sqisland.com/2015/04/dagger-2-espresso-2-mockito.html - Testing with Dagger, Mockito, and Espresso
 
-</section>
+http://engineering.circle.com/instrumentation-testing-with-dagger-mockito-and-espresso/ - Instrumentation Testing with Dagger, Mockito, and Espresso	

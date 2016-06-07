@@ -11,14 +11,15 @@ This makes it difficult to supply dependencies via constructors to Android compo
 == Using Dagger 2 in Android
 		
 If you want to ues Dagger 2 in Android you have to adjust your _build.gradle_ project file.
-		
-			<programlisting language="json">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/build.gradle" />
-			</programlisting>
-		
+
+[source,xml]
+----
+include::res/android/build.gradle[]
+----
 		
 Add the following entries to your _app/build.gradle_ file.
 		
-			<programlisting language="json">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/appbuild.gradle" />
-			</programlisting>
+[source,xml]
+----
+include::res/android/appbuild.gradle[]
+----

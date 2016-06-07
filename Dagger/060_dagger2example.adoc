@@ -13,42 +13,42 @@ Create a new Maven project with the `com.vogella.java.dagger2` top level package
 === Define or adjust Maven build file 
 		
 Adjust your `pom.xml` to the following.
-		
-		
-			<programlisting language="json">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/maven/pom.xml" />
-			</programlisting>
+
+[source,xml]
+----
+include::res/maven/pom.xml[]
+----
 		
 [[exercise_daggerintro_classes]]
 
 === Define classes which have a dependency
 
 Define the following two classes which express dependencies. 
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/maven/User.java" />
-			</programlisting>
-		
 
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/maven/BackendService.java" />
-			</programlisting>
+[source,java]
+----
+include::res/maven/User.java[]
+----	
 
+[source,java]
+----
+include::res/maven/BackendService.java[]
+----
+		
 [[exercise_daggerintro_modules]]
 === Define modules which provides dependencies
 
 Define two class which acts as providers for dependencies.  
-		
-			<programlisting language="java">
 
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/maven/BackEndServiceModule.java" />
-			</programlisting>
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/maven/UserModule.java" />
-			</programlisting>
+[source,java]
+----
+include::res/maven/BackEndServiceModule.java[]
+----		
+
+[source,java]
+----
+include::res/maven/UserModule.java[]
+----	
 		
 [[exercise_daggerintro_components]]
 === Define components
@@ -56,17 +56,17 @@ Define two class which acts as providers for dependencies.
 Components define from which modules (or other components) dependencies are provided. 
 Dagger 2 uses this interface to generate the accessor class which provides the methods defined in the interface.
 		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/maven/MyComponent.java" />
-			</programlisting>
+[source,java]
+----
+include::res/maven/MyComponent.java[]
+----		
+
 [[exercise_daggerintro_uses]]
 === Use the generated dagger code
 
 The usage of the generated code is demonstrated by the following test class.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/maven/Main.java" />
-			</programlisting>
-		
+
+[source,java]
+----
+include::res/maven/Main.java[]
+----		
