@@ -6,7 +6,6 @@ If you have a repetitive task in your Android app, you cannot reply on a `TimerT
 Activities and services can be terminated at any point in time by the Android system to free up resources.
 Therefore the following code snippet would be wrong.
 
-		<para>
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/schedule/wrong.java" />
