@@ -1,0 +1,7 @@
+<section id="androidonline" role="wrapper">
+	<title>Android testing resources</title>
+	<para>
+		<ulink url="https://developer.android.com/training/testing/ui-testing/uiautomator-testing.html">Google training side for UI Automator
+		</ulink>
+	</para>
+</section>

@@ -1,0 +1,56 @@
+= Scheduling of tasks with the Android JobScheduler - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2015 vogella GmbH
+Version 0.1, 18.04.2016
+
+[abstract]
+This tutorial describes how to schedule tasks in Android with the JobScheduler API.
+				
+include::010_overview.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
+
+
+
+		<title>
+		</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>17.11.2014</pubdate>
+		<releaseinfo>Version 1.2</releaseinfo>
+
+		
+		<abstract id="abstract">
+			<title>Scheduling tasks in Android</title>
+			<para> 
+			</para>
+		</abstract>
+	</articleinfo>
+	
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_alarmmanager.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_jobscheduler.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_exercise_jobscheduler.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/AndroidTaskScheduling"?>
+</article>

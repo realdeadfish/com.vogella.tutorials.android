@@ -1,0 +1,51 @@
+[[tutorial_unittestactivity]]
+== Exercise: unit test for an activity
+
+=== Create project which is tested
+		
+Create a new Android project with the _testing.android.vogella.com.simpleactivity_ package and the Blank Activity template.
+		
+		
+Add a second activity called `SecondActivity` to your project via menu:File[New>Activity>Blank Activity].
+This activity should use a layout with at least one `TextView`. 
+The id of the `TextView` should be "resultText" and its text should be set to "Started".
+		
+Add an `EditText` field to the layout of the `MainActivity` class.
+		
+		
+Add a button to the layout used by _MainActivity_. 
+If this button is clicked, the second activity should be started.
+		
+		
+Put the text `EditText` field as extra into the intent using "text" as key. 
+Also put the "http://www.vogella.com" String as extra into the intent using the key "URL".
+		
+		
+Here is some example code for the `MainActivity`.
+		
+		
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/activity/MainActivity.java" />
+</programlisting>
+		
+=== Write tests
+		
+Write a Espresso test for the activity which tests the following:
+		
+* Check that the layout of the MainActivity contains a button with the `R.id.button` ID
+* Ensure that the text on the button is "Start new activity"
+* Ensure that if the getActivity.onClick() method is called, that the correct intent is triggered. 
+This intent should contain the String extra (hasExtra("URL", "http://www.vogella.com").
+		
+		
+=== Validating
+	
+Your test code should look similar to the following example code.
+		
+		
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+		href="./examples/activity/TestIntent.java" />
+</programlisting>
+		
+

@@ -1,0 +1,41 @@
+<section id="exercise_uiautomator">
+	<title>Exercise UI Automator</title>
+	<section id="exercise_uiautomator_project">
+		<title>Create project and adjust Gradle build file</title>
+
+		<para>
+			Create a new project with the
+			<code>com.example.android.testing.uiautomator</code>
+			top level project name.
+		</para>
+		<para>Change the Gradle build file to the following. </para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/uiautomator/androidjunitrunner.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="exercise_uiautomator_createtest">
+		<title>Create test</title>
+		<para>
+			Create the following test in your
+			<filename>androidTest</filename>
+			folder.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/uiautomator/test.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="exercise_uiautomator_validate">
+		<title>Validate </title>
+		<para>Run your test and validate that it works.</para>
+	</section>
+
+
+
+</section>
+
