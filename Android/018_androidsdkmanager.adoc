@@ -25,7 +25,7 @@
 				<guisubmenu>SDK Manager</guisubmenu>
 			</menuchoice>
 			or the
-			<guilabel>SDK Manager</guilabel>
+			_SDK Manager_
 			icon in the toolbar of Android Studio to open the Android SDK
 			manager.
 		
@@ -55,7 +55,7 @@
 			the
 			<guibutton>Install</guibutton>
 			button. The following screenshot shows the selection for the
-			<guilabel>API 18</guilabel>
+			_API 18_
 			version of Android.
 		
 		
@@ -77,9 +77,9 @@
 		
 		
 			The
-			<guilabel>SDK Platforms</guilabel>
+			_SDK Platforms_
 			tab is used to install API versions, which the
-			<guilabel>SDK Tools</guilabel>
+			_SDK Tools_
 			is used to install the development tools.
 		
 	</section>
@@ -93,11 +93,11 @@
 			In the
 			_Android SDK Manager_
 			select
-			<guilabel>Extras</guilabel>
+			_Extras_
 			and install the
-			<guilabel>Android Support Repository</guilabel>
+			_Android Support Repository_
 			. The
-			<guilabel>Android Support Library</guilabel>
+			_Android Support Library_
 			is for the usage of the Eclipse ADT tooling.
 		
 		

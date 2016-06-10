@@ -5,10 +5,12 @@
 === Static imports
 
 Espresso can be used with static imports to access methods without the class prefix. 
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/imports/example.java" />
-			</programlisting>
+
+[source,java]
+----
+include::res/imports/example.java[]
+----
+
 [[espresso_usageintroduction_viewmatcher]]
 === Using ViewMatcher
 		
@@ -19,48 +21,24 @@ The `onData()` method returns an object of type `DataInteraction`.
 		
 		
 The following table describes the available matchers.
-			<table frame='all'>
-				<title>Available ViewMatcher
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*" />
-					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>ViewMatcher</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>withText("SOMETEXT")</entry>
-							<entry>Searches for a view with the specified text, for example onView(withText("User")) searches for a view with
-								the text "User".
-							</entry>
-						</row>
-						<row>
-							<entry>withId()</entry>
-							<entry>Similar to withText but searches for the ID</entry>
-						</row>
-						<row>
-							<entry>Hamcrest Matchers</entry>
-							<entry>
-								You can use Hamcrest matchers, e.g.,
-								`containsString`
-								or
-								`instanceOf()`
-								. It is also possible to combine matchers with
-								`allOf()`
-								. If you want to exclude views, use
-								`allOf()`
-								together with
-								`not())`
-								. Example
-								`onView(allOf(withId(R.id.button_login), not(withText("Logout "))));`
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+
+.Table Available ViewMatcher
+|===
+|ViewMatcher|Description
+
+|withText("SOMETEXT")
+|Searches for a view with the specified text, for example onView(withText("User")) searches for a view with the text "User".
+
+|withId()
+|Similar to withText but searches for the ID
+
+|Hamcrest Matchers
+|You can use Hamcrest matchers, e.g., `containsString` or `instanceOf()`. 
+It is also possible to combine matchers with `allOf()`. 
+If you want to exclude views, use `allOf()` together with `not())`. 
+Example: `onView(allOf(withId(R.id.button_login), not(withText("Logout "))));`
+
+|===
 		
 [[espresso_usageintroduction_viewaction]]
 === Performing Actions
@@ -68,10 +46,10 @@ The following table describes the available matchers.
 `ViewInteraction` and `DataInteraction` allow to specify an action for test via an object of type `ViewAction` via the `perform` method.
 The `ViewActions` class provides helper methods for the most common actions, like:
 
-* ViewActions.click
-* ViewActions.typeText()
-* ViewActions.pressKey()
-* ViewActions.clearText()
+* `ViewActions.click`
+* `ViewActions.typeText()`
+* `ViewActions.pressKey()`
+* `ViewActions.clearText()`
 		
 The `perform` method returns again an object of type `ViewInteraction` on which you can perform more actions or validate the result. 
 It also uses varags as argument, i.e, you can pass several actions at the same time to it.
@@ -90,10 +68,12 @@ The `ViewAssertions` class provides helper methods for creating these objects.
 		
 Via the `InstrumentationRegistry.getTargetContext()` you have access to the target context of your application. 
 For example, if you want to use the id without using R.id you can use the following helper method to determine it.
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/instrumentation/getId.java" />
-			</programlisting>
+
+
+[source,java]
+----
+include::res/instrumentation/getId.java[]
+----
 		
 [[espresso_usageintroduction_configurationstartintent]]
 === Configuring the start intent for the activity
@@ -102,7 +82,13 @@ If you specify `false` as third parameter in the `ActivityTestRule`, you can con
 This is as demonstrated in the following code example.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/intentconfig/SecondActivityTest.java" />
-			</programlisting>
+[source,java]
+----
+include::res/intentconfig/SecondActivityTest.java[]
+----
+			
+
+=== Espresso UI recorder
+
+Android Studio provides an menu:Run[Record Espresso Test] menu entry which allows you to record the interaction with your application and create a Espresso test from it.
+			

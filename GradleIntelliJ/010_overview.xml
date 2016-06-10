@@ -14,7 +14,7 @@
 		<title>Gradle projects view
 		
 			To activate the
-			<guilabel>Gradle projects</guilabel>
+			_Gradle projects_
 			view, select
 			<menuchoice>
 				<guimenu>View</guimenu>
@@ -39,7 +39,7 @@
 		<title>Executing Gradle tasks
 		
 			Double click on a task
-			<guilabel>Gradle projects</guilabel>
+			_Gradle projects_
 			view to run it.
 		
 	</section>
@@ -54,7 +54,7 @@
 				<guisubmenu>Close Project</guisubmenu>
 			</menuchoice>
 			and select the
-			<guilabel>Import Project</guilabel>
+			_Import Project_
 			entry. Afterwards follow the steps as demonstrates by the following screenshots.
 		
 

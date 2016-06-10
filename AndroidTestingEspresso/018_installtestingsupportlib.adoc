@@ -3,12 +3,5 @@
 	
 Use the _Android SDK manager_ to install the _Android Support Repository_.
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/androidsupportrepositoryinstall10.png"/>
-			</imageobject>
-			<textobject>
-				<phrase>Install Android Support Repository</phrase>
-			</textobject>
-		</mediaobject>
+image::androidsupportrepositoryinstall10.png[Install Android Support Repository]
 	

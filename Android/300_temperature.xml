@@ -161,7 +161,7 @@
 			directly in the XML file or via the
 			graphical editor.
 			A simple way of organizing the components is to drag and drop them onto the
-			<guilabel>Component Tree</guilabel>
+			_Component Tree_
 			view.
 		
 
@@ -290,7 +290,7 @@
 			.
 
 			Select
-			<guilabel>Color</guilabel>
+			_Color_
 			and
 			then select
 			<parameter>myColor</parameter>

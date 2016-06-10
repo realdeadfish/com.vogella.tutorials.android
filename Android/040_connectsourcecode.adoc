@@ -16,7 +16,7 @@
 			project, right-click on your
 			<filename>android.jar</filename>
 			in the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view
 			and
 			select
@@ -28,7 +28,7 @@
 		
 		
 			Select
-			<guilabel>External location</guilabel>
+			_External location_
 			and press the
 			<guibutton>External Folder...</guibutton>
 			button. Browse to the

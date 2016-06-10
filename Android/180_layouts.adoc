@@ -8,12 +8,14 @@ It is a subclass of `ViewGroup`.
 
 Android supports different default layout managers.
 		
-The most relevant layout managers in Android are
+The most relevant layout managers in Android are:
+
+* `ConstraintLayout - provided by an extra library`
 * `LinearLayout`
 * `FrameLayout`
 * `RelativeLayout`
 * `GridLayout`
-* `ConstraintLayout - provided by an extra library`
+
 
 [[layoutmanager_attributes]]
 === Layout attributes
@@ -35,26 +37,17 @@ The <parameter>match_parent</parameter> value tells the application to maximize 
 The <parameter>wrap_content</parameter> value tells the layout to allocate the minimum amount so that the widget is rendered correctly. 
 The effect of these elements is demonstrated in the following graphics.
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/layout_wrap_content.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Layout with wrap_content</phrase>
-				</textobject>
-			</mediaobject>
+image::layout_wrap_content.png[Layout with wrap_content]
 		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/layout_match_parent.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Layout with match_parent</phrase>
-				</textobject>
-			</mediaobject>
-		
+image::layout_match_parent.png[Layout with match_parent]
 
+[[layoutmanager_constraintlayout]]]
+=== Constraint layout
+
+Constraint layout is provided by an external library.
+It allows you to use a flat view hierarchy and has great performance.
+Also the design tools support constraint layout very well.
+New projects should prefer the usage of constraint layout.
 
 
 [[layoutmanager_framelayout]]]

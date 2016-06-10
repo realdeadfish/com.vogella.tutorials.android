@@ -10,7 +10,7 @@
 		<title>Create a new Android project
 		
 			Press the
-			<guilabel>Start a new Android Studio project</guilabel>
+			_Start a new Android Studio project_
 			link to get started. Alternatively you can select the
 			<menuchoice>
 				<guimenu>File</guimenu>
@@ -22,7 +22,7 @@
 		
 			Use the following data of input for your project. Project location and package name are derived from your input. If
 			you want another package name, press the small
-			<guilabel>Edit</guilabel>
+			_Edit_
 			hyperlink.
 
 			<table frame='all'>
@@ -114,7 +114,7 @@
 
 		
 			Afterwards select the
-			<guilabel>Empty Activity</guilabel>
+			_Empty Activity_
 			template.
 		
 

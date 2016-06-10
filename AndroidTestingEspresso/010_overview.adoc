@@ -2,7 +2,7 @@
 == The Espresso test framework
 	
 _Espresso_ is a testing framework for Android to make it easy to write reliable user interface tests for a single application.
-Google released the Espresso_ framework in Oct. 2013. 
+Google released the Espresso framework in Oct. 2013. 
 Since its 2.0 release Espresso is part of the Android Support Repository.
 	
 Espresso automatically synchronizes your test actions with the user interface of your application. 
@@ -12,16 +12,32 @@ It also let the test wait until all observed background activities have finished
 	
 Espresso has basically three components:
 
-* ViewMatchers - allows to find view in the current view hierarchy
-* ViewActions - allows to perform actions on the views
-* ViewAssertions - allows to assert state of a view
+* _ViewMatchers_ - allows to find view in the current view hierarchy
+* _ViewActions_ - allows to perform actions on the views
+* _ViewAssertions_ - allows to assert state of a view
+
+The case construct for Espresso tests is the following:
+
+.Base Espresso Test
+[source,java]
+----
+onView(Matcher)          #<1>
+ .perform(ViewAction)    #<2>
+   .check(ViewAssertion);#<3>
+----
+
+<1> - Finds the view
+<2> - Performs an action on the view
+<3> - Validates a assertioin 
+	
 	
 The following code demonstrates the usage of these three elements.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/espresso/demo.java" />
-		</programlisting>
+[source,java]
+----
+include::res/espresso/demo.java[]
+----
 	
 If Espresso does not find a view via the ViewMatchers, it includes the whole view hierarchy into the error message. 
 That is useful for analyzing the problem.

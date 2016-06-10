@@ -7,16 +7,15 @@ In this exercise, you start a second activity and validate that is has been star
 		
 === Write functional test for activities
 
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-		href="./examples/cross/TestSecondActivityIsStarted.java" />
-</programlisting>
-		
+[source,java]
+----
+include::res/cross/TestSecondActivityIsStarted.java[]
+----
+
 		
 To test the direct modification of a view, create the following test class for the `SecondActivity` class.
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-		href="./examples/activity/SecondActivityFunctionalTest.java" />
-</programlisting>
-		
+
+[source,java]
+----
+include::res/activity/SecondActivityFunctionalTest.java[]
+----

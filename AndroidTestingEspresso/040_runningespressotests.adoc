@@ -4,30 +4,15 @@
 [[espresso_runningespressotests_androidstudio]]
 === Individual via Android Studio
 		
-Ensure to select <parameter>Android Instrumentation Tests</parameter> in your <guilabel>Build Variant</guilabel> view and right-click on your test and select <guilabel>Run</guilabel>.
-		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/runUnitTestInAndroidStudio10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Run Espresso tests in Android Studio</phrase>
-				</textobject>
-			</mediaobject>
+Ensure to select <parameter>Android Instrumentation Tests</parameter> in your_Build Variant_ view and right-click on your test and select_Run_.
+
+image::runUnitTestInAndroidStudio10.png[Run Espresso tests in Android Studio]
 		
 [[espresso_runningespressotests_gradle]]
 === Via Gradle
 		
 
 Use the <parameter>connectedCheck</parameter> task in Gradle to run the test directly via Gradle.
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudiogradleview.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Running Gradle tasks via Android Studio</phrase>
-				</textobject>
-			</mediaobject>
+
+image::androidstudiogradleview.png[Running Gradle tasks via Android Studio]
 		

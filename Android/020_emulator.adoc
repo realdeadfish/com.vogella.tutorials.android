@@ -234,9 +234,9 @@
 		<title>Speed optimization with GPU rendering
 		
 			During the creation of an emulator you can choose if you either want
-			<guilabel>Snapshot</guilabel>
+			_Snapshot_
 			or
-			<guilabel>Use Host GPU</guilabel>
+			_Use Host GPU_
 			enabled.
 
 		
@@ -250,11 +250,11 @@
 
 		
 			If you select the
-			<guilabel>Snapshot</guilabel>
+			_Snapshot_
 			option, the second time you start the device it is started very fast,
 			because the AVD stores its state if you close
 			it. If you select
-			<guilabel>Use Host GPU</guilabel>
+			_Use Host GPU_
 			the AVD uses the graphics card of your host computer directly which
 			makes the
 			rendering on the emulated device much
@@ -375,14 +375,14 @@
 		<title>Using a real Android device for testing
 		
 			Turn on
-			<guilabel>USB Debugging</guilabel>
+			_USB Debugging_
 			on your device in the settings. Select
 			<menuchoice>
 				<guimenu>Settings</guimenu>
 				<guisubmenu>Development Options</guisubmenu>
 			</menuchoice>
 			, then enable the
-			<guilabel>USB-Debugging</guilabel>
+			_USB-Debugging_
 			option.
 		
 		

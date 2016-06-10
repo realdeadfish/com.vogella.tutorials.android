@@ -138,7 +138,7 @@
 
 		
 			Once you reach the last page, press the
-			<guilabel>Finish</guilabel>
+			_Finish_
 			button.
 		
 		
