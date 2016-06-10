@@ -2,9 +2,12 @@
 == Writing Espresso unit tests
 
 [[espresso_usageintroduction_staticimports]]
-=== Static imports
+=== Location of Espresso tests and required static imports
 
-Espresso can be used with static imports to access methods without the class prefix. 
+Espresso tests must be placed in the _app/src/androidTest_ folder.
+
+To simplify the usage of the  Espresso API it is recommended to add the following static imports.
+This allows to access these methods without the class prefix. 
 
 [source,java]
 ----
@@ -59,7 +62,8 @@ It also uses varags as argument, i.e, you can pass several actions at the same t
 		
 Call the `ViewInteraction.check()` method to assert a view state. 
 This method expects a `ViewAssertion` object as input. 
-The `ViewAssertions` class provides helper methods for creating these objects.
+The `ViewAssertions` class provides helper methods for creating these objects:
+
 * matches - Hamcrest matcher
 * doesNotExist - asserts that the select view does not exist
 
@@ -86,7 +90,6 @@ This is as demonstrated in the following code example.
 ----
 include::res/intentconfig/SecondActivityTest.java[]
 ----
-			
 
 === Espresso UI recorder
 

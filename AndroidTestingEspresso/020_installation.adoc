@@ -12,7 +12,7 @@ include::res/install/build.gradle[]
 ----
 
 	
-You must also specify the `AndroidJUnitRunner` as value for the <parameter>testInstrumentationRunner</parameter> parameter in the build.gradle file of your app. 
+You must also specify the `AndroidJUnitRunner` as value for the `testInstrumentationRunner` parameter in the build file of your app. 
 The following listing is an example for that.
 
 		
@@ -23,6 +23,3 @@ include::res/install/androidjunitrunner.java[]
 
 It is also recommended to turn of the animation on the Android device which is used for testing. 
 
-=== Location of your tests
-		
-Espresso tests must be located by default in the <filename>app/src/androidTest</filename> folder.

@@ -4,14 +4,15 @@
 Create an project with the package called `testing.android.vogella.com.asynctask` which allows to trigger an AsyncTask via a button.
 		
 The example code for the activity:
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/async/MainActivity.java" />
-</programlisting>
 
+[source,java]
+----
+include::res/async/MainActivity.java[]
+----
 
 The example code for the test:
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/async/AsyncTaskTester.java" />
-</programlisting>
+
+[source,java]
+----
+include::res/async/AsyncTaskTester.java[]
+----	

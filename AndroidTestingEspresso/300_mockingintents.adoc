@@ -1,5 +1,5 @@
 [[espresso_mockingintents]]
-==Mocking intents with Espresso Intents
+== Mocking intents with Espresso Intents
 
 Espresso provides also the option to mock intents. 
 This allows you to check if an activity has issued the correct intents and reacts correct if it receives the correct intent results.
@@ -17,8 +17,8 @@ If you want to use Espresso intent in your Espresso tests, use the `IntentsTestR
 
 [source,java]
 ----
-include::res/intents/TestIntent.javaintents/build.gradle[]
+include::res/intents/TestIntent.java[]
 ----
 
 	
-For more information see ttps://code.google.com/p/android-test-kit/wiki/EspressoIntentsSetupInstructions.
+For more information see https://code.google.com/p/android-test-kit/wiki/EspressoIntentsSetupInstructions.

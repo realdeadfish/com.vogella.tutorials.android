@@ -4,7 +4,7 @@ import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 
-// more code
+// image more code here...
 
 // test statement
 onView(withId(R.id.my_view))            // withId(R.id.my_view) is a ViewMatcher

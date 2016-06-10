@@ -7,14 +7,14 @@
 Create a new Android project called _Espresso First_ with the package name _com.vogella.android.espressofirst_. 
 Use the _Blank Template_ as basis for this project.
 		
-Change the generated <filename>activity_main.xml</filename> layout file to the following.
+Change the generated _activity_main.xml_ layout file to the following.
 		
 [source,xml]
 ----
 include::res/simple/activity_main.xml[]
 ----
 		
-Create a new file called <filename>activity_second.xml</filename>.
+Create a new file called _activity_second.xml_.
 		
 [source,xml]
 ----
@@ -39,8 +39,8 @@ include::res/simple/MainActivity.java[]
 [[espresso_exercisesimple2]]
 === Adjust the app build.gradle
 		
-Add the AndroidJUnitRunner as value for the <parameter>testInstrumentationRunner</parameter> parameter. 
-Also add the corresponding entry in the <filename>app/build.gradle</filename> file.
+Add the AndroidJUnitRunner as value for the `testInstrumentationRunner` parameter. 
+Also add the corresponding entry in the _app/build.gradle_ file.
 
 [source,java]
 ----
@@ -58,7 +58,5 @@ include::res/simple/MainActivityEspressoTest.java[]
 [[espresso_exercisesimple4]]
 === Run your test
 
-		
-Ensure that you have selected_Android Instrumentation Tests_ in the_Build Variants_.
 Run your tests via your IDE or directly via Gradle. 
 See <<espresso_runningespressotests>> for details.
