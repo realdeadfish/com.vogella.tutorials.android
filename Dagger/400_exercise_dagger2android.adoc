@@ -17,37 +17,25 @@ Adjust the layout file of the generated activity.
 
 [source,xml]
 ----
-include::res/
+include::res/android/activity_main.xml[]
 ----
-	<programlisting language="xml">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/activity_main.xml" />
-	</programlisting>
 	
 [[exercise_androiddagger_gradle]]
 === Enter Gradle dependencies
 
 Add the following entries to your _build.gradle_ project file.
 
-[source,xml]
+[source,java]
 ----
-include::res/
+include::res//android/build.gradle[]
 ----
 	
-	<programlisting language="json">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/build.gradle" />
-	</programlisting>
-
-
 Add the following entries to your _app/build.gradle_ file.
 
-[source,xml]
+[source,java]
 ----
-include::res/
+include::res/android/appbuild.gradle[]
 ----
-
-	<programlisting language="json">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/appbuild.gradle" />
-	</programlisting>
 
 [[exercise_androiddagger_di]]
 === Define your dependencies graph
@@ -56,30 +44,18 @@ Create the following classes for providing dependencies and wiring them up.
 
 [source,xml]
 ----
-include::res/
+include::res/android/NetworkApi.java[]
 ----
-	
-	<programlisting language="java">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/NetworkApi.java" />
-	</programlisting>
 
 [source,xml]
 ----
-include::res/
+include::res/android/NetworkApiModule.java[]
 ----
-
-	<programlisting language="java">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/NetworkApiModule.java" />
-	</programlisting>
 
 [source,xml]
 ----
-include::res/
+include::res/android/DiComponent.java[]
 ----
-
-	<programlisting language="java">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/DiComponent.java" />
-	</programlisting>
 
 [[exercise_androiddagger_using]]
 === Wiring up the application
@@ -87,33 +63,21 @@ include::res/
 Create the following implementation for your `Application` class. 
 This class builds up the dependency injection context and gives access to it, via the `getComponent` method.
 
-[source,xml]
+[source,java]
 ----
-include::res/
+include::res/android/MyApplication.java[]
 ----
-
-	<programlisting language="java">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/MyApplication.java" />
-	</programlisting>
-
 
 Of course this class needs to registered via the manifest. 
 
 [source,xml]
 ----
-include::res/
+include::res/android/AndroidManifest.xml[]
 ----
-
-	<programlisting language="xml">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/android/AndroidManifest.xml" />
-	</programlisting>
-
-
-
 
 The activity injects the created values into it via the method defined on the @Component class.  
 
-[source,xml]
+[source,java]
 ----
 include::res/android/MainActivity.java[]
 ----
@@ -125,11 +89,4 @@ Run your application, the user interface should report that dependency injection
 If not, have a look at the generated classes in the _app/build/generated/apt_ folder. 
 The generated classes by Dagger are well structured and should give a hint what went wrong.
 
-	<mediaobject>
-<imageobject>
-	<imagedata fileref="images/androiddaggervalidateresult.png"/>
-</imageobject>
-<textobject>
-	<phrase>Running application</phrase>
-</textobject>
-	</mediaobject>
+image::androiddaggervalidateresult.png[Running application]

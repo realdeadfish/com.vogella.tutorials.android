@@ -13,7 +13,6 @@ This article describes the usage of Dagger 2 within standard Java applications a
 include::008_whatisdi.adoc[]
 include::010_overview.adoc[]
 include::060_dagger2example.adoc[]
-include::080_dagger2fieldinjection.adoc[]
 include::200_dagger2android.adoc[]
 include::400_exercise_dagger2android.adoc[]
 include::600_tests.adoc[]

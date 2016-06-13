@@ -64,6 +64,9 @@ Dagger 2 uses this interface to generate the accessor class which provides the m
 include::res/maven/MyComponent.java[]
 ----		
 
+<1> Method which allows injecting into `BackendServer` for the fields
+
+
 [[exercise_daggerintro_uses]]
 === Use the generated dagger code
 
@@ -72,4 +75,6 @@ The usage of the generated code is demonstrated by the following test class.
 [source,java]
 ----
 include::res/maven/Main.java[]
-----		
+----	
+
+<1> Fields are not automatically injected hence the method call to inject the fields

@@ -67,7 +67,13 @@ This interface is used by Dagger 2 to generate code which uses the modules to fu
 
 === Scope annotations
 You can use the `@Singleton` annotation to indicate that there should be only one instance of the object.
- 
+
+=== Special treatment of fields in Dagger
+        
+Dagger 2 does not inject fields automatically. 
+It can also not inject private fields. 
+If you want to use field injection you have to define a method in your `@Component` interface which takes the instance into which you want to inject as parameter.
+
 
 === Using Dagger 2 with Eclipse and Maven
 

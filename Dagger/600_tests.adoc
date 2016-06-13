@@ -7,25 +7,16 @@ You can use the Dagger build to replace the generated class with the one which s
 	
 This works also well with Mockito. Assume you have the following class you want to test.
 
-[source,xml]
+[source,java]
 ----
-include::res/
+include::res/mockito/ImportantClass.txt[]
 ----
 
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/mockito/ImportantClass.txt" />
-		</programlisting>
-	
 You can test this class with Mockito.
 
-[source,xml]
+[source,java]
 ----
-include::res/
+include::res/mockito/Tester.txt[]
 ----
-	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/mockito/Tester.txt" />
-		</programlisting>
-	
 	
 Better support for replacing Dagger dependencies is offered by https://github.com/fabioCollini/DaggerMock.
