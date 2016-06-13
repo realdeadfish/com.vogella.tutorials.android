@@ -24,6 +24,7 @@ public class BackEndServiceModule {
        return "http://www.vogella.com";
     }
     
+    
     @Provides
     @Named("anotherUrl")
     String provideAnotherUrl() {

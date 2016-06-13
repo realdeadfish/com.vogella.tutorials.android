@@ -1,13 +1,16 @@
 [[exercise_daggerintro]]
 == Exercise: Dependency injection with Dagger 2
 
-=== Create example project for the usage of Dagger 2
-		
-In this example we will demonstrate the usage of Dagger in a standard Java program managed by Maven.
+=== Target of this exercise
+
+In this example you use Dagger 2 in a standard Java program managed by Maven.
+
 This exercise can be done via any Java IDE you like, for example the Eclipse IDE with the Maven tooling installed.
 Or it can  be developed and compiled via a text editor and the Maven command line. 
-If you use Eclipse ensure to install the Maven tooling for it.
+If you use Eclipse, ensure to install the http://www.vogella.com/tutorials/EclipseMaven/article.html[Eclipse Maven tooling].
 
+=== Create example project for the usage of Dagger 2
+		
 Create a new Maven project with the `com.vogella.java.dagger2` top level package.
 		
 === Define or adjust Maven build file 

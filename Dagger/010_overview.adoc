@@ -5,28 +5,42 @@
 (((Dependency injection, Dagger 2)))
 (((Dagger)))
 		
-Dagger 2 is dependency injection framework which uses code generation to create the code necessary for dependency injection. 
-This code is very similar to hand written code, which makes the code relatively easy to read and debug.
+Dagger 2 is dependency injection framework.
+It is based on the Java Specification Request (JSR) 330.
+It uses code generation and is based on annotations.
+The generated code is very relatively easy to read and debug.
 		
-Dagger 2 is based on JSR 330.
-It uses the `@Inject` annotation to express a dependency (a constructor, a field, or a method).
-In Dagger it is not allowed use use private fields for  field injection as Dagger 2 uses generated code to access the fields and not reflection.
+
+Dagger 2 uses the following annotations:
+
+* `@Module` and `@Provides`: define classes and methods which provide dependencies
+* `@Inject`: request dependencies. Can be used on a constructor, a field, or a method
+* `@Component`: enable selected modules and used for performing dependency injection  
+
+In Dagger it is not allowed to use private fields for  field injection as Dagger 2 uses generated code to access the fields and not reflection.
 		
-=== Defining the dependency injection context
+=== Defining dependency providers (object providers)
 		
 The term _dependency injection context_ is typically used to describe the set of objects which can be injected.
-In Dagger class annotated with `@Module` are responsible for that.
-		
-Such classes can define methods annotated with `@Provides` which can return created objects. 
-A model can provide several dependencies, i.e., methods annotated with `@Provides`.
+
+In Dagger 2, classes annotated with `@Module` are responsible for providing objects which can be injected.		
+Such classes can define methods annotated with `@Provides`. 
+The returned objects from these methods are available for dependency injection.
 		
 Methods annotated with `@Provides` can also express dependencies via method parameters. 
-These dependencies are fulfilled by Dagger 2.
-You can use the `@Singleton ` annotation to indicate that there should be only one instance of the object. 
-=== Wiring up the consumer and provider via the @Component annotation 
+These dependencies are fulfilled by Dagger 2, if possible.
+
+=== Defining dependencies (object consumers)
+
+You use the `@Inject` annotation to define a dependency. 
+If you annotate a constructor with `@Inject`, Dagger 2 can also use an instance of this object to fulfill dependencies.
+This was done to avoid the definition of lots of `@Provides` methods for these objects.
+
+=== Connecting consumers and providers
 		
 The `@Component` is used on an interface.
-Such an interface is used by Dagger 2 to generate code, the base pattern is that is adds the `Dagger` prefix to the interface name. 
+Such an interface is used by Dagger 2 to generate code.
+The base pattern for the generated class is that `Dagger` is used as prefix followed by the interface name. 
 This generate class has a `create` method which allows configuring the objects based on the given configuration. 
 The methods defined on the interface are available to access the generated objects.
 	
@@ -51,13 +65,20 @@ The following table gives an overview of the usage of the Dagger annotations.
 This interface is used by Dagger 2 to generate code which uses the modules to fulfill the requested dependencies.
 |===
 
+=== Scope annotations
+You can use the `@Singleton` annotation to indicate that there should be only one instance of the object.
+ 
+
 === Using Dagger 2 with Eclipse and Maven
 
 To use Eclipse and Maven together with Dagger 2 you can install the Maven tooling and the apt plug-in which allows Maven to configure the annotation processors. 
 For Eclipse Maven support use the update site of your release and afterwards install the m2e-apt tooling via the
 http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt update site.
 		
-After the installation you can turn apt-processing on via the Eclipse preferences.
+After the installation you must enable apt-processing on via the Eclipse preferences in menu:Window[Preferences>Maven>Annotation Processing]. 
+Select _Automatically configure JDT APT_.
 
 image::mavenaptprocessing.png[Maven apt processing configuration]
-		
+
+
+

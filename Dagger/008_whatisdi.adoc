@@ -1,3 +1,3 @@
 == Introduction to the concept of dependency injection
 
-See http://www.vogella.com/tutorials/DependencyInjection/article.html  for an introduction into the concept of dependency injection.
+See http://www.vogella.com/tutorials/DependencyInjection/article.html[Dependency Injection] for an introduction into the concept of dependency injection.

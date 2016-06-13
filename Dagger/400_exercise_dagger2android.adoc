@@ -26,7 +26,7 @@ include::res/
 [[exercise_androiddagger_gradle]]
 === Enter Gradle dependencies
 
-Add the following entries to your <filename>build.gradle</filename> project file.
+Add the following entries to your _build.gradle_ project file.
 
 [source,xml]
 ----
@@ -38,7 +38,7 @@ include::res/
 	</programlisting>
 
 
-Add the following entries to your <filename>app/build.gradle</filename> file.
+Add the following entries to your _app/build.gradle_ file.
 
 [source,xml]
 ----
@@ -122,7 +122,7 @@ include::res/android/MainActivity.java[]
 === Validate
 
 Run your application, the user interface should report that dependency injection worked. 
-If not, have a look at the generated classes in the <filename>app/build/generated/apt</filename> folder. 
+If not, have a look at the generated classes in the _app/build/generated/apt_ folder. 
 The generated classes by Dagger are well structured and should give a hint what went wrong.
 
 	<mediaobject>

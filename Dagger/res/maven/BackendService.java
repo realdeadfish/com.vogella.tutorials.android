@@ -3,14 +3,20 @@ package com.vogella.java.dagger2;
 import javax.inject.Inject;
 
 public class BackendService {
-	private User user;
 	
-	public BackendService(User user) {
-		this.user = user;
+	@Inject
+	public User user;
+	
+	private String serverUrl;
+	
+	@Inject
+	public BackendService(String serverUrl) {
+		this.serverUrl = serverUrl;
 	}
 	
 	public boolean callServer() {
-		if (user !=null) {
+		if (user !=null && serverUrl!=null && serverUrl.length()>0) {
+			System.out.println("User: " + user + " ServerUrl: "  + serverUrl);
 			return true;
 		}
 		return false;
