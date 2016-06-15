@@ -1,0 +1,71 @@
+== Gradle for building Android applications
+	
+=== Overview
+The build process of Android projects is handled by the Gradle
+build system. If you create a new project in
+Android studio, the Gradle build
+scripts are automatically created. Android studio
+wraps the Gradle
+runtime, hence no additional installation is required.
+
+	
+The Gradle build system is designed to support complex scenarios in creating Android applications:
+
+* Multi-distribution: the same application must be customized for several clients or companies
+* Multi-apk: supporting the creation of multiple apk for different device types while reusing parts of the code
+	
+	
+You can also use a wrapper script created by Gradle. 
+This wrapper  allows you to run a Gradle build without any additional installation from the command line.
+
+
+=== Using Android Studio
+
+Android Studio wraps the Gradle build.
+If you press the run button in Android Studio, it triggers the corresponding Gradle task and starts the application.
+
+
+=== Using Gradle to build Android applications
+	
+You can start  your Gradle build for your Android application via the command line.
+For this execute the following command from the main project directory. 
+This requires that Gradle is installed on the machine or that you use the Gradle wrapper (gradlew) to execute the build.
+The wrapper downloads Gradle if necessary.
+
+[source,shell]
+....
+include::res/gradle/runBuild.sh[]
+....
+
+This command creates in the _build_ folder the output of the Gradle build. 
+By default, the Gradle build creates two _.apk_ files in the _build/outputs/apk_ folder.
+	
+To build and start your unit tests on the JVM use the following command.
+
+[source,shell]
+....
+include::res/gradle/runTests.sh[]
+....	
+	
+To build and start your instrumented tests on your Android device use the following command.
+
+[source,shell]
+....
+include::res/gradle/runInstrumentedTests.txt[]
+....	
+
+[[building_gradle_minify]]
+=== Removing unused resources and Java classes via resource shrinking
+	
+The Gradle build system for Android supports resource shrinking at build time. 
+This automatically removes resources that are unused from the packaged application.
+In addition to that, this also removes unnecessary resources from libraries you are depending on.
+This can hugely reduce the size of your application.
+
+To enable resource shrinking, update your build file similar to the following snippet.
+
+[source,java]
+....
+include::res/minify/build.gradle[]
+....
+

@@ -1,0 +1,7 @@
+<!-- should be located in /app/src/paid/res/values/strings.xml -->
+<resources>
+    <string name="app_name">GradleExamples</string>
+
+    <string name="hello_world">Paid World! </string>
+    <string name="action_settings">Settings</string>
+</resources>

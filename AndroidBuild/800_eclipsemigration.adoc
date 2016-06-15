@@ -1,0 +1,23 @@
+== Migrating an Android project created with Eclipse to Gradle
+
+=== Importing an Eclipse based Android project into Android Studio
+	
+Android projects come in two different configurations.
+Fhe first set of projects uses the legacy project structure used by the Eclipse ADT tooling which was used until 2013. 
+The second set of project uses the new Gradle build structure.
+Gradle can be configured to support both formats, the Eclipse project structure and the Gradle project structure.
+		
+Once you added a valid Gradle file to your Eclipse based Android
+project you can import it into Android Studio, via menu:File[Import Project] and by selecting the project folder with the Gradle build file.
+	
+=== Adding a Gradle file for your Eclipse based Android project
+	
+		
+To enable a Gradle build for your Eclipse based Android project addthe following _build.gradle_ to the root of your project.
+
+[source,java]
+....
+include::res/gradle/build.gradle[]
+....
+	
+

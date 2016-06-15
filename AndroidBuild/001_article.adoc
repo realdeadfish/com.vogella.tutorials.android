@@ -1,0 +1,23 @@
+= Building Android applications with Gradle - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, Simon Scholz (c) 2012, 2016 vogella GmbH
+Version 2.0, 18.04.2016
+
+[abstract]
+This tutorial describes the usage of the Gradle build system for building Android applications.
+It includes the information how to configure build flavors.
+				
+include::010_overview.adoc[]
+include::330_androidgradle_flavors.adoc[]
+include::350_androidgradle_flavors_exercise.adoc[]
+include::800_eclipsemigration.adoc[]
+
+
+
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
