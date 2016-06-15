@@ -1,11 +1,11 @@
 [[schedulestasks_jobscheduler]]
-== Using the JobScheduler to schedule background jobs</title>
+== Using the JobScheduler to schedule background jobs_
 
-=== The job scheduler API</title>
+=== The job scheduler API_
 (((JobScheduler)))
 
 
-The Android 5.0 Lollipop (API 21) release introduces a job scheduler API via the <code>JobScheduler</code> class.
+The Android 5.0 Lollipop (API 21) release introduces a job scheduler API via the `JobScheduler` class.
 This API allows to batch jobs when the device has more resources available. 
 In general this API can be used to schedule everything that is not time critical for the user.
 
@@ -22,10 +22,10 @@ Here are example when you would use this job scheduler:
 * Tasks that should be running on a regular basis as batch where the timing is not critical
 
 === Create a Job
-A unit of work is encapsulated by a <code>JobInfo</code> object. 
+A unit of work is encapsulated by a `JobInfo` object. 
 This object specifies the scheduling criteria.
 The job scheduler is aware if the device is in idle model and if network activity is at the moment possible.
-Use the <code>JobInfo.Builder</code> class to configure how the scheduled task should run. 
+Use the `JobInfo.Builder` class to configure how the scheduled task should run. 
 You can schedule the task to run under specific conditions, such as:
 
 * Device is charging
@@ -39,6 +39,6 @@ These constraints can be combined.
 For example, you can schedule a job every 20 minutes, whenever the device is connected to an unmetered network.
 Deadline is a hard constraint, if that expires the job is always scheduled.
 
-To implement a Job, extend the <code>JobService</code> class and implement the <code>onStartJob</code> and <code>onStopJob</code>. 
-If the job fails for some reason, return true from on the <code>onStopJob</code> to restart the job. 
-The <code>onStartJob</code> is performed in the main thread, if you start asynchronous processing in this method, return true otherwise false.
+To implement a Job, extend the `JobService` class and implement the `onStartJob` and `onStopJob`. 
+If the job fails for some reason, return true from on the `onStopJob` to restart the job. 
+The `onStartJob` is performed in the main thread, if you start asynchronous processing in this method, return true otherwise false.

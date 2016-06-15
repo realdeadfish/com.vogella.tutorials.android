@@ -11,10 +11,10 @@
 		
 		
 			To connect the sources with the
-			<filename>android.jar</filename>
+			_android.jar_
 			file in your Android
 			project, right-click on your
-			<filename>android.jar</filename>
+			_android.jar_
 			in the
 			_Package Explorer_
 			view
@@ -33,7 +33,7 @@
 			<guibutton>External Folder...</guibutton>
 			button. Browse to the
 			<filename class="directory">path_to_android_sdk/sources/android-xx
-			</filename>
+			_
 			location and press the
 			<guibutton>OK</guibutton>
 			button.

@@ -91,16 +91,16 @@ converts Java
 class
 files
 into a
-<filename>.dex</filename>
+_.dex_
 (Dalvik Executable)
 file. All class files of the application are
 placed in this
-<filename>.dex</filename>
+_.dex_
 file. During this conversion process
 redundant
 information in the class
 files are optimized in the
-<filename>.dex</filename>
+_.dex_
 file.
 		
 		
@@ -109,7 +109,7 @@ For example, if the same
 is found in different class
 files,
 the
-<filename>.dex</filename>
+_.dex_
 file
 contains only one reference of this
 `String`
@@ -117,7 +117,7 @@ contains only one reference of this
 		
 		
 These
-<filename>.dex</filename>
+_.dex_
 files are therefore
 much smaller in size
 than the
@@ -127,19 +127,19 @@ files.
 		
 		
 The
-<filename>.dex</filename>
+_.dex_
 file and the resources of an Android project, e.g., the
 images and
 XML
 files, are packed into an
-<filename>.apk</filename>
+_.apk_
 (Android Package)
 file. The program
 _aapt_
 (Android Asset Packaging Tool) performs this step.
 		
 The resulting
-<filename>.apk</filename>
+_.apk_
 file contains all necessary data to run the
 Android application and
 can be deployed to an Android device via the

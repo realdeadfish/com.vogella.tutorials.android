@@ -127,17 +127,17 @@
 		
 			To fix this
 			problem, delete the
-			<filename>debug.keystore</filename>
+			_debug.keystore_
 			file. The
 			default
 			storage
 			location is in
-			<filename>~/.android/</filename>
+			_~/.android/_
 			on OS X and Linux,
 			in
-			<filename>C:\Documents andSettings\[username]\.android\</filename>
+			_C:\Documents andSettings\[username]\.android\_
 			on Windows XP, and in
-			<filename>C:\Users\[username]]\.android\</filename>
+			_C:\Users\[username]]\.android\_
 			on Windows Vista and Windows 7.
 		
 		The next time you
@@ -332,7 +332,7 @@
 			After the download you find the driver
 			in your Android installation
 			directory in the
-			<filename>extras/intel</filename>
+			_extras/intel_
 			folder. You need to install the drivers by running starting the
 			.exe
 			file.

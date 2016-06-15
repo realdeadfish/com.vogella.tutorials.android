@@ -1,53 +1,53 @@
 <section id="android_userinterfacetesting" role="wrapper">
-	<title>Cross-component blackbox user interface testing </title>
+	<title>Cross-component blackbox user interface testing _
 	<section id="android_userinterfacetesting1">
-		<title>Using UI Automator for cross component testing</title>
-		<para>Functional or black-box user interface testing does test the
+		<title>Using UI Automator for cross component testing_
+		Functional or black-box user interface testing does test the
 			complete application and not single components of
 			your application.
-		</para>
-		<para>
+		_
+		
 			The Android SDK contains the
-			<wordasword>uiautomator</wordasword>
+			_uiautomator_
 			Java library for creating user interface tests and provides an engine
 			to run these user interface tests. Both tools
 			require
 			Android 4.3 (API level 18) on the device that is used for testing.
-		</para>
-		<para>
+		_
+		
 			Androids uiautomator provides the
-			<code>UiDevice</code>
+			`UiDevice`
 			class to communicate with the device, the
-			<code>UiSelector</code>
+			`UiSelector`
 			class to search for elements on the screen and the
-			<code>UiObject</code>
+			`UiObject`
 			which presents user interface elements and is created based on the
-			<code>UiSelector</code>
+			`UiSelector`
 			class. The
-			<code>UiCollection</code>
+			`UiCollection`
 			class allows to select a number of user interface elements at the
 			same time and
-			<code>UiScrollable</code>
+			`UiScrollable`
 			allows to scroll in a view to find an element.
-		</para>
+		_
 	</section>
 	<section id="android_uiautomatorviewer">
-		<title>Accessing the view information with uiautomatorviewer</title>
-		<para>
+		<title>Accessing the view information with uiautomatorviewer_
+		
 			Android provides the
-			<wordasword>uiautomatorviewer</wordasword>
+			_uiautomatorviewer_
 			tool, which allows you to analyze the user interface of an
 			application. You can use this tool to find the index, text
 			or
 			attribute of the application.
-		</para>
-		<para>
+		_
+		
 			This tool allows non-programmers to analyze an application and
 			develop tests for it via the
-			<wordasword>uiautomator</wordasword>
+			_uiautomator_
 			library. It is depicted in the following screenshot.
-		</para>
-		<para>
+		_
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/uiautomatorviewer10.png"/>
@@ -56,10 +56,10 @@
 					<phrase>uiautomatorviewer in usage</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>To launch the uiautomatorviewer tool, switch on the command line to the android-sdk/tools/ directory and start
+		_
+		To launch the uiautomatorviewer tool, switch on the command line to the android-sdk/tools/ directory and start
 			the tool via uiautomatorviewer.
-		</para>
+		_
 	</section>
 
 </section>

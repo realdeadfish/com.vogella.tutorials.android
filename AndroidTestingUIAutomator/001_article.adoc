@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Cross component and blackbox testing of Android applications with the UI Automator framework - Tutorial</title>
+		<title>Cross component and blackbox testing of Android applications with the UI Automator framework - Tutorial_
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -16,15 +16,15 @@
 		</copyright>
 		<pubdate>10.09.2015</pubdate>
 		<releaseinfo>
-			<para>Version 2.1</para>
+			Version 2.1_
 
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Cross component Android testing with UI Automator</title>
-			<para> This tutorial describes how go backbox testing for Android applications including applications to which you do
+			<title>Cross component Android testing with UI Automator_
+			 This tutorial describes how go backbox testing for Android applications including applications to which you do
 				not have the source code.
-			</para>
+			_
 		</abstract>
 	</articleinfo>
 	
