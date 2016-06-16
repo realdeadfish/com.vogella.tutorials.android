@@ -6,7 +6,7 @@
 			You must also specify the
 			`AndroidJUnitRunner`
 			as value for the
-			<parameter>testInstrumentationRunner</parameter>
+			`testInstrumentationRunner`
 			parameter in the build.gradle file of your app. The following listing is an example for that.
 		_
 
