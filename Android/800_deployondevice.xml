@@ -20,7 +20,7 @@
 			The application can define via a <![CDATA[<uses-feature> ]]>
 			declaration in the manifest file define which hardware of software
 			features is requires. Via the
-			<parameter>android:required</parameter>
+			`android:required`
 			property the application can define if such a feature is required for
 			the application to work correctly (true) or if
 			application prefers to
@@ -91,7 +91,7 @@
 			Android also allows to install applications directly. Just click
 			on a
 			link which points to an
-			<filename>.apk</filename>
+			_.apk_
 			file, e.g., in an email attachment
 			or on a webpage. Android will
 			prompt you if you want to install this

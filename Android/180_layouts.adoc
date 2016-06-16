@@ -31,10 +31,10 @@ Children can specify their desired width and height via the following attributes
 		
 Views can define their size. 
 This can be done in units of measurement or via pre-defined layout values.
-For example, as <parameter>100dp</parameter>. 
+For example, as `100dp`. 
 		
-The <parameter>match_parent</parameter> value tells the application to maximize the widget in its parent. 
-The <parameter>wrap_content</parameter> value tells the layout to allocate the minimum amount so that the widget is rendered correctly. 
+The `match_parent` value tells the application to maximize the widget in its parent. 
+The `wrap_content` value tells the layout to allocate the minimum amount so that the widget is rendered correctly. 
 The effect of these elements is demonstrated in the following graphics.
 		
 image::layout_wrap_content.png[Layout with wrap_content]
@@ -74,11 +74,11 @@ The following screenshot shows the Gmail application which uses `FrameLayout` to
 		
 `LinearLayout` puts all its child elements into a single column or row depending on the `android:orientation` attribute. 
 Possible values for this attribute are
-			<parameter>horizontal</parameter>
+			`horizontal`
 			and
-			<parameter>vertical</parameter>
+			`vertical`
 			while
-			<parameter>horizontal</parameter>
+			`horizontal`
 			is the default value.
 		
 
@@ -116,14 +116,14 @@ Possible values for this attribute are
 		
 			`LinearLayout`
 			supports assigning a weight to individual children via the
-			<parameter>android:layout_weight</parameter>
+			`android:layout_weight`
 			layout parameter. This value specifies how much of the extra space in
 			the layout is allocated to the corresponding
 			view. If, for example, you have two widgets and the first one defines a
-			<parameter>layout_weight</parameter>
+			`layout_weight`
 			of 1 and the second of 2, the first will get 1/3 of the available
 			space and the other one 2/3. You can also set the
-			<parameter>layout_width</parameter>
+			`layout_width`
 			to
 			zero to always have a certain ratio.
 		
@@ -239,7 +239,7 @@ If the child view is too large, scroll view allows scrolling the content.
 
 		
 			The
-			<parameter>android:fillViewport="true"</parameter>
+			`android:fillViewport="true"`
 			attribute ensures that the
 			scrollview is set to the full screen even
 			if the elements are smaller

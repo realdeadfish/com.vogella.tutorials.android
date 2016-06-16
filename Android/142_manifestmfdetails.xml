@@ -5,7 +5,7 @@
 		<title>Version and package
 		
 			The
-			<parameter>package</parameter>
+			`package`
 			attribute defines the base package for the
 			Java objects referred to in
 			this file. If a Java object lies within a
@@ -32,17 +32,17 @@
 			applications.
 		
 		
-			<parameter>android:versionName</parameter>
+			`android:versionName`
 			and
-			<parameter>android:versionCode</parameter>
+			`android:versionCode`
 			specify the
 			version of your application.
-			<parameter>versionName</parameter>
+			`versionName`
 			is what the user sees and
 			can be any string.
 		
 		
-			<parameter>versionCode</parameter>
+			`versionCode`
 			must be an integer. The Android
 			Market determines
 			whether it should
@@ -71,7 +71,7 @@
 		<title>Application and components
 		
 			The
-			<parameter><![CDATA[ <application> ]]></parameter>
+			`<![CDATA[ <application> ]]>`
 			section allows to define metadata for your application and optionally
 			define an explicit application class. It is also
 			a container for
@@ -79,15 +79,15 @@
 		
 		
 			The
-			<parameter><![CDATA[ <activity> ]]></parameter>
+			`<![CDATA[ <activity> ]]>`
 			tag
 			defines an
 			activity component. The
-			<parameter>name</parameter>
+			`name`
 			attribute points to class, which (if not fully qualified) is
 			relative
 			to the package defined in the
-			<parameter>package</parameter>
+			`package`
 			attribute.
 		
 		
@@ -99,10 +99,10 @@
 			application and made available in the launcher of the Android system.
 
 			The action defines that it (
-			<parameter>android:name="android.intent.action.MAIN"
-			</parameter>
+			`android:name="android.intent.action.MAIN"
+			`
 			) can be started and the
-			<parameter><![CDATA[ category android:name="android.intent.category.LAUNCHER"]]></parameter>
+			`<![CDATA[ category android:name="android.intent.category.LAUNCHER"]]>`
 			parameter tells the Android system to add the activity to the
 			launcher.
 		
@@ -127,7 +127,7 @@
 		
 		
 			Similar to the
-			<parameter><![CDATA[ <activity> ]]></parameter>
+			`<![CDATA[ <activity> ]]>`
 			tag, you can use the service, receiver and provider to declare other
 			Android components.
 		
@@ -137,11 +137,11 @@
 		<title>Minimum and target SDK
 		
 			The
-			<parameter>uses-sdk</parameter>
+			`uses-sdk`
 			section in the manifest allows you to specify the
-			<parameter>minSdkVersion</parameter>
+			`minSdkVersion`
 			and
-			<parameter>targetSdkVersion</parameter>
+			`targetSdkVersion`
 			version of your application.
 
 			<table frame='all'>
@@ -205,9 +205,9 @@
 		
 		
 			Your application can declare permissions with the
-			<parameter><![CDATA[ <permission> ]]></parameter>
+			`<![CDATA[ <permission> ]]>`
 			tag and declare that it required a permision with the
-			<parameter><![CDATA[ <uses-permission> ]]></parameter>
+			`<![CDATA[ <uses-permission> ]]>`
 			tag.
 		
 		Certain permissions, like network access, are granted automatically on Android 6.0 or higher systems. Other
@@ -218,7 +218,7 @@
 		<title>Required device configuration
 		
 			The
-			<parameter>uses-configuration</parameter>
+			`uses-configuration`
 			section in the manifest allows you to specify required input methods
 			for your device. For example, the following
 			snippet would
@@ -233,7 +233,7 @@
 		
 		
 			The
-			<parameter>uses-feature</parameter>
+			`uses-feature`
 			section allows you to specify the required hardware configuration
 			for your
 			device. For example, the following snippet
@@ -255,13 +255,13 @@
 		<title>Installation location
 		
 			Via the
-			<parameter>installLocation</parameter>
+			`installLocation`
 			attribute of your application you can specify if your application can
 			be installed on the external storage of the
 			device. Use
-			<parameter>auto</parameter>
+			`auto`
 			or
-			<parameter>preferExternal</parameter>
+			`preferExternal`
 			to permit this.
 		
 		

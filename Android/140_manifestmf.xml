@@ -5,7 +5,7 @@
 		
 			The components, settings and metadata of an Android application are described
 			in the
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file. This file is known as the
 			_manifest file_
 			or the

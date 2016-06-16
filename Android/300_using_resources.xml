@@ -51,7 +51,7 @@
 		
 			In an activity you can use the
 			`findViewById(id)`
-			method call to search for a view in the current layout. The <parameter>id</parameter> is the
+			method call to search for a view in the current layout. The `id` is the
 			ID attribute of the view in the layout. The usage of this method is
 			demonstrated by the following code.
 		

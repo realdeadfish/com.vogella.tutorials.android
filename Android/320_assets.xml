@@ -4,14 +4,14 @@
 		<title>Whats are assets?
 		
 			While the
-			<filename class="directory">res</filename>
+			<filename class="directory">res_
 			directory
 			contains structured values which
 			are
 			known to the
 			Android
 			platform, the
-			<filename class="directory">assets</filename>
+			<filename class="directory">assets_
 			directory
 			can be used
 			to
@@ -21,15 +21,15 @@
 		
 		
 			You can access files stored in this folder based on their path. The
-			<filename class="directory">assets</filename>
+			<filename class="directory">assets_
 			directory also allows you to have sub-folders.
 		
 		<note>
 			
 				You could also store unstructured data in the
-				<filename class="directory">/res/raw</filename>
+				<filename class="directory">/res/raw_
 				folder, but it is considered good practice to use the
-				<filename class="directory">assets</filename>
+				<filename class="directory">assets_
 				directory for such data.
 			
 		</note>
@@ -52,7 +52,7 @@
 			`AssetsManager`
 			class
 			allows you to read a file in the
-			<filename class="directory">assets</filename>
+			<filename class="directory">assets_
 			folder as
 			`InputStream`
 			with the

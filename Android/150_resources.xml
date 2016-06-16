@@ -19,7 +19,7 @@
 			Resource files must be
 			placed
 			in the
-			<filename class="directory">/res</filename>
+			<filename class="directory">/res_
 			directory of your application in a predefined sub-folder. The specific sub-folder depends
 			on type of resource which is
 			stored. You
@@ -75,7 +75,7 @@
 						<row>
 							<entry>Drawables</entry>
 							<entry>
-								<filename class="directory">/res/drawables</filename>
+								<filename class="directory">/res/drawables_
 							</entry>
 							<entry>
 								Images (e.g., png or jpeg files) or XML files which
@@ -86,7 +86,7 @@
 						<row>
 							<entry>Simple Values</entry>
 							<entry>
-								<filename class="directory">/res/values</filename>
+								<filename class="directory">/res/values_
 							</entry>
 							<entry>
 								Used to define strings, colors, dimensions, styles and
@@ -97,14 +97,14 @@
 								stored
 								in a separate file, e.g., strings are defined in
 								the
-								<filename>res/values/strings.xml</filename>
+								_res/values/strings.xml_
 								file.
 							</entry>
 						</row>
 						<row>
 							<entry>Layouts</entry>
 							<entry>
-								<filename class="directory">/res/layout </filename>
+								<filename class="directory">/res/layout _
 							</entry>
 							<entry>
 								XML files with layout descriptions are used to define the user
@@ -117,7 +117,7 @@
 						<row>
 							<entry>Styles and Themes</entry>
 							<entry>
-								<filename class="directory">/res/values</filename>
+								<filename class="directory">/res/values_
 							</entry>
 							<entry>Files which define the appearance of your Android
 								application.
@@ -126,7 +126,7 @@
 						<row>
 							<entry>Animations</entry>
 							<entry>
-								<filename class="directory">/res/animator</filename>
+								<filename class="directory">/res/animator_
 							</entry>
 							<entry>Defines animations in XML for the animation API
 								which
@@ -137,7 +137,7 @@
 						<row>
 							<entry>Raw data</entry>
 							<entry>
-								<filename class="directory">/res/raw</filename>
+								<filename class="directory">/res/raw_
 							</entry>
 							<entry>
 								Arbitrary files saved in their raw form. You access them via an
@@ -148,7 +148,7 @@
 						<row>
 							<entry>Menus</entry>
 							<entry>
-								<filename class="directory">/res/menu</filename>
+								<filename class="directory">/res/menu_
 							</entry>
 							<entry>Defines the actions which can be used in the toolbar of the application.
 							</entry>
@@ -162,9 +162,9 @@
 		<title>Example: Defining strings, string arrays, colors and dimensions
 		
 			The following listing is an example for file called
-			<filename>values.xml</filename>
+			_values.xml_
 			in the
-			<filename>/res/values</filename>
+			_/res/values_
 			which defines a few String constants, a String array, a color and a
 			dimension.
 		
@@ -182,12 +182,12 @@
 
 		
 			Every relevant resource in the
-			<filename class="directory">res</filename>
+			<filename class="directory">res_
 			folder, gets an ID assigned by the Android build system.
 			Android generates
-			<filename class="directory">gen</filename>
+			<filename class="directory">gen_
 			a
-			<filename>R.java</filename>
+			_R.java_
 			file
 			which ccontains these generated
 			values. These
@@ -203,10 +203,10 @@
 			reference is
 			automatically
 			created in a
-			<filename>R.java</filename>
+			_R.java_
 			file.
 			Manual changes in the
-			<filename>R.java</filename>
+			_R.java_
 			file are not
 			necessary and will be overwritten
 			by the
@@ -248,7 +248,7 @@
 			layout
 			resource
 			files in the
-			<filename class="filename">/res/layout</filename>
+			<filename class="filename">/res/layout_
 			folder or via Java code. You
 			can
 			also
@@ -337,11 +337,11 @@
 			a
 			unique ID
 			via the
-			<parameter>android:id</parameter>
+			`android:id`
 			attribute. To assign a new
 			ID to a view
 			use the
-			<parameter>android:id</parameter>
+			`android:id`
 			attribute of the corresponding element in the layout file.
 
 		
@@ -362,9 +362,9 @@
 			The
 			following shows an example in which a button
 			gets the
-			<parameter>button1</parameter>
+			`button1`
 			ID assigned via the
-			<parameter>android:id="@+id/button1"</parameter>
+			`android:id="@+id/button1"`
 			parameter.
 			By conversion this statement
 			creates a new ID if necessary in the
@@ -383,10 +383,10 @@
 		
 			It is good practice to
 			define IDs in one central configuration file. This is typically called
-			<filename>ids.xml</filename>
+			_ids.xml_
 			and placed
 			in the
-			<filename class="directory">/res/values</filename>
+			<filename class="directory">/res/values_
 			folder. This allows you to use the predefined ID in your layout file. If you want to define the id in a separate
 			file, you first
 			need to remove the @+id entries in your layout

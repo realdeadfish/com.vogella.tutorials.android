@@ -27,7 +27,7 @@
 		<title>Activate the usage of data binding
 		
 			Open your
-			<filename>app/build.gradle</filename>
+			_app/build.gradle_
 			file and activate the usage of databinding. Ensure you pick the correct build file, it is the one with the
 			`application`
 			node in it.
@@ -44,9 +44,9 @@
 		<title>Adjust layout files to use data binding
 		
 			Open the
-			<filename>activity_main.xml</filename>
+			_activity_main.xml_
 			layout file in the
-			<filename class="directory">res/layout</filename>
+			<filename class="directory">res/layout_
 			folder.
 			Investigate the XML layout in the visual editor as well in as
 			the

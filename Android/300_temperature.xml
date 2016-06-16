@@ -82,7 +82,7 @@
 		<title>Create attributes
 		
 			Select the
-			<filename>res/values/strings.xml</filename>
+			_res/values/strings.xml_
 			file to open the editor for this file. Add the
 			`Color`
 			and String definitions to the file as described by the following table.
@@ -144,7 +144,7 @@
 
 		
 			Select the
-			<filename>res/layout/activity_main.xml</filename>
+			_res/layout/activity_main.xml_
 			file and open the associated Android editor via a
 			double-click on the
 			file.
@@ -221,11 +221,11 @@
 			Switch to the XML representation of the file and assign the
 			`@string/celsius`
 			value to the
-			<parameter>android:text</parameter>
+			`android:text`
 			property of the first radio button. Assign the
-			<parameter>fahrenheit</parameter>
+			`fahrenheit`
 			string attribute to the
-			<parameter>text</parameter>
+			`text`
 			property of the second radio
 			button.
 		
@@ -242,7 +242,7 @@
 
 		
 			Ensure that the
-			<parameter>Checked</parameter>
+			`Checked`
 			property is set to
 			`true`
 			for the first
@@ -251,24 +251,24 @@
 		
 		
 			Assign
-			<parameter>@string/calc</parameter>
+			`@string/calc`
 			to
 			the text property of your button and
 			assign the value
-			<parameter>onClick</parameter>
+			`onClick`
 			to the
-			<parameter>OnClick</parameter>
+			`OnClick`
 			property.
 		
 		
 			Set
 			the
-			<parameter>inputType</parameter>
+			`inputType`
 			property
 			to
-			<parameter>numberSigned</parameter>
+			`numberSigned`
 			and
-			<parameter>numberDecimal</parameter>
+			`numberDecimal`
 			on the
 			`EditText`
 			. As an example you can use the last line in the following XML
@@ -293,7 +293,7 @@
 			_Color_
 			and
 			then select
-			<parameter>myColor</parameter>
+			`myColor`
 			in the dialog. As an example you can use the last line in the
 			following XML
 			snippet.
@@ -306,13 +306,13 @@
 		
 		
 			Afterwards the background should change to the
-			<parameter>whitesmoke</parameter>
+			`whitesmoke`
 			color. It might be difficult to see the difference.
 		
 
 		
 			Switch to the
-			<filename>activity_main.xml</filename>
+			_activity_main.xml_
 			tab and verify that the XML is
 			correct.
 		
