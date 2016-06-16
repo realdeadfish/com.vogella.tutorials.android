@@ -6,7 +6,9 @@
 Android uses by default two build types: _debug_ and _release_.
 For these build types you can create different flavors in you Gradle build.
 	
-The Gradle build system is also able to manage different variants of building an application.
+The Gradle build system is also able to manage different flavors of an application.
+A product flavor defines a customized version of the application. 
+This allows that some parts of the codebase or the resources can be different for variations of the app. 
 	
 For instance, you can define different build variants for certain device categories, like phone or tablet. 
 Another use case might be a paid or a free version of your app.
@@ -42,7 +44,10 @@ Flavor specific resources override the main resources.
 For example, if you provide a different application icon in a flavor the Android build system picks up the flavor specific one.
 	
 
-=== Providing different code for the product flavors
+=== Providing different source sets for the product flavors
+
+The directories in the src/ folder are called _source sets_. 
+Every product flavor can define its own source set.
 		
 Code files are not replaced as resources, they are combined. 
 For example, you cannot have a  `com.example.MainActivity` activity in your _app/main/java/_ folder and a different implementation in another flavor.

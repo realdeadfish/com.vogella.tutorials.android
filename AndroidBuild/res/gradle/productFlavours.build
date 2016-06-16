@@ -1,11 +1,11 @@
 productFlavors {
-    paid {
-        applicationId = "com.vogella.android.gradlebuildflavors.paid"
+    prod {
+        applicationId = "com.vogella.android.gradlebuildflavors.prod"
         versionName = "1.0-paid"
     }
 
-    free {
-        applicationId = "com.vogella.android.gradlebuildflavors.free"
+    mock {
+        applicationId = "com.vogella.android.gradlebuildflavors.mock"
         versionName = "1.0-free"
     }
 }

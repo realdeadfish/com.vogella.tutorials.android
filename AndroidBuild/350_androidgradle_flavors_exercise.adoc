@@ -2,20 +2,19 @@
 == Exercise: Creating Android applications with different product flavors
 === Target for this exercise
 		
-In this exercise you create an Android application with two different project flavors, called _free_ and _paid_.
+In this exercise you create an Android application with two different project flavors, called _prod_ and _mock_.
 	
 		
-The free version defines different resources than the paid version.
-In this sample the strings.xml file of the main folder/project is overridden in case the free or paid flavor.
+The mock version defines different resources than the prod version.
+In this first sample the strings.xml file of the main folder/project is overridden.
 Which variant is build is defined via the _Build Variants_ view. 
-So we can have different strings for the free and paid variant.
 	
 === Creating a new Android application
 		
 Create a new Project with the _Blank Activity_ template and the top level package `com.vogella.android.gradlebuildflavors`.
 	
 		
-Define two additional product flavors in the _app/build.gradle_ file called "free" and "paid".
+Define two additional product flavors in the _app/build.gradle_ file called "prod" and "mock".
 
 [source,java]
 ....
@@ -32,10 +31,10 @@ If you select _Android resource directory_ you can select the flavor in the foll
 	
 image::newresourcedirectory.png[Resource directory for the paid flavor]
 		
-Copy the _strings.xml_ from the _main_ folder to the appropriate free and paid folder.
+Copy the _strings.xml_ from the _main_ folder to the appropriate folder of the flavor.
 	
 		
-Change the `hello_world` string of the _strings.xml_ to _Free World!_ and _Paid World!_ accordingly.
+Change the `hello_world` string of the _strings.xml_ to _Mock World!_ and _Prod World!_ accordingly.
 	
 [source,xml]
 ....
@@ -52,7 +51,7 @@ image::flavour_folder_structure.png[]
 
 === Validate
 		
-Select `freeDebug` as _Build Variant_ in the _Build Variants_ view of Android Studio and run your app.
+Select `mockDebug` as _Build Variant_ in the _Build Variants_ view of Android Studio and run your app.
 	
 The result should look like this:
 		
