@@ -1,0 +1,42 @@
+== Using build flavors as architectural style to improve testability
+
+One way to improve testability in your application is to use build flavors.
+In your build flavor you define different classes for providing data.
+
+For example, if you have two flavors 'prod' and 'mock' you could have the following different implementations in your flavors.
+
+This could be a theoretical implementation for the 'mock' flavor:
+
+[source,java]
+----
+public class Injection {
+
+    public static ImageFile provideImageFile() {
+        return new FakeImageFileImpl();
+    }
+
+    public static NotesRepository provideNotesRepository() {
+        return NoteRepositories.getInMemoryRepoInstance(new FakeNotesServiceApiImpl());
+    }
+}
+----
+
+This could be a theoretical implementation for the 'prod' flavor:
+
+[source,java]
+----
+public class Injection {
+
+    public static ImageFile provideImageFile() {
+        return new ImageFileImpl();
+    }
+
+    public static NotesRepository provideNotesRepository() {
+        return NoteRepositories.getInMemoryRepoInstance(new NotesServiceApiImpl());
+    }
+}
+----
+
+If you application code you can access the provided implementation via `Injection.provideNotesRepository()`.
+Depending which flavor you are build you would receive the mocked version or the real version.
+Your unit test would build again the mock flavor to mock away the external dependencies.
