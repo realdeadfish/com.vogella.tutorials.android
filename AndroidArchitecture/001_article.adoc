@@ -10,8 +10,8 @@ Version 0.1, 18.04.2016
 [abstract]
 == AndroidArchitecture
 
-This tutorial contains notes about AndroidArchitecture.
-				
+This tutorial contains notes about architecture for Android applications which support that its components can be easily tested.
+			
 include::010_overview.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
