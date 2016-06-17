@@ -21,7 +21,7 @@ The case construct for Espresso tests is the following:
 .Base Espresso Test
 [source,java]
 ----
-onView(Matcher)           #<1>
+onView(ViewMatcher)       #<1>
  .perform(ViewAction)     #<2>
    .check(ViewAssertion); #<3>
 ----

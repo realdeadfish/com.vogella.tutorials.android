@@ -10,3 +10,8 @@ import static android.support.test.espresso.matcher.ViewMatchers.withId;
 onView(withId(R.id.my_view))            // withId(R.id.my_view) is a ViewMatcher
         .perform(click())               // click() is a ViewAction
         .check(matches(isDisplayed())); // matches(isDisplayed()) is a ViewAssertion
+
+// new test
+onView(withId(R.id.greet_button))
+.perform(click())
+.check(matches(not(isEnabled()));
