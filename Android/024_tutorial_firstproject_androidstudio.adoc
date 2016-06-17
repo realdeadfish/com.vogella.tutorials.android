@@ -1,22 +1,13 @@
-<section id="androidstudio_starter" role="wrapper">
-	<title>Exercise: Getting started with Android Studio
-	<section id="androidstudio_startertarget">
-		<title>Target of this exercise
-		In this exercise you create an Android project and start it on
-			an Android virtual device via Android Studio.
+[[androidstudio_starter]]
+== Exercise: Getting started with Android Studio
+
+=== Target of this exercise
+In this exercise you create an Android project and start it on an Android virtual device.
 		
-	</section>
-	<section id="androidstudio_startproject">
-		<title>Create a new Android project
+=== Create a new Android project
 		
-			Press the
-			_Start a new Android Studio project_
-			link to get started. Alternatively you can select the
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New Project...</guisubmenu>
-			</menuchoice>
-			entry from the menu.
+Press the _Start a new Android Studio project_ link to get started. 
+Alternatively you can select the menu:File[New Project...] entry from the menu.
 		
 
 		
@@ -85,30 +76,14 @@
 			</mediaobject>
 		
 
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/as_first30.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Creating a new Android Studio project</phrase>
-				</textobject>
-			</mediaobject>
+image::as_first30.png[Creating a new Android Studio project]
 		
 		Android Studio automatically downloads the required Android SDK, if that has not
 			already been done. So depending
 			on your installation, the next dialog might not be displayed.
 		
 
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/as_first40.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Creating a new Android Studio project</phrase>
-				</textobject>
-			</mediaobject>
+image::as_first40.png[Creating a new Android Studio project]
 		
 
 
@@ -130,20 +105,10 @@
 		
 		On the last page, accept the defaults. 
 
+image::as_first60.png[Creating a new Android Studio project]
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/as_first60.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Creating a new Android Studio project</phrase>
-				</textobject>
-			</mediaobject>
-		
-	</section>
 
-	<section id="androidstudio_reviewproject">
-		<title>Review the generated project
+=== Review the generated project
 		The above wizard generates based on your input an Android project. Review the generated project structure and
 			files.
 		

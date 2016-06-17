@@ -1,33 +1,14 @@
-<section id="using_eclipseadt">
-	<title>Using Eclipse for Android development
+== Using Eclipse for Android development
 	
-		The Google development team focus their future development on Android Studio, so this is currently the best
-		development environment for Android applications. 
-		At the moment the ADT tooling uses a special Eclipse build system and
-		not
-		the new Gradle build system.
-		This can create
-		inconsistencies in
-		your
-		build. If you want the Gradle support for Eclipse please go to
-		<ulink url="https://code.google.com/p/android/issues/detail?id=81451">Support Gradle builds for Eclipse bug report</ulink>
-		and press the star sign.
-	
-	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/eclipsegradlesupportbug.png"/>
-			</imageobject>
-			<textobject>
-				<phrase>Vote for Grade support in Eclipse ADT</phrase>
-			</textobject>
-		</mediaobject>
-	
-	
-		The other blocking issue for the usage of Eclipse for future Android development is the missing support for AAR files.
-		Please also vote on
-		<ulink url="https://code.google.com/p/android/issues/detail?id=59183">Allow Eclipse ADT plugin to work with .AAR files</ulink>
-		.
-	
+The Google development team focus their future development on Android Studio
+At the moment the Gradle tooling for Eclipse does not support Android applications.
 
-</section>
+Please comment on https://bugs.eclipse.org/bugs/show_bug.cgi?id=468315 to get this fixed in the Gradle tooling for Eclipse.
+
+
+In addition you can try to convince Google to support Eclipse. Please go to
+<ulink url="https://code.google.com/p/android/issues/detail?id=81451">Support Gradle builds for Eclipse bug report</ulink>
+and press the star sign.
+	
+image::eclipsegradlesupportbug.png[Vote for Grade support in Eclipse ADT]
+	

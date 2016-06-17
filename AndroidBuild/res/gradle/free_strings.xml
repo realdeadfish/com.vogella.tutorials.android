@@ -1,7 +1,4 @@
-<!-- should be located in /app/src/free/res/values/strings.xml -->
 <resources>
-    <string name="app_name">GradleExamples</string>
-
+    <string name="app_name">Flavor</string>
     <string name="hello_world">Mock World! </string>
-    <string name="action_settings">Settings</string>
 </resources>

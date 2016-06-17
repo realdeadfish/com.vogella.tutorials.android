@@ -3,7 +3,7 @@
 
 === Create project which is tested
 		
-Create a new Android project with the _testing.android.vogella.com.simpleactivity_ package and the Blank Activity template.
+Create a new Android project with the _testing.android.vogella.com.simpleactivity_ package and the Empty Activity template.
 		
 		
 Add a second activity called `SecondActivity` to your project via menu:File[New>Activity>Blank Activity].

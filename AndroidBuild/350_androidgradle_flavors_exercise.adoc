@@ -21,12 +21,7 @@ Define two additional product flavors in the _app/build.gradle_ file called "pro
 include::res/gradle/productFlavours_complete.build[]
 ....	
 
-[source,java]
-....
-include::res/gradle/productFlavours.build[]
-....
-		
-Create the desired folder structure for free and paid flavors. See <<androidstudio_creatingresourcefolder>> and <<androidstudio_creatingresourcefile>> for further information. 
+Create the desired folder structure for prod and mock flavors. See <<androidstudio_creatingresourcefolder>> and <<androidstudio_creatingresourcefile>> for further information. 
 If you select _Android resource directory_ you can select the flavor in the following dialog as depicted in the next screenshot.
 	
 image::newresourcedirectory.png[Resource directory for the paid flavor]
@@ -52,10 +47,12 @@ image::flavour_folder_structure.png[]
 === Validate
 		
 Select `mockDebug` as _Build Variant_ in the _Build Variants_ view of Android Studio and run your app.
-	
-The result should look like this:
-		
-image::adroid_variant_exercise_result.png[]
+
+image::flavorselectioninbuildview.png[]
+
+If you start you application you should see the string from the mock flavor. 
+Select now you prod flavor and start it, you should see the other string.		
+
 	
 === Build via Gradle command line
 		
