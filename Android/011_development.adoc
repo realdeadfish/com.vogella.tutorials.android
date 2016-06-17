@@ -146,39 +146,3 @@ can be deployed to an Android device via the
 _adb_
 tool.
 		
-=== Using Java 8 in Android applications
-		
-The latest Gradle plug-in supports the usage of Java 8, with some restrictions. As of Android Gingebread (API 9)
-and
-above you can use:
-
-* Lambda expressions
-* java.util.function
-		
-		
-As of Android N you can use:
-
-* Default and static interface methods
-* Repeatable annotations
-* Streams
-* Reflection APIs
-
-To enable Java 8 in your project use the following settings. Important is the jackOptions part and the compileOptions.
-		
-
-[source,java]
-----
-android {
-  ...
-  defaultConfig {
-    ...
-    jackOptions {
-      enabled true
-    }
-  }
-  compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
-  }
-}
-----	
