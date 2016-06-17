@@ -9,8 +9,8 @@ This makes it difficult to supply dependencies via constructors to Android compo
 		
 [[android_dagger_using]]
 == Using Dagger 2 in Android
-		
-If you want to ues Dagger 2 in Android you have to adjust your _build.gradle_ project file.
+
+To enable Dagger 2 adjust your _build.gradle_ project file.
 
 [source,xml]
 ----
@@ -23,3 +23,9 @@ Add the following entries to your _app/build.gradle_ file.
 ----
 include::res/android/appbuild.gradle[]
 ----
+
+[NOTE]
+====
+You need to configure apt for each scope in which Dagger should be used.
+For example `apt` for you normal app, `testApt` for your JVM tests and `testAndroidApt` for your Android tests.
+====
