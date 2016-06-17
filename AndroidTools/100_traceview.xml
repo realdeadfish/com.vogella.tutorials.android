@@ -1,0 +1,125 @@
+<section id="tracewiew">
+	<title>Traceview</title>
+	<section id="tracewiew_intro">
+		<title>Introduction</title>
+		<para>
+			<wordasword>Traceview</wordasword>
+			is a graphical
+			viewer to see logs created by an Android
+			application.
+			Via
+			<wordasword>Traceview</wordasword>
+			you can measure the performance of your application to
+			identify
+			performance problems.
+		</para>
+		<para>
+			<wordasword>Traceview</wordasword>
+			is located as standalone tool in the
+			<filename>tools</filename>
+			folder of your Android SDK installation folder and it also integrated
+			into Eclipse via the Android Developer Tools
+			(ADT).
+		</para>
+	</section>
+	<section id="tracewiew_eclipse">
+		<title>Using Traceview from Android Studio</title>
+		<para>
+			Android Studio supports tracing via the Android Device Monitor. Use
+			<menuchoice>
+				<guimenu>Tools</guimenu>
+				<guisubmenu>Android</guisubmenu>
+				<guisubmenu>Android Device Monitor</guisubmenu>
+			</menuchoice> to open it.
+		</para>
+		<para>
+			To start tracing an application select your application process in
+			the
+			<guilabel>Devices</guilabel>
+			view
+			and
+			select the
+			<guibutton>Start
+				Method Profiling
+			</guibutton>
+			button as depicted in the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/traceview10.png" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Use your application and re-press the same button to stop
+			profiling.
+			This will open a new editor which shows you
+			the tracing
+			results.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/traceview20.png" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/traceview20.png" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>You can zoom into the graphic to get more details. To zoom out,
+			double-click on the time line.
+		</para>
+	</section>
+	<section id="tracewiew_commandline">
+		<title>Using TraceView from the command line</title>
+		<para>
+			To start tracing some code put the following
+			code snippet around
+			it.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/traceview/trace.txt" />
+			</programlisting>
+		</para>
+		<para>
+			The parameter "yourstring" tells the system that it should
+			store
+			the
+			data under "/sdcard/yourstring.trace". To save
+			data on the
+			sdcard
+			your
+			application needs the WRITE_EXTERNAL_STORAGE permission.
+			After
+			running
+			your application you can
+			copy the results from the device via
+			the adb command line tool.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/traceview/gettraceview.txt" />
+			</programlisting>
+		</para>
+		<para> This will start Traceview which allow you to analyze your
+			performance data via a graphical way. The DDMS view
+			has also a trace
+			button available. This will
+			trace the running application and does not
+			require an additional
+			authorization.
+		</para>
+	</section>
+
+
+</section>

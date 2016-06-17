@@ -1,0 +1,5 @@
+// Set the display size
+adb shell am display-size 600x800
+
+// Set the display density
+adb shell am display-density 80

@@ -1,0 +1,86 @@
+<section id="avoidoverdraw">
+	<title>Analyzing Overdraw</title>
+	<para>
+		<wordasword>Overdraw</wordasword>
+		happens if you draw something on top of something else. For
+		example an
+		<wordasword>activity</wordasword>
+		has a
+		<code>Window</code>
+		as background. If a
+		<code>TextView</code>
+		it added to the application, the
+		<code>TextView</code>
+		is drawn on top of the
+		<code>Window</code>
+		.
+	</para>
+	<para>Overdrawn is therefore intended to happen. But unnecessary
+		overdraw should be avoid to have the best performance possible.
+	</para>
+	<para>Unnecessary
+		overdraw can be caused by complex view hierarchies. In
+		general a 2x overdraw (a pixel gets drawn three times) is standard and
+		expected but
+		more should be
+		avoided.
+	</para>
+	<para>
+		You can enable a visualization of overdraw via the
+		<guilabel>Development
+			Settings
+		</guilabel>
+		with the
+		<guilabel>Show GPU overdraw</guilabel>
+		setting. This section adds colors to your screen based on the number
+		of overdraws. The following table explains the used color schema.
+	</para>
+	<para>
+		<table frame='all'>
+			<title>Overdrawn colors</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' />
+				<colspec colname='c2' />
+				<thead>
+					<row>
+						<entry>Color </entry>
+						<entry>Meaning</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>No color</entry>
+						<entry>No overdraw</entry>
+					</row>
+					<row>
+						<entry>Blue</entry>
+						<entry>1x overdraw, pixel was painted twice</entry>
+					</row>
+					<row>
+						<entry>Green</entry>
+						<entry>2x</entry>
+					</row>
+					<row>
+						<entry>Light red</entry>
+						<entry>3x, might indicate a problem, small red areas are still ok
+						</entry>
+					</row>
+					<row>
+						<entry>Dark red</entry>
+						<entry>4x, pixel was pained 5 times or more, indicates a problem.
+						</entry>
+					</row>
+
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+	<para>
+		After visualization of potential problematic areas, you can
+		analyze
+		your
+		<code>View</code>
+		hierarchy with the
+		<guilabel>Hierarchy Viewer</guilabel>.
+	</para>
+</section>

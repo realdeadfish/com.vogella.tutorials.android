@@ -1,26 +1,19 @@
-<section id="gradle_intellij" role="wrapper">
-	<title>Using Gradle with the IntelliJ IDE
-	<section id="gradle_intellij_intro_1">
-		<title>IntelliJ IDE and Gradle support
-		<indexterm>
-			<primary>Gradle with IntelliJ
-			</primary>
-		</indexterm>
+[[gradle_intellij]]
+== Using Gradle with the IntelliJ IDE
+
+=== IntelliJ IDE and Gradle support
 		
-			In its default configuration IntelliJ has good Gradle support.
+In its default configuration IntelliJ has good Gradle support.
 		
-	</section>
-	<section id="gradle_intellij_projectviews">
-		<title>Gradle projects view
+=== Gradle projects view
 		
-			To activate the
-			_Gradle projects_
-			view, select
+To activate the _Gradle projects_ view, select
 			<menuchoice>
 				<guimenu>View</guimenu>
 				<guisubmenu>Tool Buttons</guisubmenu>
 			</menuchoice>
-			. This enables a toolbar on the right, click on it to expand the Gradle projects view.
+			. 
+This enables a toolbar on the right, click on it to expand the Gradle projects view.
 
 		
 		

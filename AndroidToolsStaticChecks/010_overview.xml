@@ -1,0 +1,43 @@
+<section id="lint">
+	<title>Lint</title>
+	<para>
+		The Android
+		<wordasword>lint</wordasword>
+		tool is a static code analysis tool for Android applications. It
+		provides
+		command line and IDE supported checks for
+		potential bugs
+		and optimization improvements for Android
+		applications.
+	</para>
+	<para>
+		Lint checks are automatically
+		performed by the Gradle build system. To see the available checks in Android Studio
+		<menuchoice>
+			<guimenu>File</guimenu>
+			<guisubmenu>Settings</guisubmenu>
+			<guisubmenu>Editor</guisubmenu>
+			<guisubmenu>Inspections</guisubmenu>
+		</menuchoice>
+		.
+	</para>
+	<para>
+		You can also run the lint checks manually by right-clicking
+		on your
+		project and select
+		<menuchoice>
+			<guimenu>Analyze</guimenu>
+			<guisubmenu>Inspect Code</guisubmenu>
+		</menuchoice>
+		.
+	</para>
+	<para>You can run link also from the command line. </para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/lint/check.txt" />
+		</programlisting>
+	</para>
+
+
+</section>

@@ -1,0 +1,78 @@
+<section id="systrace">
+	<title>Systrace</title>
+	<para>
+		<wordasword>Systrace</wordasword>
+		allows to measure the performance directly at kernel level. To enable
+		systrace, select the Developer options and select the
+		<guilabel>Enable traces</guilabel>
+		entry. In the next dialog you can define what
+		type of events should be
+		profiled, e.g.
+		Graphics and View.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/systrace10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Enable traces</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/systrace20.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Enable traces, select Graphics and View</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		To use systrace, open a terminal and run
+		<filename>systrace.py</filename>
+		from the
+		<filename>android_sdk_installdir/tools/systrace</filename>
+		directory. You may have to set it to executable (chmod a+x systrace.py
+		on Linux).
+	</para>
+	<para>
+		You can also start
+		<wordasword>Systrace</wordasword>
+		directly from Eclipse via the
+		<guilabel>DDMS</guilabel>
+		perspective.
+	</para>
+
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/systrace40.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Systrace with ADT Part 1</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/systrace50.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Systrace with ADT Part 2</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		<wordasword>Systrace</wordasword>
+		captures events for 5 seconds. As result
+		<wordasword>Systrace</wordasword>
+		creates a HTML file which allows you to analyze potential issues.
+	</para>
+
+</section>

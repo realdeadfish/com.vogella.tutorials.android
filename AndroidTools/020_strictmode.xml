@@ -1,0 +1,57 @@
+<section id="strictmode">
+	<title>StrictMode</title>
+	<para>
+		You should avoid performing long running
+		operations
+		on the
+		UI
+		thread.
+		This
+		includes file and network access.
+	</para>
+
+	<para>
+		To ensure this you can use
+		<wordasword>StrictMode</wordasword>
+		. StrictMode is available as of API 9 (Android
+		2.3.3) and
+		allows to
+		setup thread policies for your
+		application.
+	</para>
+	<para>
+		Via
+		<wordasword>StrictMode</wordasword>
+		you can instruct the Android system to crash your application if
+		it
+		performs
+		long running
+		operations, e.g. I/O
+		in
+		the user interface thread.
+
+	</para>
+	<para>
+		The following code shows how to use
+		<wordasword>StrictMode</wordasword>
+		. As the
+		<wordasword>activity</wordasword>
+		violates these settings it
+		will crash.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/strictmode/TestStrictMode.java" />
+		</programlisting>
+	</para>
+	<para>StrictMode
+		should only be used
+		during
+		development and
+		not in
+		your live
+		application.
+	</para>
+
+</section>

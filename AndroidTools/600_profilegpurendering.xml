@@ -1,0 +1,37 @@
+<section id="profilegpurendering">
+	<title>Profile GPU rendering</title>
+	<para>
+		In the
+		<guilabel>Developer options</guilabel>
+		in the
+		<guilabel>Setting</guilabel>
+		or your Android device you can activate
+		<wordasword>Profile GPU rendering</wordasword>
+		. With this option the system tracks the time it took to draw the last
+		128 frames.
+	</para>
+
+	<para>After activating this and restarting your application you can get
+		the information via the following command.
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/gpu/trace.txt" />
+		</programlisting>
+	</para>
+	<para>To measure the frame rate of your application, e.g. by scrolling
+		on a list view. In most cases you need to interact with your
+		application to trigger that it re-draws itself.
+	</para>
+	<para>
+		In the resulting log, look for a section called
+		<wordasword>Profile data in ms</wordasword>
+		.
+	</para>
+
+
+
+
+</section>

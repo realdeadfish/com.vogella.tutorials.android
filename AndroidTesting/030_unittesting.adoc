@@ -40,7 +40,7 @@ Run your unit tests with the `gradlew test`	command.
 
 To run a unit test right-click on your test class in the _Project_ window and select _Run_.
 
-image::img/runUnitTestInAndroidStudio10.png[Running Unit tests in Android Studio]
+image::runUnitTestInAndroidStudio10.png[Running Unit tests in Android Studio]
 
 [[androidtesting_projectstructure_testresults]]
 === Location of test reports

@@ -1,0 +1,123 @@
+<section id="exercise_tracewiew">
+	<title>Exercise: Traceview</title>
+	<section id="exercise_tracewiew1">
+		<title>Create example project</title>
+		<para>
+			Create an Android application with the top level package called
+			<code>com.vogella.android.traceview</code>
+			.
+
+		</para>
+		<para>
+			Add the following key to your
+			<filename>values/strings.xml</filename>
+			file.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/traceview/strings.xml" />
+			</programlisting>
+		</para>
+		<para>
+			Create the following layout file called
+			<filename>rowlayout.xml</filename>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/traceview/rowlayout.xml" />
+			</programlisting>
+		</para>
+
+
+		<para>
+			Implement the following
+			<code>adapter</code>
+			for your
+			<code>ListView</code>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/traceview/MyArrayAdapter.java" />
+			</programlisting>
+		</para>
+
+
+
+		<para>
+			Implement a
+			<code>ListView</code>
+			in the
+			<wordasword>activity</wordasword>
+			which shows 1000 random generated strings.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/traceview/MainActivity.java" />
+			</programlisting>
+		</para>
+
+
+		<para>Add the permission to write on external storage to your
+			application.
+		</para>
+	</section>
+
+	<section id="exercise_tracewiew2">
+		<title>Perform trace</title>
+		<para>Run your application. Afterwards connect to your device via adb
+			and copy the resulting performance trace to your drive. Analyze the
+			result.
+		</para>
+	</section>
+
+
+	<section id="exercise_tracewiew3">
+		<title>Solve performance problems</title>
+		<para>
+			Improve the performance based on the measurements of
+			<wordasword>Traceview</wordasword>
+			.
+			Here are some pointers what to improve.
+			<itemizedlist>
+				<listitem>
+					<para>
+						Replace the bold styling in the
+						<code>getView()</code>
+						method with the corresponding
+						<code>android:textStyle="bold</code>
+						attribute in your layout to avoid the
+						<code>Html.fromHtml()</code>
+						call.
+					</para>
+				</listitem>
+				<listitem>
+					<para>Move the sorting to another place</para>
+				</listitem>
+				<listitem>
+					<para>Reuse convertView in your Adapter, if not null</para>
+				</listitem>
+				<listitem>
+					<para>Avoid the findViewById() method call by using the
+						HolderPattern in your ListView
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<note>
+			<para>
+				The layout is also not optimized. We reuse this exercise in the
+				exercise for the
+				<wordasword>HierarchyView</wordasword>
+			</para>
+		</note>
+
+	</section>
+
+</section>

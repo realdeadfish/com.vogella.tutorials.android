@@ -1,0 +1,42 @@
+<section id="androiddatabinding_example">
+	<title>Example for data binding usage</title>
+	<para>
+		Layout files which supports data binding start with a
+		<wordasword>layout</wordasword>
+		root tag followed by a
+		<wordasword>data</wordasword>
+		element
+		and a
+		<wordasword>view</wordasword>
+		root element. This view element is what your root would be in a non-binding layout file. The data elements
+		describe
+		data which is available for binding, expressions within
+		the layout are written in the attribute properties
+		using the
+		“@{}” syntax.
+	</para>
+	<para>
+		A sample file
+		looks like the following listing.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/main_layout.xml" />
+		</programlisting>
+	</para>
+	<para>The user variable within data describes a property that may be used within this layout.</para>
+
+	<para>The data object used with this layout may look like the following listing.</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/User.java" />
+		</programlisting>
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/usage.java" />
+		</programlisting>
+	</para>
+</section>

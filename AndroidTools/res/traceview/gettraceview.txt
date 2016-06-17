@@ -1,0 +1,2 @@
+adb pull /sdcard/yourstring.trace
+traceview yourstring

@@ -1,0 +1,1 @@
+adb shell dumpsys gfxinfo your_package

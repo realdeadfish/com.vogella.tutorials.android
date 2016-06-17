@@ -1,0 +1,2 @@
+# run lint check for myproject
+$PATH_TO_ANDROIDSDK/tools myproject

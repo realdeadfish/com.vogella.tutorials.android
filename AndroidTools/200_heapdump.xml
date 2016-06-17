@@ -1,0 +1,12 @@
+<section id="memorydump">
+	<title>Memory Dumps</title>
+	<para>
+		You can create a memory snapshot and analyze it with the
+		<ulink
+			url="http://www.vogella.com/tutorials/EclipseMemoryAnalyzer/article.html">
+			Eclipse
+			Memory Analyzer</ulink>
+		.
+	</para>
+
+</section>

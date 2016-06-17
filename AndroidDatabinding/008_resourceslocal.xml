@@ -1,0 +1,13 @@
+<section id="android_databinding">
+	<title>Android permissions resources</title>
+
+	<para>
+		<ulink url="https://developer.android.com/tools/data-binding/guide.html">Androids Data Binding Guide</ulink>
+	</para>
+	<para>
+		<ulink url="https://blog.stylingandroid.com/data-binding-part-1">Blog post by  Mark Allison about Data binding</ulink>
+	</para>
+	<para>
+		<ulink url="https://medium.com/@fabioCollini/android-data-binding-f9f9d3afc761#.c4lt7flc2">Example about two-way Android Data Binding</ulink>
+	</para>
+</section>

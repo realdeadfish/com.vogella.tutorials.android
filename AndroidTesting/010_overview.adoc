@@ -1,12 +1,7 @@
 [[androidtesting]]
 == Why is testing important for Android applications?
 
-=== Android and testing
-
-In 2015 the tool and framework support for Android applications was hugely improved.
-The Android test system has been updated to be based on JUnit 4 and you can run unit tests either on the Java virtual machine or on an Android runtime.
-Also, Google introduced a user interface testing framework called Espresso which makes is easy to develop user interface tests for Android applications.
-
+=== Testing Android applications
 
 Android applications run on devices with limited memory, CPU power and power supply. The behavior of the application also depends on external factors like connectivity, general system utilization, etc.
 
@@ -17,18 +12,26 @@ As it is not possible to test Android applications on all possible device config
 You should test your application at least on one device with the lowest possible configuration.
 In addition you should test on one device with the highest available configuration, e.g., pixel density, screen resolution to ensure that it works fine on these devices.
 
-[[androidtesting_overview]]
-=== Categories of Android unit tests
-
-Android testing is based on JUnit. Unit testing for Android can be classified into:
+Unit testing for Android can be classified into:
 
 * Local unit tests - tests which can run on the JVM
 * Instrumented unit tests - tests which require the Android system
 
-image::img/androidtestcategories10.png[Android testing categories]
+image::androidtestcategories10.png[Android testing categories]
 
 
 If possible, you should prefer to use local tests as the test execution is much faster compared to the time required to deploy and run the test on an Android device.
+
+
+=== Tooling support for Android testing
+
+In 2015 the tooling and framework support for testung Android applications was hugely improved.
+
+The Android Testing Support library (ATSL) support testing with a JUnit 4-compatible test runner (AndroidJUnitRunner).
+You can run unit tests either on the Java virtual machine or on an Android runtime.
+Also, Google introduced a user interface testing framework called Espresso which makes is easy to develop user interface tests for Android applications.
+
+
 
 [[androidtesting_standardjava]]
 
@@ -63,7 +66,7 @@ A good rule of thumb is to have the following distribution of tests:
 * 20-30 % functional tests to ensure that the application really works
 * some cross functional tests if your application integrates intensively with other Application components
 
-image::img/testingstrategy.png[Testing Strategy for Android]
+image::testingstrategy.png[Testing Strategy for Android]
 
 Another important criteria for testing is if you only test your own application or if you test the integration with other applications. 
 If you run tests within your application you can use testing frameworks which require some knowledge about your application, e.g., the view IDs.

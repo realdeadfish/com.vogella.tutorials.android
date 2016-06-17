@@ -1,0 +1,31 @@
+<section>
+	<title>Useful open source tools for application analysis</title>
+	<section>
+		<title>Using Leak Canary to find memory leaks</title>
+		<para>
+			Leak Canary can be integrated into an Android application and can detect automatically leaks of activities and
+			fragments. The usage is very simple, you add it as dependency to your Gradle build file and initialize the library
+			in your application class. This registers a life cycle listener for your activities and traces if their
+			<code>destroy</code>
+			method is called in the right point in time.
+		</para>
+		<para>
+			As Leak Canary is an Open Source project it is likely to change very quickly. See
+			<ulink url="https://github.com/square/leakcanary">Leak Canarys Github page</ulink>
+			for instructions how to use it.
+		</para>
+	</section>
+
+	<section>
+		<title>Using AndroidDevMetrics to display performance data</title>
+		<para>
+			AndroidDevMetrics you can see how fast the most common operations like object initialization
+			(in Dagger 2 graph), or Activity lifecycle methods (onCreate(), onStart(), onResume()) are.
+		</para>
+		<para>
+			As AndroidDevMetrics is an Open Source project. See
+			<ulink url="https://github.com/frogermcs/androiddevmetrics">AndroidDevMetrics Github page</ulink>
+			for instructions how to use it.
+		</para>
+	</section>
+</section>

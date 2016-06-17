@@ -28,6 +28,7 @@ include::220_monkey.adoc[]
 include::900_applicationtesting.adoc[]
 include::902_exercise_applicationtesting.adoc[]
 include::910_othercomponents.adoc[]
+include::920_usingannotations.adoc[]
 include::980_testfoldercreation.adoc[]
 include::008_resourceslocal.adoc[]
 

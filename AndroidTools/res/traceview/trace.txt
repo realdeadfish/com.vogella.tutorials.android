@@ -1,0 +1,6 @@
+
+android.os.Debug.startMethodTracing("yourstring");
+
+// ... your code is here
+
+android.os.Debug.stopMethodTracing();
