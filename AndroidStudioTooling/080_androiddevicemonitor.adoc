@@ -1,0 +1,28 @@
+<section id="androidstudio_androiddevicemonitor">
+	<title>Android Device Monitor</title>
+	<indexterm>
+		<primary>Android Device Monitor in Android Studio
+		</primary>
+	</indexterm>
+	<para>
+		Android Studio allows to open the Android Device Monitor via the toolbar or via the
+		<menuchoice>
+			<guimenu>Tools</guimenu>
+			<guisubmenu>Android</guisubmenu>
+			<guisubmenu>Android Device Monitor</guisubmenu>
+		</menuchoice>
+		menu.
+	</para>
+	<para>
+		This starts an Eclipse based application called
+		<wordasword>Android Device Monitor</wordasword>
+		for interacting with your Android
+		(virtual)
+		device
+		and your
+		Android
+		application program.
+	</para>
+
+
+</section>

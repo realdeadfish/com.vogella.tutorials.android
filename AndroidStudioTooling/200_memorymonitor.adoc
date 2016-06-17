@@ -1,0 +1,9 @@
+[[memorymonitor]]
+== Memory monitor
+
+To see the memory consumption of your app, you need to run it.
+Open the _Android Monitor_.
+Click the Monitors tab and display the Memory Monitor.
+Enable the Memory Monitor by clicking Pause Pause icon to deselect it.
+
+image::memorymonitor_studio.png[]

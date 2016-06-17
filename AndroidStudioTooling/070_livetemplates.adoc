@@ -1,0 +1,28 @@
+<section id="liveteimplates">
+	<title>Using live template</title>
+	<para>
+		Android studio provides templates for typical task in Java and Android. The following list contains a few.
+
+		<itemizedlist>
+			<listitem>
+				<para>Toast - Creates a Toast</para>
+			</listitem>
+			<listitem>
+				<para>fbc - findViewById with cast</para>
+			</listitem>
+			<listitem>
+				<para>const - Defines a constant</para>
+			</listitem>
+		</itemizedlist>
+	</para>
+	<para>
+		Use
+		<menuchoice>
+			<guimenu>File</guimenu>
+			<guisubmenu>Settings</guisubmenu>
+			<guisubmenu>Editor</guisubmenu>
+			<guisubmenu>Live Templates</guisubmenu>
+		</menuchoice>
+		to see the full list.
+	</para>
+</section>

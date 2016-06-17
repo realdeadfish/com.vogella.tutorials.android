@@ -1,0 +1,20 @@
+<section id="runningtestinandroidstudio">
+	<title>Running tests in Android Studio</title>
+	<section id="androidtesting_seepassedtests">
+        <title>Seeing all passed tests Android Studio</title>
+
+        <para>To see all passed tests, click on the highlighted toolbar entry in the following screenshot.</para>
+        <para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/androidstudioseealltests.png"/>
+                </imageobject>
+                <textobject>
+                    <phrase>Android Studio see all tests</phrase>
+                </textobject>
+            </mediaobject>
+        </para>
+    </section>
+    
+  
+</section>
