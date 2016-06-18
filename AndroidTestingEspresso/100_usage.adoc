@@ -22,7 +22,6 @@ If you are using an AdapterView use the `onData()` method instead of the `onView
 The `onView()` methods return an object of type `ViewInteraction`. 
 The `onData()` method returns an object of type `DataInteraction`.
 		
-		
 The following table describes the available matchers.
 
 .Table Available ViewMatcher
@@ -94,4 +93,29 @@ include::res/intentconfig/SecondActivityTest.java[]
 === Espresso UI recorder
 
 Android Studio provides an menu:Run[Record Espresso Test] menu entry which allows you to record the interaction with your application and create a Espresso test from it.
+
+
+
+
+[[espresso_runningespressotests]]
+=== Running Espresso tests
+
+
+[[espresso_runningespressotests_androidstudio]]
+==== Using Android Studio
+        
+Right-click on your test and select _Run_.
+
+image::runUnitTestInAndroidStudio10.png[Run Espresso tests in Android Studio]
+        
+[[espresso_runningespressotests_gradle]]
+==== Using Gradle
+        
+
+Use the `connectedCheck` task in Gradle to run the test directly via Gradle.
+
+image::androidstudiogradleview.png[Running Gradle tasks via Android Studio]
+        
+
+
 			

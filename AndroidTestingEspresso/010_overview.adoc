@@ -42,25 +42,3 @@ include::res/espresso/demo.java[]
 If Espresso does not find a view via the `ViewMatcher`, it includes the whole view hierarchy into the error message. 
 That is useful for analyzing the problem.
 	
-
-[[espresso_runningespressotests]]
-== Running Espresso tests
-
-
-[[espresso_runningespressotests_androidstudio]]
-=== Start an Espresso test via Android Studio
-        
-Ensure to select `Android Instrumentation Tests` in your_Build Variant_ view and right-click on your test and select_Run_.
-
-image::runUnitTestInAndroidStudio10.png[Run Espresso tests in Android Studio]
-        
-[[espresso_runningespressotests_gradle]]
-=== Start an Espresso test via Gradle
-        
-
-Use the `connectedCheck` task in Gradle to run the test directly via Gradle.
-
-image::androidstudiogradleview.png[Running Gradle tasks via Android Studio]
-        
-
-

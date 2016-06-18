@@ -1,0 +1,43 @@
+== Exercise: Creating a custom Espresso matcher
+
+Android provides the `BoundedMatcher` class which allows to create Espresso view matchers for specific view types.
+
+Lets write a matcher which checks the text hints of an EditText field. 
+See http://qathread.blogspot.de/2014/03/descovering-espresso-for-android.html
+
+[source,java]
+----
+
+public static Matcher<View> withItemHint(String itemHintText) {
+  checkArgument(!(itemHintText.equals(null)));
+  return withItemHint(is(itemHintText));
+}
+
+public static Matcher<View> withItemHint(final Matcher<String> matcherText) {
+  // use preconditions to fail fast when a test is creating an invalid matcher.
+  checkNotNull(matcherText);
+  return new BoundedMatcher<View, EditText>(EditText.class) {
+
+    @Override
+    public void describeTo(Description description) {
+      description.appendText("with item hint: " + matcherText);
+    }
+
+    @Override
+    protected boolean matchesSafely(EditText editTextField) {
+      return matcherText.matches(editTextField.getHint().toString());
+    }
+  };
+}
+----
+
+It can be used via the following code:
+
+[source,java]
+----
+import static com.your.package.test.Matchers.withItemHint;
+... 
+onView(withItemHint("test")).check(matches(isDisplayed())); 
+----
+
+See https://google.github.io/android-testing-support-library/docs/espresso/advanced/#matching-data-using-ondata-and-a-custom-viewmatcher
