@@ -1,0 +1,16 @@
+<section id="androidonline" role="wrapper">
+	<title>Robolectric resources</title>
+	<para>
+		<ulink url="http://robolectric.org/">Robolectric Homepage</ulink>
+	</para>
+	<para>
+		<ulink url="https://github.com/robolectric/robolectric">Robolectric hosting page at Github</ulink>
+	</para>
+	   <para>
+        <ulink url="https://github.com/robolectric/robolectric-samples">Robolectric samples</ulink>
+    </para>
+	
+	<para>
+		<ulink url="https://github.com/robolectric/deckard-gradle">Robolectric and Espresso example project</ulink>
+	</para>
+</section>

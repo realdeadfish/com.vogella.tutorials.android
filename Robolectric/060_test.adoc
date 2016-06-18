@@ -1,0 +1,10 @@
+<section id="roboelectricexampletest">
+	<title>Roboelectric test</title>
+	<para>The following code is an example for a Robolectric test.</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/firsttest/MyActivityTest.java" />
+		</programlisting>
+	</para>
+</section>
