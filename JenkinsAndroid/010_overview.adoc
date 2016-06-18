@@ -1,0 +1,107 @@
+== How to build your Android application with Jenkins
+
+=== Android Jenkins build job prerequisites
+        
+Jenkins supports the automatic building and testing of Android applications. 
+To create a build job on Jenkins, you need to have a working build setup. 
+The Android tooling generates automatically a valid Gradle build file, which can be used in Jenkins.
+
+[[android_jenkinsbuild_sdkinstallation]]
+=== Installation of the Android SDK
+The Android SDk must be available on the server. 
+If you build server has no display server, you need to install the Android SDK from the command line. 
+You also need to configure the location for the Android SKD for Jenkins.
+        
+[source,terminal]
+----
+# download the Android SDK via wget
+# for the correct URL see http://developer.android.com/sdk/index.html
+# and look in the section "SDK Tools Only"
+wget <link from the above website>
+# example
+# wget http://dl.google.com/android/android-sdk_r24.2-linux.tgz
+# unpack it
+tar zxvf filename
+
+# Add the new directory to your patch
+# assumes you exported it to /opt/
+# this must be set for the Jenkins user
+export ANDROID_HOME="/opt/android-sdk-linux"
+export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
+
+// run this as Jenkins user
+android update sdk --no-ui
+----        
+        
+Use the `android list targets` command to see what ABIs are installed. 
+If no are listed you need to install one, as demonstrated in the following example:
+[source,terminal]
+----
+android update sdk --all --filter sys-img-armeabi-v7a-android-23 --no-ui --force
+----
+
+[[android_jenkinsbuild_installation]]
+=== Jenkins Plug-ins for installation
+
+        
+You need the follwing plug-ins to build Android application with Jenkins:
+
+* Gradle Plugin
+* Git Plugin - if Git is used for the project sources
+* Android Emulator Plugin - supports starting and unlocking an Android emulator and blocks the build until the emulator has started. 
+Required for running tests. 
+        
+[[android_jenkinsbuild_runbuild]]
+=== Creating a build jobs for Android applications
+
+        
+To create an Android build job on Jenkins, select _New Job_, and enter a job name.
+Select the _Build a free-style software project_ option.
+        
+image::android_jenkins02.png[Create new Jenkins job]
+        
+You now configure from where the source should be cloned.
+
+image::android_jenkins10.png[Create new Jenkins job and clone Git repo]
+        
+Configure you desired build trigger. 
+In the above screenshot, the job would check the Git repository every 15 mins.
+
+image::android_jenkins20.png[Jenkins Build Trigger]
+        
+Add a Gradle build step to your Jenkins jobs.
+        
+image::android_jenkins30.png[Android emulator settings]     
+        
+image::android_jenkins40.png[Enter the Gradle build file for Jenkins Android build]     
+
+That is it, you should be able to run your Android build.
+
+=== Running tests on the device
+
+To run your instrumentation tests on your device you also need to configure a virtual device.
+
+Ensure that you do not select the _Show emulator window_ option because your job should not depend on the availability of a display server.
+
+image::android_jenkins_virtualdevice.png[Configure a virtual device]     
+
+To run your tests and your instrumentation tests use the `test connectedAndroidTest` target.
+
+
+
+[[android_jenkinsbuild_tips]]
+=== Other useful plug-ins for Android builds
+
+* Android Emulator Plugin - supports a new job with the _Build multi-configuration project_ option. 
+This option allows you to test multiple emulator configurations at the same time. 
+You can, for example, test different languages, densities, screen resolutions, etc.
+
+Typically you have two Jobs. 
+One for a simple build and test run and a multi-configuration project to test the build on different device configurations.
+        
+
+        
+Another useful plug-in is the Lint plug-in which allows to run your Lint checks via Jenkins. 
+See https://wiki.jenkins-ci.org/display/JENKINS/Android+Lint+Plugin
+for details.
+        

@@ -1,36 +1,59 @@
 == Gradle for building Android applications
 	
 === Overview
-The build process of Android projects is handled by the Gradle
-build system. If you create a new project in
-Android studio, the Gradle build
-scripts are automatically created. Android studio
-wraps the Gradle
-runtime, hence no additional installation is required.
+The build process of Android projects is handled by the Gradle build system. 
+If you create a new project in Android studio, the Gradle build scripts are automatically created. 
+Android studio wraps the Gradle runtime, hence no additional installation is required.
 
-	
 The Gradle build system is designed to support complex scenarios in creating Android applications:
 
 * Multi-distribution: the same application must be customized for several clients or companies
 * Multi-apk: supporting the creation of multiple apk for different device types while reusing parts of the code
 	
-	
 You can also use a wrapper script created by Gradle. 
 This wrapper  allows you to run a Gradle build without any additional installation from the command line.
 
-
-=== Using Android Studio
-
-Android Studio wraps the Gradle build.
 If you press the run button in Android Studio, it triggers the corresponding Gradle task and starts the application.
 
 
-=== Using Gradle to build Android applications
+=== Using Gradle on the command line
 	
-You can start  your Gradle build for your Android application via the command line.
+You can start your Gradle build also from the command line.
 For this execute the following command from the main project directory. 
 This requires that Gradle is installed on the machine or that you use the Gradle wrapper (gradlew) to execute the build.
 The wrapper downloads Gradle if necessary.
+Here is an overview of the important Android Gradle tasks:
+
+.Table Android Gradle build targets
+|===
+|Command |Description
+
+
+|`./gradlew build`
+|build project, runs both the assemble and check task
+
+|`./gradlew clean build`
+|build project complete from scratch
+
+|`./gradlew clean build`
+|build project complete from scratch
+
+|`./gradlew test`
+|Run the tests
+
+|`./gradlew connectedAndroidTest`
+|Run the instrumentation tests
+
+|===
+
+To see all available tasks, use the `gradlew wrapper` command.
+# 
+gradle build
+
+# 
+
+
+
 
 [source,shell]
 ....
