@@ -12,7 +12,7 @@
 
 	<para>
 		To ensure this you can use
-		<wordasword>StrictMode</wordasword>
+		_StrictMode_
 		. StrictMode is available as of API 9 (Android
 		2.3.3) and
 		allows to
@@ -21,7 +21,7 @@
 	</para>
 	<para>
 		Via
-		<wordasword>StrictMode</wordasword>
+		_StrictMode_
 		you can instruct the Android system to crash your application if
 		it
 		performs
@@ -33,9 +33,9 @@
 	</para>
 	<para>
 		The following code shows how to use
-		<wordasword>StrictMode</wordasword>
+		_StrictMode_
 		. As the
-		<wordasword>activity</wordasword>
+		_activity_
 		violates these settings it
 		will crash.
 	</para>

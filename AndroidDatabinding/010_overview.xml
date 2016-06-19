@@ -21,7 +21,7 @@
 		</para>
 		<para>
 			The Android build system generates based on additional meta data in your layout files
-			<wordasword>Binding</wordasword>
+			_Binding_
 			classes. By default, the name of the Binding class is generated based on the name of the layout file. It converts the
 			name to Pascal
 			case and adds the “Binding” suffix to it. For example, if the layout file is called activity_main.xml,
@@ -38,12 +38,12 @@
 		</para>
 		<para>
 			Layout files which supports data binding start with a
-			<wordasword>layout</wordasword>
+			_layout_
 			root tag followed by a
-			<wordasword>data</wordasword>
+			_data_
 			element
 			and a
-			<wordasword>view</wordasword>
+			_view_
 			root element. This view element is what your root would be in a non-binding layout file. The data elements
 			describe
 			data which is available for binding, expressions within

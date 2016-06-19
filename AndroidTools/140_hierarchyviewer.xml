@@ -3,7 +3,7 @@
 	<para>
 		The
 		<guilabel>Hierarchy View</guilabel>
-		<wordasword>perspective</wordasword>
+		_perspective_
 		allows you to visualize the
 		<code>View</code>
 		hierarchy of your Android application and helps you to identify
@@ -12,7 +12,7 @@
 	</para>
 	<para>
 		You can open the
-		<wordasword>Hierarchy View</wordasword>
+		_Hierarchy View_
 		via
 		<menuchoice>
 			<guimenu>Window</guimenu>

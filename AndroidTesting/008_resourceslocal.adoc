@@ -7,6 +7,8 @@ https://github.com/googlesamples/android-testing-templates - Android testing tem
 
 https://codelabs.developers.google.com/codelabs/android-testing/ Android Testing Code Lap from Google
 
+https://github.com/benbaxter/android-unit-test-kata Android Testing Kata
+
 http://tools.android.com/tech-docs/unit-testing-support - Unit test support description from Google
 
 http://www.vogella.com/tutorials/Robolectric/article.html - Using Robolectric for Android unit testing on the JVM

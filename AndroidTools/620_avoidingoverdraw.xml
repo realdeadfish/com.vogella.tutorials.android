@@ -1,10 +1,10 @@
 <section id="avoidoverdraw">
 	<title>Analyzing Overdraw</title>
 	<para>
-		<wordasword>Overdraw</wordasword>
+		_Overdraw_
 		happens if you draw something on top of something else. For
 		example an
-		<wordasword>activity</wordasword>
+		_activity_
 		has a
 		<code>Window</code>
 		as background. If a

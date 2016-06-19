@@ -3,18 +3,18 @@
 	<section id="tracewiew_intro">
 		<title>Introduction</title>
 		<para>
-			<wordasword>Traceview</wordasword>
+			_Traceview_
 			is a graphical
 			viewer to see logs created by an Android
 			application.
 			Via
-			<wordasword>Traceview</wordasword>
+			_Traceview_
 			you can measure the performance of your application to
 			identify
 			performance problems.
 		</para>
 		<para>
-			<wordasword>Traceview</wordasword>
+			_Traceview_
 			is located as standalone tool in the
 			<filename>tools</filename>
 			folder of your Android SDK installation folder and it also integrated

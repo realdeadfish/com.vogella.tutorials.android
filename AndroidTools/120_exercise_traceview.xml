@@ -52,7 +52,7 @@
 			Implement a
 			<code>ListView</code>
 			in the
-			<wordasword>activity</wordasword>
+			_activity_
 			which shows 1000 random generated strings.
 		</para>
 
@@ -82,7 +82,7 @@
 		<title>Solve performance problems</title>
 		<para>
 			Improve the performance based on the measurements of
-			<wordasword>Traceview</wordasword>
+			_Traceview_
 			.
 			Here are some pointers what to improve.
 			<itemizedlist>
@@ -114,7 +114,7 @@
 			<para>
 				The layout is also not optimized. We reuse this exercise in the
 				exercise for the
-				<wordasword>HierarchyView</wordasword>
+				_HierarchyView_
 			</para>
 		</note>
 

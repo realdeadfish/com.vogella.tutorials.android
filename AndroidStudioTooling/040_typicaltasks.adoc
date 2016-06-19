@@ -94,7 +94,7 @@ The following is a list of useful shortcuts for Android Studio.
 		<para>
 			If a resource folder is missing, you have to create it. This is demonstrates by the following screenshots for the
 			creation of the
-			<wordasword>layout-port</wordasword>
+			_layout-port_
 			folder.|
 		</para>
 		<para>
@@ -160,7 +160,7 @@ The following is a list of useful shortcuts for Android Studio.
 			</menuchoice>
 			to create a new vector drawable.
 			The creation process is demonstrated for the
-			<wordasword>ic_tethering</wordasword>
+			_ic_tethering_
 			icon.
 		</para>
 		<para>

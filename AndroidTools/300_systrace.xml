@@ -1,7 +1,7 @@
 <section id="systrace">
 	<title>Systrace</title>
 	<para>
-		<wordasword>Systrace</wordasword>
+		_Systrace_
 		allows to measure the performance directly at kernel level. To enable
 		systrace, select the Developer options and select the
 		<guilabel>Enable traces</guilabel>
@@ -40,7 +40,7 @@
 	</para>
 	<para>
 		You can also start
-		<wordasword>Systrace</wordasword>
+		_Systrace_
 		directly from Eclipse via the
 		<guilabel>DDMS</guilabel>
 		perspective.
@@ -69,9 +69,9 @@
 		</mediaobject>
 	</para>
 	<para>
-		<wordasword>Systrace</wordasword>
+		_Systrace_
 		captures events for 5 seconds. As result
-		<wordasword>Systrace</wordasword>
+		_Systrace_
 		creates a HTML file which allows you to analyze potential issues.
 	</para>
 

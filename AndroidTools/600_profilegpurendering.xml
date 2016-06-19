@@ -6,7 +6,7 @@
 		in the
 		<guilabel>Setting</guilabel>
 		or your Android device you can activate
-		<wordasword>Profile GPU rendering</wordasword>
+		_Profile GPU rendering_
 		. With this option the system tracks the time it took to draw the last
 		128 frames.
 	</para>
@@ -27,7 +27,7 @@
 	</para>
 	<para>
 		In the resulting log, look for a section called
-		<wordasword>Profile data in ms</wordasword>
+		_Profile data in ms_
 		.
 	</para>
 

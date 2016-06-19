@@ -2,12 +2,12 @@
 	<title>Example for data binding usage</title>
 	<para>
 		Layout files which supports data binding start with a
-		<wordasword>layout</wordasword>
+		_layout_
 		root tag followed by a
-		<wordasword>data</wordasword>
+		_data_
 		element
 		and a
-		<wordasword>view</wordasword>
+		_view_
 		root element. This view element is what your root would be in a non-binding layout file. The data elements
 		describe
 		data which is available for binding, expressions within

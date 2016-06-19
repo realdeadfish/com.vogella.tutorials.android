@@ -15,7 +15,7 @@
 	</para>
 	<para>
 		This starts an Eclipse based application called
-		<wordasword>Android Device Monitor</wordasword>
+		_Android Device Monitor_
 		for interacting with your Android
 		(virtual)
 		device
