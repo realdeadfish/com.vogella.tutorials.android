@@ -60,15 +60,26 @@ Use the `./gradlew build` command to build all your product flavors.
 
 === Prepare your application for testing with Gradle flavors
 
-Create a class `IntentBuilder` which builds a “shared Intent” via a static method with the following code.
+Create a class `ShareIntentBuilder` which starts an activity via the  “share intent” via a static method with the following code.
 
 [source,java]
 ----
-Intent i = new Intent(Intent.SEND);
-i.setType("text/plain");
-i.putExtra(Intent.EXTRA_TEXT, "Hello");
+import android.content.Context;
+import android.content.Intent;
 
-startActivity(i);
+public class ShareIntentBuilder {
+
+    public static void startSendActivity(Context context, String title, String body) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_TITLE, title);
+        intent.putExtra(Intent.EXTRA_TEXT, body);
+        intent.setType("text/plain");
+        Intent chooserIntent = Intent.createChooser(intent, context.getResources().getText(R.string.share));
+        chooserIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(chooserIntent);
+    }
+
 ----
 
 Allow the activity which triggers this intent to be replaced in your “mock” flavor
