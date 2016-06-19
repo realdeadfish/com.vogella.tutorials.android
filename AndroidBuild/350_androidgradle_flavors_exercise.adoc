@@ -57,4 +57,24 @@ Select now you prod flavor and start it, you should see the other string.
 === Build via Gradle command line
 		
 Use the `./gradlew build` command to build all your product flavors.
-	
+
+=== Prepare your application for testing with Gradle flavors
+
+Create a class `IntentBuilder` which builds a “shared Intent” via a static method with the following code.
+
+[source,java]
+----
+Intent i = new Intent(Intent.SEND);
+i.setType("text/plain");
+i.putExtra(Intent.EXTRA_TEXT, "Hello");
+
+startActivity(i);
+----
+
+Allow the activity which triggers this intent to be replaced in your “mock” flavor
+If in a flavor “mock” is selected, start a second activity in your application which displays the send data.
+If the flavor "prod" is selected send the shared intent.
+
+NOTE: Classes cannot be overriden, you need to create the classes in their specific flavors and not in the main flavor.
+
+
