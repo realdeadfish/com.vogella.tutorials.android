@@ -45,3 +45,4 @@ You should test all operations of the provider and also what happens if the prov
 
 To test a loader, you use the `LoaderTestCase`class. 
 It is expected that a JUnit 4 rule will be provided in the future to replace this class.
+
