@@ -1,6 +1,8 @@
-<section id="roboelectricexampletest">
-	<title>Roboelectric test</title>
-	<para>The following code is an example for a Robolectric test.</para>
+[[roboelectricexampletest]]
+== Roboelectric test
+
+The following code is an example for a few Robolectric tests.
+
 
 	<para>
 		<programlisting language="java">

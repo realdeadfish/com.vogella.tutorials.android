@@ -1,5 +1,0 @@
-dependencies {
-    ...
-    // Robolectric
-    testCompile "org.robolectric:robolectric:3.0"
-}

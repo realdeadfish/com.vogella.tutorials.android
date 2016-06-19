@@ -1,34 +1,30 @@
 [[robotium_installation]]
 == Using Robolectric for your test with Gradle
 
-		To use Robolectric for your Android unit tests, simply add the following dependency to your Gradle build file.
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/install/build.gradle" />
-		</programlisting>
+To use Robolectric for your Android unit tests, simply add the following dependency to your Gradle build file.
 
-		Your tests should be stored in the
-		<filename>src/test</filename>
-		directory and if you want to run with Robolectric you must annotate these tests with the
-		<code>@RunWith(RobolectricGradleTestRunner.class)</code>
-		test runner. You also need to configure the location of the manifest via
-		the
-		<code>@Config()</code>
-		annotation.
-	The following shows an example test configured to run via Robolectric on the JVM.
-	<para>
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/install/DeckardActivityTest.java" />
-		</programlisting>
-	</para>
+[source,gradle]
+----
+dependencies {
+    ...
+    // Robolectric
+    testCompile "org.robolectric:robolectric:3.0"
+}
+----
+
+Your tests should be stored in the _src/test_ directory.
+The class containing your Robolectric test must be annotate with the _@RunWith(RobolectricGradleTestRunner.class)_ test runner.
+It must also use the `@Config()` to point to your `BuildConfig.class` class. 
+The following shows an example test configured to run via Robolectric on the JVM.
+
+[source,gradle]
+----
+include::res/install/DeckardActivityTest.java[]
+----
 
 [NOTE]
 ====
-            Instead of specifying the values via the
-            <code>@Config</code>
-            annotation you could also use a
-            <filename>resources/robolectric.properties</filename>
-            file. See
-            <ulink url="http://robolectric.org/configuring/">Configuring Robolectric</ulink>
-            for more information.
-
+Instead of specifying the values via the `@Config` annotation, you could also use a _resources/robolectric.properties_ file. See
+See http://robolectric.org/configuring for more information.
 ====
+

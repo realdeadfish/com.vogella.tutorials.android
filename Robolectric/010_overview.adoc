@@ -1,41 +1,28 @@
 == Robolectric
 
 == What is Robolectric
+
+Robolectric is designed to allow you to test Android applications on the JVM based on the _JUnit 4_ framework.
 _Robolectric_ is a framework that allows you to write unit tests and run them on a desktop JVM while still using Android API.
 Robolectric mocks part of the Android framework contained in the _android.jar_ file. 
-This is similar to the unit test support via the Android Gradle plug-in but Robolectric provides also
-implementations for the methods while the Android unit testing support throws exceptions in all in android.jar
-methods which are used for unit testing.
+Robolectric provides also implementations for the methods while the standard Android unit testing support throws exceptions for all Android methods.
 
-Robolectric is designed to allow you to test Android applications
-on the JVM.
-This enables you to run your Android
-tests in your
-continuous
-integration environment without any additional setup.
-_Robolectric_
-supports resource handling, e.g., inflation of
-<code>views</code>
-. You can also use the
-<code>findViewById()</code>
-to search in a
-<code>view</code>
-.
+This enables you to run your Android tests in your continuous integration environment without any additional setup.
+_Robolectric_ supports resource handling, e.g., inflation of <code>views</code>.
+You can also use the <code>findViewById()</code> to search in a <code>view</code>.
+
 The homepage of Robolectric under the following URL:
 <ulink url="http://robolectric.org/">Robolectric Homepage</ulink>
 .
 
-Robolectric is based on the _JUnit 4_ framework.
 Robolectric is not an integration test framework, i.e., you cannot not test the interaction of Android components with it.
 
 
 === Shadow objects
-Robolectric replaced all Android classes by so-called _shadow objects_
-.
-If a method is implemented by Robolectric it forwards these method
-calls to the shadow object
-which behave similar to
-the objects of the
-Android SDK. If a method is not implemented by the shadow object, it
-simply returns a default value,
-e.g., null or 0.
+
+Robolectric replaced all Android classes by so-called _shadow objects_.
+If a method is implemented by Robolectric ,it forwards these method calls to the shadow object.
+Shadow objects behave similar to the Android implementation.
+If a method is not implemented by the shadow object, it simply returns a default value, e.g., null or 0.
+
+To access a shadow object use `Shadows.shadowOf`.

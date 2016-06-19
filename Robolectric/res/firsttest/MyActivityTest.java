@@ -6,11 +6,14 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 
 import com.example.BuildConfig;
+import com.example.R;
+import com.example.SecondActivity;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.Shadows;
 import org.robolectric.annotation.Config;
 import org.junit.Before;
 import org.junit.Test;
@@ -48,7 +51,7 @@ public class MyActivityTest {
 	{
 	    Button button = (Button) activity.findViewById( R.id.button2 );
 	    button.performClick();
-	    Intent intent = Robolectric.shadowOf(activity).peekNextStartedActivity();
+	    Intent intent = Shadows.shadowOf(activity).peekNextStartedActivity();
 	    assertEquals(SecondActivity.class.getCanonicalName(), intent.getComponent().getClassName());
 	}
 	
