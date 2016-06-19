@@ -1,0 +1,14 @@
+== Creating code coverage report
+
+A code coverage report shows you how much of your application code is covered by tests. 
+To create such a report, you can create a separate launch configuration.
+For this, select your package package and select menu:[Create Tests in...].
+
+image::android-code-coverage10.png[]
+
+You can now create a runtime configuration for the code coverage. 
+If you run it a report is generated.
+
+image::android-code-coverage20.png[]
+image::android-code-coverage30.png[]
+image::android-code-coverage40.png[]
