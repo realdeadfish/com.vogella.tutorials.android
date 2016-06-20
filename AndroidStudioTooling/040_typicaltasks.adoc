@@ -1,41 +1,6 @@
 <section id="androidstudio_typicaltasks" role="wrapper">
 	<title>Using Android Studio</title>
-	<section id="androidstudio_shortcuts">
-		<title>Keyboard shortcuts </title>
-The following is a list of useful shortcuts for Android Studio.
 
-.Table Useful shortcuts
-|===
-|Shortcut |Description
-
-|kbd:[Ctrl+ Space]
-|Content assists in the code editor
-
-|kbd:[Alt+Enter]
-|Quick fix proposing suggestions for compile errors or code improvements
-
-|kbd:[Shift+F6]
-|Start the rename refactoring
-
-|kbd:[Shift + F10]
-|Run the current program
-
-|kbd:[Ctrl+F]
-|Inline search in the current editor
-
-|kbd:[Ctrl+Shift+F]
-|Text search over the whole project
-
-|kbd:[Shift+Shift]
-|Search everywhere. Does not search in source files
-
-|kbd:[Ctrl+P]
-|Show the possible parameters of a method or an constructor.
-
-|kbd:[Shift+Alt+Up] or kbd:[Shift+Alt+Down]
-|Show the possible parameters of a method or an constructor.
-
-|===
 
 [[androidstudio_creatinglayoutfile]]
 === Creating a new layout file
