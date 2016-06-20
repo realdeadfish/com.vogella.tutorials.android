@@ -32,14 +32,7 @@ include::res//android/build.gradle[]
 	
 Add the following entries to your _app/build.gradle_ file.
 
-<<<<<<< Upstream, based on branch 'master' of git@github.com:vogellacompany/com.vogella.tutorials.android.git
-[source,java]
-=======
-
-Add the following entries to your _app/build.gradle_ file.
-
 [source,xml]
->>>>>>> 618e35f Fixed Asccidoc errors
 ----
 include::res/android/appbuild.gradle[]
 ----

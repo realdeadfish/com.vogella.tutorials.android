@@ -83,4 +83,55 @@ Right-click on your test class in the _Project_ window and select _Run_.
 The test reports are created in the `app/build/reports/androidTests/connected/` directory. 
 The `index.html` gives an overview and links to the individual test pages.
 
+=== How to replace the application for instrumentation tests
+
+You can replace the application class for the instrumentation tests by overriding the `AndroidJUnitRunner` and its `AndroidJUnitRunner` method.
+
+[source,java]
+----
+package com.vogella.android.daggerjunitmockito;
+
+import android.app.Application;
+
+
+public class MyMockApplication extends Application {
+    
+    @Override
+    public void onCreate() {
+       // do something important for your tests here
+    }
+}
+----
+
+Test runner
+
+[source,java]
+----
+package com.vogella.android.daggerjunitmockito;
+
+import android.app.Application;
+import android.content.Context;
+import android.support.test.runner.AndroidJUnitRunner;
+
+public class MockTestRunner extends AndroidJUnitRunner {
+  @Override
+  public Application newApplication(ClassLoader cl, String className, Context context)
+      throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+    return super.newApplication(cl, MyMockApplication.class.getName(), context);
+  }
+}
+
+----
+
+And you need to register this test runner in your build.gradle file.
+
+[source,java]
+----
+android {
+    /// more
+        testInstrumentationRunner "com.vogella.android.daggerjunitmockito.MockTestRunner"
+    }
+    /// more
+}
+----
 

@@ -8,7 +8,7 @@ Many Android components, e.g. activities, are instantiated by the Android framew
 This makes it difficult to supply dependencies via constructors to Android components.
 		
 [[android_dagger_using]]
-== Using Dagger 2 in Android
+=== Using Dagger 2 in Android
 
 To enable Dagger 2 adjust your _build.gradle_ project file.
 

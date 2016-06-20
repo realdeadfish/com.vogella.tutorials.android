@@ -1,12 +1,29 @@
 = Android development with Android Studio - Tutorial
 :linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
 (c) 2009, 2016 vogella GmbH
-Version 14.1, 18.04.2016
+Version 14.4, 20.06.2016
 
 [abstract]
 This tutorial describes how to create Android applications with Android Studio.
 It is usually based on the latest and greatest Android and Android Studio release.
 
+
+include::010_overview.adoc[]
+include::016_androidstudioinstallation.adoc[]
+include::018_androidsdkmanager.adoc[]
+include::020_emulator.adoc[]
+include::024_tutorial_firstproject_androidstudio.adoc[]
+include::100_application.adoc[]
+include::110_userinterface_components.adoc[]
+include::130_more_elements.adoc[]
+include::140_manifestmf.adoc[]
+include::142_manifestmfdetails.adoc[]
+include::150_resources.adoc[]
+include::170_views.adoc[]
 
 include::180_layouts.adoc[]
 

@@ -1,157 +1,59 @@
-<section id="androidstudio" role="wrapper">
-	<title>Installation of Android Studio
-	<section id="installation_system">
-		<title>System requirements
-		Development for Android can be done on a reasonably sized
-			computer. For a nice experience a modern computer is recommended, for
-			example, a 2.6 GHz CPU with at least 8 GB of memory. An SSD speeds up
-			the
-			start of the Android emulator significantly.
-		
-	</section>
+== Installation of Android Studio
 
-	<section id="installation_linux64">
-		<title>Requirements for using Linux
-		
-			The Android SDK is 32-bit, therefore on a 64-bit Linux system you
-			need
-			to have the package
-			`ia32-libs`
-			installed. For Ubuntu you can do this via the following command.
-		
-		
-			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/install/libs.txt" />
-			</programlisting>
-		
-		 Please check your distribution documentation if you are using
-			a
-			different flavor of Linux.
-		
-		
-			On Ubuntu 13.04 you also have to install the OpenGL support.
-			This can
-			be done on Ubuntu 13.04 via following command.
-		
-		
-			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/install/opengl.txt" />
-			</programlisting>
-		
-		 Please check your distribution documentation if you are using
-			a
-			different flavor of Linux.
-		
-	</section>
+=== System requirements
 
-
-	<section id="androidstudio_download">
-		<title>Download Android Studio
+Development for Android can be done on a reasonably sized computer. 
+For a nice experience a modern computer is recommended, for example, a 2.6 GHz CPU with at least 8 GB of memory. 
+An SSD speeds up the  start of the Android emulator significantly.
 		
-			Download Android Studio from the
-			<ulink url="http://developer.android.com/sdk/index.html">Android Studio website</ulink>
-			. The download comes in two flavors, SDK Tools only and Android Studio Packages. You want to download the Android
-			Studio Package for your operation system.
+=== Requirements for using Linux
+		
+The Android SDK is 32-bit, therefore on a 64-bit Linux system you need to have the package `ia32-libs` installed. 
+For Ubuntu you can do this via the following command.
+
+[source,terminal]
+----
+apt-get install ia32-libs
+----
+		
+Please check your distribution documentation if you are using a different flavor of Linux.
 		
 
+[[androidstudio_download]]
+=== Download Android Studio
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_installation10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Installation of Android Studio</phrase>
-				</textobject>
-			</mediaobject>
+Download Android Studio from the following URL: http://developer.android.com/sdk/index.html
+
+The download comes in two flavors, SDK Tools only and Android Studio Packages. 
+You want to download the Android Studio Package for your operation system.
 		
 
-	</section>
-	<section id="androidstudio_installation">
-		<title>Installation of Android Studio 
-		Installation for Windows is simple, just lauch the
-			.exe you
-			downloaded. On Max OSX drag and drop Android Studio
-			into the
-			Applications folder.
+image::androidstudio_installation10.png[Installation of Android Studio]
+
+[[androidstudio_installation]]
+=== Installation of Android Studio 
+
+Installation for Windows is simple, just launch the .exe you downloaded. 
+On Max OSX drag and drop Android Studio into the Applications folder.
 		
-		On Linux unpack the downloaded ZIP file into an appropriate
-			location for
-			your applications. To launch Android
-			Studio, navigate
-			to the
-			android-studio/bin/ directory in a terminal and execute
-			studio.sh.
+On Linux unpack the downloaded ZIP file into an appropriate location for your applications. 
+To launch Android Studio, navigate to the android-studio/bin/ directory in a terminal and execute studio.sh.
 		
 
-	</section>
 
-	<section id="androidstudio_configuration">
-		<title>Configuration
-		The first time you start Android Studio you can select if you
-			want to import your setting from an existing
-			installation.
+The first time you start Android Studio you can select if you want to import your setting from an existing installation.
 		
+image::androidstudio_configuration10.png[Configuration wizard of Android Studio]
+		
+Afterwards click through the setup guide. 
 
+image::androidstudio_configuration20.png[Configuration wizard of Android Studio]
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_configuration10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Configuration wizard of Android Studio</phrase>
-				</textobject>
-			</mediaobject>
-		
-		Afterwards click through the setup guide. 
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_configuration20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Configuration wizard of Android Studio</phrase>
-				</textobject>
-			</mediaobject>
-		
+image::androidstudio_configuration30.png[Configuration wizard of Android Studio]
 
+image::androidstudio_configuration40.png[Configuration wizard of Android Studio]
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_configuration30.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Configuration wizard of Android Studio</phrase>
-				</textobject>
-			</mediaobject>
-		
+Once you reach the last page, press the _Finish_ button.
 
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_configuration40.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Configuration wizard of Android Studio</phrase>
-				</textobject>
-			</mediaobject>
-		
-
-		
-			Once you reach the last page, press the
-			_Finish_
-			button.
-		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_configuration50.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Configuration wizard of Android Studio</phrase>
-				</textobject>
-			</mediaobject>
-		
-	</section>
-
-</section>
+image::androidstudio_configuration50.png[Configuration wizard of Android Studio]
 

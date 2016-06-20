@@ -1,186 +1,108 @@
-<section id="android" role="wrapper">
-	<title>What is Android?
-	<section id="android_os">
-		<title>The Android operating system
-		
-			_Android_
-			is an operating system based on the Linux kernel. The
-			project
-			responsible for developing the Android system is called
-			the
-			_Android Open Source Project_
-			(AOSP)
-			and is lead
-			by Google.
-		
-		
-			The Android system supports background processing, provides a
-			rich
-			user
-			interface library, supports 2-D and 3-D
-			graphics using the
-			OpenGL-ES (short OpenGL)
-			standard and grants access to the file system
-			as well as an
-			embedded
-			SQLite
-			database.
-		
-		
-			An Android application typically consists of different visual
-			and non visual
-			components and
-			can
-			reuse components of
-			other
-			applications.
-		
-	</section>
+== Introduction into development of Android applications
 
-	<section id="android_os_layer">
-		<title>Android platform components
+=== The Android operating system
 		
-			The Android system is a full software stack, which is typically
-			divided into the four areas as depicted in the
-			following graphic.
+_Android_ is an operating system based on the Linux kernel. 
+The project responsible for developing the Android system is called the _Android Open Source Project_ (AOSP) and it lead by  Google.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidsoftwarelayer10.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Android software layers</phrase>
-				</textobject>
-			</mediaobject>
+This Android operating system can be divided into the four areas as depicted in the following graphic. 
+An Android application developer typically works with the two layers on top to create new Android applications.
 		
-		The levels can be described as:
-		
-			<itemizedlist>
-				<listitem>
-					Applications - The Android Open Source Project contains
-						several default application, like the Browser, Camera,
-						Gallery,
-						Music, Phone and more.
-					
-				</listitem>
-				<listitem>
-					Application framework - An API which allows high-level
-						interactions with the Android system from Android
-						applications.
-					
-				</listitem>
-				<listitem>
-					Libraries and runtime - The libraries for many common
-						functions
-						(e.g.: graphic rendering, data storage, web
-						browsing,
-						etc.) of the
-						Application Framework and the Dalvik runtime, as well
-						as the core
-						Java libraries for running
-						Android applications.
-					
-				</listitem>
-				<listitem>
-					Linux kernel - Communication layer for the underlying
-						hardware.
-					
-				</listitem>
-			</itemizedlist>
+image::androidsoftwarelayer10.png[Android software layers]
 
+The levels can be described as:
 		
+* Applications - The Android Open Source Project contains  several default application, like the Browser, Camera, Gallery, Music, Phone and more.
+* Application framework - An API which allows high-level interactions with the Android system from Android applications.
+* Libraries and runtime - The libraries for many common framework functions, like, graphic rendering, data storage, web browsing. 
+It also contains the Android Runtime, as well as the core Java libraries for running Android applications.
+* Linux kernel - Communication layer for the underlying hardware.
 
-		The Linux kernel, the libraries and
-			the
-			runtime are encapsulated
-			by the application framework. The Android
-			application developer
-			typically works with the two layers on top
-			to
-			create
-			new Android
-			applications.
-		
-	</section>
+=== How to develop Android applications
 
+Android applications are primarily written in the Java programming language.
+		
+During development the developer creates the Android specific configuration files and writes the application logic in the Java programming language.
+		
+The Android development tooling converts these application files into an Android application.
+If the developer trigger the deployment, the whole Android application is compiled, packaged, deployed and potentially started.
+		
+		
+The _Android Software Development Kit_ (Android SDK) and the Gradle tooling contains the necessary tools to create, compile and package Android applications. 
+The Android team provides a Gradle plug-in to build Android applications.
+You find the available versions of this plug-in under the following URL: https://jcenter.bintray.com/com/android/tools/build/gradle/
 
+The Android SDK contains the _Android debug bridge_ (adb). 
+adb is  a tool that allows you to connect to a virtual or real Android device, for the purpose of managing the device or debugging your application.
+		
+=== Android Developer Tools and Android Studio
+		
+Google provides an IDE called _Android Studio_ as the preferred development environment for creating Android applications. 
+This IDE is based on the IntelliJ IDE.
+		
+The Android tools provide specialized editors for Android specific files.
+Most of Android's configuration files are based on XML. 
+In this case these editors allow you to switch between the XML representation of the file and a structured user interface for entering the data.
 
+.Using Eclipse for Android development
+****
 
-	<section id="android_googleplay">
-		<title>Google Play
-		
-			Google offers the
-			_Google Play_
-			service, a marketplace in which programmers can
-			offer their Android
-			applications to
-			Android users. Customers use the
-			_Google Play_
-			application
-			which allows them to buy and install
-			applications from the
-			Google
-			Play service.
-		
-		Google Play also offers an update service. If a programmer
-			uploads a new version of his application to Google
-			Play, this service
-			notifies existing users that an update is available and allows them
-			to
-			install the update.
-		
-		
-			Google Play provides access to services and libraries for
-			Android
-			application
-			programmers, too. For example, it
-			provides a
-			service to
-			use and
-			display
-			Google Maps and another to synchronize the
-			application
-			state between different
-			Android installations. Providing
-			these
-			services via Google Play has the advantage that they are
-			available
-			for older
-			Android releases and can be updated by Google
-			without the
-			need for an update of the Android release on the phone.
-		
-	</section>
+	
+The Google development team focus their future development on Android Studio.
+At the time of this writing the Eclipse Gradle tooling does not support Android applications.
 
-	<section id="androiddevelopment_dev">
-		<title>How to develop Android applications
-		Android applications are primarily written in the Java
-			programming
-			language.
-		
-		 During development the developer creates the Android specific
-			configuration files and writes the application
-			logic in the Java
-			programming language.
-		
+Please register for https://bugs.eclipse.org/bugs/show_bug.cgi?id=468315 to get this fixed in Eclipse.
 
-		
-			The Android development tooling converts these
-			application
-			files,
-			transparently
-			to
-			the user, into an Android
-			application.
-			When
-			developers trigger the deployment in their IDE,
-			the whole
-			Android
-			application is
-			compiled, packaged,
-			deployed and started.
-		
-	</section>
+image::EclipseGradleAndroidSupport.png[Vote for Grade support in Eclipse]
 
-</section>
+In addition you can try to convince Google to support Eclipse. Please go to https://code.google.com/p/android/issues/detail?id=81451 and press the star sign.
+	
+image::eclipsegradlesupportbug.png[Vote for Eclipse support by Google]
+	
+****
+		
+=== Conversion process from source code to Android application
+
+NOTE: This is background information about the build process. It is not necessary for you to develop Android applicatoins. Feel free to skip.
+		
+The Java source files are converted to Java class files by the Java compiler.
+The Android SDK contains a tool called _dx_ which converts Java class files into a _.dex_ (Dalvik Executable) file. 
+All class files of the application are placed in this _.dex_ file. 
+During this conversion process redundant information in the class files are optimized in the _.dex_ file.
+For example, if the same `String` is found in different class files, the _.dex_ file contains only one reference of this `String`.
+	
+These _.dex_ files are therefore much smaller in size than the corresponding class files.
+
+The _.dex_ file and the resources of an Android project, e.g., the images and XML files, are packed into an _.apk_ (Android Package) file. 
+The program _aapt_ (Android Asset Packaging Tool) performs this step.
+		
+The resulting _.apk_ file contains all necessary data to run the Android application and can be deployed to an Android device via the _adb_ tool.
+
+As of Android 5.0 the _Android RunTime_ (ART) is used as runtime for all Android applications.
+ART uses _Ahead Of Time_ compilation. 
+During the installation of  an application on an Android device, the application code is translated into machine code.
+This results in approx. 30% larger compile code, but allows faster execution at startup.
+		
+This also saves battery life, as the compilation is only done once, during the first start of the application.
+		
+The `dex2oat` tool takes the .dex file created by the Android tool change and compiles that into an Executable and Linkable Format (ELF file).
+This file contains the dex code, compiled native code and meta-data.
+Keeping the .dex code allows that existing tools still work.
+		
+The garbage collection in ART has been optimized to reduce times in which the application freezes.
+		
+=== Google Play
+		
+Google offers the _Google Play_ service, a marketplace in which programmers can offer their application to Android users. 
+Customers use the _Google Play_ application which allows them to buy and install applications from the Google Play service.
+		
+Google Play also offers an update service. 
+If a application developer uploads a new version of his application to Google Play, this service notifies existing users about the update allows them to install the update.
+		
+		
+Google Play provides access to services and libraries for Android  application programmers, too. 
+For example, it provides a service to use and display Google Maps.
+Providing these services via Google Play has the advantage that they are available  for older Android releases. 
+Google can update them without the need for an update of the Android release on the phone.
+

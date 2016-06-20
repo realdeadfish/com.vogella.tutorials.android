@@ -11,97 +11,89 @@ Alternatively you can select the menu:File[New Project...] entry from the menu.
 		
 
 		
-			Use the following data of input for your project. Project location and package name are derived from your input. If
-			you want another package name, press the small
-			_Edit_
-			hyperlink.
+Use the following data of input for your project. 
+Project location and package name are derived from your input. 
+If you want another package name, press the small _Edit_ hyperlink.
 
-			<table frame='all'>
-				<title>Setting for your Android project
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*" />
-					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Property</entry>
-							<entry>Value</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>Application name</entry>
-							<entry>Test App</entry>
-						</row>
-						<row>
-							<entry>Company Domain</entry>
-							<entry>android.vogella.com</entry>
-						</row>
-						<row>
-							<entry>Package Name</entry>
-							<entry>com.vogella.android.testapp</entry>
-						</row>
-						<row>
-							<entry>API (Minimum, Target, Compile with)</entry>
-							<entry>Latest</entry>
-						</row>
-						<row>
-							<entry>Template</entry>
-							<entry>Empty Activity</entry>
-						</row>
+<table frame='all'>
+	<title>Setting for your Android project
+	<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+		<colspec colname='c1' colwidth="1*" />
+		<colspec colname='c2' colwidth="2*" />
+		<thead>
+<row>
+	<entry>Property</entry>
+	<entry>Value</entry>
+</row>
+		</thead>
+		<tbody>
+<row>
+	<entry>Application name</entry>
+	<entry>Test App</entry>
+</row>
+<row>
+	<entry>Company Domain</entry>
+	<entry>android.vogella.com</entry>
+</row>
+<row>
+	<entry>Package Name</entry>
+	<entry>com.vogella.android.testapp</entry>
+</row>
+<row>
+	<entry>API (Minimum, Target, Compile with)</entry>
+	<entry>Latest</entry>
+</row>
+<row>
+	<entry>Template</entry>
+	<entry>Empty Activity</entry>
+</row>
 
-					</tbody>
-				</tgroup>
-			</table>
+		</tbody>
+	</tgroup>
+</table>
 		
 
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/as_first10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Creating a new Android Studio project</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/as_first10.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>Creating a new Android Studio project</phrase>
+	</textobject>
+</mediaobject>
 		
 
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/as_first20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Creating a new Android Studio project</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/as_first20.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>Creating a new Android Studio project</phrase>
+	</textobject>
+</mediaobject>
 		
 
 image::as_first30.png[Creating a new Android Studio project]
 		
-		Android Studio automatically downloads the required Android SDK, if that has not
-			already been done. So depending
-			on your installation, the next dialog might not be displayed.
+Android Studio automatically downloads the required Android SDK, if that has not already been done. 
+Depending on your installation, the next dialog might not be displayed.
 		
-
 image::as_first40.png[Creating a new Android Studio project]
 		
 
+Afterwards select the _Empty Activity_ template.
 
 		
-			Afterwards select the
-			_Empty Activity_
-			template.
-		
-
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/as_first50.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Creating a new Android Studio project</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/as_first50.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>Creating a new Android Studio project</phrase>
+	</textobject>
+</mediaobject>
 		
 		On the last page, accept the defaults. 
 
@@ -110,18 +102,18 @@ image::as_first60.png[Creating a new Android Studio project]
 
 === Review the generated project
 		The above wizard generates based on your input an Android project. Review the generated project structure and
-			files.
+files.
 		
 
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/as_first70.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Creating a new Android Studio project</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/as_first70.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>Creating a new Android Studio project</phrase>
+	</textobject>
+</mediaobject>
 		
 	</section>
 
@@ -129,136 +121,98 @@ image::as_first60.png[Creating a new Android Studio project]
 		<title>Create a virtual device (AVD)
 
 		
-			Define a new Android Virtual Device (AVD) by opening
-			the
-			_AVD Manager_
-			via
-			<menuchoice>
-				<guimenu>Tools</guimenu>
-				<guisubmenu>Android</guisubmenu>
-				<guisubmenu>AVD Manager</guisubmenu>
-			</menuchoice>
-			. Afterwards
-			press the
-			<guibutton>Create Virtual Device...</guibutton>
-			button.
+Define a new Android Virtual Device (AVD) by opening the _AVD Manager_ via menu:Tools[Android>AVD Manager].
+Afterwards press the _Create Virtual Device..._ button.
 		
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/androidstudio_create_avd10.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>Create a new AVD</phrase>
+	</textobject>
+</mediaobject>
+
+Select values similar to the following screenshots.
 
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_create_avd10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Create a new AVD</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/androidstudio_create_avd20.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>Settings for a new AVD</phrase>
+	</textobject>
+</mediaobject>
 		
-
-		Select values similar to the following screenshots.
-
+On the next screen select the latest API level for your AVD. 
+You may need to select the option for additional images as highlighted in the following screenshot.
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_create_avd20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Settings for a new AVD</phrase>
-				</textobject>
-			</mediaobject>
-		
-		On the next screen select the latest API level for your AVD. You may need to select the option for additional
-			images as highlighted in the following screenshot.
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_create_avd30.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Settings for a new AVD</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/androidstudio_create_avd30.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>Settings for a new AVD</phrase>
+	</textobject>
+</mediaobject>
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_create_avd40.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Settings for a new AVD</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/androidstudio_create_avd40.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>Settings for a new AVD</phrase>
+	</textobject>
+</mediaobject>
 		
 		
-			Afterwards press
-			the
-			<guibutton>Finish</guibutton>
-			button. This will create the AVD configuration and display it under
-			the list of available
-			virtual devices.
+Afterwards press the _Finish_ button. 
+This will create the AVD configuration and display it under the list of available virtual devices.
 		
-	</section>
-	<section id="tutorialemulatoras2">
-		<title>Start your virtual device
+=== Start your virtual device
 		
-			Select
-			your new
-			entry and press
-			the
-			<guibutton>Play</guibutton>
-			button.
+Select your new entry and press the _Play_ button.
 		
-
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_create_avd50.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Settings for a new AVD</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/androidstudio_create_avd50.png" scale="30" />
+	</imageobject>
+	<textobject>
+		<phrase>Settings for a new AVD</phrase>
+	</textobject>
+</mediaobject>
 		
 
 	</section>
 
 
-	<section id="tutorialemulatoras3">
-		<title>Start the application on your virtual device
+=== Start the application on your virtual device
 		
-			Select
-			<menuchoice>
-				<guimenu>Run</guimenu>
-				<guisubmenu>Run 'app'</guisubmenu>
-			</menuchoice>
-			to start your application. This opens a dialog in which you can
-			select your device to deploy your application to.
+Select menu:Run[Run 'app'] to start your application. 
+This opens a dialog in which you can select your device to deploy your application to.
 		
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/androidstudio_create_avd60.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>Settings for a new AVD</phrase>
+	</textobject>
+</mediaobject>
+		
+After a while your application should start on the virtual device.
 
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_create_avd60.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Settings for a new AVD</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/androidstudio_create_avd70.png" scale="30" />
+	</imageobject>
+	<textobject>
+		<phrase>Settings for a new AVD</phrase>
+	</textobject>
+</mediaobject>
 		
-		After a while your application should start on the virtual device.
-
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/androidstudio_create_avd70.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Settings for a new AVD</phrase>
-				</textobject>
-			</mediaobject>
-		
-	</section>
-
-
-
-</section>
