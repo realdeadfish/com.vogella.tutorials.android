@@ -1,7 +1,7 @@
 <section id="androidstudio_eclipsemigration" role="wrapper">
-	<title>Migrating from Eclipse</title>
+	<title>Migrating from Eclipse
 	<section id="androidstudio_import">
-		<title>Importing Eclipse Android projects into Android Studio</title>
+		<title>Importing Eclipse Android projects into Android Studio
 		<para>
 			To migrate existing Android projects into Android Studio you can follow these steps:
 			<itemizedlist>
@@ -22,7 +22,7 @@
 		</para>
 	</section>
 	<section id="androidstudio_eclipsekeybindings">
-		<title>Changing the keybinding to use Eclipse bindings</title>
+		<title>Changing the keybinding to use Eclipse bindings
 		<para>
 			Select
 			<menuchoice>

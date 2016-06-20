@@ -1,7 +1,7 @@
 <section id="androidstudio_git" role="wrapper">
-	<title>Working with Git</title>
+	<title>Working with Git
 	<section id="androidstudio_git">
-		<title>Cloning a Git repository</title>
+		<title>Cloning a Git repository
 		<para>
 			Select
 			<menuchoice>
@@ -13,7 +13,7 @@
 		</para>
 	</section>
 	<section id="androidstudio_git_github">
-		<title>Cloning a repository from Github</title>
+		<title>Cloning a repository from Github
 
 		<para>
 			Select

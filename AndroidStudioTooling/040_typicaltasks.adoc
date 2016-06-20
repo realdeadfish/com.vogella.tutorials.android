@@ -1,5 +1,5 @@
 <section id="androidstudio_typicaltasks" role="wrapper">
-	<title>Using Android Studio</title>
+	<title>Using Android Studio
 
 
 [[androidstudio_creatinglayoutfile]]
@@ -55,7 +55,7 @@
 		</para>
 
 [[androidstudio_creatingresourcefolder]]
-=== Creating a new resource folder for a resource qualifier</title>
+=== Creating a new resource folder for a resource qualifier
 		<para>
 			If a resource folder is missing, you have to create it. This is demonstrates by the following screenshots for the
 			creation of the
@@ -86,7 +86,7 @@
 	</section>
 
 [[androidstudio_workingonlayoutfiles]]
-=== Working on layout files</title>
+=== Working on layout files
 		<para>
 			Android Studio offers a visual and a text editor for editing your layout files. The
 			easiest way to add new widgets to
@@ -114,7 +114,7 @@
 	</section>
 
 	<section id="androidstudio_createimage">
-		<title>Add images to your project</title>
+		<title>Add images to your project
 
 		<para>
 			From the menu of Android Studio, select
@@ -160,7 +160,7 @@
 	</section>
 
 [[androidstudio_createmenu]]
-Add a new menu XML resource</title>
+Add a new menu XML resource
 		<para>
 			If not yet present, create a new directory called
 			<guilabel>menu</guilabel>
@@ -201,7 +201,7 @@ Add a new menu XML resource</title>
 	</section>
 
 	<section id="androidstudio_generatingsource">
-		<title>Generating Getter/setting, toString, etc.</title>
+		<title>Generating Getter/setting, toString, etc.
 		<para>
 			Select the
 			<menuchoice>
@@ -215,7 +215,7 @@ Add a new menu XML resource</title>
 
 
 	<section id="androidstudio_refactor">
-		<title>Refactor a resource</title>
+		<title>Refactor a resource
 		<para>
 			To rename a resource, e.g., a Java file, select
 			<menuchoice>
@@ -226,7 +226,7 @@ Add a new menu XML resource</title>
 		</para>
 	</section>
 	<section id="androidstudio_viewinglogentries">
-		<title>Seeing the log statements of your Android application</title>
+		<title>Seeing the log statements of your Android application
 		<para>
 			Use the
 			<guilabel>Android</guilabel>

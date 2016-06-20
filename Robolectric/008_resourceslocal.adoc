@@ -1,4 +1,4 @@
-== Robolectric resources</title>
+== Robolectric resources
 
 http://robolectric.org - Robolectric Homepage
 

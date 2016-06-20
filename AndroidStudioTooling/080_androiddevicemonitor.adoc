@@ -1,5 +1,5 @@
 <section id="androidstudio_androiddevicemonitor">
-	<title>Android Device Monitor</title>
+	<title>Android Device Monitor
 	<indexterm>
 		<primary>Android Device Monitor in Android Studio
 		</primary>

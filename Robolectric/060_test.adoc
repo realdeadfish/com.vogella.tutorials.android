@@ -3,10 +3,8 @@
 
 The following code is an example for a few Robolectric tests.
 
+[source,java]
+----
+include::res/firsttest/MyActivityTest.java[]
+----
 
-	<para>
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/firsttest/MyActivityTest.java" />
-		</programlisting>
-	</para>
-</section>

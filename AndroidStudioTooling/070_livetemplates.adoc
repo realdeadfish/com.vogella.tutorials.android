@@ -1,5 +1,5 @@
 <section id="liveteimplates">
-	<title>Using live template</title>
+	<title>Using live template
 	<para>
 		Android studio provides templates for typical task in Java and Android. The following list contains a few.
 

@@ -1,7 +1,7 @@
 <section id="runningtestinandroidstudio">
-	<title>Running tests in Android Studio</title>
+	<title>Running tests in Android Studio
 	<section id="androidtesting_seepassedtests">
-        <title>Seeing all passed tests Android Studio</title>
+        <title>Seeing all passed tests Android Studio
 
         <para>To see all passed tests, click on the highlighted toolbar entry in the following screenshot.</para>
         <para>

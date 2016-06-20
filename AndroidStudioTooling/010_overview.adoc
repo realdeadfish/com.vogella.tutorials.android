@@ -1,7 +1,7 @@
 <section id="androidstudio_introduction" role="wrapper">
-	<title>Introduction to Android Studio</title>
+	<title>Introduction to Android Studio
 	<section id="androidstudio_overview">
-		<title>Introduction to Android Studio</title>
+		<title>Introduction to Android Studio
 		<para>Android Studio is currently the IDE promoted by Google for Android development. It is based on IntelliJ and is
 			basically a fork of its code base with additional Android development capabilities added.
 		</para>
@@ -13,7 +13,7 @@
 	</section>
 
 	<section id="androidstudio_toolbar">
-		<title>The Android Studio toolbar</title>
+		<title>The Android Studio toolbar
 		<para>The Android Studio toolbar contains several entries which are specific for Android development </para>
 		<para>
 			<mediaobject>
@@ -26,7 +26,7 @@
 			</mediaobject>
 		</para>
 		<table frame='all'>
-			<title>Toolbar</title>
+			<title>Toolbar
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="2*" />
@@ -60,7 +60,7 @@
 
 	</section>
 	<section id="androidstudio_project_storage">
-		<title>Storage of the Android project</title>
+		<title>Storage of the Android project
 		<para>
 			Android Studio stores the projects by default in the home folder of the user under
 			<filename>AndroidStudioProjects</filename>
@@ -96,7 +96,7 @@
 	</section>
 
 	<section id="androidstudio_projectswitching">
-		<title>Opening new projects / switching between projects</title>
+		<title>Opening new projects / switching between projects
 		<para>
 			Android Studio displays different projects in a different window. You can select
 			<menuchoice>
@@ -116,7 +116,7 @@
 	</section>
 
 	<section id="androidstudio_gradlesync">
-		<title>Clean build / synchronizing the project with Gradle</title>
+		<title>Clean build / synchronizing the project with Gradle
 		<para>
 			Unfortunately the build functionality in Android Studio sometimes fails to recognize that a resource has changed.
 			If you
@@ -141,7 +141,7 @@
 	</section>
 
 	<section id="androidstudio_selectingtheupdatechnage">
-		<title>Updating settings for Android Studio</title>
+		<title>Updating settings for Android Studio
 
 		<para>
 			Android Studio is provided in different flavors, the user can select if he want to use a stable version or test out
@@ -186,7 +186,7 @@
 
 	</section>
 	<section id="androidstudio_usingproxy">
-		<title>Using a proxy with Android Studio</title>
+		<title>Using a proxy with Android Studio
 		<para>
 			You can use Android Studio and Gradle behind a proxy. For this you have to enter it via
 			<menuchoice>
