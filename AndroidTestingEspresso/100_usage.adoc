@@ -94,7 +94,9 @@ include::res/intentconfig/SecondActivityTest.java[]
 
 Android Studio provides an menu:Run[Record Espresso Test] menu entry which allows you to record the interaction with your application and create a Espresso test from it.
 
+image::espresso-test-uirecorder10.png[]
 
+image::espresso-test-uirecorder20.png[]
 
 
 [[espresso_runningespressotests]]
