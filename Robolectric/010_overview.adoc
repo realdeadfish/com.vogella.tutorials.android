@@ -1,6 +1,6 @@
 == Robolectric
 
-== What is Robolectric
+=== What is Robolectric
 
 _Robolectric_ is designed to allow you to test Android applications on the JVM based on the _JUnit 4_ framework.
 Robolectric is a framework that allows you to write unit tests and run them on a desktop JVM while still using Android API.
