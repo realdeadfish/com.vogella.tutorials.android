@@ -1,18 +1,13 @@
-<section id="tutorialtemperature" role="wrapper">
-	<title>Exercise: Create a temperature converter
-	<section id="tutorialtemperature_installation">
-		<title>Target of this exercise
-		In this exercise you learn how to create and consume Android
-			resources and repeat the creation of an interactive
-			application.
+[[tutorialtemperature]]
+== Exercise: Create a temperature converter
+=== Target of this exercise
+
+In this exercise you learn how to create and consume Android resources.
 		
 		
-			This application is available on Google Play under the following URL:
-			<ulink url="http://play.google.com/store/apps/details?id=de.vogella.android.temperature">Android Temperature converter</ulink>
+This application is available on Google Play under the following URL: http://play.google.com/store/apps/details?id=de.vogella.android.temperature
 		
-		Alternatively you can also scan the following barcode with your
-			Android phone to install it via the Google Play
-			application.
+You can also scan the following barcode with your Android phone to install it via the Google Play application.
 		
 		
 			<mediaobject>
@@ -21,16 +16,13 @@
 				</imageobject>
 				<textobject>
 					<phrase>QR Code to install the Android Temperature converter</phrase>
-				</textobject>
+				 </textobject>
 			</mediaobject>
 		
-	</section>
-	<section id="tutorialtemperature_project">
-		<title>Create Project
-
+[[tutorialtemperature_project]]
+=== Create Project
 		
-			Create a new
-			Android project with the following data.
+Create a new Android project with the following data.
 		
 
 		
@@ -76,10 +68,7 @@
 			</table>
 		
 
-	</section>
-
-	<section id="tutorialtemperature_attributes">
-		<title>Create attributes
+=== Create attributes
 		
 			Select the
 			_res/values/strings.xml_
@@ -323,42 +312,24 @@
 			</programlisting>
 		
 
-	</section>
-	<section id="tutorialtemperature_utility">
-		<title>Create utility class
+[[tutorialtemperature_utility]]
+=== Create utiliy class
 
-		Create the following utility class to convert from celsius to
-			fahrenheit and vice versa.
+Create the following utility class to convert from celsius to fahrenheit and vice versa.
 		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/ConverterUtil.java" />
-			</programlisting>
-		
-	</section>
+include::res/first/ConverterUtil.java[]
 
-	<section id="tutorialtemperature_code">
-		<title>Change the activity code
+[[tutorialtemperature_code]]
+=== Change the activity code
 		
-			The Android project wizard created the corresponding
-			`MainActivity`
-			class for your activity code.
-			Adjust this class so that it is similar to the following code.
+Change the 	`MainActivity` to the following
 		
 
+include::res/first/MainActivity.java[]
 
+=== Start the application
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/MainActivity.java" />
-			</programlisting>
-		
-
-	</section>
-
-	<section id="tutorialtemperature_start">
-		<title>Start the application
-		
-			Start your Android application and type in a number, select your conversion and press the button.
+Start your Android application and type in a number, select your conversion and press the button.
 			The result
 			should be
 			displayed and the other
