@@ -60,3 +60,4 @@ include::res/simple/MainActivityEspressoTest.java[]
 
 Run your tests via your IDE or directly via Gradle. 
 See <<espresso_runningespressotests>> for details.
+

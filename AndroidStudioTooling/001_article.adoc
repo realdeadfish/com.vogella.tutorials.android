@@ -17,6 +17,7 @@ include::060_workingwithgit.adoc[]
 include::070_livetemplates.adoc[]
 include::072_testing.adoc[]
 include::200_memorymonitor.adoc[]
+include::300_gradle.adoc[]
 include::900_eclipsemigration.adoc[]
 
 
