@@ -66,6 +66,28 @@ The `ViewAssertions` class provides helper methods for creating these objects:
 * matches - Hamcrest matcher
 * doesNotExist - asserts that the select view does not exist
 
+You can use the powerful Hamcrest matchers.
+The following gives a few examples:
+
+[source,java]
+----
+
+onView(withText(startsWith("ABC"))).perform(click()); #<1>
+ - matching a view which text ends with "YYZZ" pattern:
+onView(withText(endsWith("YYZZ"))).perform(click()); #<2>
+ - assert that text of a particular view with specified R.id has content description which contains "YYZZ" string anywhere:
+onView(withId(R.id.viewId)).check(matches(withContentDescription(containsString("YYZZ"))));
+ - matching a view which text is equal to the specified string, ignoring case:
+onView(withText(equalToIgnoringCase("xxYY"))).perform(click());
+ - matching a view which text is equal to the specified text when whitespace differences are (mostly) ignored:
+onView(withText(equalToIgnoringWhiteSpace("XX YY ZZ"))).perform(click());
+ - assert that text of a particular view with specified R.id does not contain "YYZZ" string:
+onView(withId(R.id.viewId)).check(matches(withText(not(containsString("YYZZ")))));
+----
+
+<1> Match a view which text starts with "ABC" pattern
+
+
 [[espresso_usageintroduction_instrumentationaccess]]
 === Access to the instrumentation API
 		

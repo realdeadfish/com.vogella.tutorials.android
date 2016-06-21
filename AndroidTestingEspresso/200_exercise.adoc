@@ -42,6 +42,7 @@ include::res/simple/MainActivity.java[]
 Add the AndroidJUnitRunner as value for the `testInstrumentationRunner` parameter. 
 Also add the corresponding entry in the _app/build.gradle_ file.
 
+
 [source,java]
 ----
 include::res/simple/build.gradle[]
