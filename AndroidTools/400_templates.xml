@@ -1,16 +1,16 @@
 <section id="android_templates">
-	<title>Android templates</title>
-	<para>You can define your own templates for the Android project
+	<title>Android templates
+	You can define your own templates for the Android project
 		creation
 		wizard. See the following links for more information.
-	</para>
-	<para>Roman Nurik:
+	
+	Roman Nurik:
 		https://plus.google.com/113735310430199015092/posts/XTKTamk4As8
-	</para>
-	<para>Official documentation:
+	
+	Official documentation:
 		https://dl.dropbox.com/u/231329/android/templatedocs/index.html
-	</para>
-	<para>Additional code templates -
+	
+	Additional code templates -
 		https://github.com/jgilfelt/android-adt-templates
-	</para>
+	
 </section>

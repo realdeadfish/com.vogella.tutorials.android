@@ -1,0 +1,155 @@
+<section id="exercise_intentfilter" role="wrapper">
+	<title>Exercise: Register an activity as Browser
+	<section id="exercise_intentfilter1">
+		<title>Target
+		
+			In the following exercise you register an activity
+			as browser.
+			This
+			means, if an intent
+			is triggered when someone wants to view an
+			URL
+			starting with
+			`http`
+			,
+			your activity will be available to process
+			this intent.
+		
+		
+			The example activity downloads the HTML source of this page and
+			displays
+			it
+			in
+			a
+			`TextView`
+			.
+		
+	</section>
+	<section id="exercise_intentfilter2">
+		<title>Create project
+		
+			Create an
+			Android project called
+			_de.vogella.android.intent.browserfilter_
+			with an
+			activity
+			called
+			`BrowserActivity`
+			.
+		
+	</section>
+	<section id="exercise_intentfilter3">
+		<title>Register activity as browser
+		
+			Register your
+			_activity_
+			to the
+			`Intent.Action_VIEW`
+			action and the scheme "http" via the following changes in your
+			_AndroidManifest.xml_
+			file
+			Ensure that your manifest also declares the permission to access
+			the
+			Internet.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/filter/AndroidManifest.xml" />
+			</programlisting>
+		
+
+		
+			Change the corresponding
+			layout file according the following
+			listing.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/filter/main.xml" />
+			</programlisting>
+		
+
+		
+			Change your
+			activity
+			class to the following code.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/filter/BrowserActivity.java" />
+			</programlisting>
+		
+	</section>
+	<section id="exercise_intentfilter4">
+		<title>Validating
+
+		
+			Install your application. If you trigger an
+			intent
+			to open
+			a URL,
+			the
+			user should be able to select your custom browser implementation.
+			Trigger for this purpose the following intent from one of your
+			Android applications by adding for example an additional button
+			to the
+			application which can trigger the code.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/filter/StartBrowser.java" />
+			</programlisting>
+		
+
+
+
+
+		
+			If you select your component, the
+			HTML code is loaded and displayed
+			into
+			your
+			`TextView`
+			.
+		
+
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/browserfilter10.png"/>
+				</imageobject>
+			</mediaobject>
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/browserfilter20.png"/>
+				</imageobject>
+			</mediaobject>
+		
+
+	</section>
+	<section id="exercise_intentfilter5">
+		<title>Optional: Make it a real browser
+		<tip>
+			
+				Replace your
+				`TextView`
+				with a
+				`WebView`
+				to create a "real" browser. The
+				`WebView`
+				does the loading of the HTTP request for you.
+				Simply assign the URL
+				via the
+				`loadUrl`
+				method to it.
+			
+		</tip>
+	</section>
+</section>

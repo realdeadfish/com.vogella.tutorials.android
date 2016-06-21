@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android application (performance and more) analysis tools - Tutorial</title>
+		<title>Android application (performance and more) analysis tools - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -18,15 +18,15 @@
 		<pubdate>18.04.2016</pubdate>
 		<releaseinfo>
 
-			<para>Version 2.5	</para>
+			Version 2.5	
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Analyzing Android performance issues</title>
-			<para> This tutorial describes the available tools in Android to
+			<title>Analyzing Android performance issues
+			 This tutorial describes the available tools in Android to
 				perform a performance analysis of Android
 				applications.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

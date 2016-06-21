@@ -1,0 +1,126 @@
+== Fragment life-cycle 
+
+A fragment has its own life cycle. 
+But it is always connected to the life cycle of the activity which uses the fragment.
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/fragmentlifecycle10.png"/>
+</imageobject>
+<textobject>
+<phrase>Fragment lifecycle</phrase>
+</textobject>
+</mediaobject>
+
+
+
+If an activity stops, its fragments are also stopped. 
+If an activity is destroyed, its fragments are also destroyed.
+
+Table Title
+|===
+|Method |Description
+
+|`onAttach()`
+|The fragment instance is associated with an activity
+instance.The fragment and the
+activity is not fully initialized.
+Typically you get in this method a
+reference to
+the
+activity which
+uses the fragment for further initialization work.
+
+|`onCreate()`
+|Fragment is created. The
+`onCreate()`
+method is called after the
+`onCreate()`
+method of the activity but before the
+`onCreateView()`
+method of the fragment.
+
+|`onCreateView()`
+| 
+The fragment instance creates its view
+hierarchy. In the
+`onCreateView()`
+method the
+fragment
+creates its user
+interface. Here you can inflate
+a layout via
+the
+`inflate()`
+method call of the
+`Inflator`
+object passed as a parameter to this method.
+
+
+In this method you should not interactive with the activity,
+the activity is not yet fully initialized.
+
+There is no need to
+implement this method for headless
+`fragments`
+.The
+inflated views become part of the view hierarchy of its
+containing
+activity.
+
+|`onActivityCreated()`
+|The
+`onActivityCreated()`
+is called after the
+`onCreateView()`
+method when the host
+_activity_
+is created.
+
+Activity and fragment instance have been created as
+well as
+the
+view
+hierarchy of the activity.
+At this point, view can
+be accessed with
+the
+`findViewById()`
+method.
+example.
+
+In this method you can instantiate objects which require a
+`Context`
+object.
+
+|`onStart()`
+|The
+`onStart()`
+method is called once the
+fragment
+gets visible.
+
+|onResume()
+|Fragment becomes active.
+
+|`onPause()`
+|Fragment is visible but becomes not active anymore, e.g.,
+if
+another activity is animating on top of the activity which
+contains the fragment.
+
+|`onStop()`
+|Fragment becomes not visible.
+
+|`onDestroyView()`
+|Destroys the view of the fragment. If the fragment is
+recreated
+from the backstack this method is called and afterwards
+the
+`onCreateView`
+method.
+
+|onDestroy()
+|Not guaranteed to be called by the Android platform.
+|===
+

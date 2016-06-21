@@ -1,0 +1,61 @@
+<section id="tutorial_contextualmenu" role="wrapper">
+	<title>Exercise: Using the contextual action mode
+	<section id="tutorial_contextualmenu1">
+		<title>Target
+		
+			In this exercise you add a contextual action mode to one of your existing applications.
+		
+
+	</section>
+
+	<section id="tutorial_contextualmenu2">
+		<title>Create menu resource in the res/menu folder
+		
+			For this, create a new menu XML resource with the
+			_actionmode.xml_
+			file name. See
+			<xref linkend="androidstudio_createmenu" />
+			for details.
+		
+
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/social/contextual.xml" />
+			</programlisting>
+		
+	</section>
+	<section id="tutorial_contextualmenu3">
+		<title>Adjust your coding
+		Extend your fragment interface.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/social/MyListFragment.java" />
+			</programlisting>
+		
+		
+			Change your activity to implement this new method and also the
+			`ActionMode.Callback`
+			callback as demonstrated in the following example code.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/social/OverviewActivity3.java" />
+			</programlisting>
+		
+		
+			In your adapter implement a
+			`LongClickListener`
+			which triggers the contextual action mode.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/social/RssItemAdapter.java" />
+			</programlisting>
+		
+
+
+	</section>
+
+</section>

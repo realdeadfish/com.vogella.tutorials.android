@@ -1,52 +1,52 @@
 <section id="androidannotations">
-	<title>Android annotations</title>
-	<para>
+	<title>Android annotations
+	
 		The Android support library provides additional annotations which allows the Android tooling to perform better
 		checks
 		of your Android code basis. The following is a list of the most common used annotations.
 		<itemizedlist>
 			<listitem>
-				<para>@MainThread - the method code should be executed in the main thread</para>
+				@MainThread - the method code should be executed in the main thread
 			</listitem>
 			<listitem>
-				<para>@WorkerThread - the method code should not be executed in the main thread</para>
+				@WorkerThread - the method code should not be executed in the main thread
 			</listitem>
 			<listitem>
-				<para>@Nullable - defines that a method return value or parameter can be null</para>
+				@Nullable - defines that a method return value or parameter can be null
 			</listitem>
 			<listitem>
-				<para>@NonNull - defines that a method return value or parameter cannot be null</para>
+				@NonNull - defines that a method return value or parameter cannot be null
 			</listitem>
 			<listitem>
-				<para>@Size - allows to specify the length of an array or list, e.g., @Size(2) or @Size(min=1) or @Size(multiple=2).
-				</para>
+				@Size - allows to specify the length of an array or list, e.g., @Size(2) or @Size(min=1) or @Size(multiple=2).
+				
 			</listitem>
 			<listitem>
-				<para>@IntRange - allows to specify the range of possible integer values, e.g., @IntRange(from=0, to=255).
-				</para>
+				@IntRange - allows to specify the range of possible integer values, e.g., @IntRange(from=0, to=255).
+				
 			</listitem>
 			<listitem>
-				<para>@FloatRange - same as @IntRange but for floats.
-				</para>
+				@FloatRange - same as @IntRange but for floats.
+				
 			</listitem>
 			<listitem>
-				<para>@CallSuper - specifies that classes that overrides such a method must call the override method in super
-				</para>
+				@CallSuper - specifies that classes that overrides such a method must call the override method in super
+				
 			</listitem>
 		</itemizedlist>
-	</para>
-	<para>
+	
+	
 
 		To use these annotations add the following dependency to your Gradle build file.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/anno/support.txt" />
 		</programlisting>
-	</para>
-	<para>The Android tooling uses these annotations to find potential errors in your code, via the Android Lint tool.
+	
+	The Android tooling uses these annotations to find potential errors in your code, via the Android Lint tool.
 		These checks are not perfect but can increase the code quality if considered during development.
-	</para>
+	
 
 
 </section>

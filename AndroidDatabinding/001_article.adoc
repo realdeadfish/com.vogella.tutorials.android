@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article lang="en">
 	<articleinfo>
-		<title>Using data binding in Android - Tutorial</title>
+		<title>Using data binding in Android - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -14,10 +14,10 @@
 		<pubdate>18.02.2016</pubdate>
 		<releaseinfo>Version 0.2</releaseinfo>
 		<abstract id="abstract">
-			<title>Developing Android applications</title>
-			<para>
+			<title>Developing Android applications
+			
 				This tutorial describes the usage of the new data binding capabilities in Android applications.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

@@ -7,99 +7,75 @@ In its default configuration IntelliJ has good Gradle support.
 		
 === Gradle projects view
 		
-To activate the _Gradle projects_ view, select
-			<menuchoice>
-				<guimenu>View</guimenu>
-				<guisubmenu>Tool Buttons</guisubmenu>
-			</menuchoice>
-			. 
+To activate the _Gradle projects_ view, select menu:View[Tool Buttons].
+
 This enables a toolbar on the right, click on it to expand the Gradle projects view.
-
 		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/intellij_gradleview10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Intellij Gradle projects view</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/intellij_gradleview10.png" scale="30" />
+	</imageobject>
+	<textobject>
+		<phrase>Intellij Gradle projects view</phrase>
+	</textobject>
+</mediaobject>
 		
 
-	</section>
-	<section id="gradle_intellij_executingtasks_">
-		<title>Executing Gradle tasks
+=== Executing Gradle tasks
 		
-			Double click on a task
-			_Gradle projects_
-			view to run it.
+Double click on a task _Gradle projects_ view to run it.
 		
-	</section>
 
-	<section id="gradle_intellij_import_gradle">
-		<title>Import an existing Gradle project into Intellij
+=== Import an existing Gradle project into Intellij
 
 		
-			Close a potentially existing projects via
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>Close Project</guisubmenu>
-			</menuchoice>
-			and select the
-			_Import Project_
-			entry. Afterwards follow the steps as demonstrates by the following screenshots.
+Close a potentially existing projects via menu:File[Close Project] and select the _Import Project_ entry. 
+Afterwards follow the steps as demonstrates by the following screenshots.
+		
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/intellij_gradle_import10.png" />
+	</imageobject>
+	<textobject>
+		<phrase>Import Gradle project into IntelliJ</phrase>
+	</textobject>
+</mediaobject>
 		
 
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/intellij_gradle_import10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Import Gradle project into IntelliJ</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/intellij_gradle_import20.png" />
+	</imageobject>
+	<textobject>
+		<phrase>Import Gradle project into IntelliJ</phrase>
+	</textobject>
+</mediaobject>
 		
 
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/intellij_gradle_import20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Import Gradle project into IntelliJ</phrase>
-				</textobject>
-			</mediaobject>
-		
-
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/intellij_gradle_import30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Import Gradle project into IntelliJ</phrase>
-				</textobject>
-			</mediaobject>
-		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/intellij_gradle_import30.png" />
+	</imageobject>
+	<textobject>
+		<phrase>Import Gradle project into IntelliJ</phrase>
+	</textobject>
+</mediaobject>
 
 
-	</section>
-	<section id="gradle_intellij_seealltests">
-		<title>See all executed tests in IntelliJ
+=== See all executed tests in IntelliJ
 		
-			Click on the highlighted button to see all tests in IntelliJ, not only the failing tests.
+Click on the highlighted button to see all tests in IntelliJ, not only the failing tests.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/intellij_seealltests.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Show all tests in IntelliJ</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/intellij_seealltests.png" />
+	</imageobject>
+	<textobject>
+		<phrase>Show all tests in IntelliJ</phrase>
+	</textobject>
+</mediaobject>
 		
-	</section>
-</section>

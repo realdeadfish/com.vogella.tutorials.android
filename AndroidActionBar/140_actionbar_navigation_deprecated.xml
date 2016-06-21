@@ -1,0 +1,64 @@
+<section id="actionbar_navigation" role="wrapper">
+	<title>Other means of actionbar navigation
+	<section id="actionbar_navigation_deprecated">
+		<title>Actionbar navigation is deprecated
+		
+			As of Android 5.0 the navigation options described in this
+			chapter are deprecated and should not be used anymore in new
+			applications.
+		
+	</section>
+	<section id="actionbar_navigation_tab">
+		<title>Tab navigation
+
+		
+			Fragments can also be used in combination with the action bar
+			for
+			navigation. For this your main activity
+			needs to implement a
+			`TabListener`
+			,
+			which is responsible for moving between the tabs.
+		
+		
+			To add a new tab to the action bar, use the
+			`newTab()`
+			method.
+		
+		
+			The following code shows such an activity. It uses dummy
+			activities to demonstrate the switch.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/navigation_tabs/MainActivity.java" />
+			</programlisting>
+		
+	</section>
+
+	<section id="actionbar_navigation_dropdown">
+		<title>Dropdown menu navigation
+		
+			You can also use a spinner in the action bar.
+			The following code
+			demonstrates such an implementation.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/navigation_dropdown/MainActivity.java" />
+			</programlisting>
+		
+	</section>
+	<section id="actionbar_navigation_evaluation">
+		<title>Evaluation
+		
+			While the navigation drawer is relatively new compared to the
+			other options, it is pretty popular among users and Android
+			applications. If in doubt which options to select, consider using the
+			navigation drawer.
+		
+	</section>
+</section>

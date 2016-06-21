@@ -4,242 +4,240 @@
 
 [[androidstudio_creatinglayoutfile]]
 === Creating a new layout file
-			To create a new layout file, select your
-			project,
-			right
-			click
-			on it and
-			select
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Android</guisubmenu>
-				<guisubmenu>Android XML File</guisubmenu>
-			</menuchoice>
-			and select the
-			_Layout_
-			option.
-		</para>
+To create a new layout file, select your
+project,
+right
+click
+on it and
+select
+<menuchoice>
+	<guimenu>File</guimenu>
+	<guisubmenu>New</guisubmenu>
+	<guisubmenu>Other...</guisubmenu>
+	<guisubmenu>Android</guisubmenu>
+	<guisubmenu>Android XML File</guisubmenu>
+</menuchoice>
+and select the
+_Layout_
+option.
+		
 [[androidstudio_creatingresourcefile]]
 === Creating a new resource file
-		<para>
-			The easiest way to create a new resource file, e.g., a layout file, is the context menu on the corresponding folder.
-			If the folder is
-			missing you have to create it, see
-			<xref linkend="androidstudio_creatingresourcefolder" />
-			.
-			This is
-			demonstrates for the creation
-			of a new layout file in the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/as_createlayoutfile10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Creating a new layout file</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/as_createlayoutfile20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Creating a new layout file selection dialog</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+The easiest way to create a new resource file, e.g., a layout file, is the context menu on the corresponding folder.
+If the folder is
+missing you have to create it, see
+<xref linkend="androidstudio_creatingresourcefolder" />
+.
+This is
+demonstrates for the creation
+of a new layout file in the following screenshot.
+		
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/as_createlayoutfile10.png" />
+	</imageobject>
+	<textobject>
+		<phrase>Creating a new layout file</phrase>
+	</textobject>
+</mediaobject>
+		
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/as_createlayoutfile20.png" />
+	</imageobject>
+	<textobject>
+		<phrase>Creating a new layout file selection dialog</phrase>
+	</textobject>
+</mediaobject>
+		
 
 [[androidstudio_creatingresourcefolder]]
 === Creating a new resource folder for a resource qualifier
-		<para>
-			If a resource folder is missing, you have to create it. This is demonstrates by the following screenshots for the
-			creation of the
-			_layout-port_
-			folder.|
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/layoutportaitmode10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Create resource folder for port layout first step</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+If a resource folder is missing, you have to create it. This is demonstrates by the following screenshots for the
+creation of the
+_layout-port_
+folder.|
+		
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/layoutportaitmode10.png" />
+	</imageobject>
+	<textobject>
+		<phrase>Create resource folder for port layout first step</phrase>
+	</textobject>
+</mediaobject>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/layoutportaitmode20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Create resource folder for port layout second step</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/layoutportaitmode20.png" />
+	</imageobject>
+	<textobject>
+		<phrase>Create resource folder for port layout second step</phrase>
+	</textobject>
+</mediaobject>
+		
 	</section>
 
 [[androidstudio_workingonlayoutfiles]]
 === Working on layout files
-		<para>
-			Android Studio offers a visual and a text editor for editing your layout files. The
-			easiest way to add new widgets to
-			an existing layout file is to find
-			these
-			elements in the
-			_Palette_
-			and drag and
-			drop
-			them into your layout.
-			In the visual design
-			mode
-			you can remove a
-			view by
-			right-clicking it and by
-			selecting the
-			_Delete_
-			entry for the context menu.
-		</para>
-		<para>Android Studio replaces placeholder values with the
-			real values. This makes it sometimes harder to compare
-			files.
-			Double-click on the value in this case to see the placeholder value.
-		</para>
+		
+Android Studio offers a visual and a text editor for editing your layout files. The
+easiest way to add new widgets to
+an existing layout file is to find
+these
+elements in the
+_Palette_
+and drag and
+drop
+them into your layout.
+In the visual design
+mode
+you can remove a
+view by
+right-clicking it and by
+selecting the
+_Delete_
+entry for the context menu.
+		
+		Android Studio replaces placeholder values with the
+real values. This makes it sometimes harder to compare
+files.
+Double-click on the value in this case to see the placeholder value.
+		
 	</section>
 
 	<section id="androidstudio_createimage">
 		<title>Add images to your project
 
-		<para>
-			From the menu of Android Studio, select
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Vector Assert</guisubmenu>
-			</menuchoice>
-			to create a new vector drawable.
-			The creation process is demonstrated for the
-			_ic_tethering_
-			icon.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/vector_assets10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Using Vector assets step 20</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+From the menu of Android Studio, select
+<menuchoice>
+	<guimenu>File</guimenu>
+	<guisubmenu>New</guisubmenu>
+	<guisubmenu>Vector Assert</guisubmenu>
+</menuchoice>
+to create a new vector drawable.
+The creation process is demonstrated for the
+_ic_tethering_
+icon.
+		
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/vector_assets10.png" scale="30" />
+	</imageobject>
+	<textobject>
+		<phrase>Using Vector assets step 20</phrase>
+	</textobject>
+</mediaobject>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/vector_assets20.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Using Vector assets step 10</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/vector_assets20.png" scale="30" />
+	</imageobject>
+	<textobject>
+		<phrase>Using Vector assets step 10</phrase>
+	</textobject>
+</mediaobject>
+		
 
 		<tip>
-			<para>If the image generation does not work (if currently is new and relatively buggy) perform a Google
-				search
-				for
-				"Android png files".
-			</para>
+If the image generation does not work (if currently is new and relatively buggy) perform a Google
+	search
+	for
+	"Android png files".
+
 		</tip>
 	</section>
 
 [[androidstudio_createmenu]]
 Add a new menu XML resource
-		<para>
-			If not yet present, create a new directory called
-			_menu_
-			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/menu_resources10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Create menu directory</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+If not yet present, create a new directory called
+_menu_
+.
+		
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/menu_resources10.png" />
+	</imageobject>
+	<textobject>
+		<phrase>Create menu directory</phrase>
+	</textobject>
+</mediaobject>
+		
 
-		<para>
-			Create a new
-			XML resource called
-			<filename>mainmenu.xml</filename>
-			for your menu.
+		
+Create a new
+XML resource called
+_mainmenu.xml_
+for your menu.
 
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/menu_resources20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Create new menu resources</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			Afterwards you can manually edit the generated file.
-		</para>
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/menu_resources20.png" />
+	</imageobject>
+	<textobject>
+		<phrase>Create new menu resources</phrase>
+	</textobject>
+</mediaobject>
+		
+		
+Afterwards you can manually edit the generated file.
+		
 	</section>
 
 	<section id="androidstudio_generatingsource">
 		<title>Generating Getter/setting, toString, etc.
-		<para>
-			Select the
-			<menuchoice>
-				<guimenu>Code</guimenu>
-				<guisubmenu>Generate...</guisubmenu>
-			</menuchoice>
-			menu entry to generate getter, setter, constructors, etc.
-		</para>
+		
+Select the
+<menuchoice>
+	<guimenu>Code</guimenu>
+	<guisubmenu>Generate...</guisubmenu>
+</menuchoice>
+menu entry to generate getter, setter, constructors, etc.
+		
 	</section>
 
 
 
 	<section id="androidstudio_refactor">
 		<title>Refactor a resource
-		<para>
-			To rename a resource, e.g., a Java file, select
-			<menuchoice>
-				<guimenu>Refactor</guimenu>
-				<guisubmenu>Rename...</guisubmenu>
-			</menuchoice>
-			from the context menu of the corresponding resource.
-		</para>
+		
+To rename a resource, e.g., a Java file, select
+<menuchoice>
+	<guimenu>Refactor</guimenu>
+	<guisubmenu>Rename...</guisubmenu>
+</menuchoice>
+from the context menu of the corresponding resource.
+		
 	</section>
 	<section id="androidstudio_viewinglogentries">
 		<title>Seeing the log statements of your Android application
-		<para>
-			Use the
-			_Android_
-			view (Shortcut:
-			<keycombo>
-				<keycap>Alt</keycap>
-				<keycap>6</keycap>
-			</keycombo>
-			) to see the log statements in Android Studio.
+		
+Use the
+_Android_
+view (Shortcut:
+<keycombo>
+	<keycap>Alt</keycap>
+	<keycap>6</keycap>
+</keycombo>
+) to see the log statements in Android Studio.
 
-		</para>
 
-	</section>
 
 [[androidstudio_sourceupdate]]
 === Using Java 8 in Android applications

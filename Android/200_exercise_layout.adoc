@@ -46,7 +46,7 @@
 			Open the
 			_activity_main.xml_
 			layout file in the
-			<filename class="directory">res/layout_
+			_res/layout_
 			folder.
 			Investigate the XML layout in the visual editor as well in as
 			the

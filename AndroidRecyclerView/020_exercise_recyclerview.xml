@@ -1,0 +1,105 @@
+<section id="exercise_recycleview" role="wrapper">
+	<title>Exercise: Using RecylerView
+	<section id="exercise_recycleview">
+		<title>Target of this exercise
+		
+			In this exercise you create a project which uses the
+			`RecyclerView`
+			class for the support library. This requires that you have installed
+			the support libraries.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/recyclerview_target10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>RecyclerView example</phrase>
+				</textobject>
+			</mediaobject>
+		
+	</section>
+
+	<section id="recycleview_projects">
+		<title>Create projects
+
+		
+			Create a new Android project / module called
+			Create a new Android project using the
+			`com.vogella.android.recylerview`
+			top level package name.
+		
+	</section>
+
+	<section id="recycleview_libraries_androidstudio">
+		<title>Add the dependency to your Gradle file
+		
+		
+			Add the following dependency to your Gradle build file to use RecylerView.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/dependency/build.gradle" />
+			</programlisting>
+		
+
+
+	</section>
+
+
+	<section id="recycleview_layouts">
+		<title>Create layout files
+		
+			You have to created a layout file which contains the
+			`RecyclerView`
+			. The following file is called
+			_activity_main.xml_
+			.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/recyclerview/activity_main.xml" />
+			</programlisting>
+		
+		<note>
+			
+				The
+				`ImageView`
+				has the
+				`android:elevation`
+				attribute set, this instructs Android to draw a shadow for it.
+			
+		</note>
+		Also create a layout to use in each item.
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/recyclerview/rowlayout_complex.xml" />
+			</programlisting>
+		
+		<note>
+			
+				At the moment the display of the
+				`RecyclerView`
+				is not supported in the graphical preview.
+			
+		</note>
+		You also have to created an adapter for providing the data.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/recyclerview/MyAdapter.java" />
+			</programlisting>
+		
+		You also have to created an adapter for providing the data.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/recyclerview/Activity.java" />
+			</programlisting>
+		
+	</section>
+
+</section>

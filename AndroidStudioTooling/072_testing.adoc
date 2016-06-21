@@ -3,8 +3,8 @@
 	<section id="androidtesting_seepassedtests">
         <title>Seeing all passed tests Android Studio
 
-        <para>To see all passed tests, click on the highlighted toolbar entry in the following screenshot.</para>
-        <para>
+        To see all passed tests, click on the highlighted toolbar entry in the following screenshot.
+        
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/androidstudioseealltests.png"/>
@@ -13,7 +13,7 @@
                     <phrase>Android Studio see all tests</phrase>
                 </textobject>
             </mediaobject>
-        </para>
+        
     </section>
     
   

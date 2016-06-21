@@ -1,31 +1,31 @@
 <section id="avoidoverdraw">
-	<title>Analyzing Overdraw</title>
-	<para>
+	<title>Analyzing Overdraw
+	
 		_Overdraw_
 		happens if you draw something on top of something else. For
 		example an
 		_activity_
 		has a
-		<code>Window</code>
+		`Window`
 		as background. If a
-		<code>TextView</code>
+		`TextView`
 		it added to the application, the
-		<code>TextView</code>
+		`TextView`
 		is drawn on top of the
-		<code>Window</code>
+		`Window`
 		.
-	</para>
-	<para>Overdrawn is therefore intended to happen. But unnecessary
+	
+	Overdrawn is therefore intended to happen. But unnecessary
 		overdraw should be avoid to have the best performance possible.
-	</para>
-	<para>Unnecessary
+	
+	Unnecessary
 		overdraw can be caused by complex view hierarchies. In
 		general a 2x overdraw (a pixel gets drawn three times) is standard and
 		expected but
 		more should be
 		avoided.
-	</para>
-	<para>
+	
+	
 		You can enable a visualization of overdraw via the
 		<guilabel>Development
 			Settings
@@ -34,10 +34,10 @@
 		<guilabel>Show GPU overdraw</guilabel>
 		setting. This section adds colors to your screen based on the number
 		of overdraws. The following table explains the used color schema.
-	</para>
-	<para>
+	
+	
 		<table frame='all'>
-			<title>Overdrawn colors</title>
+			<title>Overdrawn colors
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' />
 				<colspec colname='c2' />
@@ -74,13 +74,13 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
-	<para>
+	
+	
 		After visualization of potential problematic areas, you can
 		analyze
 		your
-		<code>View</code>
+		`View`
 		hierarchy with the
 		<guilabel>Hierarchy Viewer</guilabel>.
-	</para>
+	
 </section>

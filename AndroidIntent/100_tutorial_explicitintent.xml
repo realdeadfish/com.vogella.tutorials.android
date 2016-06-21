@@ -1,0 +1,176 @@
+<section id="exercise_explicitintents" role="wrapper">
+	<title>Exercise: Starting activities
+	<section id="exercise_explicitintentsoverview">
+		<title>Target of this exercise
+		
+			The following exercise demonstrates how to use an explicit
+			intent
+			to start a sub-activity and
+			how
+			to send data to it.
+		
+		
+			This is the first part of an exercise continued in
+			<xref linkend="intentexercise_chapter_second" />
+			. The final solution can be found in
+			<xref linkend="intentexercise_chapter_solution" />
+			.
+		
+	</section>
+
+	<section id="explicit_intentslayout">
+		<title>Create project and main layout
+		
+			Create a new Android project called
+			_com.vogella.android.intent.explicit_
+			with an activity called
+			`MainActivity`
+			.
+		
+
+		
+			Change the layout file of this activity to the following.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/explicit/activity_main.xml" />
+			</programlisting>
+		
+	</section>
+	<section id="explicit_intentlayoutsecondactivity">
+		<title>Create new layout file
+		
+			Create a new layout called
+			_activity_result.xml_
+			. In the next step you create a new activity which will use this
+			layout file.
+		
+		
+		
+			Enter
+			_activity_result.xml_
+			as file name and press
+			the
+			<guibutton>Finish</guibutton>
+			button. Change your layout so that it is similar to the following XML
+			file.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/explicit/activity_result.xml" />
+			</programlisting>
+		
+	</section>
+
+	<section id="exercise_explicitintents2">
+		<title>Create additional activity
+		
+			Create a new
+			class called
+			`ResultActivity`
+			based on the following example code.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/explicit/ResultActivity0.java" />
+			</programlisting>
+		
+		
+			Add a new activity called
+			_ResultActivity_
+			to the
+			_AndroidManifest.xml_
+			file.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/explicit/AndroidManifest.xml" />
+			</programlisting>
+		
+
+		<note>
+			
+				This new activity will be started via the
+				`MainActivity`
+				, hence
+				it is called a sub-activity.
+			
+		</note>
+	</section>
+
+	<section id="explicit_startsubactivity">
+		<title>Start sub-activity
+		
+			Start the sub-activity via a button click from the
+			`MainActivity`
+			class. The following code gives some pointers on how to solve this.
+			Solve the TODO's in the source code so that the
+			`ResultActivity`
+			activity
+			is started from the
+			`onClick()`
+			method.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/explicit/MainActivity1.java" />
+			</programlisting>
+		
+		
+			Once you finished this part of the exercise, start your
+			application and ensure that you can start the second activity.
+		
+	</section>
+
+	<section id="explicit_intentssend">
+		<title>Send data to ResultActivity
+		
+			The
+			`MainActivity`
+			class
+			should pass the value of the
+			`EditText`
+			view
+			to the sub-activity.
+			For this use the
+			`putExtra("yourKey", string)`
+			on the
+			`Intent`
+			object.
+		
+	</section>
+
+	<section id="explicit_intentsreceivedata">
+		<title>Get intent data in the ResultActivity
+		
+			In your
+			`ResultActivity`
+			sub-activity
+			get the
+			`Bundle`
+			with the intent data via the
+			`getIntent().getExtras()`
+			) method call.
+		
+		
+			Get the value of the passed extra with the
+			`extras.getString("yourkey")`
+			method on the bundle object which you got with the
+			`getExtras()`
+			call.
+		
+		
+			This value should be placed in the
+			`TextView`
+			with the
+			`displayintentextra`
+			ID.
+		
+	</section>
+
+</section>

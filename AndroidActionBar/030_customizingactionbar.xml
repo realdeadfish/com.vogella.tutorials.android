@@ -1,0 +1,153 @@
+<section id="actionbar" role="wrapper">
+	<title>Customizing the toolbar
+	<section id="actionbar_hidding">
+		<title>Changing the visibility of the toolbar bar
+		
+			You can change the visibility of the
+			toolbar
+			at runtime. The
+			following code demonstrates that.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/modify/hide.java" />
+			</programlisting>
+		
+		
+			You can also change the text which is displayed alongside the
+			application icon at runtime. The following example
+			shows that.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/modify/title.java" />
+			</programlisting>
+		
+
+	</section>
+	<section id="actionbar_drawables">
+		<title>Assigning a Drawable
+		
+			You also add a
+			`Drawable`
+			to the
+			action bar as
+			background via the
+			`ActionBar.setBackgroundDrawable()`
+			method.
+		
+		
+			The
+			toolbar
+			scales the image. Therefore it is best practice to
+			provide a scalable
+			drawable
+			, e.g., a 9-patch or XML
+			drawable.
+		
+		
+			As of Android 4.2 the background of the action bar can also be
+			animated via an
+			`AnimationDrawable`
+			.
+		
+
+	</section>
+	<section id="actionbar_hiddingnagationbuttons">
+		<title>Dimming the navigation buttons
+		
+			You can also dim the software navigation button in your Android
+			application to have more space available. If the
+			user touches the
+			button of the screen, the navigation button is automatically shown
+			again.
+		
+		
+			Dimming the navigation buttons is demonstrated by the following
+			code snippet.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/navigation/hide.java" />
+			</programlisting>
+		
+
+		
+			The following screenshots show an application with and without
+			the navigation buttons.
+		
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="./images/dimnavigationbuttons10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Application with action bar</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="./images/dimnavigationbuttons20.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Application with dimmed action bar</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+	</section>
+
+	<section id="actionbar_immersivemode">
+		<title>Using immersive full screen mode
+		As of Android 4.4 (API 19) you can put your application into
+			full screen mode. The first time this happens the
+			system displays the
+			user the info that he can restore the system bars with a downward
+			swipe along the region where the
+			system bars normally appear.
+		
+		For example the following method also to put an activity into
+			full screen mode.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/navigation/immersivemode.java" />
+			</programlisting>
+		
+
+
+	</section>
+
+	<section id="menu_split">
+		<title>Enabling the split toolbar
+		
+			You can define that the
+			toolbar
+			should be automatically split
+			by the system if not enough space is
+			available.
+		
+		
+			You can activate this via the
+			`android:uiOptions="SplitActionBarWhenNarrow"`
+			parameter in the declaration of your application
+			activity
+			in the
+			_AndroidManifest.xml_
+			file.
+		
+
+		<note>
+			
+				If this option is activated, Android has the option to split
+				the toolbar. Whether to split is decided by the
+				system at
+				runtime.
+			
+		</note>
+	</section>
+</section>

@@ -1,0 +1,33 @@
+<section id="resources">
+	<title>Links and Literature
+
+	<section id="resources_databinding">
+		<title>Android Resources
+		
+			<ulink
+				url="http://www.vogella.com/tutorials/AndroidLocationAPI/article.html">
+				Android Location API and Google Maps</ulink>
+		
+		
+			<ulink
+				url="http://www.vogella.com/tutorials/AndroidNetworking/article.html">
+				Android and Networking</ulink>
+		
+		
+			<ulink url="http://code.google.com/intl/de-DE/android/">
+				Android Homepage</ulink>
+		
+		
+		
+			<ulink url="http://code.google.com/p/android/issues/list">
+				Android Issues / Bugs</ulink>
+		
+		
+			<ulink url="http://groups.google.com/group/android-developers">
+				Android Google Groups</ulink>
+		
+	</section>
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+
+</section>

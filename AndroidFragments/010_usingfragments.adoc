@@ -1,0 +1,34 @@
+== Defining and using fragments
+
+=== Defining fragments
+		
+To define a new fragment you either extend the `android.app.Fragment` class or one of its subclasses.
+Subclasses are for example, `ListFragment`, `DialogFragment`, `PreferenceFragment` or `WebViewFragment`. 
+The following code shows an example implementation.
+		
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+		parse="text" href="./examples/fragments/DetailFragment.java" />
+</programlisting>
+
+
+=== Application communication with fragments
+		
+To increase reuse of fragments, they should not directly communicate with each other. 
+Every communication of the fragments should be done via the host activity.
+		
+		
+For this purpose a fragment should define an interface as an inner type.
+The fragment requires that the activity, which uses it, must implement this interface. 
+This way you avoid that the fragment has any knowledge about the activity which uses it. 
+In its `onAttach()` method it can check if the _activity_ correctly implements this interface.
+		
+For example, assume you have a fragment which should communicate a value to its parent activity. 
+This can be implemented like the following.
+		
+		
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+		parse="text" href="./examples/communication/MyListFragment.java" />
+</programlisting>
+		

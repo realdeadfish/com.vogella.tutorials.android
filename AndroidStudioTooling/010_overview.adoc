@@ -2,20 +2,20 @@
 	<title>Introduction to Android Studio
 	<section id="androidstudio_overview">
 		<title>Introduction to Android Studio
-		<para>Android Studio is currently the IDE promoted by Google for Android development. It is based on IntelliJ and is
+		Android Studio is currently the IDE promoted by Google for Android development. It is based on IntelliJ and is
 			basically a fork of its code base with additional Android development capabilities added.
-		</para>
-		<para>
+		
+		
 			The old Eclipse based tooling is not actively development anymore by Google, see
 			<xref linkend="androidstudio_import" />
 			to learn how you can migrate from Eclipse based tooling to Android Studio.
-		</para>
+		
 	</section>
 
 	<section id="androidstudio_toolbar">
 		<title>The Android Studio toolbar
-		<para>The Android Studio toolbar contains several entries which are specific for Android development </para>
-		<para>
+		The Android Studio toolbar contains several entries which are specific for Android development 
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/androidstudiotoolbar.png" scale="60" />
@@ -24,7 +24,7 @@
 					<phrase>The Android Studio toolbar</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 		<table frame='all'>
 			<title>Toolbar
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
@@ -61,22 +61,22 @@
 	</section>
 	<section id="androidstudio_project_storage">
 		<title>Storage of the Android project
-		<para>
+		
 			Android Studio stores the projects by default in the home folder of the user under
-			<filename>AndroidStudioProjects</filename>
+			_AndroidStudioProjects_
 			.
-		</para>
-		<para>
+		
+		
 			The main directory contains configuration files for Android Studio and the Gradle build files. The application
 			relevant files are
 			contained in the
-			<filename>app</filename>
+			_app_
 			folder and the most interesting files are contained in the
-			<filename>src</filename>
+			_src_
 			folder. This structure is depicted in the following screenshot.
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/androidstudio_filestructure10.png"/>
@@ -85,39 +85,39 @@
 					<phrase>Android Studio file structure</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
 		<note>
-			<para>Android Studio puts a virtual view on these files, e.g., it groups the resource files under a common node. This
+			Android Studio puts a virtual view on these files, e.g., it groups the resource files under a common node. This
 				view is not
 				identical with the file structure.
-			</para>
+			
 		</note>
 	</section>
 
 	<section id="androidstudio_projectswitching">
 		<title>Opening new projects / switching between projects
-		<para>
+		
 			Android Studio displays different projects in a different window. You can select
 			<menuchoice>
 				<guimenu>File</guimenu>
 				<guisubmenu>Open...</guisubmenu>
 			</menuchoice>
 			to open an existing project. This opens a new window with this project.
-		</para>
-		<para>
+		
+		
 			Alternative you can close the current project via
 			<menuchoice>
 				<guimenu>File</guimenu>
 				<guisubmenu>Close Project</guisubmenu>
 			</menuchoice>
 			and create a new one or open an existing project.
-		</para>
+		
 	</section>
 
 	<section id="androidstudio_gradlesync">
 		<title>Clean build / synchronizing the project with Gradle
-		<para>
+		
 			Unfortunately the build functionality in Android Studio sometimes fails to recognize that a resource has changed.
 			If you
 			want to trigger manually a full rebuild, select
@@ -126,9 +126,9 @@
 				<guisubmenu>Clean Project</guisubmenu>
 			</menuchoice>
 			to perform a clean build with Gradle.
-		</para>
+		
 
-		<para>
+		
 			Also changes in the Gradle build file, frequently require manual intervention, to synchronize your project with
 			Gradle, use
 			<menuchoice>
@@ -137,43 +137,43 @@
 				<guisubmenu>Sync Project with Gradle Files</guisubmenu>
 			</menuchoice>
 			or press the corresponding hyperlink in the tooltip of the Gradle build file editor.
-		</para>
+		
 	</section>
 
 	<section id="androidstudio_selectingtheupdatechnage">
 		<title>Updating settings for Android Studio
 
-		<para>
+		
 			Android Studio is provided in different flavors, the user can select if he want to use a stable version or test out
 			recent features.
 			<itemizedlist>
 				<listitem>
-					<para>Canary channel: Canary builds are the bleeding edge, released about weekly. While these builds do get tested,
+					Canary channel: Canary builds are the bleeding edge, released about weekly. While these builds do get tested,
 						they are still
 						subject to bugs, as we want people to see what's new as soon as possible. This is not recommended
 						for production.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>Dev channel: Dev builds are hand-picked older canary builds that survived the test of time. It should be
+					Dev channel: Dev builds are hand-picked older canary builds that survived the test of time. It should be
 						updated roughly
 						bi-weekly or
 						monthly.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>Beta channel: When we reach a beta milestone for the next version of Android Studio, we post the beta builds
+					Beta channel: When we reach a beta milestone for the next version of Android Studio, we post the beta builds
 						here. When the
 						version is
 						stable, the beta channel contains the stable version until the next version's beta.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>Stable channel: Contains the most recent stable version of Android Studio.</para>
+					Stable channel: Contains the most recent stable version of Android Studio.
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/as_updatesettings10.png"/>
@@ -182,20 +182,20 @@
 					<phrase>Update setttings</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
 	</section>
 	<section id="androidstudio_usingproxy">
 		<title>Using a proxy with Android Studio
-		<para>
+		
 			You can use Android Studio and Gradle behind a proxy. For this you have to enter it via
 			<menuchoice>
 				<guimenu>File</guimenu>
 				<guisubmenu>Settings...</guisubmenu>
 			</menuchoice>
 			. Android Studio updates also the setting for Gradle to use this proxy. This works better as of Android Studio 1.4.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/asproxy10.png"/>
@@ -204,7 +204,7 @@
 					<phrase>Defining a proxy</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 	</section>
 
 </section>

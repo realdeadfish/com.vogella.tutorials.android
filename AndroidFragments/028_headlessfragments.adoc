@@ -1,0 +1,32 @@
+== Fragments for background processing
+
+=== Headless Fragments
+
+Fragments can be used without defining a user interface. 
+These are called _headless fragments_.
+To implement such a fragment, return  `null` in the `onCreateView()` method of your fragment.
+
+[TIP]
+====
+It is recommended to use services for background processing. 
+If you want to do this via your fragments, the second best solution is to use headless fragments in combination with the `setRetainInstance()` method. 
+This way you don't have to handle the configuration changes during your asynchronous processing yourself.
+====
+
+=== Retained headless fragments to handle configuration changes
+
+_Headless fragment_ are typically used to encapsulate some state across configuration changes or for a background processing task. 
+For this purpose you would set your headless fragment to be retained. 
+A retained fragment is not destroyed during configuration changes.
+
+image::retainedfragmentlifecyle10.png[Retained headless fragment]
+
+To set your fragment to retained, call its `setRetainInstance()` method.
+
+To add such a fragment to an activity you use the `add()` method of the `FragmentManager` class. 
+If you need to refer to this _Fragment_ later, you need to add it with a tag. 
+This allows you  to search for it via the `findFragmentByTag()` method of the `FragmentManager`.
+
+
+The usage of the `onRetainNonConfigurationInstance()` in the activity  is deprecated and should be replaced by retained headless fragments.
+

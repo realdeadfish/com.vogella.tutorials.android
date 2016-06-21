@@ -19,7 +19,7 @@
 			Resource files must be
 			placed
 			in the
-			<filename class="directory">/res_
+			_/res_
 			directory of your application in a predefined sub-folder. The specific sub-folder depends
 			on type of resource which is
 			stored. You
@@ -75,7 +75,7 @@
 						<row>
 							<entry>Drawables</entry>
 							<entry>
-								<filename class="directory">/res/drawables_
+								_/res/drawables_
 							</entry>
 							<entry>
 								Images (e.g., png or jpeg files) or XML files which
@@ -86,7 +86,7 @@
 						<row>
 							<entry>Simple Values</entry>
 							<entry>
-								<filename class="directory">/res/values_
+								_/res/values_
 							</entry>
 							<entry>
 								Used to define strings, colors, dimensions, styles and
@@ -104,7 +104,7 @@
 						<row>
 							<entry>Layouts</entry>
 							<entry>
-								<filename class="directory">/res/layout _
+								_/res/layout _
 							</entry>
 							<entry>
 								XML files with layout descriptions are used to define the user
@@ -117,7 +117,7 @@
 						<row>
 							<entry>Styles and Themes</entry>
 							<entry>
-								<filename class="directory">/res/values_
+								_/res/values_
 							</entry>
 							<entry>Files which define the appearance of your Android
 								application.
@@ -126,7 +126,7 @@
 						<row>
 							<entry>Animations</entry>
 							<entry>
-								<filename class="directory">/res/animator_
+								_/res/animator_
 							</entry>
 							<entry>Defines animations in XML for the animation API
 								which
@@ -137,7 +137,7 @@
 						<row>
 							<entry>Raw data</entry>
 							<entry>
-								<filename class="directory">/res/raw_
+								_/res/raw_
 							</entry>
 							<entry>
 								Arbitrary files saved in their raw form. You access them via an
@@ -148,7 +148,7 @@
 						<row>
 							<entry>Menus</entry>
 							<entry>
-								<filename class="directory">/res/menu_
+								_/res/menu_
 							</entry>
 							<entry>Defines the actions which can be used in the toolbar of the application.
 							</entry>
@@ -182,10 +182,10 @@
 
 		
 			Every relevant resource in the
-			<filename class="directory">res_
+			_res_
 			folder, gets an ID assigned by the Android build system.
 			Android generates
-			<filename class="directory">gen_
+			_gen_
 			a
 			_R.java_
 			file
@@ -386,7 +386,7 @@
 			_ids.xml_
 			and placed
 			in the
-			<filename class="directory">/res/values_
+			_/res/values_
 			folder. This allows you to use the predefined ID in your layout file. If you want to define the id in a separate
 			file, you first
 			need to remove the @+id entries in your layout

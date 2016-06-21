@@ -1,48 +1,25 @@
-<section id="androidstudio_eclipsemigration" role="wrapper">
-	<title>Migrating from Eclipse
-	<section id="androidstudio_import">
-		<title>Importing Eclipse Android projects into Android Studio
-		<para>
-			To migrate existing Android projects into Android Studio you can follow these steps:
-			<itemizedlist>
-				<listitem>
-					<para>In Android Studio, close any projects currently open. This opens the Welcome screen.</para>
-				</listitem>
-				<listitem>
-					<para>
-						Select
-						_Import Non-Android Studio project_
-						.
-					</para>
-				</listitem>
-				<listitem>
-					<para>Browse to the project folder and click OK.</para>
-				</listitem>
-			</itemizedlist>
-		</para>
-	</section>
-	<section id="androidstudio_eclipsekeybindings">
-		<title>Changing the keybinding to use Eclipse bindings
-		<para>
-			Select
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>Settings...</guisubmenu>
-				<guisubmenu>Keymap</guisubmenu>
-			</menuchoice>
-			and change the Android Studio keybindings to the keybindings of the Eclipse IDE. This might help you to get started
-			faster the Android Studio, if you are already familiar with the Eclipse IDE.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsekeybindingandroidstudio.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Changing the keybindings in Android Studio to Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+== Migrating from Eclipse
 
-</section>
+=== Importing Eclipse Android projects into Android Studio
+		
+To migrate existing Android projects into Android Studio you can follow these steps:
+
+
+*  In Android Studio, close any projects currently open. This opens the Welcome screen.
+Select _Import Non-Android Studio project_.
+* Browse to the project folder and click OK.
+		
+=== Changing the keybinding to use Eclipse bindings
+		
+Select menu:File[Settings...>Keymap] and change the Android Studio keybindings to the keybindings of the Eclipse IDE. 
+This might help you to get started faster the Android Studio, if you are already familiar with the Eclipse IDE.
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/eclipsekeybindingandroidstudio.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>Changing the keybindings in Android Studio to Eclipse</phrase>
+	</textobject>
+</mediaobject>
+		

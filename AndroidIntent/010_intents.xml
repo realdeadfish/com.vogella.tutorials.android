@@ -1,0 +1,132 @@
+<section id="intents" role="wrapper">
+	<title>Intents and intent filter
+	<section id="android_task">
+        <title>Task
+        
+            In Android the reuse of other application components is a concept
+            known
+            as
+            _task_
+            . An application can access other Android components to achieve a
+            task.
+            For example, from a component of your application you can
+            trigger
+            another component in the Android system, which manages photos,
+            even
+            if
+            this component is not part of your application. In this
+            component you
+            select a photo and return to your application to use the
+            selected
+            photo.
+        
+        Such a flow of events is depicted in the following graphic.
+        
+        
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/androidtask10.png"/>
+                </imageobject>
+                <textobject>
+                    <phrase>Defining an Android tasks</phrase>
+                </textobject>
+            </mediaobject>
+        
+    </section>
+	<section id="intents_overview">
+		<title>What are intents?
+		
+			_Intents_
+			are asynchronous messages which allow
+			application components to
+			request
+			functionality from other Android components.
+			Intents allow you
+			to
+			interact with components from the same applications as well as with components contributed by other applications.
+			For example, an activity
+			can start an external activity for
+			taking a
+			picture.
+		
+		
+			Intents are objects of the
+			`android.content.Intent`
+			type. Your code can send them to the
+			Android system defining the
+			components you are targeting. For example, via
+			the
+			`startActivity()`
+			method you can define that the intent should be used to start an
+			activity.
+		
+		
+			An
+			intent
+			can contain data via a
+			`Bundle`
+			. This data can be used by the receiving
+			component.
+		
+	</section>
+
+	<section id="usingintents_call">
+		<title>Starting activities
+		
+			To start an activity,
+			use the method
+			`startActivity(intent)`
+			. This method is defined on the
+			`Context`
+			object which
+			`Activity`
+			extends.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/startactivityviaintent10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Start activity via an intent</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			The following code demonstrates how you can start another
+			activity via
+			an intent.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/snippets/startActivity.java" />
+			</programlisting>
+		
+	</section>
+
+	<section id="usingintents_subactivities">
+		<title>Sub-activities
+		
+			Activities which are started by other Android activities are
+			called
+			_sub-activities_
+			. This wording makes it easier to describe which activity is meant.
+		
+	</section>
+
+	<section id="usingintents_startservice">
+		<title>Starting services
+		
+			You can also start
+			services
+			via intents.
+			Use the
+			`startService(Intent)`
+			method call
+			for that.
+		
+	</section>
+
+</section>

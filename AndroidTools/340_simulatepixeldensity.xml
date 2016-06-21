@@ -1,20 +1,20 @@
 <section id="simulatepixeldesity">
-	<title>Simulating pixel density</title>
-	<para>
+	<title>Simulating pixel density
+	
 		You can use the command line to simulate different device
 		densities
 		and display resolutions.
-	</para>
-	<para>This allows you to use a device with a high device density and
+	
+	This allows you to use a device with a high device density and
 		resolution to simulate other devices.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/display/device.txt" />
 		</programlisting>
-	</para>
+	
 
 
 </section>

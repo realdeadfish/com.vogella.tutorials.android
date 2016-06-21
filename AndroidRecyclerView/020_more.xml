@@ -1,0 +1,166 @@
+<section id="androidlists" role="wrapper">
+	<title>More on recyler view
+	<section id="recycleview_importantclass">
+		<title>Relevant implementation classes to use RecyclerView
+		
+			The implementation of
+			`RecyclerView`
+			requires a few classes to be implemented.
+			The
+			most important classes
+			are
+			listed in the following table, the third column
+			makes if you need
+			to
+			implement or set the class yourself, or if you can
+
+			<table frame='all'>
+				<title>Important classes of the RecyclerView API
+				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="3*" />
+					<colspec colname='c2' colwidth="1*" />
+					<thead>
+						<row>
+							<entry>Class</entry>
+							<entry>Purpose</entry>
+							<entry>Optional</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>Adapter</entry>
+							<entry> Provides the data and responsible for creating the views
+								for the individual entry
+							</entry>
+							<entry>Required</entry>
+						</row>
+						<row>
+							<entry>ViewHolder</entry>
+							<entry> Contains references for all views that are filled by the
+								data of the entry
+							</entry>
+							<entry>Required</entry>
+						</row>
+						<row>
+							<entry>LayoutManager</entry>
+							<entry>Responsible for the arrangement of the view container for
+								the entries within the available area
+							</entry>
+							<entry>Required, but default implementations available</entry>
+						</row>
+						<row>
+							<entry>ItemDecoration</entry>
+							<entry>Responsible for drawing decorations around or on top of
+								the view container of an entry.
+							</entry>
+							<entry>Default behavior, but can be overridden</entry>
+						</row>
+						<row>
+							<entry>ItemAnimator</entry>
+							<entry>Responsible to define the animation if entries are added,
+								removed or reordered
+							</entry>
+							<entry>Default behavior, but can be overridden</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		
+		Of course you can also provide your custom implementations for
+			the layout managers and animations.
+		
+
+	</section>
+
+	<section id="recycleview_clickevents">
+		<title>Handling click events in RecylerView
+		Touch events, like clicking should be handled by the views in the recycler view. If the view should trigger
+			something in the object in which it is used (activity or fragment), you can pass via the constructor of the adapter
+			to it. This allows the adapter to store a reference to the object and call its methods for feedback.
+		
+
+	</section>
+
+
+	<section id="differentlayouts_recyclerview">
+		<title>Using different layouts in recycler view
+		
+			The adapter needs to create a layout for each row of the list.
+			This root of the layout is typically a
+			`ViewGroup`
+			(layout manager)
+			and contains several other
+			views
+			, e.g., an
+			`ImageView`
+			and a
+			`TextView`
+			. The following graphic shows a list with different layouts for odd
+			and even rows.
+		
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/adapter10.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>Adapter provides data and defines the layout per row</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+		
+			Within the
+			`getItemViewType`
+			method the recycler view determines which type should be used for data. The framework call automatically the
+			`onCreateViewHolder`
+			method if needed for this type. In this method you inflate the correct layout for the type and return a fitting view
+			holder.
+		
+
+	</section>
+
+	<section id="recycleview_animation">
+		<title>Custom animations
+		
+			To customize the animations in the
+			`RecyclerView`
+			, implement your own animation by extending the
+			`RecyclerView.ItemAnimator`
+			class and use the RecyclerView.setItemAnimator() method to assign it
+			to your widget.
+		
+	</section>
+
+	<section id="recycleview_filtersort">
+		<title>Filtering and sorting
+		
+			Filtering and sorting of the data is handled by the adapter. You
+			need to
+			implement the logic in your custom
+			adapter implementation.
+		
+
+	</section>
+
+	<section id="adapterown_updates_recyclerview">
+		<title>Data updates in the adapter
+
+		
+			The
+			`notifyItemInserted(position)`
+			method on the adapter must be called if a new entry has been inserted
+			on the defined position.
+		
+		
+			The
+			`notifyItemRemoved(position);`
+			method must be called once the data in this position has been
+			deleted.
+		
+	</section>
+
+
+</section>

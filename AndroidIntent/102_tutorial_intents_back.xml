@@ -1,0 +1,75 @@
+<section id="explicit_intentsback" role="wrapper">
+	<title>Exercise: Receiving data from sub-activities
+	<section id="explicit_intentsbackoverview">
+		<title>Target of this exercise
+		
+			This is the second part of an exercise which started in
+			<xref linkend="intentexercise_chapter_start" />
+			. An example solution for the activity can be found in
+			<xref linkend="intentexercise_chapter_solution" />
+			.
+		
+		
+			Continue to use the
+			`com.vogella.android.intent.explicit`
+			project.
+		
+		
+			In the following exercise you transfer data back from your
+			second sub-activity
+			to the
+			`MainActivity`
+			once the user selects the
+			<guilabel>Back</guilabel>
+			button.
+		
+
+	</section>
+	<section id="explicit_intentssendbackj">
+		<title>Return data from ResultActivity
+		
+			Add the implementation of the
+			`finish()`
+			method to the
+			`ResultActivity`
+			class.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/explicit/ResultActivity2.java" />
+			</programlisting>
+		
+		Solve all TODOs.
+	</section>
+
+	<section id="explicit_intentssendbackreceive">
+		<title>Evaluate the return data in MainActivity
+		
+			Use
+			the
+			`startActivityForResult()`
+			method
+			in
+			`MainActivity`
+			to start the sub-activity. This allows you to use the
+			`onActivityResult()`
+			method to receive data from the sub-activity.
+			Extract the extra data with
+			the received bundle.
+		
+		
+			Show a
+			`Toast`
+			with the extra data to validate that you correctly received it. The
+			following code contains some pointer on how to solve that.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/explicit/MainActivity2.java" />
+			</programlisting>
+		
+	</section>
+
+</section>

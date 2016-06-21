@@ -1,19 +1,19 @@
 <section id="exterize_hiearchyviewer">
-	<title>Exercise: Hierarchy Viewer</title>
-	<para>
+	<title>Exercise: Hierarchy Viewer
+	
 		Continue to use the same example as in
 		<xref linkend="exercise_tracewiew1" />
 		. Open the
 		<guilabel>Hierarchy View</guilabel>
 		_perspective_
 		and analyze the view layer.
-	</para>
-	<para>
+	
+	
 		While none of these layout layers is very performance intensive
 		it
 		contains redundant layers and unnecessary views. Remove the
 		unnecessary view layers.
-	</para>
+	
 
 
 

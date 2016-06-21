@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Using static checks for Android development with annotations and Lint - Tutorial</title>
+		<title>Using static checks for Android development with annotations and Lint - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -17,13 +17,13 @@
 		<pubdate>09.09.2015</pubdate>
 		<releaseinfo>
 
-			<para>Version 2.4	</para>
+			Version 2.4	
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Using the Android lint checks</title>
-			<para> This tutorial describes the purpose and the usage of the Android lint checks. 
-			</para>
+			<title>Using the Android lint checks
+			 This tutorial describes the purpose and the usage of the Android lint checks. 
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

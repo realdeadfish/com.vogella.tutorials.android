@@ -1,20 +1,20 @@
 <section id="layoutoptimization">
-	<title>Layout optimization</title>
-	<para>
+	<title>Layout optimization
+	
 		You should optimize your layout. The following gives an example how to
 		use
-		<code>FrameLayout</code>
+		`FrameLayout`
 		with an
-		<code>ImageView</code>
+		`ImageView`
 		and one
-		<code>TextView</code>
+		`TextView`
 		to create result despicted in the next screenshot. It uses the
 		possibility to position
 		the
-		<code>TextView</code>
+		`TextView`
 		in the layout and to style parts of its text content differently.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/spannablestring10.png" scale="30" />
@@ -23,49 +23,49 @@
 				<phrase>Styling TextView with TextAppearanceSpan</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Create a project called
 		_com.vogella.android.textview.spannablestring_
 		.
-	</para>
-	<para>
+	
+	
 		Add two news styles to your
-		<filename>styles.xml</filename>
+		_styles.xml_
 		file.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/layoutopt/styles.xml" />
 		</programlisting>
-	</para>
-	<para>Create the following layout. </para>
-	<para>
+	
+	Create the following layout. 
+	
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/layoutopt/activity_main.xml" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Style your text in the
-		<code>TextView</code>
+		`TextView`
 		via separate
-		<code>TextAppearanceSpan</code>
+		`TextAppearanceSpan`
 		as demonstrated in the following code.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/layoutopt/MainActivity.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		The resulting layout is much faster than a layout based on
-		<code>RelativeLayout</code>
+		`RelativeLayout`
 		. Also HTML styling was avoid as the HTML parser is relatively
 		expensive.
-	</para>
+	
 </section>

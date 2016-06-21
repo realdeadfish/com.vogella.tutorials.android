@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Android Intents - Tutorial
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>28.04.2014</pubdate>
+		<releaseinfo>
+			Version 3.5
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Using Intents in Android
+			
+				This tutorials describes the usage of intents to communicate
+				between Android components.
+				It is
+				based on Eclipse 4.4, Java 1.6 and
+				Android 4.4.
+			
+		</abstract>
+	</articleinfo>
+
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_intents.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_intenttypes.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_intentdatatransfer.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="050_intentfilter.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_eventtrigger.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_finditent.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/prerequisites/android_prerequisite.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_tutorial_explicitintent.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="102_tutorial_intents_back.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="104_solution_intents.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_tutorial_intentfilter.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="150_tutorial_pickimage.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_tutorial_implicitintent.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/AndroidIntent"?>
+</article>

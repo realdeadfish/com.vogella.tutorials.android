@@ -1,0 +1,95 @@
+== Fragments Tutorial
+
+=== Target of this exercise
+		
+The following tutorial demonstrates how to use fragments in a standard Android application without using the support library.
+The application uses layouts with different fragments depending on portrait and landscape mode.
+		
+In portrait mode the _RssfeedActivity_ shows one fragment.
+From this fragment the user can navigate to another _activity_ which contains another fragment.
+		
+		
+In landscape mode _RssfeedActivity_ shows both fragments side by side.
+		
+		
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_exampleproject.xml" />
+	
+=== Remove compatibility layer
+		
+Remove any reference to the compatibility layer so simplify the generated example. 
+See <<androidsupportlibrary_avoiding_remove>> for the process of doing this.
+		
+=== Create standard layouts
+		
+Create the new layout files in the _res/layout/_ folder.
+
+Create a new layout file called _fragment_rssitem_detail.xml_. 
+		
+<programlisting language="xml">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+		href="../examples/fragments/fragment_rssitem_detail.xml" />
+</programlisting>
+		
+		
+Create a new layout file called _fragment_rsslist_overview.xml_. 
+
+		
+<programlisting language="xml">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+		href="../examples/fragments/fragment_rsslist_overview.xml" />
+</programlisting>
+		
+=== Create fragment classes
+		
+Create the follows classes which are used as fragments.
+Start with the `DetailFragment` class.
+		
+		
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/fragments/DetailFragment.java" />
+</programlisting>
+		
+
+		
+Create the `MyListFragment` class. 
+Despite its name it will not display a list of items. 
+Instead it will just have a button which allow to send the current time to the details fragment.
+		
+		
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/fragments/MyListFragment.java" />
+</programlisting>
+		
+=== Change the main layout file
+		
+Change the existing _activity_rssfeed.xml_ file.
+		
+<programlisting language="xml">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/fragments/activity_rssfeed.xml" />
+</programlisting>
+		
+=== RssfeedActivity
+		
+Change the `RssfeedActivity` class to the following code.
+		
+
+		
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/fragments/RssfeedActivity.java" />
+</programlisting>
+		
+=== Validating
+		
+Start your application.
+Both fragments should be displayed both in landscape and portrait mode. 
+If you press the button in  the `ListFragment`, the `DetailFragment` gets updated.
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/rssfeedfirstversionresult.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>First result</phrase>
+	</textobject>
+</mediaobject>
+		

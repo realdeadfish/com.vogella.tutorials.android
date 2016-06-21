@@ -1,6 +1,6 @@
 <section id="android_developersettings">
-	<title>Developer Settings</title>
-	<para>
+	<title>Developer Settings
+	
 		_Developer Settings_
 		in your
 		<guilabel>Setting</guilabel>
@@ -8,9 +8,9 @@
 		simplify the
 		analysis of your application. For example you can enable
 		that the touch area is highlighted.
-	</para>
+	
 
-	<para>
+	
 		If you
 		have a Android 4.2 phone, try going to the About section in
 		the
@@ -19,14 +19,14 @@
 		<guilabel>Build number</guilabel>
 		entry 7
 		times.
-	</para>
-	<para>
+	
+	
 		If you phone does not have this option try using an emulator.
 
-	</para>
-	<para>In some cases you need to restart the application to make the
+	
+	In some cases you need to restart the application to make the
 		setting work.
-	</para>
+	
 
 </section>
 

@@ -1,14 +1,14 @@
 <section id="resources_android">
-	<title>Android static code check resources</title>
-	<para>
+	<title>Android static code check resources
+	
 		<ulink url="http://tools.android.com/tech-docs/support-annotations">
 			Support Annotations technical documentation
 		</ulink>
-	</para>
-	<para>
+	
+	
 		<ulink url="http://developer.android.com/guide/developing/tools/traceview.html">
 			Traveview homepage
 		</ulink>
-	</para>
+	
 
 </section>

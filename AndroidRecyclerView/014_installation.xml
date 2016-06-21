@@ -1,0 +1,15 @@
+<section id="recycleview_gradledependency">
+	<title>Gradle dependency to use recycler view  
+	
+		The
+		`RecyclerView`
+		widget is part of the v7 support library. Add the following dependency to your Gradle build file to use recycler
+		view.
+	
+	
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/dependency/build.gradle" />
+		</programlisting>
+	
+</section>
+

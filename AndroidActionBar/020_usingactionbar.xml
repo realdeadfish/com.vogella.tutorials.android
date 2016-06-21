@@ -1,0 +1,136 @@
+<section id="usingactionbar" role="wrapper">
+	<title>Using the toolbar 
+	<section id="usingactionbar_actions">
+		<title>Entries in the action bar (actions)
+		
+			Entries in the toolbar are typically called
+			_actions_
+			. While it is possible to create entries in the action bar via code,
+			it
+			is
+			typically defined in an XML resource
+			file.
+		
+		
+			Each menu definition is contained in a separate file in the
+			_res/menu_
+			folder. The Android tooling automatically creates a reference to this
+			file in the
+			`R`
+			file, so that the menu resource can be accessed.
+		
+	</section>
+	<section id="usingactionbar_creatingactions">
+		<title>Creating actions
+		
+			An activity adds entries
+			to the action bar
+			in its
+			`onCreateOptionsMenu()`
+			method.
+		
+
+		
+			The
+			<property>showAsAction</property>
+			attribute allows you to define how the action is displayed. For
+			example, the
+			`ifRoom`
+			attribute defines that
+			the action
+			is only
+			displayed
+			in the action bar
+			if
+			there is sufficient
+			screen space available.
+		
+
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/actionbar/menuexample.xml" />
+			</programlisting>
+		
+
+		
+			The
+			`MenuInflator`
+			class allows to inflate actions defined in an XML file and adds them
+			to
+			the action bar.
+			`MenuInflator`
+			can get accessed via the
+			`getMenuInflator()`
+			method from your
+			_activity_
+			. The following example code demonstrates the creation of actions.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/actionbar/inflate.java" />
+			</programlisting>
+		
+		<tip>
+			
+				While you can define the actions also in your source code, it
+				is good practice to do this via XML files, as this results in less
+				boilerplate code.
+			
+		</tip>
+
+	</section>
+
+	<section id="usingactionbar_selectionreaction">
+		<title>Reacting to action selection
+		
+			If an action
+			is selected, the
+			`onOptionsItemSelected()`
+			method in the corresponding activity is called. It receives the
+			selected action as parameter. Based
+			on this information, you
+			can
+			decide
+			what to do. The usage of this method is demonstrated in the
+			following
+			code snippet.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/actionbar/reacting.java" />
+			</programlisting>
+		
+	</section>
+
+	<section id="usingactionbar_search">
+		<title>Search an action in the action bar
+		
+			To search for a menu item in a menu you can use the
+			`findItem()`
+			method of the
+			`Menu`
+			class. This method allows to search by id.
+		
+
+	</section>
+	<section id="usingactionbar_changes">
+		<title>Changing the menu
+		
+			The
+			`onCreateOptionsMenu()`
+			method is only called once. If you want to change the
+			menu later, you
+			have to call the
+			`invalidateOptionsMenu()`
+			method. Afterwards
+			this
+			`onCreateOptionsMenu()`
+			method
+			is called again.
+		
+	</section>
+</section>

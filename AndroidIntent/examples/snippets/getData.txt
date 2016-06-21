@@ -1,0 +1,10 @@
+
+Bundle extras = getIntent().getExtras();
+if (extras == null) {
+		return;
+		}
+String value1 = extras.getString("Value1");
+String value2 = extras.getString("Value2");
+if (value1 != null && value2 != null) {
+	// do something with the data
+}
