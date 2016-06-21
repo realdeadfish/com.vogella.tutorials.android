@@ -11,7 +11,7 @@
 				<listitem>
 					<para>
 						Select
-						<guilabel>Import Non-Android Studio project</guilabel>
+						_Import Non-Android Studio project_
 						.
 					</para>
 				</listitem>

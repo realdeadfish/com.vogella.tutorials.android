@@ -18,7 +18,7 @@
 				<guisubmenu>Android XML File</guisubmenu>
 			</menuchoice>
 			and select the
-			<guilabel>Layout</guilabel>
+			_Layout_
 			option.
 		</para>
 [[androidstudio_creatingresourcefile]]
@@ -93,7 +93,7 @@
 			an existing layout file is to find
 			these
 			elements in the
-			<guilabel>Palette</guilabel>
+			_Palette_
 			and drag and
 			drop
 			them into your layout.
@@ -103,7 +103,7 @@
 			view by
 			right-clicking it and by
 			selecting the
-			<guilabel>Delete</guilabel>
+			_Delete_
 			entry for the context menu.
 		</para>
 		<para>Android Studio replaces placeholder values with the
@@ -163,7 +163,7 @@
 Add a new menu XML resource
 		<para>
 			If not yet present, create a new directory called
-			<guilabel>menu</guilabel>
+			_menu_
 			.
 		</para>
 		<para>
@@ -229,7 +229,7 @@ Add a new menu XML resource
 		<title>Seeing the log statements of your Android application
 		<para>
 			Use the
-			<guilabel>Android</guilabel>
+			_Android_
 			view (Shortcut:
 			<keycombo>
 				<keycap>Alt</keycap>

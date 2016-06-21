@@ -82,6 +82,8 @@ public class ShareIntentBuilder {
 
 ----
 
+=== Implement different MainActivity versions in your flavor
+
 Allow the activity which triggers this intent to be replaced in your “mock” flavor
 If in a flavor “mock” is selected, start a second activity in your application which displays the send data.
 If the flavor "prod" is selected send the shared intent.
