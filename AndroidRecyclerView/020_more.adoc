@@ -1,0 +1,87 @@
+== More on recyler view
+
+=== Relevant implementation classes to use RecyclerView
+		
+The implementation of `RecyclerView` requires a few classes to be implemented.
+The most important classes are listed in the following table
+
+.Table Important classes of the RecyclerView API
+[cols="1, 3, 1"]
+|===
+|Class |Purpose|Optional
+
+|Adapter
+|Provides the data and responsible for creating the views for the individual entry
+|Required
+
+|ViewHolder
+|Contains references for all views that are filled by the data of the entry
+|Required
+
+|LayoutManager
+|Contains references for all views that are filled by the data of the entry
+|Required, but default implementations available
+
+|ItemDecoration
+|Responsible for drawing decorations around or on top of the view container of an entry
+|Default behavior, but can be overridden
+
+|ItemAnimator
+|Responsible to define the animation if entries are added, removed or reordered
+|Default behavior, but can be overridden
+
+|===
+		
+You can also provide your custom implementations for the layout managers and animations.
+		
+
+=== Handling click events in RecylerView
+Touch events, like clicking should be handled by the views in the recycler view. 
+If the view should trigger something in the object in which it is used (activity or fragment), you can pass via the constructor of the adapter to it. 
+This allows the adapter to store a reference to the object and call its methods for feedback.
+		
+
+=== Using different layouts in recycler view
+		
+The adapter needs to create a layout for each row of the list.
+This root of the layout is typically a
+`ViewGroup`
+(layout manager)
+and contains several other
+views
+, e.g., an
+`ImageView`
+and a
+`TextView`
+. The following graphic shows a list with different layouts for odd
+and even rows.
+		
+image::adapter10.png[Adapter provides data and defines the layout per row]
+		
+		
+Within the
+`getItemViewType`
+method the recycler view determines which type should be used for data. The framework call automatically the
+`onCreateViewHolder`
+method if needed for this type. In this method you inflate the correct layout for the type and return a fitting view
+holder.
+		
+
+=== Custom animations
+		
+To customize the animations in the `RecyclerView`, implement your own animation by extending the
+`RecyclerView.ItemAnimator`
+class and use the RecyclerView.setItemAnimator() method to assign it
+to your widget.
+		
+=== Filtering and sorting
+		
+Filtering and sorting of the data is handled by the adapter. 
+You need to implement the logic in your custom adapter implementation.
+		
+=== Data updates in the adapter
+		
+The `notifyItemInserted(position)` method on the adapter can be used to notify the view that a new entry has been inserted at a certain position.
+		
+The `notifyItemRemoved(position);` method can be used to notify the view that a entry has been deleted in a certain position.
+		

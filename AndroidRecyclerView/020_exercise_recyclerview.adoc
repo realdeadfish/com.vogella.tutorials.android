@@ -1,0 +1,57 @@
+== Exercise: Using RecylerView
+
+=== Target of this exercise
+		
+In this exercise you create a project which uses the `RecyclerView` class to display a list.
+		
+image::recyclerview_target10.png[RecyclerView example]
+		
+=== Create projects and add the Gradle dependency
+
+Create a new Android project using the `com.vogella.android.recylerview` top level package name.
+		
+Add the following dependency to your Gradle build file to use RecylerView.
+
+[source,gradle]
+----
+dependencies {
+    ...
+    compile "com.android.support:recyclerview-v7:23.0.1"
+}
+----
+		
+=== Create layout files
+		
+Create or update the a layout file called _activity_main.xml_ so that it contains the `RecyclerView`
+		
+[source,java]
+----
+include::res/recyclerview/activity_main.xml[]
+----
+
+Note: The `ImageView` has the `android:elevation` attribute set, this instructs Android to draw a shadow for it.
+
+Also create a layout to use in each item.
+
+[source,xml]
+----
+include::res/recyclerview/rowlayout_complex.xml[]
+----
+		
+
+Note: At the moment the display of the `RecyclerView` is not supported in the graphical preview.
+
+Create the following adapter class.
+
+[source,java]
+----
+include::res/recyclerview/MyAdapter.java[]
+----
+
+Now you can configure your recyler view in your activity.
+
+[source,java]
+----
+include::res/recyclerview/Activity.java[]
+----
+

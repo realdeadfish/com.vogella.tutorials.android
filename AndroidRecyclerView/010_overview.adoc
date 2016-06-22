@@ -1,0 +1,96 @@
+== Android and list or grids
+
+=== Using lists or grids in Android
+		
+The display of elements in a list or grids is a very common pattern in mobile applications.
+The user sees a collection of items and can scroll through them. 
+The collection of items can be a list, a grid or another structured representations of data.
+Such an activity is depicted in the following picture.
+
+image::listview_scheme10.png[Listview example]
+
+		
+The user interacts with the collection of items via touch events or the toolbar.
+Individual items can be selected. 
+This selection may update the toolbar or may trigger a detailed screen based on the selection.
+The following graphic sketches that. 
+		
+
+image::listview_scheme20.png[Listview example]
+
+=== Using RecyclerView 
+		
+The `RecyclerView` class supports the display of a collection of data.
+
+It is a modernized version of the `ListView` and the `GridView` classes provided by the Android framework.
+Recycler view addresses several issues that the existing widgets have.
+It enforced a programming style that results in good performance.
+It also comes with default animations for removing and adding elements.
+		
+`RecyclerView` allow to use different layout managers for positioning items.
+
+		
+=== Using a view holder
+		
+		
+Recyler view uses a `ViewHolder` to store references to the views for one entry in the recyler view. 
+A `ViewHolder` class is a static inner class in your adapter which holds references to the relevant views. 
+With these references your code can avoid the time-consuming `findViewById()` method to update the widgets with new data.
+		
+=== Adapters
+		
+An _adapter_ manages the data model and adapts it to the individual entries in the widget. 
+An adapter for recyler view extends the `RecyclerView.Adapter` sclass.
+		
+		
+Every entry in a recycler view consists of a view hierarchy filled with the data model. 
+For example, an entry in a list may have an image on the left side and two text lines in the middle as depicted in the following graphic.
+		
+image::listview_line10.png[Recyler view example layout]
+		
+		
+A layout file for a such a line might look like the following.
+
+[source,xml]
+----
+include::res/snippets/rowlayout_complex.xml[]
+----
+		
+		
+The adapter is responsible for inflating the layout for each entry in recycler view. 
+It returns an object of type `ViewHolder`per visual entry in the recycler view.
+		
+		
+The adapter must return the number of items via its `getItemCount()` method.
+Each entry in the `RecylerView` widget displays specific data for the data model. 
+The adapter inflates a corresponding layout file and assigns the data to the inflated layout.
+		
+
+		
+The `onCreateViewHolder` method inflate the layout and creates an instance of the `ViewHolder` class. 
+This instance is used to access the views in the inflated layout. 
+The `onCreateViewHolder` method is only called then a new view must be created.
+		
+
+The `onBindViewHolder` method binds the data to the individual views in the row.
+		
+The adapter is assigned to the `RecylerView` via the `setAdapter` method on the `RecylerView` object.
+		
+
+=== Possible input types for the adapter
+		
+The input to the adapter of `RecyclerView` can be any arbitrary Java objects. 
+The `RecyclerView` adapter extracts the correct item data from the data model.
+Afterwards it assigns this data to the individual widgets in the entry of the recyler view widget.
+
+=== Default layout manager
+		
+The layout manager decides how the data in the `RecyclerView` is displayed. 
+The library for recyler view provides the following build-in layout managers.
+
+* LinearLayoutManager shows items in a vertical or horizontal scrolling list.
+* GridLayoutManager shows items in a grid.
+* StaggeredGridLayoutManager shows items in a staggered grid.
+		
+		
+
