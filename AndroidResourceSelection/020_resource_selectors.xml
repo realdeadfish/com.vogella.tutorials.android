@@ -1,0 +1,99 @@
+<section id="resourcequalifiers" role="wrapper">
+    <title>Important resource qualifiers</title>
+
+    <section id="resourcequalifiers_densityintro">
+        <title>Using density as resource qualifier</title>
+        <para>
+            The topic of resource qualifiers is handled in
+            <xref linkend="resourcequalifiers_density1" />
+            .
+        </para>
+    </section>
+    <section id="resourcequalifiers_orientation">
+        <title>Using orientation as resource qualifier</title>
+        <para>
+            Assume, for example, that you want to use a
+            special
+            layout for your
+            activity
+            in
+            landscape
+            mode and that the layout file is called
+            <filename>activity_main.xml</filename>
+            .
+            In this case you create the
+            <filename class="directory">res/layout-land</filename>
+            folder and place
+            the new layout file with the same name (
+            <filename>activity_main.xml</filename>
+            )
+            in this folder.
+        </para>
+    </section>
+
+    <section id="resourcequalifiers_version">
+        <title>Android version qualifiers</title>
+        <para>
+            A typical selection you use in your application, is
+            the
+            selection based
+            on Android version, which is based on the
+            <parameter>-v[minimum API level]</parameter>
+            qualifier. For example, this way you can provide different styling
+            and
+            themes based on the Android API revision.
+        </para>
+        <para>
+            A typical example for using this qualifier is to define the
+            styling based on the Android version.
+        </para>
+    </section>
+    <section id="resourcequalifiers_size">
+        <title>Width and height related qualifiers</title>
+        <para>
+            Another typical selection is the
+            <wordasword>smallest available width</wordasword>
+            selection or the
+            <wordasword>available width</wordasword>
+            selection. The
+            <wordasword>smallest available width</wordasword>
+            is the shortest of the screen's available
+            height and the
+            <wordasword>available width</wordasword>
+            is the actual width based on the orientation of the device.
+        </para>
+        <para>
+            The width selection
+            can, for example, be used
+            to provide different
+            layouts
+            based on the width of the device.
+            This
+            selection is based on
+            <parameter>-sw[Number]dp</parameter>
+            (Smallest) or
+            <parameter>-w[Number]dp</parameter>
+            qualifier, where
+            [Number] stands for the number of device independent
+            pixels. For example, a 7inch tablet typically has at least 600dp and
+            you could provide layouts for it via the
+            <parameter>res/layout-sw600dp/</parameter>
+            selector.
+        </para>
+
+    </section>
+    <section id="resourcequalifiers_moreinfo">
+        <title>More resource qualifiers</title>
+        <para>
+            The other resource qualifiers are described on the
+            following
+            webpage.
+        </para>
+        <para>
+            <programlisting language="java">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                    parse="text" href="./examples/links/resourcequalifiers.txt" />
+            </programlisting>
+        </para>
+    </section>
+</section>

@@ -3,15 +3,7 @@
 A fragment has its own life cycle. 
 But it is always connected to the life cycle of the activity which uses the fragment.
 
-<mediaobject>
-<imageobject>
-<imagedata fileref="images/fragmentlifecycle10.png"/>
-</imageobject>
-<textobject>
-<phrase>Fragment lifecycle</phrase>
-</textobject>
-</mediaobject>
-
+image::fragmentlifecycle10.png[Fragment lifecycle]
 
 
 If an activity stops, its fragments are also stopped. 

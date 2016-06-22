@@ -1,0 +1,51 @@
+<section id="exercise_listsactivity_simple">
+	<title>Exercise: Using ListView and ListActivity</title>
+	<para>
+		The following exercise demonstrates how to use a
+		<code>ListView</code>
+		in an
+		<code>ListActivity</code>
+		. You use
+		the predefined
+		<code>ArrayAdapter</code>
+		class
+		and an existing Android layout for the rows.
+	</para>
+
+	<para>
+		Create a new Android project called
+		<wordasword>de.vogella.android.listactivity</wordasword>
+		with the
+		activity
+		called
+		<code>MyListActivity</code>
+		.
+	</para>
+
+	<para>
+		Change
+		<code>MyListActivity</code>
+		class based on the
+		following code example. Note that the
+		<code>setContentView()</code>
+		method is not used.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/lists/MyListActivity.java" />
+		</programlisting>
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/listactivity10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>ListActivity shows the items</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+</section>

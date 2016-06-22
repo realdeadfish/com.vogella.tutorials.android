@@ -1,0 +1,118 @@
+<section id="listview_defaultadapter" role="wrapper">
+	<title>Default adapter</title>
+
+	<section id="listview_defaultadapter">
+		<title>Default platform adapter</title>
+		<para>
+			Android provides default
+			adapter implementations; the most important
+			are
+			<code>ArrayAdapter</code>
+			and
+			<code>CursorAdapter</code>
+			.
+			<code>ArrayAdapter</code>
+			can handle data based on
+			<code>Arrays</code>
+			or
+			<code>java.util.List</code>
+			.
+			<code>SimpleCursorAdapter</code>
+			can
+			handle database related data.
+		</para>
+
+	</section>
+
+	<section id="arrayAdapter">
+		<title>Using ArrayAdapter</title>
+		<para>
+			The
+			<code>ArrayAdapter</code>
+			class can handle a list or array of Java objects as input. Every Java
+			object is mapped to one row. By
+			default,
+			it maps the
+			<code>toString()</code>
+			method of the object to a view in the row layout.
+		</para>
+		<para>
+			You can
+			define
+			the ID
+			of the view in the constructor of the
+			<code>ArrayAdapter</code>
+			otherwise the
+			<code>android.R.id.text1</code>
+			ID is used as default.
+		</para>
+
+		<para>
+			The
+			<code>ArrayAdapter</code>
+			class allows to remove all elements in its underlying data structure
+			with the
+			<code>clear()</code>
+			method call. You can then add new elements via the
+			<code>add()</code>
+			method or a <code>Collection</code> via the
+			<code>addAll()</code>
+			method.
+		</para>
+		<para>
+			You can also directly modify the underlying data structure and call
+			the
+			<code>notifyDataSetChanged()</code>
+			method on the
+			adapter
+			to notify it about the changes in data.
+		</para>
+		<warning>
+			<para>
+				If you want to change the data in your adapter, the underlying data
+				structure must support this operation. This is, for example, the case
+				for the
+				<code>ArrayList</code>
+				class,
+				but not for arrays.
+			</para>
+		</warning>
+	</section>
+
+
+	<section id="listview_listviewexample">
+		<title>ListView example with ArrayAdapter</title>
+		<para>
+			The following listing shows a layout file called
+			<filename>activity_listviewexampleactivity.xml</filename>
+			which includes a
+			<code>ListView</code>
+			.
+		</para>
+
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/snippets/layoutwidthlist.xml" />
+			</programlisting>
+		</para>
+
+		<para>
+			The following example shows the usage of the
+			<code>ListView</code>
+			view in an activity. It uses a default layout from the Android
+			platform for the row layout. It also demonstrates the removal of list
+			items and uses
+			animations for
+			the removal.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/snippets/adapterusage.java" />
+			</programlisting>
+		</para>
+	</section>
+
+</section>

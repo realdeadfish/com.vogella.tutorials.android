@@ -1,0 +1,43 @@
+<section id="androidlists_overview">
+	<title>Using lists in Android</title>
+	<para>
+		The display of elements in a list is a very common pattern in
+		mobile
+		applications. The user sees a list of items and can scroll
+		through
+		them. Such an activity is depicted in the following picture.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/listview_scheme10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Listview example</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		Typically the user interacts with the list via the
+		toolbar, for example, via a button which refreshes the list. Individual list items can
+		be
+		selected. This selection can update
+		the
+		toolbar or
+		can
+		trigger a
+		detailed screen for the selection. The following graphic sketches
+		that. On the selection of a list item another activity is started.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/listview_scheme20.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Listview example</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+</section>

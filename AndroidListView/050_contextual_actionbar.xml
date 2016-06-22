@@ -1,0 +1,51 @@
+<section id="listview_actionbar">
+	<title>Contextual action mode for ListViews</title>
+	<para>
+		The following assumes that you already familiar with the concept of
+		the
+		<wordasword>ActionBar</wordasword>
+		and contextual action mode in general. This part will explain how to use
+		contextual action mode for a
+		<code>ListView</code>
+		selection.
+	</para>
+	<para>
+		To assign a contextual action mode to a long click on an individual
+		item, use the method
+		<code>setOnItemLongClickListener()</code>
+		on
+		<code>ListView</code>
+		. This methods includes information about the selected item. In this
+		method you can start the <code>ActionMode</code>.
+	</para>
+	<para>
+		The following examples demonstrate that. It assumes that you
+		have a menu XML file defined called <filename>rowselection.xml</filename> and that this
+		menu contains one entry with the <parameter>@+id/menuitem1_show</parameter> ID.
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/actionbar/MyListActivityActionbar.java" />
+		</programlisting>
+	</para>
+	<para>
+		If you start your application and long press on an item in the
+		list,
+		you get your contextual action bar. 
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/listview_contextual10.png" scale="60"/>
+			</imageobject>
+			<textobject>
+				<phrase>Using the contextual ActionBar on ListView</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+
+</section>

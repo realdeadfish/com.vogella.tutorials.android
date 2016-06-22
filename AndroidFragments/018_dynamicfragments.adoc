@@ -5,10 +5,10 @@
 To use your new fragment, you can statically add it to an XML layout. 
 In this case the `android:name` attribute points to the corresponding class as demonstrated by the following code snippet.
 		
-		
-<programlisting language="xml">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/fragments/activity_rssfeed.xml" />
-</programlisting>
+source,java]
+----
+include::res/fragments/activity_rssfeed.xml[]
+----
 		
 Using this scenario makes sense in case you have different static layout files for different device configurations.
 		
@@ -22,17 +22,18 @@ The modifications must be performed in a transaction via the `FragmentTransactio
 		
 To modify the fragments in an activity you typically define a `FrameLayout` placeholder in the layout file.
 		
-<programlisting language="xml">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-		href="./examples/fragmentsdynamic/activity_rssfeed.xml" />
-</programlisting>
+source,java]
+----
+include::res/fragmentsdynamic/activity_rssfeed.xml[]
+----
 		
 		
 You use the `FragmentManager` to replace the container with a fragment.
 		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/fragmentsdynamic/replace.java" />
-</programlisting>
+source,java]
+----
+include::res/fragmentsdynamic/replace.java[]
+----
 		
 		
 A new fragment replaces an existing fragment in this container.
@@ -45,9 +46,10 @@ This adds the action to the history stack of the _activity_ and allows the user 
 To check if a fragment is part of your layout you can use the `FragmentManager` class. 
 The `isInLayout()` method works on if the fragment as added to the activity via its layout.
 		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/fragments/check.java" />
-</programlisting>
+source,java]
+----
+include::res/fragments/check.java[]
+----
 		
 === Determine how many fragments are present
 (((Multi pane mode, Determine which mode you are in)))
@@ -61,21 +63,22 @@ The key / value pair defaults to false and a additional configuration file set t
 		
 For example this is a possible default _config.xml_ configuration file.
 		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/mode/config.xml" />
-</programlisting>
+source,java]
+----
+include::res/mode/config.xml[]
+----
 		
 		
 In the _values-land_ folder you would place a _config.xml_ configuration file with a different value.
 		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/mode/config2.xml" />
-</programlisting>
+source,java]
+----
+include::res/mode/config2.xml[]
+----
 
 In your code you can access the state via the following snippet.
 		
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/mode/Access.java" />
-</programlisting>
-		
+source,java]
+----
+include::res/mode/Access.java[]
+----

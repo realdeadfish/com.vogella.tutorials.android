@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals
+        name="tutorials">
+        <item quantity="zero">no Tutorial </item>
+        <item quantity="one">one Tutorial </item>
+        <item quantity="other">%d  Tutorials</item>
+    </plurals>
+</resources>

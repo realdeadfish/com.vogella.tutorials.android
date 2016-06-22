@@ -1,0 +1,9 @@
+<section id="fragmentspointer">
+	<title>Fragments</title>
+	<para>
+		Fragments give excellent support for multiple screen configurations.
+		See
+		<ulink url="http://www.vogella.com/tutorials/AndroidFragments/article.html">Android Fragments tutorial</ulink>
+		for details on <wordasword>Fragments</wordasword>.
+	</para>
+</section>

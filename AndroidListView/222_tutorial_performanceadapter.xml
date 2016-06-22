@@ -1,0 +1,30 @@
+	<section id="listsactivity_performance">
+		<title>Performance Optimization</title>
+		<para> The following will implement a performance optimized version of
+			the adapter from the previous example.
+		</para>
+		<para>
+			Create the following
+			<code>MyPerformanceArrayAdapter</code>
+			class.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/layoutinflator/MyPerformanceArrayAdapter.java" />
+			</programlisting>
+		</para>
+		<para>
+			Use your new adapter in your
+			<wordasword>activity</wordasword>
+			. If you run the application it should look the same but it will be
+			much faster, especially for large datasets.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/layoutinflator/MyListActivity.java" />
+			</programlisting>
+		</para>
+
+	</section>

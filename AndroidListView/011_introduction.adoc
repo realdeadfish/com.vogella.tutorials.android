@@ -1,0 +1,151 @@
+<section id="androidlists" role="wrapper">
+	<title>Android and the ListView widget</title>
+	<section id="androidlists_view">
+		<title>Views for handling lists</title>
+		<para>
+			Android provides the
+			<code>ListView</code>
+			and the
+			<code>ExpandableListView</code>
+			classes
+			which is capable of displaying a scrollable list of items.
+			The
+			<code>ExpandableListView</code>
+			class
+			supports a grouping of items.
+		</para>
+	</section>
+	<section id="androidlists_inputtype">
+		<title>Possible input types for lists</title>
+		<para>
+			The input to the list (items in the list) can
+			be arbitrary Java
+			objects. The adapter extracts the correct data from the data object
+			and assigns
+			this data to the
+			<wordasword>views</wordasword>
+			in the row of the
+			<code>ListView</code>
+			.
+		</para>
+		<para>
+			These items are
+			typically called the
+			<wordasword>data model</wordasword>
+			of the list.
+			An adapter can receive data as input.
+		</para>
+
+	</section>
+
+
+	<section id="androidlists_adapterintro">
+		<title>Adapters</title>
+		<para>
+			An
+			<wordasword>adapter</wordasword>
+			manages the data model and adapts it to the individual entries in the widget. An adapter extends the
+			<code>BaseAdapter</code>
+			class.
+		</para>
+		<para>
+			Every line in the widget displaying the data consists of a layout which can
+			be as
+			complex as you want. A typical line in a list has an image
+			on the
+			left side and two text lines in the middle as depicted in the
+			following graphic.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/listview_line10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Listview example layout</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			A layout file for a such a line might look like the following.
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/snippets/rowlayout_complex.xml" />
+			</programlisting>
+		</para>
+
+		<para>
+			The adapter would inflate the layout for each row in its
+			<code>getView()</code>
+			method
+			and assign the data to the individual views in the row.
+		</para>
+		<para>
+			The adapter is assigned to the
+			<code>ListView</code>
+			via the
+			<code>setAdapter</code>
+			method on the
+			<code>ListView</code>
+			object.
+		</para>
+		<tip>
+			<para>
+				Adapters are not only used by <code>ListView</code>, but also by other views which
+				extend <code>AdapterView</code> as, for example,
+				<code>Spinner</code>
+				,
+				<code>GridView</code>
+				,
+				<code>Gallery</code>
+				and
+				<code>StackView</code>
+				.
+			</para>
+		</tip>
+	</section>
+	<section id="androidlists_filtersort">
+		<title>Filtering and sorting</title>
+		<para>
+			Filtering and sorting of the data is handled by the adapter. You
+			need to
+			implement the logic in your custom adapter implementation.
+		</para>
+
+	</section>
+
+	<section id="adapterown_updates">
+		<title>Data updates in the adapter</title>
+
+		<para>
+			The
+			<code>notifyDataSetChanged()</code>
+			method on the adapter is called if the data has changed or if new
+			data is available.
+		</para>
+		<para>
+			The
+			<code>notifyDataSetInvalidated()</code>
+			method is called if the data is not available anymore.
+		</para>
+	</section>
+
+	<section id="listview_adapterlistener">
+		<title>Listener</title>
+		<para>
+			To react to selections in the list, set an <code>OnItemClickListener</code> to
+			your
+			<code>ListView</code>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/snippets/onitemclicklistener.java" />
+			</programlisting>
+		</para>
+	</section>
+
+</section>

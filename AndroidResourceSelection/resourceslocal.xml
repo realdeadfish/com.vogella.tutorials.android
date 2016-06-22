@@ -1,0 +1,9 @@
+<section id="resources_screensize">
+	<title>Resources Supporting different screen sizes</title>
+	<para>
+		<ulink
+			url="http://developer.android.com/guide/topics/resources/providing-resources.html#AlternativeResources">
+			Providing Resources</ulink>
+	</para>
+
+</section>

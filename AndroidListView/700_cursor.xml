@@ -1,0 +1,33 @@
+<section id="cursor">
+	<title>SimpleCursorAdapter</title>
+	<para>
+		In case you work with a content provider or directly with the database
+		you can use the
+		<code>SimpleCursorAdapter</code>
+		to define the data for your
+		<code>ListView</code>
+		. The following will demonstrates how to access the Contacts
+		ContentProvider.
+	</para>
+
+	<para>
+		Create a new Android project called
+		"de.vogella.android.listactivity.cursor"
+		with the
+		<wordasword>activity</wordasword>
+		called
+		<wordasword>MyListActivity</wordasword>. Change
+		<code>MyListActivity</code>
+		to the following.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/cursor/MyListActivity.java" />
+		</programlisting>
+	</para>
+	<para> Make sure you give your application the permission to read the
+		contacts. (Uses Permissions "android.permission.READ_CONTACTS" in
+		AndroidManifest.xml)
+	</para>
+</section>

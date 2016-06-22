@@ -1,0 +1,105 @@
+<section id="listview_undoaction">
+	<title>Implementing undo for an action</title>
+	<section id="listview_undoaction1">
+		<title>When should you offer an undo action?</title>
+		<para>
+			It is good practice to allow the user to undo critical actions.
+			Such a critical action is, for example, the deletion of list items.
+		</para>
+		<para>
+			A proven
+			pattern to handle this undo option is to offer
+			a
+			selection
+			at the end of the
+			screen. This selection vanishes after a
+			predefined
+			time or once
+			the user continues to interact with the
+			application.
+		</para>
+		<para>
+			For example, the
+			Gmail application implements such a
+			behavior.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/undobutton02.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Undo button</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+	</section>
+	<section id="listview_undoaction2">
+		<title>Example</title>
+		<para>
+			The following description contains an example for implementing
+			an undo action. It uses an animation to phase out the
+			undo button
+			automatically out after a while.
+		</para>
+		<para>
+			For this example create a new project called
+			<wordasword>com.vogella.android.userinterface.undo</wordasword>
+			based on the
+			<wordasword>BlankTemplate</wordasword>
+			template.
+		</para>
+
+		<para>
+			Create the following layout for your
+			<wordasword>activity</wordasword>
+			. It uses a
+			<code>FrameLayout</code>
+			to show two different parts of the user interface. The button bar is
+			initially hidden. The button uses a drawable. Either add such a
+			drawable
+			to your project or remove the reference.
+		</para>
+
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/undo/activity_main.xml" />
+			</programlisting>
+		</para>
+		<para>
+			Change your
+			<wordasword>activity</wordasword>
+			so that it is similar to the following code. The project
+			wizard generated an <code>ActionBar</code> entry. This entry is
+			used in the following code. If in doubt, create your own <code>ActionBar</code>
+			entry.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/undo/MainActivity.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			If you select the entry in the
+			<wordasword>ActionBar</wordasword>,
+			the button bar becomes visible for 5 seconds.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/undobutton10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Undo button</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+	</section>
+</section>

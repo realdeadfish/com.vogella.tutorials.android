@@ -1,0 +1,110 @@
+<section id="expandablelistview">
+	<title>Implementing an expandable ListView</title>
+	<section id="expandablelistview_concept">
+		<title>ExpandableListView</title>
+		<para>
+			The
+			<code>ExpandableListView</code>
+			is similar to
+			<code>ListView</code>	
+			but allow you to define groups and details for this group.
+			<code>ExpandableListView</code>
+			expects
+			and adapter of type
+			<code>BaseExpandableListAdapter</code>
+			.
+		</para>
+		<para>In this case you have to define two layouts, one for the group
+			and another one for the details row.
+		</para>
+	</section>
+	<section id="expandablelistview_example">
+		<title>ExpandableListView example</title>
+		<para>In the following example you create an expandable listview
+			similar to the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/expandablelistview10.png"
+						scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Screenshot of ExpandableListView</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Create a project called
+			<wordasword>com.vogella.android.listview.expandable</wordasword>
+			with the activity called
+			<code>MainActivity</code>
+			.
+		</para>
+		<para>
+			Create or adjust the following layout files. First
+			<filename>layout/activity_main.xml</filename>
+			.
+		</para>
+
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/expandablelistview/activity_main.xml" />
+			</programlisting>
+		</para>
+
+		<para>
+			Afterwards create
+			<filename>layout/listrow_group.xml</filename>
+			.
+		</para>
+
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/expandablelistview/listrow_group.xml" />
+			</programlisting>
+		</para>
+		<para>
+			The last required layout is
+			<filename>layout/listrow_details.xml</filename>
+			.
+		</para>
+
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/expandablelistview/listrow_details.xml" />
+			</programlisting>
+		</para>
+		<para>
+			Create the following class which hold your domain model for the
+			<code>ExpandableListView</code>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/expandablelistview/Group.java" />
+			</programlisting>
+		</para>
+
+		<para>Finally create the adapter as described by the following listing
+			and change the activity to the code
+			provided below.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/expandablelistview/MyExpandableListAdapter.java" />
+			</programlisting>
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/expandablelistview/MainActivity.java" />
+			</programlisting>
+		</para>
+	</section>
+</section>

@@ -1,0 +1,57 @@
+<section id="listview_selection">
+	<title>Storing the selection of a view</title>
+	<para>
+		By default a
+		<code>ListView</code>
+		has no selection mode active. You can activate
+		it via the
+		<code>setChoiceMode()</code>
+		method call. Pass
+		<code>ListView.CHOICE_MODE_MULTIPLE</code>
+		for multiple selections or
+		<code>ListView.CHOICE_MODE_SINGLE</code>
+		for single selections
+		to this method.
+	</para>
+	<para>
+		To get the selected items of a
+		<code>ListView</code>,
+		use the
+		<code>getCheckedItemPosition()</code>
+		for a single selection
+		method or
+		<code>listView.getCheckedItemPositions()</code>
+		for multiple selections.
+		. If you have stable ID, you could
+		also use the
+		<code>getCheckedItemIds()</code>
+		method to get the selected IDs.
+	</para>
+
+	<para>
+		Android already provides a default layout for this: the
+		<code>android.R.layout.simple_list_item_multiple_choice</code>
+		layout which contains a configured
+		<code>CheckedTextView</code>
+		view.
+	</para>
+	<para>
+		The following activities demonstrate how to use these selection
+		modes. If you use these modes, the
+		<code>ListView</code>
+		stores the selected values. It is not persisted in your data model.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/singlemulti/MyListMulti.java" />
+		</programlisting>
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/singlemulti/MyListSingle.java" />
+		</programlisting>
+	</para>
+</section>

@@ -1,0 +1,120 @@
+<section id="screensize_dp" role="wrapper">
+	<title>Defining the size of UI components in layout files</title>
+
+	<section id="screensize_dimensions">
+		<title>Fixed or relative dimensions</title>
+		<para>
+			Android allows you to define the size of user
+			interface
+			components in
+			fixed or
+			relative dimensions in the layout files. If you
+			use fixed
+			sized dimensions, e.g.,
+			pixels,
+			your user interface may look
+			fine on a
+			certain device, but the
+			button
+			might
+			be
+			too small on other
+			devices with a
+			higher pixel density.
+		</para>
+
+		<para>
+			It
+			is recommended to always use relative dimensions in
+			your
+			Android application.
+		</para>
+	</section>
+
+	<section id="screensize_dimension_dp">
+		<title>Using dp as relative dimension</title>
+
+		<para>
+			The unit of measurement which should be used is
+			<parameter>dp</parameter>
+			.
+		</para>
+
+		<tip>
+			<para>
+				<parameter>dp</parameter>
+				is short for
+				<parameter>dip</parameter>
+				(device independent pixel)
+				.
+			</para>
+		</tip>
+		<para>
+			<parameter>dp</parameter>
+			refers to one pixel on an
+			Android device with
+			160dpi (dots per inch).
+			This is the density
+			of the first available
+			Android device
+			(G1).
+			This size
+			is
+			also known as
+			mdpi (medium dots per inch).
+		</para>
+		<para>
+			If you specify the size in
+			<parameter>dp</parameter>
+			, Android automatically
+			scale your user interface component
+			, depending
+			on the device.
+		</para>
+		<para>
+			On a
+			mdpi (a.k.a. medium density) device
+			one
+			<parameter>dp</parameter>
+			is the same as
+			one
+			pixel. A
+			<parameter>dp</parameter>
+			on ldpi (low density) device is smaller
+			(approx. 120dip),
+			on a hdpi
+			(high density) device
+			is larger
+			(approx. 240dpi). Therefore a
+			<parameter>dp</parameter>
+			occupies
+			approximately
+			the same physical space on every device.
+		</para>
+		<para>
+			You can use
+			<parameter>dp</parameter>
+			in your resources, e.g., layout files.
+		</para>
+	</section>
+
+	<section id="screensize_dimension_sp">
+		<title>Using sp to scale with the user text preferences</title>
+		<para>
+			If the unit should scale with text preference settings of the
+			user,
+			choose the
+			<parameter>sp</parameter>
+			unit of measurement. This unit is similar to dp, but it is also
+			scaled
+			by the user preference.
+		</para>
+		<para>
+			If the users select to increase the font size in this settings, views
+			which use
+			<parameter>sp</parameter>
+			are scaled accordingly.
+		</para>
+	</section>
+
+</section>
