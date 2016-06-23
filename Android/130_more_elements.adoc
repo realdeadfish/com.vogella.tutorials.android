@@ -1,6 +1,0 @@
-<section id="components" role="wrapper">
-	<title>Other important Android elements
-
-
-	
-</section>

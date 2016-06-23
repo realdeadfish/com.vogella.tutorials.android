@@ -1,433 +1,391 @@
-<section id="Resources" role="wrapper">
+== Resources
+=== Resource files
+(((Resource files)))
+(((Resource qualifiers)))
+		
+Android allows you to create static resources like images and XML configuration files. This allows you to keep
+these resources separate
+from the source code of your Android application.
+		
+		
+Resource files must be placed in the _/res_ directory of your application in a predefined sub-folder. 
+The specific sub-folder depends
+on type of resource which is
+stored. You
+can
+also append additional
+qualifiers to the folder
+name to
+indicate
+that
+the related resources
+should be used
+for
+special
+configurations. This are called
+_resource qualifiers_
+.
+For
+example, you can
+specify
+that layout file is only
+valid for
+a
+certain
+screen
+size.
+
+		
+
+
+		
+The
+following table gives
+an overview of the supported resources
+and
+their
+standard folder
+prefixes.
+
+<table frame='all'>
 	<title>Resources
-	<section id="resources_overview">
-		<title>Resource files
-		<indexterm>
-			<primary>Resource files
-			</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Resource qualifiers
-			</primary>
-		</indexterm>
-		
-			Android allows you to create static resources like images and XML configuration files. This allows you to keep
-			these resources separate
-			from the source code of your Android application.
-		
-		
-			Resource files must be
-			placed
-			in the
-			_/res_
-			directory of your application in a predefined sub-folder. The specific sub-folder depends
-			on type of resource which is
-			stored. You
-			can
-			also append additional
-			qualifiers to the folder
-			name to
-			indicate
-			that
-			the related resources
-			should be used
-			for
-			special
-			configurations. This are called
-			_resource qualifiers_
-			.
-			For
-			example, you can
-			specify
-			that layout file is only
-			valid for
-			a
-			certain
-			screen
-			size.
-
-		
-
-
-		
-			The
-			following table gives
-			an overview of the supported resources
-			and
-			their
-			standard folder
-			prefixes.
-
-			<table frame='all'>
-				<title>Resources
-				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*" />
-					<colspec colname='c2' colwidth="1*" />
-					<colspec colname='c3' colwidth="4*" />
-					<thead>
-						<row>
-							<entry>Resource</entry>
-							<entry>Folder</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>Drawables</entry>
-							<entry>
-								_/res/drawables_
-							</entry>
-							<entry>
-								Images (e.g., png or jpeg files) or XML files which
-								describe a Drawable object. Since Android 5.0 you can
-								also use vector drawables which scale automatically with the density of the Android device.
-							</entry>
-						</row>
-						<row>
-							<entry>Simple Values</entry>
-							<entry>
-								_/res/values_
-							</entry>
-							<entry>
-								Used to define strings, colors, dimensions, styles and
-								static
-								arrays of strings or integers via XML files. By
-								convention each
-								type is
-								stored
-								in a separate file, e.g., strings are defined in
-								the
-								_res/values/strings.xml_
-								file.
-							</entry>
-						</row>
-						<row>
-							<entry>Layouts</entry>
-							<entry>
-								_/res/layout _
-							</entry>
-							<entry>
-								XML files with layout descriptions are used to define the user
-								interface for
-								_Activities_
-								and
-								fragments.
-							</entry>
-						</row>
-						<row>
-							<entry>Styles and Themes</entry>
-							<entry>
-								_/res/values_
-							</entry>
-							<entry>Files which define the appearance of your Android
-								application.
-							</entry>
-						</row>
-						<row>
-							<entry>Animations</entry>
-							<entry>
-								_/res/animator_
-							</entry>
-							<entry>Defines animations in XML for the animation API
-								which
-								allows to animate arbitrary properties of objects over
-								time.
-							</entry>
-						</row>
-						<row>
-							<entry>Raw data</entry>
-							<entry>
-								_/res/raw_
-							</entry>
-							<entry>
-								Arbitrary files saved in their raw form. You access them via an
-								`InputStream`
-								object.
-							</entry>
-						</row>
-						<row>
-							<entry>Menus</entry>
-							<entry>
-								_/res/menu_
-							</entry>
-							<entry>Defines the actions which can be used in the toolbar of the application.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+	<tgroup cols='3' align='left' colsep='1' rowsep='1'>
+		<colspec colname='c1' colwidth="1*" />
+		<colspec colname='c2' colwidth="1*" />
+		<colspec colname='c3' colwidth="4*" />
+		<thead>
+<row>
+	<entry>Resource</entry>
+	<entry>Folder</entry>
+	<entry>Description</entry>
+</row>
+		</thead>
+		<tbody>
+<row>
+	<entry>Drawables</entry>
+	<entry>
+		_/res/drawables_
+	</entry>
+	<entry>
+		Images (e.g., png or jpeg files) or XML files which
+		describe a Drawable object. Since Android 5.0 you can
+		also use vector drawables which scale automatically with the density of the Android device.
+	</entry>
+</row>
+<row>
+	<entry>Simple Values</entry>
+	<entry>
+		_/res/values_
+	</entry>
+	<entry>
+		Used to define strings, colors, dimensions, styles and
+		static
+		arrays of strings or integers via XML files. By
+		convention each
+		type is
+		stored
+		in a separate file, e.g., strings are defined in
+		the
+		_res/values/strings.xml_
+		file.
+	</entry>
+</row>
+<row>
+	<entry>Layouts</entry>
+	<entry>
+		_/res/layout _
+	</entry>
+	<entry>
+		XML files with layout descriptions are used to define the user
+		interface for
+		_Activities_
+		and
+		fragments.
+	</entry>
+</row>
+<row>
+	<entry>Styles and Themes</entry>
+	<entry>
+		_/res/values_
+	</entry>
+	<entry>Files which define the appearance of your Android
+		application.
+	</entry>
+</row>
+<row>
+	<entry>Animations</entry>
+	<entry>
+		_/res/animator_
+	</entry>
+	<entry>Defines animations in XML for the animation API
+		which
+		allows to animate arbitrary properties of objects over
+		time.
+	</entry>
+</row>
+<row>
+	<entry>Raw data</entry>
+	<entry>
+		_/res/raw_
+	</entry>
+	<entry>
+		Arbitrary files saved in their raw form. You access them via an
+		`InputStream`
+		object.
+	</entry>
+</row>
+<row>
+	<entry>Menus</entry>
+	<entry>
+		_/res/menu_
+	</entry>
+	<entry>Defines the actions which can be used in the toolbar of the application.
+	</entry>
+</row>
+		</tbody>
+	</tgroup>
+</table>
 		
 	</section>
 	<section id="resource_stringexample">
 		<title>Example: Defining strings, string arrays, colors and dimensions
 		
-			The following listing is an example for file called
-			_values.xml_
-			in the
-			_/res/values_
-			which defines a few String constants, a String array, a color and a
-			dimension.
+The following listing is an example for file called
+_values.xml_
+in the
+_/res/values_
+which defines a few String constants, a String array, a color and a
+dimension.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/resources/values.xml" />
-			</programlisting>
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/resources/values.xml" />
+</programlisting>
 		
 
 
-	</section>
-
-	<section id="resources_ids">
-		<title>Resource files and R.java
+=== Resource files and R.java
 
 		
-			Every relevant resource in the
-			_res_
-			folder, gets an ID assigned by the Android build system.
-			Android generates
-			_gen_
-			a
-			_R.java_
-			file
-			which ccontains these generated
-			values. These
-			references are static
-			integer
-			values.
+Every relevant resource in the
+_res_
+folder, gets an ID assigned by the Android build system.
+Android generates
+_gen_
+a
+_R.java_
+file
+which ccontains these generated
+values. These
+references are static
+integer
+values.
 		
 
 		
-			If you
-			add a new
-			resource file, the corresponding
-			reference is
-			automatically
-			created in a
-			_R.java_
-			file.
-			Manual changes in the
-			_R.java_
-			file are not
-			necessary and will be overwritten
-			by the
-			tooling.
-			The Android
-			system
-			provides
-			methods to access the
-			corresponding
-			resource files
-			via these IDs.
+If you
+add a new
+resource file, the corresponding
+reference is
+automatically
+created in a
+_R.java_
+file.
+Manual changes in the
+_R.java_
+file are not
+necessary and will be overwritten
+by the
+tooling.
+The Android
+system
+provides
+methods to access the
+corresponding
+resource files
+via these IDs.
 		
 		
-			For
-			example, to
-			access a
-			String with the
-			`R.string.yourString`
-			ID in your source code,
-			you would use the
-			`getString(R.string.yourString)`
-			method defined on the
-			`Context`
-			class.
+For
+example, to
+access a
+String with the
+`R.string.yourString`
+ID in your source code,
+you would use the
+`getString(R.string.yourString)`
+method defined on the
+`Context`
+class.
 		
 	</section>
 
 	<section id="layoutresource_activities">
 		<title>Layout files
 		
-			Android activities define their user interface with
-			views
-			(widgets) and
-			fragments.
-			This user interface
-			can be
-			defined via
-			XML
-			layout
-			resource
-			files in the
-			<filename class="filename">/res/layout_
-			folder or via Java code. You
-			can
-			also
-			mix
-			both approaches.
+Android activities define their user interface with
+views
+(widgets) and
+fragments.
+This user interface
+can be
+defined via
+XML
+layout
+resource
+files in the
+<filename class="filename">/res/layout_
+folder or via Java code. You
+can
+also
+mix
+both approaches.
 		
 		
-			Defining layouts via
-			XML layout files
-			is the
-			preferred way.
-			This
-			separates the programming logic
-			from the layout
-			definition. It
-			also
-			allows the definition of different layouts
-			for different
-			devices.
-		
-
-		
-			A layout resource file is referred to as
-			_layout_
-			. A layout
-			specifies the
-			`ViewGroups`
-			,
-			`Views`
-			,
-			their
-			relationship and
-			their attributes via an XML representation.
-		
-		The following code is an example for a simple layout file.
+Defining layouts via
+XML layout files
+is the
+preferred way.
+This
+separates the programming logic
+from the layout
+definition. It
+also
+allows the definition of different layouts
+for different
+devices.
 		
 
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/layout/activity_main.xml" />
-			</programlisting>
+A layout resource file is referred to as
+_layout_
+. A layout
+specifies the
+`ViewGroups`
+,
+`Views`
+,
+their
+relationship and
+their attributes via an XML representation.
 		
+The following code is an example for a simple layout file.
+		
+[source,xml]
+----
+include::res/layout/activity_main.xml[]
+----
+		
+A layout is assigned to an activity via the `setContentView()` method calls, as demonstrated in the following example code.
 
-		
-			A layout is assigned to an activity via the
-			`setContentView()`
-			method calls, as demonstrated in the following example code.
-		
+[source,java]
+----		
+include::res/layout/MainActivity.java[]
+----
 
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/layout/MainActivity.java" />
-			</programlisting>
-		
-	</section>
-	<section id="layoutresource_performance">
-		<title>Performance considerations with layouts
-		Calculating the layout and drawing the views is a resource
-			intensive operation. You
-			should use the simplest layout
-			possible to
-			achieve good performance.
-			For example, you should
-			avoid nesting
-			layout
-			managers
-			too deeply or avoid using
-			complex layout managers in case a
-			simple layout manager is sufficient.
+=== Performance considerations with layouts
+Calculating the layout and drawing the views is a resource intensive operation. 
+You should use the simplest layout possible to achieve good performance.
+For example, you should avoid nesting layout
+managers
+too deeply or avoid using
+complex layout managers in case a
+simple layout manager is sufficient.
 		
 	</section>
 	<section id="resources_idsgoodpractice">
 		<title>Good practices for resources IDs
 		<indexterm>
-			<primary>Resource ID's
-			</primary>
-			<secondary>Good practices
-			</secondary>
+<primary>Resource ID's
+</primary>
+<secondary>Good practices
+</secondary>
 		</indexterm>
 		
-			If a
-			view
-			needs to be
-			accessed via Java or XML code, you have
-			to give the view
-			a
-			unique ID
-			via the
-			`android:id`
-			attribute. To assign a new
-			ID to a view
-			use the
-			`android:id`
-			attribute of the corresponding element in the layout file.
+If a
+view
+needs to be
+accessed via Java or XML code, you have
+to give the view
+a
+unique ID
+via the
+`android:id`
+attribute. To assign a new
+ID to a view
+use the
+`android:id`
+attribute of the corresponding element in the layout file.
 
 		
 
 		
-			The Android SDK uses the
-			_camelCase_
-			notation
-			for most of its IDs, e.g.,
-			`buttonRefresh`
-			. It is good practice to follow this approach.
+The Android SDK uses the
+_camelCase_
+notation
+for most of its IDs, e.g.,
+`buttonRefresh`
+. It is good practice to follow this approach.
 		
-
-
-
-
 		
-			The
-			following shows an example in which a button
-			gets the
-			`button1`
-			ID assigned via the
-			`android:id="@+id/button1"`
-			parameter.
-			By conversion this statement
-			creates a new ID if necessary in the
-			`R.java`
-			file and assigns the defined ID
-			to the corresponding
-			view.
+The
+following shows an example in which a button
+gets the
+`button1`
+ID assigned via the
+`android:id="@+id/button1"`
+parameter.
+By conversion this statement
+creates a new ID if necessary in the
+`R.java`
+file and assigns the defined ID
+to the corresponding
+view.
 		
 
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/id.txt" />
-			</programlisting>
+<programlisting language="xml">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/id.txt" />
+</programlisting>
 		
 
 		
-			It is good practice to
-			define IDs in one central configuration file. This is typically called
-			_ids.xml_
-			and placed
-			in the
-			_/res/values_
-			folder. This allows you to use the predefined ID in your layout file. If you want to define the id in a separate
-			file, you first
-			need to remove the @+id entries in your layout
-			files, otherwise you
-			get an error messages that these
-			files have already been created. The following listing shows
-			an example for such
-			a file.
+It is good practice to
+define IDs in one central configuration file. This is typically called
+_ids.xml_
+and placed
+in the
+_/res/values_
+folder. This allows you to use the predefined ID in your layout file. If you want to define the id in a separate
+file, you first
+need to remove the @+id entries in your layout
+files, otherwise you
+get an error messages that these
+files have already been created. The following listing shows
+an example for such
+a file.
 		
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ids/ids.xml" />
-			</programlisting>
+<programlisting language="xml">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ids/ids.xml" />
+</programlisting>
 		
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ids/activity_main.xml" />
-			</programlisting>
+<programlisting language="xml">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ids/activity_main.xml" />
+</programlisting>
 		
+[NOTE]
+====
+While the above is good practice for real projects, the tutorials of this $book avoid the usage of a separate id file as this setup is time consuming.
+====
 
-		<note>
-			While the above is good practice for real projects, the
-				tutorials of this $book avoid the usage of a separate id
-				file as
-				this setup is time consuming.
-			
-		</note>
-
-	</section>
-	<section id="resources_system">
-		<title>System resources
+=== System resources
 		
-			Android also provides resources. These are called
-			_system resources_
-			. System resources are distinguished from local resources by the
-			`android`
-			namespace prefix. For example,
-			`android.R.string.cancel`
-			defines the platform string for a cancel operation.
-		
-	</section>
-
-
-</section>
+Android also provides resources. These are called
+_system resources_
+. System resources are distinguished from local resources by the
+`android`
+namespace prefix. For example,
+`android.R.string.cancel`
+defines the platform string for a cancel operation.

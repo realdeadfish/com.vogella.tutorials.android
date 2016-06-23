@@ -4,110 +4,101 @@
 	<section id="usingresources_reference">
 		<title>References to resources in code
 		
-			
-				The
-				`Resources`
-				class allows to access individual resources. An instance of
-				the
-				`Resources`
-				class
-				can be retrieved via the
-				`getResources()`
-				method of the
-				`Context`
-				class. As activities and services extend the
-				`Context`
-				class, you can directly use this method in implementations of these
-				components.
-			
-			
-				An instance of the
-				`Resources`
-				class
-				is also required by other Android framework classes. For
-				example, the
-				following
-				code shows how to create a
-				`Bitmap`
-				file from a reference ID.
-			
 
-			
-				<programlisting language="java">
-					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-						parse="text" href="./examples/resources/LoadBitmap.java" />
-				</programlisting>
-			
+The
+`Resources`
+class allows to access individual resources. An instance of
+the
+`Resources`
+class
+can be retrieved via the
+`getResources()`
+method of the
+`Context`
+class. As activities and services extend the
+`Context`
+class, you can directly use this method in implementations of these
+components.
+
+
+An instance of the
+`Resources`
+class
+is also required by other Android framework classes. For
+example, the
+following
+code shows how to create a
+`Bitmap`
+file from a reference ID.
+
+
+
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+		parse="text" href="./examples/resources/LoadBitmap.java" />
+</programlisting>
+
 
 		
-	</section>
-	<section id="resourcesaccess_layoutview">
-		<title>Accessing views from the layout in an activity
+=== Accessing views from the layout in an activity
 		
-			In your activity (and fragment) code you frequently need to
-			access the views
-			to access and modify their properties.
+In your activity (and fragment) code you frequently need to
+access the views
+to access and modify their properties.
 		
 		
-			In an activity you can use the
-			`findViewById(id)`
-			method call to search for a view in the current layout. The `id` is the
-			ID attribute of the view in the layout. The usage of this method is
-			demonstrated by the following code.
+In an activity you can use the
+`findViewById(id)`
+method call to search for a view in the current layout. The `id` is the
+ID attribute of the view in the layout. The usage of this method is
+demonstrated by the following code.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/layout/MainActivity2.java" />
-			</programlisting>
+<programlisting language="java">
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+	parse="text" href="./examples/layout/MainActivity2.java" />
+</programlisting>
 		
 		
-			It is also possible to search in a view hierarchy with the
-			`findViewById(id)`
-			method, as demonstrated in the following code snippet.
+It is also possible to search in a view hierarchy with the
+`findViewById(id)`
+method, as demonstrated in the following code snippet.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/layout/MainActivity3.java" />
-			</programlisting>
+<programlisting language="java">
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+	parse="text" href="./examples/layout/MainActivity3.java" />
+</programlisting>
 		
-	</section>
-
-	<section id="usingresources_referencexml">
-		<title>Reference to resources in XML files
+=== Reference to resources in XML files
 		
-			In your XML files, for example, your layout files, you can refer to
-			other
-			resources via the
-			`@`
-			sign.
+In your XML files, for example, your layout files, you can refer to
+other
+resources via the
+`@`
+sign.
 		
 		
-			For example, if you want to refer to a
-			color, which is defined in
-			an XML
-			resource, you can refer to it via
-			`@color/your_id`
-			.
-			Or if you defined a `String` with the `"titlepage"`
-			key in an XML
-			resource, you could
-			access
-			it
-			via
-			`@string/titlepage`
-			.
+For example, if you want to refer to a
+color, which is defined in
+an XML
+resource, you can refer to it via
+`@color/your_id`
+.
+Or if you defined a `String` with the `"titlepage"`
+key in an XML
+resource, you could
+access
+it
+via
+`@string/titlepage`
+.
 		
-	</section>
-	<section id="usingresources_referencexmlandroid">
-		<title>Reference to Android system resources in XML files
+=== Reference to Android system resources in XML files
 		
-			To use an Android system resource, include the
-			`android`
-			namespace into the references, e.g.,
-			`android.R.string.cancel`
-			.
+To use an Android system resource, include the
+`android`
+namespace into the references, e.g.,
+`android.R.string.cancel`
+.
 		
-	</section>
-</section>

@@ -1,159 +1,129 @@
-<section id="layout_influence" role="wrapper">
-	<title>Exercise: Influence view layout at runtime
-	<section id="layout_influencetarget">
-		<title>Target of this exercise
-		
-			In this exercise you add radio buttons the layout of the application you created in
-			<xref linkend="androidstudio_starter" />
-			and extended in
-			<xref linkend="firstandroidapp_layout" />
-			. Depending
-			on the
-			user selection the radio button arrangement changes from
-			horizontal to
-			vertical.
-		
-	</section>
+== Exercise: Influence view layout at runtime
+=== Target of this exercise
 
-	<section id="layout_influenceaddradiogroup">
-		<title>Add radio group and radio buttons to your layout
+In this exercise you add radio buttons the layout of the application you created in
+<<androidstudio_starter>>. 
+Depending
+on the
+user selection the radio button arrangement changes from
+horizontal to
+vertical.
 
-		
-			Open your
-			layout file
-			and add a radio group with two radio buttons
-			to
-			your
-			layout.
-		
+=== Add radio group and radio buttons to your layout
 
-		
-			Assign them based on the following table.
-		
-		
-			<table frame='all'>
-				<title>ID Assignment
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*"/>
-					<colspec colname='c2' colwidth="2*"/>
-					<thead>
-						<row>
-							<entry>ID</entry>
-							<entry>View</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>
-								orientation
-							</entry>
-							<entry>Radio Group</entry>
-						</row>
-						<row>
-							<entry>horizontal</entry>
-							<entry>First radio button</entry>
-						</row>
-						<row>
-							<entry>vertical</entry>
-							<entry>Second radio button</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
-		
-		
-			The resulting layout file
-			should be similar to
-			the
-			following
-			listing.
-			Note: Only the
-			`RadioGroup`
-			part is new.
-		
+Open your
+layout file
+and add a radio group with two radio buttons
+to
+your
+layout.
 
-		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/exercise_radiogroup/textlayout.txt" />
-			</programlisting>
-		
 
-		 The resulting layout should look like the following
-			screenshot.
-		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/exercise_radiogroup20.png" scale="60" />
-				</imageobject>
-				<textobject>
-					<phrase>Show the layout</phrase>
-				</textobject>
-			</mediaobject>
-		
+Assign them based on the following table.
 
-	</section>
 
-	<section id="layout_influencebehavior">
-		<title>Change radio group orientation dynamically
+<table frame='all'>
+<title>ID Assignment
+<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+<colspec colname='c1' colwidth="1*"/>
+<colspec colname='c2' colwidth="2*"/>
+<thead>
+<row>
+<entry>ID</entry>
+<entry>View</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+orientation
+</entry>
+<entry>Radio Group</entry>
+</row>
+<row>
+<entry>horizontal</entry>
+<entry>First radio button</entry>
+</row>
+<row>
+<entry>vertical</entry>
+<entry>Second radio button</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
 
-		
-			Change the
-			`onCreate()`
-			method in your
-			activity. Use the
-			`findViewById()`
-			method to find the
-			`RadioGroup`
-			in your layout.
-		
 
-		
-			Implement a listener on the radio group
-			which changes the
-			orientation of the radio buttons based on the
-			current
-			selection of the
-			buttons. Which button is selected, can be
-			identified by the ID
-			parameter.
-		
+The resulting layout file
+should be similar to
+the
+following
+listing.
+Note: Only the
+`RadioGroup`
+part is new.
 
-		<tip>
-			
-				`RadioGroup`
-				allows you to add a
-				`RadioGroup.OnCheckedChangeListener`
-				from the
-				`android.widget.RadioGroup`
-				package
-				via the
-				`setOnCheckedChangeListener()`
-				method. This listener is notified if the selection of the
-				radio group
-				changes.
-			
-			You can use the following code as template to implement the
-				listener.
-			
-			
-				<programlisting language="java">
-					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-						href="./examples/exercise_radiogroup/listener.txt" />
-				</programlisting>
-			
-		</tip>
-	</section>
 
-	<section id="layout_influencevalidate">
-		<title>Validating
-		 Run your application and select the different radio button.
-			Ensure that
-			the
-			orientation of the buttons is changed
-			based on your
-			selection.
-		
-	</section>
-</section>
+[source,xml]
+----
+include::res/exercise_radiogroup/textlayout.txt[]
+----
+
+
+The resulting layout should look like the following screenshot.
+
+image::exercise_radiogroup20.png[Show the layout]
+
+=== Change radio group orientation dynamically
+
+Change the
+`onCreate()`
+method in your
+activity. Use the
+`findViewById()`
+method to find the
+`RadioGroup`
+in your layout.
+
+
+
+Implement a listener on the radio group
+which changes the
+orientation of the radio buttons based on the
+current
+selection of the
+buttons. Which button is selected, can be
+identified by the ID
+parameter.
+
+[TIP]
+====
+
+`RadioGroup`
+allows you to add a
+`RadioGroup.OnCheckedChangeListener`
+from the
+`android.widget.RadioGroup`
+package
+via the
+`setOnCheckedChangeListener()`
+method. This listener is notified if the selection of the
+radio group
+changes.
+
+You can use the following code as template to implement the
+listener.
+
+[source,java]
+----
+include::res/exercise_radiogroup/listener.txt[]
+----
+
+====
+
+=== Validating
+Run your application and select the different radio button.
+Ensure that the
+orientation of the buttons is changed
+based on your
+selection.
+

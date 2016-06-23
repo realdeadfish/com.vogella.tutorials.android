@@ -36,7 +36,6 @@ If not explicitly defined, Android creates a default application object for your
 An _activity_ is the visual representation of an Android application.
 An Android application can have several activities.
 		
-		
 Activities use views and fragments to create their user interface and to interact with the user. 
 Both elements are described in the next sections.
 

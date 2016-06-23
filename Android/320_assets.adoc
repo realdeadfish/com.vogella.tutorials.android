@@ -1,73 +1,67 @@
-<section id="androidassets" role="wrapper">
-	<title>Assets
-	<section id="androidassets_overview">
-		<title>Whats are assets?
+== Assets
+=== Whats are assets?
 		
-			While the
-			_res_
-			directory
-			contains structured values which
-			are
-			known to the
-			Android
-			platform, the
-			_assets_
-			directory
-			can be used
-			to
-			store any kind
-			of
-			data.
+While the
+_res_
+directory
+contains structured values which
+are
+known to the
+Android
+platform, the
+_assets_
+directory
+can be used
+to
+store any kind
+of
+data.
 		
 		
-			You can access files stored in this folder based on their path. The
-			_assets_
-			directory also allows you to have sub-folders.
+You can access files stored in this folder based on their path. The
+_assets_
+directory also allows you to have sub-folders.
+
+[NOTE]
+====
+You could also store unstructured data in the
+_/res/raw_
+folder, but it is considered good practice to use the
+_assets_
+directory for such data.
+====	
+
+	
+
+
+=== Accessing assets
 		
-		<note>
-			
-				You could also store unstructured data in the
-				_/res/raw_
-				folder, but it is considered good practice to use the
-				_assets_
-				directory for such data.
-			
-		</note>
-	</section>
-	<section id="androidassets_assets">
-		<title>Accessing assets
+You access this
+data
+via the
+`AssetsManager`
+which you can access via the
+`getAssets()`
+method from an instance of the
+`Context`
+class.
 		
-			You access this
-			data
-			via the
-			`AssetsManager`
-			which you can access via the
-			`getAssets()`
-			method from an instance of the
-			`Context`
-			class.
-		
-		
-			The
-			`AssetsManager`
-			class
-			allows you to read a file in the
-			_assets_
-			folder as
-			`InputStream`
-			with the
-			`open()`
-			method. The following code shows an example for this.
+The
+`AssetsManager`
+class
+allows you to read a file in the
+_assets_
+folder as
+`InputStream`
+with the
+`open()`
+method. The following code shows an example for this.
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/assets/assets.java" />
-			</programlisting>
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+		parse="text" href="./examples/assets/assets.java" />
+</programlisting>
 		
 
-	</section>
-
-
-</section>

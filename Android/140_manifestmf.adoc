@@ -1,53 +1,294 @@
-<section id="manifest" role="wrapper">
-	<title>The Android manifest
-	<section id="manifest_overview">
-		<title>Configuration of your Android application
+== The Android manifest
+=== Configuration of your Android application
 		
-			The components, settings and metadata of an Android application are described
-			in the
-			_AndroidManifest.xml_
-			file. This file is known as the
-			_manifest file_
-			or the
-			_manifest_
-			.
+The components, settings and metadata of an Android application are described in the _AndroidManifest.xml_ file. 
+This file is known as the _manifest file_ or the _manifest_.
 		
 		
-			All
-			activities,
-			services
-			and
-			content provider
-			components of the
-			application
-			must be statically declared in this
-			file.
-			Broadcast receiver
-			can be defined statically in the manifest file or dynamically at
-			runtime in the application. This
-			file is read by the Android system during installation of
-			the application. The Android system evaluates this configuration file
-			and determines the capabilities of the application.
+All activities, services and content provider components of the
+application
+must be statically declared in this
+file.
+Broadcast receiver
+can be defined statically in the manifest file or dynamically at
+runtime in the application. This
+file is read by the Android system during installation of
+the application. The Android system evaluates this configuration file
+and determines the capabilities of the application.
 		
-		The Gradle build system for building and packaging Android application can modify the manifest file. For
-			example,
-			the  application version is typically supplied by the Gradle build file.
+The Gradle build system for building and packaging Android application can modify the manifest file. 
+For example, the  application version is typically supplied by the Gradle build file.
 		
-	</section>
 
-	<section id="manifestdetails_example">
-		<title>Android manifest example
+=== Android manifest example
 		
-			The following listing shows an example for a simple
-			Android manifest
-			file.
+The following listing shows an example for a simple Android manifest file.
 		
-		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/manifest/AndroidManifest.xml" />
-			</programlisting>
-		
-	</section>
+[source,xml]
+----
+include::res/manifest/AndroidManifest.xml[]
+----
 
+=== Version and package
+        
+The `package` attribute defines the base package for the Java objects referred to in this file. 
+If a Java object lies within a different package, it must be declared with the full qualified package name.
+        
+        
+Google Play
+requires that every Android application uses its
+own
+unique package name.
+Therefore
+it is a good habit to
+use
+your
+reverse
+domain
+name here. This
+will
+avoid
+collisions with other
+Android
+applications.
+        
+        
+`android:versionName`
+and
+`android:versionCode`
+specify the
+version of your application.
+`versionName`
+is what the user sees and
+can be any string.
+        
+        
+`versionCode`
+must be an integer. The Android
+Market determines
+whether it should
+perform an update of the applications for the
+existing
+installation
+based on that
+`versionCode`.
+You
+typically
+start
+with "1" and
+increase this value by
+one if
+you
+roll-out
+a
+new
+version
+of your
+application.
+        
+=== Application and components
+        
+The
+`<![CDATA[ <application> ]]>`
+section allows to define metadata for your application and optionally
+define an explicit application class. It is also
+a container for
+declaring your Android components.
+        
+        
+The
+`<![CDATA[ <activity> ]]>`
+tag
+defines an
+activity component. The
+`name`
+attribute points to class, which (if not fully qualified) is
+relative
+to the package defined in the
+`package`
+attribute.
+        
+        
+The
+_intent filter_
+part in the Android manifest file, tells the Android runtime that
+this activity should be registered as a possible
+entry point into the
+application and made available in the launcher of the Android system.
 
-</section>
+The action defines that it (
+`android:name="android.intent.action.MAIN"
+`
+) can be started and the
+`<![CDATA[ category android:name="android.intent.category.LAUNCHER"]]>`
+parameter tells the Android system to add the activity to the
+launcher.
+        
+        
+The
+`<![CDATA[ @string/app_name]]>
+`
+value refers to resource files which contain
+the actual value of the
+application name. The usage of a resource file
+makes it easy to
+provide
+different
+resources
+(e.g., strings, colors,
+icons) for different
+devices
+and makes it easy
+to
+translate
+applications.
+        
+        
+Similar to the
+`<![CDATA[ <activity> ]]>`
+tag, you can use the service, receiver and provider to declare other
+Android components.
+        
+
+=== Minimum and target SDK
+        
+The
+`uses-sdk`
+section in the manifest allows you to specify the
+`minSdkVersion`
+and
+`targetSdkVersion`
+version of your application.
+
+<table frame='all'>
+    <title>Minimum and target version
+    <tgroup cols='2' align='left' colsep='1' rowsep='1'>
+        <colspec colname='c1' colwidth="1*" />
+        <colspec colname='c2' colwidth="3*" />
+        <thead>
+<row>
+    <entry>Value</entry>
+    <entry>Description</entry>
+</row>
+        </thead>
+        <tbody>
+<row>
+    <entry>minSdkVersion</entry>
+    <entry>Define the minimum version of Android your application
+        works on. This attribute is used as a filter in
+        Google Play,
+        i.e., a user cannot install your application on a device with a
+        lower API level than specified in
+        this attribute.
+    </entry>
+</row>
+<row>
+    <entry>targetSdkVersion</entry>
+    <entry>Specifies the version on which you tested and developed.
+        If it is not equal to the API version of the
+        Android device,
+        the Android
+        system might apply forward- or backward-compatibility
+        changes. It is good practice to
+        always set this to the
+        latest Android API version to take advantages of changes in the
+        latest Android
+        improvements.
+    </entry>
+</row>
+        </tbody>
+    </tgroup>
+</table>
+        
+=== Permissions
+        
+The Android manifest file must also contain the
+required
+permissions for
+the
+application.
+For
+example, if
+the
+application requires
+network access,
+it
+must be
+specified
+here.
+        
+        
+Your application can declare permissions with the
+`<![CDATA[ <permission> ]]>`
+tag and declare that it required a permision with the
+`<![CDATA[ <uses-permission> ]]>`
+tag.
+        
+        Certain permissions, like network access, are granted automatically on Android 6.0 or higher systems. Other
+permissions must be confirmed by the users to become active.
+        
+=== Required device configuration
+        
+The
+`uses-configuration`
+section in the manifest allows you to specify required input methods
+for your device. For example, the following
+snippet would
+require that
+the device has a hardware keyboard.
+        
+
+        
+<programlisting language="xml">
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/manifest/useconfiguration.xml" />
+</programlisting>
+        
+        
+The
+`uses-feature`
+section allows you to specify the required hardware configuration
+for your
+device. For example, the following snippet
+would
+require that
+the
+device
+has a camera.
+        
+        
+<programlisting language="xml">
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/manifest/usefeature.xml" />
+</programlisting>
+        
+
+    </section>
+
+    <section id="manifestdetails_installation">
+        <title>Installation location
+        
+Via the
+`installLocation`
+attribute of your application you can specify if your application can
+be installed on the external storage of the
+device. Use
+`auto`
+or
+`preferExternal`
+to permit this.
+        
+        
+In reality this option is rarely used, as an application
+installed on the external storage is stopped once the
+device is
+connected to a computer and mounted as USB storage.
+        
+    </section>
+    <section id="manifestdetails_more">
+        <title>More info
+        
+You find more information about the attributes and sections of the
+manifest in the
+<ulink url="http://developer.android.com/guide/topics/manifest/manifest-intro.html">Android Manifest documentation</ulink>
+.
+        
+

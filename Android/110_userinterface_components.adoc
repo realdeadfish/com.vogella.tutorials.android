@@ -1,118 +1,46 @@
 [[userinterfacecomponents]]
 == Base user interface components in Android
-	
+
 The following description gives an overview of the most important user interface related component and parts of an Android application.
-	
+
 === Activities
 
 Activities are the base for the user interface in Android. 
 
-	<section id="components_fragments">
-<title>Fragments
+=== Fragments
 
-	Fragments
-	are components which run in the context of an
-	activity.
-	A
-	fragment
-	encapsulates application code so that it is
-	easier to reuse
-	them
-	and to
-	support
-	devices of different size.
+Fragments are components which run in the context of an activity.
+A fragment encapsulates application code so that it is easier to reuse them and to support devices of different size.
+
+The following picture shows an activity called _MainActivity_. 
+On a smaller screen it shows only one fragment and allows the user to navigate to another fragment. 
+On a wide screen it shows those two fragments immediately.
+
+image::fragmentsusage10.png[Shows only one Fragment at a time]
+
+image::fragmentsusage20.png[Two Fragments side by side]
 
 
+=== Views and layout manager
 
-	The following picture shows an activity
-	called
-	_MainActivity_
-	. On a smaller screen it shows only one fragment and allows the user
-	to navigate to another fragment. On a wide screen it shows those two
-	fragments immediately.
+_Views_ are user interface widgets, e.g., buttons or text fields. 
+Views have attributes which can be used to configure their appearance and behavior.
 
 
+A _ViewGroup_ is responsible for arranging other views. 
+It is also known as _layout manager_.
 
-	<mediaobject>
-<imageobject>
-	<imagedata fileref="images/fragmentsusage10.png" scale="25" />
-</imageobject>
-<textobject>
-	<phrase>Shows only one Fragment at a time</phrase>
-</textobject>
-	</mediaobject>
+The base class for these layout managers is the `android.view.ViewGroup` class which extends the `android.view.View` class which is the base class for views.
 
+Layout managers can be nested to create complex layouts.
 
-	<mediaobject>
-<imageobject>
-	<imagedata fileref="images/fragmentsusage20.png" scale="30" />
-</imageobject>
-<textobject>
-	<phrase>Two Fragments side by side</phrase>
-</textobject>
-	</mediaobject>
-
-	</section>
-
-	<section id="components_views">
-<title>Views and layout manager
-
-	_Views_
-	are user interface widgets, e.g.,
-	buttons
-	or text fields. Views
-	have
-	attributes which can be used to
-	configure their
-	appearance
-	and
-	behavior.
-
-
-	A
-	_ViewGroup_
-	is responsible for arranging other
-	views. It is also known as
-	_layout manager_
-	.
-	The base class for these
-	layout
-	managers
-	is the
-	`android.view.ViewGroup`
-	class
-	which extends the
-	`android.view.View`
-	class which is the base class for views.
-
-
-	Layout managers
-	can be nested to create complex layouts.
-
-	</section>
-	<section id="components_widgets">
-        <title>Home screen widgets and wallpaper
+=== Home screen widgets and wallpaper
         
-            _Widgets_
-            are interactive components which are primarily used on the Android
-            home screen. They typically display some kind of data and allow the
-            user to perform actions with them. For example, a widget
-            can
-            display
-            a
-            short summary of new emails and if the user selects an
-            email,
-            it could
-            start the email application with the selected email.
+_Widgets_ are interactive components which are primarily used on the Android home screen. 
+They typically display some kind of data and allow the user to perform actions with them. 
+For example, a widget can display a short summary of new emails and if the user selects an email, it could start the email application with the selected email.
         
+To avoid confusion with views (which are also called widgets), this text uses the term _home screen widgets_, if it speaks about widgets.
         
-            To avoid confusion with views (which are also called
-            widgets), this text uses the term
-            _home screen widgets_
-            , if it speaks
-            about widgets.
-        
-        
-            _Live wallpapers_
-            allow you to create animated backgrounds for the Android home screen.
+_Live wallpapers_ allow you to create animated backgrounds for the Android home screen.
         

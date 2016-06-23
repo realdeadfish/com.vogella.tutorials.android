@@ -1,86 +1,68 @@
-<section id="exercise_resources" role="wrapper">
-	<title>Exercise: Using resources in XML files and in code
-	<section id="exercise_resources1">
-		<title>Add images to your application
+== Exercise: Using resources in XML files and in code
+=== Add images to your application
 		
-			In this exercise you continue to use the application you created in
-			<xref linkend="androidstudio_starter" />
-			.
-		
+In this exercise you continue to use the application you created in
+<xref linkend="androidstudio_starter" />
+.
 
 		
-			Create two new images to your project called
-			_ic_tethering_
-			and
-			_ic_offline_
-			. The creation process is described in
-			<xref linkend="androidstudio_createimage" />
-			.
+Create two new images to your project called
+_ic_tethering_
+and
+_ic_offline_
+. The creation process is described in
+<xref linkend="androidstudio_createimage" />
+.
 		
-	</section>
-
-	<section id="exercise_resources2">
-		<title>Add views to your project
+=== Add views to your project
 		
-			Open your
-			layout file and add a new
-			`Button`
-			and an
-			`ImageView`
-			to it.
+Open your
+layout file and add a new
+`Button`
+and an
+`ImageView`
+to it.
 		
 
-	</section>
-
-	<section id="exercise_resources3">
-		<title>Assign image to your image view
+=== Assign image to your image view
 
 		
-			Assign the ic_offline file to your
-			`ImageView`
-			, via your layout file as demonstrated in the following XML
-			snippet.
+Assign the ic_offline file to your
+`ImageView`
+, via your layout file as demonstrated in the following XML
+snippet.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/exercise_resourceloading/assignimage.xml" />
-			</programlisting>
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+		href="./examples/exercise_resourceloading/assignimage.xml" />
+</programlisting>
 		
 
-	</section>
-
-	<section id="exercise_resources4">
-		<title>Replace images via button click
+=== Replace images via button click
 		
-			If the button is clicked, use the
-			`findViewById()`
-			to search for the
-			`ImageView`
-			.
-			Use its
-			`setImageResource()`
-			method
-			to assign the png file (which is represented at runtime via a
-			`Drawable`
-			object)
-			to your
-			`ImageView`
-			.
-			The parameter of the
-			`setImageResource()`
-			method is the
-			`R`
-			reference to your file, e.g.,
-			`R.drawable.your_png_file`
-			.
+If the button is clicked, use the
+`findViewById()`
+to search for the
+`ImageView`
+.
+Use its
+`setImageResource()`
+method
+to assign the png file (which is represented at runtime via a
+`Drawable`
+object)
+to your
+`ImageView`
+.
+The parameter of the
+`setImageResource()`
+method is the
+`R`
+reference to your file, e.g.,
+`R.drawable.your_png_file`
+.
 		
-	</section>
-	<section id="exercise_resources5">
-		<title>Validating
-		Ensure that if you press your new button, the displayed image is
-			replaced.
+=== Validating
+Ensure that if you press your new button, the displayed image is replaced.
 		
-	</section>
-
-</section>
