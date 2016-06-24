@@ -19,11 +19,17 @@ include::018_androidsdkmanager.adoc[]
 include::020_emulator.adoc[]
 include::100_application.adoc[]
 include::140_manifestmf.adoc[]
-include::142_manifestmfdetails.adoc[]
 include::150_resources.adoc[]
 include::170_views.adoc[]
-
 include::180_layouts.adoc[]
+include::200_exercise_layout.adoc[]
+include::210_exercise_dynamiclayout.adoc[]
+include::300_temperature.adoc[]
+include::300_using_resources.adoc[]
+include::320_assets.adoc[]
+include::340_exercise_resource_imageview.adoc[]
+include::420_scrollview.adoc[]
+include::800_deployondevice.adoc[]
 
 
 
