@@ -211,7 +211,7 @@ include::res/layout/activity_main.xml[]
 A layout is assigned to an activity via the `setContentView()` method calls, as demonstrated in the following example code.
 
 [source,java]
-----		
+---- 
 include::res/layout/MainActivity.java[]
 ----
 
@@ -224,26 +224,12 @@ too deeply or avoid using
 complex layout managers in case a
 simple layout manager is sufficient.
 		
-	</section>
-	<section id="resources_idsgoodpractice">
-		<title>Good practices for resources IDs
-		<indexterm>
-<primary>Resource ID's
-</primary>
-<secondary>Good practices
-</secondary>
-		</indexterm>
+	
+=== Good practices for resources IDs
+(((Resource ID,Good practices)))
 		
-If a
-view
-needs to be
-accessed via Java or XML code, you have
-to give the view
-a
-unique ID
-via the
-`android:id`
-attribute. To assign a new
+If a view needs to be accessed via Java or XML code, you have to give the view a unique ID via the `android:id` attribute. 
+To assign a new
 ID to a view
 use the
 `android:id`
@@ -275,11 +261,10 @@ to the corresponding
 view.
 		
 
-		
-<programlisting language="xml">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/id.txt" />
-</programlisting>
-		
+[source,xml]
+----
+include::res/snippets/id.txt[]
+----
 
 		
 It is good practice to
@@ -298,14 +283,15 @@ an example for such
 a file.
 		
 		
-<programlisting language="xml">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ids/ids.xml" />
-</programlisting>
+[source,xml]
+----
+include::res/ids/ids.xml[]
+----
 		
-		
-<programlisting language="xml">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ids/activity_main.xml" />
-</programlisting>
+[source,xml]
+----
+include::res/ids/activity_main.xml[]
+----
 		
 [NOTE]
 ====
@@ -314,10 +300,7 @@ While the above is good practice for real projects, the tutorials of this $book 
 
 === System resources
 		
-Android also provides resources. These are called
-_system resources_
-. System resources are distinguished from local resources by the
-`android`
-namespace prefix. For example,
-`android.R.string.cancel`
-defines the platform string for a cancel operation.
+Android also provides resources. 
+These are called _system resources_. 
+System resources are distinguished from local resources by the `android` namespace prefix. 
+For example, `android.R.string.cancel` defines the platform string for a cancel operation.

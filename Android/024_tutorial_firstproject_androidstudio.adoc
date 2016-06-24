@@ -7,10 +7,10 @@ In this exercise you create an Android project and start it on an Android virtua
 === Create a new Android project
 		
 Press the _Start a new Android Studio project_ link to get started. 
-Alternatively you can select the menu:File[New Project...] entry from the menu.
+Alternatively you can select the menu:File[New Project...] entry from the menu, if you already created a project earlier.
 		
+image::as_first10.png[Creating a new Android Studio project]
 
-		
 Use the following data of input for your project. 
 Project location and package name are derived from your input. 
 If you want another package name, press the small _Edit_ hyperlink.
@@ -35,7 +35,6 @@ If you want another package name, press the small _Edit_ hyperlink.
 |Empty Activity
 |===
 
-image::as_first10.png[Creating a new Android Studio project]
 
 image::as_first20.png[Creating a new Android Studio project]
 		
@@ -52,16 +51,18 @@ Afterwards select the _Empty Activity_ template.
 
 image::as_first50.png[Creating a new Android Studio project]
 		
-On the last page, accept the defaults. 
+On the last page, ensure that "Backwards Compability is not selected.
 
 image::as_first60.png[Creating a new Android Studio project]
 		
 
 === Review the generated project
-The above wizard generates based on your input an Android project. 
+The wizard generates now an Android project. 
 Review the generated project structure and files.
 
 image::as_first70.png[]
+
+NOTE: The _Android_ view does not show the real file structure. It shows a logical view of the application.
 
 === Create a virtual device (AVD)
 

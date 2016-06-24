@@ -3,42 +3,41 @@
 	<section id="androidonline1" role="wrapper">
 		<title>Android core resources
 		
-			<ulink url="http://developer.android.com"> Android Developer Homepage </ulink>
+			http://developer.android.com[ Android Developer Homepage ]
 		
 		
-			<ulink url="http://www.vogella.com/android.html">vogella Android online tutorials</ulink>
+			http://www.vogella.com/android.html[vogella Android online tutorials]
 		
 		
-			<ulink url="http://code.google.com/p/android/issues/list">Android bug tracker</ulink>
+			http://code.google.com/p/android/issues/list[Android bug tracker]
 		
 		
-			<ulink url="http://groups.google.com/group/android-developers">Android Google Groups</ulink>
+			http://groups.google.com/group/android-developers[Android Google Groups]
 		
 		
-			<ulink url="http://source.android.com/devices/graphics/architecture.html">Android graphics framework</ulink>
+			http://source.android.com/devices/graphics/architecture.html[Android graphics framework]
 		
 		
-			<ulink url="https://github.com/googlesamples/android-RuntimePermissions">Code example for demonstrating runtime permissions</ulink>
+			https://github.com/googlesamples/android-RuntimePermissions[Code example for demonstrating runtime permissions]
 		
-	</section>
+	
 	<section id="androidonline1" role="wrapper">
 		<title>Android learning resources
 
-		<ulink url="http://androidbackstage.blogspot.de/">Podcast from the Google developers about Android</ulink>
-		<ulink url="http://fragmentedpodcast.com/">Fragmented - An Android Developer Podcast</ulink>
+		http://androidbackstage.blogspot.de/[Podcast from the Google developers about Android]
+		http://fragmentedpodcast.com/[Fragmented - An Android Developer Podcast]
 
-	</section>
+	
 
 	<section id="androidtools">
 		<title>Android tools
 
-		<ulink url="http://tools.android.com/recent">Recent changes in the Android tooling</ulink>
-		<ulink url="https://github.com/skylot/jadx">Command line and GUI tools for produce Java source code from Android Dex and Apk files</ulink>
+		http://tools.android.com/recent[Recent changes in the Android tooling]
+		https://github.com/skylot/jadx[Command line and GUI tools for produce Java source code from Android Dex and Apk files]
 
 
 
-	</section>
+	
 
 
 
-</section>

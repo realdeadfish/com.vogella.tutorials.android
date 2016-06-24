@@ -14,9 +14,9 @@ It is usually based on the latest and greatest Android and Android Studio releas
 
 include::010_overview.adoc[]
 include::016_androidstudioinstallation.adoc[]
+include::024_tutorial_firstproject_androidstudio.adoc[]
 include::018_androidsdkmanager.adoc[]
 include::020_emulator.adoc[]
-include::024_tutorial_firstproject_androidstudio.adoc[]
 include::100_application.adoc[]
 include::140_manifestmf.adoc[]
 include::142_manifestmfdetails.adoc[]

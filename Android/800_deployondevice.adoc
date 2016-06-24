@@ -29,7 +29,7 @@ hardware sensor or the availability of a camera.
 
 For an overview of the available restrictions see
 <ulink
-url="http://developer.android.com/guide/topics/manifest/uses-feature-element.html">uses-features official documentation.</ulink>
+url="http://developer.android.com/guide/topics/manifest/uses-feature-element.html[uses-features official documentation.]
 
 === Signing your application for the release
 
@@ -84,7 +84,7 @@ Google Play requires a one time fee, currently 25 Dollar. After
 that
 the developer can directly upload his application and the required
 icons, under
-<ulink url="https://play.google.com/apps/publish">Google Play Publishing</ulink>
+https://play.google.com/apps/publish[Google Play Publishing]
 .
 
 
