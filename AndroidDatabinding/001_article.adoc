@@ -1,31 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<article lang="en">
-	<articleinfo>
-		<title>Using data binding in Android - Tutorial
-		<author>
-			<firstname>Lars</firstname>
-			<surname>Vogel</surname>
-		</author>
-		<copyright>
-			<year>2015</year>
-			<year>2016</year>
-			<holder>vogella GmbH</holder>
-		</copyright>
-		<pubdate>18.02.2016</pubdate>
-		<releaseinfo>Version 0.2</releaseinfo>
-		<abstract id="abstract">
-			<title>Developing Android applications
-			
-				This tutorial describes the usage of the new data binding capabilities in Android applications.
-			
-		</abstract>
-	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_layoutfiles.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/Android"?>
-</article>
+= Using data binding in Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2009, 2016 vogella GmbH
+Version 0.3, 18.06.2016
+
+[abstract]
+This tutorial describes the usage of the new data binding capabilities in Android applications.
+
+include::008_resourceslocal.adoc[]							
+include::010_overview.adoc[]
+include::080_layoutfiles.adoc[]
+
+include::../copyright.adoc[]
