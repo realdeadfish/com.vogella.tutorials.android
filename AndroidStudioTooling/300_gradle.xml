@@ -11,14 +11,7 @@ To activate the _Gradle projects_ view, select menu:View[Tool Buttons].
 
 This enables a toolbar on the right, click on it to expand the Gradle projects view.
 		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/intellij_gradleview10.png" scale="30" />
-	</imageobject>
-	<textobject>
-		<phrase>Intellij Gradle projects view</phrase>
-	</textobject>
-</mediaobject>
+image::intellij_gradleview10.png[Intellij Gradle projects view]
 		
 
 === Executing Gradle tasks
@@ -32,50 +25,20 @@ Double click on a task _Gradle projects_ view to run it.
 Close a potentially existing projects via menu:File[Close Project] and select the _Import Project_ entry. 
 Afterwards follow the steps as demonstrates by the following screenshots.
 		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/intellij_gradle_import10.png" />
-	</imageobject>
-	<textobject>
-		<phrase>Import Gradle project into IntelliJ</phrase>
-	</textobject>
-</mediaobject>
+image::intellij_gradle_import10.png[Import Gradle project into IntelliJ]
 		
 
 		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/intellij_gradle_import20.png" />
-	</imageobject>
-	<textobject>
-		<phrase>Import Gradle project into IntelliJ</phrase>
-	</textobject>
-</mediaobject>
+image::intellij_gradle_import20.png[Import Gradle project into IntelliJ]
 		
 
 		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/intellij_gradle_import30.png" />
-	</imageobject>
-	<textobject>
-		<phrase>Import Gradle project into IntelliJ</phrase>
-	</textobject>
-</mediaobject>
+image::intellij_gradle_import30.png[Import Gradle project into IntelliJ]
 
 
 === See all executed tests in IntelliJ
 		
 Click on the highlighted button to see all tests in IntelliJ, not only the failing tests.
-		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/intellij_seealltests.png" />
-	</imageobject>
-	<textobject>
-		<phrase>Show all tests in IntelliJ</phrase>
-	</textobject>
-</mediaobject>
+
+image::intellij_seealltests.png[Show all tests in IntelliJ]
 		

@@ -1,29 +1,9 @@
-<section id="androidstudio_git" role="wrapper">
-	<title>Working with Git
-	<section id="androidstudio_git">
-		<title>Cloning a Git repository
-		
-Select
-<menuchoice>
-	<guimenu>VCS</guimenu>
-	<guisubmenu>Checkout from Version Control</guisubmenu>
-	<guisubmenu>Git</guisubmenu>
-</menuchoice>
-to clone a Git repository.
-		
-	</section>
-	<section id="androidstudio_git_github">
-		<title>Cloning a repository from Github
+== Working with Git
 
+=== Cloning a Git repository
 		
-Select
-<menuchoice>
-	<guimenu>Checkout from Version Control</guimenu>
-	<guisubmenu>Github</guisubmenu>
-</menuchoice>
-to clone a Github repository.
+Select menu:VCS[Checkout from Version Control>Git] to clone a Git repository.
 		
-
-
-	</section>
-</section>
+=== Cloning a repository from Github
+		
+Select menu:Checkout from Version Control>Github] to clone a Github repository.

@@ -4,86 +4,31 @@
 
 [[androidstudio_creatinglayoutfile]]
 === Creating a new layout file
-To create a new layout file, select your
-project,
-right
-click
-on it and
-select
-<menuchoice>
-	<guimenu>File</guimenu>
-	<guisubmenu>New</guisubmenu>
-	<guisubmenu>Other...</guisubmenu>
-	<guisubmenu>Android</guisubmenu>
-	<guisubmenu>Android XML File</guisubmenu>
-</menuchoice>
-and select the
-_Layout_
-option.
+To create a new layout file, select your project, right click on it and
+select menu:File[New>Other...>Android>Android XML File. 
+Choose the the _Layout_ option to create a layout file.
 		
 [[androidstudio_creatingresourcefile]]
 === Creating a new resource file
 		
 The easiest way to create a new resource file, e.g., a layout file, is the context menu on the corresponding folder.
-If the folder is
-missing you have to create it, see
-<xref linkend="androidstudio_creatingresourcefolder" />
-.
-This is
-demonstrates for the creation
-of a new layout file in the following screenshot.
+To create a new folder, see <<androidstudio_creatingresourcefolder>>.
+This is demonstrates for the creation of a new layout file in the following screenshot.
+
+image::as_createlayoutfile10.png[Creating a new layout file]
 		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/as_createlayoutfile10.png" />
-	</imageobject>
-	<textobject>
-		<phrase>Creating a new layout file</phrase>
-	</textobject>
-</mediaobject>
-		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/as_createlayoutfile20.png" />
-	</imageobject>
-	<textobject>
-		<phrase>Creating a new layout file selection dialog</phrase>
-	</textobject>
-</mediaobject>
+image::as_createlayoutfile20.png[Creating a new layout file selection dialog]
 		
 
 [[androidstudio_creatingresourcefolder]]
 === Creating a new resource folder for a resource qualifier
 		
-If a resource folder is missing, you have to create it. This is demonstrates by the following screenshots for the
-creation of the
-_layout-port_
-folder.|
+If a resource folder is missing, you have to create it. 
+This is demonstrated by the following screenshots for the creation of the _layout-port_folder.
 		
+image::layoutportaitmode10.png[Create resource folder for port layout first step]
 		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/layoutportaitmode10.png" />
-	</imageobject>
-	<textobject>
-		<phrase>Create resource folder for port layout first step</phrase>
-	</textobject>
-</mediaobject>
-		
-
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/layoutportaitmode20.png" />
-	</imageobject>
-	<textobject>
-		<phrase>Create resource folder for port layout second step</phrase>
-	</textobject>
-</mediaobject>
-		
-	</section>
+image::layoutportaitmode20.png[Create resource folder for port layout second step]
 
 [[androidstudio_workingonlayoutfiles]]
 === Working on layout files
@@ -106,137 +51,48 @@ selecting the
 _Delete_
 entry for the context menu.
 		
-		Android Studio replaces placeholder values with the
+Android Studio replaces placeholder values with the
 real values. This makes it sometimes harder to compare
 files.
 Double-click on the value in this case to see the placeholder value.
-		
-	</section>
 
-	<section id="androidstudio_createimage">
-		<title>Add images to your project
+[[androidstudio_createimage]]
+=== Add images to your project
 
 		
-From the menu of Android Studio, select
-<menuchoice>
-	<guimenu>File</guimenu>
-	<guisubmenu>New</guisubmenu>
-	<guisubmenu>Vector Assert</guisubmenu>
-</menuchoice>
-to create a new vector drawable.
-The creation process is demonstrated for the
-_ic_tethering_
-icon.
+From the menu of Android Studio, select menu:File[New>Vector Assert] to create a new vector drawable.
+The creation process is demonstrated for the _ic_tethering_ icon.
 		
+image::vector_assets10.png[Using Vector assets step 20]
 		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/vector_assets10.png" scale="30" />
-	</imageobject>
-	<textobject>
-		<phrase>Using Vector assets step 20</phrase>
-	</textobject>
-</mediaobject>
+image::vector_assets20.png[Using Vector assets step 10]
 		
-
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/vector_assets20.png" scale="30" />
-	</imageobject>
-	<textobject>
-		<phrase>Using Vector assets step 10</phrase>
-	</textobject>
-</mediaobject>
-		
-
-		<tip>
-If the image generation does not work (if currently is new and relatively buggy) perform a Google
-	search
-	for
-	"Android png files".
-
-		</tip>
-	</section>
 
 [[androidstudio_createmenu]]
 Add a new menu XML resource
 		
-If not yet present, create a new directory called
-_menu_
-.
-		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/menu_resources10.png" />
-	</imageobject>
-	<textobject>
-		<phrase>Create menu directory</phrase>
-	</textobject>
-</mediaobject>
-		
+If not yet present, create a new directory called _menu_.
 
+image::menu_resources10.png[Create menu directory]
 		
-Create a new
-XML resource called
-_mainmenu.xml_
-for your menu.
+Create a new XML resource called _mainmenu.xml_ for your menu.
 
-		
-
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/menu_resources20.png" />
-	</imageobject>
-	<textobject>
-		<phrase>Create new menu resources</phrase>
-	</textobject>
-</mediaobject>
-		
+image::menu_resources20.png[Create new menu resources]
 		
 Afterwards you can manually edit the generated file.
 		
-	</section>
-
-	<section id="androidstudio_generatingsource">
-		<title>Generating Getter/setting, toString, etc.
+=== Generating Getter/setting, toString, etc.
 		
-Select the
-<menuchoice>
-	<guimenu>Code</guimenu>
-	<guisubmenu>Generate...</guisubmenu>
-</menuchoice>
-menu entry to generate getter, setter, constructors, etc.
+Select the menu:Code[Generate...] menu entry to generate getter, setter, constructors, etc.
 		
-	</section>
-
-
-
-	<section id="androidstudio_refactor">
-		<title>Refactor a resource
+=== Refactor a resource
 		
-To rename a resource, e.g., a Java file, select
-<menuchoice>
-	<guimenu>Refactor</guimenu>
-	<guisubmenu>Rename...</guisubmenu>
-</menuchoice>
-from the context menu of the corresponding resource.
-		
-	</section>
-	<section id="androidstudio_viewinglogentries">
-		<title>Seeing the log statements of your Android application
-		
-Use the
-_Android_
-view (Shortcut:
-<keycombo>
-	<keycap>Alt</keycap>
-	<keycap>6</keycap>
-</keycombo>
-) to see the log statements in Android Studio.
+To rename a resource, e.g., a Java file, select menu:Refactor[Rename...] from the context menu of the corresponding resource.
 
+[[androidstudio_viewinglogentries]]
+=== See the log statements of your Android application
+		
+Use the _Android_ view (Shortcut: kbd:[Alt+6]) to see the log statements in Android Studio.
 
 
 [[androidstudio_sourceupdate]]
