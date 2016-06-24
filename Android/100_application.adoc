@@ -1,69 +1,90 @@
-== Parts of an Android application
+== Software components of an Android application
 
 [[androidapplication]]
 === Android application
 		
-An _Android application_ is a single installable unit which can be started and used independently of other Android applications.
-		
-		
-An Android application consists of Android components, Java source and resource files.
-		
-		
+An _Android application_ (short: Android app) is a single installable unit which can be started and used independently of other Android applications.
 Android application components can connect to components of other Android applications based on a task description represented by an `Intent` object.
 This way they can create cross-application tasks. 
+		
+An Android application consists of Android components, Java source and resource files. 
+The existing Android components are described in the following table.
 
-[[androidcomponents_overview]]		
-=== Android software components
-		
-The following Android components can be defined:
-* Application object
-* Activities
-* Services
-* Broadcast receivers (short: receivers)
-* Content providers (short: providers)
-		
-[[components_application]]
-=== Application
-		
-An Android application can have one `Application` class which is instantiated before any other Android component.
-Tt is the last component which is stopped during application shutdown.
+
+.Table Android application components
+[cols="1,3"]
+|===
+|Component |Description
+
+|Application
+|An Android application can have one `Application` class which is instantiated before any other Android component.
+It is the last component which is stopped during application shutdown.
 		
 If not explicitly defined, Android creates a default application object for your application.
 
-[[components_activity]]
-=== Activity
-		
-An _activity_ is the visual representation of an Android application.
+|Activity
+|An activity is the visual representation of an Android application.
 An Android application can have several activities.
-		
-Activities use views and fragments to create their user interface and to interact with the user. 
-Both elements are described in the next sections.
 
-[[components_broadcastreceiver]]
-=== BroadcastReceiver
-		
-A _broadcast receiver_ (receiver) can be registered to listen to system messages and intents. 
+Activities use views and fragments to create their user interface and to interact with the user. 
+
+|Service
+|A _service_ performs tasks without providing an user interface.
+They can communicate with other Android components. 
+For example, a broadcast receiver can notify the user via the notification framework in Android.
+
+
+|Broadcast receiver (short: receiver)
+|A _broadcast receiver_ (receiver) can be registered to listen to system messages and intents. 
 A receiver gets notified by the Android system if the specified event occurs.
 		
 For example, you can register a receiver for the event that the Android system finished the boot process. 
 Or you can register for the event that the state of the phone changes, e.g., someone is calling.
 
-[[components_services]]
-=== Service
-		
-A _service_ performs tasks without providing an user interface.
-They can communicate with other Android components. 
-For example, a broadcast receiver can notify the user via the notification framework in Android.
 
-
-[[components_contentprovider]]
-=== ContentProvider
-		
-A _content provider_ (provider) defines a structured interface to application data. 
+|Content provider (short: provider)
+|A _content provider_ (provider) defines a structured interface to application data. 
 A provider can be used for accessing data within one application, but can also be used to share data with other applications.
 		
 Android contains an SQLite database which is frequently used in conjunction with a content provider. 
 The SQLite database would store the data, which would be accessed via the provider.
+
+|===
+
+=== Defining the user interface with fragments, views and layout managers
+
+Fragments are components which run in the context of an activity.
+A fragment encapsulates application code so that it is easier to reuse them and to support devices of different size.
+
+The following picture shows an activity called _MainActivity_. 
+On a smaller screen it shows only one fragment and allows the user to navigate to another fragment. 
+On a wide screen it shows those two fragments immediately.
+
+image::fragmentsusage10.png[Shows only one Fragment at a time]
+
+image::fragmentsusage20.png[Two Fragments side by side]
+
+_Views_ are user interface widgets, e.g., buttons or text fields. 
+Views have attributes which can be used to configure their appearance and behavior.
+
+
+A _ViewGroup_ is responsible for arranging other views. 
+It is also known as _layout manager_.
+
+The base class for these layout managers is the `android.view.ViewGroup` class which extends the `android.view.View` class which is the base class for views.
+
+Layout managers can be nested to create complex layouts.
+
+=== Home screen widgets 
+        
+Home screen widgets are broadcast receivers which provide interactive components which are primarily used on the Android home screen. 
+They typically display some kind of data and allow the user to perform actions with them. 
+For example, a widget can display a short summary of new emails and if the user selects an email, it could start the email application with the selected email.
+        
+To avoid confusion with views (which are also called widgets), this text uses the term _home screen widgets_, if it speaks about widgets.
+        
+_Live wallpapers_ allow you to create animated backgrounds for the Android home screen.
+
 
 [[overview_context]]
 === Context

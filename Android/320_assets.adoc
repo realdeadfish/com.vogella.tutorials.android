@@ -1,9 +1,7 @@
 == Assets
 === Whats are assets?
 		
-While the
-_res_
-directory
+While the _res_ directory
 contains structured values which
 are
 known to the
@@ -57,11 +55,9 @@ with the
 `open()`
 method. The following code shows an example for this.
 		
-
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-		parse="text" href="./examples/assets/assets.java" />
-</programlisting>
+[source,java]
+----
+include::res/assets/assets.java[]
+----
 		
 

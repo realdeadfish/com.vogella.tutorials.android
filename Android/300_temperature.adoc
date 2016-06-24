@@ -9,15 +9,7 @@ This application is available on Google Play under the following URL: http://pla
 		
 You can also scan the following barcode with your Android phone to install it via the Google Play application.
 		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/temparaturebarcode.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>QR Code to install the Android Temperature converter</phrase>
-	 </textobject>
-</mediaobject>
+image::temparaturebarcode.png[QR Code to install the Android Temperature converter]
 		
 [[tutorialtemperature_project]]
 === Create Project
@@ -70,11 +62,8 @@ Create a new Android project with the following data.
 
 === Create attributes
 		
-Select the
-_res/values/strings.xml_
-file to open the editor for this file. Add the
-`Color`
-and String definitions to the file as described by the following table.
+Select the _res/values/strings.xml_ file to open the editor for this file. 
+Add the `Color` and String definitions to the file as described by the following table.
 		
 
 		
@@ -118,122 +107,63 @@ and String definitions to the file as described by the following table.
 </table>
 		
 
-		 The entered values should be similar to the following listing.
+ The entered values should be similar to the following listing.
 		
-
-		
-<programlisting language="xml">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/strings.xml" />
-</programlisting>
+[source,xml]
+----
+include::res/first/strings.xml[]
+----
 		
 === Creating the layout
 
 		
-Select the
-_res/layout/activity_main.xml_
-file and open the associated Android editor via a
-double-click on the
-file.
-		
-
+Select the _res/layout/activity_main.xml_ file and open the associated Android editor via a double-click on the file.
 		
 Remove any existing view from your layout, either directly from the XML source or via the graphical editor.
 		
 		
-Afterwards add an LinearLayout, another LinearLayout with one ViewText, EditText as children. Afterwards a
-RadioGroup
-with two radio buttons and a Button to your layout. Do this
-either
-directly in the XML file or via the
-graphical editor.
-A simple way of organizing the components is to drag and drop them onto the
-_Component Tree_
-view.
-		
-
-
+Afterwards add an LinearLayout, another LinearLayout with one ViewText, EditText as children. 
+Afterwards add a RadioGroup with two radio buttons and a Button to your layout. 
+Do this either directly in the XML file or via the graphical editor.
+A simple way of organizing the components is to drag and drop them onto the _Component Tree_ view.
 
 		
-The result
-should look like the
-following screenshots. The first one shows the component view the second one the
-preview.
-		
+The result should look like the following screenshots. 
+The first one shows the component view the second one the preview.
+
+image::temperature_componentview.png[Component view]
+
+image::temperature80.png[Current layout of activity_main.xml]
 
 		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/temperature_componentview.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>Component view</phrase>
-	</textobject>
-</mediaobject>
+Switch to the XML tab of your layout file and verify that the file looks similar to the following listing. 
+
+[NOTE]
+====
+The Android tools team changes the generated code from time to time, so your XML might look slightly different.
+====		
 		
+[source,xml]
+----
+include::res/first/mainfirst.xml[]
+----
+
+
+[NOTE]
+====	
+You see some warning messages. 
+You fix these in the following section of this exercise.
+====
+
+=== Edit view properties
 		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/temperature80.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>Current layout of activity_main.xml</phrase>
-	</textobject>
-</mediaobject>
+Switch to the XML representation of the file and assign the `@string/celsius` value to the `android:text` property of the first radio button. 
+Assign the `fahrenheit` string attribute to the `text` property of the second radio button.
 		
+image::temperature90.png[Change the text property of the radio button]
 
 		
-Switch to the XML tab of your layout file
-and verify that the
-file looks similar to the
-following listing. The
-Android tools team
-changes the generated code
-from time to time, so your XML might look slightly different.
-		
-		
-<programlisting language="xml" linenumbering="numbered">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/mainfirst.xml" />
-</programlisting>
-		
-		<note>
-You see some warning messages. You fix these in the following section of this
-	exercise.
-
-		</note>
-	</section>
-	<section id="tutorialtemperature_uiproperties">
-		<title>Edit view properties
-		
-Switch to the XML representation of the file and assign the
-`@string/celsius`
-value to the
-`android:text`
-property of the first radio button. Assign the
-`fahrenheit`
-string attribute to the
-`text`
-property of the second radio
-button.
-		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/temperature90.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>Change the text property of the radio button</phrase>
-	</textobject>
-</mediaobject>
-		
-
-		
-Ensure that the
-`Checked`
-property is set to
-`true`
-for the first
-`RadioButton`
-.
+Ensure that the `Checked` property is set to `true` for the first `RadioButton`.
 		
 		
 Assign

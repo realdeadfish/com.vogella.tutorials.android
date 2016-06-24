@@ -3,17 +3,9 @@
 === Android emulator and Android Virtual Device
 
 The Android tooling contains an Android device emulator. 
-This emulator
-can
-be
-used to run an
-_Android Virtual Device_
-(AVD), which
-emulates a real Android phone.
+This emulator can be used to run an _Android Virtual Device_ (AVD), which emulates a real Android phone.
 
-AVDs allow
-you to test your
-Android
+AVDs allow you to test your Android
 applications on different
 Android
 versions and
