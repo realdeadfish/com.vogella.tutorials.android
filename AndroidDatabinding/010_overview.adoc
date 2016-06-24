@@ -4,19 +4,26 @@
 
 Android offers support to write declarative layouts and to minimize the necessary code to your application logic to the user interface elements.
 		
-To use data binding, Android Plugin for Gradle 1.5.0 or higher is required. 
+To use data binding, Android Plugin for Gradle 1.5.0 or higher is required.
+
 To enable the usage of data binding in your Android application, add the following snippet to the app/build.gradle file.
 			
 [source,gradle]
 ----
-include::res/build.txt
+android {
+    ....
+    dataBinding {
+        enabled = true
+    }
+}
 ----
-		
+The Data binding information in your layout file is extraced by the Android build system and classes are generated for it.
 The Android build system generates based on additional meta data in your layout files _Binding_ classes. 
 By default, the name of the Binding class is generated based on the name of the layout file. 
 It converts the name to Pascal case and adds the “Binding” suffix to it. 
 For example, if the layout file is called activity_main.xml, the generate class is called `ActivityMainBinding`. 
-This class holds all the bindings from the layout properties, i.e., the defined variable to the corresponding views and knows how to assign values for the binding expressions.
+This class holds all the bindings from the layout properties, i.e., the defined variable to the corresponding views. 
+It also knows how to assign values for the binding expressions.
 		
 Layout files which supports data binding start with a _layout_ root tag followed by a _data_ element and a _view_ root element. 
 This view element is what your root would be in a non-binding layout file. 
@@ -24,18 +31,18 @@ The data elements describe data which is available for binding, expressions with
 		
 A sample file looks like the following listing.
 		
-[source,gradle]
+[source,xml]
 ----
-include::res/main_layout.xm[]
+include::res/main_layout.xml[]
 ----
 		
 The user variable within data describes a property that may be used within this layout.
 
-=== Android data binding
+=== Data binding for events
 		
-Events may be bound to handler methods directly, similar to the way android:onClick can be assigned to a method in the Activity. 
+Events may be bound to handler methods directly, similar to the way `android:onClick` can be assigned to a method in the activity. 
 Event attribute names are governed by the name of the listener method with a few exceptions. 
-For example, View.OnLongClickListener has a method onLongClick(), so the attribute for this event is android:onLongClick.
+For example, `View.OnLongClickListener` has a `method onLongClick()`, so the attribute for this event is `android:onLongClick`.
 		
 To assign an event to its handler, use a normal binding expression, with the value being the method name to call. 
 The binding expression can assign the click listener for a View.

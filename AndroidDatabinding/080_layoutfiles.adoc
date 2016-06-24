@@ -1,27 +1,15 @@
 == Example for data binding usage
 	
-Layout files which supports data binding start with a
-_layout_
-root tag followed by a
-_data_
-element
-and a
-_view_
-root element. This view element is what your root would be in a non-binding layout file. The data elements
-describe
-data which is available for binding, expressions within
-the layout are written in the attribute properties
-using the
-“@{}” syntax.
+Layout files which supports data binding start with a _layout_ root tag followed by a _data_ element and a _view_ root element. 
+This view element is what your root would be in a non-binding layout file. 
+The data elements describe data which is available for binding, expressions within the layout are written in the attribute properties using the `“@{}”` syntax.
 	
-	
-A sample file
-looks like the following listing.
+A sample file looks like the following listing.
 	
 
 [source,gradle]
 ----
-include::res/main_layout.xm
+include::res/main_layout.xml[]
 ----
 	
 The user variable within data describes a property that may be used within this layout.
@@ -31,10 +19,10 @@ The data object used with this layout may look like the following listing.
 	
 [source,java]
 ----
-include::res/User.java
+include::res/User.java[]
 ----
 	
 [source,java]
 ----
-include::res/usage.java
+include::res/usage.java[]
 ----	
