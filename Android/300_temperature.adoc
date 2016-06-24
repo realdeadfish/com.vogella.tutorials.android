@@ -65,49 +65,31 @@ Create a new Android project with the following data.
 Select the _res/values/strings.xml_ file to open the editor for this file. 
 Add the `Color` and String definitions to the file as described by the following table.
 		
+.Table New attributes to add
+[cols="1, 2, 2"]
+|===
+|Type
+|Name
+|Value
 
-		
-<table frame='all'>
-	<title>New attributes to add
-	<tgroup cols='3' align='left' colsep='1' rowsep='1'>
-		<colspec colname='c1' />
-		<colspec colname='c2' />
-		<colspec colname='c3' />
-		<thead>
-<row>
-	<entry>Type</entry>
-	<entry>Name</entry>
-	<entry>Value</entry>
-</row>
-		</thead>
-		<tbody>
-<row>
-	<entry>Color</entry>
-	<entry>myColor</entry>
-	<entry>#F5F5F5</entry>
-</row>
-<row>
-	<entry>String</entry>
-	<entry>celsius</entry>
-	<entry>to Celsius</entry>
-</row>
-<row>
-	<entry>String</entry>
-	<entry>fahrenheit</entry>
-	<entry>to Fahrenheit</entry>
-</row>
-<row>
-	<entry>String</entry>
-	<entry>calc</entry>
-	<entry>Calculate</entry>
-</row>
+|Color
+|myColor
+|#F5F5F5
 
-		</tbody>
-	</tgroup>
-</table>
-		
+|String
+|celsius
+|to Celsius
 
- The entered values should be similar to the following listing.
+|String
+|fahrenheit
+|to Fahrenheit
+
+|String
+|calc
+|Calculate
+|===
+
+The entered values should be similar to the following listing.
 		
 [source,xml]
 ----
@@ -190,53 +172,35 @@ on the
 . As an example you can use the last line in the following XML
 snippet. Also change its ID to "inputValue".
 		
-		
-<programlisting language="xml">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/edittext.txt" />
-</programlisting>
-		
+[source,java]
+----
+include::res//first/edittext.txt[]
+----	
 
 
 		
-All your user interface components are contained in a
-layout. Assign
-the
-background color to this
-`Layout`
-.
+All your user interface components are contained in a layout. 
+Assign the background color to this `Layout`.
 
-Select
-_Color_
-and
-then select
-`myColor`
-in the dialog. As an example you can use the last line in the
-following XML
-snippet.
-		
+Select _Color_ and then select `myColor` in the dialog. 
+As an example, you can use the last line in the following XML snippet.
 
+	
+[source,java]
+----
+include::res/first/backgroundcolor.txt[]
+----
 		
-<programlisting language="xml">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/backgroundcolor.txt" />
-</programlisting>
 		
+Afterwards the background should change to the `whitesmoke` color. It might be difficult to see the difference.
 		
-Afterwards the background should change to the
-`whitesmoke`
-color. It might be difficult to see the difference.
+Switch to the _activity_main.xml_ tab and verify that the XML is correct.
 		
 
-		
-Switch to the
-_activity_main.xml_
-tab and verify that the XML is
-correct.
-		
-
-		
-<programlisting language="xml">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/main.xml" />
-</programlisting>
+[source,java]
+----
+include::res/examples/first/main.xml[]
+----
 		
 
 [[tutorialtemperature_utility]]
@@ -261,15 +225,6 @@ should be
 displayed and the other
 option should get
 selected.
-		
-
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/temperature96.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>Change the text property of the radio button</phrase>
-	</textobject>
-</mediaobject>
+	
+image::res/temperature96.png[Change the text property of the radio button]
 		
