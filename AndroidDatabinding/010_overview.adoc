@@ -3,6 +3,8 @@
 === Introduction to data binding in Android
 
 Android offers support to write declarative layouts and to minimize the necessary code to your application logic to the user interface elements.
+
+image::db_android10.png[]
 		
 To use data binding, Android Plugin for Gradle 1.5.0 or higher is required.
 
