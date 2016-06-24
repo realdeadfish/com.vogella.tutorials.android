@@ -1,81 +1,81 @@
 <section id="drawables_bitmaps">
-	<title>Loading Bitmaps and Drawables</title>
-	<para>
+	<title>Loading Bitmaps and Drawables
+	
 		Android allows you to use the
-		<code>Bitmap</code>
+		`Bitmap`
 		class for working with bitmaps. This section explain how to create
-		<code>Bitmap</code>
+		`Bitmap`
 		objects via Java code and how to convert
-		<code>Bitmap</code>
+		`Bitmap`
 		into
-		<code>Drawable</code>
+		`Drawable`
 		objects and vice versa.
-	</para>
+	
 
-	<para>
+	
 		If required you can
 		load any accessible
 		bitmap file
 		in your code and
 		convert them into
-		<code>Drawables</code>
+		`Drawables`
 		objects.
-	</para>
-	<para>
+	
+	
 		The following example code shows how to create an
-		<code>Bitmap</code>
+		`Bitmap`
 		object for the
 		<filename>assets</filename>
 		folder and assign it to an
-		<code>ImageView</code>
+		`ImageView`
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/bitmap/load.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		You can also access the Drawables
 		from your
 		<filename>res/drawable</filename>
 		folder as
-		<code>Bitmap</code>
+		`Bitmap`
 		objects in your source code. The following code demonstrates that.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/bitmap/loaddirect.java" />
 		</programlisting>
-	</para>
-	<para>You can create a scale bitmap based on a new weight and
+	
+	You can create a scale bitmap based on a new weight and
 		height
 		definition in pixel.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/bitmap/scale.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		To convert a
-		<code>Bitmap</code>
+		`Bitmap`
 		object
 		into a
-		<code>Drawable</code>
+		`Drawable`
 		you can use the following code.
 
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/bitmap/convert.java" />
 		</programlisting>
-	</para>
-</section>
+	
+
 	

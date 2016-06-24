@@ -1,119 +1,118 @@
 <section id="googlemaps" role="wrapper">
-	<title>Tutorial: Google Maps</title>
+	<title>Tutorial: Google Maps
 	<section id="googlemaps_target">
-		<title>Target of this exercise</title>
-		<para>
+		<title>Target of this exercise
+		
 			In this exercise you create an Android application which
 			shows a
-			<code>GoogleMap</code>
+			`GoogleMap`
 			via a fragment.
-		</para>
-	</section>
+		
+	
 
 
 	<section id="exercise_googlemaps_installation">
-		<title>Install Google Play Services</title>
-		<para>
+		<title>Install Google Play Services
+		
 			Download and install the Google Play Service.
 			See
 			<xref linkend="installmaps" />
 			for details.
-		</para>
-	</section>
+		
+	
 
 	<section id="exercise_googlemaps_apikey">
-		<title>Get API key for Google Maps</title>
-		<para>
+		<title>Get API key for Google Maps
+		
 			Get your API key for Google maps, as described in
 			<xref linkend="maps_key" />
 			.
-		</para>
-	</section>
+		
+	
 	<section id="googlemaps_project">
-		<title>Create Project</title>
-		<para>
+		<title>Create Project
+		
 			Create a new Android project called
-			<wordasword>com.vogella.android.locationapi.maps</wordasword>
+			_com.vogella.android.locationapi.maps_
 			with an activity
 			called
-			<code>ShowMapActivity</code>
+			`ShowMapActivity`
 			.
-		</para>
-	</section>
+		
+	
 	<section id="googlemaps_permissions">
-		<title>Add permissions to the project</title>
-		<para>
+		<title>Add permissions to the project
+		
 			Change the manifest
 			file
 			to the following code by adding
 			permissions to your
 			application.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/maps/uses.txt" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Get a valid API key for your application and enter this key in the
 			<filename>AndroidManifest.xml</filename>
 			file.
-		</para>
+		
 
 
-	</section>
+	
 	<section id="googlemaps_manifest">
-		<title>Adjust layout file</title>
-		<para>
+		<title>Adjust layout file
+		
 			In this example we use the
-			<code>MapFragment</code>
+			`MapFragment`
 			. Change your layout file to the following code.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/maps/activity_main.xml" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 
 	<section id="googlemaps_activity">
-		<title>Activity</title>
+		<title>Activity
 
-		<para>
+		
 			Change your activity
 			to the following.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/maps/MainActivity.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
 	<section id="googlemaps_run">
-		<title>Run and Test</title>
-		<para>
+		<title>Run and Test
+		
 			Run and test your application. You should be able to zoom in and
 			out
 			and send new geo coordinates to your
-			<wordasword>activity</wordasword>
+			_activity_
 			via the Emulator.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/maps30.png" scale="30" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 
-</section>

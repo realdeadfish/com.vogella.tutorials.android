@@ -1,6 +1,6 @@
 <section id="lockscreenwidgets">
-	<title>Enabling a app widget for the lock Screen</title>
-	<para>
+	<title>Enabling a app widget for the lock Screen
+	
 		Since Android 4.2, it is possible to add home screen app
 		widgets
 		to the
@@ -11,37 +11,37 @@
 		the
 		<parameter>android:widgetCategory</parameter>
 		attribute in the
-		<code>AppWidgetProviderInfo</code>
+		`AppWidgetProviderInfo`
 		XML
 		file. The following code shows an example.
-	</para>
-	<para>
+	
+	
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/lockscreen/add.xml" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		In this example you declare a widget to support both - the home
 		and the
 		lock screens. If you recompile and launch your application now,
 		you
 		will be able to add the widget to the lock screen already.
-	</para>
-	<para>
+	
+	
 		You can also detect a widget category at runtime. For this, in the
-		<code>AppWidgetProvider.onUpdate()</code>
+		`AppWidgetProvider.onUpdate()`
 		method, you can check for the category
 		option of a widget with the
 		following code.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/lockscreen/check.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Using this technique you can decide at runtime whether the
 		widgets
 		your
@@ -49,8 +49,8 @@
 		hosted on
 		the
 		lock screen.
-	</para>
-	<para>
+	
+	
 		Similarly to how you used the
 		<property>android:initialLayout</property>
 		attribute for defining
@@ -59,10 +59,9 @@
 		can use a new
 		<property>android:initialKeyguardLayout</property>
 		attribute for the lock screen in the
-		<code>AppWidgetProviderInfo</code>
+		`AppWidgetProviderInfo`
 		XML file. This layout will appear immediately
 		after a widget is added
 		and will be replaced by the real layout once the
 		widget is initialized.
-	</para>
-</section>
+	

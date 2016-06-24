@@ -1,6 +1,6 @@
 <section id="additional_attributes">
-	<title>Define additional attributes for your custom Views</title>
-	<para>
+	<title>Define additional attributes for your custom Views
+	
 		You can define additional attributes for your compound or custom
 		views.
 		To define additional attributes create an
@@ -9,41 +9,41 @@
 		<filename>res/values</filename>
 		folder. The following shows an example of attributes defined for a new
 		view called
-		<code>ColorOptionsView</code>
+		`ColorOptionsView`
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/attributes/attrs.xml" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		To use these attributes in your layout file you have to declare
 		them in
 		the XML header. In the following listing this is done via the
-		<code>xmlns:custom</code>
+		`xmlns:custom`
 		part of the code. These attributes are also assigned to the view.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/attributes/activity_main.xml" />
 		</programlisting>
-	</para>
+	
 
 
-	<para>The following example shows how you components can access these
+	The following example shows how you components can access these
 		attributes.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/attributes/ColorOptionsView.java" />
 		</programlisting>
-	</para>
+	
 
 
-</section>
+

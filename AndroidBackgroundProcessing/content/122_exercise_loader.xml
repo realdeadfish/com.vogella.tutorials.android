@@ -1,52 +1,51 @@
 <section id="exercise_loader">
-	<title>Exercise: Custom loader for preferences</title>
+	<title>Exercise: Custom loader for preferences
 	<section id="exercise_loader1">
-		<title>Implementation</title>
-		<para>In the following your create a custom loader implementation for
+		<title>Implementation
+		In the following your create a custom loader implementation for
 			managing preferences. On every load the value of the preference is
 			increased.
-		</para>
-		<para>
+		
+		
 			Create a project called
-			<code>com.vogella.android.loader.preferences</code>
+			`com.vogella.android.loader.preferences`
 			with an activity called
-			<wordasword>MainActivity</wordasword>
+			_MainActivity_
 			.
-		</para>
-		<para>
+		
+		
 			Create the following class as custom
-			<code>AsyncTaskLoader</code>
+			`AsyncTaskLoader`
 			implementation for managing shared preferences.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/loader/SharedPreferencesLoader.java" />
 			</programlisting>
-		</para>
-		<para>The following example code demonstrates the usage of this loader
+		
+		The following example code demonstrates the usage of this loader
 			in an activity.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/loader/MainActivity.java" />
 			</programlisting>
-		</para>
+		
 
 
-	</section>
+	
 	<section id="exercise_loader2">
-		<title>Test</title>
-		<para>
+		<title>Test
+		
 			The
-			<code>LoaderManager</code>
+			`LoaderManager`
 			call
-			<code>onLoadFinished()</code>
+			`onLoadFinished()`
 			in your activity automatically after a configuration change. Run the
 			application and ensure that the value stored in the shared
 			preferences is increased at every configuration change.
-		</para>
-	</section>
-</section>
+		
+	

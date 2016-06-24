@@ -1,8 +1,8 @@
 <section id="resources_android">
-	<title>Android Animation Resources</title>
-	<para>
-		<ulink url="https://github.com/JakeWharton/NineOldAndroids">
+	<title>Android Animation Resources
+	
+		https://github.com/JakeWharton/NineOldAndroids">
 			NineOldAndroids - Properties Animations API for Android 2.x</ulink>
-	</para>
+	
 
-</section>
+

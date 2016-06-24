@@ -1,59 +1,58 @@
 <section id="exercisestyling" role="wrapper">
-	<title>Exercise: Using and defining themes</title>
+	<title>Exercise: Using and defining themes
 	<section id="exercisestyling_target">
-		<title>Target of this exercise</title>
-		<para>In this exercise you use existing themes and define your own custom theme. You can use an existing Android
+		<title>Target of this exercise
+		In this exercise you use existing themes and define your own custom theme. You can use an existing Android
 			application for this exercise or use the project generation wizard of your IDE to create a new one.
-		</para>
-	</section>
+		
+	
 	<section id="tutorial_themesimple">
-		<title>Use a predefined theme</title>
-		<para>
+		<title>Use a predefined theme
+		
 			Configure your application to use the
 			<parameter>android:Theme.Material.Light.DarkActionBar</parameter>
 			theme and test it. Afterwards pick another theme and test it again. Pick one of the existing themes which you like
 			the
 			most.
-		</para>
-	</section>
+		
+	
 	<section id="tutorial_theme">
-		<title>Exercise: Define a modified custom theme</title>
+		<title>Exercise: Define a modified custom theme
 		<note>
-			<para>The Android tools team at Google likes to change the project templates. This means that the styles resource
+			The Android tools team at Google likes to change the project templates. This means that the styles resource
 				file
 				might already be created or that the base theme which is extended is different.
-			</para>
+			
 		</note>
-		<para>
+		
 			Create or edit the existing
 			<filename>styles.xml</filename>
 			file for the Android version your are testing with. This requires defining the correct version qualifier for the
 			folder which contains the file.
-		</para>
-		<para>
+		
+		
 			Add a new color constant called
 			<parameter>my_color</parameter>
 			defining the
 			<parameter>#b0b0ff</parameter>
 			value to the file.
-		</para>
-		<para>
+		
+		
 
 			Modify or add the
 			<parameter>AppTheme</parameter>
 			. It should override the
 			<parameter>android:windowBackground</parameter>
 			property with your color.
-		</para>
-		<para>
+		
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/styles/styles_simple.xml" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Assign this theme to your application. Your application should use a
 			different background color.
-		</para>
-	</section>
+		
+	
 
-</section>

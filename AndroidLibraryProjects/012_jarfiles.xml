@@ -1,8 +1,8 @@
 <section id="androidjarfiles">
-	<title>Using JAR files in Android</title>
+	<title>Using JAR files in Android
 	<section id="jarfile_using">
-		<title>How to use JAR files</title>
-		<para>
+		<title>How to use JAR files
+		
 			To use a Java library (JAR file) inside your Android project, you can
 			simple copy the
 			<filename>JAR</filename>
@@ -11,70 +11,70 @@
 			<filename class="directory">libs</filename>
 			in your application. Depending on your IDE this automatically makes
 			your JAR available or your have to do an additional step.
-		</para>
-	</section>
+		
+	
 	
 	<section id="jarfile_usingandroidstudio">
-		<title>Adding a module dependency</title>
-		<para>
+		<title>Adding a module dependency
+		
 			In Android Studio you have to
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						Right-click the JAR file in the libs folder and select
 						<menuchoice>
 							<guimenu>Add as library</guimenu>
 						</menuchoice>
 						.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						Check that you have a new entry
 						<parameter>compile files('libs/YOURJAR.jar'</parameter>
 						in your
 						<filename>build.gradle</filename>
 						file.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						To ensure that the change is picked up, perform a clean
 						build.
-					</para>
+					
 				</listitem>
 
 			</itemizedlist>
-		</para>
+		
 
-	</section>
+	
 
 	<section id="androidjarfile_restrictions">
-		<title>Restrictions in using Java libraries</title>
-		<para>
+		<title>Restrictions in using Java libraries
+		
 			If you want to use libraries, these must only use API
 			available in
 			Android. For example, the Android libraries do
 			not
 			contain the
-			<code>java.awt</code>
+			`java.awt`
 			and
-			<code>javax.swing</code>
+			`javax.swing`
 			user interface libraries, as Android has its own user interface
 			toolkit.
-		</para>
-		<para>
+		
+		
 			Library
 			projects cannot be
 			compiled to Android applications and
 			started without another project using them.
-		</para>
-		<para>
+		
+		
 			Using library projects helps you to structure your application
 			code. Also more and more important Open Source libraries are
 			available for Android. Understanding library projects is therefore
 			important for every Android programmer.
-		</para>
-	</section>
+		
+	
 
-</section>
+

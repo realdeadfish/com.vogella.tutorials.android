@@ -7,7 +7,7 @@
 			chapter are deprecated and should not be used anymore in new
 			applications.
 		
-	</section>
+	
 	<section id="actionbar_navigation_tab">
 		<title>Tab navigation
 
@@ -36,7 +36,7 @@
 					parse="text" href="./examples/navigation_tabs/MainActivity.java" />
 			</programlisting>
 		
-	</section>
+	
 
 	<section id="actionbar_navigation_dropdown">
 		<title>Dropdown menu navigation
@@ -51,7 +51,7 @@
 					parse="text" href="./examples/navigation_dropdown/MainActivity.java" />
 			</programlisting>
 		
-	</section>
+	
 	<section id="actionbar_navigation_evaluation">
 		<title>Evaluation
 		
@@ -60,5 +60,4 @@
 			applications. If in doubt which options to select, consider using the
 			navigation drawer.
 		
-	</section>
-</section>
+	

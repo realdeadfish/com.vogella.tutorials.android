@@ -1,114 +1,114 @@
 <section id="service" role="wrapper">
-	<title>Defining custom services</title>
+	<title>Defining custom services
 	<section id="services_declare">
-		<title>Implementation and declaration</title>
-		<para>
+		<title>Implementation and declaration
+		
 			A
 			service
 			needs to be declared in the
 			<filename>AndroidManifest.xml</filename>
 			file
 			and the implementing class must extend the
-			<code>Service</code>
+			`Service`
 			class
 			or one
 			of
 			its subclasses.
-		</para>
-		<para>
+		
+		
 			The following code shows an example for
 			a
 			service
 			declaration and
 			its implementation.
-		</para>
-		<para>
+		
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/service/defineservicelocal.xml" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/define/MyService.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 	<section id="service_start">
-		<title>Start a service</title>
-		<para>
+		<title>Start a service
+		
 			An Android component (service, receiver, activity)
 			can trigger the
 			execution of a service via
 			the
-			<code>startService(intent)</code>
+			`startService(intent)`
 			method.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/define/Start.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Alternatively,
 			you can also start a
 			service
 			via the
-			<code>bindService()</code>
+			`bindService()`
 			method call. This allows you to communicate directly with the
-			<wordasword>service</wordasword>.
+			_service_.
 			We discuss that later.
-		</para>
-	</section>
+		
+	
 
 	<section id="service_execution">
-		<title>Service start process and execution</title>
-		<para>
+		<title>Service start process and execution
+		
 			If the
-			<code>startService(intent)</code>
+			`startService(intent)`
 			method is called and the
 			service is not yet running, the service
 			object is
 			created and
 			the
-			<code>onCreate()</code>
+			`onCreate()`
 			method of the service is called.
-		</para>
-		<para>
+		
+		
 			Once the
-			<wordasword>service</wordasword>
+			_service_
 			is started, the
-			<code>onStartCommand(intent)</code>
+			`onStartCommand(intent)`
 			method in the
-			<wordasword>service</wordasword>
+			_service_
 			is called.
 			It passes in the
-			<code>Intent</code>
+			`Intent`
 			object
 			from the
-			<code>startService(intent)</code>
+			`startService(intent)`
 			call.
-		</para>
-		<para>
+		
+		
 			If
-			<code>startService(intent)</code>
+			`startService(intent)`
 			is called while the service
 			is running, its
-			<code>onStartCommand()</code>
+			`onStartCommand()`
 			is also called. Therefore your
 			service
 			needs to be prepared that
-			<code>onStartCommand()</code>
+			`onStartCommand()`
 			can be called several times.
-		</para>
+		
 		<tip>
-			<para>
+			
 				What if you call this method twice in your code? Do you have to
 				worry about synchronizing the
-				<code>onStartCommand()</code>
+				`onStartCommand()`
 				method call? No, this method is called by the Android system in the
 				main user
 				interface thread,
@@ -116,27 +116,27 @@
 				simultaneously from
 				two different
 				threads.
-			</para>
+			
 		</tip>
-		<para>
+		
 			A service is only started once, no matter how often you call the
-			<code>startService()</code>
+			`startService()`
 			method.
-		</para>
-	</section>
+		
+	
 
 	<section id="service_restart">
-		<title>Service restart behavior</title>
-		<para>
+		<title>Service restart behavior
+		
 			In its
-			<code>onStartCommand()</code>
+			`onStartCommand()`
 			method call, the service returns an
-			<code>int</code>
+			`int`
 			which defines its restart behavior in case the service gets terminated
 			by the Android platform. You can use the constants, the most common
 			options are described by the following table.
 			<table frame='all'>
-				<title>Restart options</title>
+				<title>Restart options
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -153,10 +153,10 @@
 								Service is restarted if it gets terminated. Intent data
 								passed
 								to the
-								<code>onStartCommand</code>
+								`onStartCommand`
 								method
 								is null. Used for services which manages their own state
-								and do not depend on the <code>Intent</code> data.
+								and do not depend on the `Intent` data.
 							</entry>
 						</row>
 						<row>
@@ -165,63 +165,62 @@
 								Service is not restarted. Used for services which are
 								periodically triggered anyway. The service is only restarted if
 								the runtime has pending
-								<code>startService()</code>
+								`startService()`
 								calls since the service termination.
 							</entry>
 						</row>
 						<row>
 							<entry>Service.START_REDELIVER_INTENT</entry>
 							<entry>
-								Similar to Service.START_STICKY but the original <code>Intent</code> is
+								Similar to Service.START_STICKY but the original `Intent` is
 								re-delivered to the
-								<code>onStartCommand</code>
+								`onStartCommand`
 								method.
 							</entry>
 						</row>
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 		<tip>
-			<para>
+			
 				You can check if the service was restarted via the
-				<code>Intent.getFlags()</code>
+				`Intent.getFlags()`
 				method.
-				<code>START_FLAG_REDELIVERY</code>
+				`START_FLAG_REDELIVERY`
 				(in case the service was started with
 				Service.START_REDELIVER_INTENT)
 				or
-				<code>START_FLAG_RETRY</code>
+				`START_FLAG_RETRY`
 				(in case the service was started with Service.START_STICKY)
 				is
 				passed.
-			</para>
+			
 		</tip>
-	</section>
+	
 
 	<section id="service_stop">
-		<title>Stopping a service</title>
-		<para>
+		<title>Stopping a service
+		
 			You
 			stop
 			a
 			service
 			via the
-			<code>stopService()</code>
+			`stopService()`
 			method. No matter how frequently you called the
-			<code>startService(intent)</code>
+			`startService(intent)`
 			method, one
 			call to the
-			<code>stopService()</code>
+			`stopService()`
 			method
 			stops the service.
-		</para>
-		<para>
+		
+		
 			A
 			service
 			can terminate itself by calling the
-			<code>stopSelf()</code>
+			`stopSelf()`
 			method. This is typically done if the service finishes its work.
-		</para>
-	</section>
-</section>
+		
+	

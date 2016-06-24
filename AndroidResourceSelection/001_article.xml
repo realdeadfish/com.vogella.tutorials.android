@@ -2,7 +2,7 @@
 <article lang="en">
 	<articleinfo>
 		<title>
-			Android resource selectors - Tutorial</title>
+			Android resource selectors - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -22,11 +22,11 @@
 		
 		<abstract id="abstract">
 			<title>
-				Android resource selectors</title>
-			<para>
+				Android resource selectors
+			
 				This tutorial describes how to the resource selectors work in
 				Android. It describes how to support different screen sizes, languages and densities on different devices.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Building Android Apps with Apache Maven - Tutorial</title>
+		<title>Building Android Apps with Apache Maven - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -13,15 +13,15 @@
 		</copyright>
 		<pubdate>07.03.2012</pubdate>
 		<releaseinfo>
-			<para>Version 0.3	</para>
+			Version 0.3	
 
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Android Maven</title>
-			<para> This tutorial describes how to build Android applications with
+			<title>Android Maven
+			 This tutorial describes how to build Android applications with
 				Apache Maven and the "android-maven-plugin".
-			</para>
+			
 		</abstract>
 	</articleinfo>
 

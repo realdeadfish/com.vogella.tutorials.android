@@ -1,16 +1,16 @@
 <section id="androidperformanceandmemoryoptimization2">
-	<title>Avoid unnecessary object allocation</title>
-	<para>
+	<title>Avoid unnecessary object allocation
+	
 		Avoid creating unnecessary objects, especially in expensive places. Reuse objects if possible. Creating
 		unnecessary objects triggers the garbage
 		collection more frequently, and this should be avoided.
-	</para>
-	<para>
+	
+	
 		For example avoid object creating in
 		loops or in
 		the
-		<code>onDraw()</code>
+		`onDraw()`
 		method of your custom view.
-	</para>
-</section>
+	
+
 

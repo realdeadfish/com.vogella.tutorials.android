@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Using Butterknife for view injection in Android - Tutorial</title>
+		<title>Using Butterknife for view injection in Android - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -12,15 +12,15 @@
 		</copyright>
 		<pubdate>19.07.2015</pubdate>
 		<releaseinfo>
-			<para>Version 0.1</para>
+			Version 0.1
 		</releaseinfo>
 		
 
 
 		<abstract id="abstract">
-			<title>Using the Butterknife library for view injection in Android</title>
-			<para> This tutorial explains the usage of the butterknife  library to inject views into Android application.
-			</para>
+			<title>Using the Butterknife library for view injection in Android
+			 This tutorial explains the usage of the butterknife  library to inject views into Android application.
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

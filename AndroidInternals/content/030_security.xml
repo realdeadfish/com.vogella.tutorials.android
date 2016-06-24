@@ -1,17 +1,16 @@
 <section id="security">
-	<title>Security</title>
-	<para>
+	<title>Security
+	
 		Every
-		<ulink url="http://www.vogella.com/tutorials/Android/article.html">Android Application</ulink>
+		http://www.vogella.com/tutorials/Android/article.html[Android Application]
 		runs as its own process. Also a own Linux user is automatically
 		created for each application.
-	</para>
-	<para> By default Android applications run inside a process with
+	
+	 By default Android applications run inside a process with
 		no
 		permissions assigned. Therefore the application can not access the
 		system or any resources. Android applications can request
 		permissions
-		via the <filename>AndroidManifest.xml</filename> file.</para>
+		via the <filename>AndroidManifest.xml</filename> file.
 
 
-</section>

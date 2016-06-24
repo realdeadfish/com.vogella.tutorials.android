@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android IPC - Tutorial</title>
+		<title>Android IPC - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -15,16 +15,16 @@
 		</copyright>
 		<pubdate>10.11.2014</pubdate>
 		<releaseinfo>
-			<para>Version 2.9</para>
+			Version 2.9
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>How to do Android IPC with parceable and AIDLs</title>
-			<para>
+			<title>How to do Android IPC with parceable and AIDLs
+			
 				This tutorial describes how to create your own Parceable implementaton
 				and how to do IPC beetween an activity and service. It is based on
 				Eclipse 4.4, Java 1.6 and Android 4.4.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 

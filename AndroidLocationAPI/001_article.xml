@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android Location API  - Tutorial</title>
+		<title>Android Location API  - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -15,17 +15,17 @@
 		<pubdate>20.08.2012</pubdate>
 		<releaseinfo>
 
-			<para>
+			
 				Version 4.1
-			</para>
+			
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Android Location API</title>
-			<para> This tutorial describes the usage of the Android Location API.
+			<title>Android Location API
+			 This tutorial describes the usage of the Android Location API.
 				It is based on
 				Eclipse 3.7, Java 1.6 and Android 4.0 (Ice Cream Sandwich).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

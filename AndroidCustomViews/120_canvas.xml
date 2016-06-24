@@ -1,132 +1,131 @@
 <section id="canvasapi">
-	<title>Canvas API</title>
+	<title>Canvas API
 	<section id="canvasapi_overview">
-		<title>Overview</title>
-		<para>
+		<title>Overview
+		
 			The Canvas API allows to create complex graphical effects.
-		</para>
-		<para>
+		
+		
 			You paint on a
-			<code>Bitmap</code>
+			`Bitmap`
 			surface.
 			The
-			<code>Canvas</code>
+			`Canvas`
 			class provides the drawing methods to draw on a bitmap and the
-			<code>Paint</code>
+			`Paint`
 			class specifies how you draw on the bitmap.
-		</para>
-	</section>
+		
+	
 
 	<section id="canvasapi_canvas">
-		<title>The Canvas class</title>
-		<para>
+		<title>The Canvas class
+		
 			The
-			<code>Canvas</code>
+			`Canvas`
 			object contains the bitmap on which you draw. It also provides
 			methods for drawing operations, e.g.
-			<code>drawARGB()</code>
+			`drawARGB()`
 			for drawing a color,
-			<code>drawBitmap()</code>
+			`drawBitmap()`
 			to draw a
-			<code>Bitmap</code>
+			`Bitmap`
 			,
-			<code>drawText()</code>
+			`drawText()`
 			to draw a text,
-			<code>drawRoundRect()</code>
+			`drawRoundRect()`
 			to draw a rectangle with rounded corners and much more.
-		</para>
-	</section>
+		
+	
 	<section id="canvasapi_paint">
-		<title>The Paint class</title>
-		<para>
+		<title>The Paint class
+		
 			For drawing on the
-			<code>Canvas</code>
+			`Canvas`
 			object you use an object of type
-			<code>Paint</code>
+			`Paint`
 			.
-		</para>
-		<para>
+		
+		
 			The
-			<code>Paint</code>
+			`Paint`
 			class allows to specify the color, font and certain effects for the
 			drawing operation.
-		</para>
-		<para>
+		
+		
 			The
-			<code>setStyle()</code>
+			`setStyle()`
 			method allows to specify if the  only the outline (
-			<code>Paint.Style.STROKE</code>
+			`Paint.Style.STROKE`
 			), the filled part (
-			<code>Paint.Style.FILL</code>
+			`Paint.Style.FILL`
 			) or both (
-			<code>Paint.Style.STROKE_AND_FILL</code>
+			`Paint.Style.STROKE_AND_FILL`
 			)should be drawn.
-		</para>
-		<para>
+		
+		
 			You can set the alpha channel of the
-			<code>Paint</code>
+			`Paint`
 			via the
-			<code>setAlpha()</code>
+			`setAlpha()`
 			method.
-		</para>
-		<para>
+		
+		
 			Via
-			<wordasword>Shaders</wordasword>
+			_Shaders_
 			you can define that the
-			<code>Paint</code>
+			`Paint`
 			is filled with more than one color.
-		</para>
-	</section>
+		
+	
 	<section id="canvasapi_shader">
-		<title>Shader</title>
-		<para>
+		<title>Shader
+		
 			A shader allows to define for a
-			<code>Paint</code>
+			`Paint`
 			object the content which should be drawn. For example you can use a
-			<code>BitmapShader</code>
+			`BitmapShader`
 			to define that a bitmap should be used to draw. This allows you for
 			example to draw an image with rounded corners. Simply define a
-			<code>BitmapShader</code>
+			`BitmapShader`
 			for your
-			<code>Paint</code>
+			`Paint`
 			object and use the
-			<code>drawRoundRect()</code>
+			`drawRoundRect()`
 			method to draw a rectancle with rounded corners.
-		</para>
-		<para>
+		
+		
 			Other
-			<wordasword>Shaders</wordasword>
+			_Shaders_
 			provided by the Android platform are
-			<code>LinearGradient</code>
+			`LinearGradient`
 			,
-			<code>RadialGradient</code>
+			`RadialGradient`
 			and
-			<code>SweepGradient</code>
+			`SweepGradient`
 			for drawing color gradients.
-		</para>
-		<para>
+		
+		
 			To use a
-			<wordasword>Shaders</wordasword>
+			_Shaders_
 			assign it to your
-			<code>Paint</code>
+			`Paint`
 			object via the
-			<code>setShader()</code>
+			`setShader()`
 			method.
-		</para>
-		<para>
+		
+		
 			If the area which is filled is larger than the
-			<wordasword>Shaders</wordasword>
+			_Shaders_
 			you can define via the
-			<wordasword>Shader tile mode</wordasword>
+			_Shader tile mode_
 			how the rest should be filled. The
-			<code>Shader.TileMode.CLAMP</code>
+			`Shader.TileMode.CLAMP`
 			constant
 			defines that the edge corners should be used to fill the
 			extra space, the
-			<code>Shader.TileMode.MIRROR</code>
+			`Shader.TileMode.MIRROR`
 			constant defines that the image is mirrored and
-			<code>Shader.TileMode.REPEAT</code>
+			`Shader.TileMode.REPEAT`
 			defines that the image will be repeated.
-		</para>
-	</section>
-</section>
+		
+	

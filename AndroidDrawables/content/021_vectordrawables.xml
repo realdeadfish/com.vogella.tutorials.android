@@ -1,6 +1,6 @@
 <section id="vectordrawables">
-	<title>Vector drawables</title>
-	<para>
+	<title>Vector drawables
+	
 		Android 5.0 includes the possibility to define vector drawables,
 		similar to svg files but with a limited scope. The
 		following listing
@@ -8,25 +8,24 @@
 		<filename>vectordrawable.xml</filename>
 		file. Using vector drawables has the advantages that this drawables
 		automatically scale to the density of the device.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/vector/vectordrawable.xml" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		Android 5.0 contains also the
-		<code>AnimatedVectorDrawable</code>
+		`AnimatedVectorDrawable`
 		which allows to combine vector drawables with animations. See
-		<ulink url="http://blog.sqisland.com/2014/10/first-look-at-animated-vector-drawable.html"></ulink>
+		http://blog.sqisland.com/2014/10/first-look-at-animated-vector-drawable.html[]
 		for several examples.
-	</para>
-	<para>
+	
+	
 		Vector drawbles are also available for older platform via the support library as
-		<code>VectorDrawableCompat</code>
+		`VectorDrawableCompat`
 		.
-	</para>
+	
 
 
-</section>

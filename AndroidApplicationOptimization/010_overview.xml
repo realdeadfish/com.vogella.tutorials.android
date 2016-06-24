@@ -1,18 +1,18 @@
 <section id="androidperformanceandmemoryoptimization">
-	<title>Programming tips for providing highly responsive and fast Android applications</title>
-	<para>Android devices have less power than standard desktop or
+	<title>Programming tips for providing highly responsive and fast Android applications
+	Android devices have less power than standard desktop or
 		notebook
 		computers. For this reason you must be careful
 		with memory
 		consumption.
-	</para>
-	<para>Especially on Android devices before Android 5.0 you want to
+	
+	Especially on Android devices before Android 5.0 you want to
 		avoid triggering the garbage collector of the
 		virtual machine as this
 		results in a freeze of the Android runtime for about 200 ms and that
 		can be a notable delay if
 		the user is for example scrolling down a
 		list.
-	</para>
+	
 
-</section>
+

@@ -1,10 +1,9 @@
 <section id="serviceslink">
-	<title>Learn about services</title>
-	<para>
+	<title>Learn about services
+	
 		You can use the following
-		<ulink url="http://www.vogella.com/tutorials/AndroidServices/article.html">Android service tutorial</ulink>
+		http://www.vogella.com/tutorials/AndroidServices/article.html[Android service tutorial]
 		to learn how to use
-		<wordasword>services</wordasword>
+		_services_
 		.
-	</para>
-</section>
+	

@@ -19,7 +19,7 @@
 			`R`
 			file, so that the menu resource can be accessed.
 		
-	</section>
+	
 	<section id="usingactionbar_creatingactions">
 		<title>Creating actions
 		
@@ -80,7 +80,7 @@
 			
 		</tip>
 
-	</section>
+	
 
 	<section id="usingactionbar_selectionreaction">
 		<title>Reacting to action selection
@@ -104,7 +104,7 @@
 					parse="text" href="./examples/actionbar/reacting.java" />
 			</programlisting>
 		
-	</section>
+	
 
 	<section id="usingactionbar_search">
 		<title>Search an action in the action bar
@@ -116,7 +116,7 @@
 			class. This method allows to search by id.
 		
 
-	</section>
+	
 	<section id="usingactionbar_changes">
 		<title>Changing the menu
 		
@@ -132,5 +132,4 @@
 			method
 			is called again.
 		
-	</section>
-</section>
+	

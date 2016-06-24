@@ -1,23 +1,23 @@
 <section id="adapterperformance" role="wrapper">
-	<title>ListViews and performance</title>
+	<title>ListViews and performance
 	<section id="adapterperformance_motivation">
-		<title>Motivation</title>
-		<para>
+		<title>Motivation
+		
 			Performance is especially important on Android as users expect
 			fast reaction times. Compared to desktop computers an Android
 			device
 			is relatively slow from the hardware perspective.
-		</para>
-		<para>
+		
+		
 			This part describes how to reduce these operations to implement your
 			custom list adapter efficiently. The default Android adapters like
-			<code>ArrayAdapter</code>
+			`ArrayAdapter`
 			are already performance optimized.
-		</para>
-	</section>
+		
+	
 	<section id="adapterperformance_problems">
-		<title>Time consuming operations</title>
-		<para>
+		<title>Time consuming operations
+		
 			Every
 			view
 			which get inflated from an XML layout file will result
@@ -27,22 +27,22 @@
 			time and
 			memory
 			consumption.
-		</para>
+		
 
-		<para>
+		
 			In addition using the
-			<code>findViewById()</code>
+			`findViewById()`
 			method is relatively time consuming, even though it is not as bad
 			as
 			XML inflating.
-		</para>
+		
 
-	</section>
+	
 	<section id="adapterperformance_convertview">
-		<title>Avoiding layout inflation and object creation</title>
-		<para>
+		<title>Avoiding layout inflation and object creation
+		
 			A
-			<code>ListView</code>
+			`ListView`
 			typically contains more data than the number of displayed rows.
 			If the
 			user scrolls
@@ -57,97 +57,97 @@
 			represents the
 			rows
 			can be reused for newly visible rows.
-		</para>
-		<para>
+		
+		
 			If Android determines that a
 			row is not visible anymore, it allows the
-			<code>getView()</code>
+			`getView()`
 			of the adapter
 			method to reuse the associated view via the
-			<code>convertView</code>
+			`convertView`
 			parameter.
-		</para>
-		<para>
+		
+		
 			The adapter can
 			assign
 			new
 			data to the views contained in the view
 			hierarchy of the
-			<code>convertView</code>
+			`convertView`
 			. This avoids inflating an XML file and creating new Java objects.
-		</para>
-		<para>
+		
+		
 			In case Android cannot reuse a row, the Android system passes
-			<code>null</code>
+			`null`
 			to the
-			<code>convertView</code>
+			`convertView`
 			parameter. Therefore the adapter implementation needs to check for
 			this.
-		</para>
+		
 
-	</section>
+	
 	<section id="adapterperformance_holder">
-		<title>View holder pattern</title>
-		<para>
+		<title>View holder pattern
+		
 			A
-			<wordasword>ViewHolder</wordasword>
+			_ViewHolder_
 			implementation
 			allows to avoid the
-			<code>findViewById()</code>
+			`findViewById()`
 			method in an adapter.
-		</para>
-		<para>
+		
+		
 			A
-			<code>ViewHolder</code>
+			`ViewHolder`
 			class is typically a static inner class in your adapter which holds references
 			to
 			the relevant views.
 			in your layout. This reference is assigned to
 			the
 			row view as a tag via the
-			<code>setTag()</code>
+			`setTag()`
 			method.
-		</para>
-		<para>
+		
+		
 			If we receive a
-			<code>convertView</code>
+			`convertView`
 			object, we can get the instance of the
-			<code>ViewHolder</code>
+			`ViewHolder`
 			via the
-			<code>getTag()</code>
+			`getTag()`
 			method and assign the new attributes to the
 			views
 			via the
-			<code>ViewHolder</code>
+			`ViewHolder`
 			reference.
-		</para>
+		
 
-		<para>
+		
 			While this sounds complex this is approximately 15 % faster then
 			using the
-			<code>findViewById()</code>
+			`findViewById()`
 			method.
-		</para>
-	</section>
+		
+	
 
 
 	<section id="adapterperformance_example">
-		<title>Example</title>
-		<para>
+		<title>Example
+		
 			The following code shows a performance optimized adapter
 			implementation which reuses existing views and implements the holder
 			pattern.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/layoutinflator/MyPerformanceArrayAdapter.java" />
 			</programlisting>
-		</para>
+		
 
 
-	</section>
+	
 
 
-</section>
+
 

@@ -1,23 +1,22 @@
 <section id="networkstate">
-	<title>Check the network availability</title>
-	<para>
+	<title>Check the network availability
+	
 		Obviously the network on an Android device is not always
 		available. You
 		can check the network is currently available via
 		the
 		following code.
 
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/status/check.txt" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		This requires the
-		<code>ACCESS_NETWORK_STATE</code>
+		`ACCESS_NETWORK_STATE`
 		permission.
-	</para>
+	
 
-</section>

@@ -13,7 +13,7 @@
 			for details how to create an image.
 		
 
-	</section>
+	
 	<section id="tutorialactionbar_createmenu">
 		<title>Add a menu XML resource
 		
@@ -34,7 +34,7 @@
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/social/mainmenu.xml" />
 			</programlisting>
 		
-	</section>
+	
 	<section id="tutorialactionbar_create">
 		<title>Add a toolbar view to your activity layout
 		
@@ -65,7 +65,7 @@
 				activity.
 			
 		</note>
-	</section>
+	
 
 	<section id="tutorialactionbar_test">
 		<title>Run the application and test the toolbar
@@ -94,6 +94,6 @@
 			<guibutton>Option</guibutton>
 			key to see your second action.
 		
-	</section>
+	
 
-</section>
+

@@ -1,16 +1,16 @@
 <section id="notificationmanager" role="wrapper">
-	<title>Notification Manager</title>
+	<title>Notification Manager
 	<section id="notificationmanager_overview">
-		<title>Notification Manager</title>
-		<para>
+		<title>Notification Manager
+		
 			Android allows to put notification into the titlebar of your
 			application.
 			The user can expand the notification bar and by selecting
 			the
 			notification the user can trigger
 			another activity.
-		</para>
-		<para>
+		
+		
 			Because notifications can be very annoying, the user can disable
 			notifications for each application. This can be done via the Settings
 			application of the Android
@@ -20,8 +20,8 @@
 			and unset the
 			<guilabel>Show notifications</guilabel>
 			checkbox to prevent the app to show notifications.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/usercandisablenotifications10.png"/>
@@ -30,63 +30,63 @@
 					<phrase>Showing the Notification bar with the created notification</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
-	</section>
+	
 
 
 	<section id="notificationmanager_configure">
-		<title>Setting up Notifications</title>
-		<para>
+		<title>Setting up Notifications
+		
 			Notifications in Android are represented by the
-			<code>Notification</code>
+			`Notification`
 			class.
 			To create notifications you use the
-			<code>NotificationManager</code>
+			`NotificationManager`
 			class which can be received from the
-			<code>Context</code>
+			`Context`
 			, e.g. an
-			<wordasword>activity</wordasword>
+			_activity_
 			or a
-			<wordasword>service</wordasword>
+			_service_
 			,
 			via the
-			<code>getSystemService()</code>
+			`getSystemService()`
 			method.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/snippets/getService.txt" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			The
-			<code>Notification.Builder</code>
+			`Notification.Builder`
 			provides an builder interface to create an
-			<code>Notification</code>
+			`Notification`
 			object. You use a
-			<code>PendingIntent</code>
+			`PendingIntent`
 			to specify the action which should be performed once the user select
 			the notification.
-		</para>
+		
 
-		<para>
+		
 			The
-			<code>Notification.Builder</code>
+			`Notification.Builder`
 			allows you to add up to three buttons with definable actions to the
 			notification.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/snippets/configureNotifcation.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/notification10.png"/>
@@ -95,8 +95,8 @@
 					<phrase>Showing the Notification bar with the created notification</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Android 4.1 supports expandable notifications. In addition to
 			normal
 			notification view it is possible to define a big view
@@ -108,19 +108,19 @@
 			the big view: big picture style, big text
 			style, Inbox style. The
 			following code demonstrates the usage of the
-			<code>BigTextStyle()</code>
+			`BigTextStyle()`
 			which allows to use up to 256
 			dp.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/snippets/bigStyle.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/notification20.png"/>
@@ -129,25 +129,25 @@
 					<phrase>Showing the Notification bar with the created notification</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 	<section id="notificationmanager_cancel">
-		<title>Canceling Notifications</title>
-		<para>The user can dismiss all notification or if you set your
+		<title>Canceling Notifications
+		The user can dismiss all notification or if you set your
 			notification to auto-cancel it is also removed once the user selects
 			it.
-		</para>
-		<para>
+		
+		
 			You can also call the
-			<code>cancel()</code>
+			`cancel()`
 			for a specific notification ID on the
-			<code>NotificationManager</code>
+			`NotificationManager`
 			. The
-			<code>cancelAll()</code>
+			`cancelAll()`
 			method call removes all
 			of the notifications you
 			previously issued.
-		</para>
-	</section>
+		
+	
 
-</section>
+

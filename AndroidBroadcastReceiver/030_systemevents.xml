@@ -1,62 +1,61 @@
 
 <section id="startingservices_alarmmanager">
-	<title>Automatically starting Services from a Receivers</title>
-	<para>
+	<title>Automatically starting Services from a Receivers
+	
 		A common requirement is to automatically start a service after a
 		system reboot, i.e., for synchronizing
 		data. For this you can register
 		a receiver
 		for the
-		<code>android.intent.action.BOOT_COMPLETED</code>
+		`android.intent.action.BOOT_COMPLETED`
 		system event. This requires the
-		<code>android.permission.RECEIVE_BOOT_COMPLETED</code>
+		`android.permission.RECEIVE_BOOT_COMPLETED`
 		permission.
-	</para>
+	
 
-	<para>
+	
 		The following example demonstrates the registration for the
-		<code>BOOT_COMPLETED</code>
+		`BOOT_COMPLETED`
 		event in the Android manifest file.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/autostart/AndroidManifest.xml" />
 		</programlisting>
-	</para>
+	
 
 
-	<para>
+	
 		The receive would start the service as demonstrated in the
 		following example code.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/autostart/start.java" />
 		</programlisting>
-	</para>
+	
 	<tip>
-		<para>
+		
 			If your application is installed on the SD card, then it is not
 			available after the
-			<code>android.intent.action.BOOT_COMPLETED</code>
+			`android.intent.action.BOOT_COMPLETED`
 			event. In this case register it for the
-			<code>android.intent.action.ACTION_EXTERNAL_APPLICATIONS_AVAILABLE
-			</code>
+			`android.intent.action.ACTION_EXTERNAL_APPLICATIONS_AVAILABLE
+			`
 			event.
-		</para>
+		
 	</tip>
 	<note>
-		<para>
+		
 			Remember that as of Android API level 11 the user needs to have
 			started
 			the
 			application at least once before your application can
 			receive
-			<code>android.intent.action.BOOT_COMPLETED</code>
+			`android.intent.action.BOOT_COMPLETED`
 			events.
-		</para>
+		
 	</note>
-</section>

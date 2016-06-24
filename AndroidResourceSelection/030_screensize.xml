@@ -1,24 +1,24 @@
 <section id="resourcequalifiers_density" role="wrapper">
-	<title>Screen density</title>
+	<title>Screen density
 	<section id="resourcequalifiers_density1">
-		<title>Why handling different screen densities?</title>
-		<para>
+		<title>Why handling different screen densities?
+		
 			Screens of Android devices are different in terms of resolution
 			and in
 			terms
 			of density of the pixels on the screen.
-		</para>
-		<para>
+		
+		
 			In case of a different screen densities the same length of a user
 			interface component consists of a different amount of pixels.
-		</para>
-		<para>
+		
+		
 			For example, if you specify the pixels directly, you might get
 			the
 			following result on a device with a relatively low number of
 			pixels.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/deviceindependendpixels10.png"
@@ -28,15 +28,15 @@
 					<phrase>Device Independent pixels on low resolution devices</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Using the same number of pixels
 			on a device with more pixels
 			might
 			lead to an unusable
 			graphical user interface.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/deviceindependendpixels20.png"
@@ -46,19 +46,19 @@
 					<phrase>Device independent pixels on low resolution devices</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
+		
 			For this reason you should provide graphical resources, e.g.,
 			the
 			laucher and action bar icons in different resolutions. This can be
 			done by using resource qualifiers based on the pixel desity.
-		</para>
-	</section>
+		
+	
 
 	<section id="resourcequalifiers_density2">
-		<title>Using density as resource qualifier</title>
-		<para>
+		<title>Using density as resource qualifier
+		
 			You can use the density as resource qualifier. Android support the
 			following selections. The baseline is 160 dots per inch (dpi). If for
 			example the Android device has 320 dpi, the Drawable from the
@@ -66,7 +66,7 @@
 			is selected.
 
 			<table frame='all'>
-				<title>Density resource selector</title>
+				<title>Density resource selector
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -104,16 +104,16 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
-	</section>
+		
+	
 
 	<section id="resourcequalifiers_providingresources">
-		<title>Icon sizes</title>
-		<para>You should provide your launcher, action bar and notification
+		<title>Icon sizes
+		You should provide your launcher, action bar and notification
 			bar icons in the important five size.
-		</para>
+		
 		<table frame='all'>
-			<title>Android icons size</title>
+			<title>Android icons size
 			<tgroup cols='6' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="1*" />
@@ -160,10 +160,10 @@
 			</tgroup>
 		</table>
 
-		<para>The launch icon should also be provide in 512x512 px for the
+		The launch icon should also be provide in 512x512 px for the
 			published application in Google
 			Play.
-		</para>
-	</section>
+		
+	
 
-</section>
+

@@ -1,68 +1,68 @@
 <section id="resources_android">
-		<title>Android Resources</title>
+		<title>Android Resources
 		
-		<para>
+		
 			<ulink
 				url="http://www.vogella.com/tutorials/AndroidListView/article.html">
 				Android ListView, ListActivity and ListFragment</ulink>
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://www.vogella.com/tutorials/AndroidSQLite/article.html">
 				Android SQlite Database</ulink>
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://www.vogella.com/tutorials/AndroidWidgets/article.html">
 				Android Widgets</ulink>
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://www.vogella.com/tutorials/AndroidLiveWallpaper/article.html">
 				Android Live Wallpaper</ulink>
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://www.vogella.com/tutorials/AndroidServices/article.html">
 				Android Services</ulink>
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://www.vogella.com/tutorials/AndroidLocationAPI/article.html">
 				Android Location API and Google Maps</ulink>
-		</para>
-			<para>
+		
+			
 			<ulink
 				url="http://www.vogella.com/tutorials/AndroidIntent/article.html">
 				Android Intents</ulink>
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://www.vogella.com/tutorials/AndroidNetworking/article.html">
 				Android and Networking</ulink>
-		</para>
-		<para>
-			<ulink url="http://code.google.com/intl/de-DE/android/">
+		
+		
+			http://code.google.com/intl/de-DE/android/">
 				Android Homepage</ulink>
-		</para>
-		<para>
-			<ulink url="http://developer.android.com">
+		
+		
+			http://developer.android.com">
 				Android Developer Homepage</ulink>
-		</para>
-		<para>
-			<ulink url="http://code.google.com/p/android/issues/list">
+		
+		
+			http://code.google.com/p/android/issues/list">
 				Android Issues / Bugs</ulink>
-		</para>
-		<para>
-			<ulink url="http://groups.google.com/group/android-developers">
+		
+		
+			http://groups.google.com/group/android-developers">
 				Android Google Groups</ulink>
-		</para>
-		<para>
-			<ulink url="http://android-developers.blogspot.com/2009/04/live-folders.html">
+		
+		
+			http://android-developers.blogspot.com/2009/04/live-folders.html">
 				Android Live Folder</ulink>
-		</para>
+		
 		
 	
 	
 
-	</section>
+	

@@ -1,8 +1,8 @@
 <section id="librarymodules">
-	<title>Custom Android library modules</title>
+	<title>Custom Android library modules
 	<section id="libraryprojects_using">
-		<title>Using custom library modules </title>
-		<para>
+		<title>Using custom library modules 
+		
 			If an Android application project uses an Android
 			library module, the
 			Android
@@ -21,8 +21,8 @@
 			file
 			of the
 			compiled application.
-		</para>
-		<para>
+		
+		
 			Therefore a
 			library module
 			can be
@@ -36,18 +36,18 @@
 			resources.
 			Only assets
 			are not supported.
-		</para>
-		<para>
+		
+		
 			To create a library project, set the
 			<guilabel>Mark this project as library</guilabel>
 			flag in the Android project generation wizard.
-		</para>
 		
-		<para>
+		
+		
 			The library project must declare all its components, e.g.,
-			<wordasword>activities</wordasword>
+			_activities_
 			,
-			<wordasword>service</wordasword>
+			_service_
 			, etc. via the
 			<filename>AndroidManifest.xml</filename>
 			file. The application
@@ -56,12 +56,12 @@
 			the
 			<filename>AndroidManifest.xml</filename>
 			file.
-		</para>
-	</section>
+		
+	
 	
 	<section id="libraryoverview_priorities">
-		<title>Priorities for conflicting resources</title>
-		<para>
+		<title>Priorities for conflicting resources
+		
 			The Android development tools merges the resources of a library
 			project with
 			the resources of the application project.
@@ -73,6 +73,6 @@
 			priority,
 			and discard
 			the other resource.
-		</para>
-	</section>
-</section>
+		
+	
+

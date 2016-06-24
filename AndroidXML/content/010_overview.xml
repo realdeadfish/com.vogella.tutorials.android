@@ -1,14 +1,14 @@
 <section id="xmloverview">
-	<title>XML processing in Android</title>
-	<para>The Java programming language provides several standard libraries
+	<title>XML processing in Android
+	The Java programming language provides several standard libraries
 		for processing XML files. The SAX and the
 		DOM 
 		XML parsers
 		are also 
 		available on
 		Android. 
-	</para>
-	<para> The SAX and DOM parsers API is on Android the same as in
+	
+	 The SAX and DOM parsers API is on Android the same as in
 		standard Java. SAX and DOM have their limitations, therefore it is not
 		recommended to use them on Android.
 		Therefore this tutorial does not
@@ -16,25 +16,24 @@
 		example for the usage
 		of this
 		library.
-	</para>
-	<para>The Java standard provides also the Stax parser. This parser is
+	
+	The Java standard provides also the Stax parser. This parser is
 		not part of
 		the Android platform.
-	</para>
-	<para>
+	
+	
 		Android provides for XML parsing and writing the
-		<code>XmlPullParser</code>
+		`XmlPullParser`
 		class. This parser is not available in standard Java but is similar to
 		the Stax parser. The parser is hosted at
-		<ulink url="http://www.xmlpull.org/"> http://www.xmlpull.org/</ulink>
+		http://www.xmlpull.org/[ http://www.xmlpull.org/]
 		.
-	</para>
-	<para>
+	
+	
 		On Android it is recommended to use the
-		<code>XmlPullParser</code>
+		`XmlPullParser`
 		. It has a relatively simple API compared to SAX and DOM and is fast
 		and requires less memory then the DOM API.
-	</para>
+	
 
 
-</section>

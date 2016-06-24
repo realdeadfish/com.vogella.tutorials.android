@@ -14,20 +14,19 @@
 				Android and Networking</ulink>
 		
 		
-			<ulink url="http://code.google.com/intl/de-DE/android/">
+			http://code.google.com/intl/de-DE/android/">
 				Android Homepage</ulink>
 		
 		
 		
-			<ulink url="http://code.google.com/p/android/issues/list">
+			http://code.google.com/p/android/issues/list">
 				Android Issues / Bugs</ulink>
 		
 		
-			<ulink url="http://groups.google.com/group/android-developers">
+			http://groups.google.com/group/android-developers">
 				Android Google Groups</ulink>
 		
-	</section>
+	
 
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
 
-</section>

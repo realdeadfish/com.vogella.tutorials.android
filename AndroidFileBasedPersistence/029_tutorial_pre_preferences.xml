@@ -1,10 +1,9 @@
 <section id="tutorial_prerequirements">
-	<title>Tutorial: Prerequirements</title>
-	<para>
+	<title>Tutorial: Prerequirements
+	
 		The following tutorial is based on the "de.vogella.android.socialapp"
 		example from
 		<ulink
-			url="http://www.vogella.com/tutorials/Android/article.html#menu_tutorial">Android action bar tutorial</ulink>
+			url="http://www.vogella.com/tutorials/Android/article.html#menu_tutorial[Android action bar tutorial]
 		.
-	</para>
-</section>
+	

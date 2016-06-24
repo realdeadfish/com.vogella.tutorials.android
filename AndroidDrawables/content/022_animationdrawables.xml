@@ -1,37 +1,36 @@
 <section id="animationdrawables">
-	<title>Animation Drawables</title>
-	<para>
+	<title>Animation Drawables
+	
 		You can also define an animation drawables and assign it to a
-		<code>View</code>
+		`View`
 		via
 		the
-		<code>setBackgroundResource()</code>
+		`setBackgroundResource()`
 		method.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/animation/myanimation.xml" />
 		</programlisting>
-	</para>
+	
 
 
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/animation/ani.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Alternative you can implement a class which extends
-		<code>Drawable</code>
+		`Drawable`
 		and implements
-		<code>Animatable</code>
+		`Animatable`
 		.
-	</para>
+	
 
 
 
-</section>

@@ -1,51 +1,50 @@
 <section id="example">
-	<title>Example</title>
-	<para>Create a new Android project "de.vogella.android.gestures" with
+	<title>Example
+	Create a new Android project "de.vogella.android.gestures" with
 		the activity "GestureTest". Create a few gestures and copy them to
 		your application as described in the
-		last chapter.    </para>
+		last chapter.    
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/gesture10.png" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Unfortunately the UI builder does not support GestureOverlayView,
 		please see
-		<ulink url="http://code.google.com/p/android/issues/detail?id=13686">Bug report GestureOverlayView not working in the
+		http://code.google.com/p/android/issues/detail?id=13686">Bug report GestureOverlayView not working in the
 			layout
 			builder</ulink>
 		, therefore we have to build a layout without the gesture view and add
 		this view via code to the GestureOverlayView.
-	</para>
-	<para> Create the following layout <filename>main.xml</filename>. </para>
-	<para>
+	
+	 Create the following layout <filename>main.xml</filename>. 
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/gestures/main.xml" />
 		</programlisting>
-	</para>
-	<para> Create the following Activity. 
-	</para>
-	<para>
+	
+	 Create the following Activity. 
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/gestures/GestureTest.java" />
 		</programlisting>
-	</para>
-	<para> Start your application. As a result you should be able to perform gestures and see the
-		result. We only show a Toast but of course you could perform all kind of actions.  </para>
+	
+	 Start your application. As a result you should be able to perform gestures and see the
+		result. We only show a Toast but of course you could perform all kind of actions.  
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/gesture20.png" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
-</section>
+	

@@ -1,58 +1,57 @@
 <section id="concurrency_javathreads">
-	<title>Using Java threading constructs in Android</title>
+	<title>Using Java threading constructs in Android
 	<section id="concurrency_javathreads_using">
-		<title>Using Java threads and thread pools </title>
-		<para>
+		<title>Using Java threads and thread pools 
+		
 			Android
 			supports the usage of the
-			<code>Thread</code>
+			`Thread`
 			class to perform asynchronous processing.
-		</para>
-		<para>
+		
+		
 			Android also supplies the
-			<code>java.util.concurrent</code>
+			`java.util.concurrent`
 			package
 			to perform something in the background, e.g. using the
-			<code>ThreadPools</code>
+			`ThreadPools`
 			and
-			<code>Executor</code>
+			`Executor`
 			classes.
-		</para>
-		<para>
+		
+		
 			If
 			you need to update the user interface from a new
-			<code>Thread</code>
+			`Thread`
 			, you need to synchronize with the
-			<wordasword>user interface thread</wordasword>
+			_user interface thread_
 			.
-		</para>
+		
 
-	</section>
+	
 	<section id="concurrency_javathreads_disadvantages">
-		<title>Disadvantages of using Java threads in Android</title>
-		<para>
+		<title>Disadvantages of using Java threads in Android
+		
 			If you use Java threading in Android applications, you have to handle the following
 			requirements
 			in your custom code:
 			<itemizedlist>
 				<listitem>
-					<para>Synchronization with the main thread, if you post back results
+					Synchronization with the main thread, if you post back results
 						to the user interface
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>No default for canceling the thread</para>
+					No default for canceling the thread
 				</listitem>
 				<listitem>
-					<para>No default thread pooling</para>
+					No default thread pooling
 				</listitem>
 				<listitem>
-					<para>No default for handling configuration changes in Android
-					</para>
+					No default for handling configuration changes in Android
+					
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para>Because of these restrictions, Android developer typically use Android specific code constructs. </para>
-	</section>
+		
+		Because of these restrictions, Android developer typically use Android specific code constructs. 
+	
 
-</section>

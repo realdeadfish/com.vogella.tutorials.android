@@ -67,7 +67,7 @@
 		Add the permission to write on external storage to your
 			application.
 		
-	</section>
+	
 
 	<section id="exercise_tracewiew2">
 		<title>Perform trace
@@ -75,7 +75,7 @@
 			and copy the resulting performance trace to your drive. Analyze the
 			result.
 		
-	</section>
+	
 
 
 	<section id="exercise_tracewiew3">
@@ -118,6 +118,5 @@
 			
 		</note>
 
-	</section>
+	
 
-</section>

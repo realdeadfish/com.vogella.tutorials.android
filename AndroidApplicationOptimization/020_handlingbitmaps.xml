@@ -1,46 +1,45 @@
 <section id="handlingbitmaps">
-	<title>Handling bitmaps</title>
-	<para>Bitmaps can allocate lots of memory if loaded at full size. It is
+	<title>Handling bitmaps
+	Bitmaps can allocate lots of memory if loaded at full size. It is
 		recommended to load the bitmaps in the desired size into memory.
 		Assume you have an application which displays an image in 100x100 dp,
 		you should load the image in exactly this size.
-	</para>
-	<para>
+	
+	
 		A common way is to first measure the bitmap without loading it via a
 		flag passed to the
-		<code>BitmapFactory</code>
+		`BitmapFactory`
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/bitmap/decodeBitmapSize.java" />
 		</programlisting>
-	</para>
-	<para>Afterwards you can load the scaled version of the image. Android
+	
+	Afterwards you can load the scaled version of the image. Android
 		is really good in scaling images by a power of two. You can use
 		the
 		following method (from the official Android documentation) to
 		calculate the scale factor on a basis of 2.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/bitmap/loadImageInSize.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>This method can be used to assign the image to a view as
-		demonstrated in the following example.</para>
-	<para>
+	This method can be used to assign the image to a view as
+		demonstrated in the following example.
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/bitmap/setImageBitmap.java" />
 		</programlisting>
-	</para>
+	
 
 
 
 
-</section>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>JSON in Android - Tutorial</title>
+		<title>JSON in Android - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -16,15 +16,15 @@
 		<pubdate>15.09.2014</pubdate>
 		<releaseinfo>
 
-			<para>Version 1.4	</para>
+			Version 1.4	
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>JSON with Android</title>
-			<para> This article describes how to process JSON within Android. It
+			<title>JSON with Android
+			 This article describes how to process JSON within Android. It
 				is
 				based on Eclipse 4.4, Java 1.6 and Android 4.4.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

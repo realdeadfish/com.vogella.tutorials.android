@@ -18,7 +18,7 @@
 		_
 
 		It is also recommended turning of the animation on the Android device which is used for testing. _
-	</section>
+	
 	<section id="uiautomator_using3">
 		<title>Location of your tests_
 		
@@ -26,7 +26,7 @@
 			_app/src/androidTest_
 			folder.
 		_
-	</section>
+	
 
 	<section id="uiautomator_using4">
 		<title>Wrting test_
@@ -36,5 +36,4 @@
 			test runner and use
 			`ActivityTestRule` to configure itself. 
 		_
-	</section>
-</section>
+	

@@ -1,8 +1,8 @@
 <section id="androidsecurity" role="wrapper">
-	<title>Security and permissions</title>
+	<title>Security and permissions
 	<section id="androidsecurity_general">
-		<title>Security concept in Android</title>
-		<para>
+		<title>Security concept in Android
+		
 			The Android system installs every Android application with a
 			unique user and group ID. Each
 			application file is
@@ -12,16 +12,16 @@
 			addition, each Android
 			application is started in its own
 			process.
-		</para>
-		<para>
+		
+		
 			Therefore, by means of the underlying Linux kernel,
 			every Android
 			application is
 			isolated from other
 			running
 			applications.
-		</para>
-		<para>
+		
+		
 			If data should be shared, the application must do this
 			explicitly via an Android component which handles the
 			sharing of the
@@ -29,11 +29,11 @@
 			e.g.,
 			via a service
 			or a content provider.
-		</para>
-	</section>
+		
+	
 	<section id="androidsecurity_permissions">
-		<title>Permission concept in Android</title>
-		<para>Android contains a permission system and predefined
+		<title>Permission concept in Android
+		Android contains a permission system and predefined
 			permissions
 			for certain tasks. Every application can request
 			required
@@ -43,8 +43,8 @@
 			that it
 			requires access to
 			the Internet.
-		</para>
-		<para> Permissions have different levels. Some permissions are
+		
+		 Permissions have different levels. Some permissions are
 			automatically granted by the Android system, some are
 			automatically
 			rejected. In most cases the requested permissions are presented
@@ -55,10 +55,10 @@
 			to
 			decide if
 			these permissions shall be given to the application.
-		</para>
+		
 
 
-		<para>
+		
 			If the user denies a required permission, the related
 			application cannot be
 			installed. The check of
@@ -69,17 +69,17 @@
 			cannot be denied or granted
 			after the
 			installation.
-		</para>
+		
 
-		<para>
+		
 			An Android application declares the required permissions in its
 			<filename>AndroidManifest.xml</filename>
 			configuration file. It can also define additional permissions which
 			it can use to restrict access to certain
 			components.
-		</para>
+		
 		<note>
-			<para>
+			
 				Not all users pay attention to the required permissions
 				during
 				installation. But some
@@ -87,18 +87,17 @@
 				negative reviews
 				on
 				Google Play if they believe the application is too invasive.
-			</para>
+			
 		</note>
-	</section>
+	
 
 	<section id="androidsecurity_runtime_permissions">
-		<title>Runtime permissions</title>
-		<para>
+		<title>Runtime permissions
+		
 			Android 6.0 Marshmallow (API 23) introduced a new runtime permission model. If your application targets Android 6.0,
 			you must use the new permissions model. See
-			<ulink url="https://developer.android.com/preview/features/runtime-permissions.html">Official documentation</ulink>
+			https://developer.android.com/preview/features/runtime-permissions.html[Official documentation]
 			for details.
-		</para>
-	</section>
+		
+	
 
-</section>

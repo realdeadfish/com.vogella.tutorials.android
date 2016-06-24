@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android SQLite database and content provider - Tutorial</title>
+		<title>Android SQLite database and content provider - Tutorial
 		<subtitle>Based on Android 4.3</subtitle>
 		<author>
 			<firstname>Lars</firstname>
@@ -17,24 +17,24 @@
 		</copyright>
 		<pubdate>19.08.2014</pubdate>
 		<releaseinfo>
-			<para>Version 5.0</para>
+			Version 5.0
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Using the Android SQLite Database</title>
-			<para> This tutorial describes how to use the SQLite database in
+			<title>Using the Android SQLite Database
+			 This tutorial describes how to use the SQLite database in
 				Android applications. It also demonstrates how to use existing
 				ContentProvider and how to define new ones. It also demonstrates the
 				usage of the Loader framework which allows to load data
 				asynchronously.
-			</para>
-			<para>
+			
+			
 				The tutorial is
 				based on
 				Eclipse 4.2, Java 1.6
 				and
 				Android 4.2.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 		<?dbhtml-include href="../../web/kindle/androidsqlite.txt"?>

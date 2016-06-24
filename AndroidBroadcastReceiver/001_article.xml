@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android BroadcastReceiver - Tutorial</title>
+		<title>Android BroadcastReceiver - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -17,14 +17,14 @@
 		</copyright>
 		<pubdate>03.03.2016</pubdate>
 		<releaseinfo>
-			<para>Version 3.0</para>
+			Version 3.0
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Using Broadcast receivers in Android</title>
-			<para>
+			<title>Using Broadcast receivers in Android
+			
 				This tutorial describes how to create and consume broadcast receivers in Android.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

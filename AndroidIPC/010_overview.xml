@@ -1,47 +1,46 @@
 <section id="ipc">
-	<title>Parceable</title>
-	<para>
+	<title>Parceable
+	
 		A
-		<wordasword>Parceable</wordasword>
+		_Parceable_
 		is the Android implementation of the Java Serializable. As it assume a
 		certain structure and way of processing it is relatively fast compared
 		to the standard Java serialization.
-	</para>
-	<para>
+	
+	
 		To allow your custom object to be parsed to another component they
 		need to implement the
-		<code>android.os.Parcelable</code>
+		`android.os.Parcelable`
 		interface. It must also provide a static final method called
-		<code>CREATOR</code>
+		`CREATOR`
 		which must implement the
-		<code>Parcelable.Creator</code>
+		`Parcelable.Creator`
 		interface.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/parcel/Student.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>Once you have defined this, you can put it into the extra of an
-		intent.</para>
-	<para>
+	Once you have defined this, you can put it into the extra of an
+		intent.
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/parcel/intent.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>To access the parcel on the other side, you can use the following
-		example code.</para>
-	<para>
+	To access the parcel on the other side, you can use the following
+		example code.
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/parcel/getParcel.java" />
 		</programlisting>
-	</para>
+	
 
 
 
-</section>

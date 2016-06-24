@@ -1,108 +1,108 @@
 <section id="listactivity" role="wrapper">
-	<title>ListActivity and ListFragment</title>
+	<title>ListActivity and ListFragment
 	<section id="listactivity_overview">
-		<title>Default container for using ListView</title>
-		<para>
+		<title>Default container for using ListView
+		
 			Android provides specialized fragment and activity classes to
 			simplify list
 			handling.
-		</para>
-		<para>
+		
+		
 			The classes are the
-			<code>ListActivity</code>
+			`ListActivity`
 			class if you want to use lists in activities and the
-			<code>ListFragment</code>
+			`ListFragment`
 			class if you want to use lists in fragments.
-		</para>
-		<para>
+		
+		
 			You do not have to assign a layout to these elements. If you do
 			not define a layout, the activity or fragment contains a
 			single
-			<code>ListView</code>
+			`ListView`
 			by default.
-			<code>ListActivity</code>
+			`ListActivity`
 			and
-			<code>ListFragment</code>
+			`ListFragment`
 			also allow you to override
 			a
-			<code>onListItemClick()</code>
+			`onListItemClick()`
 			method for handling selection of list items.
-		</para>
-		<para>
+		
+		
 			Both classes allow you to set the adapter to the default
-			<code>ListView</code>
+			`ListView`
 			via the
-			<code>setListAdapter()</code>
+			`setListAdapter()`
 			method.
-		</para>
+		
 
-		<para>
+		
 			The following example code shows a simple
-			<code>ListFragment</code>
+			`ListFragment`
 			implementation.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/fragmentslist/MyListFragment.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			The next example code demonstrates the usage of a
-			<code>ListActivity</code>
+			`ListActivity`
 			.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/MyListActivity.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
 	<section id="listactivity_layout">
-		<title>ListActivity and custom layout</title>
-		<para>
+		<title>ListActivity and custom layout
+		
 			You can use a custom layout with
-			<code>ListActivity</code>
+			`ListActivity`
 			or
-			<code>ListFragment</code>
+			`ListFragment`
 			. In this case the fragment or activity searches in the provided
 			layout for a
-			<code>ListView</code>
+			`ListView`
 			with the pre-defined
-			<code>android:id</code>
+			`android:id`
 			attribute set to
-			<code>@android:id/list</code>
+			`@android:id/list`
 			. This usage is demonstrated by the following code snippet.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/lists/listid.xml" />
 			</programlisting>
-		</para>
+		
 		<warning>
-			<para>
+			
 				If you do not use this ID or do not include a
-				<code>ListView</code>
+				`ListView`
 				into your layout, the application crashes once you try to display
 				the activity or the fragment.
-			</para>
+			
 		</warning>
-	</section>
+	
 	<section id="listactivity_emptyview">
-		<title>Placeholder for an empty list</title>
-		<para>
+		<title>Placeholder for an empty list
+		
 			You can also use a view with the
-			<code>@android:id/empty</code>
+			`@android:id/empty`
 			ID in your layout. The corresponding activity and fragment shows this
 			view automatically if the
-			<code>ListView</code>
+			`ListView`
 			is empty and hides it otherwise.
 			For example, you could
 			display
@@ -110,7 +110,6 @@
 			error message
 			in such
 			a view.
-		</para>
-	</section>
+		
+	
 
-</section>

@@ -21,7 +21,7 @@
 			_implicit intents_
 			).
 		
-	</section>
+	
 
 	<section id="intents_explicit">
 		<title>Explicit Intents
@@ -55,7 +55,7 @@
 			application are controlled by the application
 			developer.
 		
-	</section>
+	
 
 	<section id="intents_implicit">
 		<title>Implicit Intents
@@ -104,6 +104,6 @@
 			<xref linkend="intents_filter" />
 			for details.
 		
-	</section>
+	
 
-</section>
+

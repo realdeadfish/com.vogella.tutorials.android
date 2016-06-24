@@ -1,8 +1,8 @@
 <section id="pendingintent">
-	<title>Pending Intent</title>
-	<para>
+	<title>Pending Intent
+	
 		A
-		<wordasword>pending intent</wordasword>
+		_pending intent_
 		is
 		a token that you give to another
 		application
@@ -16,22 +16,21 @@
 		execute
 		a
 		predefined piece of code.
-	</para>
-	<para>
+	
+	
 		To perform a broadcast
 		via a
 		pending intent, get a
-		<code>PendingIntent</code>
+		`PendingIntent`
 		via
 		the
-		<code>getBroadcast()</code>
+		`getBroadcast()`
 		method of the
-		<code>PendingIntent</code>
+		`PendingIntent`
 		class.
 		To perform an activity via a
 		pending intent, you receive the
 		activity via
-		<code>PendingIntent.getActivity()</code>
+		`PendingIntent.getActivity()`
 		.
-	</para>
-</section>
+	

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Using animations in Android application - Tutorial</title>
+		<title>Using animations in Android application - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -18,15 +18,15 @@
 			21.07.2015
 		</pubdate>
 		<releaseinfo>
-			<para>Version 2.9	</para>
+			Version 2.9	
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Android Property Animation API</title>
-			<para> This tutorial describes how to use Animations in Android. The
+			<title>Android Property Animation API
+			 This tutorial describes how to use Animations in Android. The
 				tutorial is
 				based on Android Studio and Android 5.1.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

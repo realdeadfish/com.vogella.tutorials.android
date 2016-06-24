@@ -1,177 +1,176 @@
 <section id="animations" role="wrapper">
-	<title>Android Animations</title>
+	<title>Android Animations
 	<section id="animations_overview">
-		<title>Using animations</title>
-		<para>
+		<title>Using animations
+		
 			Android 3.0 introduced the
-			<wordasword>Properties Animation API</wordasword>
+			_Properties Animation API_
 			which allow to change object properties over a predefined
 			time
 			interval.
-		</para>
-		<para>
+		
+		
 			The API allows to define for arbitrary object
 			properties a start and
 			end value and apply a time-based change to
 			this attribute. This API
 			can be applied on any Java object not only on
-			<code>Views</code>
+			`Views`
 			.
-		</para>
-	</section>
+		
+	
 	<section id="animations_animator">
-		<title>Animator and AnimatorListener</title>
-		<para>
+		<title>Animator and AnimatorListener
+		
 			The superclass of the animation API is the
-			<code>Animator</code>
+			`Animator`
 			class. Typically the
-			<code>ObjectAnimator</code>
+			`ObjectAnimator`
 			class is used to modify the attributes of an object.
-		</para>
-		<para>
+		
+		
 			You can also add an
-			<code>AnimatorListener</code>
+			`AnimatorListener`
 			class to your
-			<code>Animator</code>
+			`Animator`
 			class. This listener is called in the different phases of the
 			animation. You can use this listener to perform actions before or
 			after a certain animation, e.g. add or remove a
-			<code>View</code>
+			`View`
 			from a
-			<code>ViewGroup</code>
+			`ViewGroup`
 			.
-		</para>
-	</section>
+		
+	
 
 
 
 	<section id="animations_viewpropertyanimator">
-		<title>ViewPropertyAnimator</title>
-		<para>
+		<title>ViewPropertyAnimator
+		
 			The
-			<code>ViewPropertyAnimator</code>
+			`ViewPropertyAnimator`
 			class introduced in Android 3.1 provides a simpler access to typical
 			animations which are performed on
 			views.
-		</para>
-		<para>
+		
+		
 			The
-			<code>animate()</code>
+			`animate()`
 			method on a
 			view
 			returns the
-			<code>ViewPropertyAnimator</code>
+			`ViewPropertyAnimator`
 			object. This object allows
 			to perform simultaneous animations. It
 			has a
 			fluent API and allows
 			setting
 			the duration of the animation.
-		</para>
-		<para>
+		
+		
 			The target of
-			<code>ViewPropertyAnimator</code>
+			`ViewPropertyAnimator`
 			is to provide a very simple API for typical animations.
-		</para>
-		<para>The following code shows an example of the usage of this method.
-		</para>
-		<para>
+		
+		The following code shows an example of the usage of this method.
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/viewproperty/Test.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			For performance optimization you can also let
-			<code>ViewPropertyAnimator</code>
+			`ViewPropertyAnimator`
 			use a hardware layout.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/viewproperty/TestHardware.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			You can also directly define a
-			<code>Runnable</code>
+			`Runnable`
 			to be executed at the start and the end of the animation.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/viewproperty/TestLayoutActions.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The
-			<code>setInterpolator()</code>
+			`setInterpolator()`
 			allows to define an object of type
-			<code>TimeInterpolator</code>
+			`TimeInterpolator`
 			which defines the change of the value over time. The standard is
 			linear. The Android platform
 			defines a few default ones as for example
-			<code>AccelerateDecelerateInterpolator</code>
+			`AccelerateDecelerateInterpolator`
 			where the rate of change starts and ends slowly but accelerates
 			through the middle.
-		</para>
-		<para>
+		
+		
 			Via the
-			<code>setEvaluator</code>
+			`setEvaluator`
 			method you can set an object of type
-			<code>TypeEvaluator</code>
+			`TypeEvaluator`
 			which allow you to create animations on arbitrary property
 			types, by
 			providing custom evaluators for types that
 			are not automatically
 			understood and used by the animation system.
-		</para>
+		
 
 
-	</section>
+	
 
 
 	<section id="animations_layoutanimation">
-		<title>Layout animations</title>
-		<para>
+		<title>Layout animations
+		
 			The
-			<code>LayoutTransition</code>
+			`LayoutTransition`
 			class allows setting animations on a layout container and a change on
 			the
 			view hierarchy
 			of this container will be animated.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/layout/LayoutAnimations.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 	<section id="animations_activityanimations">
-		<title>Animations for Activity transition</title>
-		<para>
+		<title>Animations for Activity transition
+		
 			Animations can be applied to
-			<code>Views</code>
+			`Views`
 			but it is also possible to apply them on the transition between
 			activities.
-		</para>
-		<para>
+		
+		
 			The
-			<code>ActivityOptions</code>
+			`ActivityOptions`
 			class
 			allows defining defaults or customer animations.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/activities/ActivityAnimation.java" />
 			</programlisting>
-		</para>
+		
 
 
-	</section>
+	
 
-</section>

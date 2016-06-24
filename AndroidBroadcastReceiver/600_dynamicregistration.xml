@@ -1,111 +1,111 @@
 <section id="dynamicreceiverregistration" role="wrapper">
-	<title>Dynamic broadcast receiver registration</title>
+	<title>Dynamic broadcast receiver registration
 	<section id="broadcastreceiver_deregister">
-		<title>Dynamically registered receiver</title>
-		<para>
+		<title>Dynamically registered receiver
+		
 			Receiver can be registered via the Android manifest file.
 			You can also
 			register and unregister
 			a receiver at runtime
 			via the
-			<code>Context.registerReceiver()</code>
+			`Context.registerReceiver()`
 			and
-			<code>Context.unregisterReceiver()</code>
+			`Context.unregisterReceiver()`
 			methods.
-		</para>
+		
 
 		<warning>
-			<para>
+			
 				Do not forget to unregister a dynamically registered
-				<wordasword>receiver</wordasword>
+				_receiver_
 				by using
-				<code>Context.unregisterReceiver()</code>
+				`Context.unregisterReceiver()`
 				method.
 				If you forget this, the Android system reports a
-				<code>leaked broadcast receiver</code>
+				`leaked broadcast receiver`
 				error.
 				For instance, if you registered a receive in
-				<code>onResume()</code>
+				`onResume()`
 				methods of
 				your activity, you should unregister it in the
-				<code>onPause()</code>
+				`onPause()`
 				method.
-			</para>
+			
 		</warning>
-	</section>
+	
 
 	<section id="broadcastreceiver_packagemanager">
-		<title>Using the package manager to disable static receivers</title>
-		<para>
+		<title>Using the package manager to disable static receivers
+		
 			You can use the
-			<code>PackageManager</code>
+			`PackageManager`
 			class to enable or disable receivers registered in your
 			<filename>AndroidManifest.xml</filename>
 			file.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/packagemanager/register.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 	<section id="broadcastreceiver_sticky">
-		<title>Sticky (broadcast) intents</title>
-		<para>
+		<title>Sticky (broadcast) intents
+		
 			An intent to trigger a receiver (
-			<wordasword>broadcast intent</wordasword>
+			_broadcast intent_
 			)
 			is not available anymore after it was sent
 			and processed by the
 			system.
 			If you use the
-			<code>sendStickyBroadcast(Intent)</code>
+			`sendStickyBroadcast(Intent)`
 			method, the corresponding
-			<wordasword>intent</wordasword>
+			_intent_
 			is sticky, meaning the intent
 			you are sending stays around after the
 			broadcast is complete.
-		</para>
+		
 
-		<para>
+		
 			The Android system uses sticky broadcast for certain system
 			information. For example, the battery status is send as sticky
 			intent
 			and
 			can get received at any time. The following example demonstrates
 			that.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/sticky/check.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			You can
 			retrieve that data
 			through the return value of
-			<code>registerReceiver(BroadcastReceiver,
+			`registerReceiver(BroadcastReceiver,
 				IntentFilter)
-			</code>
+			`
 			. This also works for a null
-			<code>BroadcastReceiver</code>
+			`BroadcastReceiver`
 			.
-		</para>
-		<para>
+		
+		
 			In all other ways,
 			this behaves just as
-			<code>sendBroadcast(Intent)</code>
+			`sendBroadcast(Intent)`
 			.
-		</para>
+		
 
-		<para>
+		
 			Sticky broadcast intents
 			typically require special permissions.
-		</para>
-	</section>
+		
+	
 
-</section>
+

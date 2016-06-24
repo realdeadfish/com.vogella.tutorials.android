@@ -1,47 +1,46 @@
 <section id="widget_serviceupdates">
-	<title>Exercise: Update widget via a service</title>
-	<para>
+	<title>Exercise: Update widget via a service
+	
 		The following will demonstrate the usage of a service to update
 		the widget.
-	</para>
-	<para>
+	
+	
 		Create the following
-		<code>UpdateWidgetService</code>
+		`UpdateWidgetService`
 		class in your project.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/update/UpdateWidgetService.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Add this class as a
-		<code>Service</code>
+		`Service`
 		to your
 		<filename>AndroidManifest.xml</filename>
 		file.
-	</para>
-	<para>
+	
+	
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/update/service.xml" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Change
-		<code>MyWidgetProvider</code>
+		`MyWidgetProvider`
 		to the following. It will now only construct the service and start it.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/update/MyWidgetProvider.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Once called, this service will update all widgets. You can
 		click
 		on one of the widgets to update all widgets.
-	</para>
-</section>
+	

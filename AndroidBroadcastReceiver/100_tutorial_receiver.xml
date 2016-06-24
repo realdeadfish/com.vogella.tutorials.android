@@ -1,8 +1,8 @@
 <section id="tutorial_receiver" role="wrapper">
-	<title>Exercise: Register a receiver for incoming phone calls</title>
+	<title>Exercise: Register a receiver for incoming phone calls
 	<section id="tutorial_receiver1">
-		<title>Target</title>
-		<para>
+		<title>Target
+		
 			In this exercise you define a broadcast receiver which listens
 			to telephone
 			state
@@ -11,65 +11,64 @@
 			receiver
 			will be
 			notified and log a message.
-		</para>
-	</section>
+		
+	
 	<section id="tutorial_receiver2">
-		<title>Create project</title>
-		<para>
+		<title>Create project
+		
 			Create a new project called
-			<code>de.vogella.android.receiver.phone</code>
+			`de.vogella.android.receiver.phone`
 			. Also create an activity.
-		</para>
+		
 		<tip>
-			<para>
+			
 				Remember that your receiver is only called if the user started
 				it once. This requires an activity.
-			</para>
+			
 		</tip>
 
-	</section>
+	
 	<section id="tutorial_receiver3">
-		<title>Implement receiver for the phone event</title>
-		<para>
+		<title>Implement receiver for the phone event
+		
 			Create the
-			<code>MyPhoneReceiver</code>
+			`MyPhoneReceiver`
 			class.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/receiver/MyPhoneReceiver.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 	<section id="tutorial_receiver4">
-		<title>Request permission</title>
-		<para>
+		<title>Request permission
+		
 			Add the
-			<code>android.permission.READ_PHONE_STATE</code>
+			`android.permission.READ_PHONE_STATE`
 			permission to your manifest file which allows you to listen to state
 			changes in your receiver. Also Register your receiver in your
 			manifest
 			file. The resulting manifest should be similar to the
 			following listing.
-		</para>
-		<para>
+		
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/receiver/AndroidManifest.xml" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 	<section id="tutorial_receiver5">
-		<title>Validate implementations</title>
-		<para>
+		<title>Validate implementations
+		
 			Install your application and simulate a phone call via the
 			Android Device Monitor. Validate that your receiver is
 			called and logs
 			a message
 			to
 			the
-			<code>LogCat</code>
+			`LogCat`
 			view.
-		</para>
-	</section>
+		
+	
 
-</section>

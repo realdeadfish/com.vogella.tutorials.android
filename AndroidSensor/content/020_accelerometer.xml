@@ -1,36 +1,35 @@
 <section id="accelerometer">
-	<title>Tutorial: Accelerometer</title>
-	<para>
+	<title>Tutorial: Accelerometer
+	
 		We will build an application which will change its background color
 		if it is shuffled.
 		Create a new Android project called
-		<wordasword>de.vogella.android.sensor</wordasword>
+		_de.vogella.android.sensor_
 		with
 		an
-		<wordasword>activity</wordasword>
+		_activity_
 		called
-		<wordasword>SensorTestActivity</wordasword>.
-	</para>
-	<para>
+		_SensorTestActivity_.
+	
+	
 		Change your layout file
 		to the following code.
-	</para>
-	<para>
+	
+	
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/accelerometer/main.xml" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Change your
-		<wordasword>activity</wordasword>
+		_activity_
 		class
 		to the following code.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/accelerometer/SensorTestActivity.java" />
 		</programlisting>
-	</para>
-</section>
+	

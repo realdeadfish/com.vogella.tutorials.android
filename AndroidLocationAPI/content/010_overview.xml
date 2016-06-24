@@ -1,8 +1,8 @@
 <section id="locationapi">
-	<title>Android Location API</title>
+	<title>Android Location API
 	<section id="locationapi_overview">
-		<title>Determine the current geolocation</title>
-		<para>
+		<title>Determine the current geolocation
+		
 			Most
 			Android
 			devices allow to determine the current geolocation.
@@ -14,23 +14,23 @@
 			module, via cell
 			tower
 			triangulation or via wifi networks.
-		</para>
-		<para>
+		
+		
 			Android contains the
-			<code>android.location</code>
+			`android.location`
 			package which provides
 			the
 			API to
 			determine the
 			current geo
 			position.
-		</para>
-	</section>
+		
+	
 	<section id="locationapi_locationmanager">
-		<title>LocationManager</title>
-		<para>
+		<title>LocationManager
+		
 			The
-			<code>LocationManager</code>
+			`LocationManager`
 			class
 			provides access to the Android location
 			service. This services
@@ -38,38 +38,38 @@
 			to access location providers, to register location update
 			listeners
 			and proximity alerts and more.
-		</para>
-	</section>
+		
+	
 	<section id="locationapi_locationprovider">
-		<title>LocationProvider</title>
-		<para>
+		<title>LocationProvider
+		
 			The
-			<code>LocationProvider</code>
+			`LocationProvider`
 			class
 			is the superclass of the different location providers
 			which
 			deliver the
 			information about the current location. This information
 			is stored in the
-			<code>Location</code>
+			`Location`
 			class.
-		</para>
+		
 
 
-		<para>
+		
 			The Android device might have several
-			<code>LocationProvider</code>
+			`LocationProvider`
 			available
 			and you can
 			select which one you want to use. In most cases
 			you have the
 			followng
-			<code>LocationProvider</code>
+			`LocationProvider`
 			available.
-		</para>
-		<para>
+		
+		
 			<table frame='all'>
-				<title>LocationProvider</title>
+				<title>LocationProvider
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*"/>
 					<colspec colname='c2' colwidth="3*"/>
@@ -105,101 +105,100 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
-	</section>
+		
+	
 	<section id="locationapi_criteria">
-		<title>Selecting LocationProvider via Criteria</title>
-		<para>
+		<title>Selecting LocationProvider via Criteria
+		
 			For a flexible selection of
 			the best location
 			provider use a
-			<code>Criteria</code>
+			`Criteria`
 			object, in which you can define how the provider should be
 			selected.
-		</para>
-		<para>
+		
+		
 			You can register a
-			<code>LocationListener</code>
+			`LocationListener`
 			object with the
-			<code>LocationManager</code>
+			`LocationManager`
 			class to receive periodic updates about the geoposition.
-		</para>
-	</section>
+		
+	
 	<section id="locationapi_proximity">
-		<title>Proximity Alert</title>
-		<para>
+		<title>Proximity Alert
+		
 			You can also register an
-			<code>Intent</code>
+			`Intent`
 			which allows to define a proximity alert, this alert will be
 			triggered if the device enters a area given by a longitude,
 			latitude
 			and radius (proximity alert).
-		</para>
-	</section>
+		
+	
 
 	<section id="locationapi_geocoding">
-		<title>Forward and reverse Geocoding</title>
-		<para>
+		<title>Forward and reverse Geocoding
+		
 			The
-			<code>Geocoder</code>
+			`Geocoder`
 			class allows to determine the geo-coordinates
 			(longitude, laditude)
 			for a given address and possible addresses for
 			given geo-coordinates.
-		</para>
-		<para>
+		
+		
 			This process is known as forward and reverse
 			geocoding. The
-			<code>Geocoder</code>
+			`Geocoder`
 			class uses an online Google service.
-		</para>
-	</section>
+		
+	
 	<section id="locationapi_security">
-		<title>Security</title>
-		<para>
+		<title>Security
+		
 			If you want to access the GPS sensor, you need the
-			<code>ACCESS_FINE_LOCATION</code>
+			`ACCESS_FINE_LOCATION`
 			permission. Otherwise you need the
-			<code>ACCESS_COARSE_LOCATION</code>
+			`ACCESS_COARSE_LOCATION`
 			permission.
-		</para>
+		
 
-	</section>
+	
 
 	<section id="checklocationapi">
-		<title>Prompt the user to Enabled GPS</title>
-		<para>The user can decide if the GPS is enabled or not. </para>
-		<para>
+		<title>Prompt the user to Enabled GPS
+		The user can decide if the GPS is enabled or not. 
+		
 			You can find out, if a LocationManager is enabled via the
-			<code>isProviderEnabled()</code>
+			`isProviderEnabled()`
 			method. If its not enabled you can send the user to the settings via
 			an
-			<code>Intent</code>
+			`Intent`
 			with the
-			<code>Settings.ACTION_LOCATION_SOURCE_SETTINGS</code>
+			`Settings.ACTION_LOCATION_SOURCE_SETTINGS`
 			action for the
-			<code>android.provider.Settings</code>
+			`android.provider.Settings`
 			class.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/snippets/checknetwork.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Typically you would open an
-			<code>AlarmDialog</code>
+			`AlarmDialog`
 			prompt the user
 			and if he wants to enable GPS or if the application
 			should be canceled.
-		</para>
+		
 
 
-		<para>You cannot enable the GPS directly in your code, the user has to
+		You cannot enable the GPS directly in your code, the user has to
 			do this.
-		</para>
+		
 
-	</section>
+	
 
-</section>

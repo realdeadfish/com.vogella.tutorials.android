@@ -1,101 +1,101 @@
 <section id="concurrency" role="wrapper">
-	<title>Background processing and lifecycle handling</title>
+	<title>Background processing and lifecycle handling
 	<section id="concurrency_lifecycle">
-		<title>Retaining state during configuration changes</title>
-		<para>
+		<title>Retaining state during configuration changes
+		
 			One challenge in using threads is to consider the
 			lifecycle of
 			the
 			application. The Android system may kill your
-			<wordasword>activity</wordasword>
+			_activity_
 			or trigger
 			a
 			configuration
 			change which will also restart your activity.
-		</para>
-		<para>
+		
+		
 			You also need to handle open
 			dialogs, as dialogs are always
 			connected
 			to the
-			<wordasword>activity</wordasword>
+			_activity_
 			which created
 			them. In case the activity gets
 			restarted
 			and you access
 			an existing
 			dialog you receive a
-			<code>View not
+			`View not
 				attached to
 				window manager
-			</code>
+			`
 			exception.
-		</para>
-		<para>
+		
+		
 			To save an object you can use the method
-			<code>onRetainNonConfigurationInstance()</code>
+			`onRetainNonConfigurationInstance()`
 			method. This method allows you to save one object if the activity will be
 			soon restarted.
-		</para>
-		<para>
+		
+		
 			To retrieve this object you can use the
-			<code>getLastNonConfigurationInstance()</code>
+			`getLastNonConfigurationInstance()`
 			method. This way can you can save an object, e.g. a running thread,
 			even if
 			the
-			<wordasword>activity</wordasword>
+			_activity_
 			is restarted.
-		</para>
-		<para>
+		
+		
 
-			<code>getLastNonConfigurationInstance()</code>
+			`getLastNonConfigurationInstance()`
 			returns null if the
-			<wordasword>activity</wordasword>
+			_activity_
 			is started the first time or if it has been finished via
 			the
 			finish()
 			method.
-		</para>
-		<para>
-			<code>onRetainNonConfigurationInstance()</code>
+		
+		
+			`onRetainNonConfigurationInstance()`
 			is deprecated as of API 13, it is recommended that you use
 			fragments
 			and the
-			<code>setRetainInstance()</code>
+			`setRetainInstance()`
 			method to retain data over configuration changes.
-		</para>
-	</section>
+		
+	
 
 	<section id="concurrency_lifecycleapplication">
-		<title>Using the application object to store objects</title>
-		<para>
+		<title>Using the application object to store objects
+		
 			If more than one object should be stored across
-			<wordasword>activities</wordasword>
+			_activities_
 			and configuration changes, you can implement
 			an
-			<code>Application</code>
+			`Application`
 			class for your Android application.
-		</para>
-		<para>
+		
+		
 			To use your application class
 			assign the
 			classname to the
 			<parameter>android:name</parameter>
 			attribute of your application.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/lifecycle/application.xml" />
 			</programlisting>
-		</para>
-		<para>The application class is automatically created by the Android
+		
+		The application class is automatically created by the Android
 			runtime and is available unless the whole application process is
 			terminated.
-		</para>
+		
 
-		<para>
+		
 			This class can be used to access objects
 			which should be
 			cross
@@ -103,32 +103,31 @@
 			available for the whole
 			application lifecycle. In
 			the
-			<code>onCreate()</code>
+			`onCreate()`
 			method
 			you can
 			create objects and make them
 			available via public fields
 			or
-			<code>getter</code>
+			`getter`
 			methods.
-		</para>
-		<para>
+		
+		
 			The
-			<code>onTerminate()</code>
+			`onTerminate()`
 			method in the application class
 			is only used for testing. If Android
 			terminates the process
 			in which your application is running all
 			allocated resources are
 			automatically released.
-		</para>
+		
 
 
-		<para>
+		
 			You can access the Application via the
-			<code>getApplication()</code>
+			`getApplication()`
 			method
 			in your activity.
-		</para>
-	</section>
-</section>
+		
+	

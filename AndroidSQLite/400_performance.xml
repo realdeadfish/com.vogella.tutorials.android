@@ -1,28 +1,28 @@
 <section id="performancesqlite">
-	<title>Performance</title>
-	<para>Changes in SQLite are ACID (atomic, consistent, isolated,
+	<title>Performance
+	Changes in SQLite are ACID (atomic, consistent, isolated,
 		durable). This means that every update, insert and delete operation is
 		ACID. Unfortunately this requires some overhead in the database
 		processing therefore you should wrap updates in the SQLite database in
 		an transaction and commit this transaction after several operations.
 		This can significantly improve performance.
-	</para>
-	<para>The following code demonstrates that performance optimization.
-	</para>
-	<para>
+	
+	The following code demonstrates that performance optimization.
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/performance/update.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		For larger data updates you should use the
-		<code>yieldIfContededSafely()</code>
+		`yieldIfContededSafely()`
 		method. SQLite locks the database during an transaction. With this
 		call, Android checks if someone else queries the data and if finish
 		automatically the transaction and opens a new one. This way the other
 		process can access the data in between.
-	</para>
+	
 
-</section>
+
 

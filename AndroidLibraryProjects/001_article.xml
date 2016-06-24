@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Creating libraries for Android applications - Tutorial</title>
+		<title>Creating libraries for Android applications - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -16,17 +16,17 @@
 		</copyright>
 		<pubdate>20.07.2015</pubdate>
 		<releaseinfo>
-			<para>Version 2.3</para>
+			Version 2.3
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Android Library Projects</title>
-			<para>
+			<title>Android Library Projects
+			
 				This tutorial describes how to create and use library projects
 				in Android. The
 				tutorial is
 				based on Android Studio.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

@@ -60,7 +60,7 @@
 			action. For example, you start a new activity or replace a
 			fragment in your layout.
 		
-	</section>
+	
 	<section id="actionbar_navigation_drawer_example">
 		<title>Example: Using the navigation drawer
 		
@@ -122,5 +122,4 @@
 		
 			Run the application and test your navigation drawer.
 		
-	</section>
-</section>
+	

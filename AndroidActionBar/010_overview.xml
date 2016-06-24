@@ -2,15 +2,11 @@
 	<title>Introduction to the toolbar
 	<section id="actionbar_actionbar">
 		<title>What is the toolbar (action bar)?
-		<indexterm>
-			<primary>Action Bar
+		(((Action Bar
 			</primary>
 			<see>Toolbar</see>
 		</indexterm>
-		<indexterm>
-			<primary>Toolbar
-			</primary>
-		</indexterm>
+		(((Toolbar)))
 		
 			The
 			_toolbar bar_
@@ -69,7 +65,7 @@
 			available in the application.
 		
 
-	</section>
+	
 	<section id="actionbar_example">
 		<title>Example
 
@@ -93,7 +89,7 @@
 				</textobject>
 			</mediaobject>
 		
-	</section>
+	
 	<section id="actionbar_libraries1">
 		<title>Action bar on devices lower than API 21
 		
@@ -113,7 +109,7 @@
 			.
 			See the following link for setting up the library v7
 			in your project:
-			<ulink url="http://developer.android.com/tools/support-library/setup.html">Setting up the support library</ulink>
+			http://developer.android.com/tools/support-library/setup.html[Setting up the support library]
 			.
 		
 		This section focuses on the description of using the toolbar
@@ -123,5 +119,4 @@
 			your application to an lower API version using the support library. 
 		
 
-	</section>
-</section>
+	

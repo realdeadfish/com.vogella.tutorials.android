@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android Live Wallpaper - Tutorial</title>
+		<title>Android Live Wallpaper - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -14,19 +14,19 @@
 		<pubdate>15.10.2012</pubdate>
 		<releaseinfo>
 
-			<para>Version 2.1	</para>
+			Version 2.1	
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Android Live Wallpaper</title>
-			<para> This tutorial describes the creation of live wallpapers for
+			<title>Android Live Wallpaper
+			 This tutorial describes the creation of live wallpapers for
 				Android. It is
 				based on Eclipse
 				4.2, Java 1.6 and
 				Android 4.1
 				(Ice Cream
 				Sandwich).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

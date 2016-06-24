@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android XML Processing with the XmlPullParser - Tutorial</title>
+		<title>Android XML Processing with the XmlPullParser - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -16,15 +16,15 @@
 		<pubdate>15.09.2014</pubdate>
 		<releaseinfo>
 
-			<para>Version 1.3	</para>
+			Version 1.3	
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>XML processing with Android</title>
-			<para> This article describes how to process XML with Android.
+			<title>XML processing with Android
+			 This article describes how to process XML with Android.
 				It is
 				based on Eclipse 4.4, Java 1.6 and Android 4.4.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

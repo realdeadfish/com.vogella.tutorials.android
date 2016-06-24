@@ -1,9 +1,8 @@
 <section id="prequiste">
-	<title>Prerequisites</title>
+	<title>Prerequisites
 
-	<para>
+	
 		The following assumes that you have already basic knowledge in
-		<ulink url="http://www.vogella.com/tutorials/Android/article.html"> Android development</ulink>
+		http://www.vogella.com/tutorials/Android/article.html[ Android development]
 		.
-	</para>
-</section>
+	

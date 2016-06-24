@@ -1,8 +1,8 @@
 <section id="todo" role="wrapper">
-	<title>Tutorial: SQLite, custom ContentProvider and Loader</title>
+	<title>Tutorial: SQLite, custom ContentProvider and Loader
 	<section id="todo_intro">
-		<title>Overview</title>
-		<para>
+		<title>Overview
+		
 			The following demo is also available in the Android Market. To allow
 			more users to play with the app, it has been downported to Android
 			2.3.
@@ -13,12 +13,12 @@
 			market. Please note that the app looks and behaves differently
 			due to
 			the different Android versions, e.g. you have an
-			<code>OptionMenu</code>
+			`OptionMenu`
 			instead of the
-			<wordasword>ActionBar</wordasword>
+			_ActionBar_
 			and the theme is different.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/AndroidTodoQRCode.png"/>
@@ -27,8 +27,8 @@
 					<phrase></phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			We will create a "To-do" application which
 			allows
 			the user to enter
@@ -39,40 +39,40 @@
 			SQLite
 			database and
 			accessed via a
-			<code>ContentProvider</code>
+			`ContentProvider`
 			.
-		</para>
-		<para>The tasks are called "todo items" or "todos" in this tutorial.
-		</para>
-		<para>
+		
+		The tasks are called "todo items" or "todos" in this tutorial.
+		
+		
 			The application consists
 			out of
 			two
-			<wordasword>activities</wordasword>
+			_activities_
 			, one for
 			seeing a list of all todo items and
 			one for
 			creating and
 			changing a
 			specific todo item. Both
-			<wordasword>activities</wordasword>
+			_activities_
 			will
 			communicate via
-			<wordasword>Intents</wordasword>
+			_Intents_
 			.
-		</para>
-		<para>
+		
+		
 			To asynchronously load and manage the
-			<code>Cursor</code>
+			`Cursor`
 			the main
-			<wordasword>activity</wordasword>
+			_activity_
 			will use a
-			<code>Loader</code>
+			`Loader`
 			.
-		</para>
-		<para> The resulting application will look similar to the following.
-		</para>
-		<para>
+		
+		 The resulting application will look similar to the following.
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/database1.png"/>
@@ -81,8 +81,8 @@
 					<phrase>Todo Example application OverviewActivity</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/database2.png" scale="40"/>
@@ -91,236 +91,236 @@
 					<phrase>Todo Example application DetailsActivity</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
 
-	</section>
+	
 
 	<section id="todo_project">
-		<title>Project</title>
-		<para>
+		<title>Project
+		
 			Create the project
-			<code>de.vogella.android.todos</code>
+			`de.vogella.android.todos`
 			with the
-			<wordasword>activity</wordasword>
+			_activity_
 			called
-			<code>TodosOverviewActivity</code>
+			`TodosOverviewActivity`
 			. Create another
-			<wordasword>activity</wordasword>
+			_activity_
 			called
-			<code>TodoDetailActivity</code>
+			`TodoDetailActivity`
 			.
-		</para>
+		
 
-	</section>
+	
 
 
 
 	<section id="todo_database">
-		<title>Database classes</title>
-		<para>
+		<title>Database classes
+		
 			Create the
 			package
-			<code>de.vogella.android.todos.database</code>
+			`de.vogella.android.todos.database`
 			.
 			This package
 			will store
 			the
 			classes for the database
 			handling.
-		</para>
-		<para>
+		
+		
 			As said earlier I consider having one separate class per table
 			as
 			best practice. Even though we have only one table in this example
 			we
 			will follow this practice. This way we are prepared in case our
 			database schema grows.
-		</para>
-		<para>
+		
+		
 			Create the following class. This class also contains constants
 			for the
 			table name and the columns.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/database/TodoTable.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Create the following
-			<code>TodoDatabaseHelper</code>
+			`TodoDatabaseHelper`
 			class. This class extends
-			<code>SQLiteOpenHelper</code>
+			`SQLiteOpenHelper`
 			and calls the static methods of the
-			<code>TodoTable</code>
+			`TodoTable`
 			helper class.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/database/TodoDatabaseHelper.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			We will use a
-			<code>ContentProvider</code>
+			`ContentProvider`
 			for accessing the database; we will not write a data access object
 			(DAO) as we did in the previous SQlite example.
-		</para>
-	</section>
+		
+	
 	<section id="todo_contentprovider">
-		<title>Create ContentProvider</title>
-		<para>
+		<title>Create ContentProvider
+		
 			Create the package
-			<code>de.vogella.android.todos.contentprovider</code>
+			`de.vogella.android.todos.contentprovider`
 			.
-		</para>
-		<para>
+		
+		
 			Create the following
-			<code>MyTodoContentProvider</code>
+			`MyTodoContentProvider`
 			class which extends
-			<code>ContentProvider</code>
+			`ContentProvider`
 			.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/todo/MyTodoContentProvider.java" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>
+		
 
-			<code>MyTodoContentProvider</code>
+			`MyTodoContentProvider`
 			implements
-			<code>update()</code>
+			`update()`
 			,
-			<code>insert()</code>
+			`insert()`
 			,
-			<code>delete()</code>
+			`delete()`
 			and
-			<code>query()</code>
+			`query()`
 			methods. These methods map more or less directly to the
-			<code>SQLiteDatabase</code>
+			`SQLiteDatabase`
 			interface.
-		</para>
-		<para>
+		
+		
 			It also has the
-			<code>checkColumns()</code>
+			`checkColumns()`
 			method to validate that a query only requests valid columns.
-		</para>
-		<para>
+		
+		
 			Register your
-			<code>ContentProvider</code>
+			`ContentProvider`
 			in your
 			AndroidManifest.xml file.
-		</para>
 		
-		<para>
+		
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/todo/AndroidManifestCP.xml" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
 	<section id="todo_resources">
-		<title>Resources</title>
+		<title>Resources
 
-		<para>
+		
 			Our application requires several resources.
 			First define a menu
-			<code>listmenu.xml
-			</code>
+			`listmenu.xml
+			`
 			in the folder
-			<code>res/menu</code>
+			`res/menu`
 			. If you use the Android resource wizard to create the "listmenu.xml"
 			file, the folder will be created
 			for you; if you create the file
 			manually you also need to create the
 			folder manually.
-		</para>
-		<para>
+		
+		
 			This XML file will be used to define the option menu in our
 			application. The
-			<code>android:showAsAction="always"</code>
+			`android:showAsAction="always"`
 			attribute will ensure that this menu entry is displayed in the
-			<wordasword>ActionBar</wordasword>
+			_ActionBar_
 			of our application.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/resources/listmenu.xml" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The user will be able to select the priority for the todo items. For
 			the priorities we create a string array. Create the
 			following file
-			<code>priority.xml</code>
+			`priority.xml`
 			in the
-			<code>res/values</code>
+			`res/values`
 			folder
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/resources/priority.xml" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Define also additional strings for the
 			application.
 			Edit
-			<code>strings.xml</code>
+			`strings.xml`
 			under
-			<code>res/values</code>
+			`res/values`
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/resources/strings.xml" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
 	<section id="todo_layout">
-		<title>Layouts</title>
-		<para>
+		<title>Layouts
+		
 			We will define three layouts. One will be used for the display of a
 			row
 			in the list, the other ones will be used by our
-			<wordasword>activities</wordasword>
+			_activities_
 			.
-		</para>
+		
 
-		<para>
-			The row layout refers to an icon called <wordasword>reminder</wordasword>.
+		
+			The row layout refers to an icon called _reminder_.
 			Paste an icon of
 			type "png" called
 			"reminder.png"
 			into your
-			<code>res/drawable</code>
+			`res/drawable`
 			folders (
-			<code>drawable-hdpi</code>
+			`drawable-hdpi`
 			,
-			<code>drawable-mdpi</code>
+			`drawable-mdpi`
 			,
-			<code>drawable-ldpi</code>
+			`drawable-ldpi`
 			)
-		</para>
-		<para>If you do not have an icon
+		
+		If you do not have an icon
 			available you can copy the icon created
 			by the Android wizard
 			(ic_launcher.png in the res/drawable* folders)
@@ -329,8 +329,8 @@
 			Android Developer Tools sometimes change the name of this generated
 			icon , so your file might not be called
 			"ic_launcher.png".
-		</para>
-		<para>
+		
+		
 			Alternatively you could
 			remove the
 			icon definition
@@ -341,122 +341,122 @@
 			the
 			next
 			step.
-		</para>
+		
 
-		<para>
+		
 			Create the
 			"todo_row.xml" layout file
 			in the folder
 			<filename class="directory">res/layout</filename>.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/layout/todo_row.xml" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Create the
-			<code>todo_list.xml</code>
+			`todo_list.xml`
 			layout file. This layout
 			defines how
 			the list looks like.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/layout/todo_list.xml" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>
+		
 			Create the
-			<code>todo_edit.xml</code>
+			`todo_edit.xml`
 			layout file. This layout will be used
 			to display and edit an
 			individual
 			todo item
 			in the
-			<code>TodoDetailActivity</code>
-			<wordasword>activity</wordasword>
+			`TodoDetailActivity`
+			_activity_
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/layout/todo_edit.xml" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
 	<section id="todo_activities">
-		<title>Activities</title>
-		<para>
+		<title>Activities
+		
 			Change the coding of your activities to the following.
 			First
-			<code>TodosOverviewActivity.java</code>
+			`TodosOverviewActivity.java`
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/todo/TodosOverviewActivity.java" />
 			</programlisting>
 
-		</para>
-		<para>
+		
+		
 			And
-			<code>TodoDetailActivity.java</code>
-		</para>
+			`TodoDetailActivity.java`
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/todo/TodoDetailActivity.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			The resulting
-			<code>AndroidManifest.xml</code>
+			`AndroidManifest.xml`
 			looks like the following.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/todo/AndroidManifest.xml" />
 			</programlisting>
-		</para>
-		<para>Please note
+		
+		Please note
 			that <![CDATA[android:windowSoftInputMode="stateVisible|adjustResize"]]>
 			is defined for the
-			<code>TodoDetailActivity</code>
+			`TodoDetailActivity`
 			. This makes the keyboard harmonize better with the widgets, but it
 			is
 			not required for this tutorial.
-		</para>
-	</section>
+		
+	
 
 
 	<section id="todo_run">
-		<title>Start your application</title>
-		<para> Start your application. You should be able to enter a new
+		<title>Start your application
+		 Start your application. You should be able to enter a new
 			todo
 			item
 			via the "Insert" button in the ActionBar.
-		</para>
+		
 
-		<para>
+		
 			An existing todo item can be deleted on the list via a
 			long
 			press.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/todo2.png" scale="60" />
@@ -465,13 +465,12 @@
 					<phrase>Deleting an todo item</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			To change an existing todo item, touch the corresponding row. This
 			starts the second
-			<wordasword>activity</wordasword>
+			_activity_
 			.
-		</para>
-	</section>
+		
+	
 
-</section>

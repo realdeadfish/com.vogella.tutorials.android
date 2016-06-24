@@ -1,11 +1,11 @@
 == resources_listview
 ListView Resources
-	<para>
-		<ulink url="https://github.com/renard314/ListView3d">ListView demo which uses 3D effects (GitHub)</ulink>
+	
+		https://github.com/renard314/ListView3d[ListView demo which uses 3D effects (GitHub)]
 		<ulink
-			url="https://developer.android.com/training/material/lists-cards.html">Google documentation about RecylerView</ulink>
-	</para>
-	<para>
-		<ulink url="https://github.com/renard314/ListView3d">ListView demo which uses 3D effects (Github)</ulink>
-	</para>
+			url="https://developer.android.com/training/material/lists-cards.html[Google documentation about RecylerView]
+	
+	
+		https://github.com/renard314/ListView3d[ListView demo which uses 3D effects (Github)]
+	
 

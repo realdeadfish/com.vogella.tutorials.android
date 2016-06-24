@@ -1,18 +1,18 @@
 
 <section id="drawables_9patch">
-	<title>9 Patch Drawables</title>
-	<para>
-		<wordasword>9 Patch drawables</wordasword>
+	<title>9 Patch Drawables
+	
+		_9 Patch drawables_
 		are
-		<wordasword>Drawables</wordasword>
+		_Drawables_
 		which have a one pixel additional border. On the top and
 		left you
 		define the area which should be scaled if the
-		<wordasword>Drawable</wordasword>
+		_Drawable_
 		is to small for the
 		view. This is the stretch area.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/9patchdrawable10.png"/>
@@ -22,32 +22,31 @@
 				<phrase></phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		On the right and bottom side you define the area where a text should
 		be
 		placed
 		if this
-		<code>Drawable</code>
+		`Drawable`
 		is used on a
 		view
 		which can write text on it, e.g. a Button.
-	</para>
-	<para>
+	
+	
 		The ADT supplies the
 		<parameter>draw9patch</parameter>
 		program in the
 		<filename>android-sdk/tools</filename>
 		installation folder, which makes it easy to
 		create
-		<wordasword>9 Patch drawables</wordasword>
+		_9 Patch drawables_
 		.
-	</para>
-	<para>
+	
+	
 		A nice online generator for 9 patch drawables can be found under the
 		following URL:
 		<ulink
-			url="http://android-ui-utils.googlecode.com/hg/asset-studio/dist/nine-patches.html">Simple Nine-patch generator</ulink>
+			url="http://android-ui-utils.googlecode.com/hg/asset-studio/dist/nine-patches.html[Simple Nine-patch generator]
 		.
-	</para>
-</section>
+	

@@ -1,13 +1,12 @@
 <section id="updates">
-	<title>Exercise: Add widget to the lockscreen</title>
-	<para>
+	<title>Exercise: Add widget to the lockscreen
+	
 		Enable your widget for the lock screen by adding the required info
 		to the widget metadata file.
-	</para>
-	<para>
+	
+	
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/lockscreen/add.xml" />
 		</programlisting>
-	</para>
-</section>
+	

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article lang="en">
 	<articleinfo>
-		<title>Using the Android Debug Bridge (adb) - Tutorial</title>
+		<title>Using the Android Debug Bridge (adb) - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -19,12 +19,12 @@
 
 		
 		<abstract id="abstract">
-			<title>Using the adb tools with Android</title>
-			<para> This tutorial describes how to use the adb tool to
+			<title>Using the adb tools with Android
+			 This tutorial describes how to use the adb tool to
 				access your
 				Android
 				device or Android virtual device (AVD).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

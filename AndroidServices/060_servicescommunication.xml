@@ -1,8 +1,8 @@
 <section id="servicecommunication" role="wrapper">
-	<title>Communication with services</title>
+	<title>Communication with services
 	<section id="servicecommunication_overview">
-		<title>Options for communication</title>
-		<para>
+		<title>Options for communication
+		
 			There are several possibilities for an
 			activity
 			to communicate
@@ -12,12 +12,12 @@
 			and vice versa. This section discusses the possible
 			approaches and provides
 			recommendation which to use.
-		</para>
-	</section>
+		
+	
 
 	<section id="servicecommunication_bundle">
-		<title>Using Intent data</title>
-		<para>
+		<title>Using Intent data
+		
 			In a simple scenario no direct communication is required.
 			The
 			service
@@ -27,12 +27,12 @@
 			by the content provider and no extra step in the service is
 			necessary. This approach works for local and services running in
 			their own process.
-		</para>
-	</section>
+		
+	
 
 	<section id="servicecommunication_receiver">
-		<title>Using receiver</title>
-		<para>
+		<title>Using receiver
+		
 			You can also use broadcast events and registered receivers for
 			the
 			communication.
@@ -45,9 +45,9 @@
 			sends outs corresponding
 			events. This is a very typical scenario, in which the service need to
 			signal to the activity that his processing has finished.
-		</para>
-		<para>This communication flow is depicted in the following graphic.</para>
-		<para>
+		
+		This communication flow is depicted in the following graphic.
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/service_receiver10.png"/>
@@ -57,28 +57,28 @@
 						communication</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 		<tip>
-			<para>
+			
 				Android provides the
-				<code>LocalBroadcastManager</code>
+				`LocalBroadcastManager`
 				class in the support library v4. This is a helper class to register
 				for
 				and send broadcasts of Intents to local objects within your
 				process. This approach improves security as the broadcast events
 				are only visible within your process and is faster than using
 				standard events.
-			</para>
+			
 		</tip>
-		<para>
+		
 			This approach works for local and services running in their own
 			process.
-		</para>
-	</section>
+		
+	
 
 	<section id="servicecommunication_localbind">
-		<title>Activity binding to local service</title>
-		<para>
+		<title>Activity binding to local service
+		
 			If the
 			service
 			is started in the same process as the
@@ -88,69 +88,69 @@
 			and
 			efficient way to communicate and recommended for activities
 			which need to have a fast communication layer with the service.
-		</para>
-		<para> This approach works for local services.</para>
-	</section>
+		
+		 This approach works for local services.
+	
 
 	<section id="servicecommunication_handler">
-		<title>Handler and ResultReceiver or Messenger</title>
-		<para>
+		<title>Handler and ResultReceiver or Messenger
+		
 			If the service should be communicating back to the
 			activity,
 			it can
 			receive an object of type
-			<code>Messenger</code>
+			`Messenger`
 			via the
-			<code>Intent</code>
+			`Intent`
 			data it receives from the
 			activity. If the
-			<code>Messenger</code>
+			`Messenger`
 			is bound to a
-			<code>Handler</code>
+			`Handler`
 			in the
 			activity,
 			the
-			<code>service</code>
+			`service`
 			can send objects of type
-			<code>Message</code>
+			`Message`
 			to the
 			activity.
-		</para>
-		<para>
+		
+		
 			A
-			<code>Messenger</code>
+			`Messenger`
 			is parcelable, which means it can be passed to another process and
 			you
 			can use this object to send
-			<code>Messages</code>
+			`Messages`
 			to the
-			<code>Handler</code>
+			`Handler`
 			in the
 			activity.
-		</para>
-		<para>
-			<code>Messenger</code>
+		
+		
+			`Messenger`
 			also provides the method
-			<code>getBinder()</code>
+			`getBinder()`
 			which allows passing a
-			<code>Messenger</code>
+			`Messenger`
 			to the
 			activity. The
 			activity
 			can therefore send
-			<code>Messages</code>
+			`Messages`
 			to the
 			service.
-		</para>
-		<para>
+		
+		
 			This approach works for local services running in their own
 			process.
-		</para>
-	</section>
+		
+	
 
 	<section id="servicecommunication_ipc">
-		<title>AIDL for services in a different process</title>
-		<para>
+		<title>AIDL for services in a different process
+		
 			To bind to a
 			service
 			which runs in a different process, you need to use
@@ -163,17 +163,16 @@
 			<filename>.aidl</filename>
 			file extension
 			and is only allowed to extend other AIDL files.
-		</para>
-		<para>
+		
+		
 			This approach is required if you need to bind to a service
 			running in
 			another process, i.e., if your service is consumed by other
 			Android applications.
-		</para>
-		<para>
+		
+		
 			You can find more information about this approach in the
-			<ulink url="http://developer.android.com/guide/components/aidl.html">
+			http://developer.android.com/guide/components/aidl.html">
 				Android developer documentation about AIDL</ulink>.
-		</para>
-	</section>
-</section>
+		
+	

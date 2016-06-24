@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <article>
 	<articleinfo>
-		<title>Android Studio and Android development tools installation - Tutorial</title>
+		<title>Android Studio and Android development tools installation - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -18,13 +18,13 @@
 		</copyright>
 		<pubdate>12.01.2015</pubdate>
 		<releaseinfo>
-			<para>Version 8.6</para>
+			Version 8.6
 		</releaseinfo>
 		<abstract id="abstract">
-			<title>How to install the development tools for Android development</title>
-			<para> This document describes how to install and configure the
+			<title>How to install the development tools for Android development
+			 This document describes how to install and configure the
 				Android development tools based on Android Studio.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="001_overview.xml" />

@@ -1,10 +1,10 @@
 <section id="listsactivity_layout">
-	<title>Exercise: ListActivity with custom layout</title>
-	<para> In our
+	<title>Exercise: ListActivity with custom layout
+	 In our
 		example your will define your layout for the rows and use
 		it in your adapter.
-	</para>
-	<para>
+	
+	
 		Create the
 		<filename>rowlayout.xml</filename>
 		layout file
@@ -12,30 +12,30 @@
 		<filename class="directory">res/layout</filename>
 		folder of
 		the
-		<code>de.vogella.android.listactivity</code>
+		`de.vogella.android.listactivity`
 		project.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/listlayout/rowlayout.xml" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		Change your
 		activity
 		so that is using the new layout.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/listlayout/MyListActivity.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/listlayout10.png"/>
@@ -45,6 +45,6 @@
 			</textobject>
 		</mediaobject>
 
-	</para>
-</section>
+	
+
 	

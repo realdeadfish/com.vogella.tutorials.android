@@ -1,8 +1,8 @@
 <section id="exercise_debugging" role="wrapper">
-	<title>Exercise: Debugging</title>
+	<title>Exercise: Debugging
 	<section id="exercise_debugging1">
-		<title>Import example project</title>
-		<para>
+		<title>Import example project
+		
 			Download the zip file from
 			http://www.vogella.com/download/androidtest/countries.zip and import
 			the Android project from
@@ -15,79 +15,78 @@
 				<guisubmenu>Existing Projects into Workspace</guisubmenu>
 			</menuchoice>
 			menu path.
-		</para>
+		
 
 
-	</section>
+	
 	<section id="exercise_debugging2">
-		<title>Debug the creation of the list items</title>
-		<para>After launching the application you suppose to see a list of
+		<title>Debug the creation of the list items
+		After launching the application you suppose to see a list of
 			countries registered
 			in the system. There is a bug in the
 			implementation which causes the
 			list to show
 			empty strings.
-		</para>
+		
 		<orderedlist>
 			<listitem>
-				<para>Launch the application normally.</para>
+				Launch the application normally.
 			</listitem>
 			<listitem>
-				<para>Realizing that their is a problem, you switch Debug mode on in
+				Realizing that their is a problem, you switch Debug mode on in
 					the DDMS
 					perspective.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>Put a breakpoint in MainActivity.onCreate(Bundle
+				Put a breakpoint in MainActivity.onCreate(Bundle
 					savedInstanceState) and
 					re-launch the activity.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para> Execute CountryUtils.getCountries() statement and check the
+				 Execute CountryUtils.getCountries() statement and check the
 					value of
 					"countries" variable. If you believe the value is
 					incorrect, use "Step into"
 					debug function to find the issue.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>Fix the issue.
-				</para>
+				Fix the issue.
+				
 			</listitem>
 			<listitem>
-				<para>Launch the application and make sure the list of countries is
+				Launch the application and make sure the list of countries is
 					shown correctly.
-				</para>
+				
 			</listitem>
 		</orderedlist>
-	</section>
+	
 
 	<section id="exercise_debugging4">
-		<title>Debug list item click behavior</title>
-		<para>If you click an item in the list, application will show a toast
+		<title>Debug list item click behavior
+		If you click an item in the list, application will show a toast
 			message with the
 			name of the country clicked. There is a bug in the
 			applications which
 			makes this
 			function not working properly.
-		</para>
+		
 		<orderedlist>
 			<listitem>
-				<para>Launch the application normally.</para>
+				Launch the application normally.
 			</listitem>
 			<listitem>
-				<para>(Try to) debug MainActivity.onListItemClick() method and fix
+				(Try to) debug MainActivity.onListItemClick() method and fix
 					the issue.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>Launch the application and make sure correct item is show in
+				Launch the application and make sure correct item is show in
 					the toast.
-				</para>
+				
 			</listitem>
 		</orderedlist>
-	</section>
+	
 
-</section>

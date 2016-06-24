@@ -1,9 +1,9 @@
 <section id="eclipse_debugging">
-	<title>Eclipse debugging</title>
-	<para>
+	<title>Eclipse debugging
+	
 		Android applications can be debugged similar to Java applications. See
-		<ulink url="http://www.vogella.com/tutorials/EclipseDebugging/article.html">Eclipse debugging tutorial</ulink>
+		http://www.vogella.com/tutorials/EclipseDebugging/article.html[Eclipse debugging tutorial]
 		for details.
-	</para>
-</section>
+	
+
 	

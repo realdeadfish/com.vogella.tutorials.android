@@ -1,33 +1,32 @@
 <section id="calendarapi">
-	<title>Calendar API</title>
-	<para> The Calendar API is available as of Android 4.0.</para>
-	<para>
+	<title>Calendar API
+	 The Calendar API is available as of Android 4.0.
+	
 		Creating new events is done via
-		<wordasword>Intents</wordasword>
+		_Intents_
 		and does not require any permission. Setting properties of the event
 		is done via Intent extras. The user will be prompted if the
 		event
 		should be
 		created.
-	</para>
-	<para> For example the following will prompt the user if an event
+	
+	 For example the following will prompt the user if an event
 		should be created with certain details.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/snippets/createevent.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>You can also add dates and time, if this event is repeated and
+	You can also add dates and time, if this event is repeated and
 		the like. See the comments in the coding for examples.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/snippets/createeventdetails.java" />
 		</programlisting>
-	</para>
+	
 
-</section>

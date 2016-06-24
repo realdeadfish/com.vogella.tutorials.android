@@ -1,54 +1,53 @@
 <section id="collectionviewwidgets">
-	<title>Collection View Widgets</title>
-	<para>
+	<title>Collection View Widgets
+	
 		Collection view widgets
 		add support for the usage of the
-		<code>ListView</code>,
-		<code>StackView</code>
+		`ListView`,
+		`StackView`
 		and
-		<code>GridView</code>
+		`GridView`
 		classes in widgets.
-	</para>
-	<para>
+	
+	
 		For collection view widgets
 		you need two layout files, one for the
 		widget and one for each item in the
 		widget collection.
-	</para>
-	<para>
+	
+	
 		The widget
 		items are filled by an instance of the
-		<code>RemoteViewsFactory</code>
+		`RemoteViewsFactory`
 		factory class.
-	</para>
-	<para>
+	
+	
 		This factory class is provided by an Android service
 		which extends the
-		<code>RemoteViewsService</code>
+		`RemoteViewsService`
 		class. This service requires the
 		<parameter>android.permission.BIND_REMOTEVIEWS</parameter>
 		permission.
-	</para>
-	<para>
+	
+	
 		To connect your views
 		with the service,
 		you use your
-		<code>onUpdate()</code>
+		`onUpdate()`
 		method in your widget implementation.
-	</para>
-	<para>
+	
+	
 		You define an intent
 		pointing to the service
 		and use the
-		<code>setRemoteAdapter</code>
+		`setRemoteAdapter`
 		method on the
-		<code>RemoteViews</code>
+		`RemoteViews`
 		class.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/collectionwidget/connect.java" />
 		</programlisting>
-	</para>
-</section>
+	

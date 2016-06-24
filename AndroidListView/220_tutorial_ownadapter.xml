@@ -1,6 +1,6 @@
 <section id="tutorial_ownadapter">
-	<title>Tutorial: Implementing your customer adapter</title>
-		<para>The following uses
+	<title>Tutorial: Implementing your customer adapter
+		The following uses
 			two images "no.png" and "ok.png". I placed it
 			in the
 			"res/drawable-mdpi" folder. You must create your own icons. In
@@ -8,35 +8,35 @@
 			program to
 			change
 			it a little bit.
-		</para>
-		<para>
+		
+		
 			Create the class
-			<code>MySimpleArrayAdapter</code>
+			`MySimpleArrayAdapter`
 			which will serve as our adapter.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/simpleadapter/MySimpleArrayAdapter.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			To use this adapter, change the
-			<wordasword>activity</wordasword>
+			_activity_
 			to
 			the following.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/simpleadapter/MyListActivity.java" />
 			</programlisting>
-		</para>
-		<para> If you run this example you should get a list with different
+		
+		 If you run this example you should get a list with different
 			icons for the certain elements.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/listlayoutIndividual10.png"
@@ -46,5 +46,5 @@
 					<phrase>ListView with different elements for each row</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	

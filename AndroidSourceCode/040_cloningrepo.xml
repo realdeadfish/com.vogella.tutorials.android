@@ -1,25 +1,24 @@
 <section id="cloningandroidrepo">
-	<title>Cloning Android source code</title>
-	<para>
+	<title>Cloning Android source code
+	
 		After you installed the repo tool you can get the Android source
 		code with the following command.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/getsource.txt" />
 		</programlisting>
-	</para>
-	<para> The command "git branch -a" show you all available branches,
+	
+	 The command "git branch -a" show you all available branches,
 		e.g. froyo and gingerbread. You can checkout them via "git checkout
 		branch_name".
-	</para>
-	<para> To compile the code run the following command.</para>
-	<para>
+	
+	 To compile the code run the following command.
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/compile.txt" />
 		</programlisting>
-	</para>
+	
 
-</section>

@@ -1,9 +1,9 @@
 <section id="tutorial_services">
-	<title>Exercise: System services and receiver</title>
+	<title>Exercise: System services and receiver
 
 	<section id="tutorial_services1">
-		<title>Target|</title>
-		<para>
+		<title>Target|
+		
 			In this chapter we will schedule a receiver
 			via the Android alert
 			manager
@@ -12,79 +12,79 @@
 			and a
 			popup message (Toast) to
 			notify the user.
-		</para>
-	</section>
+		
+	
 
 	<section id="tutorial_services2">
-		<title>Implement project</title>
-		<para>
+		<title>Implement project
+		
 			Create a new project called
-			<wordasword>de.vogella.android.alarm</wordasword>
+			_de.vogella.android.alarm_
 			with the
 			activity called
-			<wordasword>AlarmActivity</wordasword>
+			_AlarmActivity_
 			.
-		</para>
+		
 
-		<para>
+		
 			Create the following layout.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/service/main.xml" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Create the following broadcast receiver class. This class will
 			get the vibrator service.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/service/MyBroadcastReceiver.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Register this class as a broadcast receiver in
 			<filename>AndroidManifest.xml</filename>
 			and request authorization to vibrate the phone.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/service/AndroidManifest.xml" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Change the code of your
-			<code>AlarmActivity</code>
+			`AlarmActivity`
 			class to the
 			following. This activity creates an
 			intent to start the
 			receiver and register this intent with the alarm manager service.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/service/AlarmActivity.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 	<section id="tutorial_services3">
-		<title>Validate implementation</title>
-		<para>
+		<title>Validate implementation
+		
 			Run your application on the device. Set your time and start the
-			alarm. After the defined number of seconds a <wordasword>Toast</wordasword> should be
+			alarm. After the defined number of seconds a _Toast_ should be
 			displayed. Keep in mind that the vibration alarm does not work on the
 			Android emulator.
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/receive10.png" scale="60" />
@@ -93,7 +93,6 @@
 					<phrase>Alarm application running</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 
-</section>

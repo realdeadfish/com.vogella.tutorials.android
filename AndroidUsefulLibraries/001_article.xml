@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Useful Android libraries - Tutorial</title>
+		<title>Useful Android libraries - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -19,14 +19,14 @@
 			09.02.2016
 		</pubdate>
 		<releaseinfo>
-			<para>Version 1.5</para>
+			Version 1.5
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Useful Android library projects</title>
-			<para> This article describes useful Android libraries and example code repositories.
+			<title>Useful Android library projects
+			 This article describes useful Android libraries and example code repositories.
 
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

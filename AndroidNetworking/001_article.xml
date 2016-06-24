@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android Networking - Tutorial</title>
+		<title>Android Networking - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -17,15 +17,15 @@
 		<pubdate>10.11.2014</pubdate>
 		<releaseinfo>
 
-			<para>Version 2.4	</para>
+			Version 2.4	
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Performing HTTP operations with Android</title>
-			<para> This article describes how to access web resources via HTTP in
+			<title>Performing HTTP operations with Android
+			 This article describes how to access web resources via HTTP in
 				Android.
 				It is based on Eclipse 4.4, Java 1.6 and Android 5.0 (Lollipop).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

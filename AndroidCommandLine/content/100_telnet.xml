@@ -1,6 +1,6 @@
 <section id="emulator_console">
-	<title>Telnet to your Android device</title>
-	<para>
+	<title>Telnet to your Android device
+	
 		Alternatively to adb you can also use telnet to connect to the
 		device.
 		This allows you to simulate certain things, e.g. incoming
@@ -11,26 +11,26 @@
 		device. To
 		exit the console
 		session, use the
-		<code>quit</code>
+		`quit`
 		or
-		<code>exit</code>
+		`exit`
 		command.
-	</para>
-	<para>For example to change the power settings of your phone, to
+	
+	For example to change the power settings of your phone, to
 		receive an sms and to get an incoming call make the following.
-	</para>
-	<para>
+	
+	
 		<programlisting language="bourne">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/shell/telnet.txt" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		For more information on the emulator console please see
 		<ulink
-			url="http://developer.android.com/guide/developing/tools/emulator.html#console"> Emulator Console manual</ulink>
-	</para>
-</section>
+			url="http://developer.android.com/guide/developing/tools/emulator.html#console[ Emulator Console manual]
+	
+
 
 

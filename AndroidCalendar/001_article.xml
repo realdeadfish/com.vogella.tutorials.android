@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android Calendar API - Tutorial</title>
+		<title>Android Calendar API - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -14,17 +14,17 @@
 		<pubdate>16.01.2013</pubdate>
 		<releaseinfo>
 
-			<para>Version 0.3	</para>
+			Version 0.3	
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Using the Android Calendar API</title>
-			<para> This article describes how to use the Android Calendar API in
+			<title>Using the Android Calendar API
+			 This article describes how to use the Android Calendar API in
 				Android 4.0. It is
 				based on Eclipse 3.7, Java 1.6 and Android 4.0
 				(Ice
 				Cream Sandwich).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

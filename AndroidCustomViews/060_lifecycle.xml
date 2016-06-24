@@ -1,47 +1,47 @@
 <section id="lifecycle" role="wrapper">
-	<title>Life cycle</title>
+	<title>Life cycle
 	<section id="lifecycle_window">
-		<title>Life cycle events related to the window</title>
-		<para>A view is displayed if it is attached to a layout hierarchy
+		<title>Life cycle events related to the window
+		A view is displayed if it is attached to a layout hierarchy
 			which is attached to a window. A view has several life cycle hooks.
-		</para>
-		<para>
+		
+		
 			The
-			<code>onAttachedToWindow()</code>
+			`onAttachedToWindow()`
 			is called once the window is available.
-		</para>
-		<para>
+		
+		
 			The
-			<code>onDetachedFromWindow()</code>
+			`onDetachedFromWindow()`
 			is used when the view is removed from its parent (and if the parent
 			is
 			attached to a window). This happens for example if the activity is
 			recycled (e.g. via the
-			<code>finished()</code>
+			`finished()`
 			method call) or if the view is recycled in a
-			<code>ListView</code>
+			`ListView`
 			.
 
 			The
-			<code>onDetachedFromWindow()</code>
+			`onDetachedFromWindow()`
 			method can be used to stop animations and to clean up resources used
 			by the view.
-		</para>
-	</section>
+		
+	
 	<section id="lifecycle_traveals">
-		<title>Traversal life cycle events</title>
-		<para>
+		<title>Traversal life cycle events
+		
 			Traversals life cycle events consists of
-			<wordasword>Animate</wordasword>
+			_Animate_
 			,
-			<wordasword>Measure</wordasword>
+			_Measure_
 			,
-			<wordasword>Layout</wordasword>
+			_Layout_
 			and
-			<wordasword>Draw</wordasword>
+			_Draw_
 			.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/view_traversallifecycle10.png"
@@ -51,49 +51,48 @@
 					<phrase>View traversals life cycle</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
 
-		<para>
+		
 			All views must know how to measure and layout themselves. The
-			<code>requestLayout()</code>
+			`requestLayout()`
 			method call tells the view to measure and layout itself. As this
 			operation may influence the layout of other views it calls also
-			<code>requestLayout()</code>
+			`requestLayout()`
 			of its parent.
-		</para>
+		
 		<tip>
-			<para>This recursive call is the reason why you should not nestle
+			This recursive call is the reason why you should not nestle
 				layout to deeply as the measure and layout operation might be
 				expensive if a lot of hierarchies are re-calculated.
-			</para>
+			
 		</tip>
-		<para>
+		
 			The
-			<code>onMeasure()</code>
+			`onMeasure()`
 			method determines the size for the view and its children. It must set
 			the dimension via the
-			<code>setMeasuredDimension()</code>
+			`setMeasuredDimension()`
 			method is this method call before returning.
-		</para>
-		<para>
+		
+		
 			The
-			<code>onLayout()</code>
+			`onLayout()`
 			positions the views based on the result of the
-			<code>onMeasure()</code>
+			`onMeasure()`
 			method call. This call happens typically once, which
-			<code>onMeasure()</code>
+			`onMeasure()`
 			can happens once.
-		</para>
-	</section>
+		
+	
 	<section id="lifecycle_activity">
-		<title>Activity life cycle</title>
-		<para>Views don't have access to the life cycle events of the
+		<title>Activity life cycle
+		Views don't have access to the life cycle events of the
 			activities. If views want to get informed about these events you
 			should create an interface in the view which you call in the
 			life
 			cycle methods of the activity.
-		</para>
-	</section>
+		
+	
 
-</section>

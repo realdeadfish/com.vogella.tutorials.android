@@ -6,4 +6,3 @@
 		and also run it as instrumentation test.
 
 
-</section>

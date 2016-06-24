@@ -1,10 +1,9 @@
 <section id="background_strictmode">
-	<title>StrictMode</title>
-	<para>
+	<title>StrictMode
+	
 		Android allows you to instruct the system to report any long running
 		processes which are performed in the user interface thread. See
 		<ulink
-			url="http://www.vogella.com/tutorials/AndroidTools/article.html#strictmode">Using StrictMode in Android</ulink>
+			url="http://www.vogella.com/tutorials/AndroidTools/article.html#strictmode[Using StrictMode in Android]
 		for details.
-	</para>
-</section>
+	

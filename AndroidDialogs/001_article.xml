@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article lang="en">
 	<articleinfo>
-		<title>Showing dialogs in Android with fragments - Tutorial</title>
+		<title>Showing dialogs in Android with fragments - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -21,12 +21,12 @@
 		<releaseinfo>Version 10.1</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Using dialogs in Android programming</title>
-			<para> This tutorial describes how to use
+			<title>Using dialogs in Android programming
+			 This tutorial describes how to use
 				dialogs in Android applications. It is based
 				on Android Studio  and Android
 				5.0
-			</para>
+			
 		</abstract>
 	</articleinfo>
 

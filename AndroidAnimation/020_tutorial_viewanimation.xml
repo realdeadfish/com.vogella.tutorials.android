@@ -1,71 +1,70 @@
 <section id="tutorial_viewanimation">
-	<title>Tutorial: View Animation</title>
-	<para>This tutorial demonstrates the usage of the
+	<title>Tutorial: View Animation
+	This tutorial demonstrates the usage of the
 		Properties animation
 		API.
-	</para>
-	<para>
+	
+	
 		Create
 		a
 		new Android project called
-		<wordasword>com.vogella.android.animation.views</wordasword>
+		_com.vogella.android.animation.views_
 		with
 		the
-		<wordasword>activity</wordasword>
+		_activity_
 		called
-		<wordasword>AnimationExampleActivity</wordasword>. The layout file should be called 
+		_AnimationExampleActivity_. The layout file should be called 
 		<filename>main.xml</filename>. Change this file 
 		to the
 		following code.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/ani/main.xml" />
 		</programlisting>
-	</para>
+	
 
-	<para>Create the following menu resource.</para>
+	Create the following menu resource.
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/ani/mymenu.xml" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		Change your
-		<wordasword>activity</wordasword>
+		_activity_
 		to the following.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/ani/AnimationExampleActivity.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Create a new
-		<wordasword>activity</wordasword>
+		_activity_
 		called
-		<wordasword>HitActivity</wordasword>
+		_HitActivity_
 		.
-	</para>
+	
 
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/ani/HitActivity.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		If you run this example and press the different Buttons, the animation
 		should start. Via the ActionBar you can navigate to your other
-		<wordasword>activity</wordasword>
+		_activity_
 		.
-	</para>
-</section>
+	

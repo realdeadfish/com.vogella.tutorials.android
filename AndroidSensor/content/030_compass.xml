@@ -1,33 +1,32 @@
 <section id="compass">
-	<title>Tutorial: Building a compass</title>
-	<para>
+	<title>Tutorial: Building a compass
+	
 		Create a new Android project called
-		<wordasword>de.vogella.android.sensor.compass</wordasword>
+		_de.vogella.android.sensor.compass_
 		with
 		an
-		<wordasword>activity</wordasword>
+		_activity_
 		called
-		<wordasword>MainActivity</wordasword>.
-	</para>
-	<para>
+		_MainActivity_.
+	
+	
 		Create the following custom
-		<code>View</code>
+		`View`
 		class.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/compass/MyCompassView.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Change the coding of your
-		<wordasword>activity</wordasword>.
-	</para>
-	<para>
+		_activity_.
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/compass/MainActivity.java" />
 		</programlisting>
-	</para>
-</section>
+	

@@ -1,130 +1,129 @@
 <section id="concurrency_handler" role="wrapper">
-	<title>Handler</title>
+	<title>Handler
 	<section id="concurrency_handler1">
-		<title>Purpose of the Handler class</title>
-		<para>
+		<title>Purpose of the Handler class
+		
 			The
-			<code>Handler</code>
+			`Handler`
 			class can be used to register to a thread and provides a simple
 			channel to send data to this thread.
-		</para>
-		<para>
+		
+		
 			A
-			<code>Handler</code>
+			`Handler`
 			object registers itself with the thread in which
 			it is created. For
 			example, if you create a new
 			instance of the
-			<code>Handler</code>
+			`Handler`
 			class in the
-			<code>onCreate()</code>
+			`onCreate()`
 			method of your
-			<wordasword>activity</wordasword>
+			_activity_
 			, the resulting
-			<code>Handler</code>
+			`Handler`
 			object can be used to post data to the main thread.
-		</para>
-		<para>
+		
+		
 
 			The data which can be posted via the
-			<code>Handler</code>
+			`Handler`
 			class can be an instance of the
-			<code>Message</code>
+			`Message`
 			or the
-			<code>Runnable</code>
+			`Runnable`
 			class.
-		</para>
+		
 		<tip>
-			<para>A Handler is particular useful if you have want to post
+			A Handler is particular useful if you have want to post
 				multiple times data to the main thread.
-			</para>
+			
 		</tip>
-	</section>
+	
 	<section id="concurrency_handler2">
-		<title>Creating and reusing instances of Handlers</title>
-		<para>
+		<title>Creating and reusing instances of Handlers
+		
 			To
 			use a handler you have to
 			subclass it and override the
-			<code>handleMessage()</code>
+			`handleMessage()`
 			method
 			to process messages.
-		</para>
+		
 
-		<para>
+		
 			Your thread can post messages via the
-			<code>sendMessage(Message)</code>
+			`sendMessage(Message)`
 			method
 			or via the
-			<code>sendEmptyMessage()</code>
+			`sendEmptyMessage()`
 			method to the
-			<code>Handler</code>
+			`Handler`
 			object.
-		</para>
-		<para>
+		
+		
 			To
 			process a
-			<code>Runnable</code>
+			`Runnable`
 			you can use the
-			<code>post()</code>
+			`post()`
 			method.
-		</para>
-		<para>
+		
+		
 			To avoid object creation you can also reuse the existing
-			<code>Handler</code>
+			`Handler`
 			object of your
-			<wordasword>activity</wordasword>
+			_activity_
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/handler/getActivityHandler.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			The
-			<code>View</code>
+			`View`
 			class allows you to post objects of type
-			<code>Runnable</code>
+			`Runnable`
 			via the
-			<code>post()</code>
+			`post()`
 			method.
-		</para>
-	</section>
+		
+	
 	<section id="concurrency_handler3">
-		<title>Example</title>
-		<para>
+		<title>Example
+		
 			The following code demonstrates the usage of a
-			<code>Handler</code>
+			`Handler`
 			via a
-			<code>View</code>
+			`View`
 			.
-		</para>
-		<para>
+		
+		
 			Assume your
-			<wordasword>activity</wordasword>
+			_activity_
 			uses the following layout.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/handler/main.xml" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			With the following the
-			<code>ProgressBar</code>
+			`ProgressBar`
 			get updated once the users presses the
-			<code>Button</code>
+			`Button`
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/handler/ProgressTestActivity.java" />
 			</programlisting>
-		</para>
-	</section>
-</section>
+		
+	

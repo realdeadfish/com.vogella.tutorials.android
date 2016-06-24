@@ -68,4 +68,3 @@
 		. Also HTML styling was avoid as the HTML parser is relatively
 		expensive.
 	
-</section>

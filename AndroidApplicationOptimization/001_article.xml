@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android memory and performance optimization - Tutorial</title>
+		<title>Android memory and performance optimization - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -13,17 +13,17 @@
 		</copyright>
 		<pubdate>21.09.2015</pubdate>
 		<releaseinfo>
-			<para>Version 0.2</para>
+			Version 0.2
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Android memory and performance optimization </title>
-			<para> This tutorial describes how to optimize the usage of memory
+			<title>Android memory and performance optimization 
+			 This tutorial describes how to optimize the usage of memory
 				and optimize your performance in your Android
 				application. The
 				tutorial is
 				based on Android Studio.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

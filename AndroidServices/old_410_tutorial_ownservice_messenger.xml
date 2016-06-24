@@ -1,53 +1,52 @@
 <section id="ownservice_messenger">
-	<title>Tutorial: Interprocess communication with Messenger</title>
-	<para>
+	<title>Tutorial: Interprocess communication with Messenger
+	
 		The following chapter will demonstrate how to communicate between an
-		<wordasword>activity</wordasword>
+		_activity_
 		and an
-		<code>Service</code>
+		`Service`
 		using the
-		<code>Messenger</code>
+		`Messenger`
 		and
-		<code>Handler</code>
+		`Handler`
 		class.
-	</para>
-	<para>
+	
+	
 		Create a new project called "de.vogella.android.ownservice.messenger"
 		with an
-		<wordasword>activity</wordasword>
-		called <wordasword>MainActivity</wordasword>.
-	</para>
-	<para>Creating the following <filename>AndroidManifest.xml</filename>.
-	</para>
-	<para>
+		_activity_
+		called _MainActivity_.
+	
+	Creating the following <filename>AndroidManifest.xml</filename>.
+	
+	
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/messenger/AndroidManifest.xml" />
 		</programlisting>
-	</para>
-	<para>Create the following class</para>
-	<para>
+	
+	Create the following class
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/messenger/DownloadServiceMessenger.java" />
 		</programlisting>
-	</para>
-	<para>Change the <filename>main.xml</filename> layout to the following.</para>
-	<para>
+	
+	Change the <filename>main.xml</filename> layout to the following.
+	
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/messenger/main.xml" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Change
-		<code>MainActivity</code>
+		`MainActivity`
 		to the following.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/messenger/MainActivity.java" />
 		</programlisting>
-	</para>
-</section>
+	

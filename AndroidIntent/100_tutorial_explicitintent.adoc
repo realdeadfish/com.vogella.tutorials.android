@@ -16,7 +16,7 @@
 			<xref linkend="intentexercise_chapter_solution" />
 			.
 		
-	</section>
+	
 
 	<section id="explicit_intentslayout">
 		<title>Create project and main layout
@@ -37,7 +37,7 @@
 					parse="text" href="./examples/explicit/activity_main.xml" />
 			</programlisting>
 		
-	</section>
+	
 	<section id="explicit_intentlayoutsecondactivity">
 		<title>Create new layout file
 		
@@ -62,7 +62,7 @@
 					parse="text" href="./examples/explicit/activity_result.xml" />
 			</programlisting>
 		
-	</section>
+	
 
 	<section id="exercise_explicitintents2">
 		<title>Create additional activity
@@ -100,7 +100,7 @@
 				it is called a sub-activity.
 			
 		</note>
-	</section>
+	
 
 	<section id="explicit_startsubactivity">
 		<title>Start sub-activity
@@ -125,7 +125,7 @@
 			Once you finished this part of the exercise, start your
 			application and ensure that you can start the second activity.
 		
-	</section>
+	
 
 	<section id="explicit_intentssend">
 		<title>Send data to ResultActivity
@@ -143,7 +143,7 @@
 			`Intent`
 			object.
 		
-	</section>
+	
 
 	<section id="explicit_intentsreceivedata">
 		<title>Get intent data in the ResultActivity
@@ -171,6 +171,5 @@
 			`displayintentextra`
 			ID.
 		
-	</section>
+	
 
-</section>

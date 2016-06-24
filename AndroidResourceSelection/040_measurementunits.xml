@@ -1,9 +1,9 @@
 <section id="screensize_dp" role="wrapper">
-	<title>Defining the size of UI components in layout files</title>
+	<title>Defining the size of UI components in layout files
 
 	<section id="screensize_dimensions">
-		<title>Fixed or relative dimensions</title>
-		<para>
+		<title>Fixed or relative dimensions
+		
 			Android allows you to define the size of user
 			interface
 			components in
@@ -21,35 +21,35 @@
 			too small on other
 			devices with a
 			higher pixel density.
-		</para>
+		
 
-		<para>
+		
 			It
 			is recommended to always use relative dimensions in
 			your
 			Android application.
-		</para>
-	</section>
+		
+	
 
 	<section id="screensize_dimension_dp">
-		<title>Using dp as relative dimension</title>
+		<title>Using dp as relative dimension
 
-		<para>
+		
 			The unit of measurement which should be used is
 			<parameter>dp</parameter>
 			.
-		</para>
+		
 
 		<tip>
-			<para>
+			
 				<parameter>dp</parameter>
 				is short for
 				<parameter>dip</parameter>
 				(device independent pixel)
 				.
-			</para>
+			
 		</tip>
-		<para>
+		
 			<parameter>dp</parameter>
 			refers to one pixel on an
 			Android device with
@@ -62,16 +62,16 @@
 			is
 			also known as
 			mdpi (medium dots per inch).
-		</para>
-		<para>
+		
+		
 			If you specify the size in
 			<parameter>dp</parameter>
 			, Android automatically
 			scale your user interface component
 			, depending
 			on the device.
-		</para>
-		<para>
+		
+		
 			On a
 			mdpi (a.k.a. medium density) device
 			one
@@ -90,17 +90,17 @@
 			occupies
 			approximately
 			the same physical space on every device.
-		</para>
-		<para>
+		
+		
 			You can use
 			<parameter>dp</parameter>
 			in your resources, e.g., layout files.
-		</para>
-	</section>
+		
+	
 
 	<section id="screensize_dimension_sp">
-		<title>Using sp to scale with the user text preferences</title>
-		<para>
+		<title>Using sp to scale with the user text preferences
+		
 			If the unit should scale with text preference settings of the
 			user,
 			choose the
@@ -108,13 +108,12 @@
 			unit of measurement. This unit is similar to dp, but it is also
 			scaled
 			by the user preference.
-		</para>
-		<para>
+		
+		
 			If the users select to increase the font size in this settings, views
 			which use
 			<parameter>sp</parameter>
 			are scaled accordingly.
-		</para>
-	</section>
+		
+	
 
-</section>

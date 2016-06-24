@@ -10,10 +10,10 @@
 		
 		
 			As Leak Canary is an Open Source project it is likely to change very quickly. See
-			<ulink url="https://github.com/square/leakcanary">Leak Canarys Github page</ulink>
+			https://github.com/square/leakcanary[Leak Canarys Github page]
 			for instructions how to use it.
 		
-	</section>
+	
 
 	<section>
 		<title>Using AndroidDevMetrics to display performance data
@@ -23,8 +23,7 @@
 		
 		
 			As AndroidDevMetrics is an Open Source project. See
-			<ulink url="https://github.com/frogermcs/androiddevmetrics">AndroidDevMetrics Github page</ulink>
+			https://github.com/frogermcs/androiddevmetrics[AndroidDevMetrics Github page]
 			for instructions how to use it.
 		
-	</section>
-</section>
+	

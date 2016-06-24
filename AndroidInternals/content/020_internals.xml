@@ -1,10 +1,10 @@
 <section id="internals">
-	<title>Internals</title>
-	<para> During startup of the Android system the Linux kernel first
+	<title>Internals
+	 During startup of the Android system the Linux kernel first
 		calls the process "init". init reads the files "/init.rc" and
 		"init.device.rc". "init.device.rc" is device specific, on the virtual
-		device this file is called "init.goldfish.rc".</para>
-	<para> init.rc starts the process "Zygote" via the program
+		device this file is called "init.goldfish.rc".
+	 init.rc starts the process "Zygote" via the program
 		"/system/bin/app_process". Zygote loads the core Java
 		classes and
 		performs initial processing of them. These classes can be reused by
@@ -13,8 +13,8 @@
 		Once the initial work of Zygote is done,
 		the process listens to a
 		socket and waits
-		for requests. </para>
-	<para>A special driver called <wordasword>Binder</wordasword> allow
+		for requests. 
+	A special driver called _Binder_ allow
 		an efficient interprocess
 		communications (IPC) in which allow
 		references to
@@ -23,46 +23,45 @@
 		are stored in Shared Memory. This
 		way the communication between the
 		processes is optimized as less data
-		must be transferred.</para>
+		must be transferred.
 
-	<para> Android does not provide a swap space like other Linux systems
+	 Android does not provide a swap space like other Linux systems
 		therefore the amound of available memory is limited to the memory on
-		the device. </para>
+		the device. 
 
-	<para> Androids uses a special C library "Bionic" instead of the
+	 Androids uses a special C library "Bionic" instead of the
 		standard Glibc. This library is not compatible with Glibs but requires
 		less memory. Bionic contains a special thread implementation which
 		optimizes the memory consumption of each thread and reduces the start
-		time of new threads.  </para>
-	<para> As of Android 2.3 the Android system uses Ext4, the standard
+		time of new threads.  
+	 As of Android 2.3 the Android system uses Ext4, the standard
 		file system for Linux. Before that it used the YAFFS file system. Some
-		vendors replaces the standard file system by their own one. </para>
+		vendors replaces the standard file system by their own one. 
 
-	<para>
+	
 		As all application have their own Linux user application data
 		can per
 		default only be accesses from the application. To share data
 		you can
-		<ulink url="http://www.vogella.com/tutorials/AndroidFileSystem/article.html">save files which are accessible by other applications</ulink>
+		http://www.vogella.com/tutorials/AndroidFileSystem/article.html[save files which are accessible by other applications]
 		. Alternatively application can define their own
 		<ulink
-			url="http://www.vogella.com/tutorials/Android/article.html#contentprovider">content provider</ulink>
+			url="http://www.vogella.com/tutorials/Android/article.html#contentprovider[content provider]
 		. Applications which are signed with the same certificate can also
 		define in the "AndroidManifest.xml" a "android:sharedUserId".
 		Application with a shared user id are running in the same process and
 		with the same user id and can access files from similar applications.
-	</para>
-	<para> The .apk file of installed applications can be found in the
+	
+	 The .apk file of installed applications can be found in the
 		folder "data/app". Using the file manager or the adb pull / push
 		command you can download the application or install it on a device.
 		Payed applications or application from the market which have the
 		option "Copy Protection" selected can be found in the folder
-		"data/app-private" which the user cannot access by default.   </para>
-	<para> To further protect an application from illegal copies you can
+		"data/app-private" which the user cannot access by default.   
+	 To further protect an application from illegal copies you can
 		use the library "Licence Verification Library" which checks for a paid
-		application if it has been purchased from the Android Market. </para>
-	<para> The maximum size of Android application is currently typically
+		application if it has been purchased from the Android Market. 
+	 The maximum size of Android application is currently typically
 		16 or 24 Megabyte. How large the application can be is defined at
-		compile time of the Android system. </para>
+		compile time of the Android system. 
 
-</section>

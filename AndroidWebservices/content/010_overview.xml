@@ -1,34 +1,33 @@
 <section id="androidwebservices" role="wrapper">
-	<title>Calling Webservices with Android</title>
+	<title>Calling Webservices with Android
 	<section id="androidwebservices_rest">
-		<title>Android and REST based webservices</title>
-		<para>
+		<title>Android and REST based webservices
+		
 			REST based webservices are based on HTTP calls. Hence you can
 			simply the HTTP calls to perform these calls.
-		</para>
-		<para>Several open source projects exists to simplify this handling.
+		
+		Several open source projects exists to simplify this handling.
 			For example Crest, which can be found under the following URL:
 			http://crest.codegist.org/deeper/android.html
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/Creast.java" />
 			</programlisting>
-		</para>
-		<para>Another popular REST framework is Restlet, which can be found
+		
+		Another popular REST framework is Restlet, which can be found
 			under the following URL: http://www.restlet.org/
-		</para>
+		
 
-	</section>
+	
 	<section id="androidwebservices_soap">
-		<title>Android and SOAP based webservices</title>
-		<para>SOAP webservices are based on XML and you can handle them with
+		<title>Android and SOAP based webservices
+		SOAP webservices are based on XML and you can handle them with
 			pure XML. To simplify the handling of SOAP webservices you can also
 			use Open Source projects.
-		</para>
-		<para>Relatively popular is the ksoap2-android project, which can be
-			found under the following link: http://code.google.com/p/ksoap2-android/wiki/Links</para>
-		<para></para>
-	</section>
-</section>
+		
+		Relatively popular is the ksoap2-android project, which can be
+			found under the following link: http://code.google.com/p/ksoap2-android/wiki/Links
+		
+	

@@ -21,7 +21,7 @@
 			into Eclipse via the Android Developer Tools
 			(ADT).
 		
-	</section>
+	
 	<section id="tracewiew_eclipse">
 		<title>Using Traceview from Android Studio
 		
@@ -78,7 +78,7 @@
 		You can zoom into the graphic to get more details. To zoom out,
 			double-click on the time line.
 		
-	</section>
+	
 	<section id="tracewiew_commandline">
 		<title>Using TraceView from the command line
 		
@@ -119,7 +119,6 @@
 			require an additional
 			authorization.
 		
-	</section>
+	
 
 
-</section>

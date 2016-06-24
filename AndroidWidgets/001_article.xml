@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android (Home screen) Widgets - Tutorial</title>
+		<title>Android (Home screen) Widgets - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -16,12 +16,12 @@
 		</copyright>
 		<pubdate>29.09.2015</pubdate>
 		<releaseinfo>
-			<para>Version 2.7</para>
+			Version 2.7
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Developing Android Widgets</title>
-			<para> This article describes how to create home screen widgets in Android. 	</para>
+			<title>Developing Android Widgets
+			 This article describes how to create home screen widgets in Android. 	
 		</abstract>
 	</articleinfo>
 

@@ -1,15 +1,15 @@
 <section id="androidlibraryprojects">
-	<title>Android library project</title>
-	<para>
+	<title>Android library project
+	
 		The Android team introduced a new binary distribution format
 		called
-		<wordasword>Android ARchive(AAR)</wordasword>
+		_Android ARchive(AAR)_
 		. The
 		<filename>.aar</filename>
 		bundle is the binary distribution of an Android Library
 		Project.
-	</para>
-	<para>
+	
+	
 		An AAR
 		is similar to a JAR file, but it can contain resources
 		as
@@ -23,31 +23,30 @@
 		a
 		<filename>JAR</filename>
 		file
-	</para>
+	
 	<warning>
-		<para>
+		
 			This AAR format is currently directly support by the Eclipse
 			IDE.
 			Stare on the following issue so that Google solves this issue:
-			<ulink url="https://code.google.com/p/android/issues/detail?id=59183">Allows Eclipse ADT plugin to work with .AAR files
+			https://code.google.com/p/android/issues/detail?id=59183">Allows Eclipse ADT plugin to work with .AAR files
 			</ulink>
 			.
-		</para>
+		
 	</warning>
 
 	<tip>
-		<para>
+		
 			It is still possible to use AAR files with Eclipse. You can either
 			convert them to
 			Android library
 			projects as described in
 			<ulink
-				url="http://commonsware.com/blog/2014/07/03/consuming-aars-eclipse.html">Consuming AARs from Eclipse</ulink>
+				url="http://commonsware.com/blog/2014/07/03/consuming-aars-eclipse.html[Consuming AARs from Eclipse]
 			blog post about it.
-		</para>
+		
 		or use the
-		<ulink url="https://code.google.com/p/maven-android-plugin/wiki/AAR">Android Maven</ulink>
+		https://code.google.com/p/maven-android-plugin/wiki/AAR[Android Maven]
 		plug-in for your build.
 	</tip>
 
-</section>

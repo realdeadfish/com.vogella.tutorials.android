@@ -30,7 +30,7 @@
 			`UiScrollable`
 			allows to scroll in a view to find an element.
 		_
-	</section>
+	
 	<section id="android_uiautomatorviewer">
 		<title>Accessing the view information with uiautomatorviewer_
 		
@@ -60,6 +60,5 @@
 		To launch the uiautomatorviewer tool, switch on the command line to the android-sdk/tools/ directory and start
 			the tool via uiautomatorviewer.
 		_
-	</section>
+	
 
-</section>

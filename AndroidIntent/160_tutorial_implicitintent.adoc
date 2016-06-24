@@ -9,7 +9,7 @@
 			activities
 			in your Android system.
 		
-	</section>
+	
 	<section id="exercise_implicitintent2">
 		<title>Create project
 		
@@ -79,7 +79,7 @@
 					parse="text" href="./examples/implicit/CallIntentsActivity.java" />
 			</programlisting>
 		
-	</section>
+	
 	<section id="exercise_implicitintent3">
 		<title>Validating
 		
@@ -94,6 +94,5 @@
 				tasks which use components of different applications.
 			
 		</note>
-	</section>
+	
 
-</section>

@@ -1,24 +1,24 @@
 <section id="platformthemes" role="wrapper">
-	<title>Using Android platform themes</title>
+	<title>Using Android platform themes
 
 	<section id="styling_materialdesign">
-		<title>Using material design and design support library</title>
-		<para>
+		<title>Using material design and design support library
+		
 			As of API 21 the material design is the new default design you should
 			be used.
 			<itemizedlist>
 				<listitem>
-					<para>@android:style/Theme.Material (dark version)</para>
+					@android:style/Theme.Material (dark version)
 				</listitem>
 				<listitem>
-					<para>@android:style/Theme.Material.Light (light version)</para>
+					@android:style/Theme.Material.Light (light version)
 				</listitem>
 				<listitem>
-					<para>@android:style/Theme.Material.Light.DarkActionBar</para>
+					@android:style/Theme.Material.Light.DarkActionBar
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para>
+		
+		
 			The design support library provides themes with
 			material design
 			styles for
@@ -26,17 +26,17 @@
 			design on
 			earlier
 			releases. See
-			<ulink url="https://developer.android.com/training/material/compatibility.html">Maintaining Compatibility</ulink>
+			https://developer.android.com/training/material/compatibility.html[Maintaining Compatibility]
 			for how to use the new theme in earlier releases.
-		</para>
-	</section>
+		
+	
 	<section id="styling_colorpalette">
-		<title>Styling the color palette</title>
-		<para>As of material design you can customize the themes base colors.
+		<title>Styling the color palette
+		As of material design you can customize the themes base colors.
 			The following screenshot shows several of these
 			colors.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/materialcolorpalette10.png"/>
@@ -45,17 +45,17 @@
 					<phrase>Customize the Color Palette</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>The following listing is an example of styling it with different
+		
+		The following listing is an example of styling it with different
 			colors (defined in your /res/values folder).
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/material/styles.xml" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			You can also style the status bar with the
 			<parameter>android:statusBarColor</parameter>
 			attribute. By default,
@@ -63,22 +63,22 @@
 			inherits the value of
 			<parameter>android:colorPrimaryDark</parameter>
 			.
-		</para>
-	</section>
+		
+	
 
 	<section id="styling_stylingindividualviews">
-		<title>Styling individual views and view groups</title>
-		<para>
+		<title>Styling individual views and view groups
+		
 			As of Android 5.0 (API 21) you can also assign the
 			<parameter>android:theme</parameter>
 			for a view. This allows changing the theme for this element and its
 			child elements.
-		</para>
-	</section>
+		
+	
 
 	<section id="styling_bestpractice">
-		<title>Common practice for selecting themes</title>
-		<para>
+		<title>Common practice for selecting themes
+		
 			Using the design support library you should use the material design already in older Android versions. You
 			might
 			also use material
@@ -92,8 +92,7 @@
 			style
 			and
 			to customize it.
-		</para>
+		
 
-	</section>
+	
 
-</section>

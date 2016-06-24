@@ -1,72 +1,71 @@
 <section id="notificationmanager_example">
-	<title>Example: NotificationManager</title>
-	<para>
+	<title>Example: NotificationManager
+	
 		Create a new project called
-		<wordasword>de.vogella.android.notificationmanager</wordasword>
+		_de.vogella.android.notificationmanager_
 		with the
-		<wordasword>activity</wordasword>
+		_activity_
 		class called
-		<code>CreateNotificationActivity</code>
+		`CreateNotificationActivity`
 		. This
-		<wordasword>activity</wordasword>
+		_activity_
 		should use the
 		<filename>main.xml</filename>
 		layout file.
 
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/notification/main.xml" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Create the following
 		<filename>result.xml</filename>
 		layout file.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/notification/result.xml" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		Create a new
-		<wordasword>activity</wordasword>
+		_activity_
 		called
-		<wordasword>NotificationReceiverActivity</wordasword>
+		_NotificationReceiverActivity_
 		with the
 		following
 		coding. Don't forget to register the
-		<wordasword>activity</wordasword>
+		_activity_
 		in
 		the
 		<filename>AndroidManfest.mf</filename>
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/notification/NotificationReceiverActivity.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		Change the
-		<code>CreateNotificationActivity</code>
+		`CreateNotificationActivity`
 		class to the following coding.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/notification/CreateNotificationActivity.java" />
 		</programlisting>
-	</para>
-	<para> Run your application and press the button. A new
+	
+	 Run your application and press the button. A new
 		notification is
 		created. If you select it your second activity will be displayed.
-	</para>
+	
 
-</section>

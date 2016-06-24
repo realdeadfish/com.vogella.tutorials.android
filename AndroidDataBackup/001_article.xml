@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android Data Backup - Tutorial</title>
+		<title>Android Data Backup - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -13,14 +13,14 @@
 		</copyright>
 		<pubdate>10.11.2014</pubdate>
 		<releaseinfo>
-			<para>Version 0.1	</para>
+			Version 0.1	
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Android Data Backup</title>
-			<para> This tutorial describes the usage of the Android data backup
+			<title>Android Data Backup
+			 This tutorial describes the usage of the Android data backup
 				API for restoring Application configuration data.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

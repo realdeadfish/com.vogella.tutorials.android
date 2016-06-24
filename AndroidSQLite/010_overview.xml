@@ -1,9 +1,9 @@
 <section id="overview" role="wrapper">
-	<title>SQLite and Android</title>
+	<title>SQLite and Android
 	<section id="overview_sqlite">
-		<title>What is SQLite?</title>
-		<para>
-			<wordasword>SQLite</wordasword>
+		<title>What is SQLite?
+		
+			_SQLite_
 			is an Open Source database. SQLite supports standard
 			relational
 			database features like SQL syntax, transactions
@@ -13,16 +13,16 @@
 			250 KByte) which makes it a good
 			candidate from being embedded into
 			other runtimes.
-		</para>
-		<para>
+		
+		
 			SQLite
 			supports the data types
-			<code>TEXT</code>
+			`TEXT`
 			(similar to String in
 			Java),
-			<code>INTEGER</code>
+			`INTEGER`
 			(similar to long in Java) and
-			<code>REAL</code>
+			`REAL`
 			(similar to double
 			in Java). All other types must be converted into
 			one
@@ -38,17 +38,17 @@
 			string
 			column and
 			vice versa.
-		</para>
-		<para>
+		
+		
 			More information about SQLite can be found on the SQLite website:
-			<ulink url="http://www.sqlite.org">http://www.sqlite.org</ulink>
+			http://www.sqlite.org[http://www.sqlite.org]
 			.
-		</para>
-	</section>
+		
+	
 
 	<section id="overview_sqliteandroid">
-		<title>SQLite in Android</title>
-		<para>
+		<title>SQLite in Android
+		
 			SQLite
 			is embedded into every Android device.
 			Using
@@ -59,8 +59,8 @@
 			does not
 			require a setup procedure or administration
 			of the database.
-		</para>
-		<para>
+		
+		
 			You only have to define the SQL statements for creating and
 			updating the database. Afterwards the
 			database
@@ -69,45 +69,44 @@
 			for
 			you by
 			the Android platform.
-		</para>
-		<para>
+		
+		
 			Access to an SQLite database involves accessing the file system. This
 			can be slow. Therefore it is
 			recommended to
 			perform database operations
 			asynchronously.
-		</para>
+		
 
 
-		<para>
+		
 			If your
 			application creates a database, this database is by default
 			saved in
 			the
 			directory
-			<code>DATA/data/APP_NAME/databases/FILENAME</code>
+			`DATA/data/APP_NAME/databases/FILENAME`
 			.
-		</para>
-		<para>
+		
+		
 			The parts of the above directory are constructed based on the
 			following rules.
-			<code>DATA</code>
+			`DATA`
 			is
 			the
 			path which the
-			<code>Environment.getDataDirectory()</code>
+			`Environment.getDataDirectory()`
 			method
 			returns.
-			<code>APP_NAME</code>
+			`APP_NAME`
 			is
 			your
 			application name.
-			<code>FILENAME</code>
+			`FILENAME`
 			is the name you specify in your application code for the
 			database.
-		</para>
+		
 
-	</section>
+	
 
 
-</section>

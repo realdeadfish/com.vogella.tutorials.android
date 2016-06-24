@@ -11,7 +11,7 @@
 			You can use this chapter to compare your solution with the
 			proposed solution.
 		
-	</section>
+	
 	<section id="explicit_intents_solution">
 		<title>Activity code
 		
@@ -26,6 +26,5 @@
 					parse="text" href="./examples/explicit/MainActivity.java" />
 			</programlisting>
 		
-	</section>
+	
 
-</section>

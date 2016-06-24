@@ -1,8 +1,8 @@
 <section id="styling" role="wrapper">
-	<title>Styles and Themes</title>
+	<title>Styles and Themes
 	<section id="styling_styles">
-		<title>Styles</title>
-		<para>
+		<title>Styles
+		
 			Android allow you to define the look and feel, for example
 			colors and
 			fonts, of Android
@@ -17,107 +17,107 @@
 			common style
 			attributes only once in one
 			central place.
-		</para>
-		<para>
+		
+		
 			If the entry in the resource file is used to style
 			a
 			view, it is
 			typically referred to as a
-			<wordasword>style</wordasword>
+			_style_
 			, while if it is used for styling an activity or application it is
 			typically called a
-			<wordasword>theme</wordasword>
+			_theme_
 			/.
-		</para>
+		
 
-		<para>
+		
 			To define a style or a theme, save an XML file in the
 			<filename>/res/values</filename>
 			directory of
 			your project. The root node of the XML file must be <![CDATA[ <resources>]]>
 			and you use a
-			<code>style</code>
+			`style`
 			tag that includes the
-			<code>name</code>
+			`name`
 			attribute. This tag contains than more or more item tags which define
 			values for named attributes.
-		</para>
+		
 
-		<para>
+		
 			The following
 			<filename>styles.xml</filename>
 			XML file is an example for a style definition.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/styles/styles.xml" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			You assign the style attribute to your elements, for example
 			to
 			the
 			text elements via
 			<parameter>style=”@style/text</parameter>
 			.
-		</para>
-	</section>
+		
+	
 	<section id="styling_inheritance">
-		<title>Inheritance</title>
-		<para>Styles (and themes) support inheritance by using the parent
+		<title>Inheritance
+		Styles (and themes) support inheritance by using the parent
 			attribute of the
 			style tag. This way the style inherits all settings
 			from the parent style and can overwrite selected attributes.
-		</para>
+		
 
 
-	</section>
+	
 	<section id="styling_attributereferences">
-		<title>Referring attributes in the current theme</title>
-		<para>
+		<title>Referring attributes in the current theme
+		
 			Android lists all standard attributes which can be styled in the
 			<filename>R.attr</filename>
 			file. The reference for this file can be found online under the
 			following URL:
-			<ulink url="http://developer.android.com/reference/android/R.attr.html">R.attr</ulink>
+			http://developer.android.com/reference/android/R.attr.html[R.attr]
 			.
-		</para>
-		<para>
+		
+		
 			You can refer to individual attributes of the current Android
 			theme
 			via the
-			<code><![CDATA[?android:attr]]></code>
+			`<![CDATA[?android:attr]]>`
 			notation.
 			This notation means that you are
 			referring
 			to a style
 			attribute in the currently active theme.
-		</para>
-		<para>
+		
+		
 			For example
-			<code><![CDATA[?android:attr/listPreferredItemHeight]]></code>
+			`<![CDATA[?android:attr/listPreferredItemHeight]]>`
 			means: "use the value
 			defined by the attribute called
 			listPreferredItemHeight in the
 			current theme.
-		</para>
-		<para>
+		
+		
 			The following layout
 			defines buttons with
 			the Android 4.0
 			button
 			style.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/styles/main.xml" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/styling20.png" scale="60" />
@@ -126,29 +126,28 @@
 					<phrase>Screenshot of the running application with the menu open</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 
 
 	<section id="styling_theme">
-		<title>Themes</title>
-		<para>
+		<title>Themes
+		
 			A theme is a style applied to an entire
 			activity
 			or application,
 			rather than an individual View (as in the example
 			above). The
 			technique of defining a theme is the same as defining a style.
-		</para>
+		
 
-		<para>The next example show how to define your own theme while
+		The next example show how to define your own theme while
 			extending a platform theme.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/styles/theme.xml" />
 			</programlisting>
-		</para>
-	</section>
-</section>
+		
+	

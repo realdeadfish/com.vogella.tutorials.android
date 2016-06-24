@@ -1,22 +1,22 @@
 <section id="maps_key">
-	<title>Getting the Google Map key</title>
+	<title>Getting the Google Map key
 	<section id="maps_key1">
-		<title>Google console</title>
-		<para>
+		<title>Google console
+		
 			To use Google Maps you need to create a valid Google Maps API
 			key. The key is free, you can use it with any of your applications
 			that call the Maps API, and it supports an unlimited number of
 			users.
-		</para>
-		<para>
+		
+		
 			You get this key via the
-			<ulink url="https://code.google.com/apis/console/"> Google APIs Console</ulink>
+			https://code.google.com/apis/console/[ Google APIs Console]
 			. . You have
 			to provide your application signature key and the
 			application package
 			name.
-		</para>
-		<para>
+		
+		
 			This is based
 			on the
 			key with which you sign your Android
@@ -26,48 +26,48 @@
 			automatically
 			creates
 			and uses a
-			<wordasword>debug key</wordasword>
+			_debug key_
 			.
-		</para>
-	</section>
+		
+	
 	<section id="maps_key2">
-		<title>Creating the SHA-1 for your signature key</title>
-		<para>
+		<title>Creating the SHA-1 for your signature key
+		
 			The Eclipse debug
 			key for signing your application can be found in the
 			<filename>userhome/.android/debug.keystore</filename>
 			file.
-		</para>
-		<para>
+		
+		
 			To create the SHA-1 for your debug keystore you use the
-			<code>keytool</code>
+			`keytool`
 			command from your JDK
 			installation pointing to the
 			<filename>debug.keystore</filename>
 			file.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/maps/key.txt" />
 			</programlisting>
-		</para>
-		<para>Copy the SHA-1 output, as you need this later.</para>
-	</section>
+		
+		Copy the SHA-1 output, as you need this later.
+	
 	<section id="maps_key3">
-		<title>Register with the Google APIs Console</title>
-		<para>
+		<title>Register with the Google APIs Console
+		
 			You have to register in
 			the
-			<wordasword>Google APIs Console</wordasword>
+			_Google APIs Console_
 			that you want to use Google Maps for Android. You can reach this
 			console via the following link:
-			<ulink url="https://code.google.com/apis/console/"> Google APIs Console</ulink>
+			https://code.google.com/apis/console/[ Google APIs Console]
 			. Select here the
 			<guilabel>Services</guilabel>
 			entry.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/apiconsole10.png"/>
@@ -76,13 +76,13 @@
 					<phrase>Google APIs Console</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Activate the
 			<guilabel>Google Maps Android API v2</guilabel>
 			.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/apiconsole20.png"/>
@@ -91,11 +91,11 @@
 					<phrase>Google APIs Console</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 	<section id="maps_key4">
-		<title>Create key for your application</title>
-		<para>
+		<title>Create key for your application
+		
 			You need later to register your application via its package in
 			this
 			console together with the SHA-1 fingerprint of your signature
@@ -105,8 +105,8 @@
 			entry. Afterwards click on the
 			<guibutton>Create new Android key...</guibutton>
 			entry.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/apiconsole30.png"/>
@@ -115,15 +115,15 @@
 					<phrase>Google APIs Console</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Enter your SHA-1 fingerprint and the package of your application
 			separated by a semicolon. For example you can use the
-			<code>com.vogella.android.locationapi.maps</code>
+			`com.vogella.android.locationapi.maps`
 			package.
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/apiconsole40.png"/>
@@ -132,13 +132,12 @@
 					<phrase>Google APIs Console</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
+		
 			The procedure is described in detail in the following link:
 			<ulink
-				url="https://developers.google.com/maps/documentation/android/start#installing_the_google_maps_android_v2_api">Getting a Google Maps key</ulink>
+				url="https://developers.google.com/maps/documentation/android/start#installing_the_google_maps_android_v2_api[Getting a Google Maps key]
 			.
-		</para>
-	</section>
-</section>
+		
+	

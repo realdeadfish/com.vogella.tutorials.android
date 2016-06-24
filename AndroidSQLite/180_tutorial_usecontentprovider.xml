@@ -1,30 +1,30 @@
 <section id="tutorialusecp" role="wrapper">
-	<title>Tutorial: Using ContentProvider</title>
+	<title>Tutorial: Using ContentProvider
 	<section id="tutorialusecp_overview">
-		<title>Overview</title>
-		<para>
+		<title>Overview
+		
 			The following example will use an existing
-			<code>ContentProvider</code>
+			`ContentProvider`
 			from the
-			<wordasword>People</wordasword>
+			_People_
 			application.
-		</para>
-	</section>
+		
+	
 
 
 	<section id="tutorialusecp_contacts">
-		<title>Create contacts on your emulator</title>
+		<title>Create contacts on your emulator
 
-		<para>
+		
 			For this example we need a few maintained contacts. Select the
 			home
 			menu and then the
 			<guilabel>People</guilabel>
 			entry to
 			create contacts.
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/contact10.png" />
@@ -34,13 +34,13 @@
 						choicer</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para> The app will ask you if you want to login. Either login or
+		
+		 The app will ask you if you want to login. Either login or
 			select "Not now". Press ""Create a new contact". You can create local
 			contacts.
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/contact20.png" />
@@ -49,9 +49,9 @@
 					<phrase>Create a new contact</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/contact30.png" />
@@ -60,50 +60,50 @@
 					<phrase>Details for a maintained contact</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>Finish adding your first contact. Afterwards the app allows you
+		
+		Finish adding your first contact. Afterwards the app allows you
 			to add more contacts via the + button. As a result you should have a
 			few new contacts in your application.
-		</para>
-	</section>
+		
+	
 	<section id="tutorialusecp_example">
-		<title>Using the Contact Content Provider</title>
-		<para>
+		<title>Using the Contact Content Provider
+		
 			Create a new Android project called
-			<wordasword>de.vogella.android.contentprovider</wordasword>
+			_de.vogella.android.contentprovider_
 			with the
-			<wordasword>activity</wordasword>
+			_activity_
 			called
-			<wordasword>ContactsActivity</wordasword>
+			_ContactsActivity_
 			.
-		</para>
-		<para>
+		
+		
 			Change the corresponding
 			layout file in the
 			<filename class="directory">res/layout</filename>
 			folder.
 			Rename
 			the ID of the existing
-			<code>TextView</code>
+			`TextView`
 			to
 			<parameter>contactview</parameter>
 			. Delete the default text.
-		</para>
+		
 
-		<para>
+		
 			The resulting layout file
 			should look like the following.
-		</para>
-		<para>
+		
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/contentprovider/main.xml" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Access to the contact
-			<code>ContentProvider</code>
+			`ContentProvider`
 			requires a certain
 			permission,
 			as not all applications should have
@@ -125,26 +125,25 @@
 			the
 			<parameter>android.permission.READ_CONTACTS</parameter>
 			entry.
-		</para>
-		<para> Change the coding of the activity.
-		</para>
+		
+		 Change the coding of the activity.
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/contentprovider/ContactsActivity.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			If you run this application the data is read from the
-			<code>ContentProvider</code>
+			`ContentProvider`
 			of the People application
 			and displayed in a
-			<code>TextView</code>
+			`TextView`
 			. Typically you would display such data in a
-			<code>ListView</code>
+			`ListView`
 			.
-		</para>
-	</section>
-</section>
+		
+	

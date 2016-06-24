@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android Sensor - Tutorial</title>
+		<title>Android Sensor - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -13,18 +13,18 @@
 		</copyright>
 		<pubdate>07.03.2012</pubdate>
 		<releaseinfo>
-			<para>Version 0.4</para>
+			Version 0.4
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Android Sensor</title>
-			<para>
+			<title>Android Sensor
+			
 				This tutorial describes how to use the Android Sensor
 				manager. The tutorial
 				is
 				based on Eclipse 3.6, Java 1.6 and Android 2.3.3
 				(Gingerbread).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

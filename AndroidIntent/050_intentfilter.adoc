@@ -86,7 +86,7 @@
 			started.
 		
 
-	</section>
+	
 	<section id="intentfilter_define">
 		<title>Defining intent filter
 		
@@ -118,7 +118,7 @@
 			which one
 			should be used.
 		
-	</section>
+	
 
 	<section id="intentfilter_browser">
 		<title>Example: Register an activity as browser
@@ -139,7 +139,7 @@
 					parse="text" href="./examples/snippets/intentfilter.xml" />
 			</programlisting>
 		
-	</section>
+	
 
 	<section id="intentfilter_shareintent">
 		<title>Example: Register an activity for the share intent
@@ -163,5 +163,5 @@
 			filter, it can only be called by explicit
 			intents.
 		
-	</section>
-</section>
+	
+

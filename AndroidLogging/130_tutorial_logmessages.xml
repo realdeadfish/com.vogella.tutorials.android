@@ -1,30 +1,30 @@
 <section>
-	<title>Add a log statement</title>
-	<para>
+	<title>Add a log statement
+	
 		At the following interface to an existing Android application.
 		It defines a constant for your
 		log statements.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/log/Constants.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		Add a log statement to your
-		<code>onCreate</code>
+		`onCreate`
 		method.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/log/createlog.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		Run your application and check that you see your log statement in your IDE. See
 		<xref linkend="androidstudio_viewinglogentries" />
 		for info how to access the logs.
-	</para>
-</section>
+	
+

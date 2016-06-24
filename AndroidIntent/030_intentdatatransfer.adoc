@@ -59,7 +59,7 @@
 					parse="text" href="./examples/snippets/getSendData.java" />
 			</programlisting>
 		
-	</section>
+	
 
 	<section id="overview_shareintent">
 		<title>Example: Using the share intent
@@ -78,7 +78,7 @@
 					parse="text" href="./examples/snippets/send.java" />
 			</programlisting>
 		
-	</section>
+	
 
 	<section id="usingintents_sub">
 		<title>Retrieving result data from a sub-activity
@@ -201,6 +201,6 @@
 					parse="text" href="./examples/snippets/result2.java" />
 			</programlisting>
 		
-	</section>
+	
 
-</section>
+

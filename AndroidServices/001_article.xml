@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android Services - Tutorial</title>
+		<title>Android Services - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -16,15 +16,15 @@
 		</copyright>
 		<pubdate>26.11.2015</pubdate>
 		<releaseinfo>
-			<para>Version 2.9</para>
+			Version 2.9
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Developing own services and using system services in Android</title>
-			<para>
+			<title>Developing own services and using system services in Android
+			
 				This tutorial describes how to create and consume Android
 				services. It is based on and Android 6.0.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 

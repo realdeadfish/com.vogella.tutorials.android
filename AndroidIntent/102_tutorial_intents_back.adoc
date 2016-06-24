@@ -24,7 +24,7 @@
 			button.
 		
 
-	</section>
+	
 	<section id="explicit_intentssendbackj">
 		<title>Return data from ResultActivity
 		
@@ -41,7 +41,7 @@
 			</programlisting>
 		
 		Solve all TODOs.
-	</section>
+	
 
 	<section id="explicit_intentssendbackreceive">
 		<title>Evaluate the return data in MainActivity
@@ -70,6 +70,5 @@
 					parse="text" href="./examples/explicit/MainActivity2.java" />
 			</programlisting>
 		
-	</section>
+	
 
-</section>

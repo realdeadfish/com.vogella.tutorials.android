@@ -36,4 +36,3 @@
 		disable or
 		hide certain menu items.
 	
-</section>

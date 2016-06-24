@@ -1,6 +1,6 @@
 <section id="managingapplicationlifecyle">
-	<title>Managing the application life cycle</title>
-	<para> In an ideal case all
+	<title>Managing the application life cycle
+	 In an ideal case all
 		Android applications started by the user
 		remain in memory, that makes
 		restarting applications faster. But in
@@ -14,18 +14,18 @@
 		processes or
 		recycling Android
 		components.
-	</para>
-	<para>
+	
+	
 		If the Android system needs to free up resources it follows a
 		simple set of rules. Every process gets a priority in the following
 		order.
-	</para>
+	
 
-	<para>
+	
 		If the Android system needs to terminate processes it follows the
 		following priority system.
 		<table frame='all'>
-			<title>Priorities</title>
+			<title>Priorities
 			<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="2*" />
 				<colspec colname='c2' colwidth="5*" />
@@ -48,7 +48,7 @@
 							if a service is executing one of its lifecycle
 							methods or a
 							broadcast receiver which runs its
-							<code>onReceive()</code>
+							`onReceive()`
 							method.
 						</entry>
 						<entry>1</entry>
@@ -89,8 +89,8 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
-	<para>All processes in the "Empty" list are added
+	
+	All processes in the "Empty" list are added
 		to a least
 		recently used list (LRU list) and the processes which are at
 		the
@@ -98,9 +98,9 @@
 		required. If an application is restarted by the user its gets moved to
 		the end of this queue if it reaches the lowest prio again, as
 		indicated by the following graphic.
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/process_termination10.png"
@@ -110,7 +110,6 @@
 				<phrase>LRU list for process determination</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 
 
-</section>

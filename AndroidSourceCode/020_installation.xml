@@ -1,24 +1,23 @@
 <section id="overview">
-	<title>Installation of the required tools</title>
-	<para>
+	<title>Installation of the required tools
+	
 
 		Install the Git command line tool. See
-		<ulink url="http://www.vogella.com/tutorials/Git/article.html"> Git tutorial</ulink>
+		http://www.vogella.com/tutorials/Git/article.html[ Git tutorial]
 		for an introduction into Git and its installation.
 
-	</para>
-	<para>
+	
+	
 		You also need to install an
 		additional tool called
-		<wordasword>repo</wordasword>
+		_repo_
 		. Execute the following commands for this.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/installrepo.txt" />
 		</programlisting>
-	</para>
+	
 
 
-</section>

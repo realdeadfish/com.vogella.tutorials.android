@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Creating custom and compound Views in Android - Tutorial</title>
+		<title>Creating custom and compound Views in Android - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -18,15 +18,15 @@
 		<pubdate>12.05.2014</pubdate>
 		<releaseinfo>
 
-			<para>Version 3.4</para>
+			Version 3.4
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Creating custom views in Android</title>
-			<para> This tutorials describes how to create custom views with
+			<title>Creating custom views in Android
+			 This tutorials describes how to create custom views with
 				Android. It is
 				based on Eclipse 4.4, Java 1.6 and Android 4.4.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

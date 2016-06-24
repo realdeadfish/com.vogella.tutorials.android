@@ -1,27 +1,24 @@
 <section id="librarymodules_adt">
-	<title>Creating custom Android library modules in Eclipse ADT</title>
+	<title>Creating custom Android library modules in Eclipse ADT
 	<section id="libraryoverview_creatingeclipse">
-		<title>Defining Libraries modules in Eclipse ADT</title>
-		<indexterm>
-			<primary>Library modules
+		<title>Defining Libraries modules in Eclipse ADT
+		(((Library modules
 			</primary>
 			<secondary>Auto-merging components in Eclipse
 			</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Library projects
+		(((Library projects
 			</primary>
 			<secondary>Creating in Eclipse ADT
 			</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Library modules
+		(((Library modules
 			</primary>
 			<secondary>Creating in Eclipse ADT
 			</secondary>
 		</indexterm>
 
-		<para>
+		
 			To use such a library project in Eclipse, select the generated project,
 			right-click
 			on it
@@ -36,8 +33,8 @@
 			</menuchoice>
 			tab, add the library
 			project to it.
-		</para>
-		<para>
+		
+		
 			If you define components, e.g., activities in your library
 			project,
 			you need to re-define these components in the consuming
@@ -50,6 +47,6 @@
 			<filename>project.properties</filename>
 			file of your
 			application project.
-		</para>
-	</section>
-</section>
+		
+	
+

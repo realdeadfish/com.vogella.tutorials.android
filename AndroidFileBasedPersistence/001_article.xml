@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android Persistence with preferences and files - Tutorial</title>
+		<title>Android Persistence with preferences and files - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -19,16 +19,16 @@
 		<pubdate>02.03.2016</pubdate>
 		<releaseinfo>
 
-			<para>Version 3.2</para>
+			Version 3.2
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>File based persistence in Android</title>
-			<para>
+			<title>File based persistence in Android
+			
 				This tutorial describes how to save key-value pairs using the
 				preference API in Android. It also explains how to read and write
 				files in Android.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

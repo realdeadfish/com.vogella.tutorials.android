@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Calling Webservices iin Android - Tutorial</title>
+		<title>Calling Webservices iin Android - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -14,16 +14,16 @@
 		<pubdate>17.10.2012</pubdate>
 		<releaseinfo>
 
-			<para>Version 1.1	</para>
+			Version 1.1	
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>JSON with Android</title>
-			<para> This article describes how to process JSON within Android. It
+			<title>JSON with Android
+			 This article describes how to process JSON within Android. It
 				is
 				based on Eclipse 4.2, Java 1.6 and Android 4.1
 				(Jelly Bean).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

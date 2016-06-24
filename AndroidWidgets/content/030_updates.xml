@@ -1,6 +1,6 @@
 <section id="widget_update">
-	<title>Widget updates</title>
-	<para>
+	<title>Widget updates
+	
 		A widget
 		gets its data on a periodic timetable. There are two methods
 		to update
@@ -8,18 +8,18 @@
 		file and the
 		other is
 		based on the Android
-		<code>AlarmManager</code>
+		`AlarmManager`
 		service.
-	</para>
-	<para>
+	
+	
 		In the widget configuration file you can specify a fixed update
 		interval. The system will wake up after this time interval and call
 		your broadcast receiver to update the widget. The smallest update
 		interval is 1800000 milliseconds (30 minutes).
-	</para>
-	<para>
+	
+	
 		The
-		<code>AlarmManager</code>
+		`AlarmManager`
 		allows you
 		to be more resource efficient and to have a higher
 		frequency
@@ -28,12 +28,12 @@
 		and schedule this
 		service
 		via the
-		<code>AlarmManager</code>
+		`AlarmManager`
 		regularly. This service updates the widget.
-	</para>
-	<para>
+	
+	
 		Please note that a higher update frequency will wake up the phone
 		from the energy safe mode. As a result your widget consumes more
 		energy.
-	</para>
-</section>
+	
+

@@ -1,7 +1,7 @@
 <section id="activity_instancestate">
-	<title>Activity instance state</title>
-	<para>
-		<wordasword>Instance state</wordasword>
+	<title>Activity instance state
+	
+		_Instance state_
 		of an activity
 		which is required to restore the activity to the state
 		in which the
@@ -13,48 +13,48 @@
 		restore user selections.
 		The application is responsible for
 		restoring its instance state.
-	</para>
+	
 
-	<para>
+	
 		Assume for example the user scrolled through a
-		<code>ListView</code>
+		`ListView`
 		with thousands of items and the activity is recreated. Loosing the
 		position in the list is annoying for the user, hence the position
 		should be restored.
-	</para>
-	<para>
+	
+	
 		The
-		<code>onSaveInstanceState()</code>
+		`onSaveInstanceState()`
 		can be used to store this instance state as a
-		<code>Bundle</code>
+		`Bundle`
 		. A
-		<code>Bundle</code>
+		`Bundle`
 		can contain primitive data types, arrays, String and
 		objects which are
 		of the
-		<code>Parcelable</code>
+		`Parcelable`
 		or
-		<code>Serialisable</code>
+		`Serialisable`
 		type.
-	</para>
+	
 
-	<para>
+	
 		The persisted
-		<code>Bundle</code>
+		`Bundle`
 		data
 		is passed at restart of the activity
 		to the
-		<code>onCreate()</code>
+		`onCreate()`
 		method and
-		<code>onRestoreInstanceState()</code>
+		`onRestoreInstanceState()`
 		as parameter.
-	</para>
+	
 
-	<para>
+	
 		If you override
-		<code>onSaveInstanceState()</code>
+		`onSaveInstanceState()`
 		and
-		<code>onRestoreInstanceState()</code>
+		`onRestoreInstanceState()`
 		you should call the super
 		implementation of
 		it, because the default
@@ -62,65 +62,65 @@
 		store their
 		data
 		via a call to
-		<code>View.onSaveInstanceState</code>
+		`View.onSaveInstanceState`
 		from the
-		<code>onSaveInstanceState()</code>
+		`onSaveInstanceState()`
 		method of the activity.
 		For
 		example
-		<code>EditText</code>
+		`EditText`
 		stores its content via the default call of this method.
-	</para>
-	<para>
+	
+	
 		The
-		<code>onRestoreInstanceState()</code>
+		`onRestoreInstanceState()`
 		or the
-		<code>onCreate()</code>
+		`onCreate()`
 		methods
 		can be used to recreate the instance scope of an activity if it
 		is
 		restarted.
-	</para>
+	
 	<tip>
-		<para>
+		
 			Prefer using the
-			<code>onRestoreInstanceState()</code>
+			`onRestoreInstanceState()`
 			method for restoring the instance state. This approach separates the
 			initial setup from restoring the state.
-		</para>
+		
 	</tip>
-	<para>
+	
 		If the user interacts with an activity and presses the
-		<wordasword>Back</wordasword>
+		_Back_
 		button or if the
-		<code>finish()</code>
+		`finish()`
 		method of an activity is called, the activity is removed from the
 		current activity stack and recycled. In this case there is no instance
 		state to save and the
-		<code>onSaveInstanceState()</code>
+		`onSaveInstanceState()`
 		method is not called.
-	</para>
-	<para>
+	
+	
 		If the user interacts with an activity and presses the
-		<wordasword>Home</wordasword>
+		_Home_
 		button, the activity instance state must be saved. The
-		<code>onSaveInstanceState()</code>
+		`onSaveInstanceState()`
 		method is called. If the user
 		restarts the application it will resume
 		or restart the
 		last running activity. If it restarts the activity it
 		provides the bundle with the save data
 		to the
-		<code>onRestoreInstanceState()</code>
+		`onRestoreInstanceState()`
 		and
-		<code>onCreate()</code>
+		`onCreate()`
 		methods.
-	</para>
+	
 	<warning>
 
-		<para>
+		
 			The
-			<code>onSaveInstanceState()</code>
+			`onSaveInstanceState()`
 			method
 			is
 			not called if the user
@@ -131,6 +131,6 @@
 			the
 			data which needs to get
 			persisted.
-		</para>
+		
 	</warning>
-</section>
+

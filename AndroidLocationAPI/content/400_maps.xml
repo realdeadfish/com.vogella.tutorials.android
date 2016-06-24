@@ -1,29 +1,29 @@
 <section id="maps">
-	<title>Google Maps</title>
+	<title>Google Maps
 	<section id="maps_mapsview">
-		<title>MapsView</title>
-		<para>
+		<title>MapsView
+		
 			Google provides via the
-			<code>com.google.android.maps</code>
+			`com.google.android.maps`
 			package a library for using the
-			<code>MapView</code>
+			`MapView`
 			class
 			in your application. This view allows to embed Google Maps into
 			your application.
-		</para>
-		<para>
+		
+		
 			You require an additional key to use them.
 			This
 			key will be specified
 			in the layout file
 			for the
-			<code>MapView</code>
+			`MapView`
 			.
-		</para>
-		<para>
+		
+		
 			You need to add the
 			information that you will be using the
-			<code>map</code>
+			`map`
 			library to your
 			<filename>AndroidManifest.xml</filename>
 			file
@@ -33,144 +33,144 @@
 			you select a
 			Google
 			API version.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/maps/uses.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The usage of
-			<code>MapView</code>
+			`MapView`
 			requires the permission to access
 			the Internet, as the data displayed
 			in the
-			<code>MapView</code>
+			`MapView`
 			is downloaded from the Internet.
-		</para>
-	</section>
+		
+	
 	<section id="maps_activity">
-		<title>MapsActivity</title>
-		<para>
+		<title>MapsActivity
+		
 			The
-			<code>MapActivity</code>
+			`MapActivity`
 			class
 			extends the
-			<wordasword>activity</wordasword>
+			_activity_
 			class and provides the
 			life cycle management and the services for
 			displaying a
-			<code>MapView</code>
+			`MapView`
 			widget.
-		</para>
+		
 
-		<para>
+		
 			MapActivity simplify the handling
-			<code>MapViews</code>
+			`MapViews`
 			similar to
-			<code>ListActivity</code>
+			`ListActivity`
 			simplifies the usage of
-			<code>ListViews</code>
+			`ListViews`
 			.
-		</para>
-		<para>
+		
+		
 			A
-			<code>MapView</code>
+			`MapView`
 			is typically defined in the XML layout file used by the
-			<code>MapActivity</code>
+			`MapActivity`
 			and requires the API key in the "android:apiKey" attribute. A
-			<code>MapView</code>
+			`MapView`
 			can be used with other user interface components in the same layout.
-		</para>
-		<para>
+		
+		
 			The
-			<code>MapController</code>
+			`MapController`
 			class can be used to interact with the
-			<code>MapView</code>
+			`MapView`
 			, e.g. by moving it. A
-			<code>Geopoint</code>
+			`Geopoint`
 			is a position described via
 			latitude
 			and longitude.
-		</para>
+		
 
-	</section>
+	
 	<section id="maps_zoomcontrols">
-		<title>Build in Zoom controls</title>
-		<para>
-			<code>MapView</code>
+		<title>Build in Zoom controls
+		
+			`MapView`
 			allows to activate the build in zoom controls via the
-			<code>.setBuiltInZoomControls()</code>
+			`.setBuiltInZoomControls()`
 			method call.
-		</para>
+		
 
-	</section>
+	
 	<section id="maps_mylocation">
-		<title>MyLocationOverlay</title>
-		<para>
+		<title>MyLocationOverlay
+		
 			The
-			<code>MyLocationOverlay</code>
+			`MyLocationOverlay`
 			class allow to display the current geolocation and allows to enable a
 			compass.
-		</para>
+		
 
-		<para>
+		
 			The following code snippet shows how you can register
 			myLocationOverlay for your
-			<code>MapView</code>
+			`MapView`
 			.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/maps/mylocation.txt" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			You also have a enable and disable myLocationOverview and the compass
 			in the
-			<code>onResume()</code>
+			`onResume()`
 			method and in the
-			<code>onPause()</code>
+			`onPause()`
 			method.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/maps/lifecycle.txt" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
 
 
 
 	<section id="maps_overlays">
-		<title>ItemizedOverlay and OverlayItems</title>
-		<para>
+		<title>ItemizedOverlay and OverlayItems
+		
 			You can put instances of the
-			<code>Overlay</code>
+			`Overlay`
 			class
 			on the map.
-			<code>Overlay</code>
+			`Overlay`
 			is the base class representing an overlay which may be displayed
 			on
 			top of a map. To add an overlay, subclass this class, create an
 			instance, and add it to the list obtained from MapView.getOverlays().
-		</para>
-		<code>ItemizedOverlay</code>
+		
+		`ItemizedOverlay`
 		is the base class for an
-		<code>Overlay</code>
+		`Overlay`
 		which consists of a list of
-		<code>OverlayItems</code>
+		`OverlayItems`
 		.
-		<code>ItemizedOverlay</code>
+		`ItemizedOverlay`
 		handles sorting north-to-south for drawing, creating span
 		bounds,
 		drawing a marker for each point, and maintaining a focused
@@ -178,11 +178,11 @@
 		also matches screen-taps to items, and dispatches
 		Focus-change events
 		to an optional listener.
-	</section>
+	
 
 	<section id="maps_key">
-		<title>Getting the Google Map key</title>
-		<para>
+		<title>Getting the Google Map key
+		
 			To use Google Maps you need to create a valid key. This is based
 			on the
 			key with which you sign your Android application during
@@ -191,43 +191,43 @@
 			and uses a debug key based on the
 			"userhome"/.android/debug.keystore
 			file.
-		</para>
-		<para>To create the key you use the "keytool" command from your JDK
+		
+		To create the key you use the "keytool" command from your JDK
 			installation pointing to the "debug.keystore" file.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/maps/key.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			If you are using Java7 the default output of keytool has changed. Add
 			the
 			<parameter class='option'>-v</parameter>
 			to see also the MD5 fingerprint.
-		</para>
+		
 
-		<para>
+		
 			The output of this command must be copied and entered on the
 			following
 			website:
-			<ulink url="http://code.google.com/android/maps-api-signup.html"> Google Maps Signup Page</ulink>
+			http://code.google.com/android/maps-api-signup.html[ Google Maps Signup Page]
 			.
-		</para>
+		
 
-		<para>
+		
 			The procedure is described in detail in the following link:
 			<ulink
-				url="http://code.google.com/android/add-ons/google-apis/mapkey.html">Getting a Google Maps key</ulink>
+				url="http://code.google.com/android/add-ons/google-apis/mapkey.html[Getting a Google Maps key]
 			.
-		</para>
-	</section>
+		
+	
 
 
 	<section id="maps_device">
-		<title>Device with Google API</title>
-		<para>
+		<title>Device with Google API
+		
 			In case you want to use Google Maps in your emulator you have to
 			create a device which supports the Google API's. This
 			requires
@@ -239,21 +239,21 @@
 			Google API's in the
 			version of your
 			SDK.
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/location04.gif" scale="60" />
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
 
-	</section>
+	
 
 
 
 
-</section>
+
 

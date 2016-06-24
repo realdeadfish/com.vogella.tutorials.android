@@ -1,10 +1,10 @@
 <section id="android_permissionsresources">
-	<title>Android permissions resources</title>
+	<title>Android permissions resources
 
-	<para>
-		<ulink url="http://developer.android.com/guide/topics/security/permissions.html">Android runtime permissions - Official documentation</ulink>
-	</para>
-	<para>
-		<ulink url="https://github.com/googlesamples/android-RuntimePermissions/">Code example for demonstrating runtime permissions</ulink>
-	</para>
-</section>
+	
+		http://developer.android.com/guide/topics/security/permissions.html[Android runtime permissions - Official documentation]
+	
+	
+		https://github.com/googlesamples/android-RuntimePermissions/[Code example for demonstrating runtime permissions]
+	
+

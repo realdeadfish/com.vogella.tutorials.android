@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android Drawables - Tutorial</title>
+		<title>Android Drawables - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -16,13 +16,13 @@
 		<pubdate>01.09.2010 - 20.12.2012</pubdate>
 		<releaseinfo>
 
-			<para>Version 2.1	</para>
+			Version 2.1	
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Android Drawables</title>
-			<para> This tutorial describes the usage of Drawables in Android.
-			</para>
+			<title>Android Drawables
+			 This tutorial describes the usage of Drawables in Android.
+			
 		</abstract>
 	</articleinfo>
 	

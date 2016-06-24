@@ -1,6 +1,6 @@
 <section id="tutorial_recordsound">
-	<title>Tutorial: Record media via MediaRecorder</title>
-	<para>
+	<title>Tutorial: Record media via MediaRecorder
+	
 		We will create an application which will start playing a sound
 		once
 		the
@@ -8,47 +8,46 @@
 		Android
 		project called
 		"de.vogella.android.media.soundrecording" with an
-		<wordasword>activity</wordasword>
+		_activity_
 		called
-		<wordasword>RecordSound</wordasword>.
-	</para>
-	<para>Add to the AndroidManifest.xml file the permission to write to
+		_RecordSound_.
+	
+	Add to the AndroidManifest.xml file the permission to write to
 		the SD card and to record audio data.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/record/permission.txt" />
 		</programlisting>
-	</para>
+	
 
 
 
-	<para> Change the layout <filename>main.xml</filename> to the following.</para>
+	 Change the layout <filename>main.xml</filename> to the following.
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/record/main.xml" />
 		</programlisting>
-	</para>
-	<para>
-	</para>
-	<para>
+	
+	
+	
+	
 		Change your
-		<wordasword>activity</wordasword>
+		_activity_
 		class to the following.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/record/SoundRecordingActivity.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		You should be able to record a sound, if you press the "Start
 		Recording" button. Once you press the stop recording button, the
 		recording will be stopped and the file will be added to your media
 		library.
-	</para>
-</section>
+	

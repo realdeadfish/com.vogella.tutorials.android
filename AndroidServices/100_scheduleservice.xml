@@ -1,9 +1,8 @@
 <section id="scehdulingservices">
-	<title>Scheduling service</title>
-	<para>
+	<title>Scheduling service
+	
 		See
 		<ulink
-			url="http://www.vogella.com/tutorials/AndroidTaskScheduling/article.html">Android task scheduling</ulink>
+			url="http://www.vogella.com/tutorials/AndroidTaskScheduling/article.html[Android task scheduling]
 		to learn how to schedule service periodically.
-	</para>
-</section>
+	

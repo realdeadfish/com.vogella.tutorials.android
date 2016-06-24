@@ -1,8 +1,8 @@
 <section id="installmaps">
-	<title>Install Google Play services</title>
+	<title>Install Google Play services
 	<section id="installmaps_download">
-		<title>Download the Google Play services </title>
-		<para>
+		<title>Download the Google Play services 
+		
 			Open the
 			<guilabel>Android SDK Manager</guilabel>
 			and install
@@ -10,8 +10,8 @@
 				<guimenu>Extras</guimenu>
 				<guisubmenu>Google Play services</guisubmenu>
 			</menuchoice>
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/install_googleplayservices10.png"
@@ -21,20 +21,20 @@
 					<phrase>Install Google Services</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 	<section id="installmaps_createlibraryproject">
 		<title>
 			Create an library project for the Google Play Service library
-		</title>
-		<para>
+		
+		
 			The Android SDK manager downloads the file to
 			<filename>sdk/extras/google/google_play_services/libproject/google-play-services_lib
 			</filename>
 			.
-		</para>
+		
 
-		<para>
+		
 			Import the library from there into Eclipse via the
 			<menuchoice>
 				<guimenu>File</guimenu>
@@ -43,8 +43,8 @@
 				<guisubmenu>Existing Android Code into Workspace</guisubmenu>
 			</menuchoice>
 			menu entry.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/importgoogleplaylibrary10.png"
@@ -54,11 +54,10 @@
 					<phrase>Importing Google services as Android library projec</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>To use this library define a library dependency in your Android
+		To use this library define a library dependency in your Android
 			project.
-		</para>
-	</section>
+		
+	
 
-</section>

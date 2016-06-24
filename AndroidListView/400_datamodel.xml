@@ -1,17 +1,17 @@
 <section id="listviewselection">
-	<title>Selecting multiple items in the ListView</title>
+	<title>Selecting multiple items in the ListView
 	<section id="listviewselection_data">
-		<title>Interaction between the model and Listview</title>
-		<para>
+		<title>Interaction between the model and Listview
+		
 			Frequently you need to select items in your
-			<code>ListView</code>
+			`ListView`
 			. As the row of the
-			<code>ListView</code>
+			`ListView`
 			are getting recycled you cannot store the selection on the
-			<code>View</code>
+			`View`
 			level.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/interactive10.png"/>
@@ -20,107 +20,106 @@
 					<phrase>ListView with Interaction and full model</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>Selection is just one possible example but you can imange other
+		
+		Selection is just one possible example but you can imange other
 			interaction between your row and model.
-		</para>
-		<para>To persist the selection you have to update your data model with
+		
+		To persist the selection you have to update your data model with
 			the selected state.
-		</para>
-		<para>
+		
+		
 			To update the data model in your
-			<code>ListView</code>
+			`ListView`
 			you define your own
-			<code>Adapter</code>
+			`Adapter`
 			class. In this adapter class you attach a listener to the
-			<code>View</code>
+			`View`
 			which is responsible for selecting the model element. If selected you
 			update the state in the model which you can add
 			as a tag to the View
 			to have access to it.
-		</para>
-		<para>
+		
+		
 			The following example demonstrates how to use standard Java
 			object
 			and
 			how to interact from the
-			<code>Views</code>
+			`Views`
 			with the model.
-		</para>
+		
 
-	</section>
+	
 
 
 	<section id="listadvanced_interactive">
-		<title>Tutorial: Domain Model and list view rows interaction</title>
-		<para>
+		<title>Tutorial: Domain Model and list view rows interaction
+		
 			Continue to use the
-			<code>de.vogella.android.listactivity</code>
+			`de.vogella.android.listactivity`
 			project.
-		</para>
-		<para>
+		
+		
 
 			Create the following
-			<code>Model</code>
+			`Model`
 			which hold the name and the information if this element is
 			currently
 			selected.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/interactive/Model.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Create the following new layout file called
 			<filename>rowbuttonlayout.xml</filename>
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/interactive/rowbuttonlayout.xml" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Create the following
-			<code>Adapter</code>
+			`Adapter`
 			. This adapter adds a listener
 			on the
-			<code>Checkbox</code>
+			`Checkbox`
 			view
 			. If the checkbox
 			is selected the underlying data of
 			the model is
 			changed.
-			<code>Checkbox</code>
+			`Checkbox`
 			gets the corresponding model element
 			assigned via the
-			<code>getTag()</code>
+			`getTag()`
 			method.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/interactive/InteractiveArrayAdapter.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Finally change your
 			activity
 			to the following.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/interactive/MyList.java" />
 			</programlisting>
-		</para>
-		<para> If you start your app you should be able to flag items. These
+		
+		 If you start your app you should be able to flag items. These
 			changes will be reflected in your model.
-		</para>
+		
 
-	</section>
+	
 
 
 
-</section>

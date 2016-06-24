@@ -1,19 +1,18 @@
 <section id="resources_sqlite">
-    <title>Android SQLite resources</title>
-    <para>
-        <ulink url="http://www.sqlite.org/">
+    <title>Android SQLite resources
+    
+        http://www.sqlite.org/">
             SQlite website</ulink>
-    </para>
-    <para>
-        <ulink url="http://www.vogella.com/tutorials/SQL/article.html">
+    
+    
+        http://www.vogella.com/tutorials/SQL/article.html">
             SQL Tutorial</ulink>
-    </para>
-    <para>
+    
+    
         <ulink
             url="http://coderzheaven.blogspot.de/2012/03/sqlitemanager-plugin-for-eclipse.html?m=1">
             SQLiteManager Eclipse Plug-in</ulink>
-    </para>
+    
 
 
 
-</section>

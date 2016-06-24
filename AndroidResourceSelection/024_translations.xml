@@ -1,16 +1,16 @@
 <section id="resourcequalifiers_translations1" role="wrapper">
-	<title>Strings and translations</title>
+	<title>Strings and translations
 
 	<section id="resourcequalifiers_translationsqualifier">
-		<title>Strings and translations</title>
-		<para>
+		<title>Strings and translations
+		
 			You can also use resource selectors for your
 			<filename class="directory">values</filename>
 			folder with contains, for example, your string values. Use the
 			<filename class="directory">values-qualifier</filename>
 			folder for this.
-		</para>
-		<para>
+		
+		
 			For
 			example, to provide English and German text resources, use
 			the
@@ -18,12 +18,12 @@
 			and
 			<filename class="directory">values-de</filename>
 			folder.
-		</para>
-	</section>
+		
+	
 
 	<section id="resourcequalifiers_plurals">
-		<title>Plurals</title>
-		<para>
+		<title>Plurals
+		
 			Android supports Plurals. Plurals are XML based resources which
 			allow
 			to handle different quantities. This way you can select the
@@ -33,7 +33,7 @@
 			quantities “zero”, “one”, “two”, “many”, “few”, “many”,
 			“other” and in
 			your code you use the
-			<code>getQuantityString()</code>
+			`getQuantityString()`
 			method to
 			get the correct value. You can also format strings. If now
 			Strings
@@ -42,26 +42,26 @@
 			Objects should be used for formating you pass them as
 			additional
 			parameters.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/plurals/string.xml" />
 			</programlisting>
-		</para>
-		<para>For example the following will define a plural. This file needs
+		
+		For example the following will define a plural. This file needs
 			to be in the “res/values” directory and in this example it is called
 			“plurals”.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/plurals/Test.java" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>Note that the selection is
+		Note that the selection is
 			made based on grammatical necessity. A
 			string for zero in English
 			will be ignored even if the quantity is 0,
@@ -69,28 +69,27 @@
 			grammatically different from 2, or any other number
 			except 1 (“no
 			tutorial”, “one tutorial”, “two tutorials”, and so on).
-		</para>
-	</section>
+		
+	
 	<section id="resourcequalifiers_translations_translations">
-		<title>Using Google translate</title>
-		<para>You can either translate your String manually (either yourself
+		<title>Using Google translate
+		You can either translate your String manually (either yourself
 			or a paid organization) or use a machine translation.
-		</para>
-		<para>
+		
+		
 			White a machine based translation is not optional it might be a
 			good
 			starting point or the only option if the budget for the
 			application is
 			limited.
-			<ulink url="http://translate.google.com/toolkit">Google Translate</ulink>
+			http://translate.google.com/toolkit[Google Translate]
 			provides free machine translation with the option to hire
 			professionals for checks.
-		</para>
+		
 		<tip>
-			<para>The tool offer free suggestions but it first offers you (at the
+			The tool offer free suggestions but it first offers you (at the
 				moment) a paid translation. Click through this to get to the machine
 				translation.
-			</para>
+			
 		</tip>
-	</section>
-</section>
+	

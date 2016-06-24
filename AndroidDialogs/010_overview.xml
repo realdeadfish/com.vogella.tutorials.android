@@ -1,78 +1,77 @@
 <section id="dialogfragment" role="wrapper">
-	<title>Using dialogs in Android with DialogFragments</title>
+	<title>Using dialogs in Android with DialogFragments
 	<section id="dialogfragment_overview">
-		<title>Using dialogs in Android</title>
-		<para>
+		<title>Using dialogs in Android
+		
 			In the past you could open dialogs from your
 			activity
 			via the
-			<code>showDialog(int)</code>
+			`showDialog(int)`
 			method but since the introduction of fragments which method has been deprecated.
 			You should use an instance of
-			<code>DialogFragment</code>
+			`DialogFragment`
 			to show a dialog. A DialogFragment is a fragment that displays a dialog window, floating on top of its activity’s
 			window. You can either
 			return an existing dialog implementation in your fragment or implement a custom layout to be
 			shown.
-		</para>
-	</section>
+		
+	
 
 	<section id="dialogfragment_wrappingdialog">
-		<title>Using existing dialogs</title>
-		<para>
+		<title>Using existing dialogs
+		
 			Your
-			<code>DialogFragment</code>
+			`DialogFragment`
 			can implement the
-			<code>onCreateDialog</code>
+			`onCreateDialog`
 			method and return an existing dialog.
 			The
-			<code>Dialog</code>
+			`Dialog`
 			class
 			is the base class for implementing a dialog. Typically, you use one of its
 			subclasses, e.g.,
-			<code>AlertDialog</code>
+			`AlertDialog`
 			,
-			<code>ProgressDialog</code>
+			`ProgressDialog`
 			,
-			<code>DatePickerDialog</code>
+			`DatePickerDialog`
 			or
-			<code>TimePickerDialog</code>
+			`TimePickerDialog`
 			.
-		</para>
-		<para>
+		
+		
 			Android also provides a
-			<code>ProgressDialog</code>
+			`ProgressDialog`
 			,
 			which can be opened via a
-			<code>ProgressDialog.open()</code>
+			`ProgressDialog.open()`
 			method call.
-		</para>
-	</section>
+		
+	
 
 	<section id="dialogfragment_customlayout">
-		<title>Custom layout for your DialogFragment</title>
+		<title>Custom layout for your DialogFragment
 
-		<para>
+		
 			If you want to create your custom dialog, you create a layout file
 			for
 			the dialog. This layout file can be inflated and
 			returns via the
-			<code>onCreateView()</code>
+			`onCreateView()`
 			method of the fragment.
-		</para>
-	</section>
+		
+	
 	<section id="dialog_owndialog">
-		<title>Communication to the activity via the DialogFragment</title>
+		<title>Communication to the activity via the DialogFragment
 
-		<para>
+		
 			Your implementation of
-			<code>DialogFragment</code>
+			`DialogFragment`
 			communicates similar to other fragment to the activity. A good practice is that the fragment defines an
 			interface
 			which the activity must implement so that the fragment can call back into the activity without knowing the
 			implementation
 			details of the activity.
 
-		</para>
-	</section>
-</section>
+		
+	

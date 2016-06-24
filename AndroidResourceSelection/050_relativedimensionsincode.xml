@@ -1,6 +1,6 @@
 <section id="dpincode">
-	<title>Defining the size of UI components in source code</title>
-	<para>
+	<title>Defining the size of UI components in source code
+	
 		The Android API frequently requires you to specify a size in
 		pixels
 		and does not accept
@@ -9,8 +9,8 @@
 		In this case you need to transform your desired
 		<parameter>dp</parameter>
 		into actual pixels.
-	</para>
-	<para>
+	
+	
 		You can
 		use the following method to
 		calculate the
@@ -21,24 +21,24 @@
 		a dimension specified in
 		<parameter>dp</parameter>
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/convert/convertToPixelFromDp.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		The
 		density
 		for the current device can be queried with the
 		following
 		method call.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/convert/dpi.java" />
 		</programlisting>
-	</para>
-</section>
+	
+

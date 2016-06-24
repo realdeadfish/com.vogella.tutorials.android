@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Google Maps Android API v2 - Tutorial</title>
+		<title>Google Maps Android API v2 - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -17,18 +17,18 @@
 		<pubdate>19.11.2014</pubdate>
 		<releaseinfo>
 
-			<para>Version 4.5</para>
+			Version 4.5
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Android and Google Maps</title>
-			<para> This tutorial describes the usage
+			<title>Android and Google Maps
+			 This tutorial describes the usage
 				of Google Maps in your
 				Android application.
 				It is based on
 				Eclipse 4.4, Java 1.7 and Android
 				4.4.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

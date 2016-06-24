@@ -1,13 +1,13 @@
 <section id="librarymodulesstudio">
 	<title>Creating custom Android library modules in Android Studio
-	</title>
+	
 	<indexterm>
 		<primary>Library modules
 		</primary>
 		<secondary>Creating in Android Studio
 		</secondary>
 	</indexterm>
-	<para>
+	
 		To create a new libary
 		module in Android Studio, select
 		<menuchoice>
@@ -17,5 +17,5 @@
 		and select
 		<guilabel>Android Library</guilabel>
 		.
-	</para>
-</section>
+	
+

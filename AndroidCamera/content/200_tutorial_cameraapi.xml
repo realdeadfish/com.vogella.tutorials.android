@@ -1,91 +1,90 @@
 <section id="tutorial_cameraapi">
-	<title>Tutorial: Using the camera API</title>
-	<para>In this tutorial you create application which allows you to make
+	<title>Tutorial: Using the camera API
+	In this tutorial you create application which allows you to make
 		a
 		photo via the front camera and to save it on the SD card.
-	</para>
+	
 	<tip>
-		<para>If you
+		If you
 			using
 			the Android emulator ensure that you configured the
 			camera and that you added an SD card
 			during
 			the creation of the your
 			Android virtual device.
-		</para>
+		
 	</tip>
-	<para>
+	
 		Create a new Android project called
-		<wordasword>de.vogella.camera.api</wordasword>
+		_de.vogella.camera.api_
 		with an
-		<wordasword>activity</wordasword>
+		_activity_
 		called
-		<code>MakePhotoActivity</code>
+		`MakePhotoActivity`
 		.
-	</para>
-	<para>
+	
+	
 		Add the
-		<code>android.permission.CAMERA</code>
+		`android.permission.CAMERA`
 		permission to access your camera and the
-		<code>android.permission.WRITE_EXTERNAL_STORAGE</code>
+		`android.permission.WRITE_EXTERNAL_STORAGE`
 		to be able to write to the SD card to your
 		<filename>AndroidManifest.xml</filename>
 		file.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/cameraapi/AndroidManifest.xml" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		Change the
 		<filename>main.xml</filename>
 		file in the
 		<filename class="directory">res/layout</filename>
 		folder to the
 		following
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/cameraapi/simple.xml" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Create the following
-		<code>PhotoHandler</code>
+		`PhotoHandler`
 		class which will be responsible for saving the photo the SD card.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/cameraapi/PhotoHandler.java" />
 		</programlisting>
-	</para>
+	
 
 
-	<para>
+	
 		Change the
-		<code>MakePhotoActivity
-		</code>
+		`MakePhotoActivity
+		`
 		class to the following. This class assumes that you have a button
 		in
 		your layout with the
 		<parameter>onClick</parameter>
 		property pointing to a
-		<code>onClick()</code>
+		`onClick()`
 		method.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/cameraapi/MakePhotoActivity.java" />
 		</programlisting>
-	</para>
+	
 
 
-</section>

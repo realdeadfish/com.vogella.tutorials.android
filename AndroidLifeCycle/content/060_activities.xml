@@ -1,14 +1,14 @@
 <section id="activity_lifecycle">
-	<title>Activity life cycle</title>
+	<title>Activity life cycle
 	<section id="activity_lifecycle_states">
-		<title>States of an activity</title>
+		<title>States of an activity
 
-		<para>
+		
 			An activity can be in different states depending how it is
 			interacting with the user. These states are described by the
 			following table.
 			<table frame='all'>
-				<title>Activity state</title>
+				<title>Activity state
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="3*" />
@@ -46,7 +46,7 @@
 							<entry>Killed</entry>
 							<entry>
 								Activity has been terminated by the system of by a call to its
-								<code>finish()</code>
+								`finish()`
 								method.
 							</entry>
 						</row>
@@ -54,15 +54,15 @@
 				</tgroup>
 			</table>
 
-		</para>
+		
 
-	</section>
+	
 
 	<section id="activity_lifecycle_methods">
-		<title>The live cycle methods</title>
+		<title>The live cycle methods
 
 
-		<para>
+		
 			The Android
 			system
 			defines a
@@ -73,7 +73,7 @@
 			life-cycle methods. The most important methods
 			are:
 			<table frame='all'>
-				<title>Important Activity lifecycle methods</title>
+				<title>Important Activity lifecycle methods
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -96,7 +96,7 @@
 							<entry>onResume()</entry>
 							<entry>
 								Called if the
-								<wordasword>activity</wordasword>
+								_activity_
 								get visible again and the user starts interacting with the
 								activity again. Used to initialize
 								fields, register listeners,
@@ -108,7 +108,7 @@
 							<entry>
 								Called once another activity gets into the foreground. Always
 								called before the
-								<wordasword>activity</wordasword>
+								_activity_
 								is not visible anymore. Used
 								to release
 								resources or save
@@ -126,7 +126,7 @@
 								operations, such as writing
 								information to a
 								database should be down in the
-								<code>onStop()</code>
+								`onStop()`
 								method. This method is guaranteed to be called as of API 11.
 							</entry>
 						</row>
@@ -134,11 +134,11 @@
 				</tgroup>
 			</table>
 
-		</para>
-		<para>The life cycle of an activity with its most important methods is
+		
+		The life cycle of an activity with its most important methods is
 			displayed in the following diagram.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/activity_lifecycle10.png"
@@ -148,29 +148,29 @@
 					<phrase>Activity life cycle</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Android has more life cycle methods but not all of these methods
 			are
 			guaranteed to be called. The
-			<code>onDestroy()</code>
+			`onDestroy()`
 			method is not guaranteed to be called, hence you
 			typically do not use
 			it.
-		</para>
-		<para>
+		
+		
 			For more information on the other methods
 			see
 			<ulink
-				url="http://developer.android.com/guide/components/activities.html">Activity life cycle - Official documentation</ulink>
+				url="http://developer.android.com/guide/components/activities.html[Activity life cycle - Official documentation]
 			.
-		</para>
-	</section>
+		
+	
 
 	<section id="activity_lifecycle_dermination">
-		<title>Termination of activities by Android</title>
+		<title>Termination of activities by Android
 
-		<para>
+		
 			The Android system is allowed to recycle Android activities
 			to
 			free up
@@ -182,25 +182,25 @@
 			following the rules outlined in
 			<xref linkend="managingapplicationlifecyle" />
 			.
-		</para>
+		
 		<note>
-			<para>
+			
 				It is a common misunderstanding that Android also kills
 				individual
 				activities, because
 				<ulink
-					url="http://developer.android.com/guide/components/activities.html#Lifecycle">the official life-cycle Android documentation</ulink>
+					url="http://developer.android.com/guide/components/activities.html#Lifecycle[the official life-cycle Android documentation]
 				describes this. However Dianne
 				Hackborn from the core Android team
 				involved in the out of memory killer implementation clarified on
 				Stackoverflow that the Android system only kill processes and not
 				individual activities. See
 				<ulink
-					url="http://stackoverflow.com/questions/7536988/android-app-out-of-memory-issues-tried-everything-and-still-at-a-loss/7576275#7576275">Dianas Answer on Stackoverflow</ulink>
+					url="http://stackoverflow.com/questions/7536988/android-app-out-of-memory-issues-tried-everything-and-still-at-a-loss/7576275#7576275[Dianas Answer on Stackoverflow]
 				.
-			</para>
+			
 		</note>
-		<para>
+		
 			To ensure its state is saved, the activity
 			needs
 			to store the
@@ -214,30 +214,29 @@
 			activity is not visible
 			anymore to save
 			system resources.
-		</para>
-		<para>
+		
+		
 			You typically use the
-			<code>onPause()</code>
+			`onPause()`
 			method to stop framework listeners and UI updates and use the
-			<code>onStop()</code>
+			`onStop()`
 			method to save the application data. These methods are guaranteed to
 			be called before the activity is terminated. The
-			<code>onResume()</code>
+			`onResume()`
 			is used to register again listeners and to trigger UI updates based
 			on the saved data, if necessary.
-		</para>
+		
 
-		<para>
+		
 			In addition to resource management, Android also recreates
 			activities
 			in case a configuration change occurs. The
-			<code>Configuration</code>
+			`Configuration`
 			object contains the current device configuration, if this
 			configuration changes activities are restarted, as they may use
 			different resources for this configuration.
-		</para>
+		
 
 
 
-	</section>
-</section>
+	

@@ -6,7 +6,7 @@
 			In this exercise you add a contextual action mode to one of your existing applications.
 		
 
-	</section>
+	
 
 	<section id="tutorial_contextualmenu2">
 		<title>Create menu resource in the res/menu folder
@@ -23,7 +23,7 @@
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/social/contextual.xml" />
 			</programlisting>
 		
-	</section>
+	
 	<section id="tutorial_contextualmenu3">
 		<title>Adjust your coding
 		Extend your fragment interface.
@@ -56,6 +56,5 @@
 		
 
 
-	</section>
+	
 
-</section>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article lang="en">
 	<articleinfo>
-		<title>The Android permissions model - Tutorial</title>
+		<title>The Android permissions model - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -19,11 +19,11 @@
 		<pubdate>14.09.2015</pubdate>
 		<releaseinfo>Version 14.1</releaseinfo>
 		<abstract id="abstract">
-			<title>Developing Android applications</title>
-			<para>
+			<title>Developing Android applications
+			
 				This tutorial describes the security and permissions model for Android
 				applications.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

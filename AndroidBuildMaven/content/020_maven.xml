@@ -1,74 +1,73 @@
 <section id="androidmaven">
-	<title>Building Android applications with Maven</title>
-	<para>
+	<title>Building Android applications with Maven
+	
 		The
-		<wordasword>android-maven-plugin</wordasword>
+		_android-maven-plugin_
 		plug-in allows to build Android
 		applications via
 		Maven.
-	</para>
-	<para>
+	
+	
 		The webpage of this maven plug-in is located under:
-		<ulink url="http://code.google.com/p/maven-android-plugin/">Android-Maven Plug-in</ulink>
+		http://code.google.com/p/maven-android-plugin/[Android-Maven Plug-in]
 		.
-	</para>
-	<para>
+	
+	
 		The Eclipse support of this plug-in is provided by the
-		<ulink url="https://github.com/rgladwell/m2e-android">m2e project</ulink>
+		https://github.com/rgladwell/m2e-android[m2e project]
 		.
-	</para>
-	<para>
+	
+	
 		You only have to install Maven, write a correct
 		<filename>pom.xml</filename>
 		file and issue
 		the commands to Maven to build, install and run your
 		application.
-	</para>
-	<para>The following will build your Android application via Maven.
-	</para>
-	<para>
+	
+	The following will build your Android application via Maven.
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/make.txt" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		This will create the application and places the
 		<filename>.apk</filename>
 		file in the
 		<filename class="directory">target</filename>
 		folder.
-	</para>
+	
 
-	<para>If you want to install the application via Maven on your Android
+	If you want to install the application via Maven on your Android
 		device, you can use the
 		following command.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/install.txt" />
 		</programlisting>
-	</para>
-	<para>If more then one device is
+	
+	If more then one device is
 		available you can specify the relevant
 		device in your pom.xml. Maven
 		can also start and stop an Android
 		virtual device automatically for
 		you.
-	</para>
+	
 
-	<para>You can also start the application via Maven.
-	</para>
+	You can also start the application via Maven.
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/run.txt" />
 		</programlisting>
-	</para>
+	
 
 
-</section>

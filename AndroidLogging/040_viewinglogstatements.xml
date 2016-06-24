@@ -1,16 +1,16 @@
 <section id="androidstudio_viewinglogentries">
-	<title>Viewing log messages</title>
+	<title>Viewing log messages
 	<indexterm>
 		<primary>Log statements</primary>
 	</indexterm>
 	<indexterm>
 		<primary>LogCat view</primary>
 	</indexterm>
-	<para>
+	
 		See
-		<ulink url="http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_viewinglogentries">Viewing log statements in Android Studio</ulink>
+		http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_viewinglogentries[Viewing log statements in Android Studio]
 		to learn how to see log statements in your IDE.
-	</para>
+	
 
-</section>
+
 

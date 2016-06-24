@@ -1,25 +1,25 @@
 <section id="androidlogging_create">
-    <title>Create log statements</title>
+    <title>Create log statements
     <indexterm>
         <primary>log statements</primary>
     </indexterm>
-    <para>
+    
         To write log statements, you use the
-        <code>android.util.Log</code>
+        `android.util.Log`
         class with the
-        <code>Log.v()</code>
+        `Log.v()`
         ,
-        <code>Log.d()</code>
+        `Log.d()`
         ,
-        <code>Log.i()</code>
+        `Log.i()`
         ,
-        <code>Log.w()</code>
+        `Log.w()`
         ,
-        <code>Log.e()</code>
+        `Log.e()`
         or
-        <code>Log.wtf()</code>
+        `Log.wtf()`
         method. They are sorted by relevance with
-        <code>Log.i()</code>
+        `Log.i()`
         being the least important one.
         The first
         parameter of these methods is the category
@@ -27,46 +27,46 @@
         the second
         is the
         message.
-    </para>
+    
 
-    <para>
+    
         Typically you create a
-        <code>Constants</code>
+        `Constants`
         interface in your Android application and provide your log flag as a
         field.
-    </para>
-    <para>
+    
+    
         <programlisting language="java">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                 parse="text" href="./examples/log/Constants.java" />
         </programlisting>
-    </para>
-    <para>
+    
+    
         Android advises that a deployed application should not contain
         logging
         code. The Android development tools provide the
-        <code>BuildConfig.DEBUG</code>
+        `BuildConfig.DEBUG`
         <indexterm>
             <primary>BuildConfig</primary>
         </indexterm>
         flag for this purpose. This flag will be automatically set to
-        <code>false</code>
+        `false`
         if you export the Android application for deployment. During
         development it will be set to
-        <code>true</code>
+        `true`
         , therefore allowing you to see your
         logging statements during
         development.
-    </para>
-    <para>
+    
+    
         The following example show how to write an error log message.
-    </para>
+    
 
-    <para>
+    
         <programlisting language="java">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                 parse="text" href="./examples/log/log.java" />
         </programlisting>
-    </para>
+    
 
-</section>
+

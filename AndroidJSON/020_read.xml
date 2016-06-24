@@ -1,10 +1,10 @@
 <section id="androidjson_read">
-	<title>Example: reading JSON from Bugzilla</title>
+	<title>Example: reading JSON from Bugzilla
 
 	<section id="androidjson_bugzilla">
-		<title>JSON Example: Bugzilla</title>
-		<para>
-			<ulink url="https://wiki.mozilla.org/Bugzilla:REST_API">Bugzilla</ulink>
+		<title>JSON Example: Bugzilla
+		
+			https://wiki.mozilla.org/Bugzilla:REST_API[Bugzilla]
 			plans to add a REST interface serving JSON.
 			You can just call a URI
 			and
@@ -14,7 +14,7 @@
 			downported this API.:
 
 			<table frame='all'>
-				<title>Bugzilla URIs</title>
+				<title>Bugzilla URIs
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
 					<colspec colname='c2' />
@@ -43,62 +43,61 @@
 				</tgroup>
 			</table>
 
-		</para>
-		<para>
+		
+		
 			Please note that some URIs return a
-			<code>JSONObject</code>
+			`JSONObject`
 			object
 			while
 			others return a
-			<code>JSONArray</code>
+			`JSONArray`
 			.
-		</para>
-	</section>
+		
+	
 
 	<section id="androidjson_project">
-		<title>Project</title>
-		<para>
+		<title>Project
+		
 			Create a new
 			Android
 			project called
-			<wordasword>com.vogella.bugzilla.json</wordasword>
+			_com.vogella.bugzilla.json_
 			with
 			the package
-			<wordasword>com.vogella.bugzilla.json</wordasword>
+			_com.vogella.bugzilla.json_
 			and the activity
 			called
-			<wordasword>ParseBugzillaActivity</wordasword>
+			_ParseBugzillaActivity_
 			.
-		</para>
-		<para>
+		
+		
 			Create the following coding for the activity. This will download the
 			twitter feed for the Twitter user called
-			<wordasword>vogella</wordasword>
+			_vogella_
 			and write the number of entries and the text messages to the Android
 			log file.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/ParseJSON.java" />
 			</programlisting>
-		</para>
+		
 		<warning>
-			<para>The code example allows network access in the main thread to
+			The code example allows network access in the main thread to
 				simplify
 				the code snippet. In reality always ensure that network
 				access is
 				done in a background thread.
-			</para>
+			
 		</warning>
-		<para>
+		
 			To run this example assign the
-			<wordasword>uses-permission</wordasword>
+			_uses-permission_
 			to your
 			<filename>AndroidManifest.xml</filename>
 			for "android.permission.INTERNET".
-		</para>
-	</section>
+		
+	
 
-</section>

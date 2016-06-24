@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android Notifications - Tutorial</title>
+		<title>Android Notifications - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -19,15 +19,15 @@
 		<pubdate>19.08.2015</pubdate>
 		<releaseinfo>
 
-			<para>Version 2.6	</para>
+			Version 2.6	
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Using the Notification Manager in Android</title>
-			<para> This article describes how to use the Notification Manager in
+			<title>Using the Notification Manager in Android
+			 This article describes how to use the Notification Manager in
 				Android. It is
 				based on Android Studio and Android 5.0.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

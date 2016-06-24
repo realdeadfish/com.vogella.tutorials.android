@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android NDK - Tutorial</title>
+		<title>Android NDK - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -13,15 +13,15 @@
 		</copyright>
 		<pubdate>25.05.2014</pubdate>
 		<releaseinfo>
-			<para>Version 0.2</para>
+			Version 0.2
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Android NDK</title>
-			<para> This tutorial describes how to use native code in Android
+			<title>Android NDK
+			 This tutorial describes how to use native code in Android
 				applications. The tutorial is
 				based on Android 6.0
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

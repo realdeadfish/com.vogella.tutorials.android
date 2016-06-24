@@ -1,17 +1,17 @@
 <section id="listview_furtherinfo">
-	<title>More on ListViews</title>
-	<para>
+	<title>More on ListViews
+	
 		Please see
-		<ulink url="http://www.vogella.com/tutorials/AndroidListView/article.html">Android ListView Tutorial</ulink>
+		http://www.vogella.com/tutorials/AndroidListView/article.html[Android ListView Tutorial]
 		for an 
 		introduction into
-		<code>ListViews
-		</code>
+		`ListViews
+		`
 		and
-		<code>ListActivities
-		</code>
+		`ListActivities
+		`
 		.
-	</para>
+	
 
-</section>
+
 

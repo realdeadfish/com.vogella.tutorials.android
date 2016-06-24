@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android Internals - Tutorial</title>
+		<title>Android Internals - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -13,15 +13,15 @@
 		</copyright>
 		<pubdate>16.03.2011</pubdate>
 		<releaseinfo>
-			<para>Version 0.2	</para>
+			Version 0.2	
 
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Android Internal</title>
-			<para> This articles looks at the internals of Androids and describes
+			<title>Android Internal
+			 This articles looks at the internals of Androids and describes
 				a little bit the architecture of Android. 
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

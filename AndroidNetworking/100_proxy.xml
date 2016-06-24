@@ -1,48 +1,47 @@
 <section id="proxy">
-	<title>Proxy</title>
+	<title>Proxy
 
-	<para>
+	
 		This chapter is only relevant for you if you are testing with the
 		Android simulator behind a proxy.
 		You can set
 		the proxy via the
-		<code>Settings</code>
+		`Settings`
 		class. For example
 		you could add
 		the
 		following line to your
-		<code>onCreate</code>
+		`onCreate`
 		method in your
-		<wordasword>activity</wordasword>
+		_activity_
 		.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/proxy/setproxy.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		To change the proxy settings you have to have the
-		<code>android.permission.WRITE_SETTINGS</code>
+		`android.permission.WRITE_SETTINGS`
 		permission
 		in your
 		<filename>AndroidManifest.xml</filename> file.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/proxy10.gif" />
 
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		<tip>
 			It seems that DNS resolving does not work behind a proxy. See
-			<ulink url="http://code.google.com/p/android/issues/detail?id=2764">Bug 2764</ulink>
+			http://code.google.com/p/android/issues/detail?id=2764[Bug 2764]
 		</tip>
-	</para>
+	
 
-</section>

@@ -1,25 +1,25 @@
 <section id="androidbackground">
-	<title>Android's user interface thread</title>
+	<title>Android's user interface thread
 	<section id="androidbackground_mainthread">
-		<title>Main thread</title>
-		<para>
+		<title>Main thread
+		
 			Android
 			modifies the user interface and handles input events from one
 			single
-			<wordasword>user interface thread</wordasword>
+			_user interface thread_
 			. This thread is
 			also called the
-			<wordasword>main thread</wordasword>
+			_main thread_
 			.
-		</para>
+		
 
-		<para>
+		
 			Android collects all events in a queue and processed an instance of
 			the
-			<code>Looper</code>
+			`Looper`
 			class.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/looper_messagequeue10.png"
@@ -29,11 +29,11 @@
 					<phrase>Message Queue in Android with Looper</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 	<section id="androidbackground_purpose">
-		<title>Why using concurrency?</title>
-		<para>
+		<title>Why using concurrency?
+		
 			If the
 			programmer does not use any concurrency
 			constructs, all
@@ -45,8 +45,8 @@
 			runs in the main thread and every statement
 			is
 			executed after each other.
-		</para>
-		<para>
+		
+		
 			If
 			you perform a long
 			lasting operation, for example accessing
@@ -58,9 +58,9 @@
 			the corresponding
 			operation has
 			finished.
-		</para>
+		
 
-		<para>To provide a good user experience all
+		To provide a good user experience all
 			potentially slow
 			running
 			operations in an
@@ -75,18 +75,18 @@
 			file and database
 			access and
 			complex calculations.
-		</para>
+		
 		<note>
-			<para>
+			
 				Android enforces a worst case reaction time of applications.
 				If
 				an
-				<wordasword>activity</wordasword>
+				_activity_
 				does not
 				react
 				within 5 seconds to user input, the Android system
 				displays an
-				<wordasword>Application not responding</wordasword>
+				_Application not responding_
 				(ANR)
 				dialog. From this dialog the
 				user
@@ -94,9 +94,9 @@
 				to stop
 				the
 				application.
-			</para>
+			
 		</note>
-	</section>
-</section>
+	
+
 
 

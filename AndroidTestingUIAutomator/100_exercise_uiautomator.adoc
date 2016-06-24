@@ -15,7 +15,7 @@
 					href="./examples/uiautomator/androidjunitrunner.java" />
 			</programlisting>
 		_
-	</section>
+	
 	<section id="exercise_uiautomator_createtest">
 		<title>Create test_
 		
@@ -29,13 +29,13 @@
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/uiautomator/test.java" />
 			</programlisting>
 		_
-	</section>
+	
 	<section id="exercise_uiautomator_validate">
 		<title>Validate _
 		Run your test and validate that it works._
-	</section>
+	
 
 
 
-</section>
+
 

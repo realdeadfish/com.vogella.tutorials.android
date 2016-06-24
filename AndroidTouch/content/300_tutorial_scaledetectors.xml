@@ -1,37 +1,36 @@
 <section id="scaleGestureDetector">
-	<title>Tutorial: ScaleGestureDetector</title>
-	<para>
+	<title>Tutorial: ScaleGestureDetector
+	
 		Create the Android project called
-		<wordasword>de.vogella.android.touch.scaledetector</wordasword>
+		_de.vogella.android.touch.scaledetector_
 		with an Activity called
-		<wordasword>ScaleDetectorTestActivity</wordasword>
+		_ScaleDetectorTestActivity_
 		.
-	</para>
-	<para>
+	
+	
 		Create the following
 		class.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/scale/ImageViewWithZoom.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Add this
-		<code>View</code>
+		`View`
 		to your
-		<wordasword>activity</wordasword>
+		_activity_
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/scale/ScaleDetectorTest.java" />
 		</programlisting>
-	</para>
-	<para> If you run your application you should be able to shrink and
+	
+	 If you run your application you should be able to shrink and
 		enlarge the image via a multi-touch gesture (pitch zoom).
-	</para>
+	
 
-</section>

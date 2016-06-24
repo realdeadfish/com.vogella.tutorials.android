@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android Gestures - Tutorial</title>
+		<title>Android Gestures - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -12,15 +12,15 @@
 		</copyright>
 		<pubdate>04.01.2011</pubdate>
 		<releaseinfo>
-			<para>Version 0.1	</para>
+			Version 0.1	
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Android Gestures</title>
-			<para> This tutorial describes how to use Gestures and the GestureOverylayVIew in Android. The tutorial is
+			<title>Android Gestures
+			 This tutorial describes how to use Gestures and the GestureOverylayVIew in Android. The tutorial is
 				based on Eclipse 3.6, Java 1.6 and Android 2.3
 				(Gingerbread).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

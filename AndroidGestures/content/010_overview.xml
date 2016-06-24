@@ -1,11 +1,11 @@
 <section id="overview">
-	<title>Android Gestures</title>
-	<para>Android supports gestures. To use this support your application
+	<title>Android Gestures
+	Android supports gestures. To use this support your application
 		must use the view "GestureOverlayView". In this view you place your
 		other
 		views. 
-		</para>
-	<para>
+		
+	
 		Gestures are defined by a binary resources which can be created
 		with an example program from the Android SDK. In your activity you
 		can
@@ -14,13 +14,13 @@
 		this the activity must implement the interface
 		"OnGesturePerformedListener" and must register itself at the
 		GestureOverlayView with the method "addOnGesturePerformedListener()".
-	</para>
-	<para> Android shows the gestures in yellow for recognized gestures and
+	
+	 Android shows the gestures in yellow for recognized gestures and
 		a ligher yellow for not recognized gestures. You can turn this off,
 		via setGestureColor(Color.TRANSPARENT) or
 		setUncertainGestureColor(Color.TRANSPARENT) on the GestureOverlayView.
-	</para>
-	<para> If you create the gesture in the Android simulator via the
+	
+	 If you create the gesture in the Android simulator via the
 		program "GestureBuilder". You can create several gestures with the
 		same name. That may help you to determine the right one. If you
 		create
@@ -30,24 +30,23 @@
 		sure to create a device with sdcard
 		otherwise you cannot save
 		gestures. All gestures will be saved in a
-		file called <wordasword>gestures</wordasword> on your emulator. 
+		file called _gestures_ on your emulator. 
 		
-		</para>
-	<para>You
+		
+	You
 		can copy the gestures from the emulator via the adb onto your
 		local
 		machine via the
 		command:
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/adb/adbcopy" />
 		</programlisting>
-	</para>
-	<para> The gesture file must be copied into your application under
+	
+	 The gesture file must be copied into your application under
 		"res/raw". Afterwards it
-		can be used in your GestureOverlayView. </para>
+		can be used in your GestureOverlayView. 
 
-</section>

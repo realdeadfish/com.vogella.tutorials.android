@@ -24,7 +24,7 @@
 			</programlisting>
 		
 
-	</section>
+	
 	<section id="actionbar_drawables">
 		<title>Assigning a Drawable
 		
@@ -52,7 +52,7 @@
 			.
 		
 
-	</section>
+	
 	<section id="actionbar_hiddingnagationbuttons">
 		<title>Dimming the navigation buttons
 		
@@ -99,7 +99,7 @@
 			</mediaobject>
 		
 
-	</section>
+	
 
 	<section id="actionbar_immersivemode">
 		<title>Using immersive full screen mode
@@ -120,7 +120,7 @@
 		
 
 
-	</section>
+	
 
 	<section id="menu_split">
 		<title>Enabling the split toolbar
@@ -149,5 +149,5 @@
 				runtime.
 			
 		</note>
-	</section>
-</section>
+	
+

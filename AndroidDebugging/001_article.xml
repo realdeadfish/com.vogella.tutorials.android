@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article lang="en">
 	<articleinfo>
-		<title>Debugging Android applications - Tutorial</title>
+		<title>Debugging Android applications - Tutorial
 		<author>
 			<firstname>Lars Vogel</firstname>
 		</author>
@@ -16,9 +16,9 @@
 
 		
 		<abstract id="abstract">
-			<title>Debugging Android applications</title>
-			<para> This tutorial describes how to debug Android applications.
-			</para>
+			<title>Debugging Android applications
+			 This tutorial describes how to debug Android applications.
+			
 		</abstract>
 	</articleinfo>
 	

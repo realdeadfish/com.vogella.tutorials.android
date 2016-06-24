@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article lang="en">
 	<articleinfo>
-		<title>Solutions for common Android development problems with the Eclipse IDE- Tutorial</title>
+		<title>Solutions for common Android development problems with the Eclipse IDE- Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -21,10 +21,10 @@
 
 		
 		<abstract id="abstract">
-			<title>Solving Android development issues</title>
-			<para> This article lists common problems during Android development with the Eclipse IDE
+			<title>Solving Android development issues
+			 This article lists common problems during Android development with the Eclipse IDE
 				and potential solutions.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

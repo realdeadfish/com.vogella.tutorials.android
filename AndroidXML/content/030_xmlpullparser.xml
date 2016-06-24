@@ -1,16 +1,15 @@
 <section id="xmlpullparser">
-	<title>Example XmlPullParser</title>
-	<para>
+	<title>Example XmlPullParser
+	
 		The Javadoc of
-		<code>XmlPullParser</code>
+		`XmlPullParser`
 		gives a nice example how you can use this library.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/xmlpullparser/example.java" />
 		</programlisting>
-	</para>
+	
 
-</section>

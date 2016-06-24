@@ -17,4 +17,4 @@
 		boot is complete or a phone call is received and
 		react accordingly.
 	
-</section>
+

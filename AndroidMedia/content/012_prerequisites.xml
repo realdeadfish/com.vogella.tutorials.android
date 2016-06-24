@@ -1,10 +1,9 @@
 <section id="sound_prerequisites">
-	<title>Prerequisites</title>
-	<para>
+	<title>Prerequisites
+	
 		The following assumes that you are already familiar with basic
 		Android
 		programming. Please see
-		<ulink url="http://www.vogella.com/tutorials/Android/article.html"> Android Tutorial</ulink>
+		http://www.vogella.com/tutorials/Android/article.html[ Android Tutorial]
 		for an introduction.
-	</para>
-</section>
+	

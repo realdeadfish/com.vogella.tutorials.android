@@ -1,89 +1,89 @@
 <section id="adb_dumpsys" role="wrapper">
-	<title>Getting system information with command line tool dumpsys</title>
+	<title>Getting system information with command line tool dumpsys
 
 	<section id="adb_dumpsys1">
-		<title>adb dumpsys</title>
-		<para>
+		<title>adb dumpsys
+		
 			The
-			<code>adb dumpsys</code>
+			`adb dumpsys`
 			command allows you to retain information about the Android system and
 			the running applications.
-		</para>
-		<para>To get currently memory consumption of an application you can
+		
+		To get currently memory consumption of an application you can
 			use
 			the following command.
 
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/dumpsys/meminfo.txt" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 	<section id="adb_prank">
-		<title>Memory consumption overview with dumpsys</title>
-		<para>
+		<title>Memory consumption overview with dumpsys
+		
 			The
-			<code>adb shell procrank</code>
+			`adb shell procrank`
 			lists you all application in the order of their memory consumption.
 			This command does not work on real device. Use the
-			<code>adb shell dumpsys meminfo</code>
+			`adb shell dumpsys meminfo`
 			instead.
-		</para>
-	</section>
+		
+	
 	<section id="adb_scheduledtasks">
-		<title>Information about scheduled tasks</title>
-		<para>
+		<title>Information about scheduled tasks
+		
 			To find which alarms are scheduled for your application, use the
-			<code>adb shell dumpsys alarm</code>
+			`adb shell dumpsys alarm`
 			command and look for your package name. The output might be similar
 			to the following:
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/dumpsys/timer.txt" />
 			</programlisting>
-		</para>
-		<para>This shows the info that the alarm is scheduled for approx. 12
+		
+		This shows the info that the alarm is scheduled for approx. 12
 			minutes.
-		</para>
+		
 
-		<para>
+		
 			To find out the information about the pending intent, run the
-			<code>adb shell dumpsys activity intents</code>
+			`adb shell dumpsys activity intents`
 			command
 			and look
 			for
 			the ID of the PendingIntentRecord (in this example
 			43bbf887):
-		</para>
+		
 
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/dumpsys/intent.txt" />
 			</programlisting>
-		</para>
+		
 
 
 
-	</section>
+	
 
 	<section id="adb_battery">
-		<title>Battery information tasks</title>
-		<para>As of Android 5.0 you can also get information about the battery
-			consumption of an application.</para>
-		<para>
+		<title>Battery information tasks
+		As of Android 5.0 you can also get information about the battery
+			consumption of an application.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/dumpsys/battery.txt" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-</section>
+

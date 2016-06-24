@@ -1,18 +1,18 @@
 <section id="exercise_preferences" role="wrapper">
-	<title>Exercise: Preference setting for the RSSfeed</title>
+	<title>Exercise: Preference setting for the RSSfeed
 	<section id="exercise_preferences_target">
-		<title>Target of this exercise</title>
-		<para>In this exercise you allow the user to enter his preferred URL for an RSS feed via another activity. This
-			activity uses a preference xml file to define the user interface. </para>
-	</section>
+		<title>Target of this exercise
+		In this exercise you allow the user to enter his preferred URL for an RSS feed via another activity. This
+			activity uses a preference xml file to define the user interface. 
+	
 	<section id="exercise_preferences_1">
-		<title>Create preference file</title>
-		<para>
+		<title>Create preference file
+		
 			If you project does not have an
 			<filename>/app/res/xml</filename>
 			folder create one.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/preferences_createxmlfolder10.png"/>
@@ -21,9 +21,9 @@
 					<phrase>Creating a xml folder</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/preferences_createxmlfolder20.png"/>
@@ -32,18 +32,18 @@
 					<phrase>Creating a xml folder</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
 
-		<para>
+		
 			Create
 			an Android XML resource called
-			<wordasword>mypreferences.xml</wordasword>
+			_mypreferences.xml_
 			in the xml folder.
-		</para>
+		
 
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/preferences_createxmlfolder30.png"/>
@@ -52,9 +52,9 @@
 					<phrase>Creating a preference resource file</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/preferences_createxmlfolder40.png"/>
@@ -63,87 +63,87 @@
 					<phrase>Creating a preference resource file</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>Add entries to this file similar to the following listing. </para>
-		<para>
+		Add entries to this file similar to the following listing. 
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/preferences/mypreferences.xml" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 	<section id="exercise_preferences_2">
-		<title>Create settings activity</title>
-		<para>
+		<title>Create settings activity
+		
 			Create the class
-			<code>SettingsActivity</code>
+			`SettingsActivity`
 			which extends
-			<code>PreferenceActivity</code>
+			`PreferenceActivity`
 			. This
 			activity
 			loads the
 			preference
 			file and allows the user to change
 			the values.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/preferences/SettingsActivity.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Register this class as an activity in your
 			<filename>AndroidManifest.xml</filename>
 			file.
-		</para>
-	</section>
+		
+	
 
 	<section id="exercise_preferences_4">
-		<title>Connect your settings activity</title>
+		<title>Connect your settings activity
 
-		<para>
+		
 			Open the preference
 			activity via the
-			<code>onOptionsItemSelected()</code>
+			`onOptionsItemSelected()`
 			method as demonstrated in the following listing.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/preferences/OverviewActivity2.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 	<section id="exercise_preferences_5">
-		<title>Use the preference value to load the RSS feed</title>
-		<para>
+		<title>Use the preference value to load the RSS feed
+		
 			To make use of our new preference activity and the preference
 			values
 			we adjust the
-			<code>MyListFragment</code>
+			`MyListFragment`
 			class. The following code snippet
 			demonstrates how you can access the
 			preference value in a method which triggers an
-			<code>AsyncTask</code>
+			`AsyncTask`
 			to load the feed from the Internet.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/preferences/UpdateListContent.java" />
 			</programlisting>
-		</para>
+		
 
 
-	</section>
+	
 	<section id="exercise_preferences_result">
-		<title>Validating</title>
-		<para>
+		<title>Validating
+		
 			Run your application. Select from your action bar the
 			<guilabel>Settings</guilabel>
 			action.
@@ -151,21 +151,21 @@
 			button and press the refresh button, ensure that the
 			value of the url
 			preference is used in your activity.
-		</para>
+		
 
-	</section>
+	
 	<section id="exercise_preferences_3">
-		<title>Optional: Show the current value in the settings</title>
-		<para>The following code snippet demonstrates how to show the current
+		<title>Optional: Show the current value in the settings
+		The following code snippet demonstrates how to show the current
 			value in the preference screen.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/preferences/SettingsActivity2.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/rsspreferencewithvalue10.png"/>
@@ -174,8 +174,7 @@
 					<phrase>Showing the current value in the preferences</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
-	</section>
+	
 
-</section>

@@ -1,107 +1,107 @@
 <section id="overview" role="wrapper">
-	<title>Android Widgets</title>
+	<title>Android Widgets
 	<section id="overview_widgets">
-		<title>Overview about AppWidgets</title>
-		<para>
-			<wordasword>Widgets</wordasword>
+		<title>Overview about AppWidgets
+		
+			_Widgets_
 			are little applications which can be placed on a widget host,
 			typically the
-			<wordasword>home screen</wordasword>
+			_home screen_
 			or the
-			<wordasword>lock screen</wordasword>
+			_lock screen_
 			of your
 			Android device.
-		</para>
-		<para>
+		
+		
 			A widget runs as part of the
 			process of its host. This requires
 			that the widget
 			preserves the
 			permissions of their application.
-		</para>
-		<para>
+		
+		
 			Widget
 			use
-			<code>RemoteViews</code>
+			`RemoteViews`
 			to create their user interface. A
-			<code>RemoteView</code>
+			`RemoteView`
 			can be executed by another process with the same permissions as the
 			original application. This way the
 			widget
 			runs with
 			the
 			permissions of its defining application.
-		</para>
-		<para>
+		
+		
 			The user interface for a
-			<wordasword>Widget</wordasword>
+			_Widget_
 			is defined by a broadcast receiver.
 			This receiver
 			inflates its layout
 			into an object of type
-			<code>RemoteViews</code>.
+			`RemoteViews`.
 			This
 			object is delivered to Android, which hands it over the home
 			screen
 			application.
-		</para>
-	</section>
+		
+	
 
 	<section id="overview_steps">
-		<title>Steps to create a Widget</title>
-		<para>
+		<title>Steps to create a Widget
+		
 			To create a widget,
 			you:
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						Define a layout file
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						Create an XML file
-						(<code>AppWidgetProviderInfo</code>)
+						(`AppWidgetProviderInfo`)
 						which describes the properties of the widget,
 						e.g. size or the
 						fixed
 						update frequency.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						Create a
-						<code>BroadcastReceiver</code>
+						`BroadcastReceiver`
 						which is used to build the user interface of the
 						widget.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						Enter the
-						<wordasword>Widget</wordasword>
+						_Widget_
 						configuration in the
 						<filename>AndroidManifest.xml</filename>
 						file.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						Optional you can specify a configuration
-						<wordasword>activity</wordasword>
+						_activity_
 						which is called once a new instance of
 						the
-						<code>widget</code>
+						`widget`
 						is added to the widget host.
-					</para>
+					
 				</listitem>
 			</itemizedlist>
-		</para>
-	</section>
+		
+	
 
 	<section id="overview_size">
-		<title>Widget size</title>
-		<para>
+		<title>Widget size
+		
 			Before Android 3.1 a widget
 			always took a fixed amount of cells
 			on the home screen.
@@ -112,21 +112,20 @@
 			rule you should define the size of the
 			widget with the
 			formula:
-			<code>((Number of columns / rows) * 74) - 2</code>.
+			`((Number of columns / rows) * 74) - 2`.
 			These are device
 			independent
-			pixels and the <code>-2</code> is used to avoid rounding
+			pixels and the `-2` is used to avoid rounding
 			errors.
-		</para>
-		<para>
+		
+		
 			As of Android 3.1 a widget
 			can be flexible in size, e.g., the
 			user can
 			make it larger or smaller.
 			To enable this for widget,
 			you can use the
-			<code>android:resizeMode="horizontal|vertical"</code>
+			`android:resizeMode="horizontal|vertical"`
 			attribute in the XML configuration file for the widget.
-		</para>
-	</section>
-</section>
+		
+	

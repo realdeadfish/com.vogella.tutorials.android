@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article lang="en">
 	<articleinfo>
-		<title>Android application and activity life cycle - Tutorial</title>
+		<title>Android application and activity life cycle - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -17,10 +17,10 @@
 
 		
 		<abstract id="abstract">
-			<title>Understanding the Android lifecycle</title>
-			<para> This tutorial describes how the Android application and
+			<title>Understanding the Android lifecycle
+			 This tutorial describes how the Android application and
 				activity life cycle works.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

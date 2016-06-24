@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Downloading and handling images in Android applications - Tutorial</title>
+		<title>Downloading and handling images in Android applications - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -12,14 +12,14 @@
 		</copyright>
 		<pubdate>29.09.2015</pubdate>
 		<releaseinfo>
-			<para>Version 0.1</para>
+			Version 0.1
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Android Gestures</title>
-			<para> This tutorial describes how to download efficiently images using Google Glide.
+			<title>Android Gestures
+			 This tutorial describes how to download efficiently images using Google Glide.
 
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

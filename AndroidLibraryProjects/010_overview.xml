@@ -1,6 +1,6 @@
 <section id="androidlibraryoverview">
-	<title>Android library projects and Java libraries</title>
-	<para>
+	<title>Android library projects and Java libraries
+	
 		Android project can use code contained in
 		<filename>JAR</filename>
 		files (Java libraries). It is also possible to create libraries
@@ -11,5 +11,5 @@
 		which can
 		be shared between
 		several other Android projects.
-	</para>
-</section>
+	
+

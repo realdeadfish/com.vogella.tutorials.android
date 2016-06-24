@@ -1,27 +1,27 @@
 <section id="miscellaneous">
-	<title>Tutorial: Miscellaneous</title>
+	<title>Tutorial: Miscellaneous
 	<section id="miscellaneous_longclick">
-		<title>Adding a longclick listener to the list items</title>
-		<para>
+		<title>Adding a longclick listener to the list items
+		
 			You can also add a
-			<code>LongItemClickListener</code>
+			`LongItemClickListener`
 			to the
-			list view via the <code>setOnItemLongClickListener()</code>  method.
-		</para>
+			list view via the `setOnItemLongClickListener()`  method.
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/longclick/MyList.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 
 
 	<section id="miscellaneous_headerfooter">
-		<title>Header and footer</title>
-		<para>
+		<title>Header and footer
+		
 			You can of course put arbitrary
 			views
 			elements around your list view.
@@ -47,22 +47,21 @@
 			the
 			beginning or end of
 			the list you can use the
-			<code>addHeaderView()</code>
+			`addHeaderView()`
 			method
 			or
-			<code>addFooterView()</code>
+			`addFooterView()`
 			method on the
-			<code>ListView</code>
+			`ListView`
 			class.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/header/MyList.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 
-</section>

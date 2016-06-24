@@ -1,6 +1,6 @@
 <section id="accessdrawables">
-	<title>Using drawables for views</title>
-	<para>
+	<title>Using drawables for views
+	
 		Drawables
 		are referred to
 		in XML
@@ -14,33 +14,32 @@
 		Drawable, you would use
 		<parameter>@drawable/hello</parameter>
 		as demonstrated in the following snippet.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/bitmap/activity_main.xml" />
 		</programlisting>
-	</para>
+	
 
 
-	<para>
+	
 		In code you can also assign
-		<wordasword>drawables</wordasword>
+		_drawables_
 		to views. Most
 		views
 		accept an resource ID as input parameter. For
 		example the following
 		code shows how to set a
-		<wordasword>drawables</wordasword>
+		_drawables_
 		as background to an
-		<code>ImageView</code>
+		`ImageView`
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/access/Access.java" />
 		</programlisting>
-	</para>
+	
 
-</section>

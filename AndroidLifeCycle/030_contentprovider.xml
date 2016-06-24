@@ -1,6 +1,5 @@
 <section id="content provider_lifecycle">
-	<title>Content provider life cycle</title>
-	<para>Once accessed a content provider is never stopped individually.
+	<title>Content provider life cycle
+	Once accessed a content provider is never stopped individually.
 		It stops if the whole application process is determinted.
-	</para>
-</section>
+	

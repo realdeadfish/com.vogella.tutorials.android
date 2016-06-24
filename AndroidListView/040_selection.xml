@@ -1,57 +1,56 @@
 <section id="listview_selection">
-	<title>Storing the selection of a view</title>
-	<para>
+	<title>Storing the selection of a view
+	
 		By default a
-		<code>ListView</code>
+		`ListView`
 		has no selection mode active. You can activate
 		it via the
-		<code>setChoiceMode()</code>
+		`setChoiceMode()`
 		method call. Pass
-		<code>ListView.CHOICE_MODE_MULTIPLE</code>
+		`ListView.CHOICE_MODE_MULTIPLE`
 		for multiple selections or
-		<code>ListView.CHOICE_MODE_SINGLE</code>
+		`ListView.CHOICE_MODE_SINGLE`
 		for single selections
 		to this method.
-	</para>
-	<para>
+	
+	
 		To get the selected items of a
-		<code>ListView</code>,
+		`ListView`,
 		use the
-		<code>getCheckedItemPosition()</code>
+		`getCheckedItemPosition()`
 		for a single selection
 		method or
-		<code>listView.getCheckedItemPositions()</code>
+		`listView.getCheckedItemPositions()`
 		for multiple selections.
 		. If you have stable ID, you could
 		also use the
-		<code>getCheckedItemIds()</code>
+		`getCheckedItemIds()`
 		method to get the selected IDs.
-	</para>
+	
 
-	<para>
+	
 		Android already provides a default layout for this: the
-		<code>android.R.layout.simple_list_item_multiple_choice</code>
+		`android.R.layout.simple_list_item_multiple_choice`
 		layout which contains a configured
-		<code>CheckedTextView</code>
+		`CheckedTextView`
 		view.
-	</para>
-	<para>
+	
+	
 		The following activities demonstrate how to use these selection
 		modes. If you use these modes, the
-		<code>ListView</code>
+		`ListView`
 		stores the selected values. It is not persisted in your data model.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/singlemulti/MyListMulti.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/singlemulti/MyListSingle.java" />
 		</programlisting>
-	</para>
-</section>
+	

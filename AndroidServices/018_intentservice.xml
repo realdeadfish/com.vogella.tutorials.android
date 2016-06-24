@@ -1,26 +1,26 @@
 	<section id="service_intentservices">
-		<title>IntentServices for one time tasks</title>
-		<para>
+		<title>IntentServices for one time tasks
+		
 			You can also extend the
-			<code>IntentService</code>
+			`IntentService`
 			class for your service implementation.
-		</para>
-		<para>
+		
+		
 			The
-			<code>IntentService</code>
+			`IntentService`
 			is used to perform a certain task in the background. Once
 			done, the
 			instance of
-			<code>IntentService</code>
+			`IntentService`
 			terminates itself automatically. An example for its usage would be
 			downloading certain resources from the internet.
-		</para>
-		<para>
+		
+		
 			The
-			<code>IntentService</code>
+			`IntentService`
 			class offers the
-			<code>onHandleIntent()</code>
+			`onHandleIntent()`
 			method which will be asynchronously called by the Android system.
-		</para>
-	</section>
+		
+	
 	

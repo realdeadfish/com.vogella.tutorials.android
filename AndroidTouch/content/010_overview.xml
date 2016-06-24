@@ -1,18 +1,18 @@
 <section id="touch" role="wrapper">
-	<title>Android Touch</title>
+	<title>Android Touch
 	<section id="touch_overview">
-		<title>Android touch basics</title>
-		<para>
+		<title>Android touch basics
+		
 			The Android
 			standard
-			<code>View</code>
+			`View`
 			class
 			support touch events. You can react to touch events in your
 			custom views and your
 			activities. Android supports multiple pointers,
 			e.g. fingers which are interacting with the screen.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/androidtouch10.png"/>
@@ -21,15 +21,15 @@
 					<phrase>Android touch</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
+		
 			The base class for touch support is the
-			<code>MotionEvent</code>
+			`MotionEvent`
 			class which is passed to
-			<code>Views</code>
+			`Views`
 			via the
-			<code>onTouchEvent()</code>
+			`onTouchEvent()`
 			method.
 
 			To react to
@@ -37,65 +37,65 @@
 			events
 
 			you override the
-			<code>onTouchEvent()</code>
+			`onTouchEvent()`
 			method.
-		</para>
-		<para>
+		
+		
 			The
-			<code>MotionEvent</code>
+			`MotionEvent`
 			class
 			contains the touch related information, e.g., the number of
 			pointers, the X/Y coordinates and size and pressure of each pointer.
-		</para>
-		<para>
+		
+		
 			This method returns
-			<code>true</code>
+			`true`
 			if the touch event has been handled by the view. Android tries to
 			find the deepest view which returns true to handles the touch event.
 			If the view is part of another view (parent view), the parent can
 			claim the event by returning
-			<code>true</code>
+			`true`
 			from the
-			<code>onInterceptTouchEvent()</code>
+			`onInterceptTouchEvent()`
 			method. This would send an
-			<code>MotionEvent.ACTION_CANCEL</code>
+			`MotionEvent.ACTION_CANCEL`
 			event to the view which received previously the touch events.
-		</para>
+		
 
 
-		<para>
+		
 			To react to touch events in an
 			activity,
 			register an
-			<code>OnTouchListener</code>
+			`OnTouchListener`
 			for the relevant
-			<code>Views</code>
+			`Views`
 			.
-		</para>
-	</section>
+		
+	
 	<section id="touch_single">
-		<title>Single touch</title>
-		<para>
+		<title>Single touch
+		
 			If single
 			input is used you can
 			use the
 
-			<code>getX()</code>
+			`getX()`
 			and
-			<code>getY()</code>
+			`getY()`
 			methods to get the current position of the first finger.
-		</para>
-		<para>
+		
+		
 			Via the
-			<code>getAction()</code>
+			`getAction()`
 			method
 			you receive the action which was performed. The
-			<code>MotionEvent</code>
+			`MotionEvent`
 			class provides the following constants to determine the action which
 			was performed.
 
 			<table frame='all'>
-				<title>Touch Events</title>
+				<title>Touch Events
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
 					<colspec colname='c2' />
@@ -135,103 +135,102 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
 
-	</section>
+	
 	<section id="touch_multi">
-		<title>Multi touch</title>
+		<title>Multi touch
 
-		<para>
+		
 			Multi-touch is available since
 			Android 2.0 and has been improved
 			in the version 2.2. This description uses the API as of version 2.2.
-		</para>
+		
 
-		<para>
+		
 			The
-			<code>MotionEvent.ACTION_POINTER_DOWN</code>
+			`MotionEvent.ACTION_POINTER_DOWN`
 			and
-			<code>MotionEvent.ACTION_POINTER_UP</code>
+			`MotionEvent.ACTION_POINTER_UP`
 			are send starting with the second finger. For the first finger
-			<code>MotionEvent.ACTION_DOWN</code>
+			`MotionEvent.ACTION_DOWN`
 			and
-			<code>MotionEvent.ACTION_UP</code>
+			`MotionEvent.ACTION_UP`
 			are used.
-		</para>
-		<para>
+		
+		
 			The
-			<code>getPointerCount()</code>
+			`getPointerCount()`
 			method on
-			<code>MotionEvent</code>
+			`MotionEvent`
 			allows you to determine the number of pointers on the device. All
 			events and the position of the pointers are included in the instance
 			of
-			<code>MotionEvent</code>
+			`MotionEvent`
 			which you receive in the
-			<code>onTouch()</code>
+			`onTouch()`
 			method.
-		</para>
-		<para>
+		
+		
 			To track the
 			touch events from multiple pointers you have to use the
-			<code>MotionEvent.getActionIndex()</code>
+			`MotionEvent.getActionIndex()`
 			and the
-			<code>MotionEvent.getActionMasked()</code>
+			`MotionEvent.getActionMasked()`
 			methods to identify the index of the pointer and the touch event
 			which
 			happened for this pointer.
-		</para>
-		<para>
+		
+		
 			This pointer
 			index can
 			change over time, e.g. if one finger is lifted
 			from the device. The stable version of a
 			pointer is the
-			<wordasword>pointer id</wordasword>
+			_pointer id_
 			,
 			which can be determined with the
-			<code>getPointerId(pointerIndex)</code>
+			`getPointerId(pointerIndex)`
 			method from the
-			<code>MotionEvent</code>
+			`MotionEvent`
 			object.
-		</para>
-		<para>The usage if demonstrated in the following code snippet.</para>
-		<para>
+		
+		The usage if demonstrated in the following code snippet.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/multi/onTouch.java" />
 			</programlisting>
-		</para>
+		
 
 
 		<tip>
-			<para>Multitouch can not be tested on the emulator. You need a real
+			Multitouch can not be tested on the emulator. You need a real
 				Android device as input device.
-			</para>
+			
 		</tip>
-	</section>
+	
 
 	<section id="touch_scaledetector">
-		<title>GestureDetectors</title>
-		<para>
+		<title>GestureDetectors
+		
 			Android provide the
-			<code>GestureDetector</code>
+			`GestureDetector`
 			class which allow to
 			consume
-			<code>MotionEvents</code>
+			`MotionEvents`
 			and to create
 			higher level gesture
 			events to listeners.
-		</para>
-		<para>
+		
+		
 			For example the
-			<code>ScaleGestureDetector</code>
+			`ScaleGestureDetector`
 			class allows to determine the
 			predefined gesture of increasing and
 			decreasing the size of the object via two fingers.
-		</para>
-	</section>
+		
+	
 
 
-</section>

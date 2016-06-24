@@ -24,7 +24,7 @@
 			`TextView`
 			.
 		
-	</section>
+	
 	<section id="exercise_intentfilter2">
 		<title>Create project
 		
@@ -37,7 +37,7 @@
 			`BrowserActivity`
 			.
 		
-	</section>
+	
 	<section id="exercise_intentfilter3">
 		<title>Register activity as browser
 		
@@ -82,7 +82,7 @@
 					parse="text" href="./examples/filter/BrowserActivity.java" />
 			</programlisting>
 		
-	</section>
+	
 	<section id="exercise_intentfilter4">
 		<title>Validating
 
@@ -133,7 +133,7 @@
 			</mediaobject>
 		
 
-	</section>
+	
 	<section id="exercise_intentfilter5">
 		<title>Optional: Make it a real browser
 		<tip>
@@ -151,5 +151,4 @@
 				method to it.
 			
 		</tip>
-	</section>
-</section>
+	

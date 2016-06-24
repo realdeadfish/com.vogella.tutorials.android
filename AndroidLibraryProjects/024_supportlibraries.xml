@@ -1,8 +1,8 @@
 <section id="androidsupportlibraries">
-	<title>The support libraries from Google</title>
-	<para>
+	<title>The support libraries from Google
+	
 		See
-		<ulink url="http://www.vogella.com/tutorials/AndroidSupportLibrary/article.html">Android support library</ulink>
+		http://www.vogella.com/tutorials/AndroidSupportLibrary/article.html[Android support library]
 		.
-	</para>
-</section>
+	
+

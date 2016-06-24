@@ -1,12 +1,12 @@
 <section id="configurationchange">
-	<title>Controlling configuration</title>
+	<title>Controlling configuration
 	<section id="configurationchange_avoid">
-		<title>Avoiding configuration change restarts</title>
-		<para>
+		<title>Avoiding configuration change restarts
+		
 			An
 			activity
 			is restarted if a
-			<wordasword>configuration change</wordasword>
+			_configuration change_
 			occurs.
 			A
 			configuration change happens if an event is triggered from
@@ -14,15 +14,15 @@
 			actual the Android device which may be
 			relevant for the
 			application.
-		</para>
-		<para>
+		
+		
 			An instance of the
-			<code>Configuration</code>
+			`Configuration`
 			class defines the current configuration of the device. Typical
 			configuration is the device orientation, the locale the smallest
 			width, etc.
-		</para>
-		<para>
+		
+		
 			For example
 			if the user
 			changes
@@ -37,13 +37,13 @@
 			to use different resources for these orientations and
 			restarts the
 			activity.
-		</para>
-		<para>In case an activity is restarted the programmer must ensure that
+		
+		In case an activity is restarted the programmer must ensure that
 			the activity is recreated in the same state as before the restart.
 			The
 			Android provides several potential means for doing this.
-		</para>
-		<para>
+		
+		
 			In the emulator you can
 			simulate the
 			change of the
@@ -55,57 +55,56 @@
 				</keycombo>
 			</shortcut>
 			shortcut.
-		</para>
-		<para>
+		
+		
 			You can avoid a restart of your application for certain
 			configuration
 			changes via the
-			<code>configChanges</code>
+			`configChanges`
 			attribute on your
-			<wordasword>activity</wordasword>
+			_activity_
 			definition in
 			your
-			<code>AndroidManifest.xml</code>
+			`AndroidManifest.xml`
 			. The following setting avoids an
-			<wordasword>activity</wordasword>
+			_activity_
 			restart incase of orientation
 			changes or
 			position of the
 			physical
 			keyboard (hidden / visible).
-		</para>
-		<para>
+		
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/lifecycle/configchange.txt" />
 			</programlisting>
-		</para>
+		
 
 		<tip>
-			<para>Avoid using the configChanges attribute if possible. It is
+			Avoid using the configChanges attribute if possible. It is
 				typically better to use other means to handle configuration changes,
 				like the Android loader framework or headless retained fragments.
 				These concept are covered later.
-			</para>
+			
 		</tip>
-	</section>
+	
 
 
 	<section id="configuration_orientation">
-		<title>Fixing the orientation for an activity</title>
-		<para>
+		<title>Fixing the orientation for an activity
+		
 			It is also possible to define that an activity should only be used in
 			a specific screen orientation via the
 			<filename>AndroidManifest.xml</filename>
 			file. Such an example configuration is listed below.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/lifecycle/fixedlayout.txt" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
-</section>

@@ -1,13 +1,13 @@
 <section id="responsivedesign" role="wrapper">
-	<title>Responsive design</title>
+	<title>Responsive design
 	<section id="responsivedesign_considerations">
-		<title>Responsive design consideration</title>
-		<para>It is recommended that the application scales with the device.
+		<title>Responsive design consideration
+		It is recommended that the application scales with the device.
 			On a small screen only one fragment is shown, on a larger screen a
 			second or even third fragment might be visible.
-		</para>
-		<para>This approach is depicted by the following graphic.</para>
-		<para>
+		
+		This approach is depicted by the following graphic.
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/responsivedesign10.png"/>
@@ -16,26 +16,25 @@
 					<phrase>Responsive design</phrase>
 				</textobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 	<section id="responsivedesign_margin">
-		<title>Margin points</title>
-		<para>
+		<title>Margin points
+		
 			It is recommended not to use the screen width for text in case
 			you are beyond
 			 a certain width on a device, as this is not very friendly for
 			the readers eyes. This is typically
 			<parameter>w1000dp</parameter>
 			.
-		</para>
 		
-		<para>
+		
+		
 			A way to implement margin points is to use a
 			<filename>res/values/dimens.xml</filename>
 			file and define a dimension for the margins. Afterwards use resource
 			qualifiers for the same file to define different margins for larger
 			devices.
-		</para>
-	</section>
+		
+	
 
-</section>

@@ -9,7 +9,7 @@
 			_intent_
 			.
 		
-	</section>
+	
 	<section id="intent_pickimage2">
 		<title>Create project
 		
@@ -48,7 +48,7 @@
 					parse="text" href="./examples/imagepick/ImagePickActivity.java" />
 			</programlisting>
 		
-	</section>
+	
 	<section id="intent_pickimage3">
 		<title>Validating
 		
@@ -57,5 +57,4 @@
 			`ImageView`
 			.
 		
-	</section>
-</section>
+	

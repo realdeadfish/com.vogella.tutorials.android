@@ -1,78 +1,78 @@
 <section id="androidfileapi" role="wrapper">
-	<title>Android File API</title>
+	<title>Android File API
 	<section id="androidfileapi_overview">
-		<title>Using the file API</title>
+		<title>Using the file API
 
-		<para>
+		
 			Access to the file system is performed via the standard
-			<code>java.io</code>
+			`java.io`
 			classes.
 			Android provides also helper classes for creating and
 			accessing new
 			files and directories.
 			For example the
-			<code>getDir(String, int)</code>
+			`getDir(String, int)`
 			method
 			would create or
 			access a directory. The
-			<code>openFileInput(String s)</code>
+			`openFileInput(String s)`
 			method
 			would
 			open
 			a file for input
 			and
-			<code>openFileOutput(String s, Context.MODE_PRIVATE)</code>
+			`openFileOutput(String s, Context.MODE_PRIVATE)`
 			would
 			create a
 			file.
-		</para>
-		<para>
+		
+		
 			Android supports world readable or writable files, but it is
 			considered good practice to keep files private to the application and
 			use content provider if you want to share data with other
 			applications.
-		</para>
-		<para>The following example shows the API usage.</para>
-		<para>
+		
+		The following example shows the API usage.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/fileapiwrite.txt" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/fileapiread.txt" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 	
 	<section id="overview_sdcard">
-		<title>External storage</title>
-		<para>Android supports also access to an external storage system e.g.
+		<title>External storage
+		Android supports also access to an external storage system e.g.
 			the SD card. All files and
 			directories on the external storage system
 			are readable for all
 			applications with the correct permission.
-		</para>
-		<para>
+		
+		
 			To read from external storage your application need to have the
-			<code>android.permission.READ_EXTERNAL_STORAGE</code>
+			`android.permission.READ_EXTERNAL_STORAGE`
 			permission.
-		</para>
+		
 
-		<para>
+		
 			To
 			write to
 			the external storage system your application needs the
-			<code>android.permission.WRITE_EXTERNAL_STORAGE</code>
+			`android.permission.WRITE_EXTERNAL_STORAGE`
 			permission. You get the path to the
 			external storage system via the
-			<code>Environment.getExternalStorageDirectory()</code>
+			`Environment.getExternalStorageDirectory()`
 			method.
-		</para>
-		<para>
+		
+		
 			Via the following
 
 			method call you can
@@ -86,28 +86,27 @@
 			system is
 			not
 			available.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/sdavailable.txt" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>The following shows an example for reading from the external
+		The following shows an example for reading from the external
 			storage system.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/sdcard.txt" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
 
-</section>

@@ -1,52 +1,52 @@
 <section id="sqliteoverview" role="wrapper">
-	<title>SQLite architecture</title>
+	<title>SQLite architecture
 	<section id="sqliteoverview_packages">
-		<title>Packages</title>
-		<para>
+		<title>Packages
+		
 			The
-			<code>android.database</code>
+			`android.database`
 			package
 			contains all necessary classes for working with databases.
 			The
-			<code>android.database.sqlite</code>
+			`android.database.sqlite`
 			package
 			contains the SQLite specific classes.
-		</para>
-	</section>
+		
+	
 
 	<section id="sqliteoverview_sqliteopenhelper">
-		<title>Creating and updating database with SQLiteOpenHelper</title>
-		<para>
+		<title>Creating and updating database with SQLiteOpenHelper
+		
 			To create and upgrade a database in your Android application you
 			create a
 			subclass of the
-			<code>SQLiteOpenHelper</code>
+			`SQLiteOpenHelper`
 			class.
 			In the constructor of your subclass you
 			call the
-			<code>super()</code>
+			`super()`
 			method of
-			<code>SQLiteOpenHelper</code>
+			`SQLiteOpenHelper`
 			,
 			specifying the database name and the current database version.
-		</para>
-		<para>
+		
+		
 			In this class you need to
 			override the following methods to create and
 			update your database.
 
 			<itemizedlist>
 				<listitem>
-					<para>
-						<code>onCreate()</code>
+					
+						`onCreate()`
 						-
 						is called by the framework, if the database is accessed but not
 						yet created.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
-						<code>onUpgrade()</code>
+					
+						`onUpgrade()`
 						-
 						called, if the database version is increased in your application
 						code.
@@ -54,96 +54,96 @@
 						database
 						schema or
 						to drop the existing database and recreate it via the
-						<code>onCreate()</code>
+						`onCreate()`
 						method.
-					</para>
+					
 				</listitem>
 
 			</itemizedlist>
 
-		</para>
-		<para>
+		
+		
 			Both methods receive an
-			<code>SQLiteDatabase</code>
+			`SQLiteDatabase`
 			object as parameter which is the Java representation of the
 			database.
-		</para>
+		
 
-		<para>
+		
 			The
-			<code>SQLiteOpenHelper</code>
+			`SQLiteOpenHelper`
 			class
 			provides the
-			<code>getReadableDatabase()</code>
+			`getReadableDatabase()`
 			and
-			<code>getWriteableDatabase()</code>
+			`getWriteableDatabase()`
 			methods
 			to get access to an
-			<code>SQLiteDatabase</code>
+			`SQLiteDatabase`
 			object; either in read
 			or
 			write mode.
-		</para>
-		<para>
+		
+		
 			The database tables should use the
 			identifier
-			<code>_id</code>
+			`_id`
 			for the primary key of the table.
 			Several Android functions rely on
 			this standard.
-		</para>
+		
 		<tip>
 
-			<para>
+			
 				It is good practice to create a separate class per table. This class
 				defines
 				static
-				<code>onCreate()</code>
+				`onCreate()`
 				and
-				<code>onUpgrade()</code>
+				`onUpgrade()`
 				methods. These methods are called in the corresponding methods
 				of
-				<code>SQLiteOpenHelper</code>
+				`SQLiteOpenHelper`
 				. This way your implementation of
-				<code>SQLiteOpenHelper</code>
+				`SQLiteOpenHelper`
 				stays readable, even if you have several tables.
-			</para>
+			
 		</tip>
-	</section>
+	
 
 
 
 	<section id="sqliteoverview_sqlitedatabase">
-		<title>SQLiteDatabase</title>
-		<para>
-			<code>SQLiteDatabase</code>
+		<title>SQLiteDatabase
+		
+			`SQLiteDatabase`
 			is the base class for working with a
 			SQLite
 			database in Android and
 			provides methods to open, query, update and
 			close the database.
-		</para>
-		<para>
+		
+		
 			More specifically
-			<code>SQLiteDatabase</code>
+			`SQLiteDatabase`
 			provides the
 
-			<code>insert()</code>
+			`insert()`
 			,
-			<code>update()</code>
+			`update()`
 			and
-			<code>delete()</code>
+			`delete()`
 			methods.
-		</para>
-		<para>
+		
+		
 			In addition it provides the
-			<code>execSQL()</code>
+			`execSQL()`
 			method, which allows to
 			execute an SQL statement directly.
-		</para>
-		<para>
+		
+		
 			The object
-			<code>ContentValues</code>
+			`ContentValues`
 			allows to define key/values. The
 			<parameter>key</parameter>
 			represents the table column
@@ -154,73 +154,73 @@
 			content for the table
 			record
 			in this column.
-			<code>ContentValues</code>
+			`ContentValues`
 			can be used for inserts and
 			updates of database entries.
-		</para>
-		<para>
+		
+		
 			Queries can be created via the
-			<code>rawQuery()</code>
+			`rawQuery()`
 			and
-			<code>query()</code>
+			`query()`
 			methods
 			or via the
-			<code>SQLiteQueryBuilder</code>
+			`SQLiteQueryBuilder`
 			class
 			.
-		</para>
-		<para>
-			<code>rawQuery()</code>
+		
+		
+			`rawQuery()`
 			directly
 			accepts an SQL select statement as input.
-		</para>
-		<para>
-			<code>query()</code>
+		
+		
+			`query()`
 			provides a structured interface for specifying
 			the SQL query.
-		</para>
-		<para>
-			<code>SQLiteQueryBuilder</code>
+		
+		
+			`SQLiteQueryBuilder`
 			is a convenience class that helps to build SQL queries.
-		</para>
+		
 
-	</section>
+	
 	<section id="sqliteoverview_rawquery">
-		<title>rawQuery() Example</title>
+		<title>rawQuery() Example
 
-		<para>
+		
 			The following gives an example of a
-			<code>rawQuery()</code>
+			`rawQuery()`
 			call.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/intro/rawquery.txt" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 	<section id="sqliteoverview_query">
-		<title>query() Example</title>
-		<para>
+		<title>query() Example
+		
 			The following gives an example of a
-			<code>query()</code>
+			`query()`
 			call.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/intro/query.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The method
-			<code>query()</code>
+			`query()`
 			has the following parameters.
 
 
 			<table frame='all'>
-				<title>Parameters of the query() method</title>
+				<title>Parameters of the query() method
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="3*" />
@@ -277,150 +277,149 @@
 				</tgroup>
 			</table>
 
-		</para>
-		<para>
+		
+		
 			If a condition is not required you can pass
-			<code>null</code>
+			`null`
 			, e.g. for the group by
 			clause.
-		</para>
-		<para>
+		
+		
 			The
 			"whereClause"
 			is specified without the word
 			"where", for
 			example a "where" statement might look like:
 			"_id=19 and summary=?".
-		</para>
-		<para>
+		
+		
 			If you specify placeholder values in the where clause via
-			<code>?</code>
+			`?`
 			,
 			you pass
 			them as the
 			selectionArgs parameter to the query.
-		</para>
+		
 
 
-	</section>
+	
 
 
 
 	<section id="sqliteoverview_cursor">
-		<title>Cursor</title>
-		<para>
+		<title>Cursor
+		
 			A
 			query
 			returns a
-			<code>Cursor</code>
+			`Cursor`
 			object. A Cursor represents the result of a query and basically
 			points
 			to one row of the query result. This way Android can buffer the
 			query results efficiently; as it does not have to load all data into
 			memory.
-		</para>
+		
 
-		<para>
+		
 			To get the number of
 			elements of the resulting query use the
-			<code>getCount()</code>
+			`getCount()`
 			method.
-		</para>
+		
 
-		<para>
+		
 			To move between individual data
 			rows, you can use the
-			<code>moveToFirst()</code>
+			`moveToFirst()`
 			and
-			<code>moveToNext()</code>
+			`moveToNext()`
 			methods. The
 
-			<code>isAfterLast()</code>
+			`isAfterLast()`
 			method allows to check if the end of the query result has been
 			reached.
-		</para>
-		<para>
+		
+		
 
-			<code>Cursor</code>
+			`Cursor`
 			provides typed
-			<code>get*()</code>
+			`get*()`
 			methods, e.g.
-			<code>getLong(columnIndex)</code>
+			`getLong(columnIndex)`
 			,
-			<code>getString(columnIndex)</code>
+			`getString(columnIndex)`
 			to access the column data for the current position of the result.
 			The
 			"columnIndex" is the number of the column you are
 			accessing.
-		</para>
-		<para>
-			<code>Cursor</code>
+		
+		
+			`Cursor`
 			also provides the
-			<code>getColumnIndexOrThrow(String)</code>
+			`getColumnIndexOrThrow(String)`
 			method which allows to get the column index for a column name of the
 			table.
-		</para>
-		<para>
+		
+		
 			A
-			<code>Cursor</code>
+			`Cursor`
 			needs to be closed with the
-			<code>close()</code>
+			`close()`
 			method call.
-		</para>
+		
 
-	</section>
+	
 
 	<section id="sqliteoverview_listviews">
-		<title>ListViews, ListActivities and SimpleCursorAdapter</title>
-		<para>
-			<code>ListViews</code>
+		<title>ListViews, ListActivities and SimpleCursorAdapter
+		
+			`ListViews`
 			are
-			<code>Views</code>
+			`Views`
 			which allow to display a list of elements.
-		</para>
-		<para>
-			<code>ListActivities</code>
+		
+		
+			`ListActivities`
 			are specialized
-			<wordasword>activities</wordasword>
+			_activities_
 			which make the usage of
-			<code>ListViews</code>
+			`ListViews`
 			easier.
-		</para>
-		<para>
+		
+		
 			To work with databases and
-			<code>ListViews</code>
+			`ListViews`
 			you can use the
-			<code>SimpleCursorAdapter</code>
+			`SimpleCursorAdapter`
 			. The
-			<code>SimpleCursorAdapter</code>
+			`SimpleCursorAdapter`
 			allows to set a layout for each row of the
-			<code>ListViews</code>
+			`ListViews`
 			.
-		</para>
-		<para>
+		
+		
 			You also define an array which contains the column names and another
 			array which contains the IDs of
-			<code>Views</code>
+			`Views`
 			which should be filled with the data.
-		</para>
-		<para>
+		
+		
 			The
-			<code>SimpleCursorAdapter</code>
+			`SimpleCursorAdapter`
 			class will map the columns to the
-			<code>Views</code>
+			`Views`
 			based on the
-			<code>Cursor</code>
+			`Cursor`
 			passed to it.
-		</para>
-		<para>
+		
+		
 			To obtain the
-			<code>Cursor</code>
+			`Cursor`
 			you should use the
-			<code>Loader</code>
+			`Loader`
 			class.
-		</para>
+		
 
-	</section>
+	
 
 
-</section>

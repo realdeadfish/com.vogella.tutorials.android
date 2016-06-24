@@ -3,7 +3,7 @@
 	<articleinfo>
 		<title>Android background processing with Handlers, AsyncTask and
 			Loaders - Tutorial
-		</title>
+		
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -19,17 +19,17 @@
 		<pubdate>21.09.2015</pubdate>
 		<releaseinfo>
 
-			<para>Version 3.3</para>
+			Version 3.3
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Android Threads, Handlers AsyncTask</title>
-			<para> This tutorial describes the usage of asynchronous processing in Android applications.
+			<title>Android Threads, Handlers AsyncTask
+			 This tutorial describes the usage of asynchronous processing in Android applications.
 				It also covers how to
 				handle the
 				application life cycle together with threads. It is
 				based on Android Studio.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 

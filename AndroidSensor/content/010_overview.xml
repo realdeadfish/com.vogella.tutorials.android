@@ -1,67 +1,66 @@
 <section id="sensoroverview" role="wrapper">
-	<title>Android Sensors</title>
+	<title>Android Sensors
 	<section id="sensoroverview_manager">
-		<title>SensorManager</title>
-		<para>
+		<title>SensorManager
+		
 			Android Sensors supports several sensors via the
-			<code>SensorManager</code>,
+			`SensorManager`,
 			for
 			example the accelerometer. Unfortunately, you cannot test the
 			accelerometer on the Android emulator.
-		</para>
-		<para>
+		
+		
 			You can access a
-			<code>SensorManager</code>
+			`SensorManager`
 			via
-			<code>getSystemService(SENSOR_SERVICE)</code>.
+			`getSystemService(SENSOR_SERVICE)`.
 			The
-			<code>Sensor</code>
+			`Sensor`
 			class defines several constants for accessing the different sensors.
 			<itemizedlist>
 				<listitem>
-					<para>Sensor.TYPE_GYROSCOPE</para>
+					Sensor.TYPE_GYROSCOPE
 				</listitem>
 				<listitem>
-					<para>Sensor.TYPE_MAGNETIC_FIELD</para>
+					Sensor.TYPE_MAGNETIC_FIELD
 				</listitem>
 				<listitem>
-					<para>Sensor.TYPE_ORIENTATION</para>
+					Sensor.TYPE_ORIENTATION
 				</listitem>
 				<listitem>
-					<para>Sensor.TYPE_ACCELEROMETER</para>
+					Sensor.TYPE_ACCELEROMETER
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para>
+		
+		
 			You can access the sensor via the
-			<code>sensorManager.getDefaultSensor()</code>
+			`sensorManager.getDefaultSensor()`
 			method, which takes the sensor type and the delay
 			defined as constants on
-			<code>SensorManager</code> as parameters.
-		</para>
-	</section>
+			`SensorManager` as parameters.
+		
+	
 
 	<section id="sensoroverview_listener">
-		<title>Sensor listener</title>
-		<para>
+		<title>Sensor listener
+		
 			Once you acquired a sensor, you
 			can register a
-			<code>SensorEventListener</code>
+			`SensorEventListener`
 			object
 			on it. This listener will get informed, if the sensor data
 			changes.
-		</para>
-		<para>
+		
+		
 			To
 			avoid the unnecessary usage of battery power,
 			you can register your
 			listener in
 			the
-			<code>onResume()</code>
+			`onResume()`
 			method and de-register it in
 			the
-			<code>onPause()</code>
+			`onPause()`
 			method.
-		</para>
-	</section>
-</section>
+		
+	

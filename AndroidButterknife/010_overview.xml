@@ -1,17 +1,17 @@
 <section id="butterknifeverview">
-	<title>Butterknife</title>
+	<title>Butterknife
 	<indexterm>
 		<primary>Butterknife</primary>
 	</indexterm>
-	<para>
-		<ulink url="http://jakewharton.github.io/butterknife/">Butterknife</ulink>
+	
+		http://jakewharton.github.io/butterknife/[Butterknife]
 		is a light weight library to inject views into Android components.
-	</para>
-	<para>
+	
+	
 		The
-		<code>@Bind</code>
+		`@Bind`
 		annotation allow to inject views and performs the cast to the correct type for you. The
-		<code>@@OnClick(R.id.yourid)</code>
+		`@@OnClick(R.id.yourid)`
 		annotation allows to add OnClickListener to a view. You can optional define the method parameter of the view in case you want it injected.
-	</para>
-</section>
+	
+
