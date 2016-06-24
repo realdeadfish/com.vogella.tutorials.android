@@ -1,0 +1,10 @@
+
+// Fill the values for inserting
+// Keys, e.g. KEY_CATEGORY are predefined
+ContentValues values = new ContentValues();
+values.put(KEY_CATEGORY, category);
+values.put(KEY_SUMMARY, summary);
+values.put(KEY_DESCRIPTION, description);
+
+// Insert the new value
+database.insert(DATABASE_TABLE, null, values);

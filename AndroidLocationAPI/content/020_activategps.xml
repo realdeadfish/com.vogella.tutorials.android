@@ -1,0 +1,84 @@
+<section id="activategps">
+	<title>Using GPS and setting the current location</title>
+	<section id="locationapi_gpsenable">
+		<title>Activating GPS on the emulator</title>
+		<para>
+			You need to activate GPS on your test device. If you test on the
+			emulator and its not activated you
+			"null" if you try to use a
+			<code>LocationManager</code>
+			.
+		</para>
+		<para>
+			The Google Map
+			<wordasword>activity</wordasword>
+			should automatically activate the GPS device in the emulator but if
+			you
+			want to use the location manager directly you need to do this
+			yourself.
+			Currently their seems to be an issue with this.
+		</para>
+		<para>
+			Start Google Maps on the emulator and request the current
+			geo-position, this
+			will allow you to activate the
+			GPS. Send new GPS
+			coordinates to the Android emulator.
+		</para>
+	</section>
+
+
+
+	<section id="locationapi_geoposition">
+		<title>Setting the geoposition</title>
+		<para>
+			You can use the "DDMS"
+			<code>Perspective</code>
+			of Eclipse to send your geoposition to the emulator or a connected
+			device. For open this
+			<code>Perspective</code>
+			select
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Open Perspective</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>DDMS</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+
+		<para>In the Emulator Control part you can enter the geocoordinates
+			and press the <guibutton>Send</guibutton> button.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/gpsfix20.png" scale="60"/>
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>You can also set the geoposition the Android emulator via
+			telnet.
+			Open a console and connect to your device. The port number of
+			your
+			device can be seen in the title area of your emulator.
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/geoposition/telnet.txt" />
+			</programlisting>
+		</para>
+		<para> Set the position via the following command. </para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/geoposition/setposition.txt" />
+			</programlisting>
+		</para>
+	</section>
+</section>

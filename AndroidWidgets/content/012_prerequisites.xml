@@ -1,0 +1,16 @@
+<section id="prerequisites">
+	<title>Prerequisites</title>
+
+	<para>
+		The following description assume that you already have
+		experience in
+		building standard Android application. Please see
+		<ulink url="http://www.vogella.com/tutorials/Android/article.html">
+			Android Tutorial</ulink>.
+		It also partly uses Android services. You find an introduction into
+		Android Services in
+		<ulink url="http://www.vogella.com/tutorials/AndroidServices/article.html">
+			Android Service Tutorial</ulink>.
+	</para>
+
+</section>

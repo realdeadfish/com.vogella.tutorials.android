@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Android Drawables - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>01.09.2010 - 20.12.2012</pubdate>
+		<releaseinfo>
+
+			<para>Version 2.1	</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Android Drawables</title>
+			<para> This tutorial describes the usage of Drawables in Android.
+			</para>
+		</abstract>
+	</articleinfo>
+	
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_overview.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/012_access.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/014_bitmaps.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_xmldrawables.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/021_vectordrawables.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/022_animationdrawables.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/030_ninepatch.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/040_customdrawable.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/040_tutorial_customdrawable.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/AndroidDrawables"?>
+</article>

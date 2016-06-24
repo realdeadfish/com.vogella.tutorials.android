@@ -1,0 +1,107 @@
+<section id="preferences" role="wrapper">
+	<title>Preferences</title>
+	<section id="preferences_overview">
+		<title>Storing key-value pairs</title>
+		<para>
+			Android supports the usage of the
+			<wordasword>SharedPreferences</wordasword>
+			class
+			for persisting key-value pairs (preferences)of primitive data
+			types in the Android file system.
+		</para>
+		<para>
+			The
+			definition of these preferences can
+			be done
+			via an XML
+			resource.
+		</para>
+		<para>
+			The
+			<code>PreferenceManager</code>
+			class provides methods to get access to preferences stored in a
+			certain file.
+			The following code
+			shows how to
+			access
+			preferences from a
+			certain file
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/preferences/getPrefs.txt" />
+			</programlisting>
+		</para>
+		<para>Preferences should be created private for the application. They can be accessed
+			via all application components.
+			Sharing data with other application
+			with world readable or writable
+			preference file is rarely used, as
+			the external
+			component would need to know the exact filename and
+			location of the file.
+		</para>
+		<para>
+			The default preferences are available from any component via the
+			<code>PreferenceManager.getDefaultSharedPreferences(this)</code>
+			method call.
+			Preference value are accessed via the key and the instance of the
+			<code>SharedPreferences</code>
+			class, as demonstrated in the following listing.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/preferences/getPrefsValue.txt" />
+			</programlisting>
+		</para>
+
+		<para>
+			To create or change preferences you have to call the
+			<code>edit()</code>
+			method on
+			the
+			<code>SharedPreferences</code>
+			object. Once you have changed the value you have to call the
+			<code>apply()</code>
+			method
+			to
+			apply your asynchronously to the file system. The usage of
+			the
+			<code>commit()</code>
+			method is discouraged, as it write the changes synchronously to the
+			file system.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/preferences/updatePrefs.txt" />
+			</programlisting>
+		</para>
+
+	</section>
+
+
+	<section id="preferences_listener">
+		<title>Preference Listener</title>
+		<para>
+			You can listen to changes in the preferences via the
+			<code>registerOnSharedPreferenceChangeListener()</code>
+			method on
+			<code>SharedPreferences</code>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/listener/preference.java" />
+			</programlisting>
+		</para>
+		<para>
+			One watch out is that
+			<code>SharedPreferences</code>
+			keeps listeners in a
+			<code>WeakHashMap</code>
+			hence listener may be recycled if your code does not hold a reference
+			to it.
+		</para>
+
+	</section>
+</section>

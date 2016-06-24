@@ -1,0 +1,23 @@
+<section id="androidcodeexamplerepositories">
+	<title>Code example repositories</title>
+	<para>
+		The most important source of example code are the API demos of
+		Android. You can create a project with this sample code via the
+		<guilabel>Android Sample project</guilabel>
+		wizard by selecting the
+		<guilabel>API demos</guilabel>
+		entry.
+	</para>
+	<para>
+		Roman Nurik from Google keeps this example repository.
+		<ulink url="http://code.google.com/p/romannurik-code/"> Roman Nurik's examples</ulink>
+
+	</para>
+
+	<para>
+		Mark Murthy (Android trainer, developer and book author) keeps
+		his
+		advanced examples in this repository.
+		<ulink url="https://github.com/commonsguy/cw-advandroid"> Mark Murthy's advanced examples</ulink>
+	</para>
+</section>

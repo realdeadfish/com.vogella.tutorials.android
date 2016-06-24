@@ -1,0 +1,2 @@
+
+./adb pull /sdcard/gestures ~/test

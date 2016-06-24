@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Creating custom and compound Views in Android - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>12.05.2014</pubdate>
+		<releaseinfo>
+
+			<para>Version 3.4</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Creating custom views in Android</title>
+			<para> This tutorials describes how to create custom views with
+				Android. It is
+				based on Eclipse 4.4, Java 1.6 and Android 4.4.
+			</para>
+		</abstract>
+	</articleinfo>
+	
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_compoundcontrols.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_customview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_lifecycle.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_attributes.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="090_tutorial_compoundcontrols.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="120_canvas.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_persists.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="220_customviewexample.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/AndroidCustomViews"?>
+</article>

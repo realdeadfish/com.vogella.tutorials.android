@@ -1,0 +1,8 @@
+<section id="backgroundprocessing_services">
+	<title>Usage of services</title>
+	<para>
+		You can also use Android services to perform background tasks. See
+		<ulink url="http://www.vogella.com/tutorials/AndroidServices/article.html">Android service tutorial</ulink>
+		for details.
+	</para>
+</section>

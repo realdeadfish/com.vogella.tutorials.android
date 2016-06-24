@@ -1,0 +1,53 @@
+<section id="ownservice_messenger">
+	<title>Tutorial: Interprocess communication with Messenger</title>
+	<para>
+		The following chapter will demonstrate how to communicate between an
+		<wordasword>activity</wordasword>
+		and an
+		<code>Service</code>
+		using the
+		<code>Messenger</code>
+		and
+		<code>Handler</code>
+		class.
+	</para>
+	<para>
+		Create a new project called "de.vogella.android.ownservice.messenger"
+		with an
+		<wordasword>activity</wordasword>
+		called <wordasword>MainActivity</wordasword>.
+	</para>
+	<para>Creating the following <filename>AndroidManifest.xml</filename>.
+	</para>
+	<para>
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/messenger/AndroidManifest.xml" />
+		</programlisting>
+	</para>
+	<para>Create the following class</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/messenger/DownloadServiceMessenger.java" />
+		</programlisting>
+	</para>
+	<para>Change the <filename>main.xml</filename> layout to the following.</para>
+	<para>
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/messenger/main.xml" />
+		</programlisting>
+	</para>
+	<para>
+		Change
+		<code>MainActivity</code>
+		to the following.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/messenger/MainActivity.java" />
+		</programlisting>
+	</para>
+</section>

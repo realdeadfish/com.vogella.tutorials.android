@@ -1,0 +1,5 @@
+
+return database.query(DATABASE_TABLE, 
+	new String[] { KEY_ROWID, KEY_CATEGORY, KEY_SUMMARY, KEY_DESCRIPTION }, 
+	null, null, null, null, null);
+	

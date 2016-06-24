@@ -1,0 +1,11 @@
+<section id="prerequisistions">
+	<title>Pre-requisitions</title>
+	<para>
+		The following tutorial assumes that you have already basic knowledge
+		in
+		<ulink url="http://www.vogella.com/tutorials/Android/article.html"> Android development</ulink>
+		. Please check the
+		<ulink url="http://www.vogella.com/tutorials/Android/article.html"> Android development tutorial</ulink>
+		to learn the basics.
+	</para>
+</section>

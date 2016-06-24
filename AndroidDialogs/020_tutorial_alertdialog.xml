@@ -1,0 +1,75 @@
+<section id="tutorial_alertdialog" role="wrapper">
+	<title>Exercise: Using the DialogFragment class</title>
+	<section id="tutorial_alertdialog1">
+		<title>Target</title>
+		<para>
+			The following demonstrates the usage of the
+			<code>DialogFragment</code>
+			dialog in an activity with an existing dialog and with a custom layout for the dialog.
+		</para>
+	</section>
+	<section id="tutorial_alertdialog_createproject">
+		<title>Create project and layout files</title>
+
+		<para>
+			Create a new Android project with the
+			<code>com.android.vogella.com.dialogfragmentexample</code>
+			package.
+		</para>
+
+
+		<para>
+			Ensure that the layout file of your activity contains two buttons pointing both to
+			<code>onClick</code>
+			method in their
+			<code>android:onClick</code>
+			property.
+		</para>
+		<para>
+			Create the following layout file, called
+			<code>fragment_username.xml</code>
+			.
+		</para>
+
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/dialog/fragment_username.xml" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="tutorial_alertdialog_activity">
+		<title>Create fragments and adjust activity</title>
+		<para>Create the following two fragment classes.</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/dialog/MyAlertDialogFragment.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/dialog/MyDialogFragment.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			Change the code of your
+			activity
+			to the following listing.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/dialog/MainActivity.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="tutorial_dialogfragment">
+		<title>Test dialog usage</title>
+		<para> If you run your application and click the corresponding button,
+			your
+			dialog should get displayed.
+		</para>
+	</section>
+</section>

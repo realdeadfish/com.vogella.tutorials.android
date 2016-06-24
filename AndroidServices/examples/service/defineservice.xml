@@ -1,0 +1,7 @@
+<service
+	android:name="WordService"
+	android:process=":my_process" 
+	android:icon="@drawable/icon"
+	android:label="@string/service_name"
+	>
+</service>

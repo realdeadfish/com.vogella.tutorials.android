@@ -1,0 +1,5 @@
+
+// assume the gesture file exists on your Android device
+adb pull /sdcard/gestures ~/test
+// now copy it back
+adb push ~/test/gesture /sdcard/gestures2 

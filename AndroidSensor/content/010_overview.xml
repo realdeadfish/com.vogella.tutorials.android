@@ -1,0 +1,67 @@
+<section id="sensoroverview" role="wrapper">
+	<title>Android Sensors</title>
+	<section id="sensoroverview_manager">
+		<title>SensorManager</title>
+		<para>
+			Android Sensors supports several sensors via the
+			<code>SensorManager</code>,
+			for
+			example the accelerometer. Unfortunately, you cannot test the
+			accelerometer on the Android emulator.
+		</para>
+		<para>
+			You can access a
+			<code>SensorManager</code>
+			via
+			<code>getSystemService(SENSOR_SERVICE)</code>.
+			The
+			<code>Sensor</code>
+			class defines several constants for accessing the different sensors.
+			<itemizedlist>
+				<listitem>
+					<para>Sensor.TYPE_GYROSCOPE</para>
+				</listitem>
+				<listitem>
+					<para>Sensor.TYPE_MAGNETIC_FIELD</para>
+				</listitem>
+				<listitem>
+					<para>Sensor.TYPE_ORIENTATION</para>
+				</listitem>
+				<listitem>
+					<para>Sensor.TYPE_ACCELEROMETER</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>
+			You can access the sensor via the
+			<code>sensorManager.getDefaultSensor()</code>
+			method, which takes the sensor type and the delay
+			defined as constants on
+			<code>SensorManager</code> as parameters.
+		</para>
+	</section>
+
+	<section id="sensoroverview_listener">
+		<title>Sensor listener</title>
+		<para>
+			Once you acquired a sensor, you
+			can register a
+			<code>SensorEventListener</code>
+			object
+			on it. This listener will get informed, if the sensor data
+			changes.
+		</para>
+		<para>
+			To
+			avoid the unnecessary usage of battery power,
+			you can register your
+			listener in
+			the
+			<code>onResume()</code>
+			method and de-register it in
+			the
+			<code>onPause()</code>
+			method.
+		</para>
+	</section>
+</section>

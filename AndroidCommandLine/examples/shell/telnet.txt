@@ -1,0 +1,12 @@
+
+# connects to device
+telnet localhost 5554
+# set the power level
+power status full
+power status charging
+# make a call to the device
+gsm call 012041293123
+# send a sms to the device
+sms send 12345 Will be home soon
+# set the geo location
+geo fix 48 51

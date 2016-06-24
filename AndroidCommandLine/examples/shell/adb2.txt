@@ -1,0 +1,9 @@
+
+# Lists all devices
+adb devices
+#Result
+List of devices attached
+emulator-5554 attached
+emulator-5555 attached
+# Issue a command to a specific device
+adb -s emulator-5554 shell

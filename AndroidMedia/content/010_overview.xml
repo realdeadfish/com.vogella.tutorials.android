@@ -1,0 +1,107 @@
+<section id="sound">
+	<title>Android Sound and Media</title>
+	<section id="sound_overview">
+		<title>Playing sound</title>
+		<para>
+			Android
+			provides two main API's for playing sounds. The first one via
+			the
+			<code>SoundPool</code>
+			class
+			and
+			the other one via the
+			<code>MediaPlayer</code>
+			class.
+		</para>
+		<para>
+			<code>SoundPool</code>
+			can be used for small audio clips. It can
+			repeat
+			sounds and
+			play several
+			sounds simultaneously. The sound files
+			played
+			with
+			<code>SoundPool</code>
+			should not exceed 1 MB.
+		</para>
+		<para>
+			<code>SoundPool</code>
+			does load the file asynchronously. As of Android API8
+			it is possible
+			to check if the loading is
+			complete via a
+			<code>OnLoadCompleteListener</code>
+			.
+		</para>
+		<para> Android supports different audio streams for different
+			purposes.
+			The phone volume button can be configured to control a
+			specific audio
+			stream, e.g. during a call the volume button allow
+			increase /
+			decrease
+			the caller volume. To set the button to control the
+			sound media stream
+			set the audio type in your application.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/set/set.txt" />
+			</programlisting>
+		</para>
+
+		<para>
+			<code>MediaPlayer</code>
+			is better
+			suited for
+			longer music and movies.
+		</para>
+	</section>
+
+	<section id="sound_recorder">
+		<title>MediaRecorder</title>
+		<para>
+			The
+			<code>android.media.MediaRecorder</code>
+			class can be used to record audio and video. To use
+			<code>MediaRecorder</code>
+			you need to set the source
+			device and the format.
+		</para>
+	</section>
+
+	<section id="sound_medialibary">
+		<title>Adding to the Media library</title>
+		<para>
+			You can add new Media to the Android media library.
+			Via an
+			<code>Intent</code>
+			you can tell the media application on the device that new content is
+			available. The following
+			demonstrates that.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/snippets/add.java" />
+			</programlisting>
+		</para>
+	</section>
+	
+	<section id="sound_formats">
+		<title>Supported formats</title>
+		<para>
+			Android supports a variaty of formats.
+			See
+			<ulink
+				url="http://developer.android.com/guide/appendix/media-formats.html"> Supported Media Formats in the Android Developer Guide</ulink>
+			.
+		</para>
+	</section>
+
+
+
+</section>

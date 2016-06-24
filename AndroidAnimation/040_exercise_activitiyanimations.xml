@@ -1,0 +1,53 @@
+<section id="exericse_activity_animations">
+	<title>Activity animations in Android with shared views</title>
+	<para>Android 5.0 adds the capability to animate between activities and to have shared views between these activity. If you define a shared
+		part the old view with be animating into the position and size of the new view.
+	</para>
+	<para>
+		To test this create a project with the top level package called
+		<code>com.vogella.android.activityanimationwithsharedviews</code>
+		.
+	</para>
+	<para>
+		Create two activity with two different layout, both containing a
+		<code>ImageView</code>
+		with the same
+		<code>android:transitionName</code>
+		property.
+	</para>
+	<para>activity_main.xml</para>
+	<para>
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/activities/activity_main.xml" />
+		</programlisting>
+	</para>
+
+
+	<para>activity_second.xml</para>
+
+	<para>
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/activities/activity_second.xml" />
+		</programlisting>
+	</para>
+	<para>Adjust your activity code.</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/activities/MainActivity.java" />
+		</programlisting>
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/activities/SecondActivity.java" />
+		</programlisting>
+	</para>
+	<para>
+		If you run your application and click on the image view, it is animated to the view with the same
+		<code>android:transitionName</code>
+		property, in our case the button.
+	</para>
+
+
+
+</section>

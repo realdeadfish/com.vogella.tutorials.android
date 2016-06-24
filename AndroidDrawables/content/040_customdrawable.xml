@@ -1,0 +1,11 @@
+<section id="drawables_custom1">
+	<title>Custom Drawables</title>
+	<para>
+		You can also create custom
+		<wordasword>Drawable</wordasword>
+		, which can use the Canvas
+		API for their display. For these drawables
+		you can use the full Canvas API to design them to your need.
+	</para>
+
+</section>

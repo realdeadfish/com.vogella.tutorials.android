@@ -1,0 +1,8 @@
+# Ubuntu 12.04
+apt-get install ia32-libs
+
+# Ubuntu 13.04
+sudo apt-get install libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5
+
+# Ubuntu 13.10
+sudo apt-get install libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1

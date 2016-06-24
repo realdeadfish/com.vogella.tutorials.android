@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Android background processing with Handlers, AsyncTask and
+			Loaders - Tutorial
+		</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>21.09.2015</pubdate>
+		<releaseinfo>
+
+			<para>Version 3.3</para>
+		</releaseinfo>
+
+		<abstract id="abstract">
+			<title>Android Threads, Handlers AsyncTask</title>
+			<para> This tutorial describes the usage of asynchronous processing in Android applications.
+				It also covers how to
+				handle the
+				application life cycle together with threads. It is
+				based on Android Studio.
+			</para>
+		</abstract>
+	</articleinfo>
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../001_Books_Shared/aboutLarsVogel.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_overview.xml" />
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Android/010_prerequites.xml" />
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/014_threads.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/015_android.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/018_handler.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_asynctask.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/024_lifecycle.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/100_fragments.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/102_fragmentslink.xml" />
+		<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/120_loader.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/122_exercise_loader.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/130_services.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/132_serviceslink.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/300_tutorial_lifecycle.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/800_progressdialog.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="820_linkto_strictmode.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/AndroidBackgroundProcessing"?>
+</article>

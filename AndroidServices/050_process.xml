@@ -1,0 +1,76 @@
+<section id="service_binding" role="wrapper">
+	<title>Services in separate processes</title>
+	<section id="service_process">
+		<title>Running a service in its own process</title>
+		<para>
+			You can also specify that your
+			<code>Service</code>
+			runs in
+			a separate
+			process via the
+			<code><![CDATA[ android:process=":process_description" ]]></code>
+			attribute.
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/service/defineservice.xml" />
+			</programlisting>
+		</para>
+		<para>
+			The colon prefix in front of the name tells Android that the
+			<code>Service</code>
+			is private to its declaring application. If the colon is not used, the
+			<code>Service</code>
+			would be a global process and can be used by other Android
+			applications.
+		</para>
+		<para>
+			Running a service in its own process will not block the
+			application in case the service performs long running operations in
+			its main thread. But as the services runs in its own process, you need
+			to use some interprocess communication (IPC) to communicate to your
+			service from other parts.
+		</para>
+		<para>
+			Even if the service
+			runs in its own process, you need to use
+			asynchronous processing
+			to
+			perform
+			network access, because Android does not allow network access
+			in the main thread of a process.
+		</para>
+	</section>
+
+	<section id="service_advice">
+		<title>When to run a service in a separate process?</title>
+		<para>
+			Running a service
+			in its own process gives it its own memory
+			address space and a
+			garbage collector of the virtual machine in this
+			process does not
+			affect the application process.
+		</para>
+		<para>
+			Application rarely need to run a service
+			in its own process.
+			Running
+			services in its own process makes the
+			communication with
+			other
+			Android components and the
+			service
+			harder to implement.
+		</para>
+		<note>
+			<para>
+				If you want to make a service
+				to other Android application
+				available, they must run in their own
+				process.
+			</para>
+		</note>
+	</section>
+</section>

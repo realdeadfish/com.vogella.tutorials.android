@@ -1,0 +1,160 @@
+<section id="loader">
+	<title>Loader</title>
+	<section id="loader_definition">
+		<title>Purpose of the Loader class</title>
+		<para>
+			The
+			<code>Loader</code>
+			class
+			allow you to load data asynchronously in an activity or
+			fragment. They can monitor the
+			source of
+			the
+			data
+			and
+			deliver new results
+			when the content
+			changes. They
+			also
+			persist data
+			between configuration
+			changes.
+		</para>
+
+		<para>
+			If the result is retrieved by the
+			<code>Loader</code>
+			after the object has been disconnected from its parent (activity or
+			fragment), it can cache the data.
+		</para>
+		<para>
+			Loaders
+			have been introduced in Android 3.0 and are part of the
+			compatibility
+			layer for Android versions as of 1.6.
+		</para>
+	</section>
+	<section id="loader_usage">
+		<title>Implementing a Loader</title>
+
+		<para>
+			You can use the abstract
+			<code>AsyncTaskLoader</code>
+			class as the basis for your own
+			<wordasword>Loader</wordasword>
+			implementations.
+		</para>
+
+		<para>
+			The
+			<code>LoaderManager</code>
+			of an activity or fragment manages one or more
+			<code>Loader</code>
+			instances.
+			The creation of a
+			<wordasword>Loader</wordasword>
+			is done
+			via the following method call.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/loader/init.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			The first parameter is a
+			unique ID which
+			can
+			be used by
+			the callback
+			class to identify that
+			<wordasword>Loader</wordasword>
+			later. The second parameter is a bundle which can be
+			given
+			to the
+			callback class for more information.
+		</para>
+
+		<para>
+			The third parameter of
+			<code>initLoader()</code>
+			is the class which is called once
+			the
+			initialization has been started
+			(callback class). This class must implement the
+			<code>LoaderManager.LoaderCallbacks</code>
+			interface.
+			It is good practice that
+			an
+			activity or the fragment
+			which
+			uses a
+			<wordasword>Loader</wordasword>
+			implements the
+			<code>LoaderManager.LoaderCallbacks</code>
+			interface.
+
+		</para>
+
+		<para>
+			The
+			<code>Loader</code>
+			is not directly created by the
+			<code>getLoaderManager().initLoader()</code>
+			method call,
+			but must be created by the callback class in the
+			<code>onCreateLoader()</code>
+			method.
+		</para>
+		<para>
+			Once the
+			<code>Loader</code>
+			has finished reading data asynchronously, the
+			<code>onLoadFinished()</code>
+			method
+			of the callback class is called. Here you can update your user
+			interface.
+		</para>
+	</section>
+	<section id="loader_cursorloader">
+		<title>SQLite database and CursorLoader</title>
+		<para>
+			Android provides a
+			<code>Loader</code>
+			default implementation to handle SQlite database connections, the
+			<code>CursorLoader</code>
+			class.
+		</para>
+		<para>
+			For a
+			<wordasword>ContentProvider</wordasword>
+			based on an
+			<wordasword>SQLite</wordasword>
+			database
+			you would typically use the
+			<code>CursorLoader</code>
+			class. This
+			<wordasword>Loader</wordasword>
+			performs the database query in a background thread so that the
+			application is not blocked.
+		</para>
+		<para>
+			The
+			<code>CursorLoader</code>
+			class is the replacement for
+			Activity-managed cursors which are
+			deprecated now.
+		</para>
+
+		<para>
+			If the
+			<code>Cursor</code>
+			becomes invalid, the
+			<code>onLoaderReset()</code>
+			method is called on the callback class.
+		</para>
+	</section>
+
+</section>

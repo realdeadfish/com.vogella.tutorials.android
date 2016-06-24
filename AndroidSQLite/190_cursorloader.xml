@@ -1,0 +1,52 @@
+
+<section id="loader_activities">
+	<title>Cursors and Loaders</title>
+	<para> One of the challenges with accessing databases is that this
+		access is slow. The other challenge is that the application needs to
+		consider the life cycle of the components correctly, e.g. opening and
+		closing the cursor if a configuration change happens.
+	</para>
+	<para>
+		To manage the life cycle you could use
+		the
+		<code>managedQuery()</code>
+		method in
+		<wordasword>activities</wordasword>
+		prior to Android 3.0.
+	</para>
+	<para>
+		As of Android 3.0 this method is
+		deprecated and you should use the
+		<code>Loader</code>
+		framework to access the
+		<code>ContentProvider</code>
+		.
+	</para>
+	<para>
+		The
+		<code>SimpleCursorAdapter</code>
+		class, which can be used with
+		<code>ListViews</code>
+		,
+		has the
+		<code>swapCursor()</code>
+		method. Your
+		<wordasword>Loader</wordasword>
+		can use this method to update the
+		<code>Cursor</code>
+		in its
+		<code>onLoadFinished()</code>
+		method.
+	</para>
+	<para>
+		The
+		<code>CursorLoader</code>
+		class
+		reconnect
+		the
+		<code>Cursor</code>
+		after a configuration change.
+	</para>
+</section>
+
+

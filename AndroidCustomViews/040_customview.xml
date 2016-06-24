@@ -1,0 +1,110 @@
+<section id="customview">
+	<title>Creating custom views</title>
+	<section id="customviews_1">
+		<title>Creating custom views</title>
+		<para>
+			By extending the
+			<code>View</code>
+			class or one of its subclasses you can create your custom
+			view.
+		</para>
+		<para>
+			For drawing view use the
+			<code>onDraw()</code>
+			method. In this
+			method you receive a
+			<code>Canvas</code>
+			object which allows you to
+			perform drawing operations on it, e.g. draw
+			lines, circle, text or
+			bitmaps. If the view should be re-drawn you
+			call
+			the
+			<code>invalidate()</code>
+			method which triggers a call to the
+			<code>onDraw()</code>
+			method of this view.
+		</para>
+		<tip>
+			<para>
+				If you define
+				own views, ensure you review the
+				<code>ViewConfiguration</code>
+				class,
+				as it contains several constants for defining
+				views.
+			</para>
+		</tip>
+		<para>
+			To draw your
+			<code>Views</code>
+			you typically use the 2D Canvas API.
+		</para>
+	</section>
+
+	<section id="customviews_measurement">
+		<title>Measurement</title>
+		<para>
+			The layout manager calls the
+			<code>onMeasure()</code>
+			method of the view. The view receives the layout parameter from the
+			layout manager. A layout manager is responsible to determine the size of all its
+			children.
+		</para>
+		<para>
+			The view must call the
+			<code>setMeasuredDimenstion(int, int)</code>
+			method with the result.
+		</para>
+	</section>
+	<section id="customviews_layouts">
+		<title>Defining custom layout managers</title>
+		<para>
+			You can implement your
+			custom layout manager by extending the
+			<code>ViewGroup</code>
+			class. This allows you to implement more efficient layout managers or
+			to implement effects which are currently missing in the Android
+			platform.
+		</para>
+		<para>
+			A custom layout manager can override the
+			<code>onMeasure()</code>
+			and
+			<code>onLayout()</code>
+			method and specialize the calculation of its children. For example it
+			can leave out the time consuming support of
+			<code>layout_weight</code>
+			of the
+			<code>LinearLayout</code>
+			class.
+		</para>
+		<tip>
+			<para>
+				To calculate the size of the child you can use the
+				<code>measureChildWithMargins()</code>
+				method of the
+				<code>ViewGroup</code>
+				class.
+			</para>
+		</tip>
+		<para>
+			It
+			is good practice to store any additional layout parameters
+			in an
+			inner
+			class of your
+			<code>ViewGroup</code>
+			implementation. For example
+			<code>
+				ViewGroup.LayoutParams
+			</code>
+			implements command layout parameters, and
+			<code>LinearLayout.LayoutParams</code>
+			implements additional parameters
+			specific to LinearLayout, as for
+			example the layout_weight
+			parameter.
+		</para>
+	</section>
+</section>

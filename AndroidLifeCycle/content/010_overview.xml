@@ -1,0 +1,116 @@
+<section id="managingapplicationlifecyle">
+	<title>Managing the application life cycle</title>
+	<para> In an ideal case all
+		Android applications started by the user
+		remain in memory, that makes
+		restarting applications faster. But in
+		reality the available memory on an Android device is limited. To
+		manage
+		these limited
+		resources the Android
+		system is
+		allowed to terminate
+		running
+		processes or
+		recycling Android
+		components.
+	</para>
+	<para>
+		If the Android system needs to free up resources it follows a
+		simple set of rules. Every process gets a priority in the following
+		order.
+	</para>
+
+	<para>
+		If the Android system needs to terminate processes it follows the
+		following priority system.
+		<table frame='all'>
+			<title>Priorities</title>
+			<tgroup cols='3' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="2*" />
+				<colspec colname='c2' colwidth="5*" />
+				<colspec colname='c2' colwidth="1*" />
+				<thead>
+					<row>
+						<entry>Process status</entry>
+						<entry>Description</entry>
+						<entry>Priority</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>Foreground</entry>
+						<entry>
+							An application in which the user is interacting with an
+							activity,
+							or which has an service which is bound to such an
+							activity. Also
+							if a service is executing one of its lifecycle
+							methods or a
+							broadcast receiver which runs its
+							<code>onReceive()</code>
+							method.
+						</entry>
+						<entry>1</entry>
+					</row>
+					<row>
+						<entry>Visible</entry>
+						<entry>User is not interacting with the activity, but the activity
+							is still (partially) visible or the application has a service
+							which
+							is used by a inactive but visible activity.
+						</entry>
+						<entry>2</entry>
+					</row>
+					<row>
+						<entry>Service</entry>
+						<entry>Application with a running service which does not qualify
+							for 1 or 2.
+						</entry>
+						<entry>3</entry>
+					</row>
+					<row>
+						<entry>Background</entry>
+						<entry>Application with only stopped activities and without a
+							service or executing receiver. Android keeps them in
+							a least
+							recent
+							used (LRU) list and if requires terminates the one which
+							was least used.
+						</entry>
+						<entry>4</entry>
+					</row>
+					<row>
+						<entry>Empty</entry>
+						<entry>Application without any active components.
+						</entry>
+						<entry>5</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+	<para>All processes in the "Empty" list are added
+		to a least
+		recently used list (LRU list) and the processes which are at
+		the
+		beginning of this lists are killed by the out-of-memory killer if
+		required. If an application is restarted by the user its gets moved to
+		the end of this queue if it reaches the lowest prio again, as
+		indicated by the following graphic.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/process_termination10.png"
+					scale="40" />
+			</imageobject>
+			<textobject>
+				<phrase>LRU list for process determination</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+
+</section>

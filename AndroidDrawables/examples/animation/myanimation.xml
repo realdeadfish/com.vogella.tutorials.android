@@ -1,0 +1,7 @@
+<!-- Animation frames are phase*.png files inside the
+ res/drawable/ folder -->
+ <animation-list android:id="@+id/selected" android:oneshot="false">
+    <item android:drawable="@drawable/phase1" android:duration="400" />
+    <item android:drawable="@drawable/phase2" android:duration="400" />
+    <item android:drawable="@drawable/phase3" android:duration="400" />
+ </animation-list>

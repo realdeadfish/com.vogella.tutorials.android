@@ -1,0 +1,170 @@
+<section id="concurrency_asynchtask" role="wrapper">
+	<title>AsyncTask</title>
+	<section id="concurrency_asynchtask1">
+		<title>Purpose of the AsyncTask class</title>
+		<para>
+			The
+			<code>AsyncTask</code>
+			class encapsulates the creation of a background process and the
+			synchronization with the main thread. It also supports reporting
+			progress of the running tasks.
+		</para>
+	</section>
+
+	<section id="concurrency_asynchtask2">
+		<title>Using the AsyncTask class</title>
+		<para>
+			To use
+			<code>AsyncTask</code>
+			you must subclass it. AsyncTask uses generics and varargs. The
+			parameters are the following
+ <![CDATA[  AsyncTask <TypeOfVarArgParams , ProgressValue , ResultValue> ]]>.
+
+		</para>
+
+		<para>
+			An
+			<code>AsyncTask</code>
+			is started via the
+			<code>execute()</code>
+			method.
+		</para>
+		<para>
+			The
+			<code>execute()</code>
+			method calls the
+			<code>doInBackground()</code>
+			and the
+			<code>onPostExecute()</code>
+			method.
+		</para>
+		<para>
+			TypeOfVarArgParams is passed into the
+			<code>doInBackground()</code>
+			method as input, ProgressValue is used for progress
+			information and
+			ResultValue must be returned from
+			<code>doInBackground()</code>
+			method and is passed to
+			<code>onPostExecute()</code>
+			as a parameter.
+		</para>
+
+		<para>
+			The
+			<code>doInBackground()</code>
+			method contains the coding instruction which should be
+			performed in a
+			background thread. This method runs automatically in a
+			separate
+			<code>Thread</code>
+			.
+		</para>
+		<para>
+			The
+			<code>onPostExecute()</code>
+			method synchronizes itself again with the user interface thread and
+			allows it to be updated. This
+			method is called by the
+			framework once
+			the
+			<code>doInBackground()</code>
+			method finishes.
+		</para>
+
+	</section>
+
+	<section id="concurrency_asynchtask_parallel">
+		<title>Parallel execution of several AsyncTasks</title>
+		<para>
+			Android executes
+			<code>AsyncTask</code>
+			tasks before Android 1.6 and again as of Android 3.0 in sequence by
+			default.
+		</para>
+		<para>
+			You can tell Android to run it in parallel with the usage of the
+			<code>executeOnExecutor()</code>
+			method, specifying
+			<code>AsyncTask.THREAD_POOL_EXECUTOR</code>
+			as first parameter.
+		</para>
+		<para>The following code snippet demonstrates that.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/asynctask/parallel.txt" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="concurrency_asynchtask_disadvantages">
+		<title>Disadvantages of using AsyncTasks</title>
+		<para>
+			The
+			<code>AsyncTask</code>
+			does not handle configuration changes automatically, i.e. if the
+			<wordasword>activity</wordasword>
+			is recreated, the programmer has to handle that in his coding.
+		</para>
+		<para>
+			A common solution to this is to declare the
+			<code>AsyncTask</code>
+			in a retained headless fragment.
+		</para>
+	</section>
+	<section id="concurrency_asynchtask3">
+		<title>Example: AsyncTask</title>
+		<para>
+			The following code demonstrates how to use the
+			<code>AsyncTask</code>
+			class to download the content of
+			a
+			webpage.
+		</para>
+		<para>
+			Create a new
+			Android project called
+			<wordasword>de.vogella.android.asynctask</wordasword>
+			with an
+			<wordasword>activity</wordasword>
+			called
+			<wordasword>ReadWebpageAsyncTask</wordasword>
+			. Add the
+			<code>android.permission.INTERNET</code>
+			permission to your
+			<filename>AndroidManifest.xml</filename>
+			file.
+		</para>
+		<para>
+			Create the
+			following layout.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/asynctask/main.xml" />
+			</programlisting>
+		</para>
+		<para>Change your activity to the following: </para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/asynctask/ReadWebpageAsyncTask.java" />
+			</programlisting>
+		</para>
+		<para>
+			If you run your application and press your button then the
+			content
+			of
+			the defined webpage is read in the background. Once
+			this
+			process
+			is done
+			your
+			<code>TextView</code>
+			is updated.
+		</para>
+	</section>
+
+</section>

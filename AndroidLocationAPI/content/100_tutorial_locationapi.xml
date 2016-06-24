@@ -1,0 +1,89 @@
+<section id="tutlocationapi" role="wrapper">
+	<title>Tutorial: Using the Android Location API</title>
+	<section id="tutlocationapi_project">
+		<title>Create Project</title>
+		<para>
+			Create a new project called
+			<wordasword>de.vogella.android.locationapi.simple</wordasword>
+			with the Activity called
+			<wordasword>ShowLocationActivity</wordasword>
+			.
+		</para>
+		<para>
+			This example will not use the Google
+			Map
+			therefore, it also runs
+			on
+			an
+			Android
+			device.
+		</para>
+		<para>
+			Change your
+			layout file from the
+			<filename class="directory">res/layout</filename>
+			folder
+			to the following code.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/location/main.xml" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="tutlocationapi_permissions">
+		<title>Add permissions</title>
+		<para>
+			Add the following permissions to your application in your
+			<filename>AndroidManifest.xml</filename>
+			file
+			<itemizedlist>
+				<listitem>
+					<para>INTERNET
+					</para>
+				</listitem>
+				<listitem>
+					<para>ACCESS_FINE_LOCATION        </para>
+				</listitem>
+				<listitem>
+					<para>ACCESS_COARSE_LOCATION        </para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</section>
+
+
+	<section id="tutlocationapi_activity">
+		<title>Activity</title>
+		<para>
+			Change
+			<code>ShowLocationActivity</code>
+			to the following. It queries the location manager and display the
+			queried
+			values in
+			the activity.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/location/ShowLocationActivity.java" />
+			</programlisting>
+		</para>
+
+	</section>
+
+	<section id="tutlocationapi_run">
+		<title>Run and Test</title>
+		<para>
+			If you using the emulator send some geo-coordinates to your
+			device. These
+			geo-coordinate should be displayed as soon as you press
+			the button.
+		</para>
+
+	</section>
+
+
+</section>

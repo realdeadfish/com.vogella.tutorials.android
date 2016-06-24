@@ -1,0 +1,38 @@
+<section id="androidlibraries">
+	<title>Libraries</title>
+
+	<para>
+		<ulink url="https://github.com/bumptech/glide">Glide - Image loading framework for Android </ulink>
+	</para>
+	
+	<para>
+		<ulink url="http://www.vogella.com/tutorials/AndroidButterknife/article.html">Android Butterknife - view injection framework </ulink>
+	</para>
+	
+	<para>
+		<ulink url="https://github.com/square/otto">Otto - Event Bus for Android</ulink>
+	</para>
+
+	<para>
+		<ulink url="http://square.github.io/retrofit/">Retrofit – A type-safe REST client for Android and Java</ulink>
+	</para>
+
+	<para>
+		<ulink url="http://code.google.com/p/achartengine/">AChartEngine – Charting Engine</ulink>
+	</para>
+	<para>
+		<ulink url="http://ormlite.com/">ormLight ORM mapper</ulink>
+	</para>
+	<para>
+		<ulink url="http://greendao-orm.com/">GreenDAO from Markus Junginger, ORM Mapper</ulink>
+	</para>
+
+	<para>
+		<ulink url="https://github.com/google/Dagger">Dagger2 - dependency injection framework for Java and Android</ulink>
+	</para>
+	<para>
+		<ulink url="http://code.google.com/p/android-scripting/">Android Scripting - Allows to run scripting languages
+			on Android
+		</ulink>
+	</para>
+</section>

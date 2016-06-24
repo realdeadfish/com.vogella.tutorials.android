@@ -1,0 +1,88 @@
+<section id="exercise_lifecycle">
+	<title>Exercise: activity lifecycle and threads</title>
+	<para> The following example will download an image from the Internet
+		in a thread and displays a dialog until the download is done. We will
+		make sure that the thread is preserved even if the activity is
+		restarted and that the dialog is correctly displayed and closed.
+	</para>
+	<para>
+		For this example create a new Android project called
+		<wordasword>de.vogella.android.threadslifecycle</wordasword>
+		with the Activity called
+		<wordasword>ThreadsLifecycleActivity</wordasword>
+		. Also add the
+		permission to use the
+		Internet to your
+		<filename>AndroidManifest.xml</filename>
+		file.
+
+	</para>
+	<para>
+		Your
+		<filename>AndroidManifest.xml</filename>
+		file should look like the following.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/lifecycle/AndroidManifest.xml" />
+		</programlisting>
+	</para>
+	<para>
+		Change the layout
+		<filename>main.xml</filename>
+		to the following.
+	</para>
+
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/lifecycle/main.xml" />
+		</programlisting>
+	</para>
+	<para> Now adjust your activity. In this activity the thread is saved
+		and the dialog is closed if the activity
+		is destroyed.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/lifecycle/ThreadsLifecycleActivity.java" />
+		</programlisting>
+	</para>
+	<para>
+		Run your application and press the button to start a download.
+		You can
+		test the correct lifecycle
+		behavior by changing the orientation
+		in the
+		emulator via the
+		<keycombo>
+			<keycap>Ctrl</keycap>
+			<keycap>F11</keycap>
+		</keycombo>
+		shortcut.
+	</para>
+	<para>
+		It is important to note that the
+		<code>Thread</code>
+		is a static inner
+		class.
+		It is important to use a static inner class for
+		your background
+		process because otherwise
+		the inner class will contain a
+		reference to
+		the class in which is was
+		created. As the thread is passed
+		to the new
+		instance of your activity
+		this would create a memory leak as
+		the old
+		activity would still be
+		referred to by the Thread.
+	</para>
+</section>

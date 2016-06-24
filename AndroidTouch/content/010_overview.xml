@@ -1,0 +1,237 @@
+<section id="touch" role="wrapper">
+	<title>Android Touch</title>
+	<section id="touch_overview">
+		<title>Android touch basics</title>
+		<para>
+			The Android
+			standard
+			<code>View</code>
+			class
+			support touch events. You can react to touch events in your
+			custom views and your
+			activities. Android supports multiple pointers,
+			e.g. fingers which are interacting with the screen.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/androidtouch10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Android touch</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			The base class for touch support is the
+			<code>MotionEvent</code>
+			class which is passed to
+			<code>Views</code>
+			via the
+			<code>onTouchEvent()</code>
+			method.
+
+			To react to
+			touch
+			events
+
+			you override the
+			<code>onTouchEvent()</code>
+			method.
+		</para>
+		<para>
+			The
+			<code>MotionEvent</code>
+			class
+			contains the touch related information, e.g., the number of
+			pointers, the X/Y coordinates and size and pressure of each pointer.
+		</para>
+		<para>
+			This method returns
+			<code>true</code>
+			if the touch event has been handled by the view. Android tries to
+			find the deepest view which returns true to handles the touch event.
+			If the view is part of another view (parent view), the parent can
+			claim the event by returning
+			<code>true</code>
+			from the
+			<code>onInterceptTouchEvent()</code>
+			method. This would send an
+			<code>MotionEvent.ACTION_CANCEL</code>
+			event to the view which received previously the touch events.
+		</para>
+
+
+		<para>
+			To react to touch events in an
+			activity,
+			register an
+			<code>OnTouchListener</code>
+			for the relevant
+			<code>Views</code>
+			.
+		</para>
+	</section>
+	<section id="touch_single">
+		<title>Single touch</title>
+		<para>
+			If single
+			input is used you can
+			use the
+
+			<code>getX()</code>
+			and
+			<code>getY()</code>
+			methods to get the current position of the first finger.
+		</para>
+		<para>
+			Via the
+			<code>getAction()</code>
+			method
+			you receive the action which was performed. The
+			<code>MotionEvent</code>
+			class provides the following constants to determine the action which
+			was performed.
+
+			<table frame='all'>
+				<title>Touch Events</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<thead>
+						<row>
+							<entry>Event</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>MotionEvent.ACTION_DOWN</entry>
+							<entry>New touch started</entry>
+						</row>
+						<row>
+							<entry>MotionEvent.ACTION_MOVE</entry>
+							<entry>Finger is moving</entry>
+						</row>
+						<row>
+							<entry>MotionEvent.ACTION_UP</entry>
+							<entry>Finger went up</entry>
+						</row>
+						<row>
+							<entry>MotionEvent.ACTION_CANCEL</entry>
+							<entry>Current event has been canceled, something else took
+								control of the touch event
+							</entry>
+						</row>
+						<row>
+							<entry>MotionEvent.ACTION_POINTER_DOWN</entry>
+							<entry>Pointer down (multi-touch)</entry>
+						</row>
+						<row>
+							<entry>MotionEvent.ACTION_POINTER_UP</entry>
+							<entry>Pointer up (multi-touch)</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+
+
+	</section>
+	<section id="touch_multi">
+		<title>Multi touch</title>
+
+		<para>
+			Multi-touch is available since
+			Android 2.0 and has been improved
+			in the version 2.2. This description uses the API as of version 2.2.
+		</para>
+
+		<para>
+			The
+			<code>MotionEvent.ACTION_POINTER_DOWN</code>
+			and
+			<code>MotionEvent.ACTION_POINTER_UP</code>
+			are send starting with the second finger. For the first finger
+			<code>MotionEvent.ACTION_DOWN</code>
+			and
+			<code>MotionEvent.ACTION_UP</code>
+			are used.
+		</para>
+		<para>
+			The
+			<code>getPointerCount()</code>
+			method on
+			<code>MotionEvent</code>
+			allows you to determine the number of pointers on the device. All
+			events and the position of the pointers are included in the instance
+			of
+			<code>MotionEvent</code>
+			which you receive in the
+			<code>onTouch()</code>
+			method.
+		</para>
+		<para>
+			To track the
+			touch events from multiple pointers you have to use the
+			<code>MotionEvent.getActionIndex()</code>
+			and the
+			<code>MotionEvent.getActionMasked()</code>
+			methods to identify the index of the pointer and the touch event
+			which
+			happened for this pointer.
+		</para>
+		<para>
+			This pointer
+			index can
+			change over time, e.g. if one finger is lifted
+			from the device. The stable version of a
+			pointer is the
+			<wordasword>pointer id</wordasword>
+			,
+			which can be determined with the
+			<code>getPointerId(pointerIndex)</code>
+			method from the
+			<code>MotionEvent</code>
+			object.
+		</para>
+		<para>The usage if demonstrated in the following code snippet.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/multi/onTouch.java" />
+			</programlisting>
+		</para>
+
+
+		<tip>
+			<para>Multitouch can not be tested on the emulator. You need a real
+				Android device as input device.
+			</para>
+		</tip>
+	</section>
+
+	<section id="touch_scaledetector">
+		<title>GestureDetectors</title>
+		<para>
+			Android provide the
+			<code>GestureDetector</code>
+			class which allow to
+			consume
+			<code>MotionEvents</code>
+			and to create
+			higher level gesture
+			events to listeners.
+		</para>
+		<para>
+			For example the
+			<code>ScaleGestureDetector</code>
+			class allows to determine the
+			predefined gesture of increasing and
+			decreasing the size of the object via two fingers.
+		</para>
+	</section>
+
+
+</section>

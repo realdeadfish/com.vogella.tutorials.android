@@ -1,0 +1,22 @@
+<section id="resources_styling">
+    <title>Android Styling resources</title>
+    <para>
+        <ulink url="http://android-ui-utils.googlecode.com/hg/asset-studio/dist/index.html/">
+            Android Asset Studio
+        </ulink>
+        Links for generating icons and other assets
+    </para>
+
+    <para>
+        <ulink url="http://shreyasachar.github.io/AndroidAssetStudio/">
+            Material Design Asset Studio
+        </ulink>
+        Links for generating icons and other assets
+    </para>
+    <para>
+        <ulink url="http://android-holo-colors.com/">
+            Android Holo color theme generator
+        </ulink>
+    </para>
+
+</section>

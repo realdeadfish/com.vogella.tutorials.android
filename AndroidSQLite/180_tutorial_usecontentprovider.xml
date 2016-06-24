@@ -1,0 +1,150 @@
+<section id="tutorialusecp" role="wrapper">
+	<title>Tutorial: Using ContentProvider</title>
+	<section id="tutorialusecp_overview">
+		<title>Overview</title>
+		<para>
+			The following example will use an existing
+			<code>ContentProvider</code>
+			from the
+			<wordasword>People</wordasword>
+			application.
+		</para>
+	</section>
+
+
+	<section id="tutorialusecp_contacts">
+		<title>Create contacts on your emulator</title>
+
+		<para>
+			For this example we need a few maintained contacts. Select the
+			home
+			menu and then the
+			<guilabel>People</guilabel>
+			entry to
+			create contacts.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/contact10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Selecting the "Contacts" application from the application
+						choicer</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para> The app will ask you if you want to login. Either login or
+			select "Not now". Press ""Create a new contact". You can create local
+			contacts.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/contact20.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Create a new contact</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/contact30.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Details for a maintained contact</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>Finish adding your first contact. Afterwards the app allows you
+			to add more contacts via the + button. As a result you should have a
+			few new contacts in your application.
+		</para>
+	</section>
+	<section id="tutorialusecp_example">
+		<title>Using the Contact Content Provider</title>
+		<para>
+			Create a new Android project called
+			<wordasword>de.vogella.android.contentprovider</wordasword>
+			with the
+			<wordasword>activity</wordasword>
+			called
+			<wordasword>ContactsActivity</wordasword>
+			.
+		</para>
+		<para>
+			Change the corresponding
+			layout file in the
+			<filename class="directory">res/layout</filename>
+			folder.
+			Rename
+			the ID of the existing
+			<code>TextView</code>
+			to
+			<parameter>contactview</parameter>
+			. Delete the default text.
+		</para>
+
+		<para>
+			The resulting layout file
+			should look like the following.
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/contentprovider/main.xml" />
+			</programlisting>
+		</para>
+
+		<para>
+			Access to the contact
+			<code>ContentProvider</code>
+			requires a certain
+			permission,
+			as not all applications should have
+			access to the contact
+			information.
+			Open the
+			<filename>AndroidManifest.xml</filename>
+			file,
+			and select the
+			<guilabel>Permissions</guilabel>
+			tab. On that
+			tab click the
+			<guibutton>Add</guibutton>
+			button,
+			and select the
+			<guilabel>Uses Permission</guilabel>
+			.
+			From the drop-down list select
+			the
+			<parameter>android.permission.READ_CONTACTS</parameter>
+			entry.
+		</para>
+		<para> Change the coding of the activity.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/contentprovider/ContactsActivity.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			If you run this application the data is read from the
+			<code>ContentProvider</code>
+			of the People application
+			and displayed in a
+			<code>TextView</code>
+			. Typically you would display such data in a
+			<code>ListView</code>
+			.
+		</para>
+	</section>
+</section>

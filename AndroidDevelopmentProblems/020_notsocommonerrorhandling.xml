@@ -1,0 +1,173 @@
+<section id="androidproblemresolution" role="wrapper">
+	<title>Solving not so typical Android development problems</title>
+	<para> This sections lists problem which happen sometimes but are not
+		that frequently as the problems from the previous section.
+	</para>
+	<section id="androidproblemresolution_duplicateid">
+		<title>java.lang.IllegalArgumentException: Binary XML file Duplicate
+			id</title>
+
+		<para>Caused by an attempt to load the same fragment twice. The second
+			time
+			it is added to the FragmentManager this exception is thrown.
+		</para>
+		<para>Solution: ensure that each fragment is only added once to an
+			activity.
+		</para>
+	</section>
+	<section id="androidproblemresolution_editor">
+		<title>Android editor not opened</title>
+		<para>
+			Android provides nice editors to edit
+			Android resource files,
+			unfortunately these editor are not always automatically
+			used due to
+			bugs
+			in the ADT. If that happens, you can open this editor manually.
+			Right-click on
+			your menu file and select
+			<menuchoice>
+				<guimenu>Open with</guimenu>
+				<guisubmenu>Android Menu Editor</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+	</section>
+	<section id="androidproblemresolution_emulator">
+		<title>Emulator does not start</title>
+		<para> If your emulator does not start, make sure that the
+			android-sdk
+			version is in a path without any spaces in the path name.
+		</para>
+	</section>
+
+	<section id="androidproblemresolution_timeout">
+		<title>Timeout during deployment</title>
+		<para>
+			If you face timeout issues during deployment you can increase the
+			default timeout in the Eclipse preferences. Select
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Preferences</guisubmenu>
+				<guisubmenu>Android</guisubmenu>
+				<guisubmenu>DDMS</guisubmenu>
+			</menuchoice>
+			and increase the
+			<guilabel>ADB connection timeout (in ms)</guilabel>
+			value.
+		</para>
+	</section>
+
+	<section id="androidproblemresolution_insufficientmemory">
+		<title>Installation failed due to insufficient storage</title>
+		<para>Sometimes the emulator will refuse to install an application
+			with the error
+			message: INSTALL_FAILED_INSUFFICIENT_STORAGE.
+		</para>
+		<para>
+			An Android virtual device provides by default only 64M for the
+			storaging Android applications. You can clean your installed
+			application by restarting the emulator and selecting the
+			<guilabel>Wipe user
+				data
+			</guilabel>
+			flag.
+		</para>
+		<para>
+			Alternatively you can set the data partition size. If you
+			press
+			edit on
+			the AVD,
+			you can set the
+			<parameter>Ideal size of data partition</parameter>
+			property via the
+			<guibutton>New</guibutton>
+			button.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/datapartition10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Setting the Ideal size of data partition for the ADV</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="androidproblemresolution_debug">
+		<title>Debug Certificate expired</title>
+		<para>
+			If you get the error message
+			<guilabel>Debug Certificate expired</guilabel>
+			switch
+			to the folder which contains the Android AVD, e.g.
+			<filename class="directory">.android</filename>
+			under
+			Linux and delete the
+			<filename>debug.keystore</filename>
+			file. This file is only
+			valid
+			for a year and if not present, Eclipse
+			will regenerate the
+			password.
+		</para>
+	</section>
+
+	<section id="androidproblemresolution_override">
+		<title>Error message for @Override</title>
+		<para>
+			The
+			<code>@Override</code>
+			annotation was introduced in Java 1.6. If you receive
+			an
+			error message
+			for
+			<code>@Override</code>
+			, change the Java compiler level to Java 1.6. To do this,
+			right-click
+			on the
+			project, select
+			<menuchoice>
+				<guimenu>Properties</guimenu>
+				<guisubmenu>Java
+					Compiler
+				</guisubmenu>
+				<guisubmenu>Compiler compliance level </guisubmenu>
+			</menuchoice>
+			and select
+			<guilabel>1.6</guilabel>
+			in the drop-down box.
+		</para>
+	</section>
+
+
+
+	<section id="androidproblemresolution_imports">
+		<title>Missing Imports</title>
+		<para>
+			Java requires that classes which are not part of the standard
+			Java
+			Language are either fully qualified or declared via imports.
+		</para>
+		<para>
+			If you see an error message with the
+			<guilabel>XX cannot be resolved to a
+				variable
+			</guilabel>
+			text,
+			right-click in your
+			<code>Editor</code>
+			and select
+			<menuchoice>
+				<guimenu>Source</guimenu>
+				<guisubmenu>
+					Organize Imports
+				</guisubmenu>
+			</menuchoice>
+			to important required packages.
+		</para>
+	</section>
+
+</section>

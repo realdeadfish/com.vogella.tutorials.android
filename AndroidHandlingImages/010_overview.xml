@@ -1,0 +1,24 @@
+<section id="androidglide">
+	<title>Google Glide for image processing </title>
+	<para>Every application needs to download and manage images.
+	</para>
+	<para>Google Glide makes this easy.
+	</para>
+	<para>
+		To use Glide add the following dependency to your app/build.gradle file.
+
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/glide/install.txt" />
+		</programlisting>
+	</para>
+	<para> The usage is simple.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/glide/use.java" />
+		</programlisting>
+	</para>
+</section>

@@ -1,0 +1,15 @@
+<section id="adb_copy">
+	<title>Copy files from and to your device</title>
+	
+	<para> You can copy a file from and to your device via the
+		following
+		commands.
+	</para>
+	<para>
+		<programlisting language="bourne">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/shell/adb3.txt" />
+		</programlisting>
+	</para>
+
+</section>

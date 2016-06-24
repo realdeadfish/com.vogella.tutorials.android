@@ -1,0 +1,18 @@
+<section id="moreinfomaven">
+	<title>Move information</title>
+	<para>
+		For more information see the complete Maven Android Guide from
+		Sonatype:
+		<ulink
+			url="http://www.sonatype.com/books/mvnref-book/reference/android-dev.html">Android Application Development with Maven</ulink>
+		.
+	</para>
+	<para>
+		Another quick starting guide is available on the android-maven-plugin
+		project side:
+
+		<ulink
+			url="http://code.google.com/p/maven-android-plugin/wiki/GettingStarted"> Getting Started with Android and Maven</ulink>
+	</para>
+
+</section>

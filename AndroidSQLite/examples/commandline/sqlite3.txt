@@ -1,0 +1,3 @@
+
+sqlite3 /data/data/your_package/databases/your_database.db
+# Enter .dump to see all the tables

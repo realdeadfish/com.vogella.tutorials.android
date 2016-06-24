@@ -1,0 +1,12 @@
+<section id="androidjson_write">
+	<title>Write JSON</title>
+	<para>
+		Writing JSON is very simple. Just create the JSONObject or JSONArray and use the toString() method.
+	</para>
+	<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/writeJSON.txt" />
+			</programlisting>
+		</para>
+</section>

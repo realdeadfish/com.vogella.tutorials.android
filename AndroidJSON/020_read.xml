@@ -1,0 +1,104 @@
+<section id="androidjson_read">
+	<title>Example: reading JSON from Bugzilla</title>
+
+	<section id="androidjson_bugzilla">
+		<title>JSON Example: Bugzilla</title>
+		<para>
+			<ulink url="https://wiki.mozilla.org/Bugzilla:REST_API">Bugzilla</ulink>
+			plans to add a REST interface serving JSON.
+			You can just call a URI
+			and
+			retrieve
+			JSON.
+			Here are some examples from Mozilla which already
+			downported this API.:
+
+			<table frame='all'>
+				<title>Bugzilla URIs</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<thead>
+						<row>
+							<entry>URI</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>
+								https://bugzilla.mozilla.org/rest/bug/35
+							</entry>
+							<entry>
+								Get info about Bug 35
+							</entry>
+						</row>
+						<row>
+							<entry>
+								https://bugzilla.mozilla.org/rest/bug/707428/comment
+							</entry>
+							<entry>Get all comments for the bug 707428.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+
+		</para>
+		<para>
+			Please note that some URIs return a
+			<code>JSONObject</code>
+			object
+			while
+			others return a
+			<code>JSONArray</code>
+			.
+		</para>
+	</section>
+
+	<section id="androidjson_project">
+		<title>Project</title>
+		<para>
+			Create a new
+			Android
+			project called
+			<wordasword>com.vogella.bugzilla.json</wordasword>
+			with
+			the package
+			<wordasword>com.vogella.bugzilla.json</wordasword>
+			and the activity
+			called
+			<wordasword>ParseBugzillaActivity</wordasword>
+			.
+		</para>
+		<para>
+			Create the following coding for the activity. This will download the
+			twitter feed for the Twitter user called
+			<wordasword>vogella</wordasword>
+			and write the number of entries and the text messages to the Android
+			log file.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/ParseJSON.java" />
+			</programlisting>
+		</para>
+		<warning>
+			<para>The code example allows network access in the main thread to
+				simplify
+				the code snippet. In reality always ensure that network
+				access is
+				done in a background thread.
+			</para>
+		</warning>
+		<para>
+			To run this example assign the
+			<wordasword>uses-permission</wordasword>
+			to your
+			<filename>AndroidManifest.xml</filename>
+			for "android.permission.INTERNET".
+		</para>
+	</section>
+
+</section>

@@ -1,0 +1,64 @@
+<section id="networkoverview">
+	<title>Overview of HTTP access on Android</title>
+	<section id="networkoverview_apis">
+		<title>Available official API's</title>
+		<para>
+			Android contains the standard Java network
+			<code>java.net</code>
+			package which can be used to access network resources. The base class
+			for HTTP network access in the
+			<code>java.net</code>
+			package is the
+			<code>HttpURLConnection</code>
+			class.
+		</para>
+		<tip>
+			<para>
+				Android
+				also
+				contains the
+				Apache HttpClient library but it is not
+				recommended anymore to use it, as Google is focusing their efforts
+				on improving the
+				<code>HttpURLConnection</code>
+				implementation.
+			</para>
+		</tip>
+	</section>
+	<section id="networkoverview_security">
+		<title>Required permissions</title>
+		<para>
+			To access the Internet your
+			application requires the
+			<code>android.permission.INTERNET</code>
+			permission.
+		</para>
+		<para>
+			To check the network state your application requires the
+			<code>android.permission.ACCESS_NETWORK_STATE</code>
+			permission.
+		</para>
+	</section>
+	<section id="networkoverview_opensourcelibraries">
+		<title>Open source libraries</title>
+
+		<para>Performing network operations on Android can be cumbersome. You
+			have to open and close a connections, enable caches and ensure to
+			perform the network operation in a background thread.
+		</para>
+		<para>
+			To simplify these operations several popular Open Source libraries
+			are available. The most popular ones are the following:
+
+			<itemizedlist>
+				<listitem>
+					<para>Volley</para>
+				</listitem>
+				<listitem>
+					<para>OkHttp</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</section>
+
+</section>

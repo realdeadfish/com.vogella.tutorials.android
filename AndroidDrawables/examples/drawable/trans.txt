@@ -1,0 +1,14 @@
+
+final ImageView image = (ImageView) findViewById(R.id.image);
+final ToggleButton button = (ToggleButton) findViewById(R.id.button);
+button.setOnClickListener(new OnClickListener() {
+	@Override
+	public void onClick(final View v) {
+		TransitionDrawable drawable = (TransitionDrawable) image.getDrawable();
+		if (button.isChecked()) {
+			drawable.startTransition(500);
+		} else {
+			drawable.reverseTransition(500);
+		}
+	}
+});

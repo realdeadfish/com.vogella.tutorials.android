@@ -1,0 +1,86 @@
+<section id="androidsupportlibrary_avoiding" role="wrapper">
+	<title>Remove usage of the support library from a new project</title>
+	<section id="androidsupportlibrary_avoiding_target">
+		<title>Target of this exercise</title>
+		<para>
+			Support libraries are changing very fast therefore it is hard to create a "stable" description how to use them.
+		      Also unfortunately the templates of Android studio for generating Android projects are changing all the time
+			and have recently been changed to include the design support library, even if that is not necessary, e.g., in case
+			you are targeting a recent device.
+			This
+			make
+			testing a new feature or standard API harder
+			and makes it
+			harder to follow a tutorial as the
+			generated
+			project changes all the time.
+		</para>
+	</section>
+	<section id="androidsupportlibrary_avoiding_remove">
+		<title>Converting a project to a standard Android project</title>
+		<para>The build dependency in the Gradle build file does not hurt but you need to remove the references to the
+			compatibility library from your code and your resources.
+		</para>
+		<para>
+			For this,
+			change the code of the generated
+			activity
+			to extend
+			<code>Activity</code>
+			instead of any other activity like
+			<code>AppCompatActivity</code>
+			. Also, reduces the example code to the minimum. The following is an example for an activity called
+			<code>MainActivity</code>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/compat/MainActivity.java" />
+			</programlisting>
+		</para>
+
+		<para>Also ensures that only standard elements are using the generated layout file. The following is an example
+			listing for a simple standard layout file.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstlayoutconversion10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Changing the styles file</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/compat/activity_main.xml" />
+			</programlisting>
+		</para>
+		<para>
+			Also ensure that the theme is a default theme, instead of the compatibility theme. For this check the
+			<filename>app/res/values/styles.xml</filename>
+			folder to use the standard material theme.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firststylechangesxml.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Changing the styles file</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/compat/styles.xml" />
+			</programlisting>
+		</para>
+		<para>Start the application after these changes, it should still start and look similar. </para>
+
+	</section>
+</section>

@@ -1,0 +1,102 @@
+<section id="androidbackground">
+	<title>Android's user interface thread</title>
+	<section id="androidbackground_mainthread">
+		<title>Main thread</title>
+		<para>
+			Android
+			modifies the user interface and handles input events from one
+			single
+			<wordasword>user interface thread</wordasword>
+			. This thread is
+			also called the
+			<wordasword>main thread</wordasword>
+			.
+		</para>
+
+		<para>
+			Android collects all events in a queue and processed an instance of
+			the
+			<code>Looper</code>
+			class.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/looper_messagequeue10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Message Queue in Android with Looper</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="androidbackground_purpose">
+		<title>Why using concurrency?</title>
+		<para>
+			If the
+			programmer does not use any concurrency
+			constructs, all
+			code
+			of
+			an
+			Android
+			application
+			runs in the main thread and every statement
+			is
+			executed after each other.
+		</para>
+		<para>
+			If
+			you perform a long
+			lasting operation, for example accessing
+			data
+			from
+			the Internet, the application
+			blocks
+			until
+			the corresponding
+			operation has
+			finished.
+		</para>
+
+		<para>To provide a good user experience all
+			potentially slow
+			running
+			operations in an
+			Android
+			application should
+			run asynchronously, e.g. via
+			some way of
+			concurrency constructs of the Java
+			language or the Android
+			framework. This includes all potential slow operations, like
+			network,
+			file and database
+			access and
+			complex calculations.
+		</para>
+		<note>
+			<para>
+				Android enforces a worst case reaction time of applications.
+				If
+				an
+				<wordasword>activity</wordasword>
+				does not
+				react
+				within 5 seconds to user input, the Android system
+				displays an
+				<wordasword>Application not responding</wordasword>
+				(ANR)
+				dialog. From this dialog the
+				user
+				can choose
+				to stop
+				the
+				application.
+			</para>
+		</note>
+	</section>
+</section>
+
+

@@ -1,0 +1,78 @@
+<section id="xmldrawables">
+	<title>XML Drawables</title>
+	<section id="drawables_shape">
+		<title>Shape Drawables</title>
+		<para>
+			Shape Drawables are XML files which allow to define a geometric
+			object with colors, borders and gradients which can get assigned to
+			<code>Views</code>
+			. The advantage of using XML Shape Drawables is that they
+			automatically adjust to the correct size.
+		</para>
+		<para>The following listing shows an example of a Shape Drawable.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/drawable/myshape.xml" />
+			</programlisting>
+		</para>
+		<para>You could for example assign that drawable to the background
+			property of your
+			layout.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/drawable/main.xml" />
+			</programlisting>
+		</para>
+
+
+	</section>
+	<section id="drawables_state">
+		<title>State Drawables</title>
+		<para>
+			State drawables allow to define states. For each state a
+			different
+			drawable can get assigned to the
+			<code>View</code>
+			. For example the
+			following
+			defines different drawables for a button
+			depending on its
+			state.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/drawable/state.xml" />
+			</programlisting>
+		</para>
+
+	</section>
+
+	<section id="drawables_transition">
+		<title>Transition Drawables</title>
+		<para>Transition Drawables allow to define transitions which can be
+			triggered in the coding.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/drawable/transition.xml" />
+			</programlisting>
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/drawable/trans.txt" />
+			</programlisting>
+		</para>
+
+	</section>
+
+
+</section>

@@ -1,0 +1,105 @@
+<section id="draganddrop" role="wrapper">
+	<title>Android drag and drop</title>
+	<section id="draganddrop_overview">
+		<title>Using drag and drop in Android</title>
+		<para>
+			As of Android 4.0 drag and drop of
+			view onto other views or view
+			groups
+			is supported.
+		</para>
+	</section>
+	<section id="draganddrop_implementation">
+		<title>Allowing a view to be dragged</title>
+		<para>
+			To use dragging a view you register a
+			<code>OnTouchListener</code>
+			or a
+			<code>LongClickListener</code>
+			on the
+			view which can be dragged.
+		</para>
+		<para>
+			The
+			<code>startDrag</code>
+			method of the
+			<code>View</code>
+			start a drag operation. In this method you also specify the data
+			which is passed to the drop target via an instance of
+			<code>ClipData</code>
+			.
+		</para>
+
+		<para>
+			You also pass to the
+			<code>startDrag</code>
+			method an instance of
+			<code>DragShadowBuilder</code>
+			.
+			This object specifies the picture used for the drag operation. For
+			example you can
+			pass in the
+			view
+			directly, that shows an image of the
+			view during the drag
+			operation.
+		</para>
+		<para>The setup of this drag operation in a touch listener is
+			demonstrated in the
+			following
+			example.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/snippets/touch.txt" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="draganddrop_implementationdroptarget">
+		<title>Defining drop target</title>
+		<para>
+			The views which can
+			be drop targets get an instance of
+			<code>OnDragListener</code>
+			assigned. In this drop listener you receive call backs in case of
+			predefined drag and drop related events.
+			<itemizedlist>
+				<listitem>
+					<para>DragEvent.ACTION_DRAG_STARTED</para>
+				</listitem>
+				<listitem>
+					<para>DragEvent.ACTION_DRAG_ENTERED</para>
+				</listitem>
+				<listitem>
+					<para>DragEvent.ACTION_DRAG_EXITED</para>
+				</listitem>
+				<listitem>
+					<para>DragEvent.ACTION_DROP</para>
+				</listitem>
+				<listitem>
+					<para>DragEvent.ACTION_DRAG_ENDED</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+
+		<para>
+			A view
+			with
+			<code>OnDragListener</code>
+			which are used as a drop zone, gets a
+			<code>OnDragListener</code>
+			assigned via the
+			<code>setOnDragListener</code>
+			.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/snippets/draglistener.txt" />
+			</programlisting>
+		</para>
+	</section>
+</section>

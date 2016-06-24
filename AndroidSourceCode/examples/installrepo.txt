@@ -1,0 +1,8 @@
+# assumes that you have a local directory called bin
+# in your home folder
+
+# download the tool from Google
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+
+# make it executable
+chmod a+x ~/bin/repo

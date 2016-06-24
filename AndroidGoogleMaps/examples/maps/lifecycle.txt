@@ -1,0 +1,8 @@
+
+// in onResume
+overlay.enableCompass(); 
+overlay.enableMyLocation(); 
+
+// in onPause
+overlay.disableCompass(); 
+overlay.disableMyLocation(); 

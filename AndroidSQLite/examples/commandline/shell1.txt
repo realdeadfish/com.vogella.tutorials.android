@@ -1,0 +1,12 @@
+
+# Switch to the data directory
+cd /data/data
+# Our application
+cd de.vogella.android.todos
+# Switch to the database dir
+cd databases
+# Check the content
+ls
+# Assuming that there is a todotable file
+# connect to this table
+sqlite3 todotable.db

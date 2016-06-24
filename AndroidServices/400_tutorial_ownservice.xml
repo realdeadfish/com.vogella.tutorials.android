@@ -1,0 +1,97 @@
+<section id="exercise_bindlocalservice">
+	<title>Exercise: Define and consume local service</title>
+	<para>
+		This exercise demonstrates how to bind to a local
+		service
+		from an
+		activity.
+	</para>
+	<para>
+		The service
+		is started after the Android device boots and
+		simulates
+		that it periodically
+		fetches
+		data. The
+		activity
+		binds itself to
+		the service to access its data.
+	</para>
+	<para>
+		Create a new project called
+		<wordasword>de.vogella.android.ownservice.local</wordasword>
+		with
+		the
+		activity
+		called
+		<wordasword>MainActivity</wordasword>.
+	</para>
+	<para>
+		Create the following
+		<code>LocalWordService</code>
+		class.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/ownservice/LocalWordService.java" />
+		</programlisting>
+	</para>
+	<para>
+		Create the following two classes, which will be registered as
+		<code>BroadcastReceivers</code>.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/ownservice/MyScheduleReceiver.java" />
+		</programlisting>
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/ownservice/MyStartServiceReceiver.java" />
+		</programlisting>
+	</para>
+	<para>
+		Register all components in your
+		<filename>AndroidManifest.xml</filename>
+		file.
+	</para>
+	<para>
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/ownservice/AndroidManifest.xml" />
+		</programlisting>
+	</para>
+	<para>
+		Change the
+		layout file of the
+		activity
+		similar to the following example.
+	</para>
+	<para>
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/ownservice/main.xml" />
+		</programlisting>
+	</para>
+	<para>
+		Change your
+		activity
+		class
+		to the following code.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/ownservice/MainActivity.java" />
+		</programlisting>
+	</para>
+	<para>
+		Run your application. If you press the button, the data is fetched
+		again from the service and the
+		<code>ListView</code>
+		is updated.
+	</para>
+</section>

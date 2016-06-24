@@ -1,0 +1,13 @@
+<section id="tutorial_preferenceactivity">
+	<title>Exercise: Prerequisites</title>
+		<para>
+			The following exercise assumes that you have created an Android
+			project called
+			<wordasword>com.example.android.rssfeed
+			</wordasword>
+			with one entry called
+			<guilabel>Settings</guilabel>
+			in the action bar.
+		</para>
+		
+</section>

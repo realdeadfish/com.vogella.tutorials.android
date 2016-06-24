@@ -1,0 +1,68 @@
+<section id="service_binding">
+	<title>Binding services</title>
+	<section id="service_activitybinding">
+		<title>Binding to services from activities</title>
+		<para>
+			If the
+			activity
+			wants to
+			interact with the
+			service directly,
+			it can use
+			the
+			<code>bindService()</code>
+			method to start the
+			<wordasword>service</wordasword>.
+		</para>
+		<para>
+			This method requires a
+			<code>ServiceConnection</code>
+			object as a parameter which is called on the service start and when finishing its
+			<code>onBind()</code>
+			method. This method
+			returns a
+			<code>IBinder</code>
+			object to the
+			<code>ServiceConnection</code>.
+		</para>
+		<para>
+			This
+			<code>IBinder</code>
+			object
+			can be used
+			by the
+			activity
+			to communicate
+			with the
+			service.
+		</para>
+		<para>
+			When the binding process has finished, the
+			<code>onStartCommand()</code>
+			method in the service is called with the
+			<code>Intent</code>
+			object used for the
+			<code>bindService()</code>
+			method.
+		</para>
+	</section>
+
+	<section id="service_localbindings">
+		<title>Local services bindings</title>
+		<para>
+			If the service runs in the same process as the activity, it is
+			possible to return the service to the activity. This allows that the
+			activity can call methods of the service directly. This technique is
+			demonstrated by <xref linkend="exercise_bindlocalservice" />.
+		</para>
+	</section>
+	<section id="service_remotebindings">
+		<title>Interprocess communication services bindings</title>
+		<para>
+			If the service run in its own process, you require IPC
+			(Interprocess
+			Communication) to communicate with the service. See
+			<xref linkend="servicecommunication_ipc" />.
+		</para>
+	</section>
+</section>

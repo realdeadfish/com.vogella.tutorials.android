@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+<!-- define new name space for your attributes -->
+    xmlns:custom="http://schemas.android.com/apk/res/com.vogella.android.view.compoundview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+<!-- Assume that this is your new component. It uses your new attributes -->
+        <com.vogella.android.view.compoundview.ColorOptionsView
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            custom:titleText="Background color"
+            custom:valueColor="@android:color/holo_green_light"
+             />
+
+</LinearLayout>

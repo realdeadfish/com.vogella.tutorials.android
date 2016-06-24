@@ -1,0 +1,209 @@
+<section id="tutorial_library" role="wrapper">
+	<title>Exercise: Create Android library module</title>
+	<section id="tutorial_library_target">
+		<title>Target</title>
+		<para>
+			Our library project will not contribute Android components but a
+			data
+			model and a method to get the number of
+			instances. The library
+			provides access to (fake) RSS data. An
+			<wordasword>RSS</wordasword>
+			document is an XML file which can be used to publish blog
+			entries and
+			news. The format of the XML
+			file
+			is specified via
+			the RSS
+			specification.
+		</para>
+		<para>
+			Our library project will not contribute Android components but a
+			data model and a method to get the number of
+			instances. We will
+			provide RSS-feed data. The following gives a short introduction into
+			RSS.
+		</para>
+	</section>
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../RSSFeed/content/010_overview.xml" />
+
+	<section id="tutorial_library_project_studio">
+		<title>Create library module</title>
+		<para>
+			For Android Studio each library is a module. To create a new library
+			module in Android Studio, select
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New Module</guisubmenu>
+			</menuchoice>
+			and select
+			<guilabel>Android Library</guilabel>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/library_studio08.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Selection for creating a library project</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Use
+			<wordasword>com.example.android.rssfeedlibrary</wordasword>
+			as module name and
+			<wordasword>Rssfeed Library</wordasword>
+			as library name.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/library_studio10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Setting the library property</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>If prompted for a template select that no activity should be created. </para>
+		<para>As a result Android Studio shows another module.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/library_studio24.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Setting the library property</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="rssfeedreaders_objectxmlparserlistview">
+		<title>Create the model class</title>
+		<para>
+			Create an
+			<code>RssItem</code>
+			class which can store data of an RSS entry.
+		</para>
+		<para>
+			Generate the getters and setter, the constructor and a
+			<code>toString()</code>
+			method. The result should look like the following class:
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/net/RssItem.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="rssfeedreaders_example">
+		<title>Create instances</title>
+		<para>
+			Create a new class called
+			<code>RssFeedProvider</code>
+			with a static method to return a list of
+			<code>RssItem</code>
+			objects. This method does currently only return
+			test data.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/net/RssFeedProvider.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="tutorial_library_usage_studio">
+		<title>Define dependency to the library project
+		</title>
+		<para>
+			To use the library add it as a dependency in your project select
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>Project Structure</guisubmenu>
+			</menuchoice>
+			. Select the
+			<wordasword>app</wordasword>
+			entry. Switch to the
+			<guilabel>Dependencies</guilabel>
+			tab and select
+			<guilabel>Module dependencies</guilabel>
+			via the + sign.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/library_studio30.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Define dependency in Android Studio - Selecting dependency</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/library_studio40.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Define dependency in Android Studio - Select module</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/library_studio50.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Define dependency in Android Studio - Select module</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="tutorial_library_useinproject">
+		<title>Use library project to update detailed fragments</title>
+		<para>
+			Use the static method of
+			<code>RssFeedProvider</code>
+			to get the list of
+			<code>RssItem</code>
+			objects and display the number in your
+			<code>DetailFragment</code>
+			instead of current system time.
+		</para>
+		<para>
+			To send the new data, change the
+			<code>updateDetail</code>
+			method in your
+			<code>MyListFragment</code>
+			class.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/net/AccessLibrary.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="tutorial_library_validate">
+		<title>Validate implementation</title>
+		<para>
+			Start your application and ensure that the
+			<code>toString</code>
+			value of the (at the moment randomly generated) list of
+			RssItems is displayed in
+			the
+			detailed fragment.
+		</para>
+	</section>
+
+</section>

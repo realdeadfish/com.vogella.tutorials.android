@@ -1,0 +1,46 @@
+<section id="adb_overview">
+	<title>Android Debugging Bridge - adb</title>
+	<para>
+		You can access your Android device via the
+		<wordasword>adb</wordasword>
+		command on the command line.
+		. An Android
+		virtual device
+		can be freely
+		accessed, a normal Android
+		phone needs to
+		get
+		<wordasword>rooted</wordasword>
+		for full access. For non-rooted devices, adb still access
+		them, but you
+		only have common user permissions.
+	</para>
+	<para>
+		The
+		<wordasword>adb</wordasword>
+		tools is located in the
+		<filename>[android-sdks]/platform-tools</filename>
+		directory. You should add this directory to your path to have direct
+		access to this command.
+	</para>
+	<para>
+		The
+		<wordasword>adb</wordasword>
+		allows you to send commands to your Android device, pull and push
+		files to it, gives shell access to the Android device and allows you
+		to read information from your device, for example the current memory
+		usage. The following chapter describe the usage of the corresponding
+		commands.
+	</para>
+
+	<para>If you have several devices running you can issue commands to
+		one
+		individual device.
+	</para>
+	<para>
+		<programlisting language="bourne">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/shell/adb2.txt" />
+		</programlisting>
+	</para>
+</section>

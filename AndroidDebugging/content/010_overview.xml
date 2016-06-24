@@ -1,0 +1,54 @@
+<section id="androiddebugging" role="wrapper">
+	<title>Debugging Android applications</title>
+	<section id="androiddebugging_debuggable">
+		<title>Android debuggable attribute in the AndroidManifest.xml</title>
+		<para>
+			If you develop Android applications you can debug them via
+			Eclipse. To
+			enable debugging an a real Android device you need to add
+			the
+			android:debuggable="true" flag to the application segment in your
+			<filename>AndroidManifest.xml</filename>
+			file. The ADT tooling sets this flag automatically for debug builds
+			based on the constant
+			<code>DEBUG</code>
+			of the
+			<code>BuildConfig</code>
+			class. This class is automatically updated by the ADT.
+		</para>
+	</section>
+	<section id="androiddebugging_hotdebug">
+		<title>Turn debugging on at runtime in Eclipse</title>
+
+		<para>
+			The JVM requires that you start a Java program in
+			<wordasword>Debug</wordasword>
+			mode to debug it. Android allows you to turn debugging for a running
+			application on at runtime via the
+			<guilabel>Debug</guilabel>
+			button in the
+			<guilabel>Device</guilabel>
+			view
+			of the
+			<guilabel>DDMS</guilabel>
+			<wordasword>perspective</wordasword>
+			as depicted in the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/activatedebugging10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Activate debugging</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			After turning debugging on in this view, the next time a
+			<wordasword>Breakpoint</wordasword>
+			is encountered Eclipse allows you to debug the process.
+		</para>
+	</section>
+</section> 

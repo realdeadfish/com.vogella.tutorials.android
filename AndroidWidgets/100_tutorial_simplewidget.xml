@@ -1,0 +1,153 @@
+<section id="simpleappwidget" role="wrapper">
+	<title>Exercise: widget with fixed update interval</title>
+	<section id="simplewidget1">
+		<title>Target</title>
+		<para>
+			In the following tutorial you create a widget which displays a random
+			number. This random number is
+			updated every 30
+			minutes.
+			You also
+			register an
+			<code>OnClickListener</code>
+			so that the widgets updates once the user clicks on it.
+		</para>
+		<para>
+			The resulting
+			widget will look like the following.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/random10.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>Screenshot of the final Widget of this tutorial</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="simplewidget2">
+		<title>Create project and widget implementation</title>
+		<para>
+			Create a new Android project called
+			<wordasword>de.vogella.android.widget.example</wordasword>
+			with an activity
+			in the package
+			<code>de.vogella.android.widget.example</code>
+			.
+		</para>
+		<para>
+			Create a new file
+			<filename>myshape.xml</filename>
+			in the
+			<filename class="directory">/res/drawable</filename>
+			folder. This file defines the
+			drawable used as background in the
+			widget.
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/myshape.xml" />
+			</programlisting>
+		</para>
+		<para>
+			Define the following
+			<filename>widget_layout.xml</filename>
+			file under the
+			<filename class="directory">res/layout</filename>
+			folder.
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/widget_layout.xml" />
+			</programlisting>
+		</para>
+		<para>
+			Create a new resource file called
+			<filename>widget_info.xml</filename>
+			via right click on the res folder and by selecting
+			<menuchoice>
+				<guimenu>New</guimenu>
+				<guisubmenu>Android resource file</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/widgetinfo10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Creating the widget provider 1</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/widget_info.xml" />
+			</programlisting>
+		</para>
+		<para>
+			Create the following receiver class which is
+			called during
+			updates.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/MyWidgetProvider.java" />
+			</programlisting>
+		</para>
+		<para>
+			Open the
+			<filename>AndroidManifest.xml</filename>
+			and register your widget similar to the following listing.
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/AndroidManifest.xml" />
+			</programlisting>
+		</para>
+		<para>
+			This attribute specifies that the
+			<code>AppWidgetProvider</code>
+			accepts the
+			<code>ACTION_APPWIDGET_UPDATE</code>
+			broadcast and specifies the metadata for the widget.
+		</para>
+	</section>
+
+	<section id="simplewidget3">
+		<title>Validating</title>
+		<para>
+			Deploy your application on your Android device. Once your
+			application
+			has been deployed use the
+			Android
+			launcher to
+			install your
+			new widget on the home screen and test it.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/widgetinstall10.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>Installing the widget part 1</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/widgetinstall20.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>Installing the widget part 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+</section>

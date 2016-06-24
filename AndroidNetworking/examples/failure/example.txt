@@ -1,0 +1,21 @@
+
+AbstractHttpClient client = (AbstractHttpClient) new DefaultHttpClient();
+
+DefaultHttpRequestRetryHandler retryHandler = new DefaultHttpRequestRetryHandler() {
+
+	@Override
+	public boolean retryRequest(IOException exception, int executionCount, HttpContext context) {
+		if (!super.retryRequest(exception, executionCount, context)) {
+			return false;
+		}
+		// Retry but wait a bit
+		try {
+			Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		return true;
+
+	}
+};
+client.setHttpRequestRetryHandler(retryHandler);

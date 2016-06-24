@@ -1,0 +1,57 @@
+<section id="exercise_databackup">
+	<title>Exercise: Implementing a data backup of application settings
+	</title>
+	<section id="exercise_databackup1">
+		<title>Project implementation</title>
+		<para>
+			The following application uses the
+			<code>com.vogella.android.databackup</code>
+			top level package. This package was registered with the Google
+			service.
+		</para>
+		<para>
+			The backup agenda and the registration key is entered in the
+			<filename>AndroidManifest.xml</filename>
+			file as in the following listing.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/backup/AndroidManifest.xml" />
+			</programlisting>
+		</para>
+		<para>The corresponding backup agent can be implemented as
+			demonstrated
+			in the following listing.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/backup/MyBackupAgent.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="exercise_databackup2">
+		<title>Trigger backup and restore</title>
+		<para>The implemented backup manager works automatically without user
+			interaction and saves and restores the registered shared preferences
+			associated with the user.
+			Simply change and save shared preferences
+			under the file name which
+			you registered your application with.
+		</para>
+		<para>
+			If you want to test the save and restore operation via the adb
+			shell command you can use the following commands.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/backup/backuptest.txt" />
+			</programlisting>
+		</para>
+
+
+	</section>
+
+</section>

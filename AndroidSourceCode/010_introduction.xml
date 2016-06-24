@@ -1,0 +1,11 @@
+<section id="overview">
+	<title>Getting the Android source code</title>
+	<para>
+		To get the Android source code you to use two tools,
+		<ulink url="http://www.vogella.com/tutorials/Git/article.html"> Git</ulink>
+		and an additional tool called
+		<wordasword>repo</wordasword>
+		.
+	</para>
+
+</section>

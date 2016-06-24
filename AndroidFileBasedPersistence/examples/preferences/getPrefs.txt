@@ -1,0 +1,2 @@
+# getting preferences from a specified file
+SharedPreferences settings = getSharedPreferences("Test", Context.MODE_PRIVATE);

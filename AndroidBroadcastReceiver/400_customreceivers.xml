@@ -1,0 +1,95 @@
+<section id="ownreceiver" role="wrapper">
+	<title>Defining custom events and receivers</title>
+	<section id="ownreceiver_create">
+		<title>Registering broadcast receiver for custom events</title>
+		<para>
+			You can register a
+			receiver
+			for your custom actions.
+		</para>
+		<para>
+			The following
+			<filename>AndroidManifest.xml</filename>
+			file demonstrates a broadcast receiver which is registered for a
+			custom action.
+		</para>
+
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/own/AndroidManifest.xml" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="ownreceiver_createevents">
+		<title>Sending broadcast intents</title>
+		<para>
+			The
+			<code>sendBroadcast()</code>
+			method from the
+			<code>Context</code>
+			class allows you to send
+			intents
+			to your registered receivers. The following coding show an example.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/own/trigger.java" />
+			</programlisting>
+		</para>
+
+
+		<para>
+			You cannot trigger system broadcasts events.
+			The Android system
+			will
+			prevent
+			this.
+		</para>
+		<tip>
+			<para>
+				The receivers are called asynchronous, i.e.,
+				the
+				<code>sendBroadcast()</code>
+				method return immediately and does not wait
+				until the receivers have
+				executed.
+			</para>
+		</tip>
+
+	</section>
+
+	<section id="ownreceiver_localbroadcastmanager">
+		<title>Local broadcast events with LocalBroadcastManager</title>
+
+		<para>
+			The
+			<code>LocalBroadcastManager</code>
+			class is used to register for and send broadcasts of Intents to local
+			objects within your process. This is faster and more secure as your
+			events don't leave your application.
+		</para>
+		<para>
+			The following example shows an activity
+			which registers for a customer event called
+			<wordasword>my-event</wordasword>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/localbroadcastreceiver/Register.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/localbroadcastreceiver/Sender.java" />
+			</programlisting>
+		</para>
+	</section>
+
+</section>

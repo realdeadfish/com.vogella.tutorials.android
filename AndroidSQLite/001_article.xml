@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Android SQLite database and content provider - Tutorial</title>
+		<subtitle>Based on Android 4.3</subtitle>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>19.08.2014</pubdate>
+		<releaseinfo>
+			<para>Version 5.0</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Using the Android SQLite Database</title>
+			<para> This tutorial describes how to use the SQLite database in
+				Android applications. It also demonstrates how to use existing
+				ContentProvider and how to define new ones. It also demonstrates the
+				usage of the Loader framework which allows to load data
+				asynchronously.
+			</para>
+			<para>
+				The tutorial is
+				based on
+				Eclipse 4.2, Java 1.6
+				and
+				Android 4.2.
+			</para>
+		</abstract>
+	</articleinfo>
+		<?dbhtml-include href="../../web/kindle/androidsqlite.txt"?>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/prerequisites/android_prerequisite.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_androiddb.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_tutorial_usingsqlite.xml" />
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_contentprovider.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="180_tutorial_usecontentprovider.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../AndroidBackgroundProcessing/content/120_loader.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="190_cursorloader.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_todo.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="280_commandline.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="300_listviews.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_performance.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="800_offline.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/AndroidSQLite"?>
+</article>

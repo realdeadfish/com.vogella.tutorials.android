@@ -1,0 +1,25 @@
+<section id="overview">
+	<title>Android Camera</title>
+	<para>Most Android devices have at least one camera. Some devices have
+		a front and
+		a back facing camera.
+	</para>
+	<para>
+		Using the camera on the Android device can be done via the
+		integration
+		of existing camera application. In this case you would start the
+		existing Camera application via an
+		<wordasword>intent</wordasword>
+		and use the return data of the application to access the result.
+	</para>
+	<para>
+		Alternatively you can also directly integrate the camera into your
+		application via
+		the
+		<code>Camera</code>
+		API.
+	</para>
+	<para>The following description contains examples for both use cases.
+	</para>
+
+</section>

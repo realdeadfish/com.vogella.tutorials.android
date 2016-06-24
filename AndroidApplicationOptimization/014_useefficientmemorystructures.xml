@@ -1,0 +1,71 @@
+<section id="androidperformanceandmemoryoptimization3">
+	<title>Use efficient data structures</title>
+	<para>
+		Android provides several implementations of
+		<code>Sparse*Array</code>
+		classes. Consider the following code.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/memory/createHashMap.java" />
+		</programlisting>
+	</para>
+	<para>
+		Using this code results in unnecessary
+		<code>Integer</code>
+		objects created.
+
+
+	</para>
+	<para>Android provides data structures which are more efficient for
+		mapping values to other objects. If possible use
+		these objects, they
+		avoid object creation as in the case of using HashMap. Object
+		creation can be expensive and should
+		be avoided to reduce the number
+		of times the garbage collector needs to run.
+	</para>
+	<para>
+		The table give examples for SparseArrays.
+		<table frame='all'>
+			<title>Efficient memory structures</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*" />
+				<colspec colname='c2' colwidth="2*" />
+				<thead>
+					<row>
+						<entry>Memory structure </entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry><![CDATA[SparseArray<E>]]></entry>
+						<entry>Maps integers to Objects, avoid the creation of Integer
+							objects.
+						</entry>
+					</row>
+					<row>
+						<entry>SparseBooleanArray</entry>
+						<entry>Maps integers to booleans. </entry>
+					</row>
+					<row>
+						<entry>SparseIntArray</entry>
+						<entry>Maps integers to integers</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+
+	<para>
+		To improve the above example, prefer to use the following data structure.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/memory/createSparseArray.java" />
+		</programlisting>
+	</para>
+
+
+</section>

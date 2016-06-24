@@ -1,0 +1,68 @@
+<section id="androidsupportlibraries">
+	<title>The support libraries from Google</title>
+	<para>
+		You have different components here. At the time of this writing you
+		have:
+		<table frame='all'>
+			<title>Support library versions</title>
+			<tgroup cols='3' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*" />
+				<colspec colname='c2' colwidth="2*" />
+				<colspec colname='c3' colwidth="2*" />
+				<thead>
+					<row>
+						<entry>Support Library</entry>
+						<entry>Description</entry>
+						<entry>Location</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>v4 Support Library</entry>
+						<entry>Designed for Android 1.6 (API level 4) or higher. Includes
+							lots of things including support for Fragments and the Loader
+							framework.
+						</entry>
+						<entry>
+							Located in the
+							android-sdk/extras/android/support/v7/appcompat/ directory.
+						</entry>
+					</row>
+					<row>
+						<entry>v7 Support Libraries</entry>
+						<entry>Set of libraries which require Android 2.1 (API level 7)
+							and higher. Requires also the v4 Support library.
+						</entry>
+						<entry></entry>
+					</row>
+					<row>
+						<entry>v7 appcompat library</entry>
+						<entry>Adds support for the Action Bar. Includes also support for
+							material design user interface.
+						</entry>
+						<entry>Located in the
+							android-sdk/extras/android/support/v7/appcompat/
+						</entry>
+					</row>
+					<row>
+						<entry>v7 cardview library</entry>
+						<entry>Adds support for the CardView widget. </entry>
+						<entry>android-sdk/extras/android/support/v7/cardview/</entry>
+					</row>
+					<row>
+						<entry>v7 recyclerview library</entry>
+						<entry>Adds support for the RecyclerView widget. </entry>
+						<entry>android-sdk/extras/android/support/v7/recyclerview/
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+
+	<para>
+		To see a complete list of the available libraries see
+		<ulink url="http://developer.android.com/tools/support-library/features.html"></ulink>
+		.
+	</para>
+</section>

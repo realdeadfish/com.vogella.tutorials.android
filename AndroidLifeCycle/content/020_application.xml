@@ -1,0 +1,53 @@
+<section id="applicationlifecyle_lifecycle">
+	<title>Application</title>
+	<para>
+		The application object is created whenever one of your Android
+		components are started. It is started in a new process with a unique
+		ID under a unique user. Even if you do not specify one in your
+		<filename>AndroidManifest.xml</filename>
+		file, the Android system creates a default object for you.
+		This object
+		provides the following main lifecycle methods:
+		<itemizedlist>
+			<listitem>
+				<para>onCreate() - called before the first components of the
+					application starts
+				</para>
+			</listitem>
+			<listitem>
+				<para>onLowMemory() - called when the Android system requests that
+					the application cleans up memory
+				</para>
+			</listitem>
+
+			<listitem>
+				<para>onTrimMemory() - called when the Android system requests that
+					the application cleans up memory. This message includes an
+					indicator in which position the application is. For example the
+					constant TRIM_MEMORY_MODERATE indicates that the process is around
+					the middle of
+					the background LRU list; freeing memory can help the
+					system keep
+					other processes running later in the list for better
+					overall
+					performance.
+				</para>
+			</listitem>
+			<listitem>
+				<para>onTerminate() - only for testing, not called in production
+				</para>
+			</listitem>
+			<listitem>
+				<para>onConfigurationChanged() - called whenever the configuration
+					changes
+				</para>
+			</listitem>
+		</itemizedlist>
+	</para>
+	<para>The application object starts before any component and runs at
+		least as long as another component of the application runs.
+	</para>
+
+
+
+</section>

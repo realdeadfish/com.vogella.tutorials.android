@@ -1,0 +1,5 @@
+// ImageLoader extends AsyncTask
+ImageLoader imageLoader = new ImageLoader( imageView );
+
+// Execute in parallel
+imageLoader.executeOnExecutor( AsyncTask.THREAD_POOL_EXECUTOR, "http://url.com/image.png" );

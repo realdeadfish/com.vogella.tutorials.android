@@ -1,0 +1,4 @@
+
+// To get the current master 
+repo init -u git://android.git.kernel.org/platform/manifest.git ; repo sync ; 
+

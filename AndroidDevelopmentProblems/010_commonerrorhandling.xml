@@ -1,0 +1,172 @@
+<section id="androidproblemresolution" role="wrapper">
+	<title>Solving typical Android development problems</title>
+	<para> Things are not always working as they should during your Android
+		development. This section gives
+		an overview over typical problems and
+		how to solve them.
+	</para>
+	<section id="androidproblemresolution_clean">
+		<title>Clean Project</title>
+		<para>
+			Several users report
+			that they get the following errors:
+			<orderedlist>
+				<listitem>
+					<para>Project ... is missing required source folder: 'gen'   </para>
+				</listitem>
+				<listitem>
+					<para>The project could not be built until build path errors are
+						resolved.
+
+					</para>
+				</listitem>
+				<listitem>
+					<para>Unable to open class file R.java.
+					</para>
+				</listitem>
+			</orderedlist>
+		</para>
+		<para>
+			To solve any of these errors, go to the project menu and select
+			<menuchoice>
+				<guimenu>Project</guimenu>
+				<guisubmenu>Clean</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>If you have library projects, make sure to clean them too.
+		</para>
+
+	</section>
+	<section id="androidproblemresolution_activitiynotfoudn">
+		<title>android.content.ActivityNotFoundException</title>
+		<para>
+			During start or during execution of your application, your
+			application stops. In
+			the
+			<guilabel>LogCat</guilabel>
+			view
+			you see the message:
+			<wordasword>android.content.ActivityNotFoundException :
+				Unable to find
+				explicit activity class; have you declared this
+				activity in your
+				AndroidManifest.xml?
+			</wordasword>
+		</para>
+		<para>
+			Check in this case if you declared your
+			<wordasword>activity</wordasword>
+			in the
+			<filename>AndroidManifest.xml</filename>
+			file.
+		</para>
+	</section>
+	<section id="androidproblemresolution_adb">
+		<title>Problems with Android Debug Bridge (adb)</title>
+		<para> The communication with the emulator or your Android device
+			might have problems. This communication is handled by the Android
+			Debug Bridge (adb).
+		</para>
+		<para>
+			Eclipse allows you to reset the adb in case this causes problems.
+			Select
+			therefore the DDMS perspective via
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Open Perspective</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>DDMS</guisubmenu>
+			</menuchoice>
+		</para>
+		<para>
+			To restart the adb, select the "Reset adb" in the Device
+			<code>View</code>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/adbreset.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			If this does not work, locate the
+			<filename>adb</filename>
+			and type the commands
+			<code>adb kill-server</code>
+			followed by an
+			<code>adb start-server</code>.
+		</para>
+	</section>
+	<section id="androidproblemresolution_logcat">
+		<title>LogCat</title>
+		<para>
+			The
+			<guilabel>LogCat</guilabel>
+			view
+			shows you the log messages of your Android device and helps
+			you to
+			analyze
+			problems. For example Java exceptions in your
+			program would be
+			shown
+			here. To open this view, select
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Show View</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Android</guisubmenu>
+				<guisubmenu>LogCat</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+	</section>
+	<section id="androidproblemresolution_java7">
+		<title>Java7</title>
+		<para>
+			If Android complains that you cannot use Java7 select your
+			right-click on your project
+			and select the
+			<guilabel>Java Compiler</guilabel>
+			entry. Ensure that Java 1.5 or Java 1.6 is used. You may have to
+			select the
+			<guilabel>Enable project specific settings</guilabel>
+			checkbox.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/javacompiler6.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Java compiler settings</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="androidproblemresolution_r">
+		<title>Eclipse reports file from R.java as missing</title>
+
+		<para>
+			Sometimes Eclipse complains that a file, e.g.
+			<filename>R.layout.main</filename>
+			cannot be found. Check in your source code that you did not import
+			<code>android.R</code>
+			. An
+			<code>android.R</code>
+			import will prevent Eclipse from finding your
+			<filename>R</filename>
+			file.
+		</para>
+
+	</section>
+
+
+</section>

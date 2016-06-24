@@ -1,0 +1,4 @@
+
+mvn3 clear install
+mvn3 android:deploy
+mvn3 android:run

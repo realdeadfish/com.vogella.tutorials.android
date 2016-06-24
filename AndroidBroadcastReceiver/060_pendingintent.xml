@@ -1,0 +1,37 @@
+<section id="pendingintent">
+	<title>Pending Intent</title>
+	<para>
+		A
+		<wordasword>pending intent</wordasword>
+		is
+		a token that you give to another
+		application
+		(e.g., notification
+		manager, alarm manager or other 3rd
+		party
+		applications), which allows
+		this
+		other application to use the
+		permissions of your application to
+		execute
+		a
+		predefined piece of code.
+	</para>
+	<para>
+		To perform a broadcast
+		via a
+		pending intent, get a
+		<code>PendingIntent</code>
+		via
+		the
+		<code>getBroadcast()</code>
+		method of the
+		<code>PendingIntent</code>
+		class.
+		To perform an activity via a
+		pending intent, you receive the
+		activity via
+		<code>PendingIntent.getActivity()</code>
+		.
+	</para>
+</section>

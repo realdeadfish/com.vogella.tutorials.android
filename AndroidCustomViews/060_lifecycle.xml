@@ -1,0 +1,99 @@
+<section id="lifecycle" role="wrapper">
+	<title>Life cycle</title>
+	<section id="lifecycle_window">
+		<title>Life cycle events related to the window</title>
+		<para>A view is displayed if it is attached to a layout hierarchy
+			which is attached to a window. A view has several life cycle hooks.
+		</para>
+		<para>
+			The
+			<code>onAttachedToWindow()</code>
+			is called once the window is available.
+		</para>
+		<para>
+			The
+			<code>onDetachedFromWindow()</code>
+			is used when the view is removed from its parent (and if the parent
+			is
+			attached to a window). This happens for example if the activity is
+			recycled (e.g. via the
+			<code>finished()</code>
+			method call) or if the view is recycled in a
+			<code>ListView</code>
+			.
+
+			The
+			<code>onDetachedFromWindow()</code>
+			method can be used to stop animations and to clean up resources used
+			by the view.
+		</para>
+	</section>
+	<section id="lifecycle_traveals">
+		<title>Traversal life cycle events</title>
+		<para>
+			Traversals life cycle events consists of
+			<wordasword>Animate</wordasword>
+			,
+			<wordasword>Measure</wordasword>
+			,
+			<wordasword>Layout</wordasword>
+			and
+			<wordasword>Draw</wordasword>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/view_traversallifecycle10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>View traversals life cycle</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+		<para>
+			All views must know how to measure and layout themselves. The
+			<code>requestLayout()</code>
+			method call tells the view to measure and layout itself. As this
+			operation may influence the layout of other views it calls also
+			<code>requestLayout()</code>
+			of its parent.
+		</para>
+		<tip>
+			<para>This recursive call is the reason why you should not nestle
+				layout to deeply as the measure and layout operation might be
+				expensive if a lot of hierarchies are re-calculated.
+			</para>
+		</tip>
+		<para>
+			The
+			<code>onMeasure()</code>
+			method determines the size for the view and its children. It must set
+			the dimension via the
+			<code>setMeasuredDimension()</code>
+			method is this method call before returning.
+		</para>
+		<para>
+			The
+			<code>onLayout()</code>
+			positions the views based on the result of the
+			<code>onMeasure()</code>
+			method call. This call happens typically once, which
+			<code>onMeasure()</code>
+			can happens once.
+		</para>
+	</section>
+	<section id="lifecycle_activity">
+		<title>Activity life cycle</title>
+		<para>Views don't have access to the life cycle events of the
+			activities. If views want to get informed about these events you
+			should create an interface in the view which you call in the
+			life
+			cycle methods of the activity.
+		</para>
+	</section>
+
+</section>

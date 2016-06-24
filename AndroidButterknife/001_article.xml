@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Using Butterknife for view injection in Android - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>19.07.2015</pubdate>
+		<releaseinfo>
+			<para>Version 0.1</para>
+		</releaseinfo>
+		
+
+
+		<abstract id="abstract">
+			<title>Using the Butterknife library for view injection in Android</title>
+			<para> This tutorial explains the usage of the butterknife  library to inject views into Android application.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_example.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/JavaLibraries"?>
+</article>

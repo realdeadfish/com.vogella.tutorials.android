@@ -1,0 +1,170 @@
+<section id="example">
+	<title>Android Wallpaper Example</title>
+	<para>
+		Create a new project called
+		<wordasword>de.vogella.android.wallpaper</wordasword>
+		. Do not
+		create an
+		<wordasword>activity</wordasword>
+		.
+	</para>
+	<para>
+		Create the
+		<filename>/res/xml</filename>
+		folder and create the
+		<filename>mywallpaper.xml</filename>
+		file.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/mywallpaper.xml" />
+		</programlisting>
+	</para>
+	<para>
+		This file
+		contains a description of your
+		wallpaper
+		and
+		a preview
+		graphic.
+		You can
+		also enter a link to an
+		<wordasword>activity</wordasword>
+		which
+		allow to
+		configure the
+		wallpaper. This resource file
+		will be linked
+		to
+		from the
+		<filename>AndroidManifest.xml</filename>
+		. You could also
+		include the "android:thumbnail attribute" which would
+		point to a
+		drawable which gives a smaller image of the running
+		wallpaper.
+	</para>
+
+
+	<para>
+		Change your
+		<filename>AndroidManifest.xml</filename>
+		to the following to define
+		your
+		<code>MyWallpaperService</code>
+		service. Also define the uses-feature.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/AndroidManifest.xml" />
+		</programlisting>
+	</para>
+	<para>
+		We create the
+		<code>MyPoint</code>
+		class to save the elements we have drawn.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/MyPoint.java" />
+		</programlisting>
+	</para>
+	<para>
+		Create a new
+		<wordasword>activity</wordasword>
+		. Create the
+		<filename>prefs.xml</filename>
+		preference
+		file
+		in the
+		<filename>res/xml</filename>
+		folder.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/prefs.xml" />
+		</programlisting>
+	</para>
+
+	<para>
+		Create a new
+		<wordasword>activity</wordasword>
+		called
+		<wordasword>MyPreferencesActivity</wordasword>
+		and the following class.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/MyPreferencesActivity.java" />
+		</programlisting>
+	</para>
+	<para>
+		Create the following coding for the Wallpaper
+		<wordasword>service</wordasword>
+		.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/MyWallpaperService.java" />
+		</programlisting>
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/MyWallpaperService1.txt" />
+		</programlisting>
+	</para>
+	<para>
+		Create the following Activity which should use a layout with one
+		<code>Button</code>
+		included. This Button should use the
+		<property>onClick</property>
+		property to point to the
+		<code>onClick</code>
+		method.
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/SetWallpaperActivity.java" />
+		</programlisting>
+	</para>
+
+
+	<para>If you start your application your application should allow to
+		set the wallpaper.
+		Your background should look similar to the following
+		screenshot. If you have
+		Touch enabled
+		via the preferences you can click
+		on the screen to
+		remove the existing
+		circles, also via the settings you
+		can define the
+		number of circles
+		which should be displayed.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/wallpaper10.png" />
+			</imageobject>
+			<textobject>
+				<phrase>Live Wallpaper displayed</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+
+</section>

@@ -1,0 +1,41 @@
+<section id="fragmentsandbackgroundprocessing" role="wrapper">
+	<title>Fragments and background processing</title>
+	<section id="fragmentsandbackgroundprocessing_retain">
+		<title>Retain instance during configuration changes</title>
+		<para>
+			You can use
+			fragments
+			without user interface and retain them between configuration changes
+			via a call to their
+			<code>setRetainInstance()</code>
+			method.
+		</para>
+		<para>
+			This way your
+			<code>Thread</code>
+			or
+			<code>AsyncTask</code>
+			is retained during configuration changes. This allows you to perform
+			background processing without explicitly considering the lifecycle of
+			your
+			<wordasword>activity</wordasword>
+			.
+		</para>
+
+
+	</section>
+
+	<section id="fragmentsandbackgroundprocessing_headless">
+		<title>Headless fragments</title>
+		<para>
+			If you perform background processing you can dynamically attached a
+			headless
+			<wordasword>fragment</wordasword>
+			to your application and call
+			<code>setRetainInstance()</code>
+			to true. This fragment is retained during configuration changes and
+			you can perform asynchronous processing in it.
+		</para>
+	</section>
+
+</section>

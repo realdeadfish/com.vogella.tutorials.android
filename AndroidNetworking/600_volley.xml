@@ -1,0 +1,82 @@
+<section id="volly">
+	<title>Volley</title>
+	<section id="vollywhatis">
+		<title>What is volley?</title>
+
+		<para>Volley is an HTTP library that makes networking for Android
+			applications easier and faster.
+
+		</para>
+		<para> To use Volley in your Android application you need to clone the
+			Git repository and import the download as Android library project.
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/volley/download.txt" />
+			</programlisting>
+		</para>
+		<para>Volley supports out of the box raw strings, images, and JSON but
+			can get extended with additional protocols. Volley does NOT support
+			the download of large file or streaming operations, as it holds all
+			responses in memory during its processing.
+		</para>
+		<para>Volley always delivers parsed responses on the main thread; the
+			developer does not need to synchronize with the main thread to
+			update the user interface.
+		</para>
+	</section>
+	<section id="vollysendingarequest">
+		<title>Sending a request with volley</title>
+		<para>
+			To send a request you create a
+			<code>RequestQueue</code>
+			, for example the default one with
+			<code>Volley.newRequestQueue(this)</code>
+			and add a
+			<code>RequestObject</code>
+			to it via the
+			<code>add</code>
+			method.
+		</para>
+		<para>Volley keeps a cache processing thread and first checks if the
+			request can be
+			fulfilled from the cache, if not it is placed on the
+			network queue.
+			Volley has worker threads for the network, the first
+			available
+			network thread takes the request from the queue,
+			performs the
+			HTTP
+			transaction, parse the response, writes the
+			response to the cache,
+			and posts the parsed response
+			back to the main
+			thread.
+		</para>
+
+	</section>
+
+	<section id="volly_cancekrequest">
+		<title>Cancel a request with volley</title>
+		<para>
+			To cancel a request, call the
+			<code>cancel()</code>
+			method on the
+			<code>Request</code>
+			object. After this call, the response handler is not called.
+		</para>
+		<para>
+			As good practice cancel all your pending requests in the
+			<code>onStock()</code>
+			method via the
+			<code>requestQueue.cancelAll(TAG)</code>
+			call whereby your can assign the tag to a request via the
+			<code>setTag(tag)</code>
+			method on the
+			<code>Request</code>
+			object.
+		</para>
+	</section>
+
+</section>

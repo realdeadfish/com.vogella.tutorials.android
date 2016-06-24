@@ -1,0 +1,8 @@
+# trigger a broadcast and deliver it to a component
+adb shell am activity/service/broadcast -a ACTION -c CATEGORY -n NAME
+
+# for example (this goes into one line)
+
+adb shell am broadcast -a 
+android.intent.action.BOOT_COMPLETED -c android.intent.category.HOME -n
+package_name/class_name

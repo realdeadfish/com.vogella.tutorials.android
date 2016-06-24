@@ -1,0 +1,10 @@
+
+<application
+	<!-- Place the following after the Activity
+	     Definition
+	-->
+  <provider
+      android:name=".contentprovider.MyTodoContentProvider"
+      android:authorities="de.vogella.android.todos.contentprovider" >
+   </provider>
+</application>

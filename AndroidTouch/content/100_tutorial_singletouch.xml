@@ -1,0 +1,87 @@
+<section id="singletouch" role="wrapper">
+	<title>Exercise: Custom view and touch events</title>
+	<section id="singletouch_draw">
+		<title>Draw via touch</title>
+		<para>
+			This exercise demonstrates the handling of (single) touch events
+			within a custom
+			view.
+		</para>
+		<para>
+
+			Create an Android project called
+			<wordasword>com.vogella.android.touch.single</wordasword>
+			with the
+			<wordasword>activity</wordasword>
+			called
+			<wordasword>SingleTouchActivity</wordasword>
+			.
+		</para>
+		<para>
+			Create the following
+			<code>SingleTouchEventView</code>
+			class which implements a View which supports single touch.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/single/SingleTouchEventView.java" />
+			</programlisting>
+		</para>
+		<para>
+			Add this view to your
+			<wordasword>activity</wordasword>
+			.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/single/SingleTouchActivity.java" />
+			</programlisting>
+		</para>
+		<para> If you run your application you will be able to draw on the
+			screen with your finger (or with the mouse in the emulator).
+		</para>
+		<para> Change your coding so that you use a layout definition based on
+			XML. Hint: to use your own view in an XML layout definition you have
+			to
+			use the full-qualified class name (class including package
+			information).
+		</para>
+
+	</section>
+
+	<section id="ownview_tracking">
+		<title>Tracking</title>
+		<para>
+			Add code to your drawing example so that the current position
+			of a
+			finger is marked via a circle. To draw a circle you can use the
+			<code>addCircle(x, y, 50, Path.Direction.CW)</code>
+			method call on a
+			<code>Path</code>
+			or use the canvas element directly.
+		</para>
+		<para>
+			Make sure that only the current position is highlighted
+			with a
+			circle. The circle should appears as soon as the
+			finger goes down and
+			vanish once the finger goes up.
+		</para>
+		<para> The result should look like the following. </para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/drawing_result10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Activity showing the drawing View</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+
+</section>

@@ -1,0 +1,112 @@
+<section id="exercise_lifecycle" role="wrapper">
+	<title>Exercise: Lifecycle</title>
+	<section id="exercise_lifecycle1">
+		<title>Prepare project</title>
+		<para>
+			Create a new project called
+			<wordasword>com.vogella.android.lifecycle.activity</wordasword>
+			.
+		</para>
+		<para>Create the following class which is used to report lifecycle
+			events via notifications.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/report/TracerActivity.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			Create two activity which extend this one. The first activity
+			should
+			allow to start the second one via an
+			<code>Intent</code>
+			.
+		</para>
+
+
+	</section>
+	<section id="exercise_lifecycle2">
+		<title>Testing</title>
+		<para>Start your application and trigger the second activity. Review
+			the notifications and ensure you know why this order of things are
+			happening.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/activity_lifecycle20.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Notifications about the lifecycle</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Press the Back button on the second activity. Validate that
+			<code>onSaveInstanceState()</code>
+			is not
+			called. Explain why it is not called.
+		</para>
+		<para>
+			Press the home button on the second activity. Validate that
+			<code>onSaveInstanceState()</code>
+			is called. Explain why it is called.
+		</para>
+		<para>
+			Start the second activity. Switch the orientation of your
+			emulator via
+			the
+			<keycombo>
+				<keycap>Ctrl</keycap>
+				<keycap>F11</keycap>
+			</keycombo>
+			shortcut and see which life cycle methods of
+			the activity are called.
+			Is the first activity also re-created or
+			only the second one?
+		</para>
+		<para>
+			Activate the
+			<guilabel>Don't keep activities</guilabel>
+			setting in the
+			<wordasword>Developer Options</wordasword>
+			. Test again which methods are called.
+		</para>
+	</section>
+	<section id="exercise_lifecycle3">
+		<title>Instance state</title>
+		<para>
+			Create a string array and add a spinner to your first
+			activity using
+			this array. The following lists the
+			<filename>strings.xml</filename>
+			and the layout file used by the first activity.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/report/strings.xml" />
+			</programlisting>
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/report/activity_main.xml" />
+			</programlisting>
+		</para>
+
+
+		<para>Ensure that the selection of the spinner is saved and restored
+			between configuration changes or restarts of the activity by the
+			Android system.
+		</para>
+	</section>
+</section>
+

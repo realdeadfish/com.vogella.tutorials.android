@@ -1,0 +1,23 @@
+<section id="nfc">
+	<title>Android NFC</title>
+
+	<section id="nfc_overview">
+		<title>Overview</title>
+		<para>
+		</para>
+
+	</section>
+
+	<section id="overview_buy">
+		<title>Hardware</title>
+		<para>
+			You need an NFC enabled Android phone, like the Android Nexus S
+			and
+			some NFC tags to read from. A good place to shop for NFC tags is
+			<ulink url="http://www.buynfctags.com/">http://www.buynfctags.com/</ulink>
+			.
+		</para>
+	</section>
+
+
+</section>

@@ -1,0 +1,39 @@
+<section id="adt_buildingtools" role="wrapper">
+	<title>The Android Development Tools (ADT)</title>
+	<section id="adt_buildingtools1">
+		<title>ADT tools</title>
+		<para>The Android Development Tools (ADT) project provide Eclipse and
+			IntellJ based
+			tooling to development Android applications.
+		</para>
+		<note>
+			<para>
+				Unfortunately the ADT team were not available for an interview. Most
+				of documentation of the tooling can be found under here:
+				<ulink url="http://tools.android.com/">Tool project side</ulink>
+				.
+			</para>
+		</note>
+	</section>
+	<section id="adt_buildingtools2">
+		<title>Contributing to the ADT project</title>
+		<para>
+			The contribution process to ADT is based on Gerrit but uses
+			another
+			tool called repo. The contribution process is described here:
+			<ulink url="http://tools.android.com/contributing">Contributing to ADT</ulink>
+			.
+		</para>
+	</section>
+
+	<section id="adt_buildingtools3">
+		<title>Building the tools</title>
+		<para>
+			How to build the Eclipse based ADT tooling is described in the
+			following page:
+			<ulink url="http://tools.android.com/build/eclipse">Building ADT</ulink>
+			.
+		</para>
+
+	</section>
+</section>

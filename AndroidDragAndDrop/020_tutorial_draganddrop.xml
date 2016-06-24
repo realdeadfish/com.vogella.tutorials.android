@@ -1,0 +1,106 @@
+<section id="tutorial_draganddrop" role="wrapper">
+	<title>Exercise: Drag and drop</title>
+	<section id="tutorial_target">
+		<title>Target of this exercise</title>
+		<para>In this exercise you create a several view groups which allow to
+			drag views between them.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/dndandroid10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Result of the DnD example</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="tutorial_draganddrop1">
+		<title>Create project</title>
+		<para>
+			Create a new Android project called
+			<wordasword>com.vogella.android.draganddrop</wordasword>
+			with an activity
+			called
+			<wordasword>DragActivity</wordasword>
+			.
+		</para>
+	</section>
+	<section id="tutorial_draganddrop2">
+		<title>Create XML Drawables</title>
+		<para>In this exercise you are using XML drawables.</para>
+		<para>
+			In this part you create several XML drawables in the
+			<filename>res/drawable</filename>
+			folder.
+		</para>
+		<para>
+			Create the following
+			<filename>shape.xml</filename>
+			file in this folder.
+
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/drag/shape.xml" />
+			</programlisting>
+		</para>
+
+		<para>
+			Also create the following
+			<filename>shape_droptarget.xml</filename>
+			file.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/drag/shape_droptarget.xml" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="tutorial_draganddrop3">
+		<title>Activity and layout</title>
+		<para>
+			Change the layout of your activity
+			to the following code.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/drag/main.xml" />
+			</programlisting>
+		</para>
+
+		<para>
+			Change your activity
+			class to the following code.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/drag/DragActivity.java" />
+			</programlisting>
+		</para>
+		<para>
+			If you start this
+			<wordasword>activity</wordasword>
+			you should be able to drag the
+			<code>ImageViews</code>
+			to another container.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/draganddrop10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Drag and Drop Screenshot of the Application</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+</section>

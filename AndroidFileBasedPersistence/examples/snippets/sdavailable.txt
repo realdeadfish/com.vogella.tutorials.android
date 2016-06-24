@@ -1,0 +1,2 @@
+
+Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)

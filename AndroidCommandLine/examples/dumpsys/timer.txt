@@ -1,0 +1,3 @@
+  RTC #6: Alarm{434a1234 type 1 com.example}
+    type=1 whenElapsed=608198149 when=+12m13s122ms window=-1 repeatInterval=0 count=0
+    operation=PendingIntent{430cf612: PendingIntentRecord{*43bbf887* com.vogella startService}}

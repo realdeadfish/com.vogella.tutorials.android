@@ -1,0 +1,81 @@
+<section id="tutorial_intentservice">
+	<title>Exercise: Using services and service communication</title>
+	<para>
+		The following example demonstrates how to use a service
+		to
+		download a file from the Internet based on a button click from an
+		activity. Once done, the service notifies the activity via a broadcast
+		receiver that the download is complete.
+	</para>
+	<para>
+		In this exercise you use the
+		<code>IntentService</code>
+		class, as this class provides automatic background processing.
+	</para>
+	<para>
+		Create a new project called
+		<wordasword>com.vogella.android.service.receiver</wordasword>
+		with the
+		activity
+		called
+		<wordasword>MainActivity</wordasword>.
+	</para>
+	<para>
+		Create the following class for the service.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/intentservice/DownloadService.java" />
+		</programlisting>
+	</para>
+	<para>
+		Add this class to the
+		<filename>AndroidManifest.xml</filename>
+		file. Also add the permission to
+		write to external storage and to
+		access
+		the Internet. The resulting
+		<filename>AndroidManifest.xml</filename>
+		file should look similar to the following listing.
+	</para>
+	<para>
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/intentservice/AndroidManifest.xml" />
+		</programlisting>
+	</para>
+	<para>
+		Change the layout file of your activity to the following.
+	</para>
+	<para>
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/intentservice/activity_main.xml" />
+		</programlisting>
+	</para>
+	<para>
+		Change
+		<code>MainActivity</code>
+		to the following.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/intentservice/MainActivity.java" />
+		</programlisting>
+	</para>
+	<para>
+		If you run your example and press the button, the download should
+		be
+		performed by the
+		service. Once done, the user interface is updated and
+		a <code>Toast</code> with the file
+		name is shown.
+	</para>
+	<para>
+		Change the setting so that the service runs in its own process.
+		Ensure that the application still works, as broadcast receivers are
+		received across process boundaries.
+	</para>
+</section>

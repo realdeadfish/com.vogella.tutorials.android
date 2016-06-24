@@ -1,0 +1,5 @@
+
+<provider
+       android:authorities="de.vogella.android.todos.contentprovider"
+       android:name=".contentprovider.MyTodoContentProvider" >
+</provider>

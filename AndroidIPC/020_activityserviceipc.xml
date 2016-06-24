@@ -1,0 +1,30 @@
+<section id="servicecommunication_ipc2">
+	<title>AIDL for services in a different process</title>
+	<para>
+		To bind to a
+		service
+		which runs in a different process, you need to use
+		Inter Process
+		Communication (IPC) as the data needs to be sent between
+		different
+		processes. To do so, you need to create a AIDL file which
+		looks
+		similar to a Java interface, but ends with the
+		<filename>.aidl</filename>
+		file extension
+		and is only allowed to extend other AIDL files.
+	</para>
+	<para>
+		This approach is required if you need to bind to a service
+		running in
+		another process, i.e., if your service is consumed by other
+		Android applications.
+	</para>
+	<para>
+		You can find more information about this approach in the
+		<ulink url="http://developer.android.com/guide/components/aidl.html">
+			Android developer documentation about AIDL
+		</ulink>
+		.
+	</para>
+</section>

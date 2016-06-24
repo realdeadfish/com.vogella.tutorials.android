@@ -1,0 +1,3 @@
+  * PendingIntentRecord{43bbf887 com.vogella startService}
+    uid=10042 packageName=com.vogella type=startService flags=0x0
+    requestIntent=act=MY_ACTION cmp=com.vogella/.MyService (has extras)

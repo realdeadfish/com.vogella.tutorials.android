@@ -1,0 +1,5 @@
+
+<activity android:name=".ProgressTestActivity"
+     android:label="@string/app_name"
+     android:configChanges="orientation|keyboardHidden|keyboard">
+</activity>

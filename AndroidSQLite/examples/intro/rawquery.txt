@@ -1,0 +1,3 @@
+
+Cursor cursor = getReadableDatabase().
+	rawQuery("select * from todo where _id = ?", new String[] { id });

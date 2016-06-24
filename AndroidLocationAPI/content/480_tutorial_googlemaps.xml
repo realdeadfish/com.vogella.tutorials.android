@@ -1,0 +1,156 @@
+<section id="googlemaps" role="wrapper">
+	<title>Tutorial: Google Maps</title>
+	<section id="googlemaps_project">
+		<title>Create Project</title>
+		<para>
+			In the following chapter we will build an Android application which
+			shows a
+			<code>MapView</code>
+			. It also shows a compass and the current geoposition. Via an
+			<code>ItemizedOverlay</code>
+			implementation we will also display the last 5 positions on the map.
+		</para>
+		<para>
+			Create a new Android project called
+			"de.vogella.android.locationapi.maps" with an
+			<wordasword>activity</wordasword>
+			called
+			<wordasword>ShowMapActivity</wordasword>. Make sure to select the "Google API" als
+			Target.
+		</para>
+		<para>
+			Add the following permissions to your application.
+			<itemizedlist>
+				<listitem><para>INTERNET
+					</para>
+				</listitem>
+				<listitem><para>ACCESS_FINE_LOCATION        </para>
+				</listitem>
+				<listitem><para>ACCESS_COARSE_LOCATION        </para>
+				</listitem>
+			</itemizedlist>
+		</para>
+
+
+	</section>
+	<section id="googlemaps_manifest">
+		<title>Validate AndroidManifest.xml</title>
+		<para>
+			Validate that your
+			<filename>AndroidManifest.xml</filename>
+			file looks similiar to
+			the following file.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/maps/AndroidManifest.xml" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="googlemaps_overlays">
+		<title>ItemizedOverlay</title>
+		<para>
+			Create the following
+			<code>MyOverlays</code>
+			class which extends
+			<code>ItemizedOverlay</code>
+			class.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/maps/MyOverlays.java" />
+			</programlisting>
+		</para>
+		<para>We will later use an image called
+			<wordasword>point</wordasword>. Put one icon called
+			<wordasword>point</wordasword>, e.g. "point.png"
+			in at least on of your drawable folder. If
+			you
+			do not know where to find
+			icons,
+			you can
+			copy the icons created by the
+			Android
+			wizard.
+		</para>
+	</section>
+
+	<section id="googlemaps_layout">
+		<title>Layout</title>
+		<para>
+			Create a
+			<code>MapView</code>
+			key as described earlier.
+		</para>
+		<para>
+			Change the
+			<filename>main.xml</filename>
+			layout file in your
+			<filename>res/layout</filename>
+			folder to
+			the
+			following.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/maps/main.xml" />
+			</programlisting>
+		</para>
+		<para>
+			Replace
+			<code>your_key</code>
+			with your Google Maps API
+			key.
+		</para>
+
+	</section>
+
+	<section id="googlemaps_activity">
+		<title>Activity</title>
+
+		<para>
+			Change your
+			<wordasword>activity</wordasword>
+			to the following. This
+			<wordasword>activity</wordasword>
+			use an
+			<code>LocationListner</code>
+			to update the
+			<code>MapView</code>
+			with the current location.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/maps/ShowMapActivity.java" />
+			</programlisting>
+		</para>
+
+	</section>
+
+	<section id="googlemaps_run">
+		<title>Run and Test</title>
+		<para>
+			Run and test your application. You should be able to zoom in and
+			out
+			and send new geo coordinates to your
+			<wordasword>activity</wordasword>
+			via the Emulator.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/map30.gif" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+
+</section>

@@ -1,0 +1,17 @@
+<section id="adb_uninstall">
+	<title>Uninstall an application via adb</title>
+	<para> You can uninstall an android application via the shell. Switch
+		the data/app directory (cd /data/app) and simply delete your
+		android
+		application.
+	</para>
+	<para> You can also uninstall an app via adb with the package name.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/shell/adbuninstall.txt" />
+		</programlisting>
+	</para>
+</section>

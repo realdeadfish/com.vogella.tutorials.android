@@ -1,0 +1,1 @@
+LruCache<String, Bitmap> bitmapCache = new LruCache<String, Bitmap>();

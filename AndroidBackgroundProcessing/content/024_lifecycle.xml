@@ -1,0 +1,134 @@
+<section id="concurrency" role="wrapper">
+	<title>Background processing and lifecycle handling</title>
+	<section id="concurrency_lifecycle">
+		<title>Retaining state during configuration changes</title>
+		<para>
+			One challenge in using threads is to consider the
+			lifecycle of
+			the
+			application. The Android system may kill your
+			<wordasword>activity</wordasword>
+			or trigger
+			a
+			configuration
+			change which will also restart your activity.
+		</para>
+		<para>
+			You also need to handle open
+			dialogs, as dialogs are always
+			connected
+			to the
+			<wordasword>activity</wordasword>
+			which created
+			them. In case the activity gets
+			restarted
+			and you access
+			an existing
+			dialog you receive a
+			<code>View not
+				attached to
+				window manager
+			</code>
+			exception.
+		</para>
+		<para>
+			To save an object you can use the method
+			<code>onRetainNonConfigurationInstance()</code>
+			method. This method allows you to save one object if the activity will be
+			soon restarted.
+		</para>
+		<para>
+			To retrieve this object you can use the
+			<code>getLastNonConfigurationInstance()</code>
+			method. This way can you can save an object, e.g. a running thread,
+			even if
+			the
+			<wordasword>activity</wordasword>
+			is restarted.
+		</para>
+		<para>
+
+			<code>getLastNonConfigurationInstance()</code>
+			returns null if the
+			<wordasword>activity</wordasword>
+			is started the first time or if it has been finished via
+			the
+			finish()
+			method.
+		</para>
+		<para>
+			<code>onRetainNonConfigurationInstance()</code>
+			is deprecated as of API 13, it is recommended that you use
+			fragments
+			and the
+			<code>setRetainInstance()</code>
+			method to retain data over configuration changes.
+		</para>
+	</section>
+
+	<section id="concurrency_lifecycleapplication">
+		<title>Using the application object to store objects</title>
+		<para>
+			If more than one object should be stored across
+			<wordasword>activities</wordasword>
+			and configuration changes, you can implement
+			an
+			<code>Application</code>
+			class for your Android application.
+		</para>
+		<para>
+			To use your application class
+			assign the
+			classname to the
+			<parameter>android:name</parameter>
+			attribute of your application.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/lifecycle/application.xml" />
+			</programlisting>
+		</para>
+		<para>The application class is automatically created by the Android
+			runtime and is available unless the whole application process is
+			terminated.
+		</para>
+
+		<para>
+			This class can be used to access objects
+			which should be
+			cross
+			activities or
+			available for the whole
+			application lifecycle. In
+			the
+			<code>onCreate()</code>
+			method
+			you can
+			create objects and make them
+			available via public fields
+			or
+			<code>getter</code>
+			methods.
+		</para>
+		<para>
+			The
+			<code>onTerminate()</code>
+			method in the application class
+			is only used for testing. If Android
+			terminates the process
+			in which your application is running all
+			allocated resources are
+			automatically released.
+		</para>
+
+
+		<para>
+			You can access the Application via the
+			<code>getApplication()</code>
+			method
+			in your activity.
+		</para>
+	</section>
+</section>

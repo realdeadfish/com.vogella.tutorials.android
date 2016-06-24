@@ -1,0 +1,17 @@
+<section id="listview_furtherinfo">
+	<title>More on ListViews</title>
+	<para>
+		Please see
+		<ulink url="http://www.vogella.com/tutorials/AndroidListView/article.html">Android ListView Tutorial</ulink>
+		for an 
+		introduction into
+		<code>ListViews
+		</code>
+		and
+		<code>ListActivities
+		</code>
+		.
+	</para>
+
+</section>
+

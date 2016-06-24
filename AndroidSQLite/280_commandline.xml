@@ -1,0 +1,93 @@
+<section id="sqlite_commnandline" role="wrapper">
+	<title>Accessing SQLite databases directly</title>
+	<section id="sqlite_emulator">
+		<title>Storage location of the SQLite database</title>
+		<para> SQlite stores the whole database in a file. If you have access
+			to this file, you can work directly with the data base. Accessing the
+			SQlite database file only
+			works in the
+			emulator or on a rooted
+			device.
+		</para>
+		<para>
+			A
+			standard Android device
+			will not
+			grant read-access to the
+			database file.
+		</para>
+	</section>
+
+	<section id="sqlite_shell">
+		<title>Shell access to the database</title>
+		<para>
+			It is possible to access an SQLite database on the emulator or a
+			rooted device via the command line. For this use the following
+			command
+			to
+			connect to the device.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/commandline/shell.txt" />
+			</programlisting>
+		</para>
+
+		<para> The command adb is located in your Android SDK installation
+			folder in the "platform-tools" subfolder.
+		</para>
+
+		<para>Afterwards you use the "cd" command to switch the database
+			directory and use the "sqlite3" command to connect to a
+			database. For
+			example in my case:
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/commandline/shell1.txt" />
+			</programlisting>
+		</para>
+
+		<para>
+			The most important commands are:
+
+			<table frame='all'>
+				<title>SQlite commands</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*"/>
+					<colspec colname='c2' colwidth="3*" />
+					<thead>
+						<row>
+							<entry>Command</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>.help</entry>
+							<entry>List all commands and options.</entry>
+						</row>
+						<row>
+							<entry>.exit</entry>
+							<entry>Exit the sqlite3 command.</entry>
+						</row>
+						<row>
+							<entry>.schema</entry>
+							<entry>Show the CREATE statements which were used to create the
+								tables of the current database.
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+
+		</para>
+		<para>
+			You find the complete documentation of SQlite at
+			<ulink url="http://www.sqlite.org/sqlite.html">http://www.sqlite.org/sqlite.html</ulink>
+			.
+		</para>
+	</section>
+</section>

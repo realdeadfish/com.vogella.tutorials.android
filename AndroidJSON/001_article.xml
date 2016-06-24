@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>JSON in Android - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>15.09.2014</pubdate>
+		<releaseinfo>
+
+			<para>Version 1.4	</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>JSON with Android</title>
+			<para> This article describes how to process JSON within Android. It
+				is
+				based on Eclipse 4.4, Java 1.6 and Android 4.4.
+			</para>
+		</abstract>
+	</articleinfo>
+	
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_read.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_write.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/AndroidJSON"?>
+</article>

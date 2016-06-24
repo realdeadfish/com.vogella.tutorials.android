@@ -1,0 +1,1 @@
+Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.ic_action_search); 

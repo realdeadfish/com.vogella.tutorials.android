@@ -1,0 +1,36 @@
+<section id="example">
+	<title>Tutorial: Using an Intent to make a photo</title>
+	<para>
+		Create a new Android project
+		<code>de.vogella.android.imagepick</code>
+		with an
+		<wordasword>activity</wordasword>
+		called
+		<code>ImagePickActivity</code>
+		.
+	</para>
+	<para>
+		Adjust the layout of the
+		<wordasword>activity</wordasword>
+		to contain an
+		<code>ImageView</code>
+		with the
+		<parameter>result</parameter>
+		ID. Also add a button with the
+		<parameter>onClick</parameter>
+		property pointing to a
+		<code>onClick</code>
+		method.
+	</para>
+	<para>
+		Change the
+		<code>ImagePickActivity</code>
+		class to the following.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/imagepick/ImagePickActivity.java" />
+		</programlisting>
+	</para>
+</section>

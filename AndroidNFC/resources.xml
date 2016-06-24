@@ -1,0 +1,41 @@
+<section id="resources">
+	<title>Links and Literature</title>
+
+	<section id="resources_android">
+		<title>Android Widget Resources</title>
+		<para>
+			<ulink
+				url="http://developer.android.com/resources/samples/ApiDemos/src/com/example/android/apis/appwidget/index.html">
+				Example Widget from Android API demos</ulink>
+		</para>
+		
+		<para>
+			<ulink
+				url="http://code.google.com/p/wiktionary-android/source/browse/trunk/Wiktionary/src/com/example/android/wiktionary/">
+				Wiktionary Example Widget</ulink>
+		</para>
+		
+		http://code.google.com/p/wiktionary-android/source/browse/trunk/Wiktionary/src/com/example/android/wiktionary/
+	</section>
+	<section id="resources_android">
+		<title>Android Resources</title>
+		<para>
+			<ulink url="http://www.vogella.com/tutorials/Android/article.html">
+				Introduction to Android Development</ulink>
+		</para>
+		<para>
+			<ulink
+				url="http://www.vogella.com/tutorials/AndroidLocationAPI/article.html">
+				Android Location API and Google Maps</ulink>
+		</para>
+		<para>
+			<ulink url="http://code.google.com/intl/de-DE/android/">
+				Android Homepage</ulink>
+		</para>
+
+	</section>
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+
+
+</section>

@@ -1,0 +1,118 @@
+<section id="overview">
+	<title>Overview</title>
+	<section id="overview_intro">
+		<title>Live Wallpapers</title>
+		<para>
+			<wordasword>Live Wallpapers</wordasword>
+			are animated, interactive backgrounds for the
+			Android home screen. A
+			live wallpaper is similar to other Android
+			applications and can use
+			most of the same functionality.
+		</para>
+	</section>
+	<section id="overview_create">
+		<title>How to create a live wallpaper</title>
+		<para>
+			To create a live wallpaper, you need to create an XML file which
+			describes your wallpaper. This file should contain a description of
+			the application and can contain a preview and a link to a preference
+			<wordasword>activity</wordasword>
+			Activity which allow to customize the live wallpaper.
+
+		</para>
+		<para>
+			You also create a
+			<wordasword>service</wordasword>
+			which
+			must extend the
+			<code>WallpaperService</code>
+			class. This class is the base class for all live
+			wallpapers in
+			the
+			system. You must implement the
+			<code>onCreateEngine()</code>
+			method
+			and return
+			an
+			object of type
+			<code>android.service.wallpaper.WallpaperService.Engine</code>
+			. This
+			objects
+			handles the
+			lifecycle
+			events,
+			animations and drawings
+			of
+			the
+			wallpaper. The
+			<code>Engine</code>
+			class defines the life
+			cycle methods, as for example
+			<code>onCreate()</code>
+			,
+			<code>onSurfaceCreated()</code>
+			,
+			<code>onVisibilityChanged()</code>
+			,
+			<code>onOffsetsChanged()</code>
+			,
+			<code>onTouchEvent()</code>
+			and
+			<code>onCommand()</code>
+			.
+
+		</para>
+		<para>
+			The
+			service
+			requires
+			the permission
+			<code>android.permission.BIND_WALLPAPER</code>
+			and
+			must be
+			registered via an
+			intent-filter for the
+			<code>android.service.wallpaper.WallpaperService</code>
+			action.
+		</para>
+
+		<para>
+			You should also enter in the
+			<filename>AndroidManifest.xml</filename>
+			file of the application
+			that your
+			application uses the
+			<code>android.software.live_wallpaper</code>
+			feature. This
+			will prevent
+			that your wallpaper can be
+			installed on
+			devices
+			which do
+			not support
+			live wallpapers.
+		</para>
+	</section>
+	<section id="overview_setting">
+		<title>Intent to set the wallpaper</title>
+
+		<para>
+			You can use an
+			<wordasword>Intent</wordasword>
+			to set the Wallpaper.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/SetWallpaper.java" />
+			</programlisting>
+		</para>
+
+
+	</section>
+
+
+
+</section>

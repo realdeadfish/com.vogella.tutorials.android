@@ -1,0 +1,16 @@
+<section id="concurrency_android">
+	<title>Concurrency constructs in Android</title>
+	<para>
+		Android provides additional constructs to handle concurrently in
+		comparison with standard Java.
+
+		You can use the
+		<code>android.os.Handler</code>
+		class or the
+		<code>AsyncTasks</code>
+		classes. More sophisticated approach are based on the
+		<code>Loader</code>
+		class, retained Fragments and services.
+	</para>
+	
+</section>

@@ -1,0 +1,13 @@
+public void readFileFromInternalStorage(String fileName) {
+	String eol = System.getProperty("line.separator");
+	try (BufferedReader input = new BufferedReader(new InputStreamReader(
+		openFileInput(fileName))); ){
+	  String line;
+	  StringBuffer buffer = new StringBuffer();
+	  while ((line = input.readLine()) != null) {
+		buffer.append(line + eol);
+	  }
+	} catch (Exception e) {
+	 	// we do not care
+	} 
+}

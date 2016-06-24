@@ -1,0 +1,56 @@
+<section id="exercise_butterknife">
+	<title>Exercise: Using Butterknife in your Android project</title>
+	<section id="exercise_butterknife_project">
+		<title>Create project</title>
+		<para>
+			Create a new Android project with the package
+			<code>com.vogella.android.butterknifeexample</code>
+			. Add a text view with the
+			<code>@+id/textview</code>
+			to it and a button to the existing layout with the
+			<code>@+id/button"</code>
+			ID.
+		</para>
+	</section>
+
+	<section id="exercise_butterknife_gradle">
+		<title>Add Butterknife to your Gradle build configuratoin</title>
+
+		<para>
+			Add the
+			<code>com.jakewharton:butterknife</code>
+			in its latest version as compile dependency
+			<code>build.gradle</code>
+			file.
+		</para>
+		<para>
+			<programlisting language="groovy">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/build.gradle" />
+			</programlisting>
+		</para>
+
+
+	</section>
+
+
+	<section id="exercise_butterknife_di">
+		<title>Use view injection in your Android activity</title>
+		<para>Change your activity to the following. </para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/MainActivity.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="exercise_butterknife_verify">
+		<title>Validate setup</title>
+
+		<para>
+			Run your application and ensure that the
+			<code>TextView</code>
+			got injected and the button event is fired, if you click the button.
+		</para>
+	</section>
+
+
+</section>

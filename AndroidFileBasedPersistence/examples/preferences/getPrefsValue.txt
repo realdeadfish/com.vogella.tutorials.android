@@ -1,0 +1,2 @@
+SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(getActivity();
+String url = settings.getString("url", "n/a");

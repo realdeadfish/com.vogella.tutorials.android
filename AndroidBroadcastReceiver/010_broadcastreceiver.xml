@@ -1,0 +1,164 @@
+<section id="broadcastreceiver" role="wrapper">
+	<title>Broadcast receiver</title>
+	<section id="broadcastreceiver_definition">
+		<title>Definition</title>
+		<para>
+			A
+			<wordasword>broadcast receiver</wordasword>
+			(short
+			<wordasword>receiver</wordasword>
+			)
+			is an Android component which allows you to register for system or
+			application events. All registered receivers
+			for an
+			event are notified
+			by the Android runtime once this event
+			happens.
+		</para>
+		<para>
+			For example, applications can register for the
+			<code>ACTION_BOOT_COMPLETED</code>
+			system event
+			which is fired once the Android system has
+			completed
+			the
+			boot process.
+		</para>
+	</section>
+	<section id="broadcastreceiver_implementation">
+		<title>Implementation</title>
+		<para>
+			A
+			receiver
+			can be registered via the
+			<filename>AndroidManifest.xml</filename>
+			file.
+		</para>
+		<para>
+			Alternatively to this static registration, you can also register
+			a
+			receiver
+			dynamically via the
+			<code>Context.registerReceiver()</code>
+			method.
+		</para>
+		<para>
+			The implementing class for a receiver
+			extends the
+			<code>BroadcastReceiver</code>
+			class.
+		</para>
+		<para>
+			If the event for which the
+			broadcast receiver
+			has registered happens,
+			the
+			<code>onReceive()</code>
+			method of the receiver
+			is called by the Android system.
+		</para>
+	</section>
+
+	<section id="broadcastreceiver_performance">
+		<title>Life cycle of a broadcast receiver</title>
+		<para>
+			After the
+			<code>onReceive()</code>
+			of the receiver class
+			has finished,
+			the Android system is allowed to
+			recycle the receiver.
+		</para>
+
+	</section>
+	<section id="broadcastreceiver_asynchronousprocessing">
+		<title>Asynchronous processing</title>
+		<para>
+			Before API level 11, you could not
+			perform any asynchronous operation
+			in the
+			<code>onReceive()</code>
+			method, because once the
+			<code>onReceive()</code>
+			method had been finished,
+			the Android system was allowed to recycle that
+			component. If you have potentially long
+			running operations, you should
+			trigger a service instead.
+		</para>
+		<para>
+			Since Android API 11 you can call the
+			<code>goAsync()</code>
+			method. This method returns an object of the
+			<code>PendingResult</code>
+			type.
+			The Android system considers the
+			receiver as alive
+			until you call
+			the
+			<code>PendingResult.finish()</code>
+			on this object. With this option you can trigger asynchronous
+			processing in a receiver. As soon as that thread has
+			completed, its
+			task calls
+			<code>finish()</code>
+			to indicate to the Android system that this component can be
+			recycled.
+		</para>
+	</section>
+
+	<section id="broadcastreceiver_platformfilter">
+		<title>Restrictions for defining broadcast receiver</title>
+		<para>
+			As of Android 3.1 the Android system excludes all
+			receiver
+			from receiving intents by default
+			if the corresponding
+			application has
+			never been started by the user
+			or if the user explicitly stopped the
+			application via the Android
+			menu
+			(in
+			<menuchoice>
+				<guimenu>Manage</guimenu>
+				<guisubmenu>Application</guisubmenu>
+			</menuchoice>
+			).
+		</para>
+		<para>
+			This is an additional security feature as the user can be sure that
+			only the applications he started will receive
+			broadcast
+			<wordasword>intents</wordasword>
+			.
+		</para>
+		<tip>
+			<para>
+				This does not mean the user has to start the application again
+				after a reboot. The Android system remembers that
+				the user already
+				started it. Only one start is required without a forced stop by
+				the user.
+			</para>
+		</tip>
+	</section>
+	<section id="broadcastreceiver_trigger">
+		<title>Send the broadcast to your application for testing</title>
+		<para>You can use the following command from the adb command line tool. The class name and
+			package names which are
+			targeted via the command line tool need to be as defined in the manifest. You should send the intent
+			you generated to
+			your specific component, for example if you send a general ACTION_BOOT_COMPLETED broadcast, this
+			will trigger a lot of
+			things in an Android system.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/trigger/adb.txt" />
+			</programlisting>
+		</para>
+
+	</section>
+
+</section>

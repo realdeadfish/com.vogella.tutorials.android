@@ -1,0 +1,2 @@
+
+mvn3 android:deploy

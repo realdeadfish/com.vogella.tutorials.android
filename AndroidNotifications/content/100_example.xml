@@ -1,0 +1,72 @@
+<section id="notificationmanager_example">
+	<title>Example: NotificationManager</title>
+	<para>
+		Create a new project called
+		<wordasword>de.vogella.android.notificationmanager</wordasword>
+		with the
+		<wordasword>activity</wordasword>
+		class called
+		<code>CreateNotificationActivity</code>
+		. This
+		<wordasword>activity</wordasword>
+		should use the
+		<filename>main.xml</filename>
+		layout file.
+
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/notification/main.xml" />
+		</programlisting>
+	</para>
+	<para>
+		Create the following
+		<filename>result.xml</filename>
+		layout file.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/notification/result.xml" />
+		</programlisting>
+	</para>
+
+	<para>
+		Create a new
+		<wordasword>activity</wordasword>
+		called
+		<wordasword>NotificationReceiverActivity</wordasword>
+		with the
+		following
+		coding. Don't forget to register the
+		<wordasword>activity</wordasword>
+		in
+		the
+		<filename>AndroidManfest.mf</filename>
+		.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/notification/NotificationReceiverActivity.java" />
+		</programlisting>
+	</para>
+
+	<para>
+		Change the
+		<code>CreateNotificationActivity</code>
+		class to the following coding.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/notification/CreateNotificationActivity.java" />
+		</programlisting>
+	</para>
+	<para> Run your application and press the button. A new
+		notification is
+		created. If you select it your second activity will be displayed.
+	</para>
+
+</section>

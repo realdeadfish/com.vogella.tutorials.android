@@ -1,0 +1,123 @@
+<section id="overview" role="wrapper">
+	<title>File based persistence</title>
+	<section id="overview_filesystem">
+		<title>Methods of local data persistence</title>
+		<para>
+			Android
+			allows to persists application data via the file system. For
+			each application the Android system creates a
+			<filename class="diretory">data/data/[application package]</filename>
+			directory.
+		</para>
+		<para>
+			Android supports the following ways of storing data in the local file
+			system:
+			<itemizedlist>
+				<listitem>
+					<para>Files - You can create and update files
+					</para>
+				</listitem>
+				<listitem>
+					<para>Preferences - Android allows you to
+						save and
+						retrieve
+						persistent
+						key-value
+						pairs of primitive data type.
+					</para>
+				</listitem>
+				<listitem>
+					<para>SQLite database - instances of
+						SQLite databases are also
+						stored on the local
+						file
+						system.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>
+
+		</para>
+		<para>
+			Files
+			are saved in the
+			<filename class="diretory">files</filename>
+			folder and
+			application
+			settings are
+			saved
+			as
+			XML files in the
+			<filename class="diretory">shared_prefs</filename>
+			folder.
+		</para>
+		<para>
+			If your application creates an
+			SQLite database
+			this
+			database is
+			saved in
+			the
+			main application directory under the
+			<filename class="diretory">databases</filename>
+			folder.
+		</para>
+		<para>The following screenshot shows a file system which contains
+			file,
+			cache files and preferences.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/file30.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Screenshot of the file system with a few files</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Only the application can write into its application directory.
+			It can create additional sub-directories in this application
+			directory.
+			For these
+			sub-directories, the application can grant read or
+			write permissions
+			for other
+			applications.
+		</para>
+
+	</section>
+	<section id="overview_externalinternal">
+		<title>Internal vs. external storage</title>
+		<para>Android has internal storage and external storage. External
+			storage is not private and may not always be available. If for
+			example the Android device is connected with a computer, the computer
+			may mount the external system via USB and that makes this external
+			storage not avaiable for Android applications.
+		</para>
+
+	</section>
+
+
+	<section id="overview_externalstorage">
+		<title>Application on external storage</title>
+		<para>
+			As of Android 8 SDK level it is possible to define that the
+			application
+			can or
+			should be placed on external storage. For this set
+			the
+			<code>android:installLocation</code>
+			to preferExternal or auto.
+		</para>
+		<para>In this case certain application components may be stored on an
+			encrypted external mount point. Database and other private data will
+			still be stored in the internal storage system.
+		</para>
+	</section>
+
+
+</section>
