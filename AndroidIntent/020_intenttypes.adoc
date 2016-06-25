@@ -1,109 +1,44 @@
-<section id="intenttypes" role="wrapper">
-	<title>Intents types
+== Intents types
 
-	<section id="intenttypes_classification">
-		<title>Different types of intents
+=== Different types of intents
 		
-			Android supports explicit
-			and implicit intents.
+Android supports explicit and implicit intents.
 		
+An application can define the target component directly in the intent (_explicit intent_) or ask the Android system to evaluate registered components based on the intent data(_implicit intents_).
 		
-			An application can define the target component directly in the intent
-			(
-			_explicit intent_
-			) or
-			ask the Android
-			system to evaluate registered components based on
-			the
-			intent
-			data
-			(
-			_implicit intents_
-			).
+=== Explicit Intents
+		
+Explicit intents explicitly define the component which should be called by the Android system, by using the Java class as identifier.
+		
+The following shows how to create an explicit intent and send it to the Android system.
+
+If the class specified in the intent represents an activity, the Android system starts it.
+		
+[source,java]
+----		
+include::res/snippets/explicit1.java[]
+----
+		
+Explicit intents are typically used within on application as the classes in an application are controlled by the application developer.
+		
+=== Implicit Intents
+		
+Implicit intents specify the action which should be performed and optionally data which provides content for the action.
+		
+For example, the following tells the Android system to view a webpage.
+All installed web browsers should be registered to the corresponding intent data via an intent filter.
+		
+[source,java]
+----		
+include::res/snippets/viewintent.java[]
+----
+
+If an implicit intent is sent to the Android system, it searches for all components which are registered for the specific action and the fitting data type.
+		
+If only one component is found, Android starts this component directly.
+If several components are identified by the Android system, the user will get a selection dialog and can decide which component should be used for the intent.
+		
+A component can register itself for actions. 
+See <<intentfilter>> for details.
 		
 	
-
-	<section id="intents_explicit">
-		<title>Explicit Intents
-		
-			Explicit intents
-			explicitly define the component which should be called by the
-			Android
-			system, by using the Java class as identifier.
-		
-
-		
-			The following shows how to create an
-			explicit intent
-			and send it to the Android system.
-
-			If the class specified in the
-			intent represents an activity,
-			the Android system starts it.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/explicit1.java" />
-			</programlisting>
-		
-		
-			Explicit intents
-			are typically used within on application as
-			the
-			classes in an
-			application are controlled by the application
-			developer.
-		
-	
-
-	<section id="intents_implicit">
-		<title>Implicit Intents
-		
-			Implicit intents
-			specify the
-			action which should be
-			performed and optionally
-			data which
-			provides content for the action.
-		
-		
-			For example, the following tells the Android system to view a
-			webpage.
-			All installed web browsers should be registered to the
-			corresponding intent data via an intent filter.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/viewintent.java" />
-			</programlisting>
-		
-		
-			If
-			an implicit intent is sent to the Android system, it searches
-			for all components which
-			are registered for the specific action and
-			the fitting data type.
-		
-		
-			If only one
-			component is found, Android starts this component
-			directly.
-			If several
-			components are identified by the Android system,
-			the user
-			will get a
-			selection dialog and can decide which component
-			should be
-			used for
-			the intent.
-		
-		
-			A component can register itself for actions. See
-			<xref linkend="intents_filter" />
-			for details.
-		
-	
-
-

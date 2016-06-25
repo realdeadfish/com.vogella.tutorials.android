@@ -1,206 +1,80 @@
-<section id="intentdatatransfer" role="wrapper">
-	<title>Data transfer between activities
-	<section id="intentdatatransfer_accessdata">
-		<title>Data transfer to the target component
+== Data transfer between activities
+
+=== Data transfer to the target component
 		
-			An intent
-			contains certain header data, e.g., the desired action, the
-			type, etc. Optionally an intent can also contain additional data based
-			on an instance of the
-			`Bundle`
-			class which can be retrieved from the intent via the
-			`getExtras()`
-			method.
+An intent contains certain header data, e.g., the desired action, the type, etc. 
+Optionally an intent can also contain additional data based on an instance of the `Bundle` class which can be retrieved from the intent via the `getExtras()` method.
 		
 		
-			You can also add data directly to the
-			`Bundle`
-			via the overloaded
-			`putExtra()`
-			methods of the
-			`Intent`
-			objects. Extras are key/value pairs. The key is always of type
-			`String`
-			. As
-			value you can use the primitive data types (`int`, `float`, ...) plus
-			objects of type
-			`String`,
-			`Bundle`, `Parceable` and `Serializable`.
+You can also add data directly to the `Bundle` via the overloaded `putExtra()` methods of the `Intent` objects. 
+Extras are key/value pairs. The key is always of type `String`. 
+As value you can use the primitive data types (`int`, `float`, ...) plus objects of type `String`, `Bundle`, `Parceable` and `Serializable`.
+		
+The receiving component can access this information via the `getAction()` and `getData()` methods on the `Intent` object. 
+This `Intent` object can be retrieved via the `getIntent()` method.
+		
+The component which receives the intent can use the `getIntent().getExtras()` method call to get the extra data. 
+That is demonstrated in the following code snippet.
 		
 		
-			The
-			receiving
-			component can
-			access this
-			information via the
-			`getAction()`
-			and
-			`getData()`
-			methods on the
-			`Intent`
-			object. This
-			`Intent`
-			object can be retrieved via the
-			`getIntent()`
-			method.
+[source,java]
+----	
+include::res/snippets/getSendData.java[]
+----	
+
+=== Example: Using the share intent
 		
+Lots of Android applications allow you to share some data with other people, e.g., the Facebook, G+, Gmail and Twitter application.
+You can send data to one of these components. 
+The following code snippet demonstrates the usage of such an intent within your application.
 		
-			The component which receives the
-			intent
-			can
-			use the
-			`getIntent().getExtras()`
-			method call to get the extra data. That is demonstrated in the
-			following code snippet.
+[source,java]
+----	
+include::res/snippets/send.java" />
+----
+
+=== Retrieving result data from a sub-activity
 		
+An activity can be closed via the back button on the phone. 
+In this case the `finish()` method is performed.
+If the activity was started with the `startActivity(Intent)`method call, the caller requires no result or feedback from the activity which now is closed.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/getSendData.java" />
-			</programlisting>
+If you start the activity with the `startActivityForResult()`method call, you expect feedback from the sub-activity. 
+Once the sub-activity ends, the `onActivityResult()` method on the sub-activity is called and you can perform actions based on the result.
+		
+In the `startActivityForResult()` method call you can specify a result code to determine which activity you started. 
+This result code is returned to you. 
+The started activity can also set a result code which the caller can use to determine if the activity was canceled or not.
+		
+image::startactivity10.png[`startActivity` with result]
+		
+image::startactivity20.png[`startActivity` with result]
+		
+The sub-activity uses the `finish()` method to create a new intent and to put data into it.
+It also sets a result via the `setResult()` method call.
+		
+The following example code demonstrates how to trigger an _intent_ with the `startActivityForResult()` method.
+		
+[source,java]
+----	
+include::res/snippets/result1.java[]
+----
+		
+If you use the `startActivityForResult()` method, then the started _activity_ is called a _sub-activity_.
+		
+If the sub-activity is finished, it can send data back to its caller via an _Intent_.
+This is done in the `finish()` method.
+		
+[source,java]
+----	
+include::res/snippets/finish.java[]
+----
+		
+Once the sub-activity finishes, the `onActivityResult()` method in the calling _activity_ is called.
+		
+[source,java]
+----	
+include::res/snippets/result2.java[]
+----
 		
 	
-
-	<section id="overview_shareintent">
-		<title>Example: Using the share intent
-		
-			Lots of Android applications allow you to share some data with
-			other
-			people, e.g., the Facebook, G+, Gmail and Twitter application.
-			You can send data to one of these
-			components. The following code
-			snippet demonstrates the usage of such an intent within your
-			application.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/send.java" />
-			</programlisting>
-		
-	
-
-	<section id="usingintents_sub">
-		<title>Retrieving result data from a sub-activity
-		
-			An
-			activity
-			can be closed via the back button on the phone.
-			In this case
-			the
-			`finish()`
-			method is performed.
-			If the
-			activity
-			was started with the
-			`startActivity(Intent)`
-			method call, the caller requires no result or feedback from the
-			activity which now is closed.
-		
-		
-			If you start the activity with the
-			`startActivityForResult()`
-			method call, you expect feedback from the sub-activity. Once the
-			sub-activity
-			ends,
-			the
-			`onActivityResult()`
-			method on the sub-activity
-			is called and you can
-			perform
-			actions
-			based on
-			the
-			result.
-		
-		
-			In the
-			`startActivityForResult()`
-			method call you can specify a result code to determine
-			which activity
-			you started. This result code is returned to you. The started
-			activity can also set a result code which the caller can use to
-			determine if the activity was canceled or not.
-		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/startactivity10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>`startActivity` with result</phrase>
-				</textobject>
-			</mediaobject>
-		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/startactivity20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>`startActivity` with result</phrase>
-				</textobject>
-			</mediaobject>
-		
-		
-			The sub-activity uses the
-			`finish()`
-			method to create a new intent and to put data into it.
-			It also sets a
-			result via the
-			`setResult()`
-			method call.
-		
-		
-			The following example code demonstrates how to trigger an
-			_intent_
-			with the
-			`startActivityForResult()`
-			method.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/result1.java" />
-			</programlisting>
-		
-		
-			If you use the
-			`startActivityForResult()`
-			method, then the started
-			_activity_
-			is called a
-			_sub-activity_
-			.
-		
-		
-			If the sub-activity is finished,
-			it can send data back to its caller
-			via an _Intent_.
-			This is done in the
-			`finish()`
-			method.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/finish.java" />
-			</programlisting>
-		
-		
-			Once the sub-activity
-			finishes, the
-			`onActivityResult()`
-			method in the calling
-			_activity_
-			is called.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/result2.java" />
-			</programlisting>
-		
-	
-
-

@@ -1,98 +1,49 @@
-<section id="exercise_implicitintent" role="wrapper">
-	<title>Exercise: Using different implicit intents
-	<section id="exercise_implicitintent1">
-		<title>Target
+== Exercise: Using different implicit intents
+=== Target
 		
-			The following exercise demonstrates the usage of implicit
-			intents
-			to trigger
-			activities
-			in your Android system.
+The following exercise demonstrates the usage of implicit intents to trigger activities in your Android system.
+
+=== Create project
 		
+Create a new Android application called _de.vogella.android.intent.implicit_ with the activity called `CallIntentsActivity`.
+		
+In this example you use a `Spinner` view to select which intentis triggered. 
+For the content of the `Spinner` you define static values.
+		
+Create the following _intents.xml_ file in the _res/values_ folder.
+		
+[source,xml]
+----
+include::res/implicit/intents.xml[]
+----
+		
+Change the layout file of the activity to the following.
+		
+[source,xml]
+----
+include::res/implicit/main.xml[]
+----
+		
+To be able to use certain intents, you need to register for the required permission in your _AndroidManifest.xml_ file.
+Ensure that your _AndroidManifest.xml_ contains the permissions from the following listing.
+		
+[source,xml]
+----
+include::res/implicit/AndroidManifest.xml[]
+----
+		
+Change your activity class to the following code.
+		
+[source,java]
+----
+include::res/implicit/CallIntentsActivity.java[]
+----
+		
+=== Validating
+		
+If you start your application, you see a list of buttons and if you press one of the buttons, your defined activities are started.
+		
+NOTE: Note that you didn't specify any receiving application, only the action that should be done. 
+This allows you to define loosely coupled tasks which use components of different applications.
+
 	
-	<section id="exercise_implicitintent2">
-		<title>Create project
-		
-			Create a new Android application called
-			_de.vogella.android.intent.implicit_
-			with the activity
-			called
-			`CallIntentsActivity`
-			.
-		
-		
-			In this example you use a
-			`Spinner`
-			view
-			to select which intent
-			is triggered. For the content of the
-			`Spinner`
-			you define static values.
-		
-		
-			Create the following
-			_intents.xml_
-			file in the
-			_res/values_
-			folder.
-		
-
-		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/implicit/intents.xml" />
-			</programlisting>
-		
-
-		
-			Change the layout file of the activity
-			to the following.
-		
-		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/implicit/main.xml" />
-			</programlisting>
-		
-		
-			To be able to use certain intents, you need to register for the
-			required permission in your
-			_AndroidManifest.xml_
-			file.
-			Ensure that your
-			_AndroidManifest.xml_
-			contains the permissions from the following listing.
-		
-
-		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/implicit/AndroidManifest.xml" />
-			</programlisting>
-		
-		
-			Change your activity class to the following code.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/implicit/CallIntentsActivity.java" />
-			</programlisting>
-		
-	
-	<section id="exercise_implicitintent3">
-		<title>Validating
-		
-			If you start your application, you see a list of buttons
-			and if
-			you press one of the buttons, your defined activities are started.
-		
-		<note>
-			
-				Note that you didn't specify any receiving application, only the
-				action that should be done. This allows you to define loosely coupled
-				tasks which use components of different applications.
-			
-		</note>
-	
-
