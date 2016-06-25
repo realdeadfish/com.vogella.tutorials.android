@@ -20,7 +20,6 @@ include::026_persistence.adoc[]
 include::028_headlessfragments.adoc[]
 include::062_fragments_tutorialpart1.adoc[]
 include::063_fragments_tutorialpart2.adoc[]
-include::820_tutorial_dynamic_fragments.adoc[]
 
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]

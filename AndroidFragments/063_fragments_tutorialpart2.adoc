@@ -2,8 +2,8 @@
 
 === Target of this exercise
 
-The _RssfeedActivity_ should use a special layout file in portrait mode.
-In this exercise you define the corresponding layout files.
+The _RssfeedActivity_ should show two fragments (two panes) if started in landscape mode.
+In this exercise you adjust your application to support this.
 
 === Create activity layout for portrait mode
 		
@@ -14,56 +14,26 @@ Create the following _activity_rssfeed.xml_ layout file based on the `port` reso
 include::res/fragments/activity_rssfeed2.xml[]
 ----
 
-		
-Also create a new layout file called _activity_detail.xml_. 
-This layout is be used by an activity which shows the detailed fragment in portrait mode.
-Please note that we could have created this file also in the _res/layout_ folder, but it is only used in portrait mode hence we place it into
-this folder.
-		
-[source,xml]
-----
-include::res/fragments/activity_detail.xml[]
-----	
-	
 === Define a boolean flag dependent of the resource selector
 
 Create a file in your _res/values_ folder called _config.xml_ with the following setting.
-
 		
 [source,xml]
 ----
 include::res/mode/config.xml[]
 ----	
 	
-		
 Create the same file in your _res/values-land_ folder with a different value.
 
 [source,xml]
 ----
-include::res/fragments/mode/config2.xml[]
+include::res/mode/config2.xml[]
 ----
 
-=== Create class for new activity
-		
-Create a new activity called `DetailActivity` with the following class.
-
-[source,java]
-----
-include::res/fragments/DetailActivity.java[]
-----	
-		
-=== Register new class as activity via the manifest
-		
-Ensure that the activity is registered in the _AndroidManifest.xml_ file.
-
-[source,xml]
-----
-include::res/fragments/AndroidManifest.xml[]
-----
-		
 === Adjust the RssfeedActivity activity
 		
-Adjust the `RssfeedActivity` class to display the `DetailActivity` in case the other fragment is not present in the layout.
+Adjust the `RssfeedActivity` class to replace the existing fragment in case you are in single pane mode.
+
 
 [source,java]
 ----
@@ -76,7 +46,7 @@ Test your application.
 If you run the application in portrait mode, you should see only one fragment. 
 In horizontal mode you see both fragments.
 		
-Use the kbd:[Ctrl+F11] shortcut to switch the orientation. 
+Switch the orientation of the emulator.
 Press the button in portrait as well as in horizontal mode and verify that the detail activity shows the current time.
 
 image::androidfragmenttutorial10.png[Screenshot]

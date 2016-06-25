@@ -11,7 +11,6 @@ import android.widget.Button;
 public class MyListFragment extends Fragment {
 	
 	private OnItemSelectedListener listener;
-	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
