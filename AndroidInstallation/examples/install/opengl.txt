@@ -1,2 +1,0 @@
-# install OpenGL support
-sudo apt-get install libgl1-mesa-dev
