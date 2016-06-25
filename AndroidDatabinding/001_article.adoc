@@ -5,10 +5,10 @@
 :icons:
 :imagesdir: ./img
 Lars Vogel (c) 2014, 2016 vogella GmbH
-Version 0.3, 18.06.2016
+Version 0.5, 25.06.2016
 
 [abstract]
-This tutorial describes the usage of the new data binding capabilities in Android applications.
+This tutorial describes the usage of data binding in Android applications to synchronize your user interface with your application model and logic..
 
 include::010_overview.adoc[]
 include::080_layoutfiles.adoc[]

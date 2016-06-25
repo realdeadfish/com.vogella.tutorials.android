@@ -1,8 +1,5 @@
-<section id="tutorial_cameraapi">
-	<title>Tutorial: Using the camera API
-	In this tutorial you create application which allows you to make
-		a
-		photo via the front camera and to save it on the SD card.
+== Tutorial: Using the camera API
+In this tutorial you create application which allows you to make a photo via the front camera and to save it on the SD card.
 	
 	<tip>
 		If you

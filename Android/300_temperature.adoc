@@ -199,7 +199,7 @@ Switch to the _activity_main.xml_ tab and verify that the XML is correct.
 
 [source,java]
 ----
-include::res/examples/first/main.xml[]
+include::res/first/main.xml[]
 ----
 		
 
@@ -207,15 +207,20 @@ include::res/examples/first/main.xml[]
 === Create utiliy class
 
 Create the following utility class to convert from celsius to fahrenheit and vice versa.
-		
-include::res/first/ConverterUtil.java[]
 
-[[tutorialtemperature_code]]
+[source,java]
+----		
+include::res/first/ConverterUtil.java[]
+----
+
 === Change the activity code
 		
 Change the 	`MainActivity` to the following
-		
+
+[source,java]
+----
 include::res/first/MainActivity.java[]
+----
 
 === Start the application
 		
@@ -226,5 +231,5 @@ displayed and the other
 option should get
 selected.
 	
-image::res/temperature96.png[Change the text property of the radio button]
+image::temperature96.png[Change the text property of the radio button]
 		

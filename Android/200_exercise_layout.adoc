@@ -2,9 +2,7 @@
 === Target of this exercise
 		
 In this exercise you learn how to interact between your user interface widgets using data binding.
-You continue to use
-the application
-you created already in <<androidstudio_starter>>.
+You continue to use the application you created already in <<androidstudio_starter>>.
 		
 
 === Create handler for the view interaction
@@ -20,12 +18,11 @@ include::res/exercise_layoutbutton/MainActivityHandlers.java[]
 		
 Open your _app/build.gradle_ file and activate the usage of databinding. 
 Ensure you pick the correct build file, it is the one with the `application` node in it.
-		
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-		href="./examples/exercise_layoutbutton/build.gradle" />
-</programlisting>
+
+[source,java]
+----
+include::res/exercise_layoutbutton/build.gradle[]
+----
 		
 
 === Adjust layout files to use data binding
@@ -36,11 +33,10 @@ Remove all views, except the top level entry which is the layout manager.
 Afterwards prepare you layout file for the usage of data binding. 
 The result layout file should look similar to the following file.
 		
-		
-<programlisting language="xml">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-		href="./examples/exercise_layoutbutton/activity_main.xml" />
-</programlisting>
+[source,xml]
+----
+include::res/exercise_layoutbutton/activity_main.xml[]
+----
 		
 Add an `Plain Text` (EditText) and a `Button` to your layout.
 Use the text (XML) editor to change the ID of the new `EditText` field to <property>main_input<property> . 
@@ -48,21 +44,15 @@ In the XML file this looks like `@+id/main_input`.
 		
 Change the button text to _Start_ via the `android:text`
 property in your layout file.
-Assign the
-`android:onClick`
-property of your
-`Button`
-to your handler via data binding.
+Assign the `android:onClick` property of your `Button` to your handler via data binding.
 		
 
-After these changes your layout file should be similar to the
-following code.
+After these changes your layout file should be similar to the following code.
 		
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-		href="./examples/exercise_layoutbutton/solution_activity_main.xml" />
-</programlisting>
+[source,xml]
+----
+include::res/exercise_layoutbutton/solution_activity_main.xml[]
+----	
 		
 [NOTE]
 ====
@@ -70,14 +60,11 @@ You see some warning messages in the editor, e.g., because you used hard-codes s
 We demonstrates later how to get rid of these warning messages.
 ====
 
-		
+[source,java]
+----
+include::res/exercise_layoutbutton/solution_MainActivity.java[]
+----	
 Adjust your `MainActivity` code to activate data binding.
-		
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-		href="./examples/exercise_layoutbutton/solution_MainActivity.java" />
-</programlisting>
 		
 
 === Validate your application
