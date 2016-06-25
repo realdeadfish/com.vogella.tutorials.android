@@ -30,3 +30,32 @@ This can be implemented like the following.
 include::res/communication/MyListFragment.java[]
 ----
 
+=== Passing parameters to fragments
+
+An activity can pass a bundle to the fragment.
+
+[source,java]
+----
+detailFragment = new DetailFragment();
+
+// configure link
+Bundle bundle = new Bundle();
+bundle.putString("link", link);
+detailFragment.setArguments(bundle);
+----
+
+The fragment gets this in its `onActivityCreated` method.
+
+[source,java]
+----
+@Override
+public void onActivityCreated(Bundle savedInstanceState) {
+	super.onActivityCreated(savedInstanceState);
+	Bundle bundle = getArguments();
+	if (bundle != null) {
+		setText(bundle.getString("link"));
+	}
+}
+----
+
+

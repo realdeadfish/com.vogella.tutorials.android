@@ -5,7 +5,7 @@
 To use your new fragment, you can statically add it to an XML layout. 
 In this case the `android:name` attribute points to the corresponding class as demonstrated by the following code snippet.
 		
-source,java]
+[source,xml]
 ----
 include::res/fragments/activity_rssfeed.xml[]
 ----
@@ -22,7 +22,7 @@ The modifications must be performed in a transaction via the `FragmentTransactio
 		
 To modify the fragments in an activity you typically define a `FrameLayout` placeholder in the layout file.
 		
-source,java]
+[source,xml]
 ----
 include::res/fragmentsdynamic/activity_rssfeed.xml[]
 ----
@@ -30,7 +30,7 @@ include::res/fragmentsdynamic/activity_rssfeed.xml[]
 		
 You use the `FragmentManager` to replace the container with a fragment.
 		
-source,java]
+[source,java]
 ----
 include::res/fragmentsdynamic/replace.java[]
 ----
@@ -46,7 +46,7 @@ This adds the action to the history stack of the _activity_ and allows the user 
 To check if a fragment is part of your layout you can use the `FragmentManager` class. 
 The `isInLayout()` method works on if the fragment as added to the activity via its layout.
 		
-source,java]
+[source,java]
 ----
 include::res/fragments/check.java[]
 ----
@@ -63,7 +63,7 @@ The key / value pair defaults to false and a additional configuration file set t
 		
 For example this is a possible default _config.xml_ configuration file.
 		
-source,java]
+[source,xml]
 ----
 include::res/mode/config.xml[]
 ----
@@ -71,14 +71,14 @@ include::res/mode/config.xml[]
 		
 In the _values-land_ folder you would place a _config.xml_ configuration file with a different value.
 		
-source,java]
+[source,xml]
 ----
 include::res/mode/config2.xml[]
 ----
 
 In your code you can access the state via the following snippet.
 		
-source,java]
+[source,java]
 ----
 include::res/mode/Access.java[]
 ----

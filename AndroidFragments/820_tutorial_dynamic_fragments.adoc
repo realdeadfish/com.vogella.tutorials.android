@@ -17,7 +17,6 @@ In this layout the second container is defined to be unused (gone).
 include::res/fragmentsdynamic/activity_rssfeed.xml[]
 ----
 		
-
 		
 The following listing is the entry for the _res/layout-land_ folder.
 
