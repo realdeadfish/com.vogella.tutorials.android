@@ -128,7 +128,7 @@
 		Create the following Activity which should use a layout with one
 		`Button`
 		included. This Button should use the
-		<property>onClick</property>
+		`onClick`
 		property to point to the
 		`onClick`
 		method.

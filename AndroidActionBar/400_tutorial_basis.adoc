@@ -1,0 +1,11 @@
+== Exercise: ActionBar
+
+=== Project
+		
+This chapter will demonstrate how to create actions in the action bar and react to the selection of the user.
+		
+It is based on the fragment tutorial which can be found under
+https:///www.vogella.com/tutorials/AndroidFragments/article.html[Android fragments tutorial]. 
+If you have already created this project, you can continue to reuse it. 
+If not, the following describes the required setup to continue with this tutorial.
+	

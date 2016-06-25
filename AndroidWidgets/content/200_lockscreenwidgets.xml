@@ -52,12 +52,12 @@
 	
 	
 		Similarly to how you used the
-		<property>android:initialLayout</property>
+		`android:initialLayout`
 		attribute for defining
 		an
 		initial layout for home screen widgets, you
 		can use a new
-		<property>android:initialKeyguardLayout</property>
+		`android:initialKeyguardLayout`
 		attribute for the lock screen in the
 		`AppWidgetProviderInfo`
 		XML file. This layout will appear immediately

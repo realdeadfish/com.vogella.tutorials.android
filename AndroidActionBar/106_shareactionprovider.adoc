@@ -1,0 +1,27 @@
+== Action provider
+=== What is an action provider?
+		
+An _action provider_ defines rich menu interaction in a single component.
+It can generate action views, which are used in the action bar, dynamically populate sub-menus of an action and handle default action invocations.
+		
+The base class for an action provider is the `ActionProvider` class.
+		
+Currently the Android platform provides two action providers: the `MediaRouteActionProvider` and the `ShareActionProvider`.
+		
+=== Example: usage of the ShareActionProvider
+		
+The following demonstrates the usage of the `ShareActionProvider`.
+This action provider allows you to grab selected content from applications which have registered the `Intent.ACTION_SEND` intent.
+		
+To use `ShareActionProvider`, you have to define a special menu entry for it and assign an intent which contains the sharing data to it.
+		
+[source,xml]
+----
+include::res/shareactionprovider/mymenu.xml[]
+----
+
+[source,java]
+----
+include::res/shareactionprovider/onoptions.java[]
+----
+	

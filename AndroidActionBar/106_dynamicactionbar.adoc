@@ -1,0 +1,56 @@
+== Making the action bar dynamic
+=== Custom views in the action bar
+		
+You can also add a custom view to the action bar, for example, a button or a text field.
+		
+For this you use the `setCustomView` method of the `ActionView` class. 
+You also have to enable the display of custom views via the `setDisplayOptions()` method by passing in the `ActionBar.DISPLAY_SHOW_CUSTOM` flag.
+		
+For example, you can define a layout file which contains a `EditText` element.
+
+[source,xml]
+----
+include::res/actionbar/actionbar_view.xml[]
+----		
+
+This layout can be assigned in an activity to the action bar via the following code. 
+The example code also attaches a listener to the custom view.
+		
+[source,java]
+----
+include::res/actionbar/custom.java[]
+----
+
+=== Action view
+		
+An _action view _ is a widget that appears in the _action bar_ as a substitute for an action item's button.
+You can, for example, use this feature to replace an _action item_ with a `ProgressBar` view. 
+An _action view_ for an action can be defined via the `android:actionLayout` or `android:actionViewClass` attribute to specify either a layout resource or widget class to use.
+		
+This replacement is depicted in the following screenshots.
+		
+image::actionview10.png[Before activating the ActionView]
+
+image::actionview20.png[ActionViews running]
+		
+The following activity replaces the icon at runtime with an _action view_ which contains a `ProgressBar` view.
+		
+[source,java]
+----
+include::res/actionview/MainActivity.java[]
+----
+		
+The following code shows the layout used for the _action view_.
+		
+[source,xml]
+----
+include::res/actionview/progressbar.xml[]
+----
+		
+The following code shows the XML files for the menu.
+		
+[source,xml]
+----
+include::res/actionview/activity_main.xml[]
+----
+

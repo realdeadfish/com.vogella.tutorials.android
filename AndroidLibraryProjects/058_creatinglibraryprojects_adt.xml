@@ -42,7 +42,7 @@
 			application. If you want to automatically add all components
 			from your
 			library project to your application, add the
-			<property>manifestmerger.enabled=true</property>
+			`manifestmerger.enabled=true`
 			to your
 			<filename>project.properties</filename>
 			file of your

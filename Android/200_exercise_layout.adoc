@@ -39,7 +39,7 @@ include::res/exercise_layoutbutton/activity_main.xml[]
 ----
 		
 Add an `Plain Text` (EditText) and a `Button` to your layout.
-Use the text (XML) editor to change the ID of the new `EditText` field to <property>main_input<property> . 
+Use the text (XML) editor to change the ID of the new `EditText` field to `main_input` . 
 In the XML file this looks like `@+id/main_input`.
 		
 Change the button text to _Start_ via the `android:text`

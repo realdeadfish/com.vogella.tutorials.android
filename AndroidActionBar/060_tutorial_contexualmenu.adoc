@@ -1,0 +1,38 @@
+== Exercise: Using the contextual action mode
+=== Target
+		
+In this exercise you add a contextual action mode to one of your existing applications.
+		
+=== Create menu resource in the res/menu folder
+		
+For this, create a new menu XML resource with the _actionmode.xml_ file name. 
+See <xref linkend="androidstudio_createmenu" /> for details.
+		
+[source,xml]
+----
+include::res/social/contextual.xml[]
+----
+		
+=== Adjust your coding
+
+Extend your fragment interface.
+		
+[source,java]
+----
+include::res/social/MyListFragment.java[]
+----
+		
+Change your activity to implement this new method and also the `ActionMode.Callback` callback as demonstrated in the following example code.
+
+[source,java]
+----
+include::res/social/OverviewActivity3.java[]
+----
+		
+In your adapter implement a `LongClickListener` which triggers the contextual action mode.
+		
+[source,java]
+----
+include::res/social/RssItemAdapter.java[]
+----
+		

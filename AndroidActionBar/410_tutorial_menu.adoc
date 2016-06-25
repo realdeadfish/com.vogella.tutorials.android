@@ -1,0 +1,45 @@
+== Exercise: Add a toolbar to your application
+=== Add a refresh icon
+		
+Continue to use the _RSS Reader_ project. 
+Create a new icon called _ic_refresh_. 
+
+=== Add a menu XML resource
+		
+Create a new XML resource for your menu called _mainmenu.xml_. 
+		
+Add two entries so that the resulting XML file, similar to the following listing. You may have to type these entries, as the time of this writing Android Studio offers no code completion of menus.
+		
+[source,xml]
+----
+include::res/social/mainmenu.xml[]
+----
+	
+=== Add a toolbar view to your activity layout
+		
+Change the layout files of your `RssfeedActivity` activity to also contain a toolbar entry.
+		
+[source,xml]
+----
+include::res/rssfeed/activity_main.xml[]
+----		
+		
+Change your `RssfeedActivity` class to the following code, to configure the toolbar view.
+		
+[source,xml]
+----
+include::res/social/OverviewActivity.java[]
+----		
+
+NOTE: Ensure to add the toolbar entry to both layout files for the `RssfeedActivity` activity.
+
+=== Run the application and test the toolbar
+		
+Run your application and validate that you can select both of your actions. 
+Ensure that the correct info message is displayed if you select the different entries.
+		
+image::toolbar_rssfeed10.png[Social App running]
+		
+If your device or emulator has an _Option_ menu button, you will not see the overflow menu. 
+Press the _Option_ key to see your second action.
+		

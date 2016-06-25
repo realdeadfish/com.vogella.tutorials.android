@@ -1,0 +1,65 @@
+== Using the navigation drawer
+
+=== Navigation pattern with the navigation drawer
+		
+A popular navigation pattern in Android applications is the _navigation drawer_. 
+The navigation drawer is a panel that displays the navigation options on the left side of the screen. 
+It is hidden by default, but can be displayed with a swipe from the left side to the right or if the user touches the app icon. 
+The usage of the navigation drawer is currently widespread within Android application.
+		
+The usage of the navigation drawer in the Gmail application is depicted in the following screenshot.
+image::navigation_drawer10.png[Navigation Drawer in Gmail]
+		
+The navigation drawer is part of the support library v4. 
+To use this navigation pattern, you create a layout with the `android.support.v4.widget.DrawerLayout` layout manager. 
+This layout manager must contain only two child views. 
+The first is the element for the main content and the second one the container for the drawer menu. 
+The drawer menu is typically implemented with a `ListView` widget. 
+Such a layout is demonstrated by the following snippet.
+		
+[source,xml]
+----
+include::res/drawer/activity_main.xml[]
+----
+		
+You can fill the `ListView` in your activity code and register a listener via the `ListView.OnItemClickListern` method on the list item. 
+In this listener you can perform the navigation action. 
+For example, you start a new activity or replace a fragment in your layout.
+		
+=== Example: Using the navigation drawer
+		
+The following example demonstrates the usage of the navigation drawer. 
+If you want to follow this example, create a new Android project and ensure that the _support-v4_ support library is added to it as dependency.
+		
+Create a layout file called _fragment_layout_ based on the following listing.
+		
+[source,xml]
+----
+include::res/drawer/fragment_layout.xml[]
+----		
+		
+Afterwards, create the `OpertingSystemFragment` class for the fragment.
+		
+[source,java]
+----
+include::res/drawer/OpertingSystemFragment.java[]
+----
+		
+Now add a few strings and a string array to your _values/strings.xml_ file.
+
+[source,xml]
+----
+include::res/drawer/strings.xml[]
+----		
+
+Finally create the activity as follows.
+		
+[source,java]
+----
+include::res/drawer/MainActivity.java[]
+----		
+		
+This above code assumes that you have an `R.drawable.ic_drawer` icon defined in your _drawables_ folder.
+		
+Run the application and test your navigation drawer.
+		
