@@ -30,7 +30,7 @@ The following code snippet demonstrates the usage of such an intent within your 
 		
 [source,java]
 ----	
-include::res/snippets/send.java" />
+include::res/snippets/send.java[]
 ----
 
 === Retrieving result data from a sub-activity
