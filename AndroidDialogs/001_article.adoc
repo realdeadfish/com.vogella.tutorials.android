@@ -1,0 +1,23 @@
+= Showing dialogs in Android with fragments - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 1.1, 25.06.2016
+:docinfo:
+
+[abstract]
+Using dialogs in Android programming This tutorial describes how to use dialogs in Android applications. 
+It is based on Android Studio  and Android 5.0.
+
+++++
+include::../header.html[]
+++++
+				
+include::010_overview.adoc[]
+include::020_tutorial_alertdialog.adoc[]
+include::008_resourceslocal.adoc[]	
+include::../copyright.adoc[]
+

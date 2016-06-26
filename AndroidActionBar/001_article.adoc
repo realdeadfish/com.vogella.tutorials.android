@@ -6,10 +6,15 @@
 :imagesdir: ./img
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 13, 25.06.2016
+:docinfo:
 
 [abstract]
 Using the toolbar in Android applications. This tutorial describes how to use the toolbar widget in your Android application.
 It is based on Android 6.0.
+
+++++
+include::../header.html[]
+++++
 				
 include::010_overview.adoc[]
 include::020_usingactionbar.adoc[]

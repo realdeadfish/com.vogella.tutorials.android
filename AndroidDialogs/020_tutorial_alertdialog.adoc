@@ -1,0 +1,44 @@
+== Exercise: Using the DialogFragment class
+=== Target
+		
+The following demonstrates the usage of the `DialogFragment` dialog in an activity with an existing dialog and with a custom layout for the dialog.
+		
+=== Create project and layout files
+
+Create a new Android project with the `com.android.vogella.com.dialogfragmentexample` package.
+		
+Ensure that the layout file of your activity contains two buttons pointing both to `onClick` method in their `android:onClick` property.
+		
+Create the following layout file, called `fragment_username.xml`.
+		
+[source,xml]
+----
+include::res/dialog/fragment_username.xml[]
+----
+		
+=== Create fragments and adjust activity
+
+Create the following two fragment classes.
+
+[source,java]
+----
+include::res/dialog/MyAlertDialogFragment.java[]
+----
+		
+[source,java]
+----
+include::res/dialog/MyDialogFragment.java[]
+----
+		
+Change the code of your activity to the following listing.
+		
+[source,java]
+----
+include::res/dialog/MainActivity.java[]
+----
+	
+=== Test dialog usage
+
+If you run your application and click the corresponding button, your dialog should get displayed.
+		
+	
