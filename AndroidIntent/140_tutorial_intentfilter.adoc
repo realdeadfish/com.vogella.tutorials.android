@@ -1,4 +1,4 @@
-== Exercise: Register an activity as Browser
+== Exercise: Register an activity as browser
 === Target
 		
 In the following exercise you register an activity as browser. 

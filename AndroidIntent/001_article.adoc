@@ -9,7 +9,6 @@ Version 0.3, 18.06.2016
 
 [abstract] 
 Using Intents in Android. This tutorials describes the usage of intents to communicate between Android components.
-It is based on Eclipse 4.4, Java 1.6 and Android 4.4.
 
 include::010_intents.adoc[]
 include::020_intenttypes.adoc[]
@@ -18,6 +17,7 @@ include::050_intentfilter.adoc[]
 include::060_eventtrigger.adoc[]
 include::080_finditent.adoc[]		
 include::100_tutorial_explicitintent.adoc[]
+include::132_tutorial_shareintent.adoc[]
 include::140_tutorial_intentfilter.adoc[]
 include::150_tutorial_pickimage.adoc[]
 include::160_tutorial_implicitintent.adoc[]

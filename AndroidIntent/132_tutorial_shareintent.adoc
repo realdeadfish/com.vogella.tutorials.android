@@ -1,0 +1,38 @@
+== Exercise: Using the share intent
+
+Extend the layout of your activity
+with another button.
+A click on this
+`Button`
+should allow to share the text of the
+`EditText`
+button.
+The value
+for sending data via other applications is defined via
+the
+`Intent.ACTION_SEND`
+constant.
+To share data, create a new method called
+`public void shareData(View view)`
+based on
+the following snippet
+in your activity.
+[source,java]
+----
+Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+sharingIntent.setType("text/plain");
+sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "REPLACE WITH YOUR TEXT");
+
+startActivity(sharingIntent);
+----
+
+
+Connect this method with your button via
+`android:onClick`
+property in your layout file, pointing to your new method.
+Run this application and select your button. On the
+Android emulator
+most
+likely only the SMS application has registered for the
+intent
+and is started directly.
