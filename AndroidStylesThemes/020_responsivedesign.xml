@@ -25,13 +25,13 @@
 			you are beyond
 			 a certain width on a device, as this is not very friendly for
 			the readers eyes. This is typically
-			<parameter>w1000dp</parameter>
+			`w1000dp`
 			.
 		
 		
 		
 			A way to implement margin points is to use a
-			<filename>res/values/dimens.xml</filename>
+			_res/values/dimens.xml_
 			file and define a dimension for the margins. Afterwards use resource
 			qualifiers for the same file to define different margins for larger
 			devices.

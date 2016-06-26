@@ -9,7 +9,7 @@
 		<title>Create preference file
 		
 			If you project does not have an
-			<filename>/app/res/xml</filename>
+			_/app/res/xml_
 			folder create one.
 		
 		
@@ -97,7 +97,7 @@
 
 		
 			Register this class as an activity in your
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file.
 		
 	

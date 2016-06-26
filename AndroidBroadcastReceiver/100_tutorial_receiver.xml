@@ -20,7 +20,7 @@
 			`de.vogella.android.receiver.phone`
 			. Also create an activity.
 		
-		<tip>
+		TIP:
 			
 				Remember that your receiver is only called if the user started
 				it once. This requires an activity.

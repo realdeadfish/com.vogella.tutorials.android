@@ -5,10 +5,10 @@
 		
 			To use a Java library (JAR file) inside your Android project, you can
 			simple copy the
-			<filename>JAR</filename>
+			_JAR_
 			file into the
 			folder called
-			<filename class="directory">libs</filename>
+			<filename class="directory">libs_
 			in your application. Depending on your IDE this automatically makes
 			your JAR available or your have to do an additional step.
 		
@@ -31,9 +31,9 @@
 				<listitem>
 					
 						Check that you have a new entry
-						<parameter>compile files('libs/YOURJAR.jar'</parameter>
+						`compile files('libs/YOURJAR.jar'`
 						in your
-						<filename>build.gradle</filename>
+						_build.gradle_
 						file.
 					
 				</listitem>

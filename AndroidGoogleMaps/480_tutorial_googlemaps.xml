@@ -58,7 +58,7 @@
 
 		
 			Get a valid API key for your application and enter this key in the
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file.
 		
 

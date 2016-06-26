@@ -84,7 +84,7 @@
 		<title>ListView example with ArrayAdapter
 		
 			The following listing shows a layout file called
-			<filename>activity_listviewexampleactivity.xml</filename>
+			_activity_listviewexampleactivity.xml_
 			which includes a
 			`ListView`
 			.

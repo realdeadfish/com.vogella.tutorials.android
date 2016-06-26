@@ -37,7 +37,7 @@
 		<title>Validate AndroidManifest.xml
 		
 			Validate that your
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file looks similiar to
 			the following file.
 		
@@ -87,9 +87,9 @@
 		
 		
 			Change the
-			<filename>main.xml</filename>
+			_main.xml_
 			layout file in your
-			<filename>res/layout</filename>
+			_res/layout_
 			folder to
 			the
 			following.

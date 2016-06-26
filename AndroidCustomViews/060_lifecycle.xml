@@ -62,12 +62,13 @@
 			`requestLayout()`
 			of its parent.
 		
-		<tip>
+		TIP:
 			This recursive call is the reason why you should not nestle
 				layout to deeply as the measure and layout operation might be
 				expensive if a lot of hierarchies are re-calculated.
 			
 		</tip>
+		
 		
 			The
 			`onMeasure()`

@@ -5,7 +5,7 @@
 		similar to svg files but with a limited scope. The
 		following listing
 		demonstrates its usage in the
-		<filename>vectordrawable.xml</filename>
+		_vectordrawable.xml_
 		file. Using vector drawables has the advantages that this drawables
 		automatically scale to the density of the device.
 	

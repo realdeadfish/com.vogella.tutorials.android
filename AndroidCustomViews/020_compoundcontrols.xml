@@ -29,7 +29,7 @@
 		`View`
 		connection logic
 	
-	<tip>
+	TIP:
 		
 			For performance reasons you may want to rewrite your combound
 			view to

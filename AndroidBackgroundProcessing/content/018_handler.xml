@@ -34,7 +34,7 @@
 			`Runnable`
 			class.
 		
-		<tip>
+		TIP:
 			A Handler is particular useful if you have want to post
 				multiple times data to the main thread.
 			

@@ -1,0 +1,15 @@
+== Android device configurations
+
+=== Handling different Android devices
+
+Android device comes in a variety of different configurations in the sense of size, screen pixel density, language settings, etc.
+
+To provide the correct resources and setting for these different configurations, Android support the automatic selection of resources and the definition of the size of user interface components in a relative size format (device independent pixel).
+
+=== Resource qualifiers
+
+Android allows you to use resource qualifiers to specify that certain resources should only be used for a specific device configuration (e.g., orientation, resolution, languages). 
+To provide different resource files, e.g., layouts for configurations described by a `qualifier` selector, you should create a new sub-folder in the _res_ folder using this qualifier, for example, _layout-qualifier_ for layouts.
+
+NOTE: Android selects the correct file automatically based on the current configuration.
+

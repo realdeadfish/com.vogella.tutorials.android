@@ -6,7 +6,7 @@
 			A
 			service
 			needs to be declared in the
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file
 			and the implementing class must extend the
 			`Service`
@@ -104,7 +104,7 @@
 			`onStartCommand()`
 			can be called several times.
 		
-		<tip>
+		TIP:
 			
 				What if you call this method twice in your code? Do you have to
 				worry about synchronizing the
@@ -118,6 +118,7 @@
 				threads.
 			
 		</tip>
+		
 		
 			A service is only started once, no matter how often you call the
 			`startService()`
@@ -182,7 +183,7 @@
 				</tgroup>
 			</table>
 		
-		<tip>
+		TIP:
 			
 				You can check if the service was restarted via the
 				`Intent.getFlags()`

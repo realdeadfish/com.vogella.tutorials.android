@@ -49,7 +49,7 @@
 		
 		
 			Register this class as a broadcast receiver in
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			and request authorization to vibrate the phone.
 		
 

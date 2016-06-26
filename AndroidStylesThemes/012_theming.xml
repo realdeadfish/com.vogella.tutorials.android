@@ -32,7 +32,7 @@
 
 		
 			To define a style or a theme, save an XML file in the
-			<filename>/res/values</filename>
+			_/res/values_
 			directory of
 			your project. The root node of the XML file must be <![CDATA[ <resources>]]>
 			and you use a
@@ -45,7 +45,7 @@
 
 		
 			The following
-			<filename>styles.xml</filename>
+			_styles.xml_
 			XML file is an example for a style definition.
 		
 		
@@ -60,7 +60,7 @@
 			to
 			the
 			text elements via
-			<parameter>style=”@style/text</parameter>
+			`style=”@style/text`
 			.
 		
 	
@@ -78,7 +78,7 @@
 		<title>Referring attributes in the current theme
 		
 			Android lists all standard attributes which can be styled in the
-			<filename>R.attr</filename>
+			_R.attr_
 			file. The reference for this file can be found online under the
 			following URL:
 			http://developer.android.com/reference/android/R.attr.html[R.attr]

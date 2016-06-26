@@ -47,9 +47,9 @@
         
             If you choose to download and use these icons, select a fitting for
             a refresh action and place it into the
-            <filename class="directory">/res/drawable-mdpi</filename>
+            <filename class="directory">/res/drawable-mdpi_
             folder. Make sure that the filename of your icon is
-            <filename>ic_action_refresh</filename>
+            _ic_action_refresh_
         
         <warning>
             

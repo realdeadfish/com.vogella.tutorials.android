@@ -81,7 +81,7 @@
 			</programlisting>
 		
 
-		<tip>
+		TIP:
 			Avoid using the configChanges attribute if possible. It is
 				typically better to use other means to handle configuration changes,
 				like the Android loader framework or headless retained fragments.
@@ -96,7 +96,7 @@
 		
 			It is also possible to define that an activity should only be used in
 			a specific screen orientation via the
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file. Such an example configuration is listed below.
 		
 		

@@ -11,6 +11,6 @@
 		permissions assigned. Therefore the application can not access the
 		system or any resources. Android applications can request
 		permissions
-		via the <filename>AndroidManifest.xml</filename> file.
+		via the _AndroidManifest.xml_ file.
 
 

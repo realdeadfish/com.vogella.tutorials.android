@@ -4,9 +4,9 @@
 		You can define additional attributes for your compound or custom
 		views.
 		To define additional attributes create an
-		<filename>attrs.xml</filename>
+		_attrs.xml_
 		file in your
-		<filename>res/values</filename>
+		_res/values_
 		folder. The following shows an example of attributes defined for a new
 		view called
 		`ColorOptionsView`

@@ -32,12 +32,12 @@
 		In this exercise you are using XML drawables.
 		
 			In this part you create several XML drawables in the
-			<filename>res/drawable</filename>
+			_res/drawable_
 			folder.
 		
 		
 			Create the following
-			<filename>shape.xml</filename>
+			_shape.xml_
 			file in this folder.
 
 		
@@ -50,7 +50,7 @@
 
 		
 			Also create the following
-			<filename>shape_droptarget.xml</filename>
+			_shape_droptarget.xml_
 			file.
 		
 

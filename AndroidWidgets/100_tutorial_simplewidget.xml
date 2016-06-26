@@ -40,9 +40,9 @@
 		
 		
 			Create a new file
-			<filename>myshape.xml</filename>
+			_myshape.xml_
 			in the
-			<filename class="directory">/res/drawable</filename>
+			<filename class="directory">/res/drawable_
 			folder. This file defines the
 			drawable used as background in the
 			widget.
@@ -54,9 +54,9 @@
 		
 		
 			Define the following
-			<filename>widget_layout.xml</filename>
+			_widget_layout.xml_
 			file under the
-			<filename class="directory">res/layout</filename>
+			<filename class="directory">res/layout_
 			folder.
 		
 		
@@ -66,7 +66,7 @@
 		
 		
 			Create a new resource file called
-			<filename>widget_info.xml</filename>
+			_widget_info.xml_
 			via right click on the res folder and by selecting
 			<menuchoice>
 				<guimenu>New</guimenu>
@@ -101,7 +101,7 @@
 		
 		
 			Open the
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			and register your widget similar to the following listing.
 		
 		

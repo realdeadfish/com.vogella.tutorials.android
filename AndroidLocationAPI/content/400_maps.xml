@@ -25,7 +25,7 @@
 			information that you will be using the
 			`map`
 			library to your
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file
 			The Android
 			project creation wizard in Eclipse does this
@@ -204,7 +204,7 @@
 		
 			If you are using Java7 the default output of keytool has changed. Add
 			the
-			<parameter class='option'>-v</parameter>
+			<parameter class='option'>-v`
 			to see also the MD5 fingerprint.
 		
 

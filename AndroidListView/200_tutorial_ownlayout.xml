@@ -6,10 +6,10 @@
 	
 	
 		Create the
-		<filename>rowlayout.xml</filename>
+		_rowlayout.xml_
 		layout file
 		in the
-		<filename class="directory">res/layout</filename>
+		<filename class="directory">res/layout_
 		folder of
 		the
 		`de.vogella.android.listactivity`

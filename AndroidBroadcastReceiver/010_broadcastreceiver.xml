@@ -31,7 +31,7 @@
 			A
 			receiver
 			can be registered via the
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file.
 		
 		
@@ -133,7 +133,7 @@
 			_intents_
 			.
 		
-		<tip>
+		TIP:
 			
 				This does not mean the user has to start the application again
 				after a reboot. The Android system remembers that

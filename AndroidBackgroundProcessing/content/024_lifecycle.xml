@@ -80,7 +80,7 @@
 			To use your application class
 			assign the
 			classname to the
-			<parameter>android:name</parameter>
+			`android:name`
 			attribute of your application.
 		
 

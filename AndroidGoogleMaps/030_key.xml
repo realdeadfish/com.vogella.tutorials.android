@@ -35,7 +35,7 @@
 		
 			The Eclipse debug
 			key for signing your application can be found in the
-			<filename>userhome/.android/debug.keystore</filename>
+			_userhome/.android/debug.keystore_
 			file.
 		
 		
@@ -43,7 +43,7 @@
 			`keytool`
 			command from your JDK
 			installation pointing to the
-			<filename>debug.keystore</filename>
+			_debug.keystore_
 			file.
 		
 		

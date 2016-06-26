@@ -1,0 +1,28 @@
+= Android resource selectors - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 10.8, 25.06.2016
+:docinfo:
+
+[abstract]
+Android resource selectors. This tutorial describes how to the resource selectors work in Android. 
+It describes how to support different screen sizes, languages and densities on different devices.
+
+++++
+include::../header.html[]
+++++
+				
+include::010_deviceconfigurations.adoc[]
+include::020_resource_selectors.adoc[]
+include::024_translations.adoc[]
+include::030_screensize.adoc[]
+include::040_measurementunits.adoc[]
+include::050_relativedimensionsincode.adoc[]
+include::120_fragments.adoc[]
+include::resourceslocal.adoc[]
+include::../copyright.adoc[]
+

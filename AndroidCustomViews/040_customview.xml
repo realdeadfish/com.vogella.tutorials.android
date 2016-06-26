@@ -25,7 +25,7 @@
 			`onDraw()`
 			method of this view.
 		
-		<tip>
+		TIP:
 			
 				If you define
 				own views, ensure you review the
@@ -79,7 +79,7 @@
 			`LinearLayout`
 			class.
 		
-		<tip>
+		TIP:
 			
 				To calculate the size of the child you can use the
 				`measureChildWithMargins()`
@@ -88,6 +88,7 @@
 				class.
 			
 		</tip>
+		
 		
 			It
 			is good practice to store any additional layout parameters

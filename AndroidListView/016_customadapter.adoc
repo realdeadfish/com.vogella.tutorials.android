@@ -25,7 +25,7 @@
 			class directly.
 		
 
-		<tip>
+		TIP:
 			
 				Frequently you extend
 				`ArrayAdapter`
@@ -124,7 +124,7 @@
 			assumes that you have two png files (no.png and ok.png) in
 			one of
 			your
-			<filename class="directory">res/drawable</filename>
+			<filename class="directory">res/drawable_
 			folders. The coding inflates an XML layout file,
 			finds the relevant
 			views

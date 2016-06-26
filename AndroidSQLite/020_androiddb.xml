@@ -92,7 +92,7 @@
 			Several Android functions rely on
 			this standard.
 		
-		<tip>
+		TIP:
 
 			
 				It is good practice to create a separate class per table. This class
@@ -145,11 +145,11 @@
 			The object
 			`ContentValues`
 			allows to define key/values. The
-			<parameter>key</parameter>
+			`key`
 			represents the table column
 			identifier
 			and the
-			<parameter>value</parameter>
+			`value`
 			represents the
 			content for the table
 			record

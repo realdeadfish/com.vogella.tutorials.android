@@ -25,7 +25,7 @@
 		The following example code shows how to create an
 		`Bitmap`
 		object for the
-		<filename>assets</filename>
+		_assets_
 		folder and assign it to an
 		`ImageView`
 		.
@@ -40,7 +40,7 @@
 	
 		You can also access the Drawables
 		from your
-		<filename>res/drawable</filename>
+		_res/drawable_
 		folder as
 		`Bitmap`
 		objects in your source code. The following code demonstrates that.

@@ -96,7 +96,7 @@
 			To run this example assign the
 			_uses-permission_
 			to your
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			for "android.permission.INTERNET".
 		
 	

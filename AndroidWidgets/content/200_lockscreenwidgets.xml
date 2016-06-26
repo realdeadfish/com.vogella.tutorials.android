@@ -6,10 +6,10 @@
 		to the
 		lock screen of an Android device. To enable your widget for the look
 		screen you need to add
-		<parameter>keyguard</parameter>
+		`keyguard`
 		category in
 		the
-		<parameter>android:widgetCategory</parameter>
+		`android:widgetCategory`
 		attribute in the
 		`AppWidgetProviderInfo`
 		XML

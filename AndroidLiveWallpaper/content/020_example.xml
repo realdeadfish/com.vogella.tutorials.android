@@ -10,9 +10,9 @@
 	
 	
 		Create the
-		<filename>/res/xml</filename>
+		_/res/xml_
 		folder and create the
-		<filename>mywallpaper.xml</filename>
+		_mywallpaper.xml_
 		file.
 	
 
@@ -39,7 +39,7 @@
 		will be linked
 		to
 		from the
-		<filename>AndroidManifest.xml</filename>
+		_AndroidManifest.xml_
 		. You could also
 		include the "android:thumbnail attribute" which would
 		point to a
@@ -50,7 +50,7 @@
 
 	
 		Change your
-		<filename>AndroidManifest.xml</filename>
+		_AndroidManifest.xml_
 		to the following to define
 		your
 		`MyWallpaperService`
@@ -79,11 +79,11 @@
 		Create a new
 		_activity_
 		. Create the
-		<filename>prefs.xml</filename>
+		_prefs.xml_
 		preference
 		file
 		in the
-		<filename>res/xml</filename>
+		_res/xml_
 		folder.
 	
 	

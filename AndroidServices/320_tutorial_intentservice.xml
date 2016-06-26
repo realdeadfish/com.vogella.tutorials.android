@@ -31,12 +31,12 @@
 	
 	
 		Add this class to the
-		<filename>AndroidManifest.xml</filename>
+		_AndroidManifest.xml_
 		file. Also add the permission to
 		write to external storage and to
 		access
 		the Internet. The resulting
-		<filename>AndroidManifest.xml</filename>
+		_AndroidManifest.xml_
 		file should look similar to the following listing.
 	
 	

@@ -347,7 +347,7 @@
 			Create the
 			"todo_row.xml" layout file
 			in the folder
-			<filename class="directory">res/layout</filename>.
+			<filename class="directory">res/layout_.
 		
 		
 			<programlisting>

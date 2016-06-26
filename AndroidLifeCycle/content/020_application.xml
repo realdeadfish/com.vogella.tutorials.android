@@ -4,7 +4,7 @@
 		The application object is created whenever one of your Android
 		components are started. It is started in a new process with a unique
 		ID under a unique user. Even if you do not specify one in your
-		<filename>AndroidManifest.xml</filename>
+		_AndroidManifest.xml_
 		file, the Android system creates a default object for you.
 		This object
 		provides the following main lifecycle methods:

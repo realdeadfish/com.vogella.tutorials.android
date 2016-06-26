@@ -5,7 +5,7 @@
 		called
 		_Android ARchive(AAR)_
 		. The
-		<filename>.aar</filename>
+		_.aar_
 		bundle is the binary distribution of an Android Library
 		Project.
 	
@@ -21,7 +21,7 @@
 		in the build
 		process of an Android application similar to
 		a
-		<filename>JAR</filename>
+		_JAR_
 		file
 	
 	<warning>
@@ -35,7 +35,7 @@
 		
 	</warning>
 
-	<tip>
+	TIP:
 		
 			It is still possible to use AAR files with Eclipse. You can either
 			convert them to

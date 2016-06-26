@@ -20,8 +20,8 @@
 	
 	
 		The following examples demonstrate that. It assumes that you
-		have a menu XML file defined called <filename>rowselection.xml</filename> and that this
-		menu contains one entry with the <parameter>@+id/menuitem1_show</parameter> ID.
+		have a menu XML file defined called _rowselection.xml_ and that this
+		menu contains one entry with the `@+id/menuitem1_show` ID.
 	
 
 	

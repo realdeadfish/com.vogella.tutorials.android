@@ -37,7 +37,7 @@
 				parse="text" href="./examples/autostart/start.java" />
 		</programlisting>
 	
-	<tip>
+	TIP:
 		
 			If your application is installed on the SD card, then it is not
 			available after the

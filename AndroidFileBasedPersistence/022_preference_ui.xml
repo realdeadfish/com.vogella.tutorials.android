@@ -23,7 +23,7 @@
 				<guisubmenu>Android XML File</guisubmenu>
 			</menuchoice>
 			and select the
-			<parameter>Preference</parameter>
+			`Preference`
 			as
 			<guilabel>Resource Type</guilabel>
 			.

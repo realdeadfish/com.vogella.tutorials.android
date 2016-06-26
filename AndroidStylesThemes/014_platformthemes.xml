@@ -57,11 +57,11 @@
 
 		
 			You can also style the status bar with the
-			<parameter>android:statusBarColor</parameter>
+			`android:statusBarColor`
 			attribute. By default,
-			<parameter>android:statusBarColor</parameter>
+			`android:statusBarColor`
 			inherits the value of
-			<parameter>android:colorPrimaryDark</parameter>
+			`android:colorPrimaryDark`
 			.
 		
 	
@@ -70,7 +70,7 @@
 		<title>Styling individual views and view groups
 		
 			As of Android 5.0 (API 21) you can also assign the
-			<parameter>android:theme</parameter>
+			`android:theme`
 			for a view. This allows changing the theme for this element and its
 			child elements.
 		

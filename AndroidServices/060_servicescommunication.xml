@@ -58,7 +58,7 @@
 				</textobject>
 			</mediaobject>
 		
-		<tip>
+		TIP:
 			
 				Android provides the
 				`LocalBroadcastManager`
@@ -69,8 +69,7 @@
 				are only visible within your process and is faster than using
 				standard events.
 			
-		</tip>
-		
+		 </tip>
 			This approach works for local and services running in their own
 			process.
 		
@@ -160,7 +159,7 @@
 			processes. To do so, you need to create a AIDL file which
 			looks
 			similar to a Java interface, but ends with the
-			<filename>.aidl</filename>
+			_.aidl_
 			file extension
 			and is only allowed to extend other AIDL files.
 		

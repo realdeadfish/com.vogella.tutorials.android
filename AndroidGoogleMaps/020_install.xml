@@ -29,8 +29,8 @@
 		
 		
 			The Android SDK manager downloads the file to
-			<filename>sdk/extras/google/google_play_services/libproject/google-play-services_lib
-			</filename>
+			_sdk/extras/google/google_play_services/libproject/google-play-services_lib
+			_
 			.
 		
 

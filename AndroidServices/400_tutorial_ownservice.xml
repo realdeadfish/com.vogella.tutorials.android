@@ -55,7 +55,7 @@
 	
 	
 		Register all components in your
-		<filename>AndroidManifest.xml</filename>
+		_AndroidManifest.xml_
 		file.
 	
 	

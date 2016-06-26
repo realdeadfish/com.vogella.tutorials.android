@@ -43,7 +43,7 @@
 		
 		
 			Create or adjust the following layout files. First
-			<filename>layout/activity_main.xml</filename>
+			_layout/activity_main.xml_
 			.
 		
 
@@ -56,7 +56,7 @@
 
 		
 			Afterwards create
-			<filename>layout/listrow_group.xml</filename>
+			_layout/listrow_group.xml_
 			.
 		
 
@@ -68,7 +68,7 @@
 		
 		
 			The last required layout is
-			<filename>layout/listrow_details.xml</filename>
+			_layout/listrow_details.xml_
 			.
 		
 

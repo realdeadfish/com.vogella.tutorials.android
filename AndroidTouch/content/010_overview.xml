@@ -205,7 +205,7 @@
 		
 
 
-		<tip>
+		TIP:
 			Multitouch can not be tested on the emulator. You need a real
 				Android device as input device.
 			

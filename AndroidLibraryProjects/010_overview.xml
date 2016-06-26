@@ -2,7 +2,7 @@
 	<title>Android library projects and Java libraries
 	
 		Android project can use code contained in
-		<filename>JAR</filename>
+		_JAR_
 		files (Java libraries). It is also possible to create libraries
 		modules which can be used as dependencies in Android projects.
 		These modules allow you to store source code and

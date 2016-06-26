@@ -168,10 +168,10 @@
 			in the declaration of your
 			content provider
 			in the
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file.
 		
-		<tip>
+		TIP:
 			
 				It is good practice to always set the
 				`android:exported`
@@ -205,7 +205,7 @@
 			`android:multiprocess=true`
 			attribute in your <![CDATA[<provider>]]>
 			definition in the
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file.
 			This permits an instance
 			of the provider to be created in

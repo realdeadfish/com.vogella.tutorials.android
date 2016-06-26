@@ -21,7 +21,7 @@
 		
 			Change your
 			layout file from the
-			<filename class="directory">res/layout</filename>
+			<filename class="directory">res/layout_
 			folder
 			to the following code.
 		
@@ -36,7 +36,7 @@
 		<title>Add permissions
 		
 			Add the following permissions to your application in your
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file
 			<itemizedlist>
 				<listitem>

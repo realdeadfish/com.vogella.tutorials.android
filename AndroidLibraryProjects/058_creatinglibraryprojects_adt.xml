@@ -44,7 +44,7 @@
 			library project to your application, add the
 			`manifestmerger.enabled=true`
 			to your
-			<filename>project.properties</filename>
+			_project.properties_
 			file of your
 			application project.
 		

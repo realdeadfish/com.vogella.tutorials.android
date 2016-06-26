@@ -19,7 +19,7 @@
 		The
 		_adb_
 		tools is located in the
-		<filename>[android-sdks]/platform-tools</filename>
+		_[android-sdks]/platform-tools_
 		directory. You should add this directory to your path to have direct
 		access to this command.
 	

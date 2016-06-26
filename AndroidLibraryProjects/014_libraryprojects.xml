@@ -17,7 +17,7 @@
 			are
 			compiled
 			and packaged into the
-			<filename>.apk</filename>
+			_.apk_
 			file
 			of the
 			compiled application.
@@ -49,12 +49,12 @@
 			,
 			_service_
 			, etc. via the
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file. The application
 			which uses the library must also declare all the
 			used components via
 			the
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file.
 		
 	

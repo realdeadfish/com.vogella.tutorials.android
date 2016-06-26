@@ -13,13 +13,13 @@
 		. Also add the
 		permission to use the
 		Internet to your
-		<filename>AndroidManifest.xml</filename>
+		_AndroidManifest.xml_
 		file.
 
 	
 	
 		Your
-		<filename>AndroidManifest.xml</filename>
+		_AndroidManifest.xml_
 		file should look like the following.
 	
 
@@ -31,7 +31,7 @@
 	
 	
 		Change the layout
-		<filename>main.xml</filename>
+		_main.xml_
 		to the following.
 	
 

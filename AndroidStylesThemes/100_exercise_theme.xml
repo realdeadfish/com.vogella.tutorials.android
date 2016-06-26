@@ -10,7 +10,7 @@
 		<title>Use a predefined theme
 		
 			Configure your application to use the
-			<parameter>android:Theme.Material.Light.DarkActionBar</parameter>
+			`android:Theme.Material.Light.DarkActionBar`
 			theme and test it. Afterwards pick another theme and test it again. Pick one of the existing themes which you like
 			the
 			most.
@@ -26,23 +26,23 @@
 		</note>
 		
 			Create or edit the existing
-			<filename>styles.xml</filename>
+			_styles.xml_
 			file for the Android version your are testing with. This requires defining the correct version qualifier for the
 			folder which contains the file.
 		
 		
 			Add a new color constant called
-			<parameter>my_color</parameter>
+			`my_color`
 			defining the
-			<parameter>#b0b0ff</parameter>
+			`#b0b0ff`
 			value to the file.
 		
 		
 
 			Modify or add the
-			<parameter>AppTheme</parameter>
+			`AppTheme`
 			. It should override the
-			<parameter>android:windowBackground</parameter>
+			`android:windowBackground`
 			property with your color.
 		
 		

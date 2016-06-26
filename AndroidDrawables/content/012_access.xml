@@ -5,14 +5,14 @@
 		are referred to
 		in XML
 		via
-		<parameter>@drawable/filename</parameter>
+		`@drawable/filename`
 		whereby
-		<parameter>filename</parameter>
+		`filename`
 		filename is the filename without the file extension. For example to
 		access the
-		<filename>res/drawable/hello.png</filename>
+		_res/drawable/hello.png_
 		Drawable, you would use
-		<parameter>@drawable/hello</parameter>
+		`@drawable/hello`
 		as demonstrated in the following snippet.
 	
 	

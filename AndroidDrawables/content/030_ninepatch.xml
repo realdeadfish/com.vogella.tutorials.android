@@ -35,9 +35,9 @@
 	
 	
 		The ADT supplies the
-		<parameter>draw9patch</parameter>
+		`draw9patch`
 		program in the
-		<filename>android-sdk/tools</filename>
+		_android-sdk/tools_
 		installation folder, which makes it easy to
 		create
 		_9 Patch drawables_

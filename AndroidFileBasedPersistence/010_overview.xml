@@ -6,7 +6,7 @@
 			Android
 			allows to persists application data via the file system. For
 			each application the Android system creates a
-			<filename class="diretory">data/data/[application package]</filename>
+			<filename class="diretory">data/data/[application package]_
 			directory.
 		
 		
@@ -42,14 +42,14 @@
 		
 			Files
 			are saved in the
-			<filename class="diretory">files</filename>
+			<filename class="diretory">files_
 			folder and
 			application
 			settings are
 			saved
 			as
 			XML files in the
-			<filename class="diretory">shared_prefs</filename>
+			<filename class="diretory">shared_prefs_
 			folder.
 		
 		
@@ -60,7 +60,7 @@
 			saved in
 			the
 			main application directory under the
-			<filename class="diretory">databases</filename>
+			<filename class="diretory">databases_
 			folder.
 		
 		The following screenshot shows a file system which contains

@@ -58,9 +58,9 @@
 		<title>Define and use additional attributes
 		
 			Create the following attributes file called
-			<filename>attrs.xml</filename>
+			_attrs.xml_
 			in your
-			<filename>res/values</filename>
+			_res/values_
 			folder.
 		
 
@@ -88,7 +88,7 @@
 		<title>Create compound view
 		
 			Create the following layout file called
-			<filename>view_color_options.xml</filename>
+			_view_color_options.xml_
 			for your compound
 			view.
 		

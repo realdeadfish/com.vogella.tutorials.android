@@ -108,7 +108,7 @@
 			view to your first
 			activity using
 			this array. The following lists the
-			<filename>strings.xml</filename>
+			_strings.xml_
 			and the layout file used by the first activity.
 		
 

@@ -40,7 +40,7 @@
 			You can use the
 			`PackageManager`
 			class to enable or disable receivers registered in your
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file.
 		
 		

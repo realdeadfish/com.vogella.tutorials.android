@@ -81,7 +81,7 @@
 		is
 		restarted.
 	
-	<tip>
+	TIP:
 		
 			Prefer using the
 			`onRestoreInstanceState()`
@@ -89,6 +89,7 @@
 			initial setup from restoring the state.
 		
 	</tip>
+	
 	
 		If the user interacts with an activity and presses the
 		_Back_

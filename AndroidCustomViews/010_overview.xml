@@ -177,7 +177,7 @@
 					href="./examples/layout/main.xml" parse="text" />
 			</programlisting>
 		
-		<tip>
+		TIP:
 			Alternatively you can also declare
 				you name space in the layout
 				file, similar to the Android name

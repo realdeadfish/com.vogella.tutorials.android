@@ -9,7 +9,7 @@
 		
 		
 			The following
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			file demonstrates a broadcast receiver which is registered for a
 			custom action.
 		
@@ -48,7 +48,7 @@
 			prevent
 			this.
 		
-		<tip>
+		TIP:
 			
 				The receivers are called asynchronous, i.e.,
 				the

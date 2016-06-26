@@ -10,7 +10,7 @@
 		. This
 		_activity_
 		should use the
-		<filename>main.xml</filename>
+		_main.xml_
 		layout file.
 
 	
@@ -22,7 +22,7 @@
 	
 	
 		Create the following
-		<filename>result.xml</filename>
+		_result.xml_
 		layout file.
 	
 	
@@ -43,7 +43,7 @@
 		_activity_
 		in
 		the
-		<filename>AndroidManfest.mf</filename>
+		_AndroidManfest.mf_
 		.
 	
 	

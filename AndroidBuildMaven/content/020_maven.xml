@@ -19,7 +19,7 @@
 	
 	
 		You only have to install Maven, write a correct
-		<filename>pom.xml</filename>
+		_pom.xml_
 		file and issue
 		the commands to Maven to build, install and run your
 		application.
@@ -35,9 +35,9 @@
 
 	
 		This will create the application and places the
-		<filename>.apk</filename>
+		_.apk_
 		file in the
-		<filename class="directory">target</filename>
+		<filename class="directory">target_
 		folder.
 	
 

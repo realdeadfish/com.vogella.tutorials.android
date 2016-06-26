@@ -116,7 +116,7 @@
 	<section id="databasetutorial_ui">
 		<title>User Interface
 		
-			Change your <filename>main.xml</filename> layout file  in the <filename class="directory">res/layout</filename> folder to the
+			Change your _main.xml_ layout file  in the <filename class="directory">res/layout_ folder to the
 			following. This layout has two buttons for adding and deleting
 			comments
 			and a

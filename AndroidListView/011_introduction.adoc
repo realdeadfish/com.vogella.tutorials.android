@@ -91,7 +91,7 @@
 			`ListView`
 			object.
 		
-		<tip>
+		TIP:
 			
 				Adapters are not only used by `ListView`, but also by other views which
 				extend `AdapterView` as, for example,

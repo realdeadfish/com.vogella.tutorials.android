@@ -1,7 +1,7 @@
 == Tutorial: Using the camera API
 In this tutorial you create application which allows you to make a photo via the front camera and to save it on the SD card.
 	
-	<tip>
+	TIP:
 		If you
 			using
 			the Android emulator ensure that you configured the
@@ -11,6 +11,7 @@ In this tutorial you create application which allows you to make a photo via the
 			Android virtual device.
 		
 	</tip>
+	
 	
 		Create a new Android project called
 		_de.vogella.camera.api_
@@ -26,7 +27,7 @@ In this tutorial you create application which allows you to make a photo via the
 		permission to access your camera and the
 		`android.permission.WRITE_EXTERNAL_STORAGE`
 		to be able to write to the SD card to your
-		<filename>AndroidManifest.xml</filename>
+		_AndroidManifest.xml_
 		file.
 	
 
@@ -39,9 +40,9 @@ In this tutorial you create application which allows you to make a photo via the
 
 	
 		Change the
-		<filename>main.xml</filename>
+		_main.xml_
 		file in the
-		<filename class="directory">res/layout</filename>
+		<filename class="directory">res/layout_
 		folder to the
 		following
 	
@@ -71,7 +72,7 @@ In this tutorial you create application which allows you to make a photo via the
 		class to the following. This class assumes that you have a button
 		in
 		your layout with the
-		<parameter>onClick</parameter>
+		`onClick`
 		property pointing to a
 		`onClick()`
 		method.

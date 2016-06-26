@@ -17,7 +17,7 @@
 		_activity_
 		called _MainActivity_.
 	
-	Creating the following <filename>AndroidManifest.xml</filename>.
+	Creating the following _AndroidManifest.xml_.
 	
 	
 		<programlisting language="xml">
@@ -32,7 +32,7 @@
 				parse="text" href="../examples/messenger/DownloadServiceMessenger.java" />
 		</programlisting>
 	
-	Change the <filename>main.xml</filename> layout to the following.
+	Change the _main.xml_ layout to the following.
 	
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"

@@ -73,7 +73,7 @@
 
 		
 			An Android application declares the required permissions in its
-			<filename>AndroidManifest.xml</filename>
+			_AndroidManifest.xml_
 			configuration file. It can also define additional permissions which
 			it can use to restrict access to certain
 			components.

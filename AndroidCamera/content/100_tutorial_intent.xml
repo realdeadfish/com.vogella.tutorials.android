@@ -15,9 +15,9 @@
 		to contain an
 		`ImageView`
 		with the
-		<parameter>result</parameter>
+		`result`
 		ID. Also add a button with the
-		<parameter>onClick</parameter>
+		`onClick`
 		property pointing to a
 		`onClick`
 		method.

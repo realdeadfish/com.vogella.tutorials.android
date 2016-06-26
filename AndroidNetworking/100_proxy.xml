@@ -28,7 +28,7 @@
 		`android.permission.WRITE_SETTINGS`
 		permission
 		in your
-		<filename>AndroidManifest.xml</filename> file.
+		_AndroidManifest.xml_ file.
 	
 	
 		<mediaobject>
@@ -39,7 +39,7 @@
 		</mediaobject>
 	
 	
-		<tip>
+		TIP:
 			It seems that DNS resolving does not work behind a proxy. See
 			http://code.google.com/p/android/issues/detail?id=2764[Bug 2764]
 		</tip>

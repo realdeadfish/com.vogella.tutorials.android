@@ -19,7 +19,7 @@
 		leads to a better overall design because you code in the activity
 		becomes simpler.
 	
-	<tip>
+	TIP:
 		
 			For testing you can allow network access in the main thread via the
 			following snippet. at the beginning of your

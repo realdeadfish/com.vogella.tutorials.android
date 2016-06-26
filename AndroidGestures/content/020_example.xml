@@ -22,7 +22,7 @@
 		, therefore we have to build a layout without the gesture view and add
 		this view via code to the GestureOverlayView.
 	
-	 Create the following layout <filename>main.xml</filename>. 
+	 Create the following layout _main.xml_. 
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
