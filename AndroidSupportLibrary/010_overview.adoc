@@ -1,0 +1,10 @@
+== Support library to support older devices
+The Android Support Library package is a set of code libraries that provide backward-compatible versions of
+Android framework APIs as well as features that are only available through the library APIs. 
+Each support library is backward-compatible to a specific Android API level.
+
+In general you find two types of support libraries. The first type provides framework functionality for older API
+releases, the second type provides new functionality for all devices. This functionality is either net yet part of the
+platform or will never be part of the platform, so that Google can continue to improve it faster than Android platform
+API.
+
