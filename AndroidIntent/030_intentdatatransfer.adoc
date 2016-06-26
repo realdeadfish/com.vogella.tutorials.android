@@ -37,9 +37,9 @@ include::res/snippets/send.java[]
 		
 An activity can be closed via the back button on the phone. 
 In this case the `finish()` method is performed.
-If the activity was started with the `startActivity(Intent)`method call, the caller requires no result or feedback from the activity which now is closed.
+If the activity was started with the `startActivity(Intent)` method call, the caller requires no result or feedback from the activity which now is closed.
 		
-If you start the activity with the `startActivityForResult()`method call, you expect feedback from the sub-activity. 
+If you start the activity with the `startActivityForResult()` method call, you expect feedback from the sub-activity. 
 Once the sub-activity ends, the `onActivityResult()` method on the sub-activity is called and you can perform actions based on the result.
 		
 In the `startActivityForResult()` method call you can specify a result code to determine which activity you started. 
