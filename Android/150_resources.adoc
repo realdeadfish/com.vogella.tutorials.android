@@ -68,7 +68,7 @@ prefixes.
 		file.
 		
 |Layouts
-|_/res/layout _
+|_/res/layout_
 |XML files with layout descriptions are used to define the user interface for activities and fragments.
 
 |Styles and themes
