@@ -1,0 +1,9 @@
+apply plugin: 'com.android.application'
+
+android {
+	
+    dataBinding {
+        enabled = true
+    }
+    
+	.... [REST AS BEFORE...]

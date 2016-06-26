@@ -3,11 +3,7 @@
 
 In this exercise you add radio buttons the layout of the application you created in
 <<androidstudio_starter>>. 
-Depending
-on the
-user selection the radio button arrangement changes from
-horizontal to
-vertical.
+Depending on the user selection the radio button arrangement changes from horizontal to vertical.
 
 === Add radio group and radio buttons to your layout
 

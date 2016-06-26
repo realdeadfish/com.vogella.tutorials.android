@@ -1,19 +1,9 @@
-== Exercise: Use layouts and view interaction
+== Exercise: Use data binding
 === Target of this exercise
 		
 In this exercise you learn how to interact between your user interface widgets using data binding.
 You continue to use the application you created already in <<androidstudio_starter>>.
 		
-
-=== Create handler for the view interaction
-
-Create the following class which is later assigned to your button.
-
-[source,java]
-----
-include::res/exercise_layoutbutton/MainActivityHandlers.java[]
-----
-
 === Activate the usage of data binding
 		
 Open your _app/build.gradle_ file and activate the usage of databinding. 
@@ -25,34 +15,34 @@ include::res/exercise_layoutbutton/build.gradle[]
 ----
 		
 
+=== Create classes for the view interaction
+
+Create the following classes.
+
+[source,java]
+----
+include::res/exercise_layoutbutton/TemperatureData.java[]
+----
+
+[source,java]
+----
+include::res/exercise_layoutbutton/MainActivityContract.java[]
+----
+
+[source,java]
+----
+include::res/exercise_layoutbutton/MainActivityPresenter.java[]
+----
+
+
 === Adjust layout files to use data binding
 		
-Open the _activity_main.xml_ layout file in the _res/layout_ folder.
-Investigate the XML layout in the visual editor as well in as the XML structure.
-Remove all views, except the top level entry which is the layout manager.
-Afterwards prepare you layout file for the usage of data binding. 
-The result layout file should look similar to the following file.
+Change the layout to the following.
 		
 [source,xml]
 ----
 include::res/exercise_layoutbutton/activity_main.xml[]
 ----
-		
-Add an `Plain Text` (EditText) and a `Button` to your layout.
-Use the text (XML) editor to change the ID of the new `EditText` field to `main_input` . 
-In the XML file this looks like `@+id/main_input`.
-		
-Change the button text to _Start_ via the `android:text`
-property in your layout file.
-Assign the `android:onClick` property of your `Button` to your handler via data binding.
-		
-
-After these changes your layout file should be similar to the following code.
-		
-[source,xml]
-----
-include::res/exercise_layoutbutton/solution_activity_main.xml[]
-----	
 		
 [NOTE]
 ====

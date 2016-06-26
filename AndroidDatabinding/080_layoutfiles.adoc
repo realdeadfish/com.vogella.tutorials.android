@@ -1,11 +1,10 @@
-== Exercise: Using data binding
+== Exercise: Simple example for using data binding
 	
 Layout files which supports data binding start with a _layout_ root tag followed by a _data_ element and a _view_ root element. 
 This view element is what your root would be in a non-binding layout file. 
 The data elements describe data which is available for binding, expressions within the layout are written in the attribute properties using the `“@{}”` syntax.
 	
 A sample file looks like the following listing.
-	
 
 [source,gradle]
 ----
