@@ -1,4 +1,4 @@
-== Example for data binding usage
+== Exercise: Using data binding
 	
 Layout files which supports data binding start with a _layout_ root tag followed by a _data_ element and a _view_ root element. 
 This view element is what your root would be in a non-binding layout file. 

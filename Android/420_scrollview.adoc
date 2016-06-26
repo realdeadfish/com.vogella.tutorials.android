@@ -13,7 +13,6 @@ Change the layout file used in the activity to the following.
 include::res/scrollview/main.xml[]
 ----
 	
-	
 Change your `ScrollViewActivity` class to the following code.
 
 [source,java]
@@ -23,5 +22,5 @@ include::res/scrollview/ScrollViewActivity.java[]
 	
 Start your application and ensure that you can scroll down to the buttons.
 	
-image::scrollview10.png[Showing the running application with the ScrollView in action]
+image::scrollview10.png[Showing the running application with the ScrollView in action, pdfwidth=40%]
 	

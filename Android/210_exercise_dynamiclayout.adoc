@@ -21,36 +21,19 @@ layout.
 
 Assign them based on the following table.
 
+.Table ID Assignment
+|===
+|ID|View
 
-<table frame='all'>
-<title>ID Assignment
-<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-<colspec colname='c1' colwidth="1*"/>
-<colspec colname='c2' colwidth="2*"/>
-<thead>
-<row>
-<entry>ID</entry>
-<entry>View</entry>
-</row>
-</thead>
-<tbody>
-<row>
-<entry>
-orientation
-</entry>
-<entry>Radio Group</entry>
-</row>
-<row>
-<entry>horizontal</entry>
-<entry>First radio button</entry>
-</row>
-<row>
-<entry>vertical</entry>
-<entry>Second radio button</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
+|orientation
+|Radio Group
+
+|horizontal
+|First radio button
+
+|vertical
+|Second radio button
+|===
 
 
 The resulting layout file

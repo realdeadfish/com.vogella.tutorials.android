@@ -12,8 +12,7 @@ ones.
 === Defining software and hardware requirements for the application
 
 
-The application can define via a <![CDATA[<uses-feature> ]]>
-declaration in the manifest file define which hardware of software
+The application can define via a <uses-feature> declaration in the manifest file define which hardware of software
 features is requires. Via the
 `android:required`
 property the application can define if such a feature is required for
@@ -27,9 +26,7 @@ necessary.
 Examples for such definitions are the presence of a certain
 hardware sensor or the availability of a camera.
 
-For an overview of the available restrictions see
-<ulink
-url="http://developer.android.com/guide/topics/manifest/uses-feature-element.html[uses-features official documentation.]
+For an overview of the available restrictions see http://developer.android.com/guide/topics/manifest/uses-feature-element.html.
 
 === Signing your application for the release
 

@@ -37,11 +37,11 @@ The `match_parent` value tells the application to maximize the widget in its par
 The `wrap_content` value tells the layout to allocate the minimum amount so that the widget is rendered correctly. 
 The effect of these elements is demonstrated in the following graphics.
 		
-image::layout_wrap_content.png[Layout with wrap_content]
+image::layout_wrap_content.png[Layout with wrap_content, pdfwidth=60%]
 		
-image::layout_match_parent.png[Layout with match_parent]
+image::layout_match_parent.png[Layout with match_parent, pdfwidth=60%]
 
-[[layoutmanager_constraintlayout]]]
+[[layoutmanager_constraintlayout]]
 === Constraint layout
 
 Constraint layout is provided by an external library.
@@ -50,7 +50,7 @@ Also the design tools support constraint layout very well.
 New projects should prefer the usage of constraint layout.
 
 
-[[layoutmanager_framelayout]]]
+[[layoutmanager_framelayout]]
 === FrameLayout
 		
 `FrameLayout` is a layout manager which draws all child elements on top of each other. 
@@ -58,7 +58,7 @@ This allows to create nice visual effects.
 		
 The following screenshot shows the Gmail application which uses `FrameLayout` to display several button on top of another layout.
 		
-image::undobutton02.png[FrameLayout]
+image::undobutton02.png[FrameLayout, pdfwidth=60%]
 		
 
 [[layoutmanager_linearlayout]]
@@ -71,11 +71,11 @@ Possible values for this attribute are `horizontal` and `vertical`.
 
 If horizontal is used, the child elements are layouted as indicated by the following picture.
 		
-image::linearlayout20.png[]
+image::linearlayout20.png[pdfwidth=60%]
 		
 Vertical would result in a layout as depicted in the following picture.
 		
-image::linearlayout10.png[]
+image::linearlayout10.png[pdfwidth=60%]
 
 `LinearLayout` can be nested to achieve more complex layouts.
 		
@@ -149,7 +149,7 @@ include::res/gridlayout/main.xml[]
 This creates a user interface similar to the following screenshot.
 
 		
-image::gridlayout.png[GridLayout Activity result]
+image::gridlayout.png[GridLayout Activity result, pdfwidth=40%]
 		
 [[gridlayout_scrollview]]
 === ScrollView
@@ -160,7 +160,7 @@ A scroll view can contain one view, e.g., a layout manager containing more views
 If the child view is too large, scroll view allows scrolling the content.
 		
 		
-image::layout_scrollview10.png[Scroll view]
+image::layout_scrollview10.png[Scroll view, pdfwidth=60%]
 		
 
 		
@@ -168,7 +168,7 @@ The following code shows an example layout file which uses a `ScrollView`.
 
 [source,xml]
 ----
-include::scrollview/simple.xml[]
+include::res/scrollview/simple.xml[]
 ----
 
 		

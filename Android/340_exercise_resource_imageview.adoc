@@ -1,18 +1,12 @@
 == Exercise: Using resources in XML files and in code
 === Add images to your application
 		
-In this exercise you continue to use the application you created in <<androidstudio_starter>>.
-		
+In this exercise you continue to use the existing application.
 Create two new images to your project called _ic_tethering_ and _ic_offline_.
-The creation process of images is described in <xref linkend="androidstudio_createimage" />.
 		
 === Add views to your project
 		
 Open your layout file and add a new `Button` and an `ImageView` to it.
-
-=== Assign image to your image view
-
-		
 Assign the ic_offline file to your `ImageView` , via your layout file as demonstrated in the following XML snippet.
 
 [source,java]

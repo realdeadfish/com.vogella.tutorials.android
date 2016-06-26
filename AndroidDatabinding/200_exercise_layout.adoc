@@ -71,8 +71,7 @@ Adjust your `MainActivity` code to activate data binding.
 You can start your application in the emulator or use the layout review in your IDE. 
 If you press the button, a small popup should be shown.
 Ensure that the text from your EditText field is displayed.
-
 		
 The result should look similar to the following screenshot.
 		
-image::exercise_firstlayout10.png[]
+image::exercise_firstlayout10.png[pdfwidth=40%]
