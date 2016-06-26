@@ -7,3 +7,4 @@ Select menu:VCS[Checkout from Version Control>Git] to clone a Git repository.
 === Cloning a repository from Github
 		
 Select menu:Checkout from Version Control>Github] to clone a Github repository.
+

@@ -304,3 +304,4 @@ Android also provides resources.
 These are called _system resources_. 
 System resources are distinguished from local resources by the `android` namespace prefix. 
 For example, `android.R.string.cancel` defines the platform string for a cancel operation.
+
