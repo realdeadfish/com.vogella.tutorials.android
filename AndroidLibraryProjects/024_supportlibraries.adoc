@@ -1,0 +1,4 @@
+== The support libraries from Google
+	
+See http://www.vogella.com/tutorials/AndroidSupportLibrary/article.html - Android support library.
+

@@ -1,0 +1,126 @@
+== Exercise: Create Android library module
+
+=== Target
+		
+Our library project will not contribute Android components but a
+data
+model and a method to get the number of
+instances. The library
+provides access to (fake) RSS data. An
+_RSS_
+document is an XML file which can be used to publish blog
+entries and
+news. The format of the XML
+file
+is specified via
+the RSS
+specification.
+		
+Our library project will not contribute Android components but a
+data model and a method to get the number of
+instances. We will
+provide RSS-feed data. You can find an introduction to RSS under:
+http://www.vogella.com/tutorials/RSSFeed/article.html#rssoverview
+
+=== Create library module
+		
+For Android Studio each library is a module. To create a new library
+module in Android Studio, select
+menu:File[New Module]
+and select
+`Android Library`.
+		
+image::library_studio08.png[Selection for creating a library project,pdfwidth=60%]
+		
+Use
+_com.example.android.rssfeedlibrary_
+as module name and
+_Rssfeed Library_
+as library name.
+		
+image::library_studio10.png[Setting the library property,pdfwidth=60%]
+		
+If prompted for a template select that no activity should be created. 
+As a result Android Studio shows another module.
+		
+image::library_studio24.png[Setting the library property,pdfwidth=60%]
+	
+=== Create the model class
+		
+Create an
+`RssItem`
+class which can store data of an RSS entry.
+		
+Generate the getters and setter, the constructor and a
+`toString()`
+method. The result should look like the following class:
+		
+[source,java]
+----
+include::res/net/RssItem.java[]
+----		
+	
+=== Create instances
+		
+Create a new class called
+`RssFeedProvider`
+with a static method to return a list of
+`RssItem`
+objects. This method does currently only return
+test data.
+		
+[source,java]
+----
+include::res/net/RssFeedProvider.java[]
+----		
+	
+=== Define dependency to the library project
+		
+		
+To use the library add it as a dependency in your project select
+menu:File[Project Structure]. 
+Select the
+_app_
+entry. Switch to the
+`Dependencies`
+tab and select
+`Module dependencies`
+via the + sign.
+		
+image::library_studio30.png[Define dependency in Android Studio - Selecting dependency,pdfwidth=60%]
+		
+image::library_studio40.png[Define dependency in Android Studio - Select module,pdfwidth=60%]
+
+image::library_studio50.png[Define dependency in Android Studio - Select module,pdfwidth=60%]
+
+=== Use library project to update detailed fragments
+		
+Use the static method of
+`RssFeedProvider`
+to get the list of
+`RssItem`
+objects and display the number in your
+`DetailFragment`
+instead of current system time.
+		
+To send the new data, change the
+`updateDetail`
+method in your
+`MyListFragment`
+class.
+		
+[source,java]
+----
+include::res/net/AccessLibrary.java[]
+----		
+	
+=== Validate implementation
+		
+Start your application and ensure that the
+`toString`
+value of the (at the moment randomly generated) list of
+RssItems is displayed in
+the
+detailed fragment.
+		
+	

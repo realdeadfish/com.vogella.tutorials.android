@@ -1,0 +1,44 @@
+== Using JAR files in Android
+
+=== How to use JAR files
+		
+To use a Java library (JAR file) inside your Android project, you can
+simple copy the
+_JAR_
+file into the
+folder called
+<filename class="directory">libs_
+in your application. Depending on your IDE this automatically makes
+your JAR available or your have to do an additional step.
+		
+=== Adding a module dependency
+		
+In Android Studio you have to
+
+* Right-click the JAR file in the libs folder and select _Add as library_.
+* Check that you have a new entry `compile files('libs/YOURJAR.jar'` in your _build.gradle_ file.		
+* To ensure that the change is picked up, perform a clean build.
+		
+=== Restrictions in using Java libraries
+		
+If you want to use libraries, these must only use API
+available in
+Android. For example, the Android libraries do
+not
+contain the
+`java.awt`
+and
+`javax.swing`
+user interface libraries, as Android has its own user interface
+toolkit.
+		
+Library
+projects cannot be
+compiled to Android applications and
+started without another project using them.
+		
+Using library projects helps you to structure your application
+code. Also more and more important Open Source libraries are
+available for Android. Understanding library projects is therefore
+important for every Android programmer.
+

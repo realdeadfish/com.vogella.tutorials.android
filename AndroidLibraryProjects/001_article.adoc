@@ -1,0 +1,29 @@
+= Creating libraries for Android applications - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 2.4, 27.06.2016
+
+[abstract]
+Android Library Projects.
+This tutorial describes how to create and use library projects in Android. 
+The tutorial is based on Android Studio.
+
+++++
+include::../header.html[]
+++++
+
+include::010_overview.adoc[]
+include::012_jarfiles.adoc[]
+include::014_libraryprojects.adoc[]
+include::016_creatinglibraryproject_studio.adoc[]
+include::020_androidarchives.adoc[]
+include::024_supportlibraries.adoc[]
+include::040_prereqs.adoc[]
+include::048_exercise_library.adoc[]
+include::058_creatinglibraryprojects_adt.adoc[]
+include::../copyright.adoc[]
+

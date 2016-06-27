@@ -1,0 +1,4 @@
+== Android library resources
+	
+http://developer.android.com/tools/support-library/setup.html - Google guide to install the support libraries
+
