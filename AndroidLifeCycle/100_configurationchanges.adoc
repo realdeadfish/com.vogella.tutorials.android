@@ -1,0 +1,88 @@
+== Controlling configuration
+
+=== Avoiding configuration change restarts
+		
+An
+activity
+is restarted if a
+_configuration change_
+occurs.
+A
+configuration change happens if an event is triggered from
+the
+actual the Android device which may be
+relevant for the
+application.
+		
+An instance of the
+`Configuration`
+class defines the current configuration of the device. Typical
+configuration is the device orientation, the locale the smallest
+width, etc.
+		
+For example
+if the user
+changes
+the
+orientation of the device
+(vertically
+or
+horizontally). Android
+assumes
+that an activity
+might want
+to use different resources for these orientations and
+restarts the
+activity.
+		
+In case an activity is restarted the programmer must ensure that
+the activity is recreated in the same state as before the restart.
+The
+Android provides several potential means for doing this.
+		
+In the emulator you can
+simulate the
+change of the
+orientation via the
+kbd:[Ctrk+F11]
+shortcut.
+		
+You can avoid a restart of your application for certain
+configuration
+changes via the
+`configChanges`
+attribute on your
+_activity_
+definition in
+your
+`AndroidManifest.xml`
+. The following setting avoids an
+_activity_
+restart incase of orientation
+changes or
+position of the
+physical
+keyboard (hidden / visible).
+		
+[source,txt]
+----
+include::res/lifecycle/configchange.txt[]
+----		
+
+TIP: Avoid using the configChanges attribute if possible. 
+It is typically better to use other means to handle configuration changes, like the Android loader framework or headless retained fragments. 
+These concept are covered later.
+
+=== Fixing the orientation for an activity
+		
+It is also possible to define that an activity should only be used in
+a specific screen orientation via the
+_AndroidManifest.xml_
+file. Such an example configuration is listed below.
+		
+		
+[source,txt]
+----
+include::res/lifecycle/fixedlayout.txt[]
+----
+

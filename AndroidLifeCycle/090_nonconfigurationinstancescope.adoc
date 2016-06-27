@@ -1,0 +1,25 @@
+== Nonconfiguration instance scope
+
+_Nonconfiguration instance scope_
+are Java objects which need to passed from one instance to the next
+instance of an activity in case of an configuration change.
+
+Saving and restoring one object was possible with the
+`getLastNonConfigurationInstance()`
+and
+`onRetainNonConfigurationInstance()`
+methods. These methods have been deprecated, you should prefer using
+_headless retained fragments_
+for holding to objects which should be passed between activity
+instances due to configuration changes.
+
+WARNING: If you still using the approach of the
+`onRetainNonConfigurationInstance()`
+method, ensure that you are not passing objects to the next instance
+which have a reference to the current instance of the activity.
+Otherwise you have
+created a memory leak, i.e. the garbage collector
+cannot clean up the
+other instance of the activity as you are still
+holding on to a reference of it.
+

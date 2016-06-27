@@ -1,0 +1,117 @@
+== Activity life cycle
+
+=== States of an activity
+
+An activity can be in different states depending how it is
+interacting with the user. These states are described by the
+following table.
+
+.Activity state
+|===
+|State |Description
+
+|Running
+|Activity is visible and interacts with the user.
+
+|Paused
+|Activity is still visible but partially obscured, instance is running but might be killed by the system.
+
+|Stopped
+|Activity is not visible, instance is running but might be killed by the system.
+
+|Killed
+|Activity has been terminated by the system of by a call to its `finish()` method.
+|===
+		
+=== The live cycle methods
+		
+The Android
+system
+defines a
+life-cycle
+for
+activities
+via predefined
+life-cycle methods. The most important methods
+are:
+.Important Activity lifecycle methods
+|===
+|Method |Purpose
+
+|onCreate()
+|Called then the activity is created. 
+Used to initialize the activity, for example create the user interface.
+
+|onResume()
+|Called if the _activity_ get visible again and the user starts interacting with the activity again. 
+Used to initialize fields, register listeners, bind to services, etc.
+
+|onPause()
+|Called once another activity gets into the foreground. 
+Always called before the _activity_ is not visible anymore. 
+Used to release resources or save application data. For example you unregister listeners, intent receivers, unbind from services or remove system service listeners.
+
+|onStop()
+|Called once the activity is no longer visible. 
+Time or CPU intensive shut-down operations, such as writing information to a database should be down in the `onStop()` method. 
+This method is guaranteed to be called as of API 11.
+|===
+		
+The life cycle of an activity with its most important methods is
+displayed in the following diagram.
+		
+image::activity_lifecycle10.png[Activity life cycle,pdfwidth=60%]
+		
+Android has more life cycle methods but not all of these methods
+are
+guaranteed to be called. The
+`onDestroy()`
+method is not guaranteed to be called, hence you
+typically do not use
+it.
+		
+For more information on the other methods
+see http://developer.android.com/guide/components/activities.html - Activity life cycle - Official documentation.
+		
+=== Termination of activities by Android
+
+The Android system is allowed to recycle Android activities
+to
+free up
+resources. In theory the Android system is allowed to
+terminate
+individual activities but in reality the Android system
+never recycles
+individual activities it always determines the whole process
+following the rules outlined in http://www.vogella.com/tutorials/AndroidLifeCycle/article.html#applicationlifecyle_lifecycle.
+		
+NOTE: It is a common misunderstanding that Android also kills individual activities, because
+http://developer.android.com/guide/components/activities.html#Lifecycle - the official life-cycle Android documentation describes this. 
+However Dianne Hackborn from the core Android team involved in the out of memory killer implementation clarified on Stackoverflow that the Android system only kill processes and not individual activities. 
+See http://stackoverflow.com/questions/7536988/android-app-out-of-memory-issues-tried-everything-and-still-at-a-loss/7576275#7576275 - Dianas Answer on Stackoverflow.
+
+NOTE: To ensure its state is saved, the activity needs to store the state of the activity at the right point in time and restore it. 
+It should stop any unnecessary actions if the
+activity is not visible
+anymore to save
+system resources.
+		
+You typically use the
+`onPause()`
+method to stop framework listeners and UI updates and use the
+`onStop()`
+method to save the application data. These methods are guaranteed to
+be called before the activity is terminated. The
+`onResume()`
+is used to register again listeners and to trigger UI updates based
+on the saved data, if necessary.
+		
+In addition to resource management, Android also recreates
+activities
+in case a configuration change occurs. The
+`Configuration`
+object contains the current device configuration, if this
+configuration changes activities are restarted, as they may use
+different resources for this configuration.
+		
+		

@@ -1,0 +1,5 @@
+== Content provider life cycle
+	
+Once accessed a content provider is never stopped individually.
+It stops if the whole application process is determinted.
+	

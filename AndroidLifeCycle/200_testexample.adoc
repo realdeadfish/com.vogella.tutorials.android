@@ -1,0 +1,120 @@
+== Exercise: Lifecycle
+
+=== Target of this exercise
+In this exercise you create an application which allows you to
+observe the life cycle call of the Android system to your Android
+application.
+
+=== Create project
+
+Create a new project called
+_com.vogella.android.lifecycle.activity_.
+
+Create the following class which is used to report lifecycle
+events via notifications.
+
+[source,java]
+----
+include::res/report/TracerActivity.java[]
+----
+
+=== Create your activities
+
+Create two activities which extend this one. The first activity
+should
+allow to start the second one via an
+`Intent`
+.
+
+[source,java]
+----
+include::res/report/MainActivity.java[]
+----
+
+[source,java]
+----
+include::res/report/SecondActivity.java[]
+----
+
+WARNING:Ensure that both activities are registered in the Android manifest.
+
+=== Testing
+
+Start your application and trigger the second activity. Review
+the notifications and ensure you know why this order of things are
+happening.
+
+image::activity_lifecycle20.png[Notifications about the lifecycle,pdfwidth=60%]
+
+Press the Back button on the second activity. Validate that
+`onSaveInstanceState()`
+is not
+called. Explain why it is not called.
+
+Press the home button on the second activity. Validate that
+`onSaveInstanceState()`
+is called. Explain why it is called.
+
+Start the second activity. Switch the orientation of your
+emulator via the CTRL+F11
+shortcut and see which lifecycle methods of
+the activity are called. Is the first activity also re-created or
+only the second one?
+
+Activate the
+`Don't keep activities`
+setting in the
+_Developer Options_
+. Test again which methods are called.
+
+=== Instance state
+
+Create a string array and add a
+`Spinner`
+view to your first
+activity using
+this array. The following lists the
+_strings.xml_
+and the layout file used by the first activity.
+
+[source,xml]
+----
+include::res/report/strings.xml[]
+----
+
+[source,xml]
+----
+include::res/report/activity_main.xml[]
+----
+
+Android restores the state of a spinner automatically . Ensure
+that the
+selection of the spinner is saved and restored
+between
+configuration
+changes or restarts of the activity by the
+Android
+system.
+
+Remove now the fixed array assignment in the layout and assign it to
+the
+`Spinner`
+via source code.
+.
+
+[source,java]
+----
+include::res/spinner/SpinnerConfig.java[]
+----
+
+Remove the fixed assignment in your layout file.
+
+[source,xml]
+----
+include::res/report/activity_main2.xml[]
+----
+
+Validate that in this case the position in the spinner is still
+automatically
+restored.
+

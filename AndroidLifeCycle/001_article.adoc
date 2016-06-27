@@ -1,0 +1,27 @@
+= Android application and activity life cycle - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 1.4, 27.06.2016
+
+[abstract]
+Understanding the Android lifecycle. This tutorial describes how the Android application and activity life cycle works.
+
+++++
+include::../header.html[]
+++++
+
+include::010_overview.adoc[]
+include::020_application.adoc[]
+include::030_contentprovider.adoc[]
+include::060_activities.adoc[]
+include::080_instancestate.adoc[]
+include::090_nonconfigurationinstancescope.adoc[]
+include::100_configurationchanges.adoc[]
+include::200_testexample.adoc[]
+include::resourceslocal.adoc[]
+include::../copyright.adoc[]
+
