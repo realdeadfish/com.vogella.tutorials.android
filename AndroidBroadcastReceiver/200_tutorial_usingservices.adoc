@@ -1,0 +1,67 @@
+== Exercise: System services and receiver
+
+=== Target
+		
+In this chapter we will schedule a receiver
+via the Android alert
+manager
+system service. Once called, it uses the Android vibrator
+manager
+and a
+popup message (Toast) to
+notify the user.
+		
+=== Implement project
+		
+Create a new project called
+_de.vogella.android.alarm_
+with the
+activity called
+_AlarmActivity_
+.
+		
+Create the following layout.
+
+[source,xml]
+----
+include::res/service/main.xml[]
+----		
+		
+Create the following broadcast receiver class. This class will
+get the vibrator service.
+		
+[source,java]
+----
+include::res/service/MyBroadcastReceiver.java[]
+----		
+		
+Register this class as a broadcast receiver in
+_AndroidManifest.xml_
+and request authorization to vibrate the phone.
+		
+[source,xml]
+----
+include::res/service/AndroidManifest.xml[]
+----		
+		
+Change the code of your
+`AlarmActivity`
+class to the
+following. This activity creates an
+intent to start the
+receiver and register this intent with the alarm manager service.
+		
+[source,java]
+----
+include::res/service/AlarmActivity.java[]
+----
+		
+=== Validate implementation
+		
+Run your application on the device. Set your time and start the
+alarm. After the defined number of seconds a _Toast_ should be
+displayed. Keep in mind that the vibration alarm does not work on the
+Android emulator.
+		
+image::receive10.png[Alarm application running,pdfwidth=60%]
+		

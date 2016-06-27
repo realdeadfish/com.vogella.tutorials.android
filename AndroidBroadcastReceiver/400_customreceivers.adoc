@@ -1,0 +1,64 @@
+== Defining custom events and receivers
+
+=== Registering broadcast receiver for custom events
+		
+You can register a
+receiver
+for your custom actions.
+		
+The following
+_AndroidManifest.xml_
+file demonstrates a broadcast receiver which is registered for a
+custom action.
+		
+[source,xml]
+----
+include::res/own/AndroidManifest.xml[]
+----
+	
+=== Sending broadcast intents
+		
+The
+`sendBroadcast()`
+method from the
+`Context`
+class allows you to send
+intents
+to your registered receivers. The following coding show an example.
+		
+[source,java]
+----
+include::res/own/trigger.java[]
+----		
+
+You cannot trigger system broadcasts events.
+The Android system
+will
+prevent
+this.
+		
+TIP: The receivers are called asynchronous, i.e., the `sendBroadcast()` method return immediately and does not wait until the receivers have executed.
+
+=== Local broadcast events with LocalBroadcastManager
+
+The
+`LocalBroadcastManager`
+class is used to register for and send broadcasts of Intents to local
+objects within your process. This is faster and more secure as your
+events don't leave your application.
+		
+The following example shows an activity
+which registers for a customer event called
+_my-event_
+.
+		
+[source,java]
+----
+include::res/localbroadcastreceiver/Register.java[]
+----		
+
+[source,java]
+----
+include::res/localbroadcastreceiver/Sender.java[]
+----		
+

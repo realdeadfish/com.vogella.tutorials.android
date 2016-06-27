@@ -1,0 +1,31 @@
+== System broadcasts
+	
+Several system events are defined as final static fields in the
+`Intent`
+class. Other Android system classes also define events, e.g., the
+`TelephonyManager`
+defines events for the change of the phone state.
+	
+	
+The following table lists a few important system events.
+
+.System Events
+|===
+|Event |Description
+
+|Intent.ACTION_BOOT_COMPLETED
+|Boot completed. Requires the `android.permission.RECEIVE_BOOT_COMPLETED` permission
+
+|Intent.ACTION_POWER_CONNECTED
+|Power got connected to the device.
+
+|Intent.ACTION_POWER_DISCONNECTED
+|Power got disconnected to the device.
+
+|Intent.ACTION_BATTERY_LOW
+|Triggered on low battery. Typically used to reduce activities in your app which consume power.
+
+|Intent.ACTION_BATTERY_OKAY
+|Battery status good again.
+|===
+	
