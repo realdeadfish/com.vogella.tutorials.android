@@ -1,0 +1,104 @@
+== Handler
+
+=== Purpose of the Handler class
+		
+The
+`Handler`
+class can be used to register to a thread and provides a simple
+channel to send data to this thread.
+		
+A
+`Handler`
+object registers itself with the thread in which
+it is created. For
+example, if you create a new
+instance of the
+`Handler`
+class in the
+`onCreate()`
+method of your
+_activity_
+, the resulting
+`Handler`
+object can be used to post data to the main thread.
+
+The data which can be posted via the
+`Handler`
+class can be an instance of the
+`Message`
+or the
+`Runnable`
+class.
+		
+TIP: A Handler is particular useful if you have want to post multiple times data to the main thread.
+
+=== Creating and reusing instances of Handlers
+		
+To
+use a handler you have to
+subclass it and override the
+`handleMessage()`
+method
+to process messages.
+		
+Your thread can post messages via the
+`sendMessage(Message)`
+method
+or via the
+`sendEmptyMessage()`
+method to the
+`Handler`
+object.
+		
+To
+process a
+`Runnable`
+you can use the
+`post()`
+method.
+		
+To avoid object creation you can also reuse the existing
+`Handler`
+object of your
+_activity_.
+		
+[source,java]
+----
+include::res/handler/getActivityHandler.java[]
+----
+		
+The
+`View`
+class allows you to post objects of type
+`Runnable`
+via the
+`post()`
+method.
+		
+=== Example
+		
+The following code demonstrates the usage of a
+`Handler`
+via a
+`View`.
+		
+Assume your
+_activity_
+uses the following layout.		
+		
+[source,xml]
+----
+include::res/handler/main.xm[]
+----
+		
+With the following the
+`ProgressBar`
+get updated once the users presses the
+`Button`.
+		
+[source,java]
+----
+include::res/handler/ProgressTestActivity.java[]
+----
+		
+	

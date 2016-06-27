@@ -1,0 +1,66 @@
+== Android's user interface thread
+
+=== Main thread
+		
+Android
+modifies the user interface and handles input events from one
+single
+_user interface thread_
+. This thread is
+also called the
+_main thread_
+.
+				
+Android collects all events in a queue and processed an instance of
+the
+`Looper`
+class.
+		
+image::looper_messagequeue10.png[Message Queue in Android with Looper,pdfwidth=60%]
+
+=== Why using concurrency?
+		
+If the
+programmer does not use any concurrency
+constructs, all
+code
+of
+an
+Android
+application
+runs in the main thread and every statement
+is
+executed after each other.
+		
+If
+you perform a long
+lasting operation, for example accessing
+data
+from
+the Internet, the application
+blocks
+until
+the corresponding
+operation has
+finished.
+		
+To provide a good user experience all
+potentially slow
+running
+operations in an
+Android
+application should
+run asynchronously, e.g. via
+some way of
+concurrency constructs of the Java
+language or the Android
+framework. This includes all potential slow operations, like
+network,
+file and database
+access and
+complex calculations.
+		
+NOTE: Android enforces a worst case reaction time of applications.
+If an _activity_ does not react within 5 seconds to user input, the Android system displays an _Application not responding_ (ANR) dialog. 
+From this dialog the user can choose to stop the application.
+

@@ -1,0 +1,72 @@
+== Exercise: activity lifecycle and threads
+
+The following example will download an image from the Internet
+in a thread and displays a dialog until the download is done. We will
+make sure that the thread is preserved even if the activity is
+restarted and that the dialog is correctly displayed and closed.
+	
+For this example create a new Android project called
+_de.vogella.android.threadslifecycle_
+with the Activity called
+_ThreadsLifecycleActivity_
+. Also add the
+permission to use the
+Internet to your
+_AndroidManifest.xml_
+file.
+
+Your
+_AndroidManifest.xml_
+file should look like the following.
+	
+[source,xml]
+----
+include::res/lifecycle/AndroidManifest.xml[]
+----	
+	
+Change the layout
+_main.xml_
+to the following.
+	
+[source,xml]
+----
+include::res/lifecycle/main.xml[]
+----
+	
+Now adjust your activity. In this activity the thread is saved
+and the dialog is closed if the activity
+is destroyed.
+	
+[source,java]
+----
+include::res/lifecycle/ThreadsLifecycleActivity.java[]
+----
+	
+Run your application and press the button to start a download.
+You can
+test the correct lifecycle
+behavior by changing the orientation
+in the
+emulator via the
+kbd:[Ctrl+F11]
+shortcut.
+	
+	
+It is important to note that the
+`Thread`
+is a static inner
+class.
+It is important to use a static inner class for
+your background
+process because otherwise
+the inner class will contain a
+reference to
+the class in which is was
+created. As the thread is passed
+to the new
+instance of your activity
+this would create a memory leak as
+the old
+activity would still be
+referred to by the Thread.
+	

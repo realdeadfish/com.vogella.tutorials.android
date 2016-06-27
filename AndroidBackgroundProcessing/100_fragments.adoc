@@ -1,0 +1,31 @@
+== Fragments and background processing
+
+=== Retain instance during configuration changes
+		
+You can use
+fragments
+without user interface and retain them between configuration changes
+via a call to their
+`setRetainInstance()`
+method.
+		
+This way your
+`Thread`
+or
+`AsyncTask`
+is retained during configuration changes. This allows you to perform
+background processing without explicitly considering the lifecycle of
+your
+_activity_
+.
+
+=== Headless fragments
+		
+If you perform background processing you can dynamically attached a
+headless
+_fragment_
+to your application and call
+`setRetainInstance()`
+to true. This fragment is retained during configuration changes and
+you can perform asynchronous processing in it.
+		

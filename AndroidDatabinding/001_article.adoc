@@ -10,6 +10,10 @@ Version 0.5, 25.06.2016
 [abstract]
 This tutorial describes the usage of data binding in Android applications to synchronize your user interface with your application model and logic..
 
+++++
+include::../header.html[]
+++++
+
 include::010_overview.adoc[]
 include::080_layoutfiles.adoc[]
 include::200_exercise_layout.adoc[]							

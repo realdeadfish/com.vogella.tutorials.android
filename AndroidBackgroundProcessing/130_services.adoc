@@ -1,0 +1,6 @@
+== Usage of services
+	
+You can also use Android services to perform background tasks. See
+http://www.vogella.com/tutorials/AndroidServices/article.html - Android service tutorial
+for details.
+	

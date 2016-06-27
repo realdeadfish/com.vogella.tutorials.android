@@ -1,0 +1,38 @@
+== Using Java threading constructs in Android
+
+=== Using Java threads and thread pools 
+		
+Android
+supports the usage of the
+`Thread`
+class to perform asynchronous processing.
+		
+Android also supplies the
+`java.util.concurrent`
+package
+to perform something in the background, e.g. using the
+`ThreadPools`
+and
+`Executor`
+classes.
+		
+If
+you need to update the user interface from a new
+`Thread`
+, you need to synchronize with the
+_user interface thread_.
+		
+=== Disadvantages of using Java threads in Android
+		
+If you use Java threading in Android applications, you have to handle the following
+requirements
+in your custom code:
+
+* Synchronization with the main thread, if you post back results to the user interface
+* No default for canceling the thread
+* No default thread pooling
+* No default for handling configuration changes in Android
+
+Because of these restrictions, Android developer typically use Android specific code constructs. 
+	
+	

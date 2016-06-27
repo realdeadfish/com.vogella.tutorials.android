@@ -1,0 +1,38 @@
+= Android background processing with Handlers, AsyncTask and Loaders - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 3.4, 27.06.2016
+
+[abstract]
+Android Threads, Handlers AsyncTask. This tutorial describes the usage of asynchronous processing in Android applications.
+It also covers how to handle the application life cycle together with threads. 
+It is based on Android Studio.
+
+++++
+include::../header.html[]
+++++
+						
+include::010_overview.adoc[]
+include::../10_Include/Android/010_prerequites.adoc[]
+include::014_threads.adoc[]
+include::015_android.adoc[]
+include::018_handler.adoc[]
+include::020_asynctask.adoc[]
+include::024_lifecycle.adoc[]
+include::100_fragments.adoc[]
+include::102_fragmentslink.adoc[]
+include::120_loader.adoc[]
+include::122_exercise_loader.adoc[]
+include::130_services.adoc[]
+include::132_serviceslink.adoc[]
+include::300_tutorial_lifecycle.adoc[]
+include::800_progressdialog.adoc[]
+include::820_linkto_strictmode.adoc[]
+include::resources.adoc[]
+include::../copyright.adoc[]
+
+

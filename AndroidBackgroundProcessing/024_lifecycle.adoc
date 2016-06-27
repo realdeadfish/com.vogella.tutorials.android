@@ -1,0 +1,114 @@
+== Background processing and lifecycle handling
+
+=== Retaining state during configuration changes
+		
+One challenge in using threads is to consider the
+lifecycle of
+the
+application. The Android system may kill your
+_activity_
+or trigger
+a
+configuration
+change which will also restart your activity.
+		
+You also need to handle open
+dialogs, as dialogs are always
+connected
+to the
+_activity_
+which created
+them. In case the activity gets
+restarted
+and you access
+an existing
+dialog you receive a
+`View not
+	attached to
+	window manager
+`
+exception.
+		
+To save an object you can use the method
+`onRetainNonConfigurationInstance()`
+method. This method allows you to save one object if the activity will be
+soon restarted.
+		
+To retrieve this object you can use the
+`getLastNonConfigurationInstance()`
+method. This way can you can save an object, e.g. a running thread,
+even if
+the
+_activity_
+is restarted.
+		
+`getLastNonConfigurationInstance()`
+returns null if the
+_activity_
+is started the first time or if it has been finished via
+the
+finish()
+method.
+		
+`onRetainNonConfigurationInstance()`
+is deprecated as of API 13, it is recommended that you use
+fragments
+and the
+`setRetainInstance()`
+method to retain data over configuration changes.
+		
+=== Using the application object to store objects
+		
+If more than one object should be stored across
+_activities_
+and configuration changes, you can implement
+an
+`Application`
+class for your Android application.
+		
+To use your application class
+assign the
+classname to the
+`android:name`
+attribute of your application.
+		
+[source,xml]
+----
+include::res/lifecycle/application.xml[]
+----
+		
+The application class is automatically created by the Android
+runtime and is available unless the whole application process is
+terminated.
+		
+This class can be used to access objects
+which should be
+cross
+activities or
+available for the whole
+application lifecycle. In
+the
+`onCreate()`
+method
+you can
+create objects and make them
+available via public fields
+or
+`getter`
+methods.
+		
+The
+`onTerminate()`
+method in the application class
+is only used for testing. If Android
+terminates the process
+in which your application is running all
+allocated resources are
+automatically released.
+				
+You can access the Application via the
+`getApplication()`
+method
+in your activity.
+		
+	

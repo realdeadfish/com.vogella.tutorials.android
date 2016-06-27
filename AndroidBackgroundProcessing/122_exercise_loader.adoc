@@ -1,0 +1,41 @@
+== Exercise: Custom loader for preferences
+
+=== Implementation
+
+In the following your create a custom loader implementation for
+managing preferences. On every load the value of the preference is
+increased.
+		
+Create a project called
+`com.vogella.android.loader.preferences`
+with an activity called
+_MainActivity_.
+		
+Create the following class as custom
+`AsyncTaskLoader`
+implementation for managing shared preferences.		
+		
+[source,java]
+----
+include::res/loader/SharedPreferencesLoader.java[]
+----
+		
+The following example code demonstrates the usage of this loader
+in an activity.
+		
+[source,java]
+----
+include::res/loader/MainActivity.java[]
+----		
+
+=== Test
+		
+The
+`LoaderManager`
+call
+`onLoadFinished()`
+in your activity automatically after a configuration change. Run the
+application and ensure that the value stored in the shared
+preferences is increased at every configuration change.
+		
+	

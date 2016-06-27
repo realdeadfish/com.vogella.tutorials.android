@@ -1,0 +1,139 @@
+== AsyncTask
+=== Purpose of the AsyncTask class
+		
+The
+`AsyncTask`
+class encapsulates the creation of a background process and the
+synchronization with the main thread. It also supports reporting
+progress of the running tasks.
+		
+=== Using the AsyncTask class
+		
+To use
+`AsyncTask`
+you must subclass it. AsyncTask uses generics and varargs. The
+parameters are the following
+ <![CDATA[  AsyncTask <TypeOfVarArgParams , ProgressValue , ResultValue> ]]>.
+
+An
+`AsyncTask`
+is started via the
+`execute()`
+method.
+		
+The
+`execute()`
+method calls the
+`doInBackground()`
+and the
+`onPostExecute()`
+method.
+		
+TypeOfVarArgParams is passed into the
+`doInBackground()`
+method as input, ProgressValue is used for progress
+information and
+ResultValue must be returned from
+`doInBackground()`
+method and is passed to
+`onPostExecute()`
+as a parameter.
+		
+The
+`doInBackground()`
+method contains the coding instruction which should be
+performed in a
+background thread. This method runs automatically in a
+separate
+`Thread`.
+		
+The
+`onPostExecute()`
+method synchronizes itself again with the user interface thread and
+allows it to be updated. This
+method is called by the
+framework once
+the
+`doInBackground()`
+method finishes.
+		
+=== Parallel execution of several AsyncTasks
+		
+Android executes
+`AsyncTask`
+tasks before Android 1.6 and again as of Android 3.0 in sequence by
+default.
+		
+You can tell Android to run it in parallel with the usage of the
+`executeOnExecutor()`
+method, specifying
+`AsyncTask.THREAD_POOL_EXECUTOR`
+as first parameter.
+		
+The following code snippet demonstrates that.
+		
+[source,txt]
+----
+include::res/asynctask/parallel.txt[]
+----
+		
+=== Disadvantages of using AsyncTasks
+		
+The
+`AsyncTask`
+does not handle configuration changes automatically, i.e. if the
+_activity_
+is recreated, the programmer has to handle that in his coding.
+		
+A common solution to this is to declare the
+`AsyncTask`
+in a retained headless fragment.
+		
+=== Example: AsyncTask
+		
+The following code demonstrates how to use the
+`AsyncTask`
+class to download the content of
+a
+webpage.
+		
+Create a new
+Android project called
+_de.vogella.android.asynctask_
+with an
+_activity_
+called
+_ReadWebpageAsyncTask_
+. Add the
+`android.permission.INTERNET`
+permission to your
+_AndroidManifest.xml_
+file.
+		
+Create the
+following layout.
+		
+[source,xml]
+----
+include::res/asynctask/main.xml[]
+----
+		
+Change your activity to the following: 
+
+[source,java]
+----
+include::res/asynctask/ReadWebpageAsyncTask.java[]
+----		
+		
+If you run your application and press your button then the
+content
+of
+the defined webpage is read in the background. Once
+this
+process
+is done
+your
+`TextView`
+is updated.
+		
+	
