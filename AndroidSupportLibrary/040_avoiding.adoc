@@ -34,7 +34,7 @@ instead of any other activity like
 
 [source,java]
 ----
-include::res//compat/compat/MainActivity.java[]
+include::res/compat/MainActivity.java[]
 ----		
 
 Also ensures that only standard elements are using the generated layout file. The following is an example
@@ -44,7 +44,7 @@ image::firstlayoutconversion10.png[Changing the styles file,pdfwidth=60%]
 		
 [source,xml]
 ----
-include::res//compat/activity_main.xml[]
+include::res/compat/activity_main.xml[]
 ----
 		
 		
@@ -59,6 +59,6 @@ image::firststylechangesxml.png[Changing the styles file,pdfwidth=40%]
 
 [source,xml]
 ----
-include::res//compat/styles.xml[]
+include::res/compat/styles.xml[]
 ----
 	

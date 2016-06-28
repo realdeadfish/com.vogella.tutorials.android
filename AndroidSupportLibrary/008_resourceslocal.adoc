@@ -1,8 +1,6 @@
-<section id="resources_android">
-	<title>Android ActionBar Resources
+== Android ActionBar Resources
 	
-		https://developer.android.com/tools/support-library/index.html">
-			Android Support Library documentation</ulink>
+https://developer.android.com/tools/support-library/index.html - Android Support Library documentation
 	
 
 

@@ -10,8 +10,13 @@ Version 0.3, 20.06.2016
 [abstract]
 This tutorial describes how to use (and how to avoid the usage) of the Android support library.
 			
+++++
+include::../header.html[]
+++++
+
 include::010_overview.adoc[]
 include::024_supportlibraries.adoc[]
 include::040_avoiding.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 
