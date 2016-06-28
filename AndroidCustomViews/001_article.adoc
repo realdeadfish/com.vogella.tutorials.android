@@ -1,0 +1,35 @@
+= Creating custom and compound views in Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2009, 2016 vogella GmbH
+Version 3.5, 27.06.2016
+
+[abstract]
+ This tutorials describes how to create custom views with Android. 
+
+++++
+include::../header.html[]
+++++
+						
+
+.adoc
+.adoc
+.adoc
+.adoc
+.adoc
+.adoc
+.adoc
+include::010_overview.adoc.adoc[]
+include::020_compoundcontrols.adoc[]
+include::040_customview.adoc[]
+include::060_lifecycle.adoc[]
+include::080_attributes.adoc[]
+include::090_tutorial_compoundcontrols.adoc[]
+include::120_canvas.adoc[]
+include::200_persists.adoc[]
+include::220_customviewexample.adoc[]
+include::resources.adoc[]
+include::../copyright.adoc[]
