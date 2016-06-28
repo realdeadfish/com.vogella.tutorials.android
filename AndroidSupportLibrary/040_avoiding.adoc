@@ -47,15 +47,11 @@ image::firstlayoutconversion10.png[Changing the styles file,pdfwidth=60%]
 include::res/compat/activity_main.xml[]
 ----
 		
-		
-		
 Also ensure that the theme is a default theme, instead of the compatibility theme. For this check the
-<filename>app/res/values/styles.xml</filename>
+_app/res/values/styles.xml_
 folder to use the standard material theme.
-		
 
 image::firststylechangesxml.png[Changing the styles file,pdfwidth=40%]
-		
 
 [source,xml]
 ----
