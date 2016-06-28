@@ -1,0 +1,36 @@
+== 9 Patch Drawables
+	
+_9 Patch drawables_
+are
+_Drawables_
+which have a one pixel additional border. On the top and
+left you
+define the area which should be scaled if the
+_Drawable_
+is to small for the
+view. This is the stretch area.
+
+image::9patchdrawable10.png[Defining the 9 patch Drawable stretch area,pdfwidth=60%]
+	
+On the right and bottom side you define the area where a text should
+be
+placed
+if this
+`Drawable`
+is used on a
+view
+which can write text on it, e.g. a Button.
+	
+The ADT supplies the
+`draw9patch`
+program in the
+_android-sdk/tools_
+installation folder, which makes it easy to
+create
+_9 Patch drawables_
+.
+	
+A nice online generator for 9 patch drawables can be found under the
+following URL:
+http://android-ui-utils.googlecode.com/hg/asset-studio/dist/nine-patches.html - Simple Nine-patch generator.
+	

@@ -1,0 +1,58 @@
+== XML Drawables
+
+=== Shape Drawables
+
+Shape Drawables are XML files which allow to define a geometric
+object with colors, borders and gradients which can get assigned to
+`Views`
+. The advantage of using XML Shape Drawables is that they
+automatically adjust to the correct size.
+
+The following listing shows an example of a Shape Drawable.
+
+[source,xml]
+----
+include::res/drawable/myshape.xml[]
+----
+
+You could for example assign that drawable to the background
+property of your
+layout.
+
+[source,xml]
+----
+include::res/drawable/main.xml[]
+----
+
+=== State Drawables
+
+State drawables allow to define states. For each state a
+different
+drawable can get assigned to the
+`View`
+. For example the
+following
+defines different drawables for a button
+depending on its
+state.
+
+[source,xml]
+----
+include::res/drawable/state.xml[]
+----
+
+=== Transition Drawables
+
+Transition Drawables allow to define transitions which can be
+triggered in the coding.
+
+[source,xml]
+----
+include::res/drawable/transition.xml[]
+----
+
+[source,txt]
+----
+include::res/drawable/trans.txt[]
+----
+

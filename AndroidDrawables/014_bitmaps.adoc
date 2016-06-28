@@ -1,0 +1,66 @@
+== Loading Bitmaps and Drawables
+
+Android allows you to use the
+`Bitmap`
+class for working with bitmaps. This section explain how to create
+`Bitmap`
+objects via Java code and how to convert
+`Bitmap`
+into
+`Drawable`
+objects and vice versa.
+
+If required you can
+load any accessible
+bitmap file
+in your code and
+convert them into
+`Drawables`
+objects.
+
+The following example code shows how to create an
+`Bitmap`
+object for the
+_assets_
+folder and assign it to an
+`ImageView`
+.
+
+[source,java]
+----
+include::res/bitmap/load.java[]
+----
+
+You can also access the Drawables
+from your
+_res/drawable_
+folder as
+`Bitmap`
+objects in your source code. The following code demonstrates that.
+
+[source,java]
+----
+include::res/bitmap/loaddirect.java[]
+----
+
+You can create a scale bitmap based on a new weight and
+height
+definition in pixel.
+
+[source,java]
+----
+include::res/bitmap/scale.java[]
+----
+
+To convert a
+`Bitmap`
+object
+into a
+`Drawable`
+you can use the following code.
+
+[source,java]
+----
+include::res/bitmap/convert.java[]
+----
+

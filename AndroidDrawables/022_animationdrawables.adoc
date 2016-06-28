@@ -1,0 +1,25 @@
+== Animation Drawables
+	
+You can also define an animation drawables and assign it to a
+`View`
+via
+the
+`setBackgroundResource()`
+method.
+	
+[source,xml]
+----
+include::res/animation/myanimation.xml[]
+----
+	
+[source,java]
+----
+include::res/animation/ani.java[]
+----
+	
+Alternative you can implement a class which extends
+`Drawable`
+and implements
+`Animatable`
+.
+

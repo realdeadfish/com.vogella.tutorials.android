@@ -1,0 +1,37 @@
+== Using drawables for views
+	
+Drawables
+are referred to
+in XML
+via
+`@drawable/filename`
+whereby
+`filename`
+filename is the filename without the file extension. For example to
+access the
+_res/drawable/hello.png_
+Drawable, you would use
+`@drawable/hello`
+as demonstrated in the following snippet.
+	
+[source,xml]
+----
+include::res/bitmap/activity_main.xml[]
+----
+	
+In code you can also assign
+_drawables_
+to views. Most
+views
+accept an resource ID as input parameter. For
+example the following
+code shows how to set a
+_drawables_
+as background to an
+`ImageView`.
+	
+[source,java]
+----
+include::res/access/Access.java[]
+----	
+
