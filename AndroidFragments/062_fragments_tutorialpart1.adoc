@@ -1,4 +1,4 @@
-== Fragments Tutorial
+== Exercise: Using fragments
 
 === Target of this exercise
 		
