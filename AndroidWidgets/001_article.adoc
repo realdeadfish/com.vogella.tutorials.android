@@ -1,0 +1,25 @@
+= Android (Home screen) Widgets - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 2.8, 28.06.2016
+:docinfo:
+
+[abstract]
+Developing Android Widgets. 
+This article describes how to create home screen widgets in Android. 
+
+include::012_prerequisites.adoc[]
+include::010_overview.adoc[]
+include::020_widgetcreation.adoc[]
+include::030_updates.adoc[]
+include::100_tutorial_simplewidget.adoc[]
+include::160_collectionwidgets.adoc[]
+include::200_lockscreenwidgets.adoc[]
+include::300_tutorial_serviceupdates.adoc[]
+include::resources.adoc[]
+include::../copyright.adoc[]
+

@@ -1,0 +1,10 @@
+== Exercise: Add widget to the lockscreen
+	
+Enable your widget for the lock screen by adding the required info
+to the widget metadata file.
+	
+[source,xml]
+----
+include::res/lockscreen/add.xml[]
+----
+

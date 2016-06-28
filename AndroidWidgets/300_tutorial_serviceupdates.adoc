@@ -1,0 +1,39 @@
+== Exercise: Update widget via a service
+	
+The following will demonstrate the usage of a service to update
+the widget.
+	
+	
+Create the following
+`UpdateWidgetService`
+class in your project.
+	
+[source,java]
+----
+include::res/update/UpdateWidgetService.java[]
+----	
+	
+Add this class as a
+`Service`
+to your
+_AndroidManifest.xml_
+file.
+	
+[source,xml]
+----
+include::res/update/service.xml[]
+----	
+	
+Change
+`MyWidgetProvider`
+to the following. It will now only construct the service and start it.
+	
+[source,java]
+----
+include::res/update/MyWidgetProvider.java[]
+----	
+	
+Once called, this service will update all widgets. You can
+click
+on one of the widgets to update all widgets.
+	

@@ -1,0 +1,101 @@
+== Exercise: widget with fixed update interval
+
+=== Target
+		
+In the following tutorial you create a widget which displays a random
+number. This random number is
+updated every 30
+minutes.
+You also
+register an
+`OnClickListener`
+so that the widgets updates once the user clicks on it.
+		
+The resulting
+widget will look like the following.
+		
+image::random10.png[Screenshot of the final Widget of this tutorial,pdfwidth=60%]
+
+=== Create project and widget implementation
+		
+Create a new Android project called
+_de.vogella.android.widget.example_
+with an activity
+in the package
+`de.vogella.android.widget.example`.
+		
+Create a new file
+_myshape.xml_
+in the
+<filename class="directory">/res/drawable_
+folder. This file defines the
+drawable used as background in the
+widget.
+		
+[source,xml]
+----
+include::res/first/myshape.xml[]
+----		
+		
+Define the following
+_widget_layout.xml_
+file under the
+<filename class="directory">res/layout_
+folder.
+		
+[source,xml]
+----
+include::res/first/widget_layout.xml[]
+----		
+		
+Create a new resource file called
+_widget_info.xml_
+via right click on the res folder and by selecting
+menu:New[Android resource file].
+		
+image::widgetinfo10.png[Creating the widget provider 1,pdfwidth=60%]
+		
+[source,xml]
+----
+include::res/first/widget_info.xml[]
+----		
+		
+Create the following receiver class which is
+called during
+updates.
+		
+[source,java]
+----
+include::res/first/MyWidgetProvider.java[]
+----		
+		
+Open the
+_AndroidManifest.xml_
+and register your widget similar to the following listing.
+		
+[source,xml]
+----
+include::res/first/AndroidManifest.xml[]
+----		
+		
+This attribute specifies that the
+`AppWidgetProvider`
+accepts the
+`ACTION_APPWIDGET_UPDATE`
+broadcast and specifies the metadata for the widget.
+		
+=== Validating
+		
+Deploy your application on your Android device. Once your
+application
+has been deployed use the
+Android
+launcher to
+install your
+new widget on the home screen and test it.
+		
+image::widgetinstall10.png[Installing the widget part 1,pdfwidth=60%]
+		
+image::widgetinstall20.png[Installing the widget part 2,pdfwidth=60%]
+		
+	

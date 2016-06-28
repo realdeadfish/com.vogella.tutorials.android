@@ -1,0 +1,58 @@
+== Enabling a app widget for the lock Screen
+	
+Since Android 4.2, it is possible to add home screen app widgets to the lock screen of an Android device. 
+To enable your widget for the look
+screen you need to add
+`keyguard`
+category in
+the
+`android:widgetCategory`
+attribute in the
+`AppWidgetProviderInfo`
+XML
+file. The following code shows an example.
+	
+[source,xml]
+----
+include::res/lockscreen/add.xml[]
+----	
+	
+In this example you declare a widget to support both - the home
+and the
+lock screens. If you recompile and launch your application now,
+you
+will be able to add the widget to the lock screen already.
+	
+You can also detect a widget category at runtime. For this, in the
+`AppWidgetProvider.onUpdate()`
+method, you can check for the category
+option of a widget with the
+following code.
+	
+[source,java]
+----
+include::res/lockscreen/check.java[]
+----	
+	
+Using this technique you can decide at runtime whether the
+widgets
+your
+application provides, will look differently, when they are
+hosted on
+the
+lock screen.
+	
+Similarly to how you used the
+`android:initialLayout`
+attribute for defining
+an
+initial layout for home screen widgets, you
+can use a new
+`android:initialKeyguardLayout`
+attribute for the lock screen in the
+`AppWidgetProviderInfo`
+XML file. This layout will appear immediately
+after a widget is added
+and will be replaced by the real layout once the
+widget is initialized.
+	
