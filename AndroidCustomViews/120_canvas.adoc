@@ -1,131 +1,125 @@
-<section id="canvasapi">
-	<title>Canvas API
-	<section id="canvasapi_overview">
-		<title>Overview
+== Canvas API
+
+=== Introduction into the canvas API
 		
-			The Canvas API allows to create complex graphical effects.
-		
-		
-			You paint on a
-			`Bitmap`
-			surface.
-			The
-			`Canvas`
-			class provides the drawing methods to draw on a bitmap and the
-			`Paint`
-			class specifies how you draw on the bitmap.
+The Canvas API allows to create complex graphical effects.
+You paint on a
+`Bitmap`
+surface.
+The
+`Canvas`
+class provides the drawing methods to draw on a bitmap and the
+`Paint`
+class specifies how you draw on the bitmap.
 		
 	
 
-	<section id="canvasapi_canvas">
-		<title>The Canvas class
+=== The Canvas class
 		
-			The
-			`Canvas`
-			object contains the bitmap on which you draw. It also provides
-			methods for drawing operations, e.g.
-			`drawARGB()`
-			for drawing a color,
-			`drawBitmap()`
-			to draw a
-			`Bitmap`
-			,
-			`drawText()`
-			to draw a text,
-			`drawRoundRect()`
-			to draw a rectangle with rounded corners and much more.
-		
-	
-	<section id="canvasapi_paint">
-		<title>The Paint class
-		
-			For drawing on the
-			`Canvas`
-			object you use an object of type
-			`Paint`
-			.
-		
-		
-			The
-			`Paint`
-			class allows to specify the color, font and certain effects for the
-			drawing operation.
-		
-		
-			The
-			`setStyle()`
-			method allows to specify if the  only the outline (
-			`Paint.Style.STROKE`
-			), the filled part (
-			`Paint.Style.FILL`
-			) or both (
-			`Paint.Style.STROKE_AND_FILL`
-			)should be drawn.
-		
-		
-			You can set the alpha channel of the
-			`Paint`
-			via the
-			`setAlpha()`
-			method.
-		
-		
-			Via
-			_Shaders_
-			you can define that the
-			`Paint`
-			is filled with more than one color.
+The
+`Canvas`
+object contains the bitmap on which you draw. It also provides
+methods for drawing operations, e.g.
+`drawARGB()`
+for drawing a color,
+`drawBitmap()`
+to draw a
+`Bitmap`
+,
+`drawText()`
+to draw a text,
+`drawRoundRect()`
+to draw a rectangle with rounded corners and much more.
 		
 	
-	<section id="canvasapi_shader">
-		<title>Shader
+=== The Paint class
 		
-			A shader allows to define for a
-			`Paint`
-			object the content which should be drawn. For example you can use a
-			`BitmapShader`
-			to define that a bitmap should be used to draw. This allows you for
-			example to draw an image with rounded corners. Simply define a
-			`BitmapShader`
-			for your
-			`Paint`
-			object and use the
-			`drawRoundRect()`
-			method to draw a rectancle with rounded corners.
+For drawing on the
+`Canvas`
+object you use an object of type
+`Paint`
+.
 		
 		
-			Other
-			_Shaders_
-			provided by the Android platform are
-			`LinearGradient`
-			,
-			`RadialGradient`
-			and
-			`SweepGradient`
-			for drawing color gradients.
+The
+`Paint`
+class allows to specify the color, font and certain effects for the
+drawing operation.
 		
 		
-			To use a
-			_Shaders_
-			assign it to your
-			`Paint`
-			object via the
-			`setShader()`
-			method.
+The
+`setStyle()`
+method allows to specify if the  only the outline (
+`Paint.Style.STROKE`
+), the filled part (
+`Paint.Style.FILL`
+) or both (
+`Paint.Style.STROKE_AND_FILL`
+)should be drawn.
 		
 		
-			If the area which is filled is larger than the
-			_Shaders_
-			you can define via the
-			_Shader tile mode_
-			how the rest should be filled. The
-			`Shader.TileMode.CLAMP`
-			constant
-			defines that the edge corners should be used to fill the
-			extra space, the
-			`Shader.TileMode.MIRROR`
-			constant defines that the image is mirrored and
-			`Shader.TileMode.REPEAT`
-			defines that the image will be repeated.
+You can set the alpha channel of the
+`Paint`
+via the
+`setAlpha()`
+method.
+		
+		
+Via
+_Shaders_
+you can define that the
+`Paint`
+is filled with more than one color.
+		
+	
+=== Shader
+		
+A shader allows to define for a
+`Paint`
+object the content which should be drawn. For example you can use a
+`BitmapShader`
+to define that a bitmap should be used to draw. This allows you for
+example to draw an image with rounded corners. Simply define a
+`BitmapShader`
+for your
+`Paint`
+object and use the
+`drawRoundRect()`
+method to draw a rectancle with rounded corners.
+		
+		
+Other
+_Shaders_
+provided by the Android platform are
+`LinearGradient`
+,
+`RadialGradient`
+and
+`SweepGradient`
+for drawing color gradients.
+		
+		
+To use a
+_Shaders_
+assign it to your
+`Paint`
+object via the
+`setShader()`
+method.
+		
+		
+If the area which is filled is larger than the
+_Shaders_
+you can define via the
+_Shader tile mode_
+how the rest should be filled. The
+`Shader.TileMode.CLAMP`
+constant
+defines that the edge corners should be used to fill the
+extra space, the
+`Shader.TileMode.MIRROR`
+constant defines that the image is mirrored and
+`Shader.TileMode.REPEAT`
+defines that the image will be repeated.
 		
 	

@@ -1,10 +1,4 @@
-<section id="customviews_example">
-	<title>Example for custom view
+== Example for custom view
 	
-		You find an example for a custom view (including touch support)
-		under
-		the following URL:
-		<ulink
-			url="http://www.vogella.com/tutorials/AndroidTouch/article.html#singletouch[Android custom views and touch]
-		.
+You find an example for a custom view (including touch support) under the following URL: http://www.vogella.com/tutorials/AndroidTouch/article.html#singletouch
 	

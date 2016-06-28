@@ -1,143 +1,87 @@
-<section id="tutorial_compoundcontrols" role="wrapper">
-	<title>Exercise: Compound view
-	<section id="tutorial_compoundcontrols1">
-		<title>Create project
+== Exercise: Create a  compound view
+=== Create project
 		
-			Create a new Android project with the following data.
+Create a new Android project with the following data.
 		
-		
-			<table frame='all'>
-				<title>New Android project
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' />
-					<colspec colname='c2' />
-					<thead>
-						<row>
-							<entry>Property</entry>
-							<entry>Value</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>Application Name</entry>
-							<entry>Compound view example</entry>
-						</row>
-						<row>
-							<entry>Project Name</entry>
-							<entry>com.vogella.android.customview.compoundview</entry>
-						</row>
-						<row>
-							<entry>Package name</entry>
-							<entry>com.vogella.android.customview.compoundview</entry>
-						</row>
-						<row>
-							<entry>API (Minimum, Target, Compile with)</entry>
-							<entry>Latest</entry>
-						</row>
-						<row>
-							<entry>Template</entry>
-							<entry>Empty Activity</entry>
-						</row>
-						<row>
-							<entry>Activity</entry>
-							<entry>MainActivity</entry>
-						</row>
+.Table New Android project (1,1)
+[cols="1,3"]
+|===
+| Property | Value
 
-						<row>
-							<entry>Layout</entry>
-							<entry>activity_main</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+| Testing
+| Table width
+
+|Application Name
+|Compound view example
+
+|Project Name
+|com.vogella.android.customview.compoundview
+
+|Package name
+|com.vogella.android.customview.compoundview
+
+|API (Minimum, Target, Compile with)
+|Latest
+
+|Template
+|Empty Activity
+
+|Activity
+|MainActivity
+
+|Layout
+|activity_main
+|===
+	
+=== Define and use additional attributes
+		
+Create the following attributes file called _attrs.xml_ in your _res/values_ folder.
+		
+[source,java]
+----
+include::res/compound/attrs.xml[]
+----
+		
+		
+Change the layout file used by the activity to the following.
+
+[source,java]
+----
+include::res/compound/activity_main.xml[]
+----		
 		
 
 	
+=== Create compound view
+		
+Create the following layout file called _view_color_options.xml_ for your compound view.
 
-	<section id="tutorial_compoundcontrols2">
-		<title>Define and use additional attributes
+[source,java]
+----
+include::res/compound/view_color_options.xml[]
+----        	
 		
-			Create the following attributes file called
-			_attrs.xml_
-			in your
-			_res/values_
-			folder.
 		
-
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/compound/attrs.xml" />
-			</programlisting>
+Create the following compound view.
 		
 
+[source,java]
+----
+include::res/compound/ColorOptionsView.java[]
+----            
 		
-			Change the layout file used by the activity
-			to the following.
+=== Adjust activity
 		
+Change your activity to the following code and run your application.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/compound/activity_main.xml" />
-			</programlisting>
+[source,java]
+----
+include::res/compound/MainActivity.java[]
+----  	
 		
+The running application should look like the following screenshot.
 
-	
-
-	<section id="tutorial_compoundcontrols3">
-		<title>Create compound view
-		
-			Create the following layout file called
-			_view_color_options.xml_
-			for your compound
-			view.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/compound/view_color_options.xml" />
-			</programlisting>
-		
-
-		
-			Create the following compound
-			view.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/compound/ColorOptionsView.java" />
-			</programlisting>
-		
-	
-	<section id="tutorial_compoundcontrols4">
-		<title>Create Activity
-
-		
-			Change your
-			activity
-			to the following code and run your
-			application.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/compound/MainActivity.java" />
-			</programlisting>
-		
-		The running application should look like the following
-			screenshot.
-		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/compoundview10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Result of using the component view</phrase>
-				</textobject>
-			</mediaobject>
-		
+image::compoundview10.png[Result of using the component view, pdfwidth=60%]
 
 
 	

@@ -1,49 +1,40 @@
-<section id="additional_attributes">
-	<title>Define additional attributes for your custom Views
+== Define additional attributes for your custom Views
 	
-		You can define additional attributes for your compound or custom
-		views.
-		To define additional attributes create an
-		_attrs.xml_
-		file in your
-		_res/values_
-		folder. The following shows an example of attributes defined for a new
-		view called
-		`ColorOptionsView`
-		.
+You can define additional attributes for your compound or custom
+views.
+To define additional attributes create an
+_attrs.xml_
+file in your
+_res/values_
+folder. The following shows an example of attributes defined for a new
+view called
+`ColorOptionsView`
+.
 	
+[source,xml]
+----
+include::res//attributes/attrs.xml[]
+----
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/attributes/attrs.xml" />
-		</programlisting>
-	
-
-	
-		To use these attributes in your layout file you have to declare
-		them in
-		the XML header. In the following listing this is done via the
-		`xmlns:custom`
-		part of the code. These attributes are also assigned to the view.
+To use these attributes in your layout file you have to declare
+them in
+the XML header. In the following listing this is done via the
+`xmlns:custom`
+part of the code. These attributes are also assigned to the view.
 	
 
-	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/attributes/activity_main.xml" />
-		</programlisting>
-	
+[source,xml]
+----
+include::res/attributes/activity_main.xml[]
+----	
 
 
-	The following example shows how you components can access these
-		attributes.
+The following example shows how you components can access these attributes.
 	
-	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/attributes/ColorOptionsView.java" />
-		</programlisting>
-	
+[source,java]
+----
+include::res/attributes/ColorOptionsView.java[]
+----
 
 
 

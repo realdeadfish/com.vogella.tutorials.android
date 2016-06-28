@@ -1,206 +1,86 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<section id="customviews" role="wrapper">
-	<title>Custom Views
-	<section id="views_androiddefaults">
-		<title>Default views
+== Custom Views
+
+=== Default views
 		
-			The Android framework provides several default views but
-			developer can
-			also create their custom views and use them in their
-			application. The
-			base class a view is the
-			`View`
-			.
+The Android framework provides several default views.
+The base class a view is the `View`.
+Views are responsible for measuring, layouting and drawing themselves and their child elements (in case of a `ViewGroup`). 
+Views are also responsible for saving their UI state and handling touch events.
+Developers can also create custom views and use them in their application. 
+
+It is possible to create custom views by:
+
+* Compound views - combining views with a default wiring
+* Custom views - creating your own views
+** by extending an existing view, e.g. `Button`
+** by extending the `View` class
+
+The following image shows the default view hierarchy of Android.
+		
+image::android_viewhierarchy10.png[Android view hierarchy,pdfwidth"60%]
+
+View are typically created to provide a user interface experience with is not possible with the default views. 
+Using custom view allows the developer allow to do certain performance optimization, i.e., in case of a custom layout the development can optimize the layout manager for his use case.
+		
+=== How Android draws the view hierarchy
+
+Once an activity receives the focus, it must provide the root node of its layout hierarchy to the Android system. 
+Afterwards the Android system starts the drawing procedure.
+		
+Drawing begins with the root node of the layout. 
+The layout hierarchy is traversed in the order of declaration, i.e., parents are drawn before their children and children are drawn in the order of declaration.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/android_viewhierarchy10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Android view hierarchy</phrase>
-				</textobject>
-			</mediaobject>
+Drawing the layout is a two pass process:
+
+* measuring pass - implemented in the`measure(int, int)` method. This happens as a top-down traversal of the view hierarchy. 
+Every view stores its measurements.
+* layout pass - implemented in the `layout(int, int, int, int)` method. 
+This is also a top-down traversal of the view hierarchy. 
+During this phase each layout manager is responsible for positioning all of its children. 
+It uses the sizes computed in the measure pass.
+		
+NOTE: The measure and layout step always happen together.
 		
 
-	
-
-	<section id="customviews_howandroiddraws">
-		<title>How Android draws the view hierarchy
-		Once an Activity receives the focus, it must provide the root
-			node of its layout hierarchy to the Android system. Afterwards the
-			Android system starts the drawing procedure.
+Layout managers can run the measure pass several times. 
+For example, `LinearLayout` supports the weight attribute which distributes the remaining empty space among views and `RelativeLayout` measures child views several times to solve constraints given in the
+layout file.
 		
-		Drawing begins with the root node of the layout. The layout
-			hierarchy is traversed in the order of declaration, i.e., parents are
-			drawn before their children and children are drawn in the order of
-			declaration.
+A view or activity can trigger the measure and layout pass with a call to the `requestLayout()` method.
 		
 		
-			Drawing the layout is a two pass process:
-			<itemizedlist>
-				<listitem>
-					
-						measuring pass - implemented in the
-						`measure(int, int)`
-						method
-						and is a top-down traversal of the view hierarchy. Every
-						view stores its measurements.
-					
-				</listitem>
-				<listitem>
-					
-						layout pass - implemented in the
-						`layout(int, int, int, int)`
-						method
-
-						is also a
-						top-down traversal of the view hierarchy. During
-						this phase
-						each layout manager is responsible for
-						positioning
-						all of
-						its children. It uses
-						the sizes computed in the
-						measure
-						pass.
-					
-				</listitem>
-			</itemizedlist>
-
-		
-		<note>
-			The measure and layout step always happen together.
-		</note>
-		<note>
-			Layout managers can run the measure pass several times. For example
-			`LinearLayout`
-			supports the weight attribute which distributes the remaining empty
-			space among views and
-			`RelativeLayout`
-			measures child views several times to solve constraints given in the
-			layout file.
-		</note>
-		
-			A view or activity can retrigger the measure and layout pass with a
-			call to the
-			`requestLayout()`
-			method.
+After the measure and layout calculation, the views draw themselves.
+This operation can be triggered with the invalidate() method from the `View` class.
 		
 		
-			After the measure and layout calculation, the views draw
-			themselves.
-			This operation can be
-			triggered with the invalidate() method from the
-			`View`
-			class.
+For a detailed introduction into the deeper layer of Android see http://source.android.com/devices/graphics/architecture.html.
 		
-		
-			For a detailed introduction into the deeper layer of Android see the
-			http://source.android.com/devices/graphics/architecture.html[Android Graphical Architecture]
-			article.
 		
 	
+=== Using new views in layout files
 
-	<section id="customviews_reasonsforcreating">
-		<title>Reasons for creating views
-		View are typically created to provide a user interface
-			experience with is not possible with the default views. Using custom
-			view allows the developer allow to do certain performance
-			optimization, i.e., in case of a custom layout the development can
-			optimize the layout manager for his use case.
+Custom and compound views can be used in layout files. 
+For this you need to use the full qualified name in the layout file, e.g. using the package and class name.
 		
+[source,xml]
+----
+include::res/layout/main.xml[]
+----
+
+[TIP]
+====
+Alternatively you can also declare you name space in the layout file, similar to the Android name space.
+====
 	
-
-	<section id="customviews_purpose">
-		<title>Responsibility of views
+=== Create screenshots of views
 		
-			Views
-			are responsible for
-			measuring, layouting and drawing themselves
-			and
-			their child elements
-			(in case of a
-			`ViewGroup`
-			). Views are also
-			responsible for saving their
-			UI state and handling
-			touch events.
+Every `View` class support the creating of an image of its current display. 
+The following coding shows an example for that.
 		
-
-	
-
-	<section id="customviews_type">
-		<title>Ways of creating custom views
-		
-			Customs
-			views are typically classified as compound views or
-			custom
-			views. It is possible to create custom views by:
-
-			<orderedlist>
-				<listitem>
-					Compound views
-				</listitem>
-				<listitem>
-					
-						Custom views
-						<itemizedlist>
-							<listitem>
-								By extending an existing view
-							</listitem>
-							<listitem>
-								By extending the View class
-							</listitem>
-						</itemizedlist>
-					
-				</listitem>
-			</orderedlist>
-		
-
-	
-
-
-	<section id="customviews_layoutfiles">
-		<title>Using new views in layout files
-		Custom and
-			compound views can be used in layout files. For this
-			you need to use
-			the full qualified name in the layout file, e.g. using
-			the package and
-			class name.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					href="./examples/layout/main.xml" parse="text" />
-			</programlisting>
-		
-		TIP:
-			Alternatively you can also declare
-				you name space in the layout
-				file, similar to the Android name
-				space.
-			
-		</tip>
-	
-	<section id="customviews_createscreenshot">
-		<title>Create screenshots
-			(Images) of views
-		
-			Every
-			`View`
-			class support
-			the creating of an image of its current display. The
-			following coding
-			shows an example for that.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					href="./examples/drawingcache/make.java" parse="text" />
-			</programlisting>
-		
+[source,java]
+----
+include::res/drawingcache/make.java[]
+----
 	
 

@@ -1,36 +1,35 @@
-<section id="customviews_persists">
-	<title>Persisting View data
+=== Persisting view data
 	
-		Most standard
-		view
-		can save there state so that it can be persisted by
-		the system. The Android system calls the
-		`onSaveInstanceState()`
-		method and the
-		`onRestoreInstanceState(Parcable)`
-		to save and restore the view state.
-	
-	
-		The convention is to extend
-		`View.BasedSavedState`
-		as a static inner class in the view for persisting the data.
+Most standard
+views
+can save there state so that it can be persisted by
+the system. The Android system calls the
+`onSaveInstanceState()`
+method and the
+`onRestoreInstanceState(Parcable)`
+to save and restore the view state.
 	
 	
-		Android
-		searches based on the ID of
-		the
-		view
-		in the layout for the
-		view
-		and
-		pass a
-		`Bundle`
-		to the
-		view
-		which the
-		view
-		can use to restore its state.
+The convention is to extend
+`View.BasedSavedState`
+as a static inner class in the view for persisting the data.
 	
-	You should save and restore the user interface state as the user
-		left it, e.g. the scroll position or the active selection.
+	
+Android
+searches based on the ID of
+the
+view
+in the layout for the
+view
+and
+pass a
+`Bundle`
+to the
+view
+which the
+view
+can use to restore its state.
+	
+You should save and restore the user interface state as the user
+left it, e.g. the scroll position or the active selection.
 	

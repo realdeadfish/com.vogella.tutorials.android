@@ -1,42 +1,29 @@
-<section id="compoundcontrols">
-	<title>Compound Views
-	
-		Compound views (also known as
-		_Compound Components_
-		) are  pre-configured
-		`ViewGroups`
-		based on existing views
-		with
-		some
-		predefined view interaction.
-	
-	Combound views also allow you to add custom API to update and
-		query the state of the combound view.
-	
+== Compound Views
 
-	
-		For such a control you define a layout
-		file and assign it to your
-		compound view. In the implementation of
-		your compound view you
-		predefine the
-		view
-		interaction.
-		You would define a layout file and extend
-		the corresponding
-		`ViewGroup`
-		class. In this class you inflate the layout file and implement the
-		`View`
-		connection logic
-	
-	TIP:
-		
-			For performance reasons you may want to rewrite your combound
-			view to
-			a custom view which extends
-			`View`
-			. This may you can typically flatten your view hierarchy. Drawing the
-			view requires in this case less traversals and this can be
-			significantly faster if implemented correctly.
-		
-	</tip>
+Compound views (also known as _Compound Components_ ) are  pre-configured `ViewGroups` based on existing views with some predefined view interaction.
+
+Combound views also allow you to add custom API to update and query the state of the combound view.
+
+
+For such a control you define a layout file and assign it to your compound view. 
+In the implementation of your compound view you
+predefine the
+view
+interaction.
+You would define a layout file and extend
+the corresponding
+`ViewGroup`
+class. In this class you inflate the layout file and implement the
+`View`
+connection logic
+
+[TIP]
+====
+For performance reasons you may want to rewrite your combound
+view to
+a custom view which extends
+`View`
+. This may you can typically flatten your view hierarchy. Drawing the
+view requires in this case less traversals and this can be
+significantly faster if implemented correctly.
+====
