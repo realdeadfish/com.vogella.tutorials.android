@@ -5,9 +5,8 @@
 A popular navigation pattern in Android applications is the _navigation drawer_. 
 The navigation drawer is a panel that displays the navigation options on the left side of the screen. 
 It is hidden by default, but can be displayed with a swipe from the left side to the right or if the user touches the app icon. 
-The usage of the navigation drawer is currently widespread within Android application.
-		
-The usage of the navigation drawer in the Gmail application is depicted in the following screenshot.
+The usage of the navigation drawer as depicted in the following screenshot is currently very popular within Android application
+
 image::navigation_drawer10.png[Navigation Drawer in Gmail]
 		
 The navigation drawer is part of the support library v4. 

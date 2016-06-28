@@ -5,7 +5,7 @@ Entries in the toolbar are typically called _actions_.
 While it is possible to create entries in the action bar via code, it is typically defined in an XML resource file.
 		
 Each menu definition is contained in a separate file in the _res/menu_ folder. 
-The Android tooling automatically creates a reference to this file in the `R` file, so that the menu resource can be accessed.
+The Android tooling automatically creates a reference to menu item entries in the `R` file, so that the menu resource can be accessed.
 		
 === Creating actions
 		
@@ -34,7 +34,6 @@ TIP: While you can define the actions also in your source code, it is good pract
 		
 If an action is selected, the `onOptionsItemSelected()` method in the corresponding activity is called. 
 It receives the selected action as parameter. 
-Based on this information, you can decide what to do. 
 The usage of this method is demonstrated in the following code snippet.
 		
 [source,java]
@@ -52,4 +51,93 @@ This method allows to search by id.
 The `onCreateOptionsMenu()` method is only called once. 
 If you want to change the menu later, you have to call the `invalidateOptionsMenu()` method. 
 Afterwards this `onCreateOptionsMenu()` method is called again.
+		
+=== Making the toolbar context sensitive with the contextual action mode
+	
+A contextual action mode activates a temporary toolbar that overlays the application toolbar for the duration of a particular sub-task.
+	
+The contextual action mode is typically activated by selecting an item or by long clicking on it.
+	
+To implement this, call the `startActionMode()` method on a viewor on your activity. 
+This method gets an `ActionMode.Callback` object which is responsible for the life cycle of the contextual action bar.
+	
+You could also assign a context menu to a view via the `registerForContextMenu(view)` method. 
+A context menu is also activated if the user "long presses" the view. 
+The `onCreateContextMenu()` method is called every time a context menu is activated as the context menu is discarded after its usage.
+You should prefer the contextual action mode over the usage of context menus.
+
+=== Contributing to the action bar with fragments
+	
+Fragments can also contribute entries to the toolbar bar.
+	
+To do this, call `setHasOptionsMenu(true)` in the `onCreate()` method of the fragment. 
+The Android framework calls in this case the `onCreateOptionsMenu()` method in the fragment class.
+Here the fragment can adds menu items to the toolbar.
+	
+
+=== Changing the visibility of the toolbar bar
+
+You can change the visibility of the toolbar at runtime. 
+The following code demonstrates that.
+
+[source,java]
+----
+include::res/modify/hide.java[]
+----
+
+You can also change the text which is displayed alongside the application icon at runtime. 
+The following example shows that.
+
+[source,java]
+----
+include::res/modify/title.java[]
+----
+
+=== Assigning a Drawable
+
+You also add a `Drawable` to the action bar as background via the `ActionBar.setBackgroundDrawable()` method.
+
+The toolbar scales the image. 
+Therefore it is best practice to provide a scalable drawable , e.g., a 9-patch or XML drawable.
+
+As of Android 4.2 the background of the action bar can also be animated via an `AnimationDrawable`.
+
+=== Dimming the navigation buttons
+
+You can also dim the software navigation button in your Android application to have more space available. 
+If the user touches the button of the screen, the navigation button is automatically shown again.
+
+Dimming the navigation buttons is demonstrated by the following code snippet.
+
+[source,java]
+----
+include::res/navigation/hide.java[]
+----
+
+The following screenshots show an application with and without the navigation buttons.
+
+image::dimnavigationbuttons10.png[Application with action bar,pdfwidth=30%]
+image::dimnavigationbuttons20.png[Application with dimmed action bar,pdfwidth=30%]
+
+=== Using immersive full screen mode
+
+As of Android 4.4 (API 19) you can put your application into full screen mode. 
+The first time this happens the system displays the user the info that he can restore the system bars with a downward swipe along the region where the system bars normally appear.
+
+For example the following method also to put an activity into full screen mode.
+
+[source,java]
+----
+include::res/navigation/immersivemode.java[]
+----
+
+=== Enabling the split toolbar
+
+You can define that the toolbar should be automatically split by the system if not enough space is available.
+
+You can activate this via the `android:uiOptions="SplitActionBarWhenNarrow"` parameter in the declaration of your application activity in the _AndroidManifest.xml_ file.
+
+NOTE: If this option is activated, Android has the option to split the toolbar. 
+Whether to split is decided by the system at runtime.
+
 		

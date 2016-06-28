@@ -1,4 +1,5 @@
 == Exercise: Add a toolbar to your application
+
 === Add a refresh icon
 		
 Continue to use the _RSS Reader_ project. 
@@ -39,7 +40,9 @@ Run your application and validate that you can select both of your actions.
 Ensure that the correct info message is displayed if you select the different entries.
 		
 image::toolbar_rssfeed10.png[Social App running]
-		
+
+[INFO]
+====
 If your device or emulator has an _Option_ menu button, you will not see the overflow menu. 
 Press the _Option_ key to see your second action.
-		
+====	
