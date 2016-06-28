@@ -7,7 +7,7 @@ The user sees a collection of items and can scroll through them.
 The collection of items can be a list, a grid or another structured representations of data.
 Such an activity is depicted in the following picture.
 
-image::listview_scheme10.png[Listview example]
+image::listview_scheme10.png[Listview example, pdfwidth=60%]
 
 		
 The user interacts with the collection of items via touch events or the toolbar.
@@ -16,7 +16,7 @@ This selection may update the toolbar or may trigger a detailed screen based on 
 The following graphic sketches that. 
 		
 
-image::listview_scheme20.png[Listview example]
+image::listview_scheme20.png[Listview example,pdfwidth=60%]
 
 === Using RecyclerView 
 		
@@ -46,7 +46,7 @@ An adapter for recyler view extends the `RecyclerView.Adapter` sclass.
 Every entry in a recycler view consists of a view hierarchy filled with the data model. 
 For example, an entry in a list may have an image on the left side and two text lines in the middle as depicted in the following graphic.
 		
-image::listview_line10.png[Recyler view example layout]
+image::listview_line10.png[Recyler view example layout,pdfwidth=60%]
 		
 		
 A layout file for a such a line might look like the following.
@@ -149,7 +149,7 @@ and a
 . The following graphic shows a list with different layouts for odd
 and even rows.
 		
-image::adapter10.png[Adapter provides data and defines the layout per row]
+image::adapter10.png[Adapter provides data and defines the layout per row,pdfwidth=60%]
 		
 		
 Within the
