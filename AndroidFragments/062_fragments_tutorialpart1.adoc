@@ -41,10 +41,9 @@ Table Android project
 |===
 	
 	
-=== Create standard layouts
+=== Create layout files for the fragments
 		
 Create the new layout files in the _res/layout/_ folder.
-
 Create a new layout file called _fragment_rssitem_detail.xml_. 
 		
 [source,xml]
