@@ -1,1 +1,1 @@
-getResources().getBoolean(R.bool.dual_pane);
+getResources().getBoolean(R.bool.twoPaneMode);

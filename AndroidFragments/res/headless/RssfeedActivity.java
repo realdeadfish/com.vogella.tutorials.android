@@ -9,11 +9,27 @@ import android.widget.FrameLayout;
 public class RssfeedActivity extends Activity implements
         MyListFragment.OnItemSelectedListener {
 
+    SelectionStateFragment stateFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rssfeed);
+        stateFragment =
+                (SelectionStateFragment) getFragmentManager()
+                        .findFragmentByTag("headless");
+
+        if(stateFragment == null) {
+            stateFragment = new SelectionStateFragment();
+            getFragmentManager().beginTransaction()
+                    .add(stateFragment, "headless").commit();
+        }
+
         if (findViewById(R.id.fragment_container) == null) {
+            // restore state
+            if (stateFragment.lastSelection.length()>0) {
+                onRssItemSelected(stateFragment.lastSelection);
+            }
             // all good, we use the fragments defined in the layout
             return;
         }
@@ -28,18 +44,22 @@ public class RssfeedActivity extends Activity implements
                         .remove(fragmentById).commit();
             }
         }
+
         MyListFragment listFragment = new MyListFragment();
         FrameLayout viewById = (FrameLayout) findViewById(R.id.fragment_container);
         getFragmentManager().beginTransaction()
                 .replace(R.id.fragment_container, listFragment).commit();
+
     }
 
     @Override
     public void onRssItemSelected(String link) {
+        stateFragment.lastSelection = link;
         if (getResources().getBoolean(R.bool.twoPaneMode)) {
             DetailFragment fragment = (DetailFragment) getFragmentManager()
                     .findFragmentById(R.id.detailFragment);
             fragment.setText(link);
+
         } else {
             // replace the fragment
             // Create fragment and give it an argument for the selected article

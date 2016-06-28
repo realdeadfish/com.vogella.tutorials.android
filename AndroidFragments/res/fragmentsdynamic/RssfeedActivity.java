@@ -19,7 +19,7 @@ public class RssfeedActivity extends Activity implements
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_rssfeed);
 
-		isDualPaneMode = getResources().getBoolean(R.bool.dual_pane);
+		isDualPaneMode = getResources().getBoolean(R.bool.twoPaneMode);
 
 		FragmentManager fm = getFragmentManager();
 

@@ -1,17 +1,22 @@
-== Exercise: Use different number of fragments depending on the configuration
+== Exercise: Use a headless retained fragment to store the state
 
 === Target of this exercise
 
-The _RssfeedActivity_ should show two fragments (two panes) if started in landscape mode.
-In this exercise you adjust your application to support this.
+We would like to remember the last selection. 
+We use a headless fragment for this
 
-=== Create activity layout for portrait mode
-		
-Create the following _activity_rssfeed.xml_ layout file based on the `port` resource qualifier for orientation.
+=== Create headless fragment
 
-[source,xml]
+[source,java]
 ----
-include::res/fragments/activity_rssfeed2.xml[]
+include::res/headless/SelectionStateFragment.java[]
+----
+
+=== Use headless fragment to store the last selected value
+
+[source,java]
+----
+include::res/headless/RssfeedActivity.java[]
 ----
 
 === Define a boolean flag dependent of the resource selector
