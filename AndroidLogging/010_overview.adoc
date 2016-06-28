@@ -1,5 +1,9 @@
 == Logging in Android
 (((Logging)))
+(((Log statements)))
+(((LogCat view)))
+
+=== The log system of Android
 	
 The Android system uses a centralized system for all logs. 
 The application programmer can also write custom log messages. 
