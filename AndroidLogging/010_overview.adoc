@@ -1,0 +1,9 @@
+== Logging in Android
+(((Logging)))
+	
+The Android system uses a centralized system for all logs. 
+The application programmer can also write custom log messages. 
+The tooling to develop Android applications allows you to define filters for the log statements you are interested in.
+	
+	
+

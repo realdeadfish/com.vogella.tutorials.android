@@ -1,0 +1,10 @@
+[[androidstudio_viewinglogentries]]
+=== Viewing log messages
+(((Log statements)))
+(((LogCat view)))
+	
+See http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_viewinglogentries to learn how to see log statements in your IDE.
+	
+
+
+

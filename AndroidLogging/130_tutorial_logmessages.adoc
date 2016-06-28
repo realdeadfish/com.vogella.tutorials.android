@@ -1,0 +1,22 @@
+== Add a log statement
+	
+At the following interface to an existing Android application.
+It defines a constant for your
+log statements.
+	
+[source,java]
+----
+include::res/log/Constants.java[]
+----	
+	
+
+Add a log statement to your `onCreate` method.
+	
+[source,java]
+----
+include::res/log/log/createlog.java[]
+----	
+
+Run your application and check that you see your log statement in your IDE. See <<androidstudio_viewinglogentries>> for info how to access the logs.
+	
+
