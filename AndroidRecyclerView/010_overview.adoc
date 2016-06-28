@@ -7,7 +7,7 @@ The user sees a collection of items and can scroll through them.
 The collection of items can be a list, a grid or another structured representations of data.
 Such an activity is depicted in the following picture.
 
-image::listview_scheme10.png[Listview example, pdfwidth=60%]
+image::listview_scheme10.png[Listview example, pdfwidth=40%]
 
 		
 The user interacts with the collection of items via touch events or the toolbar.
@@ -16,7 +16,7 @@ This selection may update the toolbar or may trigger a detailed screen based on 
 The following graphic sketches that. 
 		
 
-image::listview_scheme20.png[Listview example,pdfwidth=60%]
+image::listview_scheme20.png[Listview example,pdfwidth=40%]
 
 === Using RecyclerView 
 		
@@ -29,24 +29,31 @@ It also comes with default animations for removing and adding elements.
 		
 `RecyclerView` allow to use different layout managers for positioning items.
 
-		
-=== Using a view holder
-		
-		
-Recyler view uses a `ViewHolder` to store references to the views for one entry in the recyler view. 
+Recycler view uses a `ViewHolder` to store references to the views for one entry in the recycler view. 
 A `ViewHolder` class is a static inner class in your adapter which holds references to the relevant views. 
 With these references your code can avoid the time-consuming `findViewById()` method to update the widgets with new data.
 		
 === Adapters
 		
 An _adapter_ manages the data model and adapts it to the individual entries in the widget. 
-An adapter for recyler view extends the `RecyclerView.Adapter` sclass.
+It extends the `RecyclerView.Adapter` class and is assiged to the recycler view via the `RecyclerView.setAdapter` method.
+The input to the adapter of an recycler view can be any arbitrary Java objects. 
+Based on this input the adapter must return the total number of items via its `getItemCount()` method.
+
+The adapter  prepares the layout of the items by inflating the correct layout for the individual data elements.
+This work is done in the `onCreateViewHolder` method.
+It returns an object of type `ViewHolder` per visual entry in the recycler view.
+
+This instance is used to access the views in the inflated layout. 
+The `onCreateViewHolder` method is only called then a new view must be created.
+
+Every visible entry in a recycler view is filled with the correct data model item by the adapter. 
+Once a data item becomes visible, the adapter assigns this data to the individual widgets which he inflated earlier.
+This work in done in the `onBindViewHolder` method.
 		
-		
-Every entry in a recycler view consists of a view hierarchy filled with the data model. 
 For example, an entry in a list may have an image on the left side and two text lines in the middle as depicted in the following graphic.
 		
-image::listview_line10.png[Recyler view example layout,pdfwidth=60%]
+image::listview_line10.png[Recycler view example layout,pdfwidth=40%]
 		
 		
 A layout file for a such a line might look like the following.
@@ -57,36 +64,10 @@ include::res/snippets/rowlayout_complex.xml[]
 ----
 		
 		
-The adapter is responsible for inflating the layout for each entry in recycler view. 
-It returns an object of type `ViewHolder`per visual entry in the recycler view.
-		
-		
-The adapter must return the number of items via its `getItemCount()` method.
-Each entry in the `RecylerView` widget displays specific data for the data model. 
-The adapter inflates a corresponding layout file and assigns the data to the inflated layout.
-		
-
-		
-The `onCreateViewHolder` method inflate the layout and creates an instance of the `ViewHolder` class. 
-This instance is used to access the views in the inflated layout. 
-The `onCreateViewHolder` method is only called then a new view must be created.
-		
-
-The `onBindViewHolder` method binds the data to the individual views in the row.
-		
-The adapter is assigned to the `RecylerView` via the `setAdapter` method on the `RecylerView` object.
-		
-
-=== Possible input types for the adapter
-		
-The input to the adapter of `RecyclerView` can be any arbitrary Java objects. 
-The `RecyclerView` adapter extracts the correct item data from the data model.
-Afterwards it assigns this data to the individual widgets in the entry of the recyler view widget.
-
 === Default layout manager
 		
 The layout manager decides how the data in the `RecyclerView` is displayed. 
-The library for recyler view provides the following build-in layout managers.
+The recycler view library provides the following build-in layout managers.
 
 * LinearLayoutManager shows items in a vertical or horizontal scrolling list.
 * GridLayoutManager shows items in a grid.
@@ -128,7 +109,7 @@ The most important classes are listed in the following table
 You can also provide your custom implementations for the layout managers and animations.
 		
 
-=== Handling click events in RecylerView
+=== Handling click events in recycler view
 Touch events, like clicking should be handled by the views in the recycler view. 
 If the view should trigger something in the object in which it is used (activity or fragment), you can pass via the constructor of the adapter to it. 
 This allows the adapter to store a reference to the object and call its methods for feedback.
