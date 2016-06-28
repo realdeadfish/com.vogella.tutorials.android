@@ -10,7 +10,7 @@ Android devices exists in a variety of screen sizes and densities.
 A _panel_ or _pane_ represents a part of the user interface. 
 The term pane is a general term used to describe the concept that multiple views are combined into one compound view depending on the actual available space.
 
-image::panel10.png[Panel,pdfwidth=40%]
+image::panel10.png[Panel,pdfwidth=20%]
 
 If not enough space is available only one panel is shown. 
 This is typically called a _single-pane_ layout.
