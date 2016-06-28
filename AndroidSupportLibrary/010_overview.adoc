@@ -1,7 +1,9 @@
-== Support library to support older devices
+== Using the support libraries from Google
 
-The Android Support Library package is a set of code libraries that provide backward-compatible versions of
-Android framework APIs as well as features that are only available through the library APIs. 
+=== What are the support libraries
+
+The Android Support Library package is a set of code libraries that provide backward-compatible versions of Android framework APIs.
+They also provide features and widgets that are only available through the library APIs. 
 Each support library is backward-compatible to a specific Android API level.
 
 In general you find two types of support libraries. The first type provides framework functionality for older API
@@ -9,3 +11,103 @@ releases, the second type provides new functionality for all devices. This funct
 platform or will never be part of the platform, so that Google can continue to improve it faster than Android platform
 API.
 
+=== The support libraries from Google
+	
+You have different components here. At the time of this writing you
+have:
+
+.Table Support library versions
+|===
+|Support Library|Description|Location
+
+|v4 Support Library
+|Designed for Android 1.6 (API level 4) or higher. 
+Includes lots of things including support for Fragments and the Loader framework.
+|Located in the android-sdk/extras/android/support/v7/appcompat/ directory.
+
+|v7 Support Libraries
+|
+|Set of libraries which require Android 2.1 (API level 7) and higher. Requires also the v4 Support library.
+	
+|v7 appcompat library
+|Adds support for the Action Bar. 
+Includes also support for material design user interface.
+|Located in the android-sdk/extras/android/support/v7/appcompat/
+	
+|v7 cardview library
+|Adds support for the CardView widget.
+|android-sdk/extras/android/support/v7/cardview/
+
+|v7 recyclerview library
+|Adds support for the RecyclerView widget.
+|android-sdk/extras/android/support/v7/recyclerview/
+
+|===
+
+	
+To see a complete list of the available libraries see
+http://developer.android.com/tools/support-library/features.html.
+	
+
+
+
+== Remove usage of the support library from a new project
+
+=== Why would you remove the support library?
+		
+Support libraries are changing very fast therefore it is hard to create a "stable" description how to use them.
+Also unfortunately the templates of Android studio for generating Android projects are changing all the time
+and have recently been changed to include the design support library, even if that is not necessary, e.g., in case
+you are targeting a recent device.
+This
+make
+testing a new feature or standard API harder
+and makes it
+harder to follow a tutorial as the
+generated
+project changes all the time.
+		
+	
+=== Converting a project to a standard Android project
+
+The build dependency in the Gradle build file does not hurt but you need to remove the references to the
+compatibility library from your code and your resources.
+		
+		
+For this,
+change the code of the generated
+activity
+to extend
+`Activity`
+instead of any other activity like
+`AppCompatActivity`
+. Also, reduces the example code to the minimum. The following is an example for an activity called
+`MainActivity`
+.
+
+[source,java]
+----
+include::res/compat/MainActivity.java[]
+----		
+
+Also ensures that only standard elements are using the generated layout file. The following is an example
+listing for a simple standard layout file.
+		
+image::firstlayoutconversion10.png[Changing the styles file,pdfwidth=60%]
+		
+[source,xml]
+----
+include::res/compat/activity_main.xml[]
+----
+		
+Also ensure that the theme is a default theme, instead of the compatibility theme. For this check the
+_app/res/values/styles.xml_
+folder to use the standard material theme.
+
+image::firststylechangesxml.png[Changing the styles file,pdfwidth=40%]
+
+[source,xml]
+----
+include::res/compat/styles.xml[]
+----
+	

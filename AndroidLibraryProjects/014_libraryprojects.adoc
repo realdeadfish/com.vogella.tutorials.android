@@ -67,7 +67,7 @@ and discard
 the other resource.
 
 
-=== Creating custom Android library modules in Android Studio
+=== Creating custom Android library modules
 	
 Using library projects helps you to structure your application code.
 To create a new library module in Android Studio, select menu:File[New Module] and select `Android Library`.
