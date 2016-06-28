@@ -10,7 +10,7 @@ To use the swipe to refresh widget ensure you have a dependency to the support l
 [source,gradle]
 ----
 dependencies {
-    compile "com.android.support:support-v4:18.0.+"
+    compile 'com.android.support:support-v4:24.0.0'
 }
 ----
 
