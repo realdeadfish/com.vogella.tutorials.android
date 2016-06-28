@@ -1,4 +1,4 @@
-= Using Android Studio
+== Using Android Studio
 
 
 [[androidstudio_creatinglayoutfile]]
