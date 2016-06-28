@@ -2,13 +2,13 @@
 
 === Using custom library modules 
 		
-If an Android application project uses an Android
-library module, the
+If an Android application project uses an Android library module, the
 Android
 development tools include the code and resources from the
 library
 project into the
-build result of the Android project. This
+build result of the Android project. 
+This
 means, that
 the components, code and resources of
 the
@@ -65,4 +65,11 @@ from the application, or the library with highest
 priority,
 and discard
 the other resource.
+
+
+=== Creating custom Android library modules in Android Studio
+	
+Using library projects helps you to structure your application code.
+To create a new library module in Android Studio, select menu:File[New Module] and select `Android Library`.
+	
 

@@ -1,7 +1,0 @@
-== Creating custom Android library modules in Android Studio
-	
-To create a new libary
-module in Android Studio, select menu:File[New Module]
-and select
-`Android Library`.
-	

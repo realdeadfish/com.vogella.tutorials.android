@@ -1,8 +1,5 @@
 == Prerequisite
 	
-The following example assumes that you have created a normal Android
-project called
-_com.example.android.rssfeed_
-based on the
-http://www.vogella.com/tutorials/AndroidFragments/article.html#fragments_tutorial - Android Fragments tutorial.
+The following example assumes that you have created an Android project with the _com.example.android.rssfeed_ top level package  based on the following tutorial:
+http://www.vogella.com/tutorials/AndroidFragments/article.html#fragments_tutorial
 
