@@ -1,7 +1,7 @@
 [[intentfilter]]
-== Defining intent filters
+== Registering for intents via intent filters
 
-=== Intent filter
+=== What is an intent filter?
 		
 Intents are used to signal to the Android system that a certain event has occurred. 
 Intents often describe the action which should be performed and provide data upon which such an action should be done.

@@ -12,7 +12,6 @@ Version 0.3, 18.06.2016
 Using Intents in Android. This tutorials describes the usage of intents to communicate between Android components.
 
 include::010_intents.adoc[]
-include::020_intenttypes.adoc[]
 include::030_intentdatatransfer.adoc[]		
 include::050_intentfilter.adoc[]
 include::060_eventtrigger.adoc[]

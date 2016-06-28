@@ -1,16 +1,4 @@
-== Intents and intent filter
-
-=== Task
-        
-In Android the reuse of other application components is a concept known as _task_. 
-An application can access other Android components to achieve a task.
-For example, from a component of your application you can trigger another component in the Android system, which manages photos, even if this component is not part of your application. 
-In this component you select a photo and return to your application to use the selected photo.
-        
-Such a flow of events is depicted in the following graphic.
-        
-        
-image::androidtask10.png[Defining an Android tasks]
+== Starting other Android components via intents
     
 === What are intents?
 		
@@ -27,6 +15,17 @@ For example, via the `startActivity()` method you can define that the intent sho
 An intent can contain data via a `Bundle`. 
 This data can be used by the receiving component.
 
+In Android the reuse of other application components is a concept known as _task_. 
+An application can access other Android components to achieve a task.
+For example, from a component of your application you can trigger another component in the Android system, which manages photos, even if this component is not part of your application. 
+In this component you select a photo and return to your application to use the selected photo.
+        
+Such a flow of events is depicted in the following graphic.
+        
+        
+image::androidtask10.png[Defining an Android tasks]
+
+
 === Starting activities
 		
 To start an activity, use the method `startActivity(intent)`. 
@@ -40,8 +39,6 @@ The following code demonstrates how you can start another activity via an intent
 ----
 include::res/snippets/startActivity.java[]
 ----		
-
-=== Sub-activities
 		
 Activities which are started by other Android activities are called _sub-activities_. 
 This wording makes it easier to describe which activity is meant.
@@ -51,4 +48,33 @@ This wording makes it easier to describe which activity is meant.
 You can also start services via intents. 
 Use the `startService(Intent)` method call for that.
 		
+=== Sending out explicit or implicit intents
+		
+Android supports explicit and implicit intents.
+An application can define the target component directly in the intent (_explicit intent_) or ask the Android system to evaluate registered components based on the intent data(_implicit intents_).
+		
+Explicit intents explicitly define the component which should be called by the Android system, by using the Java class as identifier.
+Explicit intents are typically used within on application as the classes in an application are controlled by the application developer.
+The following shows how to create an explicit intent and send it to the Android system to start an activity.
+
+		
+[source,java]
+----		
+include::res/snippets/explicit1.java[]
+----
+		
+Implicit intents specify the action which should be performed and optionally data which provides content for the action.
+If an implicit intent is sent to the Android system, it searches for all components which are registered for the specific action and the fitting data type.
+If only one component is found, Android starts this component directly.
+If several components are identified by the Android system, the user will get a selection dialog and can decide which component should be used for the intent.
+
+For example, the following tells the Android system to view a webpage.
+All installed web browsers should be registered to the corresponding intent data via an intent filter.
+		
+[source,java]
+----		
+include::res/snippets/viewintent.java[]
+----
+
+	
 	
