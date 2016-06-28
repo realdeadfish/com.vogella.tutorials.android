@@ -89,3 +89,21 @@ In your own create method of the activity you instantiate the presenter.
 Whenever the view needs to perform an operation on the presenter, it would call one of its methods.
 If the presenter finishes, it would call back the view, via the defined interface methods.
 
+=== Considerations for using the MVP design pattern
+
+MVP makes it easier to test your presenter logic and to replace dependencies.
+But using MVP also comes with a costs, it makes your application code longer.
+Also as the standard Android templates at the moment do not use this approach, not every Android developer will find this code structure easy to understand.
+
+=== Comparison to Model View Controller
+
+In the _Model View Presenter_ pattern, the views more separated from the model. 
+The presenter communicates between model and view.
+This makes it easier to create unit tests
+Generally there is a one to one mapping between view and Presenter, but it is also possible to use multiple presenters for complex views.
+
+
+In the _Model View Controller_ pattern the controllers are behavior based and can share multiple views.
+View can communicate directly with the model.
+
+MVP is currently the pattern that the Android community prefers. 

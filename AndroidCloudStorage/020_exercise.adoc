@@ -1,0 +1,6 @@
+== Create a backend for your Android application
+
+Go to https://console.cloud.google.com/start
+
+In Android Studio select, menu:File[New>New Module] and select Google Cloud Module.
+
