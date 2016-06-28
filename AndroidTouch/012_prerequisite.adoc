@@ -1,0 +1,5 @@
+== Prerequisites
+	
+The following assumes that you have already basic knowledge in
+http://www.vogella.com/tutorials/Android/article.html[ Android development].
+	

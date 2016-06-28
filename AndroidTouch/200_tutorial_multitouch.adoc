@@ -1,0 +1,47 @@
+== Exercise: Multitouch
+	
+In this exercise you create a view which support multitouch and
+allows
+you to track several fingers on your device. On the Android
+emulator
+you can only simulate singletouch with the mouse.
+	
+Create
+an Android project called
+_com.vogella.android.multitouch_
+with the
+>activity
+called
+_MainActivity_.
+	
+Create the following
+`MultitouchView`
+class.
+	
+[source,java]
+----
+include::res/multi/MultitouchView.java[]
+----	
+	
+Add this view to the layout of your activity.
+	
+[source,xml]
+----
+include::res/multi/activity_main.xml[]
+----
+	
+Your generated activity can remain the same.
+
+[source,java]
+----
+include::res/multi/MainActivity.java[]
+----
+	
+If you run your application you will be able to draw on the
+screen with your fingers. Every device has an upper limit how many
+pointers are supported, test out how many simultaneous pointers your
+device supports. This application should look similar to the following
+screenshot.
+	
+image::multitouch_exercise10.png[Multitouch exercise,pdfwidth=60%]
+	

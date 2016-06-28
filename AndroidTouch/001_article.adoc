@@ -1,0 +1,22 @@
+= Handling single and multi touch on Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 1.5, 28.06.2016
+:docinfo:
+
+[abstract]
+Single and multi touch in Android.
+This tutorial describes how to use the touch API in Android
+applications.
+
+include::010_overview.adoc[]
+include::012_prerequisite.adoc[]
+include::100_tutorial_singletouch.adoc[]
+include::200_tutorial_multitouch.adoc[]
+include::300_tutorial_scaledetectors.adoc[]
+include::resources.adoc[]
+include::../copyright.adoc[]
