@@ -41,7 +41,7 @@ Ensure that the correct info message is displayed if you select the different en
 		
 image::toolbar_rssfeed10.png[Social App running]
 
-[INFO]
+[NOTE]
 ====
 If your device or emulator has an _Option_ menu button, you will not see the overflow menu. 
 Press the _Option_ key to see your second action.
