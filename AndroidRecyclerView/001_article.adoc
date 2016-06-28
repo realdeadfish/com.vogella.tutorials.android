@@ -11,6 +11,5 @@ Version 1.3, 20.06.2016
 This tutorial describes how to use the RecylerView widget in  Android applications.
 
 include::010_overview.adoc[]
-include::014_installation.adoc[]
 include::020_exercise_recyclerview.adoc[]
 include::008_resourceslocal.adoc[]

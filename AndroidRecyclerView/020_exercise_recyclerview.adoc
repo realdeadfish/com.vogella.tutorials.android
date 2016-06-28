@@ -4,7 +4,7 @@
 		
 In this exercise you create a project which uses the `RecyclerView` class to display a list.
 		
-image::recyclerview_target10.png[RecyclerView example]
+image::recyclerview_target10.png[RecyclerView example, pdfwidth=40%]
 		
 === Create projects and add the Gradle dependency
 
