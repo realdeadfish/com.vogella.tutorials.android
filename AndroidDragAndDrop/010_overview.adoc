@@ -1,0 +1,77 @@
+== Android drag and drop
+
+=== Using drag and drop in Android
+		
+As of Android 4.0 drag and drop of
+view onto other views or view
+groups
+is supported.
+		
+=== Allowing a view to be dragged
+		
+To use dragging a view you register a
+`OnTouchListener`
+or a
+`LongClickListener`
+on the
+view which can be dragged.
+		
+The
+`startDrag`
+method of the
+`View`
+start a drag operation. In this method you also specify the data
+which is passed to the drop target via an instance of
+`ClipData`
+.
+		
+You also pass to the
+`startDrag`
+method an instance of
+`DragShadowBuilder`
+.
+This object specifies the picture used for the drag operation. For
+example you can
+pass in the
+view
+directly, that shows an image of the
+view during the drag
+operation.
+		
+The setup of this drag operation in a touch listener is
+demonstrated in the
+following
+example.
+		
+[source,java]
+----
+include::res/snippets/touch.txt[]
+----		
+	
+=== Defining drop target
+		
+The views which can
+be drop targets get an instance of
+`OnDragListener`
+assigned. In this drop listener you receive call backs in case of
+predefined drag and drop related events.
+* DragEvent.ACTION_DRAG_STARTED
+* DragEvent.ACTION_DRAG_ENTERED
+* DragEvent.ACTION_DRAG_EXITED
+* DragEvent.ACTION_DROP
+* DragEvent.ACTION_DRAG_ENDED
+		
+A view
+with
+`OnDragListener`
+which are used as a drop zone, gets a
+`OnDragListener`
+assigned via the
+`setOnDragListener`
+.
+		
+[source,java]
+----
+include::res/snippets/draglistener.txt[]
+----
+	

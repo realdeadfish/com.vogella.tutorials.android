@@ -1,0 +1,70 @@
+== Exercise: Drag and drop
+
+=== Target of this exercise
+
+In this exercise you create a several view groups which allow to
+drag views between them.
+
+image::dndandroid10.png[Result of the DnD example,pdfwidth=60%]
+		
+=== Create project
+		
+Create a new Android project called
+_com.vogella.android.draganddrop_
+with an activity
+called
+_DragActivity_
+.
+		
+=== Create XML Drawables
+
+In this exercise you are using XML drawables.
+		
+In this part you create several XML drawables in the
+_res/drawable_
+folder.
+		
+Create the following
+_shape.xml_
+file in this folder.
+
+[source,xml]
+----
+include::res/drag/shape.xml[]
+----
+		
+Also create the following
+_shape_droptarget.xml_
+file.
+		
+[source,xml]
+----
+include::res/drag/shape_droptarget.xml[]
+----		
+	
+=== Activity and layout
+		
+Change the layout of your activity
+to the following code.
+		
+[source,xml]
+----
+include::res/drag/main.xml[]
+----		
+		
+Change your activity
+class to the following code.
+		
+[source,java]
+----
+include::res/drag/DragActivity.java[]
+----		
+		
+If you start this
+_activity_
+you should be able to drag the
+`ImageViews`
+to another container.
+		
+image::draganddrop10.png[Drag and Drop Screenshot of the Application,pdfwidth=60%]
+
