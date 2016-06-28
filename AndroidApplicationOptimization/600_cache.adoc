@@ -1,0 +1,86 @@
+== Using caches
+=== Using a cache
+		
+A cache allows reusing objects which are expensive to create. If you load on object into memory, you can think
+of this as a cache for the object.
+For example, if you downloading images from
+the
+Internet
+to
+display
+them in a
+list
+you
+should hold them in memory to avoid
+that you download them
+several
+times.
+		
+At some point you need to recycle some of your objects, otherwise you run out of memory. A good approach to do
+this, is to recycle the objects which have not been used the longest in your application.
+		
+		
+The Android platform provides the
+`LruCache`
+class, as of API 12 (or in the support-v4 library). The
+`LruCache`
+class provides a
+_least recently used cache _
+(LRU cache)
+cache implementation.
+A LRU cache
+keeps track of the usage of its
+members. It has a given size and if this
+size is
+exceeded, it removes
+the
+items
+which have
+not
+be accessed the longest. This behavior is
+depicted in the
+following
+graphic.
+		
+		
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/lrucache10.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>LRU cache in general</phrase>
+	</textobject>
+</mediaobject>
+		
+		
+The following example code demonstrates a possible implementation of the `LruCache` class for caching images.
+		
+		
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/cache/ImageCache.java" />
+</programlisting>
+		
+Its usage is simple and demonstrated by the following example code.
+		
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/cache/ImageCacheUsage.java" />
+</programlisting>
+		
+
+		
+For determining the initial size of the cache, it is good practice to determine the size based on the total memory available on the device.
+For determining the available memory you can the `MemoryClass`. 
+This is demonstrated by the following code.
+		
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/cache/Size.java" />
+</programlisting>
+		
+	
+
+=== Cleaning up your cache
+		
+As of API 14 you can override the `onTrimMemory()` method in Android components. 
+This method is called by the Android system asking you to cleanup your memory in case the Android system requires resources for foreground processes.
+		
+	

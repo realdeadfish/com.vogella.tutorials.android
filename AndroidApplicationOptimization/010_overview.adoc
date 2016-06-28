@@ -1,0 +1,86 @@
+== Programming tips for providing highly responsive and fast Android applications
+
+=== Why you should be careful with Android resources
+
+Android devices have less power than standard desktop or notebook computers. 
+For this reason you must be careful with memory consumption.
+
+Especially on Android devices before Android 5.0 you want to avoid triggering the garbage collector of the
+Java virtual machine. 
+This results in a freeze of the Android runtime for about 200 ms.
+This can be a notable delay, if the user is, for example, scrolling down a list.
+
+=== Avoid unnecessary object allocation
+	
+Avoid creating unnecessary objects, especially in expensive places. 
+Reuse objects if possible.
+Creating unnecessary objects triggers the garbage collection more frequently, and this should be avoided.
+
+For example avoid object creating in loops or in the `onDraw()` method of your custom view.
+	
+=== Use efficient data structures
+	
+Android provides several implementations of `Sparse*Array`
+classes. Consider the following code.
+	
+	
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/memory/createHashMap.java" />
+</programlisting>
+	
+	
+Using this code results in unnecessary `Integer` objects created.
+
+
+	
+Android provides data structures which are more efficient for mapping values to other objects. 
+If possible use these objects, they avoid object creation as in the case of using HashMap. 
+Object creation can be expensive and should be avoided to reduce the number of times the garbage collector needs to run.
+	
+	
+The table give examples for SparseArrays.
+<table frame='all'>
+	<title>Efficient memory structures
+	<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+<colspec colname='c1' colwidth="1*" />
+<colspec colname='c2' colwidth="2*" />
+<thead>
+	<row>
+<entry>Memory structure </entry>
+<entry>Description</entry>
+	</row>
+</thead>
+<tbody>
+	<row>
+<entry><![CDATA[SparseArray<E>]]></entry>
+<entry>Maps integers to Objects, avoid the creation of Integer
+	objects.
+</entry>
+	</row>
+	<row>
+<entry>SparseBooleanArray</entry>
+<entry>Maps integers to booleans. </entry>
+	</row>
+	<row>
+<entry>SparseIntArray</entry>
+<entry>Maps integers to integers</entry>
+	</row>
+</tbody>
+	</tgroup>
+</table>
+	
+
+	
+To improve the above example, prefer to use the following data structure.
+	
+	
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/memory/createSparseArray.java" />
+</programlisting>
+	
+
+
+
+
+
+
