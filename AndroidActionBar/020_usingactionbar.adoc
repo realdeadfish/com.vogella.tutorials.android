@@ -1,13 +1,11 @@
 == Using the toolbar 
-=== Entries in the action bar (actions)
+=== Creating actions in the toolbar
 		
 Entries in the toolbar are typically called _actions_. 
 While it is possible to create entries in the action bar via code, it is typically defined in an XML resource file.
 		
 Each menu definition is contained in a separate file in the _res/menu_ folder. 
 The Android tooling automatically creates a reference to menu item entries in the `R` file, so that the menu resource can be accessed.
-		
-=== Creating actions
 		
 An activity adds entries to the action bar in its `onCreateOptionsMenu()` method.
 		
