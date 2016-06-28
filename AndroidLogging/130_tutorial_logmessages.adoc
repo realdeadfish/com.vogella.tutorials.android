@@ -14,7 +14,7 @@ Add a log statement to your `onCreate` method.
 	
 [source,java]
 ----
-include::res/log/log/createlog.java[]
+include::res/log/createlog.java[]
 ----	
 
 Run your application and check that you see your log statement in your IDE. See <<androidstudio_viewinglogentries>> for info how to access the logs.
