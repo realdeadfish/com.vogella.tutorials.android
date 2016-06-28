@@ -30,7 +30,7 @@ The presenter should not have, if possible, a dependency to the Android SDK, e.g
 
 Contains the data and the code to fetch and update the data. This part of MVP updates the database or communicate with a webserver.
 
-=== Example
+=== Code example
 
 Image a small application which read data user data from Github.
 
@@ -38,10 +38,11 @@ You have an overview screen with the repositories of the selected user.
 If you click on the repository you would see details for this repository.
 
 The contract would be defined via an interface.
+Whenever the view needs to perform an operation on the presenter, it would call one of its methods.
+If the presenter finishes, it would call back the view, via the defined interface methods.
 
 [source,java]
 ----
-
 import android.support.annotation.NonNull;
 
 import java.util.List;
@@ -86,8 +87,6 @@ In your own create method of the activity you instantiate the presenter.
     }
 ----
 
-Whenever the view needs to perform an operation on the presenter, it would call one of its methods.
-If the presenter finishes, it would call back the view, via the defined interface methods.
 
 === Considerations for using the MVP design pattern
 
