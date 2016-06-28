@@ -87,24 +87,18 @@ objects and display the number in your
 `DetailFragment`
 instead of current system time.
 		
-To send the new data, change the
-`updateDetail`
-method in your
-`MyListFragment`
-class.
+To send the new data, change the `updateDetail` method in your `MyListFragment` class.
 		
 [source,java]
 ----
-include::res/net/AccessLibrary.java[]
+include::res/net/MyListFragment.java[]
 ----		
 	
 === Validate implementation
 		
-Start your application and ensure that the
-`toString`
-value of the (at the moment randomly generated) list of
-RssItems is displayed in
-the
-detailed fragment.
+Start your application and ensure that the `toString` value of the list of RssItems is displayed in the detailed fragment.
+
+NOTE: The list is currently generated randomly every time you press the button. 
+
 		
 	
