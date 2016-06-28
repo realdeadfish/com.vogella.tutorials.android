@@ -11,10 +11,6 @@ Version 10.8, 25.06.2016
 [abstract]
 Android resource selectors. This tutorial describes how to the resource selectors work in Android. 
 It describes how to support different screen sizes, languages and densities on different devices.
-
-++++
-include::../header.html[]
-++++
 				
 include::010_deviceconfigurations.adoc[]
 include::020_resource_selectors.adoc[]
