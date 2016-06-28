@@ -1,14 +1,19 @@
 == Using Android Studio
 
+[WARNING]
+====
+Android Studio menus entries are dynamic calculated based on your current selection.
+Unfortunately this feature seems currently a bit buggy. 
+If you do not see a certain menu entry, try selecting the _app_ entry again.
+====
+
 
 [[androidstudio_creatinglayoutfile]]
 === Creating a new layout file
-To create a new layout file, select your project, right click on it and
-select menu:File[New>Other...>Android>Android XML File. 
+
+To create a new layout file, select your project, right click on it and select menu:File[New>Android resource file]. 
 Choose the the _Layout_ option to create a layout file.
-		
-[[androidstudio_creatingresourcefile]]
-=== Creating a new resource file
+
 		
 The easiest way to create a new resource file, e.g., a layout file, is the context menu on the corresponding folder.
 To create a new folder, see <<androidstudio_creatingresourcefolder>>.
@@ -18,9 +23,17 @@ image::as_createlayoutfile10.png[Creating a new layout file,pdfwidth=60%]
 		
 image::as_createlayoutfile20.png[Creating a new layout file selection dialog,pdfwidth=60%]
 		
+NOTE: If you want to create a new layout file for a certain qualifier, you can select it in the creation dialog.
+
+image::as_createlayoutfile30.png[Creating a new layout file for portait,pdfwidth=60%]
+	
+[[androidstudio_creatingresourcefile]]
+=== Creating a new resource file
+
+Similar to the above described creation of layout file, you can create other resources, by changing the selection in the displayed dialog.
 
 [[androidstudio_creatingresourcefolder]]
-=== Creating a new resource folder for a resource qualifier
+=== Creating a new resource folder
 		
 If a resource folder is missing, you have to create it. 
 This is demonstrated by the following screenshots for the creation of the _layout-port_folder.
@@ -68,7 +81,7 @@ image::vector_assets20.png[Using Vector assets step 10,pdfwidth=60%]
 		
 
 [[androidstudio_createmenu]]
-Add a new menu XML resource
+=== Add a new menu resource
 		
 If not yet present, create a new directory called _menu_.
 
@@ -79,19 +92,22 @@ Create a new XML resource called _mainmenu.xml_ for your menu.
 image::menu_resources20.png[Create new menu resources,pdfwidth=60%]
 		
 Afterwards you can manually edit the generated file.
-		
-=== Generating Getter/setting, toString, etc.
-		
-Select the menu:Code[Generate...] menu entry to generate getter, setter, constructors, etc.
-		
-=== Refactor a resource
-		
-To rename a resource, e.g., a Java file, select menu:Refactor[Rename...] from the context menu of the corresponding resource.
 
 [[androidstudio_viewinglogentries]]
 === See the log statements of your Android application
 		
 Use the _Android_ view (Shortcut: kbd:[Alt+6]) to see the log statements in Android Studio.
+
+		
+== Java programming tasks
+
+=== Generating Getter/setting, toString, etc.
+		
+Select the menu:Code[Generate...] menu entry to generate getter, setter, constructors, etc.
+		
+=== Rename a resource
+		
+To rename a resource, e.g., a Java file, select menu:Refactor[Rename...] from the context menu of the corresponding resource or use the kbd:[Shift+F6] shortcut.
 
 
 [[androidstudio_sourceupdate]]
@@ -132,3 +148,15 @@ android {
 ----
 
 
+=== Using live template in your Java code
+	
+Android studio provides templates for typical task in Java and Android. 
+The following list contains a few of the most useful:
+
+* Toast - Creates a Toast
+* fbc - findViewById with cast
+* const - Defines a constant
+*	
+	
+Use menu:File[Settings>Editor>Live Templates] to see the full list.
+	

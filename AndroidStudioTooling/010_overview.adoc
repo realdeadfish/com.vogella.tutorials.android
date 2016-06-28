@@ -4,30 +4,27 @@
 Android Studio is currently the IDE promoted by Google for Android development. 
 It is based on IntelliJ and is basically a fork of its code base with additional Android development capabilities added.
 		
-		
-The old Eclipse based tooling is not actively development anymore by Google, see <<androidstudio_import>> to learn how you can migrate from Eclipse based tooling to Android Studio.
-		
 === The Android Studio toolbar
 The Android Studio toolbar contains several entries which are specific for Android development 
 
 image::androidstudiotoolbar.png[The Android Studio toolbar]
 
 .Table Toolbar
-[cols="1, 3"] 
+[cols="1, 4"] 
 |===
 |Number |Action
 
 |1 
-|Sync Project with Gradle Files
-
-|2
 |AVD Manager
 
+|2
+|Sync Project with Gradle Files
+
 |3
-|SDK Manager
+|Project Structure / Settings
 
 |4
-|Android Device Monitor
+|Android SDK manager
 
 |===
 
@@ -89,7 +86,7 @@ version is
 stable, the beta channel contains the stable version until the next version's beta.
 * Stable channel: Contains the most recent stable version of Android Studio.
 		
-image::as_updatesettings10.png[Update setttings]
+image::as_updatesettings10.png[Update setttings,pdfwidth=60%]
 		
 
 === Using a proxy with Android Studio
@@ -98,4 +95,15 @@ You can use Android Studio and Gradle behind a proxy. For this you have to enter
 Android Studio updates also the setting for Gradle to use this proxy. This works better as of Android Studio 1.4.
 		
 image::asproxy10.png[Defining a proxy]
+		
+
+=== Android Device Monitor
+(((Android Device Monitor in Android Studio)))	
+
+Android Studio allows to open the Android Device Monitor via the toolbar or via the menu:Tools[Android>Android Device Monitor]. menu.
+	
+This starts an Eclipse based application called _Android Device Monitor_ for interacting with your Android (virtual) device and your Android application.
+	
+
+
 		

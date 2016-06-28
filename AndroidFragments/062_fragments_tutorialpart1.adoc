@@ -43,14 +43,14 @@ Table Android project
 	
 === Create layout files for the fragments
 		
-Create the new layout files in the _res/layout/_ folder.
-Create a new layout file called _fragment_rssitem_detail.xml_. 
+Create a new layout file called _fragment_rssitem_detail.xml_ in the _res/layout/_ folder.
 		
 [source,xml]
 ----
 include::res/fragments/fragment_rssitem_detail.xml[]
 ----
-		
+
+NOTE: The id must be correct, the fragment uses this to search for the `TextView`.
 		
 Create a new layout file called _fragment_rsslist_overview.xml_. 
 
@@ -58,6 +58,8 @@ Create a new layout file called _fragment_rsslist_overview.xml_.
 ----
 include::res/fragments/fragment_rsslist_overview.xml[]
 ----
+
+NOTE: Also here, the id must be correct.
 		
 === Create fragment classes
 		
@@ -85,24 +87,27 @@ include::res/fragments/MyListFragment.java[]
 		
 Change the existing _activity_rssfeed.xml_ file.
 
-[source,java]
+[source,xml]
 ----
 include::res/fragments/activity_rssfeed.xml[]
 ----	
 		
 === RssfeedActivity
 		
-Change the `RssfeedActivity` class to the following code.
+Change the `RssfeedActivity` class so that it can act as call back for the list fragment and update the detailed fragment.
 
 [source,java]
 ----
 include::res/fragments/RssfeedActivity.java[]
 ----	
 
-=== Validating
+NOTE: The tools: tag  is optional. It points to a layout to that the preview in Android Studio can display the fragment.
+
+=== Verify that the application works as expected
 		
 Start your application.
 Both fragments should be displayed both in landscape and portrait mode. 
+You can use the emulator controls to change the orientation of the emulator.
 If you press the button in  the `ListFragment`, the `DetailFragment` gets updated.
 		
 image::rssfeedfirstversionresult.png[pdfwidth=40%]
