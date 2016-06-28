@@ -1,0 +1,24 @@
+= Android Persistence with preferences and files - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 3.3, 28.06.2016
+:docinfo:
+
+[abstract]
+File based persistence in Android. 
+This tutorial describes how to save key-value pairs using the preference API in Android. 
+It also explains how to read and write files in Android.
+	
+	
+include::010_overview.adoc[]
+include::020_preferences.adoc[]
+include::029_tutorial_pre_preferences.adoc[]
+include::030_exercise_preferences_prerequisite.adoc[]
+include::032_exercise_preferences_rsslist.adoc[]
+include::040_fileapi.adoc[]
+include::006_resources.adoc[]
+include::../copyright.adoc[]

@@ -1,0 +1,34 @@
+== User interface for preferences
+
+=== Preference resource files
+		
+Android allows you to create XML resource files which describes
+preference key-values. Based on this XML file an instance of
+`PreferenceActivity`
+or
+`PreferenceFragment`
+can be used to generate an user interface for entering and saving the
+preference values. These objects
+store the key-value pairs
+automatically.
+			
+To create a preference resource file, select
+menu:File[New > Other... > Android > Android XML File]
+and select the
+`Preference`
+as
+`Resource Type`
+.
+		
+=== PreferenceFragment
+		
+Android provides the
+`PreferenceFragment`
+class which simplifies the creation of an user interface for
+maintaining preference values. This fragment can load an XML
+preference
+definition file
+via the method
+`addPreferencesFromResource()`
+.
+		

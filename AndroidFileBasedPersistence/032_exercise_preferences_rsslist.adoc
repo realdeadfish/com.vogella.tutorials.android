@@ -1,0 +1,106 @@
+== Exercise: Preference setting for the RSSfeed
+
+=== Target of this exercise
+
+In this exercise you allow the user to enter his preferred URL for an RSS feed via another activity. This
+activity uses a preference xml file to define the user interface. 
+	
+=== Create preference file
+
+If you project does not have an
+_/app/res/xml_
+folder create one.
+
+image::preferences_createxmlfolder10.png[Creating a xml folder,pdfwidth=60%]
+
+image::preferences_createxmlfolder20.png[Creating a xml folder,pdfwidth=60%]
+
+Create
+an Android XML resource called
+_mypreferences.xml_
+in the xml folder.
+
+image::preferences_createxmlfolder30.png[Creating a preference resource file,pdfwidth=60%]
+
+image::preferences_createxmlfolder40.png[Creating a preference resource file,pdfwidth=60%]
+
+Add entries to this file similar to the following listing. 
+
+[source,xml]
+----
+include::res/preferences/mypreferences.xml[]
+----
+	
+=== Create settings activity
+
+Create the class
+`SettingsActivity`
+which extends
+`PreferenceActivity`
+. This
+activity
+loads the
+preference
+file and allows the user to change
+the values.
+
+[source,java]
+----
+include::res/preferences/SettingsActivity.java[]
+----
+
+Register this class as an activity in your
+_AndroidManifest.xml_
+file.
+
+=== Connect your settings activity
+
+Open the preference
+activity via the
+`onOptionsItemSelected()`
+method as demonstrated in the following listing.
+
+[source,java]
+----
+include::res/preferences/OverviewActivity2.java[]
+----
+	
+=== Use the preference value to load the RSS feed
+
+To make use of our new preference activity and the preference
+values
+we adjust the
+`MyListFragment`
+class. The following code snippet
+demonstrates how you can access the
+preference value in a method which triggers an
+`AsyncTask`
+to load the feed from the Internet.
+
+[source,java]
+----
+include::res/preferences/UpdateListContent.java[]
+----
+
+=== Validating
+
+Run your application. Select from your action bar the
+`Settings`
+action.
+You should be able to enter a URL. If you press the back
+button and press the refresh button, ensure that the
+value of the url
+preference is used in your activity.
+
+=== Optional: Show the current value in the settings
+
+The following code snippet demonstrates how to show the current
+value in the preference screen.
+
+[source,java]
+----
+include::res/preferences/SettingsActivity2.java[]
+----
+
+image::rsspreferencewithvalue10.png[Showing the current value in the preferences,pdfwidth=60%]
+

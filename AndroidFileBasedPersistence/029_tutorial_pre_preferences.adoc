@@ -1,0 +1,6 @@
+== Tutorial: Prerequirements
+	
+The following tutorial is based on the "de.vogella.android.socialapp"
+example from
+http://www.vogella.com/tutorials/Android/article.html#menu_tutorial - Android action bar tutorial.
+	

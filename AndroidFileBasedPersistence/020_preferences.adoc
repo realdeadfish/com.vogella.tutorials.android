@@ -1,0 +1,92 @@
+== Preferences
+
+=== Storing key-value pairs
+		
+Android supports the usage of the
+_SharedPreferences_
+class
+for persisting key-value pairs (preferences)of primitive data
+types in the Android file system.
+		
+The
+definition of these preferences can
+be done
+via an XML
+resource.
+		
+The
+`PreferenceManager`
+class provides methods to get access to preferences stored in a
+certain file.
+The following code
+shows how to
+access
+preferences from a
+certain file
+		
+[source,txt]
+----
+include::res/preferences/getPrefs.txt[]
+----		
+
+Preferences should be created private for the application. They can be accessed
+via all application components.
+Sharing data with other application
+with world readable or writable
+preference file is rarely used, as
+the external
+component would need to know the exact filename and
+location of the file.
+		
+The default preferences are available from any component via the
+`PreferenceManager.getDefaultSharedPreferences(this)`
+method call.
+Preference value are accessed via the key and the instance of the
+`SharedPreferences`
+class, as demonstrated in the following listing.
+		
+[source,txt]
+----
+include::res/preferences/getPrefsValue.txt[]
+----		
+
+To create or change preferences you have to call the
+`edit()`
+method on
+the
+`SharedPreferences`
+object. Once you have changed the value you have to call the
+`apply()`
+method
+to
+apply your asynchronously to the file system. The usage of
+the
+`commit()`
+method is discouraged, as it write the changes synchronously to the
+file system.
+		
+[source,txt]
+----
+include::res/preferences/updatePrefs.txt[]
+----
+	
+=== Preference Listener
+		
+You can listen to changes in the preferences via the
+`registerOnSharedPreferenceChangeListener()`
+method on
+`SharedPreferences`
+.
+		
+[source,java]
+----
+include::res/listener/preference.java[]
+----		
+		
+One watch out is that
+`SharedPreferences`
+keeps listeners in a
+`WeakHashMap`
+hence listener may be recycled if your code does not hold a reference
+to it.
+		
