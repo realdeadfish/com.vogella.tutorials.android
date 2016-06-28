@@ -7,7 +7,7 @@ The user sees a collection of items and can scroll through them.
 The collection of items can be a list, a grid or another structured representations of data.
 Such an activity is depicted in the following picture.
 
-image::listview_scheme10.png[Listview example,pdfwidth=40%]
+image::listview_scheme10.png[Listview example,pdfwidth=15%]
 
 		
 The user interacts with the collection of items via touch events or the toolbar.
