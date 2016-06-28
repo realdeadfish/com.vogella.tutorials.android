@@ -1,0 +1,106 @@
+== Notification Manager
+
+=== Notification Manager
+
+Android allows to put notification into the titlebar of your
+application.
+The user can expand the notification bar and by selecting
+the
+notification the user can trigger
+another activity.
+
+Because notifications can be very annoying, the user can disable
+notifications for each application. This can be done via the Settings
+application of the Android
+device. Select
+`Apps`
+in the Settings, select the app you are interested in
+and unset the
+`Show notifications`
+checkbox to prevent the app to show notifications.
+
+image::usercandisablenotifications10.png[Showing the Notification bar with the created notification,pdfwidth=60%]
+
+=== Setting up Notifications
+
+Notifications in Android are represented by the
+`Notification`
+class.
+To create notifications you use the
+`NotificationManager`
+class which can be received from the
+`Context`
+, e.g. an
+_activity_
+or a
+_service_
+,
+via the
+`getSystemService()`
+method.
+
+[source,txt]
+----
+include::res/snippets/getService.txt[]
+----
+
+The
+`Notification.Builder`
+provides an builder interface to create an
+`Notification`
+object. You use a
+`PendingIntent`
+to specify the action which should be performed once the user select
+the notification.
+
+The
+`Notification.Builder`
+allows you to add up to three buttons with definable actions to the
+notification.
+
+[source,txt]
+----
+include::res/snippets/configureNotifcation.txt[]
+----
+
+image::notification10.png[Showing the Notification bar with the created notification,pdfwidth=60%]
+
+Android 4.1 supports expandable notifications. In addition to
+normal
+notification view it is possible to define a big view
+which gets
+shown
+when notification is expanded. There are three
+styles to be used
+with
+the big view: big picture style, big text
+style, Inbox style. The
+following code demonstrates the usage of the
+`BigTextStyle()`
+which allows to use up to 256
+dp.
+
+[source,java]
+----
+include::res/snippets/bigStyle.java[]
+----
+
+image::notification20.png[Showing the Notification bar with the created notification,pdfwidth=60%]
+
+=== Canceling Notifications
+
+The user can dismiss all notification or if you set your
+notification to auto-cancel it is also removed once the user selects
+it.
+
+You can also call the
+`cancel()`
+for a specific notification ID on the
+`NotificationManager`
+. The
+`cancelAll()`
+method call removes all
+of the notifications you
+previously issued.
+
+	

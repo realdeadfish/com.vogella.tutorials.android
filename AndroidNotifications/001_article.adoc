@@ -1,0 +1,21 @@
+= Android Notifications - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 2.7, 28.06.2016
+:docinfo:
+
+[abstract]
+Using the Notification Manager in Android. 
+This article describes how to use the Notification Manager in Android. 
+It is based on Android Studio and Android 5.0.
+	
+include::010_overview.adoc[]
+include::../AndroidBroadcastReceiver/060_pendingintent.adoc[]
+include::100_example.adoc[]
+include::resources.adoc[]
+include::../copyright.adoc[]
+

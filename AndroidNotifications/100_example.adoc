@@ -1,0 +1,59 @@
+== Example: NotificationManager
+	
+Create a new project called
+_de.vogella.android.notificationmanager_
+with the
+_activity_
+class called
+`CreateNotificationActivity`
+. This
+_activity_
+should use the
+_main.xml_
+layout file.
+	
+[source,xml]
+----
+include::res/notification/main.xml[]
+----	
+	
+Create the following
+_result.xml_
+layout file.
+	
+[source,xml]
+----
+include::res/notification/result.xml[]
+----	
+	
+Create a new
+_activity_
+called
+_NotificationReceiverActivity_
+with the
+following
+coding. Don't forget to register the
+_activity_
+in
+the
+_AndroidManfest.mf_
+.
+	
+[source,java]
+----
+include::res/notification/NotificationReceiverActivity.java[]
+----	
+
+Change the
+`CreateNotificationActivity`
+class to the following coding.
+	
+[source,java]
+----
+include::res/notification/CreateNotificationActivity.java[]
+----	
+
+Run your application and press the button. A new
+notification is
+created. If you select it your second activity will be displayed.
+	

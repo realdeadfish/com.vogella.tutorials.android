@@ -29,4 +29,5 @@ include 'AndroidNetworking'
 include 'AndroidSupportLibrary'
 include 'AndroidTouch'
 include 'AndroidWidgets'
+include 'AndroidNotifications'
 
