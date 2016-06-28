@@ -1,0 +1,78 @@
+== Supporting swipe to refresh
+
+Android provides a widget that implements the swipe-to-refresh design pattern, which allows the user to trigger an update with a vertical swipe.
+
+This is implemented by the `SwipeRefreshLayout` widget, which detects the vertical swipe, displays a distinctive progress bar, and triggers callback methods in your app.
+To support this, add the  widget to your layout file as the parent of the relevant view, and implementing the refresh behavior that gets invoked when the user swipes.
+
+To use the swipe to refresh widget ensure you have a dependency to the support library in your application Gradle build file.
+
+[source,gradle]
+----
+dependencies {
+    compile "com.android.support:support-v4:18.0.+"
+}
+----
+
+[source,xml]
+----
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+</android.support.v4.widget.SwipeRefreshLayout>
+----
+
+NOTE: Even if you provide the swipe-to-refresh design pattern, you should still add a refresh button to your overflow menu in your toolbar to support the refresh for users unable to swipe.
+
+
+In the `SwipeRefreshLayout.OnRefreshListener` method you implement the logic to update your view.
+
+[source,java]
+----
+mySwipeRefreshLayout.setOnRefreshListener(
+    new SwipeRefreshLayout.OnRefreshListener() {
+        @Override
+        public void onRefresh() {
+            doYourUpdate(); 
+        }
+    }
+);
+
+
+private void doYourUpdate() {
+   // TODO implement a refresh
+   setRefreshing(false); // Disables the refresh icon
+}
+
+----
+
+[NOTE]
+====
+If you also added a refresh action to your overflow menu in your toolbar ensure that you also show the refresh indicator.
+
+[source,java]
+----
+public boolean onOptionsItemSelected(MenuItem item) {
+    switch (item.getItemId()) {
+
+        case R.id.menu_refresh:
+            // signal SwipeRefreshLayout to start the progress indicator
+            mySwipeRefreshLayout.setRefreshing(true);
+            doYourUpdate();
+
+            return true;
+    }
+    return super.onOptionsItemSelected(item);
+}
+----
+
+====
