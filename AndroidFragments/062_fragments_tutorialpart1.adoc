@@ -106,5 +106,5 @@ Start your application.
 Both fragments should be displayed both in landscape and portrait mode. 
 If you press the button in  the `ListFragment`, the `DetailFragment` gets updated.
 		
-image::rssfeedfirstversionresult.png[]
+image::rssfeedfirstversionresult.png[pdfwidth=40%]
 		
