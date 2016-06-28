@@ -6,6 +6,7 @@
 :imagesdir: ./img
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 0.3, 18.06.2016
+:docinfo:
 
 [abstract] 
 Using Intents in Android. This tutorials describes the usage of intents to communicate between Android components.

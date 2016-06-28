@@ -11,11 +11,7 @@ Version 1.1, 25.06.2016
 [abstract]
 Using dialogs in Android programming This tutorial describes how to use dialogs in Android applications. 
 It is based on Android Studio  and Android 5.0.
-
-++++
-include::../header.html[]
-++++
-				
+		
 include::010_overview.adoc[]
 include::020_tutorial_alertdialog.adoc[]
 include::008_resourceslocal.adoc[]	

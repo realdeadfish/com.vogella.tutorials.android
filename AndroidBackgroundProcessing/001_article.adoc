@@ -6,15 +6,12 @@
 :imagesdir: ./img
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 3.4, 27.06.2016
+:docinfo:
 
 [abstract]
 Android Threads, Handlers AsyncTask. This tutorial describes the usage of asynchronous processing in Android applications.
 It also covers how to handle the application life cycle together with threads. 
 It is based on Android Studio.
-
-++++
-include::../header.html[]
-++++
 						
 include::010_overview.adoc[]
 include::../10_Include/Android/010_prerequites.adoc[]

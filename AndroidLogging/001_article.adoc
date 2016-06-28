@@ -6,13 +6,10 @@
 :imagesdir: ./img
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 13, 25.06.2016
+:docinfo:
 
 [abstract]
 This tutorial describes how to create and view log statements in Android applications.
-
-++++
-include::../header.html[]
-++++
         
                 
 include::010_overview.adoc[]
