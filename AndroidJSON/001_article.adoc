@@ -1,0 +1,21 @@
+= JSON in Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 1.5, 28.06.2016
+:docinfo:
+
+[abstract]
+JSON with Android.
+This article describes how to process JSON within Android. 
+It is based on Eclipse 4.4, Java 1.6 and Android 4.4.
+	
+include::010_overview.adoc[]
+include::020_read.adoc[]
+include::030_write.adoc[]
+include::resources.adoc[]
+include::../copyright.adoc[]
+

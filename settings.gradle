@@ -30,4 +30,5 @@ include 'AndroidSupportLibrary'
 include 'AndroidTouch'
 include 'AndroidWidgets'
 include 'AndroidNotifications'
+include 'AndroidJSON'
 
