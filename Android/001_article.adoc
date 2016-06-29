@@ -12,25 +12,30 @@ Version 14.4, 20.06.2016
 This tutorial describes how to create Android applications with Android Studio.
 It is usually based on the latest and greatest Android and Android Studio release.  
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::016_androidstudioinstallation.adoc[]
 include::024_tutorial_firstproject_androidstudio.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::018_androidsdkmanager.adoc[]
 include::020_emulator.adoc[]
 include::100_application.adoc[]
 include::140_manifestmf.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::150_resources.adoc[]
 include::170_views.adoc[]
 include::180_layouts.adoc[]
 include::210_exercise_dynamiclayout.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
 include::300_temperature.adoc[]
 include::300_using_resources.adoc[]
 include::320_assets.adoc[]
 include::340_exercise_resource_imageview.adoc[]
 include::420_scrollview.adoc[]
 include::800_deployondevice.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
+include::../web/advertisement/afterSupport.adoc[]
 include::../copyright.adoc[]
+include::../web/vgwort/Android.adoc[]
 
-++++
-include::../web/vgwort/Android[]
-++++
