@@ -1,4 +1,6 @@
-<html>
+== About this website
+
+++++
 <div class="about_vogella_container">
     <div class="about_vogella">
     	<a href="http://www.vogella.com/support.html">
@@ -32,5 +34,6 @@
 			onclick="_gaq.push(['_trackEvent', 'Source Code', 'clicked', 'Buttom tutorial in thank you']);"/>
 		</a>
 	</div>
-	</div>
-</html>
+</div>
+++++
+

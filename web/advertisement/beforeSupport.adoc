@@ -1,4 +1,4 @@
-<html> 
+++++
 <script async = "async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Article - Before Support 336 x 280 -->
 <ins class="adsbygoogle"
@@ -8,4 +8,5 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-</html>
+++++
+
