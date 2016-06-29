@@ -1,7 +1,7 @@
 [[schedulestasks_jobscheduler]]
-== Using the JobScheduler to schedule background jobs_
+== Using the JobScheduler to schedule background jobs
 
-=== The job scheduler API_
+=== The job scheduler API
 (((JobScheduler)))
 
 
