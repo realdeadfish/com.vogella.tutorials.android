@@ -1,0 +1,64 @@
+== Exercise Model View Presenter
+
+Create a new application with the `com.vogella.android.mvp` top level package.
+Design a small application which read data user data from Github.
+
+You have an overview screen with the repositories of the selected user. 
+If you click on the repository you would see details for this repository.
+
+The contract would be defined via an interface.
+Whenever the view needs to perform an operation on the presenter, it would call one of its methods.
+If the presenter finishes, it would call back the view, via the defined interface methods.
+
+[source,java]
+----
+import android.support.annotation.NonNull;
+
+import java.util.List;
+
+/**
+ * This interface specifies the contract between the view and the presenter.
+ */
+public interface GitHubContract {
+
+    interface View {
+
+        void setProgressIndicator(boolean active);
+
+        void showRepositories(List<String> repositories);
+
+        void showAddRepository();
+
+        void showRepositoryDetails(String repositoryId);
+    }
+
+    interface UserActionsListener {
+
+        void loadRepositories(boolean forceUpdate);
+
+        void addRepository();
+
+        void openRepositoryDetails(@NonNull String repositoryId);
+    }
+}
+
+----
+
+In the create method of the activity you would instantiate the responsible presenter and pass a reference to the presenter to the view.
+
+[source,java]
+----
+ @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // more code
+        presenter = new GithubPresenter(this); // potentially more parameter
+    }
+----
+
+Implement at least a button in your activity for the refresh action. 
+Call `loadRepositories` on your presenter in the `onClick` method of the button.
+In the presenter call the  `setProgressIndicator` method on the view, create some test data and call `showRepositories` repositories on the view with this data.
+
+Would you be able to write unit tests for the presenter which could run on the JVM?
+ 

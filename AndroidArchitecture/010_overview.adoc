@@ -30,64 +30,6 @@ The presenter should not have, if possible, a dependency to the Android SDK, e.g
 
 Contains the data and the code to fetch and update the data. This part of MVP updates the database or communicate with a webserver.
 
-=== Code example
-
-Image a small application which read data user data from Github.
-
-You have an overview screen with the repositories of the selected user. 
-If you click on the repository you would see details for this repository.
-
-The contract would be defined via an interface.
-Whenever the view needs to perform an operation on the presenter, it would call one of its methods.
-If the presenter finishes, it would call back the view, via the defined interface methods.
-
-[source,java]
-----
-import android.support.annotation.NonNull;
-
-import java.util.List;
-
-/**
- * This interface specifies the contract between the view and the presenter.
- */
-public interface GitHubContract {
-
-    interface View {
-
-        void setProgressIndicator(boolean active);
-
-        void showRepositories(List<String> repositories);
-
-        void showAddRepository();
-
-        void showRepositoryDetails(String repositoryId);
-    }
-
-    interface UserActionsListener {
-
-        void loadRepositories(boolean forceUpdate);
-
-        void addRepository();
-
-        void openRepositoryDetails(@NonNull String repositoryId);
-    }
-}
-
-----
-
-In your own create method of the activity you instantiate the presenter.
-
-[source,java]
-----
- @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // more code
-        presenter = new GithubPresenter(parameter required for presenter..., this);
-    }
-----
-
-
 === Considerations for using the MVP design pattern
 
 MVP makes it easier to test your presenter logic and to replace dependencies.
