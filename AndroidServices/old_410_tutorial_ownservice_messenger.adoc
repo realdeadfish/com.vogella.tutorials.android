@@ -1,0 +1,47 @@
+== Tutorial: Interprocess communication with Messenger
+	
+The following chapter will demonstrate how to communicate between an
+_activity_
+and an
+`Service`
+using the
+`Messenger`
+and
+`Handler`
+class.
+	
+Create a new project called "de.vogella.android.ownservice.messenger"
+with an
+_activity_
+called _MainActivity_.
+	
+Creating the following _AndroidManifest.xml_.
+	
+[source,xml]
+----
+include::res/messenger/AndroidManifest.xml[]
+----
+	
+Create the following class
+	
+[source,java]
+----
+include::res/messenger/DownloadServiceMessenger.java[]
+----
+	
+Change the _main.xml_ layout to the following.
+	
+[source,xml]
+----
+include::res/messenger/main.xml[]
+----
+	
+Change
+`MainActivity`
+to the following.
+	
+[source,java]
+----
+include::res/messenger/MainActivity.java[]
+----
+	

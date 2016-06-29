@@ -1,0 +1,27 @@
+= Android Services - Tutorial
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 2.10, 29.06.2016
+:docinfodir: ../
+
+[abstract] 
+Using styles and themes in Android.
+Developing own services and using system services in Android.
+This tutorial describes how to create and consume Android services. 
+It is based on and Android 6.0.
+
+include::010_services.adoc[]
+include::012_customservices.adoc[]
+include::018_intentservice.adoc[]
+include::020_bindingservices.adoc[]
+include::050_process.adoc[]
+include::060_servicescommunication.adoc[]
+include::100_scheduleservice.adoc[]
+include::320_tutorial_intentservice.adoc[]
+include::400_tutorial_ownservice.adoc[]
+include::resources.adoc[]
+include::../copyright.adoc[]
+
