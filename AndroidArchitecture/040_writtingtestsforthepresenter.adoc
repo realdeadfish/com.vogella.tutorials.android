@@ -5,3 +5,4 @@ You mock or fake these dependencies away to unit test the presenter.
 
 For example, to test the presenter we do not need to know if the view displays a dialog or progress indicator.
 But we want to test that presenter calls a method on the view to display the progress information.
+

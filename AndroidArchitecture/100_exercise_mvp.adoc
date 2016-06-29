@@ -1,12 +1,14 @@
 == Exercise Model View Presenter
 
 Create a new application with the `com.vogella.android.mvp` top level package.
-Design a small application which read data user data from Github.
+Design a small application which will later read data user data from Github.
+
+NOTE: Currently you only designing the application, e.g., the data download will be implemented later.
 
 You have an overview screen with the repositories of the selected user. 
 If you click on the repository you would see details for this repository.
 
-The contract would be defined via an interface.
+The contract for this view and presenter should be defined via the `GitHubContract` interface.
 Whenever the view needs to perform an operation on the presenter, it would call one of its methods.
 If the presenter finishes, it would call back the view, via the defined interface methods.
 
@@ -38,7 +40,7 @@ public interface GitHubContract {
 
         void addRepository();
 
-        void openRepositoryDetails(@NonNull String repositoryId);
+        void openRepositoryDetails(String repositoryId);
     }
 }
 
@@ -49,7 +51,7 @@ In the create method of the activity you would instantiate the responsible prese
 [source,java]
 ----
  @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // more code
         presenter = new GithubPresenter(this); // potentially more parameter

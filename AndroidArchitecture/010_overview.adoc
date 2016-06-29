@@ -48,3 +48,4 @@ In the _Model View Controller_ pattern the controllers are behavior based and ca
 View can communicate directly with the model.
 
 MVP is currently the pattern that the Android community prefers. 
+
