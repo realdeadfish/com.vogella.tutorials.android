@@ -21,9 +21,8 @@ include::800_websockets.adoc[]
 include::resources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidNetworking[]
-++++
+include::../web/vgwort/AndroidNetworking.adoc[]
+
 
 
 
