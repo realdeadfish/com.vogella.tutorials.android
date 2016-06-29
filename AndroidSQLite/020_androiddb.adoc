@@ -1,0 +1,306 @@
+== SQLite architecture
+
+=== Packages
+
+The
+`android.database`
+package
+contains all necessary classes for working with databases.
+The
+`android.database.sqlite`
+package
+contains the SQLite specific classes.
+
+=== Creating and updating database with SQLiteOpenHelper
+
+To create and upgrade a database in your Android application you
+create a
+subclass of the
+`SQLiteOpenHelper`
+class.
+In the constructor of your subclass you
+call the
+`super()`
+method of
+`SQLiteOpenHelper`
+,
+specifying the database name and the current database version.
+
+In this class you need to
+override the following methods to create and
+update your database.
+
+* `onCreate()` - is called by the framework, if the database is accessed but not yet created.
+* `onUpgrade()` - called, if the database version is increased in your application code. 
+This method allows you to update an existing database schema or to drop the existing database and recreate it via the `onCreate()` method.
+
+Both methods receive an
+`SQLiteDatabase`
+object as parameter which is the Java representation of the
+database.
+
+The
+`SQLiteOpenHelper`
+class
+provides the
+`getReadableDatabase()`
+and
+`getWriteableDatabase()`
+methods
+to get access to an
+`SQLiteDatabase`
+object; either in read
+or
+write mode.
+
+The database tables should use the
+identifier
+`_id`
+for the primary key of the table.
+Several Android functions rely on
+this standard.
+
+TIP: It is good practice to create a separate class per table. This class
+defines
+static
+`onCreate()`
+and
+`onUpgrade()`
+methods. These methods are called in the corresponding methods
+of
+`SQLiteOpenHelper`
+. This way your implementation of
+`SQLiteOpenHelper`
+stays readable, even if you have several tables.
+
+=== SQLiteDatabase
+
+`SQLiteDatabase`
+is the base class for working with a
+SQLite
+database in Android and
+provides methods to open, query, update and
+close the database.
+
+More specifically
+`SQLiteDatabase`
+provides the
+`insert()`
+,
+`update()`
+and
+`delete()`
+methods.
+
+In addition it provides the
+`execSQL()`
+method, which allows to
+execute an SQL statement directly.
+
+The object
+`ContentValues`
+allows to define key/values. The
+`key`
+represents the table column
+identifier
+and the
+`value`
+represents the
+content for the table
+record
+in this column.
+`ContentValues`
+can be used for inserts and
+updates of database entries.
+
+Queries can be created via the
+`rawQuery()`
+and
+`query()`
+methods
+or via the
+`SQLiteQueryBuilder`
+class
+.
+
+`rawQuery()`
+directly
+accepts an SQL select statement as input.
+
+`query()`
+provides a structured interface for specifying
+the SQL query.
+
+`SQLiteQueryBuilder`
+is a convenience class that helps to build SQL queries.
+
+=== rawQuery() Example
+
+The following gives an example of a
+`rawQuery()`
+call.
+
+[source,txt]
+----
+include::res/intro/rawquery.txt[]
+----
+
+=== query() Example
+
+The following gives an example of a
+`query()`
+call.
+
+[source,txt]
+----
+include::res/intro/query.txt[]
+----
+
+The method
+`query()`
+has the following parameters.
+
+.Parameters of the query() method
+|===
+|Parameter |Comment
+
+|String dbName
+|The table name to compile the query against.
+
+|String[] columnNames
+|A list of which table columns to return. Passing "null" will return all columns.
+
+|String whereClause
+|Where-clause, i.e. filter for the selection of data, null will select all data.
+
+|String[] selectionArgs
+|You may include ?s in the "whereClause"". 
+These placeholders will get replaced by the values from the selectionArgs array.
+
+|String[] groupBy
+|A filter declaring how to group rows, null will cause the
+rows to not be grouped.
+
+|String[] having
+|Filter for the groups, null means no filter.
+
+|String[] orderBy
+|Table columns which will be used to order the data, null
+means no
+ordering.
+|===
+
+If a condition is not required you can pass
+`null`
+, e.g. for the group by
+clause.
+
+The
+"whereClause"
+is specified without the word
+"where", for
+example a "where" statement might look like:
+"_id=19 and summary=?".
+
+If you specify placeholder values in the where clause via
+`?`
+,
+you pass
+them as the
+selectionArgs parameter to the query.
+
+=== Cursor
+
+A
+query
+returns a
+`Cursor`
+object. A Cursor represents the result of a query and basically
+points
+to one row of the query result. This way Android can buffer the
+query results efficiently; as it does not have to load all data into
+memory.
+
+To get the number of
+elements of the resulting query use the
+`getCount()`
+method.
+
+To move between individual data
+rows, you can use the
+`moveToFirst()`
+and
+`moveToNext()`
+methods. The
+
+`isAfterLast()`
+method allows to check if the end of the query result has been
+reached.
+
+`Cursor`
+provides typed
+`get*()`
+methods, e.g.
+`getLong(columnIndex)`
+,
+`getString(columnIndex)`
+to access the column data for the current position of the result.
+The
+"columnIndex" is the number of the column you are
+accessing.
+
+`Cursor`
+also provides the
+`getColumnIndexOrThrow(String)`
+method which allows to get the column index for a column name of the
+table.
+
+A
+`Cursor`
+needs to be closed with the
+`close()`
+method call.
+
+=== ListViews, ListActivities and SimpleCursorAdapter
+
+`ListViews`
+are
+`Views`
+which allow to display a list of elements.
+
+`ListActivities`
+are specialized
+_activities_
+which make the usage of
+`ListViews`
+easier.
+
+To work with databases and
+`ListViews`
+you can use the
+`SimpleCursorAdapter`
+. The
+`SimpleCursorAdapter`
+allows to set a layout for each row of the
+`ListViews`
+.
+
+You also define an array which contains the column names and another
+array which contains the IDs of
+`Views`
+which should be filled with the data.
+
+The
+`SimpleCursorAdapter`
+class will map the columns to the
+`Views`
+based on the
+`Cursor`
+passed to it.
+
+To obtain the
+`Cursor`
+you should use the
+`Loader`
+class.
+

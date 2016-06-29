@@ -1,0 +1,5 @@
+== Get the Book
+	
+This tutorial is part of a book available in electronic form for your
+http://www.vogella.com/books/android.html[Kindle].
+	

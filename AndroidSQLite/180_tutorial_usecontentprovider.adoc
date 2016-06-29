@@ -1,0 +1,101 @@
+== Tutorial: Using ContentProvider
+
+=== Overview
+		
+The following example will use an existing
+`ContentProvider`
+from the
+_People_
+application.
+		
+=== Create contacts on your emulator
+		
+For this example we need a few maintained contacts. Select the
+home
+menu and then the
+`People`
+entry to
+create contacts.
+		
+image::contact10.png[Selecting the "Contacts" application from the application choicer,pdfwidth=60%]
+		
+The app will ask you if you want to login. Either login or
+select "Not now". Press ""Create a new contact". You can create local
+contacts.
+		
+image::contact20.png[Create a new contact,pdfwidth=60%]
+
+image::contact30.png[Details for a maintained contact,pdfwidth=60%]
+		
+Finish adding your first contact. Afterwards the app allows you
+to add more contacts via the + button. As a result you should have a
+few new contacts in your application.
+		
+=== Using the Contact Content Provider
+		
+Create a new Android project called
+_de.vogella.android.contentprovider_
+with the
+_activity_
+called
+_ContactsActivity_
+.
+		
+Change the corresponding
+layout file in the
+<filename class="directory">res/layout_
+folder.
+Rename
+the ID of the existing
+`TextView`
+to
+`contactview`
+. Delete the default text.
+		
+The resulting layout file
+should look like the following.
+		
+[source,xml]
+----
+include::res/contentprovider/main.xml[]
+----		
+		
+Access to the contact
+`ContentProvider`
+requires a certain
+permission,
+as not all applications should have
+access to the contact
+information.
+Open the
+_AndroidManifest.xml_
+file,
+and select the
+`Permissions`
+tab. On that
+tab click the
+_Add_
+button,
+and select the
+`Uses Permission`
+.
+From the drop-down list select
+the
+`android.permission.READ_CONTACTS`
+entry.
+		
+Change the coding of the activity.
+		
+[source,java]
+----
+include::res/contentprovider/ContactsActivity.java[]
+----
+		
+If you run this application the data is read from the
+`ContentProvider`
+of the People application
+and displayed in a
+`TextView`
+. Typically you would display such data in a
+`ListView`.
+		

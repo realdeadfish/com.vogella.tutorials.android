@@ -1,0 +1,34 @@
+= Android SQLite database and content provider - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 5.1, 29.06.2016
+:docinfodir: ../
+
+[abstract]
+Using the Android SQLite Database.
+This tutorial describes how to use the SQLite database in
+Android applications. It also demonstrates how to use existing
+ContentProvider and how to define new ones. It also demonstrates the
+usage of the Loader framework which allows to load data
+asynchronously.
+The tutorial is based on Eclipse 4.2, Java 1.6 and Android 4.2.
+
+include::010_overview.adoc[]
+include::020_androiddb.adoc[]
+include::100_tutorial_usingsqlite.adoc[]
+include::160_contentprovider.adoc[]
+include::180_tutorial_usecontentprovider.adoc[]
+include::../AndroidBackgroundProcessing/content/120_loader.adoc[]
+include::190_cursorloader.adoc[]
+include::200_todo.adoc[]
+include::280_commandline.adoc[]
+include::300_listviews.adoc[]
+include::400_performance.adoc[]
+include::800_offline.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
