@@ -78,7 +78,7 @@ This would allow you to find the view without explicit cast in your view hierarc
 ----
 Button button = UiUtils.findView(this, R.id.button);
 ----
-
+====
 		
 === Reference to resources in XML files
 		
