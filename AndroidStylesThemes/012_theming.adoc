@@ -1,0 +1,119 @@
+== Styles and Themes
+
+=== Styles
+
+Android allow you to define the look and feel, for example
+colors and
+fonts, of Android
+components
+in XML
+resource files.
+
+This
+way
+you
+have to set
+common style
+attributes only once in one
+central place.
+
+If the entry in the resource file is used to style
+a
+view, it is
+typically referred to as a
+_style_
+, while if it is used for styling an activity or application it is
+typically called a
+_theme_
+/.
+
+To define a style or a theme, save an XML file in the
+_/res/values_
+directory of
+your project. The root node of the XML file must be <![CDATA[ <resources>]]>
+and you use a
+`style`
+tag that includes the
+`name`
+attribute. This tag contains than more or more item tags which define
+values for named attributes.
+
+The following
+_styles.xml_
+XML file is an example for a style definition.
+
+[source,java]
+----
+include::res/styles/styles.xml[]
+----
+
+You assign the style attribute to your elements, for example
+to
+the
+text elements via
+`style=”@style/text`
+.
+
+=== Inheritance
+
+Styles (and themes) support inheritance by using the parent
+attribute of the
+style tag. This way the style inherits all settings
+from the parent style and can overwrite selected attributes.
+
+=== Referring attributes in the current theme
+
+Android lists all standard attributes which can be styled in the
+_R.attr_
+file. The reference for this file can be found online under the
+following URL:
+http://developer.android.com/reference/android/R.attr.html[R.attr]
+.
+
+You can refer to individual attributes of the current Android
+theme
+via the
+`<![CDATA[?android:attr]]>`
+notation.
+This notation means that you are
+referring
+to a style
+attribute in the currently active theme.
+
+For example
+`<![CDATA[?android:attr/listPreferredItemHeight]]>`
+means: "use the value
+defined by the attribute called
+listPreferredItemHeight in the
+current theme.
+
+The following layout
+defines buttons with
+the Android 4.0
+button
+style.
+
+[source,xml]
+----
+include::res/styles/main.xml[]
+----
+
+image::styling20.png[Screenshot of the running application with the menu open,pdfwidth=60%]
+
+=== Themes
+
+A theme is a style applied to an entire
+activity
+or application,
+rather than an individual View (as in the example
+above). The
+technique of defining a theme is the same as defining a style.
+
+The next example show how to define your own theme while
+extending a platform theme.
+
+[source,java]
+----
+include::res/styles/theme.xml[]
+----
+	
