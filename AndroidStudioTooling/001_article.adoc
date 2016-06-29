@@ -18,9 +18,11 @@ include::060_workingwithgit.adoc[]
 include::200_memorymonitor.adoc[]
 include::300_gradle.adoc[]
 include::900_eclipsemigration.adoc[]
-
-
-
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
+
+++++
+include::../web/vgwort/AndroidStudioTooling[]
+++++
+
 

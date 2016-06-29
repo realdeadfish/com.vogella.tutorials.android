@@ -32,3 +32,9 @@ include::800_offline.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
 
+++++
+include::../web/vgwort/AndroidSQLite[]
+++++
+
+
+

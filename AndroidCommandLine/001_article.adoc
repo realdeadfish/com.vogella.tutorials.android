@@ -21,3 +21,7 @@ include::200_dumpsys.adoc[]
 include::resourceslocal.adoc[]
 include::../copyright.adoc[]
 
+++++
+include::../web/vgwort/AndroidCommandLine[]
+++++
+

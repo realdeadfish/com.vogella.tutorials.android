@@ -22,3 +22,8 @@ include::120_fragments.adoc[]
 include::resourceslocal.adoc[]
 include::../copyright.adoc[]
 
+++++
+include::../web/vgwort/AndroidResourceSelection[]
+++++
+
+

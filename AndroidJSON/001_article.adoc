@@ -19,3 +19,9 @@ include::030_write.adoc[]
 include::resources.adoc[]
 include::../copyright.adoc[]
 
+++++
+include::../web/vgwort/AndroidJSON[]
+++++
+
+
+

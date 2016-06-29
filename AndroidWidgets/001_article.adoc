@@ -23,3 +23,9 @@ include::300_tutorial_serviceupdates.adoc[]
 include::resources.adoc[]
 include::../copyright.adoc[]
 
+++++
+include::../web/vgwort/AndroidWidgets[]
+++++
+
+
+

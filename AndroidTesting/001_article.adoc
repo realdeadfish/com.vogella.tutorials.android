@@ -33,5 +33,10 @@ include::920_usingannotations.adoc[]
 include::950_codecoverage.adoc[]
 include::980_testfoldercreation.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
+++++
+include::../web/vgwort/AndroidTesting[]
+++++
 
 

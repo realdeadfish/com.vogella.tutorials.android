@@ -15,3 +15,10 @@ This tutorial describes how to create and view log statements in Android applica
 include::010_overview.adoc[]
 include::040_viewinglogstatements.adoc[]
 include::../copyright.adoc[]
+
+++++
+include::../web/vgwort/AndroidLogging[]
+++++
+
+
+

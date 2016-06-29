@@ -25,3 +25,9 @@ include::400_tutorial_ownservice.adoc[]
 include::resources.adoc[]
 include::../copyright.adoc[]
 
+++++
+include::../web/vgwort/AndroidServices[]
+++++
+
+
+

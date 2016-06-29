@@ -25,3 +25,9 @@ include::008_resources.adoc[]
 
 include::../copyright.adoc[]
 
+++++
+include::../web/vgwort/AndroidIntent[]
+++++
+
+
+

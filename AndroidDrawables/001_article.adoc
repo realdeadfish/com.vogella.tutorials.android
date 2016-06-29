@@ -23,3 +23,9 @@ include::040_tutorial_customdrawable.adoc[]
 include::resources.adoc[]
 include::../copyright.adoc[]
 
+++++
+include::../web/vgwort/AndroidDrawables[]
+++++
+
+
+

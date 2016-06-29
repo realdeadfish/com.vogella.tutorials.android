@@ -22,3 +22,9 @@ include::032_exercise_preferences_rsslist.adoc[]
 include::040_fileapi.adoc[]
 include::006_resources.adoc[]
 include::../copyright.adoc[]
+
+++++
+include::../web/vgwort/AndroidFileBasedPersistence[]
+++++
+
+

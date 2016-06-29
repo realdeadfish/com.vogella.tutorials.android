@@ -32,4 +32,6 @@ include::820_linkto_strictmode.adoc[]
 include::resources.adoc[]
 include::../copyright.adoc[]
 
-
+++++
+include::../web/vgwort/AndroidBackgroundProcessing[]
+++++

@@ -20,3 +20,8 @@ include::200_tutorial_multitouch.adoc[]
 include::300_tutorial_scaledetectors.adoc[]
 include::resources.adoc[]
 include::../copyright.adoc[]
+
+++++
+include::../web/vgwort/AndroidTouch[]
+++++
+

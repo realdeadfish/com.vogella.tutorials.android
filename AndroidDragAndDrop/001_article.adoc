@@ -18,3 +18,7 @@ include::020_tutorial_draganddrop.adoc[]
 include::resources.adoc[]
 include::../copyright.adoc[]
 
+++++
+include::../web/vgwort/AndroidDragAndDrop[]
+++++
+
