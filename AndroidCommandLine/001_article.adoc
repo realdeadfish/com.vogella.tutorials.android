@@ -1,0 +1,23 @@
+= Using the Android Debug Bridge (adb) - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 11.3, 29.06.2016
+:docinfodir: ../
+
+[abstract]
+Using the adb tools with Android.
+This tutorial describes how to use the adb tool to access your Android device or Android virtual device (AVD).
+
+include::010_overview.adoc[]
+include::020_shell.adoc[]
+include::040_copy.adoc[]
+include::060_uninstall.adoc[]
+include::100_telnet.adoc[]
+include::200_dumpsys.adoc[]
+include::resourceslocal.adoc[]
+include::../copyright.adoc[]
+

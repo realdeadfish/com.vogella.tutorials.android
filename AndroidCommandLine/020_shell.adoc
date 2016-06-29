@@ -1,0 +1,21 @@
+== Shell access via adb
+
+	
+You can get shell access to your Android device via the following
+command.
+	
+[source,bourne]
+----
+include::res/shell/adb1.txt[]
+----	
+	
+This
+will connect you to your device and give you
+Linux command
+line
+access
+to the underlying file system, e.g. ls, rm, , cd, mkdir,
+etc. The
+application data is stored in the directory
+"/data/data/package_of_your_app".
+

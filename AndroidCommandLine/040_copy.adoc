@@ -1,0 +1,9 @@
+== Copy files from and to your device
+	
+You can copy a file from and to your device via the following commands.
+	
+[source,bourne]
+----
+include::res/shell/adb3.txt[]
+----
+

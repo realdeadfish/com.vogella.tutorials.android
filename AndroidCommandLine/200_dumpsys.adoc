@@ -1,0 +1,65 @@
+== Getting system information with command line tool dumpsys
+
+=== adb dumpsys
+
+The
+`adb dumpsys`
+command allows you to retain information about the Android system and
+the running applications.
+
+To get currently memory consumption of an application you can
+use
+the following command.
+
+[source,java]
+----
+include::res/dumpsys/meminfo.txt[]
+----
+
+=== Memory consumption overview with dumpsys
+
+The
+`adb shell procrank`
+lists you all application in the order of their memory consumption.
+This command does not work on real device. Use the
+`adb shell dumpsys meminfo`
+instead.
+
+=== Information about scheduled tasks
+
+To find which alarms are scheduled for your application, use the
+`adb shell dumpsys alarm`
+command and look for your package name. The output might be similar
+to the following:
+
+[source,java]
+----
+include::res/dumpsys/timer.txt[]
+----
+
+This shows the info that the alarm is scheduled for approx. 12
+minutes.
+
+To find out the information about the pending intent, run the
+`adb shell dumpsys activity intents`
+command
+and look
+for
+the ID of the PendingIntentRecord (in this example
+43bbf887):
+
+[source,java]
+----
+include::res/dumpsys/intent.txt[]
+----
+
+=== Battery information tasks
+
+As of Android 5.0 you can also get information about the battery
+consumption of an application.
+
+[source,java]
+----
+include::res/dumpsys/battery.txt[]
+----
+
