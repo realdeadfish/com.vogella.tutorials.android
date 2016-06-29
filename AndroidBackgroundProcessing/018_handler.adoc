@@ -88,7 +88,7 @@ uses the following layout.
 		
 [source,xml]
 ----
-include::res/handler/main.xm[]
+include::res/handler/main.xml[]
 ----
 		
 With the following the
