@@ -37,7 +37,7 @@ application automatically with a debug key.
 To install the Android application via another channel you need
 to sign the Android apk with a self-created signature key.
 
- Please note that you need to use the same signature key in
+Please note that you need to use the same signature key in
 Google Play (Google Market) to update your application. If you lose
 the key, you will NOT be able to update your application ever again.
 
