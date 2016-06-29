@@ -10,22 +10,25 @@ Version 2.2, 28.06.2016
 
 [abstract]
 Android Drawables. This tutorial describes the usage of Drawables in Android.
-	
+
+include::../web/advertisement/afterTableOfContent.adoc[]	
 include::010_overview.adoc[]
 include::012_access.adoc[]
 include::014_bitmaps.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::020_xmldrawables.adoc[]
 include::021_vectordrawables.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::022_animationdrawables.adoc[]
 include::030_ninepatch.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
 include::040_customdrawable.adoc[]
 include::040_tutorial_customdrawable.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::resources.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidDrawables[]
-++++
-
-
+include::../web/vgwort/AndroidDrawables.adoc[]
 

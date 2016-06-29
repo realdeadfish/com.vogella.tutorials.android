@@ -36,5 +36,6 @@
 	include::../web/advertisement/beforeSupport.adoc[]
 	include::../support.adoc[]	
 	include::../web/advertisement/afterResources.adoc[]
-	include::../web/vgwort/AndroidApplicationOptimization"?>
+include::../copyright.adoc[]
+	include::../web/vgwort/AndroidApplicationOptimization.adoc[]
 </article>

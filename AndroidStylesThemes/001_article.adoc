@@ -13,16 +13,20 @@ Using styles and themes in Android.
 This tutorial describes the principles to style Android applications. 
 It also explains how to create and use styles and themes in Android applications
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::012_theming.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::014_platformthemes.adoc[]
 include::020_responsivedesign.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::100_exercise_theme.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidStylesThemes[]
-++++
+include::../web/vgwort/AndroidStylesThemes.adoc[]
 
 

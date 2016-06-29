@@ -13,15 +13,19 @@ Single and multi touch in Android.
 This tutorial describes how to use the touch API in Android
 applications.
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::012_prerequisite.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::100_tutorial_singletouch.adoc[]
 include::200_tutorial_multitouch.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::300_tutorial_scaledetectors.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::resources.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidTouch[]
-++++
+include::../web/vgwort/AndroidTouch.adoc[]
 

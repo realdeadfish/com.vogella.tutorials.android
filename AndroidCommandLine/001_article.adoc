@@ -12,13 +12,19 @@ Version 11.3, 29.06.2016
 Using the adb tools with Android.
 This tutorial describes how to use the adb tool to access your Android device or Android virtual device (AVD).
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::020_shell.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::040_copy.adoc[]
 include::060_uninstall.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::100_telnet.adoc[]
 include::200_dumpsys.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::resourceslocal.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
 include::../web/vgwort/AndroidCommandLine.adoc[]

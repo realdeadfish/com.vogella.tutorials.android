@@ -12,13 +12,15 @@ Version 1.4, 28.06.2016
 Using drag and drop in Android.
 This tutorial describes how to use drag and drop in Android.
 It is based on Eclipse 4.4 (Luna), Java 1.7 and Android 5.0.
-	
+
+include::../web/advertisement/afterTableOfContent.adoc[]	
 include::010_overview.adoc[]
 include::020_tutorial_draganddrop.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::resources.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidDragAndDrop[]
-++++
+include::../web/vgwort/AndroidDragAndDrop.adoc[]
 

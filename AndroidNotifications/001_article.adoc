@@ -12,16 +12,17 @@ Version 2.7, 28.06.2016
 Using the Notification Manager in Android. 
 This article describes how to use the Notification Manager in Android. 
 It is based on Android Studio and Android 5.0.
-	
+
+include::../web/advertisement/afterTableOfContent.adoc[]	
 include::010_overview.adoc[]
 include::../AndroidBroadcastReceiver/060_pendingintent.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::100_example.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::resources.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidNotifications[]
-++++
-
-
+include::../web/vgwort/AndroidNotifications.adoc[]
 

@@ -11,16 +11,19 @@ Version 6.1, 18.06.2016
 [abstract]
 
 This tutorial describes how to use the ListView view together with activities and fragments in Android. 
-			
+
+include::../web/advertisement/afterTableOfContent.adoc[]			
 include::010_overview.adoc[]
 include::020_architecturestyle-buildflavors.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::030_architecturestyle-dependencyinjection.adoc[]
 include::040_writtingtestsforthepresenter.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidListView[]
-++++
+include::../web/vgwort/AndroidListView.adoc[]
 
 

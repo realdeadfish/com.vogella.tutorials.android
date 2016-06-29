@@ -11,15 +11,21 @@ Version 3.1, 27.06.2016
 [abstract]
 Using Broadcast receivers in Android.  
 This tutorial describes how to create and consume broadcast receivers in Android.
-						
+
+include::../web/advertisement/afterTableOfContent.adoc[]						
 include::010_broadcastreceiver.adoc[]
 include::020_systembroadcast.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::030_systemevents.adoc[]
 include::060_pendingintent.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::100_tutorial_receiver.adoc[]
 include::200_tutorial_usingservices.adoc[]
 include::600_dynamicregistration.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::resources.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
 include::../web/vgwort/AndroidBroadcastReceiver.adoc[]

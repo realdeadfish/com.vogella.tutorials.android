@@ -12,11 +12,13 @@ Version 14.3, 29.06.2016
 Developing Android applications.
 This tutorial describes the security and permissions model for Android applications.
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidPermissions[]
-++++
+include::../web/vgwort/AndroidPermissions.adoc[]
 

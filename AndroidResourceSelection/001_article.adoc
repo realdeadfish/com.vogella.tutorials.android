@@ -12,18 +12,22 @@ Version 10.8, 25.06.2016
 Android resource selectors. This tutorial describes how to the resource selectors work in Android. 
 It describes how to support different screen sizes, languages and densities on different devices.
 				
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_deviceconfigurations.adoc[]
 include::020_resource_selectors.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::024_translations.adoc[]
 include::030_screensize.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::040_measurementunits.adoc[]
 include::050_relativedimensionsincode.adoc[]
 include::120_fragments.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::resourceslocal.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidResourceSelection[]
-++++
+include::../web/vgwort/AndroidResourceSelection.adoc[]
 
 

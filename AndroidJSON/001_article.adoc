@@ -12,16 +12,16 @@ Version 1.5, 28.06.2016
 JSON with Android.
 This article describes how to process JSON within Android. 
 It is based on Eclipse 4.4, Java 1.6 and Android 4.4.
-	
+
+include::../web/advertisement/afterTableOfContent.adoc[]	
 include::010_overview.adoc[]
 include::020_read.adoc[]
 include::030_write.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::resources.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidJSON[]
-++++
-
-
+include::../web/vgwort/AndroidJSON.adoc[]
 

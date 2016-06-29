@@ -10,24 +10,29 @@ Version 12.0, 18.04.2016
 
 [abstract]
 This tutorial describes how to use the Fragment class to create scalable and flexible Android applications.
-				
+
+include::../web/advertisement/afterTableOfContent.adoc[]				
 include::010_overview.adoc[]
 include::010_usingfragments.adoc[]
 include::011_lifecycle.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::018_dynamicfragments.adoc[]
 include::022_backstack.adoc[]
 include::024_animations.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::026_persistence.adoc[]
 include::028_headlessfragments.adoc[]
 include::062_fragments_tutorialpart1.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
 include::063_fragments_tutorialpart2.adoc[]
 include::064_fragments_tutorialpart_headless.adoc[]
-
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidFragments[]
-++++
+include::../web/vgwort/AndroidFragments.adoc[]
+
 
 

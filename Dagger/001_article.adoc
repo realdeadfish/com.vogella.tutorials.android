@@ -11,18 +11,21 @@ Version 1.1, 18.06.2016
 [abstract]
 This article describes the usage of Dagger 2 within standard Java applications and within Android applications.
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::008_whatisdi.adoc[]
 include::010_overview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::060_dagger2example.adoc[]
 include::200_dagger2android.adoc[]
 include::400_exercise_dagger2android.adoc[]
 include::600_tests.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/Dagger[]
-++++
+include::../web/vgwort/Dagger.adoc[]
 
 
 

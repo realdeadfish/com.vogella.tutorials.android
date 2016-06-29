@@ -11,19 +11,24 @@ Version 1.4, 27.06.2016
 [abstract]
 Understanding the Android lifecycle. This tutorial describes how the Android application and activity life cycle works.
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::020_application.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::030_contentprovider.adoc[]
 include::060_activities.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::080_instancestate.adoc[]
-include::090_nonconfigurationinstancescope.adoc[]
+include::090_nonconfigurationinstancescope.adoc[
+include::../web/advertisement/inBetween03.adoc[]]
 include::100_configurationchanges.adoc[]
 include::200_testexample.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
 include::resourceslocal.adoc[]
+include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidLifeCycle[]
-++++
+include::../web/vgwort/AndroidLifeCycle.adoc[]
 
 
