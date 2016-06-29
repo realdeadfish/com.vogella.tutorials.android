@@ -2,7 +2,7 @@
 === Target of this exercise
 		
 In this exercise you learn how to interact between your user interface widgets using data binding.
-You continue to use the application you created already in <<androidstudio_starter>>.
+Create a new Android application for this exercise, with the `com.vogella.android.databinding` top level package.
 		
 === Activate the usage of data binding
 		
@@ -59,4 +59,6 @@ Adjust your `MainActivity` code to activate data binding.
 
 === Validate your application
 You can start your application in the emulator or use the layout review in your IDE. 
-If you press the button, a small popup should be shown.
+If you press the button, a small popup should be shown with the correct data.
+
+The `TextView` should update automatically if you type in the `EditText` field.
