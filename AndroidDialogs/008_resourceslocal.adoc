@@ -2,3 +2,6 @@
 	
 http://developer.android.com/guide/topics/ui/dialogs.html - Android Dialogs standard documentation
 	
+include::../services.adoc[]
+
+	

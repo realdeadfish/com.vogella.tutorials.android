@@ -8,4 +8,6 @@ ListView Resources
 	
 		https://github.com/renard314/ListView3d[ListView demo which uses 3D effects (Github)]
 	
+include::../services.adoc[]
+
 

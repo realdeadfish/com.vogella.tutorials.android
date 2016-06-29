@@ -5,3 +5,5 @@ http://tools.android.com/tech-docs/new-build-system/user-guide  - Android tools 
 
 http://tools.android.com/tech-docs/new-build-system/resource-shrinking - Official documentation for resource skrinking
 			
+include::../services.adoc[]
+

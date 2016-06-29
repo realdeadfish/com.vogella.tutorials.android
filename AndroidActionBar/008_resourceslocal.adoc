@@ -2,4 +2,5 @@
 	
 http://developer.android.com/design/index.html - Android Design Page
 	
+include::../services.adoc[]
 

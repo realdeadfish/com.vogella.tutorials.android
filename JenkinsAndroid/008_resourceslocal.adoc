@@ -1,3 +1,6 @@
 == Jenkins Android resources
 
-http://www.vogella.com/tutorials/Jenkins/article.html Jenkins tutorial
+http://www.vogella.com/tutorials/Jenkins/article.html - Jenkins tutorial
+
+include::../services.adoc[]
+

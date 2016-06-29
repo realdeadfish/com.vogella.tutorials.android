@@ -24,3 +24,5 @@ http://groups.google.com/group/android-developers - Android Google Groups
 
 http://android-ui-utils.googlecode.com/hg/asset-studio/dist/index.html - Android Assets Studio
 
+include::../services.adoc[]
+

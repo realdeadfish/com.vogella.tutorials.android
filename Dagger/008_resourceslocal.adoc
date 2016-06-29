@@ -11,6 +11,9 @@ http://blog.sqisland.com/2015/04/dagger-2-espresso-2-mockito.html - Testing with
 
 http://engineering.circle.com/instrumentation-testing-with-dagger-mockito-and-espresso/ - Instrumentation Testing with Dagger, Mockito, and Espresso	
 
-https://github.com/codepath/android_guides/wiki/Dependency-Injection-with-Dagger-2 Detailed Dagger 2 tutorial
+https://github.com/codepath/android_guides/wiki/Dependency-Injection-with-Dagger-2 - Detailed Dagger 2 tutorial
 
-https://github.com/frogermcs/GithubClient Github client using Dagger 2
+https://github.com/frogermcs/GithubClient - Github client using Dagger 2
+
+include::../services.adoc[]
+

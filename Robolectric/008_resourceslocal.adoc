@@ -9,3 +9,6 @@ https://github.com/robolectric/robolectric - Robolectric hosting page at Github
 https://github.com/robolectric/robolectric-samples - Robolectric samples
 
 https://github.com/robolectric/deckard-gradle - Robolectric and Espresso example project
+
+include::../services.adoc[]
+

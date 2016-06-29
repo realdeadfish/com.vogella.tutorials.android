@@ -6,3 +6,5 @@ https://blog.stylingandroid.com/data-binding-part-1 - Blog post by  Mark Allison
 	
 https://medium.com/@fabioCollini/android-data-binding-f9f9d3afc761#.c4lt7flc2 - Example about two-way Android Data Binding
 	
+include::../services.adoc[]
+

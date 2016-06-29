@@ -16,3 +16,7 @@ http://www.vogella.com/tutorials/AndroidBackgroundProcessing/article.html - Andr
 
 http://developer.android.com/reference/android/app/Service.html#RemoteMessengerServiceSample - Remote Messenger Service from Google
 		
+include::../services.adoc[]
+
+		
+		

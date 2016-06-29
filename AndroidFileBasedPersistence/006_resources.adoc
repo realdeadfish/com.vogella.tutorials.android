@@ -8,3 +8,6 @@ http://www.vogella.com/tutorials/AndroidLocationAPI/article.html - Android Locat
 		
 http://code.google.com/intl/de-DE/android/ - Android Homepage
 		
+include::../services.adoc[]
+
+		

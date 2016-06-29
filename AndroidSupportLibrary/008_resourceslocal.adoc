@@ -2,5 +2,7 @@
 	
 https://developer.android.com/tools/support-library/index.html - Android Support Library documentation
 	
+include::../services.adoc[]
+
 
 

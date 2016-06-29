@@ -1,3 +1,7 @@
 === Android Fragment resources
 		
 Not yet listed.
+
+include::../services.adoc[]
+
+

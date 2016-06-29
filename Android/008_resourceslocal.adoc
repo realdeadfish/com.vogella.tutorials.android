@@ -1,40 +1,31 @@
-<section id="androidonline" role="wrapper">
-	<title>Android online resources
-	<section id="androidonline1" role="wrapper">
-		<title>Android core resources
+== Android online resources
+
+=== Android core resources
 		
-			http://developer.android.com[ Android Developer Homepage ]
+http://developer.android.com - Android Developer Homepage
 		
+http://www.vogella.com/android.html - vogella Android online tutorials
 		
-			http://www.vogella.com/android.html[vogella Android online tutorials]
+http://code.google.com/p/android/issues/list - Android bug tracker
 		
+http://groups.google.com/group/android-developers - Android Google Groups
 		
-			http://code.google.com/p/android/issues/list[Android bug tracker]
+http://source.android.com/devices/graphics/architecture.html- Android graphics framework
 		
-		
-			http://groups.google.com/group/android-developers[Android Google Groups]
-		
-		
-			http://source.android.com/devices/graphics/architecture.html[Android graphics framework]
-		
-		
-			https://github.com/googlesamples/android-RuntimePermissions[Code example for demonstrating runtime permissions]
-		
+https://github.com/googlesamples/android-RuntimePermissions - Code example for demonstrating runtime permissions
 	
-	<section id="androidonline1" role="wrapper">
-		<title>Android learning resources
+=== Android learning resources
 
-		http://androidbackstage.blogspot.de/[Podcast from the Google developers about Android]
-		http://fragmentedpodcast.com/[Fragmented - An Android Developer Podcast]
+http://androidbackstage.blogspot.de/ - Podcast from the Google developers about Android
+		http://fragmentedpodcast.com/ - Fragmented - An Android Developer Podcast
 
-	
+=== Android tools
 
-	<section id="androidtools">
-		<title>Android tools
+http://tools.android.com/recent - Recent changes in the Android tooling
 
-		http://tools.android.com/recent[Recent changes in the Android tooling]
-		https://github.com/skylot/jadx[Command line and GUI tools for produce Java source code from Android Dex and Apk files]
+https://github.com/skylot/jadx - Command line and GUI tools for produce Java source code from Android Dex and Apk files
 
+include::../services.adoc[]
 
 
 	

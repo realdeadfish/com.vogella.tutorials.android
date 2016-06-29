@@ -1,3 +1,6 @@
 == Using Android Studio Tipps
 
 http://saulmm.github.io/the-powerful-android-studio Android Studio Tips
+
+include::../services.adoc[]
+

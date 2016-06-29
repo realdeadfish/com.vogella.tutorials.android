@@ -1,6 +1,6 @@
-<section id="androidonline" role="wrapper">
-	<title>Android testing resources_
+== Android testing resources_
 	
-		https://developer.android.com/training/testing/ui-testing/uiautomator-testing.html">Google training side for UI Automator
-		</ulink>
-	_
+https://developer.android.com/training/testing/ui-testing/uiautomator-testing.html - Google training side for UI Automator
+
+include::../services.adoc[]
+

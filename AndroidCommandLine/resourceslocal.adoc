@@ -28,3 +28,5 @@ http://groups.google.com/group/android-developers - Android Google Groups
 
 http://android-developers.blogspot.com/2009/04/live-folders.html - Android Live Folder
 
+include::../services.adoc[]
+

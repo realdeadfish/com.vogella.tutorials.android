@@ -12,3 +12,5 @@ http://code.google.com/p/android/issues/list - Android Issues / Bugs
 
 http://groups.google.com/group/android-developers - Android Google Groups
 
+include::../services.adoc[]
+

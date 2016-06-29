@@ -12,3 +12,5 @@ http://crest.codegist.org/index.html - Crest Framework to access rest services, 
 		
 http://hc.apache.org/ - Apache HttpClient	
 
+include::../services.adoc[]
+

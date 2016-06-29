@@ -2,3 +2,6 @@
 == Android Job Scheduling
 
 Nothing listed.
+
+include::../services.adoc[]
+

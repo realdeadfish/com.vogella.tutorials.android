@@ -22,3 +22,5 @@ http://www.vogella.com/tutorials/AndroidIntent/article.html - Android Intents
 		
 http://www.vogella.com/tutorials/AndroidNetworking/article.html - Android and Networking
 
+include::../services.adoc[]
+
