@@ -23,7 +23,5 @@ include::220_customviewexample.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidCustomViews[]
-++++
+include::../web/vgwort/AndroidCustomViews.adoc[]
 

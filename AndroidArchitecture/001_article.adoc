@@ -21,7 +21,6 @@ include::100_exercise_mvp.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidArchitecture[]
-++++
+include::../web/vgwort/AndroidArchitecture.adoc[]
+
 

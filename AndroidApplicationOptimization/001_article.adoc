@@ -27,14 +27,14 @@
 		</abstract>
 	</articleinfo>
 	
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	include::../web/advertisement/afterTableOfContent.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="012_avoidobjectallocation.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="014_useefficientmemorystructures.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_handlingbitmaps.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="600_cache.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<?dbhtml-include href="../../web/vgwort/AndroidApplicationOptimization"?>
+	include::../web/advertisement/beforeSupport.adoc[]
+	include::../support.adoc[]	
+	include::../web/advertisement/afterResources.adoc[]
+	include::../web/vgwort/AndroidApplicationOptimization"?>
 </article>

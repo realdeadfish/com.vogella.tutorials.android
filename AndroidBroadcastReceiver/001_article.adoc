@@ -22,7 +22,5 @@ include::600_dynamicregistration.adoc[]
 include::resources.adoc[]
 include::../copyright.adoc[]
 
-++++
-include::../web/vgwort/AndroidBroadcastReceiver[]
-++++
+include::../web/vgwort/AndroidBroadcastReceiver.adoc[]
 

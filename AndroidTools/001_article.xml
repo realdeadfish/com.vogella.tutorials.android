@@ -29,31 +29,31 @@
 			
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	include::../web/advertisement/afterTableOfContent.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_overview.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/012_prerequisites.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_strictmode.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/040_developersettings.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	include::../web/advertisement/inBetween01.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_lint.xml" />
 
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/100_traceview.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/120_exercise_traceview.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	include::../web/advertisement/inBetween02.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/140_hierarchyviewer.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/150_exercise_hierarchyviewer.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/160_layoutoptimization.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/200_heapdump.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/300_systrace.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	include::../web/advertisement/inBetween03.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/340_simulatepixeldensity.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/400_templates.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/600_profilegpurendering.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/620_avoidingoverdraw.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="800_opensourcetools.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	include::../web/advertisement/beforeSupport.adoc[]
+	include::../support.adoc[]	
+	include::../web/advertisement/afterResources.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/AndroidTools"?>
+	include::../web/vgwort/AndroidTools"?>
 </article>

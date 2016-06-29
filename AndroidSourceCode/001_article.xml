@@ -29,15 +29,15 @@
 		</abstract>
 	</articleinfo>
 	
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	include::../web/advertisement/afterTableOfContent.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_introduction.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_installation.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	include::../web/advertisement/inBetween01.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_cloningrepo.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_buildingadt.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	include::../web/advertisement/beforeSupport.adoc[]
+	include::../support.adoc[]	
+	include::../web/advertisement/afterResources.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/AndroidSourceCode"?>
+	include::../web/vgwort/AndroidSourceCode"?>
 </article>

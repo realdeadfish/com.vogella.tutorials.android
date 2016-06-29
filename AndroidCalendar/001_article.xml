@@ -28,12 +28,12 @@
 		</abstract>
 	</articleinfo>
 	
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	include::../web/advertisement/afterTableOfContent.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/prerequisites/android_prerequisite.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_calendar.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	include::../web/advertisement/beforeSupport.adoc[]
+	include::../support.adoc[]	
+	include::../web/advertisement/afterResources.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/AndroidCalendar"?>
+	include::../web/vgwort/AndroidCalendar"?>
 </article>

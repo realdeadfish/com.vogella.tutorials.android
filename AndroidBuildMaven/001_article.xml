@@ -25,13 +25,13 @@
 		</abstract>
 	</articleinfo>
 
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	include::../web/advertisement/afterTableOfContent.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../AndroidBuild/010_overview.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	include::../web/advertisement/inBetween01.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./content/020_maven.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	include::../web/advertisement/inBetween02.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./content/022_example.xml" />
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	include::../web/advertisement/afterResources.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./content/030_moreinformation.xml" />
-	<?dbhtml-include href="../../web/vgwort/AndroidBuildMaven"?>
+	include::../web/vgwort/AndroidBuildMaven"?>
 </article>
