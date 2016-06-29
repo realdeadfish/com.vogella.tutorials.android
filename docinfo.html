@@ -77,6 +77,10 @@
        defineSizeMapping(mapping).
        addService(googletag.pubads()).
        setTargeting('inbetween03');
+	googletag.defineSlot('/6839/lqm.javaeclipseandroid.site/afterresources', [[300, 250], [728, 90]], 'ad-afterResources').
+    defineSizeMapping(mapping).
+    addService(googletag.pubads()).
+    setTargeting('afterresources');
 
    // Start ad fetching
    googletag.pubads().enableSingleRequest();
