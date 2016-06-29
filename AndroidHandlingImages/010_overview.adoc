@@ -1,0 +1,20 @@
+== Google Glide for image processing 
+
+Every application needs to download and manage images.
+
+Google Glide makes this easy.
+
+To use Glide add the following dependency to your app/build.gradle file.
+
+[source,txt]
+----
+include::res/glide/install.txt[]
+----
+
+The usage is simple.
+
+[source,java]
+----
+include::res/glide/use.java[]
+----
+
