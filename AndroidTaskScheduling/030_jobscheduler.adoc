@@ -22,6 +22,7 @@ Here are example when you would use this job scheduler:
 * Tasks that should be running on a regular basis as batch where the timing is not critical
 
 === Create a Job
+
 A unit of work is encapsulated by a `JobInfo` object. 
 This object specifies the scheduling criteria.
 The job scheduler is aware if the device is in idle model and if network activity is at the moment possible.
@@ -42,3 +43,4 @@ Deadline is a hard constraint, if that expires the job is always scheduled.
 To implement a Job, extend the `JobService` class and implement the `onStartJob` and `onStopJob`. 
 If the job fails for some reason, return true from on the `onStopJob` to restart the job. 
 The `onStartJob` is performed in the main thread, if you start asynchronous processing in this method, return true otherwise false.
+

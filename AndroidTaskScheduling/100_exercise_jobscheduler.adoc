@@ -1,41 +1,42 @@
 == Exercise: Using the JobScheduler to schedule background jobs
+
 === Target
 
 In this exercise you build a small example application to schedule jobs via the `JobScheduler` API.
 This example is based on the https://github.com/googlesamples/android-JobScheduler which is unfortunately outdated.
 
-image::jobscheduler10.png[Job Scheduler]
+image::jobscheduler10.png[Job Scheduler,pdfwidth=60%]
 
-=== Create project_
+=== Create project
+
 Create a new Android project called `com.vogella.android.jobscheduler` based on API 21.
 
 === Create layout file
 
 Create a layout file similar to the following.
 
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-		parse="text" href="./examples/job/activity_main.xml" />
-</programlisting>
-		_
+[source,xml]
+----
+include::res/job/activity_main.xml[]
+----
 
 === Create the JobService
 
 Create a service with the following implementation.
 
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-		parse="text" href="./examples/job/TestJobService.java" />
-</programlisting>
+[source,java]
+----
+include::res/job/TestJobService.java[]
+----
 
-WARNING: Ensure you register it via your Android manifest._
+WARNING: Ensure you register it via your Android manifest.
 
 === Create test activity
 
 Change your activity implementation to the following code.
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-		parse="text" href="./examples/job/MainActivity.java" />
-</programlisting>
 
+[source,java]
+----
+include::res/job/MainActivity.java[]
+----
 

@@ -6,13 +6,15 @@ If you have a repetitive task in your Android app, you cannot reply on a `TimerT
 Activities and services can be terminated at any point in time by the Android system to free up resources.
 Therefore the following code snippet would be wrong.
 
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/schedule/wrong.java" />
-			</programlisting>
+[source,java]
+----
+include::res/schedule/wrong.java[]
+----
 	
 === Options for scheduling
 
 The Android system currently has two main means to schedule task, the `AlarmManager` and the `JobScheduler` API.
 Modern Android apps should use the `JobScheduler` API.  
 Apps can schedule jobs while letting the system optimize based on memory, power, and connectivity conditions. 
+
+

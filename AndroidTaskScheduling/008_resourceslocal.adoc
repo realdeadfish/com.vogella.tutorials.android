@@ -1,5 +1,5 @@
 [[resources_androidtaskscheduling]]
-== Android Job Scheduling
+== Links and Literature
 
 Nothing listed.
 
