@@ -1,4 +1,4 @@
-=== Android Intent resources
+== Android Intent resources
 		
 Not yet available.		
 
