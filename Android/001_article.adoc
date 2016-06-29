@@ -29,6 +29,7 @@ include::320_assets.adoc[]
 include::340_exercise_resource_imageview.adoc[]
 include::420_scrollview.adoc[]
 include::800_deployondevice.adoc[]
+include::../copyright.adoc[]
 
 
 
