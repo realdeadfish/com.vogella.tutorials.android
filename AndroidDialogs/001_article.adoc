@@ -6,7 +6,7 @@
 :imagesdir: ./img
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 1.1, 25.06.2016
-:docinfo:
+:docinfodir: ../
 
 [abstract]
 Using dialogs in Android programming This tutorial describes how to use dialogs in Android applications. 

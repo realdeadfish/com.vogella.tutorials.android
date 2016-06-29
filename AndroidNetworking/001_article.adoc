@@ -6,7 +6,7 @@
 :imagesdir: ./img
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 2.5, 28.06.2016
-:docinfo:
+:docinfodir: ../
 
 [abstract]
 Performing HTTP operations with Android. This article describes how to access web resources via HTTP in Android.

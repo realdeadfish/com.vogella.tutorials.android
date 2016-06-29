@@ -6,6 +6,7 @@
 :imagesdir: ./img
 (c) 2016 vogella GmbH
 Version 0.1, 18.06.2016
+:docinfodir: ../
 
 [abstract]
 This tutorial contains information about the usage of the Jenkins build server to build Android appplications.

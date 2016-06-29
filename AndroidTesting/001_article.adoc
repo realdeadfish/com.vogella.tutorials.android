@@ -6,6 +6,7 @@
 :imagesdir: ./img
 (c) 2012, 2016 vogella GmbH
 Version 2.1, 18.04.2016
+:docinfodir: ../
 
 [abstract]
 This tutorial describes how to write unit and instrumentation tests for your Android application.

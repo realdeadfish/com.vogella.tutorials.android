@@ -6,6 +6,7 @@
 :imagesdir: ./img
 Lars Vogel, (c) 2010, 2016 vogella GmbH
 Version 6.1, 18.06.2016
+:docinfodir: ../
 
 [abstract]
 

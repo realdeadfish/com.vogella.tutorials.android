@@ -6,7 +6,7 @@
 :imagesdir: ./img
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 1.4, 27.06.2016
-:docinfo:
+:docinfodir: ../
 
 [abstract]
 Understanding the Android lifecycle. This tutorial describes how the Android application and activity life cycle works.
