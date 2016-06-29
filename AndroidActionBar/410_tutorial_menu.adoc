@@ -54,8 +54,6 @@ Change your `RssfeedActivity` class to the following code, to configure the tool
 include::res/social/OverviewActivity.java[]
 ----		
 
-NOTE: Ensure to add the toolbar entry to both layout files for the `RssfeedActivity` activity.
-
 === Run the application and test the toolbar
 		
 Run your application and validate that you can select both of your actions. 
