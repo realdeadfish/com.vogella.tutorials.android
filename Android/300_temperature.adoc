@@ -16,49 +16,28 @@ image::temparaturebarcode.png[QR Code to install the Android Temperature convert
 		
 Create a new Android project with the following data.
 		
+.New Android project
+|===
+|Property |Value
 
-		
-<table frame='all'>
-	<title>New Android project
-	<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-		<colspec colname='c1' />
-		<colspec colname='c2' />
-		<thead>
-<row>
-	<entry>Property</entry>
-	<entry>Value</entry>
-</row>
-		</thead>
-		<tbody>
-<row>
-	<entry>Application Name</entry>
-	<entry>Temperature Converter</entry>
-</row>
-<row>
-	<entry>Package name</entry>
-	<entry>com.vogella.android.temperatureconverter</entry>
-</row>
-<row>
-	<entry>API (Minimum, Target, Compile with)</entry>
-	<entry>Latest</entry>
-</row>
-<row>
-	<entry>Template</entry>
-	<entry>Empty Activity</entry>
-</row>
-<row>
-	<entry>Activity</entry>
-	<entry>MainActivity</entry>
-</row>
+|Application Name
+|Temperature Converter
 
-<row>
-	<entry>Layout</entry>
-	<entry>activity_main</entry>
-</row>
-		</tbody>
-	</tgroup>
-</table>
-		
+|Package name
+|com.vogella.android.temperatureconverter
+
+|API (Minimum, Target, Compile with)
+|Latest
+
+|Template
+|Empty Activity
+
+|Activity
+|MainActivity
+
+|Layout
+|activity_main
+|===
 
 === Create attributes
 		
