@@ -2,27 +2,13 @@
 
 === Security concept in Android
 
-The Android system installs every Android application with a
-unique user and group ID. Each
-application file is
-private to this
-generated user, e.g., other
-applications cannot access these files. In
-addition, each Android
-application is started in its own
-process.
+The Android system installs every Android application with a unique user and group ID. 
+Each application file is private to this generated user, e.g., other applications cannot access these files. 
+In addition, each Android application is started in its own process.
 
-Therefore, by means of the underlying Linux kernel,
-every Android
-application is
-isolated from other
-running
-applications.
+Therefore, by means of the underlying Linux kernel, every Android application is isolated from other running applications.
 
-If data should be shared, the application must do this
-explicitly via an Android component which handles the
-sharing of the
-data,
+If data should be shared, the application must do this explicitly via an Android component which handles the sharing of the data,
 e.g.,
 via a service
 or a content provider.
