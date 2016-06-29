@@ -7,14 +7,8 @@ An instance of the `Resources` class can be retrieved via the `getResources()` m
 As activities and services extend the `Context` class, you can directly use this method in implementations of these components.
 
 
-An instance of the `Resources`
-class
-is also required by other Android framework classes. For
-example, the
-following
-code shows how to create a
-`Bitmap`
-file from a reference ID.
+An instance of the `Resources` class is also required by other Android framework classes. 
+For example, the following code shows how to create a `Bitmap` file from a reference ID.
 
 [source,java]
 ----
@@ -24,7 +18,7 @@ include::res/resources/LoadBitmap.java[]
 === Accessing views from the layout in an activity
 		
 In your activity (and fragment) code you frequently need to access the views to access and modify their properties.
-		
+
 		
 In an activity you can use the `findViewById(id)` method call to search for a view in the current layout. 
 The `id` is the ID attribute of the view in the layout. 
@@ -33,15 +27,56 @@ The usage of this method is demonstrated by the following code.
 		
 [source,java]
 ----
-include::res/layout/MainActivity2.java[]
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+	super.onCreate(savedInstanceState);
+	setContentView(R.layout.activity_main);
+	TextView textView = (TextView) findViewById(R.id.mytext);
+        
+    // TODO do something with the TextView
+}
 ----
-		
 		
 It is also possible to search in a view hierarchy with the `findViewById(id)` method, as demonstrated in the following code snippet.
 
 [source,java]
 ----
-include::res/layout/MainActivity3.java[]
+// search in the layout of the activity
+LinearLayout linearLayout = (LinearLayout) findViewById(R.id.mylayout);
+
+// afterwards search in linearLayout for another view
+TextView textView = (TextView) linearLayout.findViewById(R.id.mytext);
+
+// note, you could have directly searched for R.id.mytext, the above coding
+// is just for demonstration purposes
+----
+
+
+[TIP]
+====
+You could also build a utility method which makes access to views easier.
+
+[source,java]
+----
+package com.example.android.test;
+
+import android.app.Activity;
+import android.view.View;
+
+public class UiUtils {
+   public static <T extends View> T findView(View root, int id)      {
+      return (T) root.findViewById(id); }
+
+   public static <T extends View> T findView(Activity activity, int id)      {
+      return (T) activity.getWindow().getDecorView().getRootView().findViewById(id); }
+}
+----
+
+This would allow you to find the view without explicit cast in your view hierarchy.
+
+[source,java]
+----
+Button button = UiUtils.findView(this, R.id.button);
 ----
 		
 === Reference to resources in XML files
