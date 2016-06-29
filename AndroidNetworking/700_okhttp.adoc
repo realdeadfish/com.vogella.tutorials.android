@@ -1,8 +1,0 @@
-== OkHttp
-	
-See
-http://www.vogella.com/tutorials/JavaLibrary-OkHttp/article.html
-for a short description of this framework. It can be used within your
-Android application and it highly efficient and have a very easy to
-use API.
-
