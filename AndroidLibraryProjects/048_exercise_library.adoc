@@ -93,6 +93,8 @@ To send the new data, change the `updateDetail` method in your `MyListFragment` 
 ----
 include::res/net/MyListFragment.java[]
 ----		
+
+<1> Updated method
 	
 === Validate implementation
 		
