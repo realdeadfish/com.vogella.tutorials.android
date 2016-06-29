@@ -16,6 +16,20 @@ Add two entries so that the resulting XML file, similar to the following listing
 include::res/social/mainmenu.xml[]
 ----
 	
+== Turn of the default action bar from the styling
+
+As you are using your own toolbar, turn of the default one via the _res/values/styles.xml_ file.
+[source,xml]
+----
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+</resources>	
+----
+
 === Add a toolbar view to your activity layout
 		
 Change the layout files of your `RssfeedActivity` activity to also contain a toolbar entry.
@@ -23,11 +37,19 @@ Change the layout files of your `RssfeedActivity` activity to also contain a too
 [source,xml]
 ----
 include::res/rssfeed/activity_main.xml[]
-----		
+----
+
+Do the same for the layout for the portrait mode.
+
+[source,xml]
+----
+include::res/rssfeed/activity_rssfeed_port.xml[]
+----
+		
 		
 Change your `RssfeedActivity` class to the following code, to configure the toolbar view.
 		
-[source,xml]
+[source,java]
 ----
 include::res/social/OverviewActivity.java[]
 ----		
@@ -37,9 +59,8 @@ NOTE: Ensure to add the toolbar entry to both layout files for the `RssfeedActiv
 === Run the application and test the toolbar
 		
 Run your application and validate that you can select both of your actions. 
-Ensure that the correct info message is displayed if you select the different entries.
+Ensure that a Toast is displayed if you select the different entries.
 		
-image::toolbar_rssfeed10.png[Social App running]
 
 [NOTE]
 ====

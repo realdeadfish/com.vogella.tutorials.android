@@ -91,7 +91,7 @@ Create a new XML resource called _mainmenu.xml_ for your menu.
 
 image::menu_resources20.png[Create new menu resources,pdfwidth=60%]
 		
-Afterwards you can manually edit the generated file.
+Afterwards you can manually edit the generated file via the _Text_ tab or use the _Design_ tab to edit it via drag and drag.
 
 image::menu_resources30.png[Create new menu resources,pdfwidth=60%]
 
