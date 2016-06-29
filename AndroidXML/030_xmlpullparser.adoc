@@ -1,15 +1,11 @@
-<section id="xmlpullparser">
-	<title>Example XmlPullParser
+== Example XmlPullParser
 	
-		The Javadoc of
-		`XmlPullParser`
-		gives a nice example how you can use this library.
+The Javadoc of
+`XmlPullParser`
+gives a nice example how you can use this library.
 	
-
-	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/xmlpullparser/example.java" />
-		</programlisting>
-	
+[source,java]
+----
+include::res/xmlpullparser/example.java[]
+----	
 

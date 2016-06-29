@@ -1,40 +1,25 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
-		<title>Android XML Processing with the XmlPullParser - Tutorial
-		<author>
-			<firstname>Lars</firstname>
-			<surname>Vogel</surname>
-		</author>
-		<copyright>
-			<year>2011</year>
-			<year>2012</year>
-			<year>2013</year>
-			<year>2014</year>
-			<holder>vogella GmbH</holder>
-		</copyright>
-		<pubdate>15.09.2014</pubdate>
-		<releaseinfo>
+= Android XML Processing with the XmlPullParser - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 1.4, 28.06.2016
+:docinfodir: ../
 
-			Version 1.3	
-		</releaseinfo>
-		
-		<abstract id="abstract">
-			<title>XML processing with Android
-			 This article describes how to process XML with Android.
-				It is
-				based on Eclipse 4.4, Java 1.6 and Android 4.4.
-			
-		</abstract>
-	</articleinfo>
+[abstract]
+XML processing with Android. 
+This article describes how to process XML with Android.
+It is based on Eclipse 4.4, Java 1.6 and Android 4.4.
 	
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaXML/05_xml_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/030_xmlpullparser.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/AndroidXML"?>
-</article>
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::030_xmlpullparser.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../web/advertisement/afterResources.adoc[]
+include::../copyright.adoc[]
+include::../web/vgwort/AndroidXML.adoc[]
+
