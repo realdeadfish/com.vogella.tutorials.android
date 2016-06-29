@@ -1,0 +1,56 @@
+== Tutorial: View Animation
+
+This tutorial demonstrates the usage of the
+Properties animation
+API.
+	
+Create
+a
+new Android project called
+_com.vogella.android.animation.views_
+with
+the
+_activity_
+called
+_AnimationExampleActivity_. The layout file should be called 
+_main.xml_. Change this file 
+to the
+following code.
+	
+[source,xml]
+----
+include::res/ani/main.xml[]
+----	
+
+Create the following menu resource.
+
+[source,xml]
+----
+include::res/ani/mymenu.xml[]
+----	
+	
+Change your
+_activity_
+to the following.
+	
+[source,java]
+----
+include::res/ani/AnimationExampleActivity.java[]
+----	
+	
+Create a new
+_activity_
+called
+_HitActivity_
+.
+	
+[source,java]
+----
+include::res/ani/HitActivity.java[]
+----	
+	
+If you run this example and press the different Buttons, the animation
+should start. Via the ActionBar you can navigate to your other
+_activity_
+.
+	

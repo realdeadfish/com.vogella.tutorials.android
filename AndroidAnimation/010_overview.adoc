@@ -1,0 +1,140 @@
+== Android Animations
+
+=== Using animations
+		
+Android 3.0 introduced the
+_Properties Animation API_
+which allow to change object properties over a predefined
+time
+interval.
+		
+The API allows to define for arbitrary object
+properties a start and
+end value and apply a time-based change to
+this attribute. This API
+can be applied on any Java object not only on
+`Views`.
+		
+=== Animator and AnimatorListener
+		
+The superclass of the animation API is the
+`Animator`
+class. Typically the
+`ObjectAnimator`
+class is used to modify the attributes of an object.
+		
+You can also add an
+`AnimatorListener`
+class to your
+`Animator`
+class. This listener is called in the different phases of the
+animation. You can use this listener to perform actions before or
+after a certain animation, e.g. add or remove a
+`View`
+from a
+`ViewGroup`
+.
+		
+=== ViewPropertyAnimator
+		
+The
+`ViewPropertyAnimator`
+class introduced in Android 3.1 provides a simpler access to typical
+animations which are performed on
+views.
+		
+The
+`animate()`
+method on a
+view
+returns the
+`ViewPropertyAnimator`
+object. This object allows
+to perform simultaneous animations. It
+has a
+fluent API and allows
+setting
+the duration of the animation.
+		
+The target of
+`ViewPropertyAnimator`
+is to provide a very simple API for typical animations.
+		
+The following code shows an example of the usage of this method.
+		
+[source,java]
+----
+include::res/viewproperty/Test.java[]
+----
+		
+For performance optimization you can also let
+`ViewPropertyAnimator`
+use a hardware layout.
+		
+[source,java]
+----
+include::res/viewproperty/TestHardware.java[]
+----		
+		
+You can also directly define a
+`Runnable`
+to be executed at the start and the end of the animation.
+		
+		
+[source,java]
+----
+include::res/viewproperty/TestLayoutActions.java[]
+----		
+		
+The
+`setInterpolator()`
+allows to define an object of type
+`TimeInterpolator`
+which defines the change of the value over time. The standard is
+linear. The Android platform
+defines a few default ones as for example
+`AccelerateDecelerateInterpolator`
+where the rate of change starts and ends slowly but accelerates
+through the middle.
+		
+Via the
+`setEvaluator`
+method you can set an object of type
+`TypeEvaluator`
+which allow you to create animations on arbitrary property
+types, by
+providing custom evaluators for types that
+are not automatically
+understood and used by the animation system.
+		
+=== Layout animations
+		
+The
+`LayoutTransition`
+class allows setting animations on a layout container and a change on
+the
+view hierarchy
+of this container will be animated.
+		
+[source,java]
+----
+include::res/layout/LayoutAnimations.java[]
+----		
+	
+=== Animations for Activity transition
+		
+Animations can be applied to
+`Views`
+but it is also possible to apply them on the transition between
+activities.
+		
+The
+`ActivityOptions`
+class
+allows defining defaults or customer animations.
+		
+[source,java]
+----
+include::res/activities/ActivityAnimation.java[]
+----		
+

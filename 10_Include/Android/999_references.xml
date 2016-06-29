@@ -1,0 +1,45 @@
+<section id="androidreferences">
+	<title>References</title>
+	<section id="androidstudio_createimage">
+		<title>Create an image via Android studio</title>
+		<para>
+			See
+			<ulink url="http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_createimage">Creating an image asset</ulink>
+			to learn how to create an image asset with Android Studio.
+		</para>
+	</section>
+
+	<section id="androidstudio_creatingresourcefolder">
+		<title>Creating a resource folder</title>
+		<para>
+			See
+			<ulink url="http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_creatingresourcefolder">Creating a new resource folder</ulink>
+			to learn how to a new resource file with Android Studio.
+		</para>
+	</section>
+	<section id="androidstudio_creatingresourcefile">
+		<title>Creating a resource file</title>
+		<para>
+			See
+			<ulink url="http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_creatingresourcefile">Creating a new resource file</ulink>
+			to learn how to a new resource file with Android Studio.
+		</para>
+	</section>
+	<section id="androidstudio_androidstudio_createmenu">
+		<title>Add a new menu XML resource</title>
+		<para>
+			See
+			<ulink url="http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_createmenu">Add a new menu XML resource</ulink>
+			to learn how to a new XML menu resource with Android Studio.
+		</para>
+	</section>
+	<section id="androidsupportlibrary_avoiding_remove">
+		<title>Remove the usage of the support library</title>
+		<para>
+			See
+			<ulink url="http://www.vogella.com/tutorials/AndroidSupportLibrary/article.html#androidsupportlibrary_avoiding_remove">Android support library</ulink>
+			how to remove the usage of the support library.
+		</para>
+	</section>
+
+</section>

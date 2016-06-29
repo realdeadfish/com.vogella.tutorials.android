@@ -1,0 +1,6 @@
+== Android Animation Resources
+	
+https://github.com/JakeWharton/NineOldAndroids - NineOldAndroids - Properties Animations API for Android 2.x
+
+include::../services.adoc[]	
+
