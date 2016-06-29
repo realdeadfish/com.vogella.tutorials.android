@@ -3,7 +3,7 @@
 === Add a refresh icon
 		
 Continue to use the _RSS Reader_ project. 
-Create a new icon called _ic_refresh_. 
+Create a new called _ic_refresh_ via menu:File[New>Vector Asset].
 
 === Add a menu XML resource
 		
