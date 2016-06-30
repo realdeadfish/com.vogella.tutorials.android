@@ -2,19 +2,15 @@
 
 === Target of this exercise
 
-In this exercise you create a several view groups which allow to
-drag views between them.
+In this exercise you create several view groups which allow to drag views between them.
 
-image::dndandroid10.png[Result of the DnD example,pdfwidth=60%]
 		
 === Create project
 		
 Create a new Android project called
 _com.vogella.android.draganddrop_
 with an activity
-called
-_DragActivity_
-.
+called _DragActivity_.
 		
 === Create XML Drawables
 
