@@ -2,4 +2,4 @@
 	
 http://developer.android.com/design/index.html - Android Design Page
 	
-
+http://www.grokkingandroid.com/adding-action-items-from-within-fragments Tutorial about Actionbar
