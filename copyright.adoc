@@ -1,3 +1,5 @@
+include::web/advertisement/afterResources.adoc[]	
+
 [appendix]
 = Copyright and License
 
