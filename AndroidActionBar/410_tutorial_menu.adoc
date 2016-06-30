@@ -25,7 +25,7 @@ include::res/social/listfragment_menu.xml[]
 ----
 
 	
-== Turn of the default action bar from the styling
+=== Turn of the default action bar from the styling
 
 As you are using your own toolbar, turn of the default one via the _res/values/styles.xml_ file.
 [source,xml]

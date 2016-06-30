@@ -9,7 +9,8 @@ Version 13, 25.06.2016
 :docinfodir: ../
 
 [abstract]
-Using the toolbar in Android applications. This tutorial describes how to use the toolbar widget in your Android application.
+Using the toolbar in Android applications. 
+This tutorial describes how to use the toolbar widget in your Android application.
 It is based on Android 6.0.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
