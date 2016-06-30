@@ -1,0 +1,29 @@
+== Calendar API
+
+The Calendar API is available as of Android 4.0.
+
+Creating new events is done via
+_Intents_
+and does not require any permission. Setting properties of the event
+is done via Intent extras. The user will be prompted if the
+event
+should be
+created.
+
+For example the following will prompt the user if an event
+should be created with certain details.
+
+[source,java]
+----
+include::res/snippets/createevent.java[]
+----
+
+You can also add dates and time, if this event is repeated and
+the like. See the comments in the coding for examples.
+
+
+[source,java]
+----
+include::res/snippets/createeventdetails.java[]
+----
+
