@@ -1,0 +1,57 @@
+== Android Data Backup
+
+=== Purpose of data backup
+
+The backup service of Android allows you to copy your persistent
+application data to a remote cloud storage. This allows you to
+restore the application data and settings in case the
+user switches
+Android devices, re-installs the application or
+performs a factory
+reset.
+
+Data backup is not required to be available
+on all Android
+devices and the actual cloud storage might be customized by the
+device
+manufacturer. Therefore the Android team guarantees no safety
+for the
+stored data.
+
+If the service is not
+available on your device, the backup
+service is not called, hence
+it is still
+save
+to implement this service
+and run it on any device.
+
+To use the backup service you have to register your application
+package for it
+at the following URL:
+https://developer.android.com/google/backup/signup.html - Backup service registration
+. This webpage allows you to get a backup key for a application
+package.
+
+=== Backup of shared preferences and files
+
+For saving and restoring your data you extend the
+`BackupAgent`
+class.
+
+The simplest way to implement your backup is to use
+`SharedPreferencesBackupHelper`
+for shared preferences and
+`FileBackupHelper`
+to backup
+files from the internal storage system. Both helper classes
+save and restore automatically the registered files.
+
+=== General backup
+
+For a more complex backup you can directly implement the BackupAgent
+and its save and restore methods.
+See
+http://developer.android.com/guide/topics/data/backup.html - Backup Agenda Documentation
+for details.
+

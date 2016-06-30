@@ -24,6 +24,8 @@ include::../web/advertisement/beforeSupport.adoc[]
 include::../support.adoc[]	
 include::../web/advertisement/afterResources.adoc[]
 include::006_resources.adoc[]
+include::../copyright.adoc[]
+
 include::../web/vgwort/AndroidCalendar.adoc[]
 
 	
