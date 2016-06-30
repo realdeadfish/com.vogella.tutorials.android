@@ -1,0 +1,6 @@
+== Links and Literature 
+
+=== Retrofit resources
+	
+http://square.github.io/okhttp/ - OkHTTP Homepage
+	

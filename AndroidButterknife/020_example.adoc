@@ -1,0 +1,40 @@
+== Exercise: Using Butterknife in your Android project
+
+=== Create project
+
+Create a new Android project with the package
+`com.vogella.android.butterknifeexample`
+. Add a text view with the
+`@+id/textview`
+to it and a button to the existing layout with the
+`@+id/button"`
+ID.
+
+=== Add Butterknife to your Gradle build configuratoin
+
+Add the
+`com.jakewharton:butterknife`
+in its latest version as compile dependency
+`build.gradle`
+file.
+
+[source,groovy]
+----
+include::res/build.gradle[]
+----
+
+=== Use view injection in your Android activity
+
+Change your activity to the following. 
+
+[source,java]
+----
+include::res/MainActivity.java[]
+----
+	
+=== Validate setup
+
+Run your application and ensure that the
+`TextView`
+got injected and the button event is fired, if you click the button.
+

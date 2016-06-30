@@ -1,0 +1,11 @@
+== Butterknife
+	
+http://jakewharton.github.io/butterknife/[Butterknife]
+is a light weight library to inject views into Android components.
+	
+The
+`@Bind`
+annotation allow to inject views and performs the cast to the correct type for you. The
+`@@OnClick(R.id.yourid)`
+annotation allows to add OnClickListener to a view. You can optional define the method parameter of the view in case you want it injected.
+	
