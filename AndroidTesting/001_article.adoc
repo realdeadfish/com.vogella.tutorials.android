@@ -38,7 +38,7 @@ include::950_codecoverage.adoc[]
 include::980_testfoldercreation.adoc[]
 
 include::../support.adoc[]
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 
 include::../copyright.adoc[]
 

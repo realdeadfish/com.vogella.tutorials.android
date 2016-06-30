@@ -21,7 +21,7 @@ include::400_exercise_dagger2android.adoc[]
 include::600_tests.adoc[]
 
 include::../support.adoc[]
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 
 include::../copyright.adoc[]
 

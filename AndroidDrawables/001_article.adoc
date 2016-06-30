@@ -26,7 +26,7 @@ include::040_customdrawable.adoc[]
 include::040_tutorial_customdrawable.adoc[]
 
 include::../support.adoc[]
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 
 include::../copyright.adoc[]
 

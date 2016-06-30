@@ -22,7 +22,7 @@ include::022_example.adoc[]
 include::030_moreinformation.adoc[]
 
 include::../support.adoc[]
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 
 include::../copyright.adoc[]
 include::../web/vgwort/AndroidBuildMaven.adoc[]

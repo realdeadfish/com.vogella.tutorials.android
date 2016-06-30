@@ -20,7 +20,7 @@ include::350_androidgradle_flavors_exercise.adoc[]
 include::800_eclipsemigration.adoc[]
 
 include::../support.adoc[]
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 
 include::../copyright.adoc[]
 

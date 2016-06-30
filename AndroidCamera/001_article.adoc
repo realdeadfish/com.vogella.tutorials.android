@@ -23,6 +23,6 @@ include::200_tutorial_cameraapi.adoc[]
 
 include::../support.adoc[]
 
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 include::../web/vgwort/AndroidCamera.adoc
 

@@ -35,6 +35,6 @@
 	
 	include::../support.adoc[]	
 	
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 	include::../web/vgwort/AndroidMedia"?>
 </article>

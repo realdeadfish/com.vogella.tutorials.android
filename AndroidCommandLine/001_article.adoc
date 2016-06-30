@@ -23,7 +23,7 @@ include::100_telnet.adoc[]
 include::200_dumpsys.adoc[]
 
 include::../support.adoc[]
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 
 include::../copyright.adoc[]
 

@@ -18,7 +18,7 @@ include::../web/advertisement/inBetween01.adoc[]
 include::200_exercise_layout.adoc[]	
 
 include::../support.adoc[]						
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 							
 include::../copyright.adoc[]
 

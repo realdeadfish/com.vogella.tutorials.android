@@ -19,7 +19,7 @@ include::040_prereqs.adoc[]
 include::048_exercise_library.adoc[]
 
 include::../support.adoc[]
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 
 include::../copyright.adoc[]
 

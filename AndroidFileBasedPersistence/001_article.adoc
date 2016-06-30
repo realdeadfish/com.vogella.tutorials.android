@@ -24,7 +24,7 @@ include::032_exercise_preferences_rsslist.adoc[]
 include::040_fileapi.adoc[]
 
 include::../support.adoc[]
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 
 include::../copyright.adoc[]
 

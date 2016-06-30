@@ -26,7 +26,7 @@ include::../web/advertisement/inBetween03.adoc[]
 include::150_tutorial_pickimage.adoc[]
 include::160_tutorial_implicitintent.adoc[]
 include::../support.adoc[]
-include::008_resources.adoc[]	
+include::008_resourceslocal.adoc[]	
 include::../copyright.adoc[]
 
 include::../web/vgwort/AndroidIntent.adoc[]

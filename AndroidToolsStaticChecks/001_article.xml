@@ -30,6 +30,6 @@
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
 	include::../support.adoc[]	
 	
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 	include::../web/vgwort/AndroidTools"?>
 </article>

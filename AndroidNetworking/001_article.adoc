@@ -21,7 +21,7 @@ include::080_networkstate.adoc[]
 include::800_websockets.adoc[]
 
 include::../support.adoc[]
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 
 include::../copyright.adoc[]
 

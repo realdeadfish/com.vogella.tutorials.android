@@ -25,7 +25,7 @@ include::100_configurationchanges.adoc[]
 include::200_testexample.adoc[]
 
 include::../support.adoc[]
-include::008_resources.adoc[]
+include::008_resourceslocal.adoc[]
 
 include::../copyright.adoc[]
 
