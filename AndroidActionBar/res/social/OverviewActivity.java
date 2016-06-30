@@ -34,7 +34,7 @@ public class RssfeedActivity extends Activity implements
                     .add(stateFragment, "headless").commit();
         }
 
-        if (findViewById(R.id.fragment_container) == null) {
+        if (getResources().getBoolean(R.bool.twoPaneMode)) {
             // restore state
             if (stateFragment.lastSelection.length()>0) {
                 onRssItemSelected(stateFragment.lastSelection);
@@ -83,7 +83,7 @@ public class RssfeedActivity extends Activity implements
             case R.id.action_settings:
                 Toast.makeText(this, "Action Settings selected", Toast.LENGTH_SHORT)
                         .show();
-                break;
+                return true;
 
             default:
                 break;
