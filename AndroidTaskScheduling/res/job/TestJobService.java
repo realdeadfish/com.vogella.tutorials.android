@@ -14,34 +14,22 @@ import android.os.RemoteException;
 import android.util.Log;
 
 /**
- * JobService to be scheduled by the JobScheduler. Requests scheduled with
- * the JobScheduler ultimately land on this service's "onStartJob" method.
- * Currently all this does is write a log entry
+ * JobService to be scheduled by the JobScheduler. 
+ * Requests scheduled with the JobScheduler call the "onStartJob" method
  */
 public class TestJobService extends JobService {
 	private static final String TAG = "SyncService";
 
-
 	@Override
 	public boolean onStartJob(JobParameters params) {
-		// We don't do any real 'work' in this sample app. All we'll
-		// do is track which jobs have landed on our service, and
-		// update the UI accordingly.
+		// fake work
 		Log.i(TAG, "on start job: " + params.getJobId());
 		return true;
 	}
 
 	@Override
 	public boolean onStopJob(JobParameters params) {
-		Log.i(TAG, "on stop job: " + params.getJobId());
 		return true;
-	}
-
-	MainActivity mActivity;
-	private final LinkedList<JobParameters> jobParamsMap = new LinkedList<JobParameters>();
-
-	public void setUiCallback(MainActivity activity) {
-		mActivity = activity;
 	}
 
 }

@@ -10,9 +10,10 @@ In general this API can be used to schedule everything that is not time critical
 
 === Advantages of the job scheduler API
 
-Compared to a custom SyncAdapter or the alarm manager, the JobScheduler supports batch scheduling of jobs.
-The Android system can combine jobs so that battery consuption is reduced. 
-JobManager makes handling uploads easier as it handles automatically also the case that the network is unreliable and survives application restarts.
+Compared to a custom `SyncAdapter` or the `alarm manager`, the JobScheduler supports batch scheduling of jobs.
+The Android system can combine jobs so that battery consumption is reduced. 
+JobManager makes handling uploads easier as it handles automatically the unreliability of the network.
+It also  survives application restarts.
 Here are example when you would use this job scheduler:
 
 * Tasks that should be done once the device is connect to a power supply
@@ -24,7 +25,7 @@ Here are example when you would use this job scheduler:
 
 A unit of work is encapsulated by a `JobInfo` object. 
 This object specifies the scheduling criteria.
-The job scheduler is aware if the device is in idle model and if network activity is at the moment possible.
+The job scheduler allows to consider the state of the device, e.g., if it is idle or if network is available at the moment.
 Use the `JobInfo.Builder` class to configure how the scheduled task should run. 
 You can schedule the task to run under specific conditions, such as:
 
@@ -41,5 +42,5 @@ Deadline is a hard constraint, if that expires the job is always scheduled.
 
 To implement a Job, extend the `JobService` class and implement the `onStartJob` and `onStopJob`. 
 If the job fails for some reason, return true from on the `onStopJob` to restart the job. 
-The `onStartJob` is performed in the main thread, if you start asynchronous processing in this method, return true otherwise false.
+The `onStartJob` is performed in the main thread, if you start asynchronous processing in this method, return `true` otherwise `false`.
 
