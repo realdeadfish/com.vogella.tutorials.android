@@ -19,6 +19,30 @@ The levels can be described as:
 It also contains the Android Runtime, as well as the core Java libraries for running Android applications.
 * Linux kernel - Communication layer for the underlying hardware.
 
+Android is published in different version, which are listed in the following table.
+
+.Table Android versions
+|===
+|Code name	|Version	|API level
+|Nougat	| N	| 24
+|Marshmallow	|6.0	| 23
+|Lollipop	|5.1	| 22
+|Lollipop	|5.0	| 21
+|KitKat	|4.4 - 4.4.4	| 19
+|Jelly Bean	|4.1.x - 4.3.x	|16 - 18
+|Ice Cream Sandwich	|4.0.1 - 4.0.4|14 -15
+|Honeycomb	|3.2.x	|13
+|Honeycomb	|3.0 - 3.1	|11 - 12
+|Gingerbread	|2.3 -  2.3.7|9-10
+|Froyo	|2.2.x	|8
+|Eclair	|2.1	|7
+|Eclair	|2.0 - 2.0.1	| 5 -6
+|Donut	|1.6	|4
+|Cupcake	|1.5|	3
+|(no code name)	|1.1|	2
+|(no code name)	|1.0|	1
+|===
+
 === How to develop Android applications
 
 Android applications are primarily written in the Java programming language.
