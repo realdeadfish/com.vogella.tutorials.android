@@ -17,7 +17,8 @@ https://github.com/googlesamples/android-RuntimePermissions - Code example for d
 === Android learning resources
 
 http://androidbackstage.blogspot.de/ - Podcast from the Google developers about Android
-		http://fragmentedpodcast.com/ - Fragmented - An Android Developer Podcast
+
+http://fragmentedpodcast.com/ - Fragmented - An Android Developer Podcast
 
 === Android tools
 
