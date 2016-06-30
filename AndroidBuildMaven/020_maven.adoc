@@ -1,73 +1,57 @@
-<section id="androidmaven">
-	<title>Building Android applications with Maven
+== Building Android applications with Maven
 	
-		The
-		_android-maven-plugin_
-		plug-in allows to build Android
-		applications via
-		Maven.
+The
+_android-maven-plugin_
+plug-in allows to build Android
+applications via
+Maven.
 	
+The webpage of this maven plug-in is located under:
+http://code.google.com/p/maven-android-plugin/ - Android-Maven Plug-in.
 	
-		The webpage of this maven plug-in is located under:
-		http://code.google.com/p/maven-android-plugin/[Android-Maven Plug-in]
-		.
+The Eclipse support of this plug-in is provided by the
+https://github.com/rgladwell/m2e-android - m2e project.
 	
+You only have to install Maven, write a correct
+_pom.xml_
+file and issue
+the commands to Maven to build, install and run your
+application.
 	
-		The Eclipse support of this plug-in is provided by the
-		https://github.com/rgladwell/m2e-android[m2e project]
-		.
+The following will build your Android application via Maven.
 	
+[source,java]
+----
+include::res/make.txt[]
+----
 	
-		You only have to install Maven, write a correct
-		_pom.xml_
-		file and issue
-		the commands to Maven to build, install and run your
-		application.
-	
-	The following will build your Android application via Maven.
-	
-	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/make.txt" />
-		</programlisting>
-	
+This will create the application and places the
+_.apk_
+file in the
+<filename class="directory">target_
+folder.
 
+If you want to install the application via Maven on your Android
+device, you can use the
+following command.
 	
-		This will create the application and places the
-		_.apk_
-		file in the
-		<filename class="directory">target_
-		folder.
+[source,java]
+----
+include::res/install.txt[]
+----
 	
-
-	If you want to install the application via Maven on your Android
-		device, you can use the
-		following command.
+If more then one device is
+available you can specify the relevant
+device in your pom.xml. Maven
+can also start and stop an Android
+virtual device automatically for
+you.
 	
-
+You can also start the application via Maven.
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/install.txt" />
-		</programlisting>
-	
-	If more then one device is
-		available you can specify the relevant
-		device in your pom.xml. Maven
-		can also start and stop an Android
-		virtual device automatically for
-		you.
-	
-
-	You can also start the application via Maven.
-	
-
-	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/run.txt" />
-		</programlisting>
-	
+[source,java]
+----
+include::res/run.txt[]
+----	
 
 

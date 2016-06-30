@@ -1,37 +1,29 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
-		<title>Building Android Apps with Apache Maven - Tutorial
-		<author>
-			<firstname>Lars</firstname>
-			<surname>Vogel</surname>
-		</author>
-		<copyright>
-			<year>2011</year>
-			<year>2012</year>
-			<holder>vogella GmbH</holder>
-		</copyright>
-		<pubdate>07.03.2012</pubdate>
-		<releaseinfo>
-			Version 0.3	
+= Building Android Apps with Apache Maven - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.4, 30.06.2016
+:docinfodir: ../
 
-		</releaseinfo>
-		
-		<abstract id="abstract">
-			<title>Android Maven
-			 This tutorial describes how to build Android applications with
-				Apache Maven and the "android-maven-plugin".
-			
-		</abstract>
-	</articleinfo>
+[abstract]
+Android Maven.
+This tutorial describes how to build Android applications with
+Apache Maven and the "android-maven-plugin".
 
-	include::../web/advertisement/afterTableOfContent.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../AndroidBuild/010_overview.xml" />
-	include::../web/advertisement/inBetween01.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./content/020_maven.xml" />
-	include::../web/advertisement/inBetween02.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./content/022_example.xml" />
-	include::../web/advertisement/afterResources.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./content/030_moreinformation.xml" />
-	include::../web/vgwort/AndroidBuildMaven"?>
-</article>
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::../AndroidBuild/010_overview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::020_maven.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::022_example.adoc[]
+include::030_moreinformation.adoc[]
+include::../web/advertisement/beforeSupport.adoc[]
+include::../support.adoc[]
+include::006_resources.adoc[]
+include::../web/advertisement/afterResources.adoc[]
+include::../copyright.adoc[]
+include::../web/vgwort/AndroidBuildMaven.adoc[]
+

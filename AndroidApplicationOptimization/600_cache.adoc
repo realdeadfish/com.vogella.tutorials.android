@@ -1,4 +1,5 @@
 == Using caches
+
 === Using a cache
 		
 A cache allows reusing objects which are expensive to create. If you load on object into memory, you can think
@@ -18,7 +19,6 @@ times.
 		
 At some point you need to recycle some of your objects, otherwise you run out of memory. A good approach to do
 this, is to recycle the objects which have not been used the longest in your application.
-		
 		
 The Android platform provides the
 `LruCache`
@@ -42,41 +42,30 @@ depicted in the
 following
 graphic.
 		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/lrucache10.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>LRU cache in general</phrase>
-	</textobject>
-</mediaobject>
-		
+image::lrucache10.png[LRU cache in general,pdfwidth=60%]
 		
 The following example code demonstrates a possible implementation of the `LruCache` class for caching images.
 		
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/cache/ImageCache.java" />
-</programlisting>
+[source,java]
+----
+include::res/cache/ImageCache.java[]
+----
 		
 Its usage is simple and demonstrated by the following example code.
 		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/cache/ImageCacheUsage.java" />
-</programlisting>
-		
+[source,java]
+----
+include::res/cache/ImageCacheUsage.java[]
+----		
 
-		
 For determining the initial size of the cache, it is good practice to determine the size based on the total memory available on the device.
 For determining the available memory you can the `MemoryClass`. 
 This is demonstrated by the following code.
 		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/cache/Size.java" />
-</programlisting>
-		
-	
+[source,java]
+----
+include::res/cache/Size.java[]
+----		
 
 === Cleaning up your cache
 		

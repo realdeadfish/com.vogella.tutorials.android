@@ -1,29 +1,23 @@
-<section id="examplemaven">
-	<title>Tutorial: Building Android Applications with Maven
-	Create a new Android project called
-		"de.vogella.android.build.firstmaven". The actual content of the
-		repository is not important as we are only using this project to
-		create a working build for Maven.
-	
-	 Create the following "pom.xml" file in your directory. Make sure
-		that artifactId is set to your project name.
-	
+== Tutorial: Building Android Applications with Maven
 
-	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/pom.xml" />
-		</programlisting>
+Create a new Android project called
+"de.vogella.android.build.firstmaven". The actual content of the
+repository is not important as we are only using this project to
+create a working build for Maven.
 
-	
+Create the following "pom.xml" file in your directory. Make sure
+that artifactId is set to your project name.
 
-	Switch to the command line and enter the following command:
-	
-	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/install.txt" />
-		</programlisting>
-	
+[source,xml]
+----
+include::res/pom.xml[]
+----
+
+Switch to the command line and enter the following command:
+
+[source,java]
+----
+include::res/install.txt[]
+----
 
 

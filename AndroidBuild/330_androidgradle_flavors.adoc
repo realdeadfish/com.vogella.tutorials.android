@@ -19,22 +19,21 @@ Or you want to use different resources or classes during a test run.
 You can use the  `productFlavors` closure of you _app/build.gradle_ file to define different variants of your product.
 	
 [source,java]
-....
+----
 include::res/gradle/productFlavours.build[]
-....
+----
 	
 		
 The whole _build.gradle_ file might look like the following:
 
 [source,shell]
-....
+----
 include::res/gradle/productFlavours_complete.build[]
-....
-		
+----
 		
 After defining these flavors you can select them in the _Build Variants_ view in Android Studio.
 	
-image::build_variants_view.png[]
+image::build_variants_view.png[pdfwidth=60%]
 	
 === Providing different resources for the flavors
 		

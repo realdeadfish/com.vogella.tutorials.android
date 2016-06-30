@@ -47,18 +47,13 @@ Here is an overview of the important Android Gradle tasks:
 |===
 
 To see all available tasks, use the `gradlew wrapper` command.
-# 
+
 gradle build
-
-# 
-
-
-
-
+ 
 [source,shell]
-....
+----
 include::res/gradle/runBuild.sh[]
-....
+----
 
 This command creates in the _build_ folder the output of the Gradle build. 
 By default, the Gradle build creates two _.apk_ files in the _build/outputs/apk_ folder.
@@ -66,16 +61,16 @@ By default, the Gradle build creates two _.apk_ files in the _build/outputs/apk_
 To build and start your unit tests on the JVM use the following command.
 
 [source,shell]
-....
+----
 include::res/gradle/runTests.sh[]
-....	
+----
 	
 To build and start your instrumented tests on your Android device use the following command.
 
 [source,shell]
-....
+----
 include::res/gradle/runInstrumentedTests.txt[]
-....	
+----
 
 [[building_gradle_minify]]
 === Removing unused resources and Java classes via resource shrinking
@@ -88,9 +83,9 @@ This can hugely reduce the size of your application.
 To enable resource shrinking, update your build file similar to the following snippet.
 
 [source,java]
-....
+----
 include::res/minify/build.gradle[]
-....
+----
 
 === Defining dependencies and keepting the version external
 
@@ -120,3 +115,4 @@ dependencies {
 ----
 
 TIP: If you put the ext closure into the root build file, you can access its properties for example with '$rootProject.ext.junitVersion'.
+

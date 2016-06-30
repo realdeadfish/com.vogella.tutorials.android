@@ -16,8 +16,8 @@ project you can import it into Android Studio, via menu:File[Import Project] and
 To enable a Gradle build for your Eclipse based Android project addthe following _build.gradle_ to the root of your project.
 
 [source,java]
-....
+----
 include::res/gradle/build.gradle[]
-....
+----
 	
 

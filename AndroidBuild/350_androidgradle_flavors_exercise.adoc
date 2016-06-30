@@ -17,9 +17,9 @@ Create a new Project with the _Blank Activity_ template and the top level packag
 Define two additional product flavors in the _app/build.gradle_ file called "prod" and "mock".
 
 [source,java]
-....
+----
 include::res/gradle/productFlavours_complete.build[]
-....	
+----	
 
 Create the desired folder structure for prod and mock flavors. See <<androidstudio_creatingresourcefolder>> and <<androidstudio_creatingresourcefile>> for further information. 
 If you select _Android resource directory_ you can select the flavor in the following dialog as depicted in the next screenshot.
@@ -32,14 +32,14 @@ Copy the _strings.xml_ from the _main_ folder to the appropriate folder of the f
 Change the `hello_world` string of the _strings.xml_ to _Mock World!_ and _Prod World!_ accordingly.
 	
 [source,xml]
-....
+----
 include::res/gradle/free_strings.xml[]
-....
+----
 
 [source,java]
-....
+----
 include::res/gradle/paid_strings.xml[]
-....
+----
 	
 image::flavour_folder_structure.png[]
 	
