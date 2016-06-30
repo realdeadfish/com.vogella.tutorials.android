@@ -19,7 +19,7 @@ include::020_read.adoc[]
 include::030_write.adoc[]
 include::../web/advertisement/beforeSupport.adoc[]
 include::../support.adoc[]
-include::resources.adoc[]
+include::006_resources.adoc[]
 include::../web/advertisement/afterResources.adoc[]
 include::../copyright.adoc[]
 

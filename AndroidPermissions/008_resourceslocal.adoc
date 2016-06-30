@@ -4,6 +4,5 @@ http://developer.android.com/guide/topics/security/permissions.html - Android ru
 	
 https://github.com/googlesamples/android-RuntimePermissions/ - Code example for demonstrating runtime permissions
 	
-include::../services.adoc[]
 
 	

@@ -6,5 +6,4 @@ http://www.tinmegali.com/en/model-view-presenter-android-part-1 [MVP compared wi
 
 https://github.com/android10/Android-CleanArchitecture - Android clean architecture example application
 
-include::../services.adoc[]
 

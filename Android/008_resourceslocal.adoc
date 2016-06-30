@@ -25,10 +25,4 @@ http://tools.android.com/recent - Recent changes in the Android tooling
 
 https://github.com/skylot/jadx - Command line and GUI tools for produce Java source code from Android Dex and Apk files
 
-include::../services.adoc[]
-
-
-	
-
-
 

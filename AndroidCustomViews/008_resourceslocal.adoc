@@ -3,6 +3,5 @@
 
 https://github.com/renard314/ListView3d - Source code for an ListView which uses 3D effects	
 
-include::../services.adoc[]
 
 

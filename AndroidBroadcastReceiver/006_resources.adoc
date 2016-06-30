@@ -1,0 +1,4 @@
+include::008_resourceslocal.adoc[]
+		
+include::../services.adoc[]
+

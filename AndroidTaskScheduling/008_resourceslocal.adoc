@@ -3,5 +3,4 @@
 
 Nothing listed.
 
-include::../services.adoc[]
 

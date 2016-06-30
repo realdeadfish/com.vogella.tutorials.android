@@ -33,6 +33,6 @@
 	include::../web/advertisement/beforeSupport.adoc[]
 	include::../support.adoc[]	
 	include::../web/advertisement/afterResources.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+include::006_resources.adoc[]
 	include::../web/vgwort/AndroidNFC"?>
 </article>

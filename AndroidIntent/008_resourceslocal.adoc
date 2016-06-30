@@ -1,0 +1,5 @@
+== Android Intent resources
+		
+Nothing maintained.	
+
+

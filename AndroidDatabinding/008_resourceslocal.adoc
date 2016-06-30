@@ -4,5 +4,4 @@ https://developer.android.com/topic/libraries/data-binding/index.html - Androids
 
 https://blog.stylingandroid.com/data-binding-part-1 - Blog post by  Mark Allison about Data binding
 	
-include::../services.adoc[]
 

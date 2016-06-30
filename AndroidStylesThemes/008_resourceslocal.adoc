@@ -10,5 +10,4 @@ Links for generating icons and other assets:
 
 http://android-holo-colors.com/ - Android Holo color theme generator
 
-include::../services.adoc[]
 

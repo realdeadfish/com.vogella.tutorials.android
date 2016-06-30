@@ -1,7 +1,0 @@
-== Resources Supporting different screen sizes
-	
-http://developer.android.com/guide/topics/resources/providing-resources.html#AlternativeResources" - Providing Resources
-	
-include::../services.adoc[]
-
-	

@@ -2,5 +2,4 @@
 	
 https://developer.android.com/training/material/lists-cards.html - Google documentation about RecylerView
 
-include::../services.adoc[]
 

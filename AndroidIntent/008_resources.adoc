@@ -1,6 +1,0 @@
-== Android Intent resources
-		
-Not yet available.		
-
-include::../services.adoc[]
-

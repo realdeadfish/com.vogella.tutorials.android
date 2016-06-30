@@ -4,5 +4,4 @@ http://developer.android.com/tools/support-library/setup.html - Google guide to 
 
 See http://www.vogella.com/tutorials/AndroidSupportLibrary/article.html - Using the Android support libraries from Google
 
-include::../services.adoc[]
 

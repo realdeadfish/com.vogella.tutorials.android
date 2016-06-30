@@ -38,6 +38,6 @@
 
 	include::../support.adoc[]	
 	include::../web/advertisement/afterResources.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+include::006_resources.adoc[]
 	include::../web/vgwort/AndroidTesting"?>
 </article>

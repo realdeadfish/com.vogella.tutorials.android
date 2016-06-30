@@ -6,5 +6,4 @@ http://www.vogella.com/tutorials/SQL/article.html - SQL Tutorial
 
 http://coderzheaven.blogspot.de/2012/03/sqlitemanager-plugin-for-eclipse.html?m=1 - SQLiteManager Eclipse Plug-in
 
-include::../services.adoc[]
 

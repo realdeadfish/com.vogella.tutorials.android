@@ -19,5 +19,4 @@ https://androidresearch.wordpress.com/2015/04/04/an-introduction-to-espresso/ - 
 
 https://code.google.com/p/android-test-kit/wiki/EspressoIntentsSetupInstructions -  Espresso intents wiki pages
 
-include::../services.adoc[]
 

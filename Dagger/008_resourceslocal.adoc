@@ -15,5 +15,4 @@ https://github.com/codepath/android_guides/wiki/Dependency-Injection-with-Dagger
 
 https://github.com/frogermcs/GithubClient - Github client using Dagger 2
 
-include::../services.adoc[]
 
