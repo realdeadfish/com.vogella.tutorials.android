@@ -1,0 +1,78 @@
+== Exercise: Use JobScheduler from a receiver
+
+=== Target of this exercise
+
+We demonstrate how to trigger a job which triggers a service from a broadcast receiver.
+
+=== Create the receiver
+
+Create the following receiver
+
+[source,java]
+----
+package com.example.android.rssreader;
+
+import android.app.job.JobInfo;
+import android.app.job.JobScheduler;
+import android.content.BroadcastReceiver;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+
+public class BootReceiver extends BroadcastReceiver {
+
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        ComponentName serviceComponent = new ComponentName(context, MyJobService.class);
+        JobInfo.Builder builder = new JobInfo.Builder(0, serviceComponent);
+        builder.setMinimumLatency(5 * 1000); // wait at least
+        builder.setOverrideDeadline(50 * 1000); // maximum delay
+        builder.setRequiredNetworkType(JobInfo.NETWORK_TYPE_UNMETERED); // require unmetered network
+        builder.setRequiresDeviceIdle(true); // device should be idle
+        builder.setRequiresCharging(false); // we don't care if the device is charging or not
+        JobScheduler jobScheduler = context.getSystemService(JobScheduler.class);
+        jobScheduler.schedule(builder.build());
+
+    }
+}
+
+----
+
+
+=== Create your job 
+
+[source,java]
+----
+package com.example.android.rssreader;
+
+import android.app.job.JobParameters;
+import android.app.job.JobService;
+import android.content.Intent;
+
+/**
+ * Created by vogella on 30.06.16.
+ */
+
+public class MyJobService extends JobService {
+    @Override
+    public boolean onStartJob(JobParameters params) {
+        String url = params.getExtras().getString(RssApplication.URL);
+        Intent i = new Intent(this, RssDownloadService.class); // starts the RssDownloadService service
+        i.putExtra(RssApplication.URL, url); // some extra data for the service
+        startService(i);
+        return false; // true if we're not done yet
+    }
+
+    @Override
+    public boolean onStopJob(JobParameters params) {
+        // true if we'd like to be rescheduled
+        return true;
+    }
+
+
+}
+
+----
+
+You can register your receiver for an event, e.g., the boot completely event.
+It will trigger the receiver, which registers the job which starts your custom service
