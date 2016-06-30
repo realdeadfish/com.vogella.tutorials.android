@@ -81,7 +81,7 @@ include::res/compound/MainActivity.java[]
 		
 The running application should look like the following screenshot.
 
-image::compoundview10.png[Result of using the component view, pdfwidth=60%]
+image::compoundview10.png[Result of using the component view, pdfwidth=30%]
 
 
 	

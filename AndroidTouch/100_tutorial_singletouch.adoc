@@ -58,5 +58,5 @@ vanish once the finger goes up.
 		
 The result should look like the following. 
 
-image::drawing_result10.png[Activity showing the drawing View,pdfwidth=60%]
+image::drawing_result10.png[Activity showing the drawing View,pdfwidth=30%]
 	

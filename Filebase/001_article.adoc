@@ -1,0 +1,17 @@
+= Firebase database in Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 1.4, 28.06.2016
+:docinfodir: ../
+
+[abstract]
+Using the Firebase database for storing data in Android.
+	
+include::010_overview.adoc[]
+include::008_resourceslocal.adoc[]
+
+

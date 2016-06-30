@@ -11,7 +11,6 @@ Version 1.4, 28.06.2016
 [abstract]
 XML processing with Android. 
 This article describes how to process XML with Android.
-It is based on Eclipse 4.4, Java 1.6 and Android 4.4.
 	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
