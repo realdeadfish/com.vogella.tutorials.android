@@ -16,11 +16,8 @@ include::010_overview.adoc[]
 include::080_layoutfiles.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::200_exercise_layout.adoc[]	
-
 include::../support.adoc[]						
 include::008_resourceslocal.adoc[]
-							
 include::../copyright.adoc[]
-
 include::../web/vgwort/AndroidDatabinding.adoc[]
 

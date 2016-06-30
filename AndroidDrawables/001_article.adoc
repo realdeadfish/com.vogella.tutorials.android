@@ -24,11 +24,8 @@ include::030_ninepatch.adoc[]
 include::../web/advertisement/inBetween03.adoc[]
 include::040_customdrawable.adoc[]
 include::040_tutorial_customdrawable.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
 include::../copyright.adoc[]
-
 include::../web/vgwort/AndroidDrawables.adoc[]
 

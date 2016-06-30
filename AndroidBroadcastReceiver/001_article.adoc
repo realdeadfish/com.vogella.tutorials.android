@@ -22,11 +22,8 @@ include::../web/advertisement/inBetween02.adoc[]
 include::100_tutorial_receiver.adoc[]
 include::200_tutorial_usingservices.adoc[]
 include::600_dynamicregistration.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
 include::../copyright.adoc[]
-
 include::../web/vgwort/AndroidBroadcastReceiver.adoc[]
 

@@ -28,7 +28,6 @@ include::420_tutorial_toolbar_fragments.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
-
 include::../web/vgwort/AndroidActionBar.adoc[]
 
 

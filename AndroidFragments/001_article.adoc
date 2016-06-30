@@ -26,12 +26,9 @@ include::062_fragments_tutorialpart1.adoc[]
 include::../web/advertisement/inBetween03.adoc[]
 include::063_fragments_tutorialpart2.adoc[]
 include::064_fragments_tutorialpart_headless.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
 include::../copyright.adoc[]
-
 include::../web/vgwort/AndroidFragments.adoc[]
 
 
