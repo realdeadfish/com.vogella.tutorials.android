@@ -22,10 +22,8 @@ include::012_avoidobjectallocation.adoc[]
 include::014_useefficientmemorystructures.adoc[]
 include::020_handlingbitmaps.adoc[]
 include::600_cache.adoc[]
-
 include::../support.adoc[]	
 include::008_resourceslocal.adoc[]	
-
 include::../copyright.adoc[]
 include::../web/vgwort/AndroidApplicationOptimization.adoc[]
 
