@@ -19,10 +19,10 @@ include::../web/advertisement/inBetween01.adoc[]
 include::../JavaNetworking/010_overview.adoc[]
 include::080_networkstate.adoc[]
 include::800_websockets.adoc[]
-include::../web/advertisement/beforeSupport.adoc[]
+
 include::../support.adoc[]
-include::006_resources.adoc[]
-include::../web/advertisement/afterResources.adoc[]
+include::008_resources.adoc[]
+
 include::../copyright.adoc[]
 
 include::../web/vgwort/AndroidNetworking.adoc[]

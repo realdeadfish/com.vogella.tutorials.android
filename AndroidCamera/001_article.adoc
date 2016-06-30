@@ -20,9 +20,9 @@ include::../10_Include/Android/010_prerequites.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::100_tutorial_intent.adoc[]
 include::200_tutorial_cameraapi.adoc[]
-include::../web/advertisement/beforeSupport.adoc[]
+
 include::../support.adoc[]
-include::../web/advertisement/afterResources.adoc[]
-include::006_resources.adoc[]
+
+include::008_resources.adoc[]
 include::../web/vgwort/AndroidCamera.adoc
 

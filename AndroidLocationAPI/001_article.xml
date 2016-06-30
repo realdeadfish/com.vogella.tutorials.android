@@ -36,9 +36,9 @@
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_activategps.xml" />
 	include::../web/advertisement/inBetween02.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/100_tutorial_locationapi.xml" />
-	include::../web/advertisement/beforeSupport.adoc[]
+	
 	include::../support.adoc[]	
-	include::../web/advertisement/afterResources.adoc[]
-include::006_resources.adoc[]
+	
+include::008_resources.adoc[]
 	include::../web/vgwort/AndroidLocationAPI"?>
 </article>

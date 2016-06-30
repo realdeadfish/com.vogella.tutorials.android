@@ -1,3 +1,5 @@
+include::services.adoc[]
+
 include::web/advertisement/afterResources.adoc[]	
 
 [appendix]
