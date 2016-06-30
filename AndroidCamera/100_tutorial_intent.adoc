@@ -1,0 +1,31 @@
+== Tutorial: Using an Intent to make a photo
+	
+Create a new Android project
+`de.vogella.android.imagepick`
+with an
+_activity_
+called
+`ImagePickActivity`
+.
+	
+Adjust the layout of the
+_activity_
+to contain an
+`ImageView`
+with the
+`result`
+ID. Also add a button with the
+`onClick`
+property pointing to a
+`onClick`
+method.
+	
+Change the
+`ImagePickActivity`
+class to the following.
+	
+[source,java]
+----
+include::res/imagepick/ImagePickActivity.java[]
+----
+	

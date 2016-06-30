@@ -1,0 +1,22 @@
+== Android Camera
+	
+Most Android devices have at least one camera. Some devices have
+a front and
+a back facing camera.
+	
+Using the camera on the Android device can be done via the
+integration
+of existing camera application. In this case you would start the
+existing Camera application via an
+_intent_
+and use the return data of the application to access the result.
+	
+Alternatively you can also directly integrate the camera into your
+application via
+the
+`Camera`
+API.
+	
+The following description contains examples for both use cases.
+	
+
