@@ -12,7 +12,14 @@ Add on entry to the file so that the resulting XML file, similar to the followin
 		
 [source,xml]
 ----
-include::res/social/mainmenu.xml[]
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:showAsAction="never"
+        >
+    </item>
+</menu>
 ----
 
 		
@@ -21,7 +28,16 @@ Add on entry to the file so that the resulting XML file, similar to the followin
 		
 [source,xml]
 ----
-include::res/social/listfragment_menu.xml[]
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Refresh"
+        android:icon="@drawable/ic_refresh"
+        android:id="@+id/action_refresh"
+        android:enabled="false"
+        android:showAsAction="ifRoom" />
+</menu>
 ----
 
 	
@@ -31,7 +47,6 @@ As you are using your own toolbar, turn of the default one via the _res/values/s
 [source,xml]
 ----
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
         <!-- Customize your theme here. -->
