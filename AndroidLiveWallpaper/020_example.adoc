@@ -1,0 +1,133 @@
+== Android Wallpaper Example
+	
+Create a new project called
+_de.vogella.android.wallpaper_
+. Do not
+create an
+_activity_
+.
+	
+Create the
+_/res/xml_
+folder and create the
+_mywallpaper.xml_
+file.
+
+[source,xml]
+----
+include::res/mywallpaper.xml[]
+----
+	
+This file
+contains a description of your
+wallpaper
+and
+a preview
+graphic.
+You can
+also enter a link to an
+_activity_
+which
+allow to
+configure the
+wallpaper. This resource file
+will be linked
+to
+from the
+_AndroidManifest.xml_
+. You could also
+include the "android:thumbnail attribute" which would
+point to a
+drawable which gives a smaller image of the running
+wallpaper.
+	
+Change your
+_AndroidManifest.xml_
+to the following to define
+your
+`MyWallpaperService`
+service. Also define the uses-feature.
+	
+[source,xml]
+----
+include::res/AndroidManifest.xml[]
+----
+	
+We create the
+`MyPoint`
+class to save the elements we have drawn.
+	
+[source,java]
+----
+include::res/MyPoint.java[]
+----
+	
+Create a new
+_activity_
+. Create the
+_prefs.xml_
+preference
+file
+in the
+_res/xml_
+folder.
+	
+[source,java]
+----
+include::res/prefs.xml[]
+----
+	
+Create a new
+_activity_
+called
+_MyPreferencesActivity_
+and the following class.
+	
+[source,java]
+----
+include::res/MyPreferencesActivity.java[]
+----	
+	
+Create the following coding for the Wallpaper
+_service_
+.
+	
+[source,java]
+----
+include::res/MyWallpaperService.java[]
+----
+	
+[source,txt]
+----
+include::res/MyWallpaperService1.txt[]
+----	
+	
+Create the following Activity which should use a layout with one
+`Button`
+included. This Button should use the
+`onClick`
+property to point to the
+`onClick`
+method.
+	
+[source,java]
+----
+include::res/SetWallpaperActivity.java[]
+----
+
+If you start your application your application should allow to
+set the wallpaper.
+Your background should look similar to the following
+screenshot. If you have
+Touch enabled
+via the preferences you can click
+on the screen to
+remove the existing
+circles, also via the settings you
+can define the
+number of circles
+which should be displayed.
+	
+image::wallpaper10.png[Live Wallpaper displayed,pdfwidth=60%]
+
+
