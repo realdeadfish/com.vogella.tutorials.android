@@ -7,6 +7,7 @@
 (c) 2012, 2016 vogella GmbH
 Version 2.1, 18.04.2016
 :docinfodir: ../
+:name: AndroidTesting
 
 [abstract]
 This tutorial describes how to write unit and instrumentation tests for your Android application.
@@ -36,12 +37,7 @@ include::910_othercomponents.adoc[]
 include::920_usingannotations.adoc[]
 include::950_codecoverage.adoc[]
 include::980_testfoldercreation.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
 include::../copyright.adoc[]
-
-include::../web/vgwort/AndroidTesting.adoc[]
-
 

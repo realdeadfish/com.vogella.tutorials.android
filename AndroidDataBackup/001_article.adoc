@@ -7,6 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 0.2, 30.06.2016
 :docinfodir: ../
+:name: AndroidDataBackup
 
 [abstract]
 Android Data Backup.
@@ -20,5 +21,4 @@ include::020_example.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
-include::../web/vgwort/AndroidDataBackup.adoc[]
 

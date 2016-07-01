@@ -7,6 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 2.4, 27.06.2016
 :docinfodir: ../
+:name: AndroidLibraryProjects
 
 [abstract]
 This tutorial describes how to create and use library projects in Android. 
@@ -17,11 +18,7 @@ include::014_libraryprojects.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::040_prereqs.adoc[]
 include::048_exercise_library.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
 include::../copyright.adoc[]
-
-include::../web/vgwort/AndroidLibraryProjects.adoc[]
 

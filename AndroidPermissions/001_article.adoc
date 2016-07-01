@@ -7,6 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 14.3, 29.06.2016
 :docinfodir: ../
+:name: AndroidPermissions
 
 [abstract]
 Developing Android applications.
@@ -14,11 +15,7 @@ This tutorial describes the security and permissions model for Android applicati
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
 include::../copyright.adoc[]
-
-include::../web/vgwort/AndroidPermissions.adoc[]
 

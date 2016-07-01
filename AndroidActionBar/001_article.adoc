@@ -7,6 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 13, 25.06.2016
 :docinfodir: ../
+:name: AndroidActionBar
 
 [abstract]
 Using the toolbar in Android applications. 
@@ -28,6 +29,4 @@ include::420_tutorial_toolbar_fragments.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
-include::../web/vgwort/AndroidActionBar.adoc[]
-
 

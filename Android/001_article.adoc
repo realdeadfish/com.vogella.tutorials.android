@@ -7,6 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 14.4, 20.06.2016
 :docinfodir: ../
+:name: Android
 
 [abstract]
 This tutorial describes how to create Android applications with Android Studio.
@@ -36,6 +37,4 @@ include::800_deployondevice.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
-include::../web/vgwort/Android.adoc[]
-
 

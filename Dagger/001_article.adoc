@@ -7,6 +7,7 @@
 (c) 2012, 2016 vogella GmbH
 Version 1.1, 18.06.2016
 :docinfodir: ../
+:name: Dagger
 
 [abstract]
 This article describes the usage of Dagger 2 within standard Java applications and within Android applications.
@@ -19,16 +20,7 @@ include::060_dagger2example.adoc[]
 include::200_dagger2android.adoc[]
 include::400_exercise_dagger2android.adoc[]
 include::600_tests.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
 include::../copyright.adoc[]
-
-include::../web/vgwort/Dagger.adoc[]
-
-
-
-
-
 

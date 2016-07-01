@@ -7,6 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 1.5, 28.06.2016
 :docinfodir: ../
+:name: AndroidTouch
 
 [abstract]
 Single and multi touch in Android.
@@ -21,11 +22,7 @@ include::100_tutorial_singletouch.adoc[]
 include::200_tutorial_multitouch.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
 include::300_tutorial_scaledetectors.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
 include::../copyright.adoc[]
-
-include::../web/vgwort/AndroidTouch.adoc[]
 

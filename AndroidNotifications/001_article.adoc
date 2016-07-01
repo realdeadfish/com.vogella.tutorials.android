@@ -7,6 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 2.7, 28.06.2016
 :docinfodir: ../
+:name: AndroidNotifications
 
 [abstract]
 Using the Notification Manager in Android. 
@@ -18,11 +19,7 @@ include::010_overview.adoc[]
 include::../AndroidBroadcastReceiver/060_pendingintent.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::100_example.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
 include::../copyright.adoc[]
-
-include::../web/vgwort/AndroidNotifications.adoc[]
 

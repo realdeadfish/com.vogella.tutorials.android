@@ -7,6 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 3.1, 27.06.2016
 :docinfodir: ../
+:name: AndroidBroadcastReceiver
 
 [abstract]
 Using Broadcast receivers in Android.  
@@ -25,5 +26,4 @@ include::600_dynamicregistration.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
-include::../web/vgwort/AndroidBroadcastReceiver.adoc[]
 

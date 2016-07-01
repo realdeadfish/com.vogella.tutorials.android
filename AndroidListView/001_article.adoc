@@ -7,6 +7,7 @@
 Lars Vogel, (c) 2010, 2016 vogella GmbH
 Version 6.1, 18.06.2016
 :docinfodir: ../
+:name: AndroidListView
 
 [abstract]
 
@@ -18,12 +19,7 @@ include::020_architecturestyle-buildflavors.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::030_architecturestyle-dependencyinjection.adoc[]
 include::040_writtingtestsforthepresenter.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
 include::../copyright.adoc[]
-
-include::../web/vgwort/AndroidListView.adoc[]
-
 

@@ -7,6 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 2.8, 28.06.2016
 :docinfodir: ../
+:name: AndroidWidgets
 
 [abstract]
 Developing Android Widgets. 
@@ -23,13 +24,7 @@ include::../web/advertisement/inBetween02.adoc[]
 include::160_collectionwidgets.adoc[]
 include::200_lockscreenwidgets.adoc[]
 include::300_tutorial_serviceupdates.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
 include::../copyright.adoc[]
-
-include::../web/vgwort/AndroidWidgets.adoc[]
-
-
 

@@ -7,6 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 0.3, 18.06.2016
 :docinfodir: ../
+:name: AndroidIntent
 
 [abstract] 
 Using Intents in Android. This tutorials describes the usage of intents to communicate between Android components.
@@ -28,6 +29,4 @@ include::160_tutorial_implicitintent.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]	
 include::../copyright.adoc[]
-
-include::../web/vgwort/AndroidIntent.adoc[]
 

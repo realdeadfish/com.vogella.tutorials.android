@@ -7,6 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 1.4, 30.06.2016
 :docinfodir: ../
+:name: AndroidCamera
 
 [abstract]
 Using the Android Camera via Intent and via the API.
@@ -22,5 +23,4 @@ include::100_tutorial_intent.adoc[]
 include::200_tutorial_cameraapi.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-include::../web/vgwort/AndroidCamera.adoc
 

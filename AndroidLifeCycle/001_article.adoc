@@ -7,6 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 1.4, 27.06.2016
 :docinfodir: ../
+:name: AndroidLifeCycle
 
 [abstract]
 Understanding the Android lifecycle. This tutorial describes how the Android application and activity life cycle works.
@@ -23,12 +24,9 @@ include::090_nonconfigurationinstancescope.adoc[
 include::../web/advertisement/inBetween03.adoc[]]
 include::100_configurationchanges.adoc[]
 include::200_testexample.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
 include::../copyright.adoc[]
 
-include::../web/vgwort/AndroidLifeCycle.adoc[]
 
 
