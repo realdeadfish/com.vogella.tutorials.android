@@ -1,0 +1,33 @@
+== Example
+Create a new Android project "de.vogella.android.gestures" with
+the activity "GestureTest". Create a few gestures and copy them to
+your application as described in the
+last chapter.    
+
+image::gesture10.png[pdfwidth=60%]
+
+Unfortunately the UI builder does not support GestureOverlayView,
+please see
+http://code.google.com/p/android/issues/detail?id=1368 - Bug report GestureOverlayView not working in the layout builder
+, therefore we have to build a layout without the gesture view and add
+this view via code to the GestureOverlayView.
+
+ Create the following layout _main.xml_. 
+
+[source,xml]
+----
+include::res/gestures/main.xml[]
+----
+
+Create the following Activity. 
+
+[source,java]
+----
+include::res/gestures/GestureTest.java[]
+----
+
+Start your application. As a result you should be able to perform gestures and see the
+result. We only show a Toast but of course you could perform all kind of actions.  
+
+image::gesture20.png[pdfwidth=60%]
+
