@@ -14,6 +14,8 @@ http://source.android.com/devices/graphics/architecture.html- Android graphics f
 		
 https://github.com/googlesamples/android-RuntimePermissions - Code example for demonstrating runtime permissions
 	
+https://possiblemobile.com/2013/06/context/ Overview of the Eclipse contenxt 
+	
 === Android learning resources
 
 http://androidbackstage.blogspot.de/ - Podcast from the Google developers about Android
