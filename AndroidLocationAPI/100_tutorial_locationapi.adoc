@@ -1,0 +1,59 @@
+== Tutorial: Using the Android Location API
+
+=== Create Project
+		
+Create a new project called
+_de.vogella.android.locationapi.simple_
+with the Activity called
+_ShowLocationActivity_.
+		
+This example will not use the Google
+Map
+therefore, it also runs
+on
+an
+Android
+device.
+		
+Change your
+layout file from the
+<filename class="directory">res/layout_
+folder
+to the following code.
+		
+[source,txt]
+----
+include::res/location/main.xml[]
+----		
+	
+=== Add permissions
+		
+Add the following permissions to your application in your
+_AndroidManifest.xml_
+file
+
+* INTERNET
+* ACCESS_FINE_LOCATION        
+* ACCESS_COARSE_LOCATION        
+
+=== Activity
+		
+Change
+`ShowLocationActivity`
+to the following. It queries the location manager and display the
+queried
+values in
+the activity.
+		
+[source,java]
+----
+include::res/location/ShowLocationActivity.java[]
+----
+	
+=== Run and Test
+		
+If you using the emulator send some geo-coordinates to your
+device. These
+geo-coordinate should be displayed as soon as you press
+the button.
+		

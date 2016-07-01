@@ -1,0 +1,56 @@
+== Using GPS and setting the current location
+
+=== Activating GPS on the emulator
+		
+You need to activate GPS on your test device. If you test on the
+emulator and its not activated you
+"null" if you try to use a
+`LocationManager`.
+		
+The Google Map
+_activity_
+should automatically activate the GPS device in the emulator but if
+you
+want to use the location manager directly you need to do this
+yourself.
+Currently their seems to be an issue with this.
+		
+Start Google Maps on the emulator and request the current
+geo-position, this
+will allow you to activate the
+GPS. Send new GPS
+coordinates to the Android emulator.
+		
+=== Setting the geoposition
+		
+You can use the "DDMS"
+`Perspective`
+of Eclipse to send your geoposition to the emulator or a connected
+device. For open this
+`Perspective`
+select
+menu:Window[Open Perspective > Other... > DDMS].
+		
+In the Emulator Control part you can enter the geocoordinates
+and press the _Send_ button.
+		
+image::gpsfix20.png[pdfwidth=60%,width=60%]
+		
+You can also set the geoposition the Android emulator via
+telnet.
+Open a console and connect to your device. The port number of
+your
+device can be seen in the title area of your emulator.
+		
+[source,txt]
+----
+include::res/geoposition/telnet.txt[]
+----
+		
+Set the position via the following command. 
+		
+[source,bourne]
+----
+include::res/geoposition/setposition.txt[]
+----		
+	

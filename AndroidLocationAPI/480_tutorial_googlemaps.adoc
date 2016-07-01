@@ -1,0 +1,112 @@
+== Tutorial: Google Maps
+
+=== Create Project
+		
+In the following chapter we will build an Android application which
+shows a
+`MapView`
+. It also shows a compass and the current geoposition. Via an
+`ItemizedOverlay`
+implementation we will also display the last 5 positions on the map.
+		
+Create a new Android project called
+"de.vogella.android.locationapi.maps" with an
+_activity_
+called
+_ShowMapActivity_. Make sure to select the "Google API" als
+Target.
+		
+Add the following permissions to your application.
+
+*INTERNET
+*ACCESS_FINE_LOCATION        
+*ACCESS_COARSE_LOCATION        
+
+=== Validate AndroidManifest.xml
+		
+Validate that your
+_AndroidManifest.xml_
+file looks similiar to
+the following file.
+		
+[source,xml]
+----
+include::res/maps/AndroidManifest.xml[]
+----
+
+=== ItemizedOverlay
+		
+Create the following
+`MyOverlays`
+class which extends
+`ItemizedOverlay`
+class.
+		
+[source,java]
+----
+include::res/maps/MyOverlays.java[]
+----
+		
+We will later use an image called
+_point_. Put one icon called
+_point_, e.g. "point.png"
+in at least on of your drawable folder. If
+you
+do not know where to find
+icons,
+you can
+copy the icons created by the
+Android
+wizard.
+		
+=== Layout
+		
+Create a
+`MapView`
+key as described earlier.
+		
+Change the
+_main.xml_
+layout file in your
+_res/layout_
+folder to
+the
+following.
+		
+[source,xml]
+----
+include::res/maps/main.xml[]
+----		
+		
+Replace
+`your_key`
+with your Google Maps API
+key.
+		
+=== Activity
+
+Change your
+_activity_
+to the following. This
+_activity_
+use an
+`LocationListner`
+to update the
+`MapView`
+with the current location.
+		
+[source,java]
+----
+include::res/maps/ShowMapActivity.java[]
+----
+	
+=== Run and Test
+		
+Run and test your application. You should be able to zoom in and
+out
+and send new geo coordinates to your
+_activity_
+via the Emulator.
+		
+image::map30.gif[pdfwidth=60%]
+

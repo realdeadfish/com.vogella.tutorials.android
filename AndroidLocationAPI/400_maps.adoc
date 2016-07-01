@@ -1,0 +1,198 @@
+== Google Maps
+
+=== MapsView
+
+Google provides via the
+`com.google.android.maps`
+package a library for using the
+`MapView`
+class
+in your application. This view allows to embed Google Maps into
+your application.
+
+You require an additional key to use them.
+This
+key will be specified
+in the layout file
+for the
+`MapView`.
+
+You need to add the
+information that you will be using the
+`map`
+library to your
+_AndroidManifest.xml_
+file
+The Android
+project creation wizard in Eclipse does this
+automatically, if
+you select a
+Google
+API version.
+
+[source,txt]
+----
+include::res/maps/uses.txt[]
+----
+
+The usage of
+`MapView`
+requires the permission to access
+the Internet, as the data displayed
+in the
+`MapView`
+is downloaded from the Internet.
+
+=== MapsActivity
+
+The
+`MapActivity`
+class
+extends the
+_activity_
+class and provides the
+life cycle management and the services for
+displaying a
+`MapView`
+widget.
+
+MapActivity simplify the handling
+`MapViews`
+similar to
+`ListActivity`
+simplifies the usage of
+`ListViews`
+.
+
+A
+`MapView`
+is typically defined in the XML layout file used by the
+`MapActivity`
+and requires the API key in the "android:apiKey" attribute. A
+`MapView`
+can be used with other user interface components in the same layout.
+
+The
+`MapController`
+class can be used to interact with the
+`MapView`
+, e.g. by moving it. A
+`Geopoint`
+is a position described via
+latitude
+and longitude.
+
+=== Build in Zoom controls
+
+`MapView`
+allows to activate the build in zoom controls via the
+`.setBuiltInZoomControls()`
+method call.
+
+=== MyLocationOverlay
+
+The
+`MyLocationOverlay`
+class allow to display the current geolocation and allows to enable a
+compass.
+
+The following code snippet shows how you can register
+myLocationOverlay for your
+`MapView`
+.
+
+[source,txt]
+----
+include::res/maps/mylocation.txt[]
+----
+
+You also have a enable and disable myLocationOverview and the compass
+in the
+`onResume()`
+method and in the
+`onPause()`
+method.
+
+[source,java]
+----
+include::res/maps/lifecycle.txt[]
+----
+
+=== ItemizedOverlay and OverlayItems
+
+You can put instances of the
+`Overlay`
+class
+on the map.
+`Overlay`
+is the base class representing an overlay which may be displayed
+on
+top of a map. To add an overlay, subclass this class, create an
+instance, and add it to the list obtained from MapView.getOverlays().
+
+`ItemizedOverlay`
+is the base class for an
+`Overlay`
+which consists of a list of
+`OverlayItems`
+.
+`ItemizedOverlay`
+handles sorting north-to-south for drawing, creating span
+bounds,
+drawing a marker for each point, and maintaining a focused
+item. It
+also matches screen-taps to items, and dispatches
+Focus-change events
+to an optional listener.
+	
+=== Getting the Google Map key
+
+To use Google Maps you need to create a valid key. This is based
+on the
+key with which you sign your Android application during
+deployment. If you develop with Eclipse, Eclipse automatically
+creates
+and uses a debug key based on the
+"userhome"/.android/debug.keystore
+file.
+
+To create the key you use the "keytool" command from your JDK
+installation pointing to the "debug.keystore" file.
+
+[source,java]
+----
+include::res/maps/key.txt[]
+----
+
+If you are using Java7 the default output of keytool has changed. Add
+the
+<parameter class='option'>-v`
+to see also the MD5 fingerprint.
+
+The output of this command must be copied and entered on the
+following
+website:
+http://code.google.com/android/maps-api-signup.html - Google Maps Signup Page
+.
+
+
+
+The procedure is described in detail in the following link:
+http://code.google.com/android/add-ons/google-apis/mapkey.html - Getting a Google Maps key.
+
+=== Device with Google API
+
+In case you want to use Google Maps in your emulator you have to
+create a device which supports the Google API's. This
+requires
+that
+you
+also install the "Google API". During
+device creation select the
+target
+Google API's in the
+version of your
+SDK.
+
+image::location04.gif[pdfwidth=60%,width=60%]
+
