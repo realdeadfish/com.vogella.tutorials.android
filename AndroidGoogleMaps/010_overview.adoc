@@ -1,0 +1,99 @@
+== Google Maps
+
+=== MapsView
+		
+Google provides via Google play a
+library for using Google Maps
+in your application. The following description is based on the Google
+Maps Android API v2 which provides significant improvements to the
+older API version.
+		
+The library provides the
+`com.google.android.gms.maps.MapFragment`
+class and the
+`MapView`
+class for displaying the map component.
+		
+You need to add additional
+information to your
+_AndroidManifest.xml_
+file to use Google Maps.
+		
+[source,txt]
+----
+include::res/maps/uses.txt[]
+----
+	
+=== MapFragment
+		
+The
+`MapFragment`
+class
+extends the
+`Fragment`
+class and provides the
+life cycle management and the services for
+displaying a
+`GoogleMap`
+widget.
+`GoogleMap`
+is the class which shows the map. The
+`MapFragment`
+has the
+`getMap()`
+method to access this class.
+		
+		
+the
+`LatLng`
+class can be used to interact with the
+`GoogleView`
+class.
+		
+=== Markers
+		
+You can create markers on the map via the
+`Marker`
+class. This class can be highly customized.
+		
+The following code shows an example.
+		
+[source,java]
+----
+include::res/markers/Marker.java[]
+----		
+		
+On the
+`GoogleMap`
+you can register a listener for the
+markers in your map via the
+`setOnMarkerClickListener(OnMarkerClickListener)`
+method. The
+`OnMarkerClickListener`
+class defines the
+`onMarkerClicked(Marker)`
+method which is called if a marker is clicked.
+		
+Similar to you also listen to drag events and info window
+clicks.
+		
+=== Changing the GoogleView
+		
+The
+`GoogleMap`
+can be highly customized.
+		
+The following example code is taken from the official Google
+webpage.
+		
+[source,java]
+----
+include::res/googlemap/adjust.java[]
+----
+
+=== Android emulator and Google Maps
+
+Ensure you create an Google API based emulator. This emulator
+can also be used to test Google map and other Google Play Service
+integration.
+		

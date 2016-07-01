@@ -1,0 +1,24 @@
+== Install Google Play services
+
+=== Download the Google Play services 
+
+Open the
+`Android SDK Manager`
+and install
+menu:Extras[Google Play services]
+
+image::install_googleplayservices10.png[Install Google Services,pdfwidth=60%]
+	
+=== Create an library project for the Google Play Service library
+
+The Android SDK manager downloads the file to
+_sdk/extras/google/google_play_services/libproject/google-play-services_lib_.
+
+Import the library from there into Eclipse via the
+menu:File[Import>Android>Existing Android Code into Workspace]
+menu entry.
+
+image::importgoogleplaylibrary10.png(Importing Google services as Android library project,pdfwidth=60%]
+
+To use this library define a library dependency in your Android project.
+

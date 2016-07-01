@@ -1,0 +1,92 @@
+== Getting the Google Map key
+
+=== Google console
+		
+To use Google Maps you need to create a valid Google Maps API
+key. The key is free, you can use it with any of your applications
+that call the Maps API, and it supports an unlimited number of
+users.
+		
+You get this key via the
+https://code.google.com/apis/console/ - Google APIs Console. 
+You have to provide your application signature key and the
+application package
+name.
+		
+This is based
+on the
+key with which you sign your Android
+application
+during
+deployment. During development with Eclipse, Eclipse us
+automatically
+creates
+and uses a
+_debug key_
+.
+	
+=== Creating the SHA-1 for your signature key
+		
+The Eclipse debug
+key for signing your application can be found in the
+_userhome/.android/debug.keystore_
+file.
+		
+To create the SHA-1 for your debug keystore you use the
+`keytool`
+command from your JDK
+installation pointing to the
+_debug.keystore_
+file.
+		
+[source,java]
+----
+include::res/maps/key.txt[]
+----
+		
+Copy the SHA-1 output, as you need this later.
+	
+=== Register with the Google APIs Console
+		
+You have to register in
+the
+_Google APIs Console_
+that you want to use Google Maps for Android. You can reach this
+console via the following link:
+https://code.google.com/apis/console/[ Google APIs Console]
+. Select here the
+`Services`
+entry.
+		
+image::apiconsole10.png[Google APIs Console,pdfwidth=60%]
+		
+Activate the
+`Google Maps Android API v2`.
+		
+image::apiconsole20.png[Google APIs Console,pdfwidth=60%]
+		
+=== Create key for your application
+		
+You need later to register your application via its package in
+this
+console together with the SHA-1 fingerprint of your signature
+key. For
+this you select the entry and click on the
+`API Access`
+entry. Afterwards click on the
+_Create new Android key..._
+entry.
+		
+image::apiconsole30.png[Google APIs Console,pdfwidth=60%]
+		
+Enter your SHA-1 fingerprint and the package of your application
+separated by a semicolon. For example you can use the
+`com.vogella.android.locationapi.maps`
+package.
+		
+image::apiconsole40.png[Google APIs Console,pdfwidth=60%]
+		
+The procedure is described in detail in the following link:
+https://developers.google.com/maps/documentation/android/start#installing_the_google_maps_android_v2_api - Getting a Google Maps key.
+		
+	
