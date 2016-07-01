@@ -4,10 +4,7 @@
 		
 http://www.vogella.com/tutorials/AndroidListView/article.html - Android ListView and ListActivity
 		
-		
-
 http://www.vogella.com/tutorials/AndroidLocationAPI/article.html - Android Location API and Google Maps
-
 
 http://www.vogella.com/tutorials/AndroidIntent/article.html - Android Intents
 
@@ -24,7 +21,6 @@ http://groups.google.com/group/android-developers - Android Google Groups
 http://market.android.com - Android Market
 		
 http://www.sqlite.org/ - SQLite database webpage
-		
 
 http://developer.android.com/guide/topics/providers/content-providers.html - Content Provider Tutorial by Google
 		

@@ -1,0 +1,56 @@
+== Android Development
+
+=== Android Operation System
+		
+Android is an operating system based on a modified
+http://www.vogella.com/tutorials/Ubuntu/article.html[Linux]
+2.6
+with a
+http://www.vogella.com/tutorials/JavaIntroduction/article.html[Java]
+programming interface. Also several drivers and libraries have been
+modified to allow Android to run efficient on mobile devices.
+
+It provides tools, e.g. a compiler, debugger
+and a device
+emulator as
+well as its own Java Virtual machine
+(Dalvik
+Virtual Machine
+- DVM).
+Android
+is
+created by the
+Open Handset Alliance
+which is led
+by
+Google.
+		
+Android uses a special virtual machine, e.g. the Dalvik Virtual
+Machine. Dalvik uses
+special
+bytecode. Therefore you cannot run
+standard Java bytecode on
+Android.
+Android provides a tool "dx" which
+allows to convert Java
+Class
+files
+into "dex" (Dalvik Executable) files.
+Android applications
+are
+packed into an .apk (Android Package) file by
+the program "aapt" (Android Asset Packaging Tool). To
+simplify
+development Google provides the Android Developer Tools
+(ADT) for
+http://www.vogella.com/tutorials/Eclipse/article.html[ Eclipse]
+. The ADT performs automatically the conversion from class to dex
+files and creates the apk during deployment.
+		
+For an introduction into
+http://www.vogella.com/tutorials/Android/article.html[Android development]
+please see the
+http://www.vogella.com/tutorials/Android/article.html[Android Development Tutorial]
+. The rest of this article tries to look inside the Android runtime
+system.
+		

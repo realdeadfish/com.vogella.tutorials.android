@@ -1,0 +1,22 @@
+= Android Internals - Tutorial
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 30.06.2016
+:docinfodir: ../
+:name: AndroidInternals
+
+[abstract]
+Android Internal.
+This articles looks at the internals of Androids and describes a little bit the architecture of Android. 
+
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::020_internals.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
