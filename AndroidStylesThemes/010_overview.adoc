@@ -1,105 +1,8 @@
-== Android interface design
+== Android interface design prinicples
 
 === Designing Android Applications
 
-The Android user interface design guidelines have changes over
-the
-years. The first big change for designing Android
-applications
-came
-with the Android 3.0 (Honeycomb) release which introduced the
-_Holo_
-style. The Android 5.0 (Lollipop) release was again a radical change
-with the
-_Material_
-design. The material design introduces depth into the layout and uses
-much more animations to provide feedback to the
-user.
-
-The
-http://developer.android.com/design/index.html - Android
-design pages give a detailed introduction into the design principles of Android
-applications.
-
-This page also contains several downloadable resources, e.g. an
-icon
-set for the
-_ActionBar_
-.
-
-=== Download design material
-
-The Android design page provides prepared resources and icons. You find the downloads on the
-http://developer.android.com/design/downloads/index.html[Android design download]
-webpage.
-
-
-If you choose to download and use these icons, select a fitting for
-a refresh action and place it into the
-<filename class="directory">/res/drawable-mdpi_
-folder. Make sure that the filename of your icon is
-_ic_action_refresh_
-
-WARNING: Icon filenames are not allowed to contain special
-character,
-cannot start with a number and must be in lower
-case.
-
-=== Creating promotional material
-
-The
-http://developer.android.com/distribute/tools/promote/device-art.html - Device Art Generator website 
-allows you to create promotional material of your
-application with a
-nice device frame around it. Simply make a
-screenshot on your device
-and drag it onto the correct device to get
-a nice image for it.
-
-image::deviceart10.png[Device art,pdfwidth=60%,width=40%]
-
-=== Material design
-
-As of Android 5.0 (Lollipop, or API 21) the Android system support
-_Material design_
-.
-
-Material design is a guide for visual, motion, and interaction
-design. The
-Android platform provides a new theme,
-new widgets and
-new
-API for
-custom shadows and animations.
-
-One of the biggest design changes is that material design support
-that views are drawn on top of other views by
-assigning an elevation
-level to them.
-Views define an elevation
-level in
-dp
-(density-independent pixels). To set the
-elevation of a
-view in a
-layout definition, use the
-android:elevation attribute. To
-set the
-elevation of a view in the
-code of an activity, use the
-`View.setElevation()`
-method. Android draws customizable shadows based on the value of the
-elevation.
-
-Material design also provides improved API for animations and
-defaults lots of user interface with animation
-which should provide
-feedback to the user.
-
-=== Android design key principles
-
-For designing great Android applications you should follow the
-following themes.
+For designing great Android applications you should follow the following themes which are described in detail on the http://developer.android.com/design/index.html - Android design pages.
 
 * Design for touch
 * Show only what is needed
@@ -111,65 +14,68 @@ following themes.
 * If is looks the same, it should act the same
 * Help users make decisions, but let them have the final say
 
-=== Technical means for great Android application design
+There a certain general design best practices, which are listed here:
 
-To design modern and fast reacting Android applications you should
-use the following technologies.
+* Design for performance - A well designed application should start fast. 
+You should target for less than one second in average to start the application.
+All potentially slow operations should be performed asynchronously.
 
-* ActionBar
-* Fragments
-* Slide gesture for switching between tabs
-* Expandable notifications
-* Themes based on the Android platform themes
-* Provide a home screen widget together with your application
+* Design for responsiveness - Feedback to the user should be provided instantaneous. 
+Long lasting operations should provide feedback to the user that they are running.
 
-== Design best practices
+* Design for instant data - 
+Your application should provide, if possible, recent data once the user starts it. 
+You should therefore use _services_ to fetch data from external servers to be decoupled from the user interface.
 
-=== Design for performance
-
-A well designed application should start fast. You should target
-for less than one second in average to start the application.
-
-
-All potentially slow operations should be performed
-asynchronously.
-
-=== Design for responsiveness
-
-Feedback to the user should be provided instantaneous. Long
-lasting operations should provide feedback to the user that they are
-running.
-
-=== Design for instant data
-
-Your application should provide, if possible, recent data once the
-user
-starts it. You should therefore use
-_services_
-to fetch data from external servers to be decoupled from the user
-interface.
-
-=== Design for optimized battery life
-
+* Design for optimized battery life - 
 Your application should consume as little energy as possible.
-Stop user interface updates and listeners if your application is
-currently not visible.
+Stop user interface updates and listeners if your application is currently not visible.
+You can listen to relevant events, e.g. if power supply is plugged in to perform larger updates.
+If you fetch data from an external server you should, if appropriate, use the Google push notification service. 
+This allows you to access the network only if data is available.
 
-You can listen to relevant events, e.g. if
-power supply is
-plugged
-in
-to perform larger updates.
+* Design for efficient network access  - Your application should avoid unnecessary network access, via push notifications. 
+You should also consider the current available network. 
+If you are connected to a wireless lane, your application
+can download more data.
 
-If you fetch data from an external server you should, if
-appropriate, use the Google push notification service. This allows
-you to access the network only if data is available.
 
-=== Design for efficient network access
 
-Your application should avoid unnecessary network access, via
-push notifications. You should also consider the current available
-network. If you are connected to a wireless lane, your application
-can
-download more data.
+The http://developer.android.com/design/index.html - Android design pages explain the design principles of Android applications.
+
+
+
+WARNING: Icon filenames are not allowed to contain special character, cannot start with a number and must be in lower case.
+
+
+[NOTE]
+====
+Creating promotional material
+
+The http://developer.android.com/distribute/tools/promote/device-art.html - Device Art Generator website   allows you to create promotional material of your
+application with a
+nice device frame around it. 
+Simply make a screenshot on your device and drag it onto the correct device to get a nice image for it.
+
+image::deviceart10.png[Device art,pdfwidth=60%,width=40%]
+====
+
+
+=== Responsive design
+
+It is recommended that the application scales with the device.
+On a small screen only one fragment is shown, on a larger screen a
+second or even third fragment might be visible.
+
+This approach is depicted by the following graphic.
+
+image::responsivedesign10.png[Responsive design,pdfwidth=60%]
+
+It is recommended not to use the full screen width for text in case you are beyond a certain width on a device.
+This border is typically above `w1000dp`.
+Research has shown that after this width reader much move the head to much 
+
+A way to implement margin points is to use a _res/values/dimens.xml_ file and define a dimension for the margins. 
+Afterwards use resource qualifiers for the same file to define different margins for larger devices.
+
 

@@ -10,7 +10,6 @@ Version 11.7, 29.06.2016
 :name: AndroidStylesThemes
 
 [abstract] 
-Using styles and themes in Android.
 This tutorial describes the principles to style Android applications. 
 It also explains how to create and use styles and themes in Android applications
 
@@ -19,7 +18,6 @@ include::010_overview.adoc[]
 include::012_theming.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::014_platformthemes.adoc[]
-include::020_responsivedesign.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
 include::100_exercise_theme.adoc[]
 include::../support.adoc[]

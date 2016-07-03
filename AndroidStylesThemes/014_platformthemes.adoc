@@ -2,28 +2,20 @@
 
 === Using material design and design support library
 		
-As of API 21 the material design is the new default design you should
-be used.
+As of API 21 the material design is the new default design you should be used.
 
 * @android:style/Theme.Material (dark version)
 * @android:style/Theme.Material.Light (light version)
 * @android:style/Theme.Material.Light.DarkActionBar
 		
-The design support library provides themes with
-material design
-styles for
-most widgets. This allows you to use material
-design on
-earlier
-releases. See
-https://developer.android.com/training/material/compatibility.html - Maintaining Compatibility
-for how to use the new theme in earlier releases.
+The design support library provides themes with material design styles. 
+This allows you to use material design on earlier releases. 
+See https://developer.android.com/training/material/compatibility.html - Maintaining Compatibility for how to use the new theme in earlier releases.
 		
 === Styling the color palette
 
 As of material design you can customize the themes base colors.
-The following screenshot shows several of these
-colors.
+The following screenshot shows several of these colors.
 		
 image::materialcolorpalette10.png[Customize the Color Palette,pdfwidth=60%]
 		
@@ -33,36 +25,13 @@ colors (defined in your /res/values folder).
 [source,xml]
 ----
 include::res/material/styles.xml[]
-----		
+----
 
-You can also style the status bar with the
-`android:statusBarColor`
-attribute. By default,
-`android:statusBarColor`
-inherits the value of
-`android:colorPrimaryDark`
-.
+You can also style the status bar with the `android:statusBarColor` attribute. 
+By default, `android:statusBarColor` inherits the value of `android:colorPrimaryDark`.
 
 === Styling individual views and view groups
 		
-As of Android 5.0 (API 21) you can also assign the
-`android:theme`
-for a view. This allows changing the theme for this element and its
-child elements.
+As of Android 5.0 (API 21) you can also assign the `android:theme` for a view. 
+This allows changing the theme for this element and its child elements.
 	
-=== Common practice for selecting themes
-		
-Using the design support library you should use the material design already in older Android versions. You
-might
-also use material
-Google is porting most of their applications to material
-design, so this might
-become the
-natural
-style
-for most users soon.
-Consider inheriting the material
-style
-and
-to customize it.
-		

@@ -7,39 +7,31 @@ application for this exercise or use the project generation wizard of your IDE t
 		
 === Use a predefined theme
 		
-Configure your application to use the
-`android:Theme.Material.Light.DarkActionBar`
-theme and test it. Afterwards pick another theme and test it again. Pick one of the existing themes which you like
-the
-most.
+Configure your application to use the `android:Theme.Material.Light.DarkActionBar` theme and test it. 
+Afterwards pick another theme and test it again. 
+Pick one of the existing themes which you like the most.
 		
 === Exercise: Define a modified custom theme
 
-NOTE: The Android tools team at Google likes to change the project templates. 
+[NOTE]
+====
+The Android tools team at Google likes to change the project templates. 
 This means that the styles resource file might already be created or that the base theme which is extended is different.
+====
 		
-Create or edit the existing
-_styles.xml_
-file for the Android version your are testing with. This requires defining the correct version qualifier for the
-folder which contains the file.
+Create or edit the existing _styles.xml_ file for the Android version your are testing with. 
+This requires defining the correct version qualifier for the folder which contains the file.
 		
-Add a new color constant called
-`my_color`
-defining the
-`#b0b0ff`
-value to the file.
+Add a new color constant called `my_color` defining the `#b0b0ff` value to the file.
 
-Modify or add the
-`AppTheme`
-. It should override the
-`android:windowBackground`
-property with your color.
+Modify or add the `AppTheme`. 
+It should override the `android:windowBackground` property with your color.
 		
 [source,xml]
 ----
 include::res/styles/styles_simple.xml[]
-----		
+----
 		
-Assign this theme to your application. Your application should use a
-different background color.
+Assign this theme to your application. 
+Your application should use a different background color.
 		

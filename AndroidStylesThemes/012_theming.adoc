@@ -1,97 +1,67 @@
-== Styles and Themes
+== Using styles and themes in your application
 
-=== Styles
+=== Theming in Android and material design
 
-Android allow you to define the look and feel, for example
-colors and
-fonts, of Android
-components
-in XML
-resource files.
+The Android user interface design guidelines have changes over the years. 
+The first big change for designing Android applications came with the Android 3.0 (Honeycomb) release which introduced the _Holo_ style. 
+The Android 5.0 (Lollipop) release was again a radical change with the _Material_ design. 
+The material design introduces depth into the layout and uses much more animations to provide feedback to the user.
 
-This
-way
-you
-have to set
-common style
-attributes only once in one
-central place.
+This page also contains several downloadable resources, e.g., an icon set. 
+You find the downloads on this website: https://developer.android.com/design/downloads/index.html
 
-If the entry in the resource file is used to style
-a
-view, it is
-typically referred to as a
-_style_
-, while if it is used for styling an activity or application it is
-typically called a
-_theme_
-/.
+As of Android 5.0 (Lollipop, or API 21) the preferred design for Android applications is the _Material design_.
 
-To define a style or a theme, save an XML file in the
-_/res/values_
-directory of
-your project. The root node of the XML file must be <![CDATA[ <resources>]]>
-and you use a
-`style`
-tag that includes the
-`name`
-attribute. This tag contains than more or more item tags which define
-values for named attributes.
+Material design is a guide for visual, motion, and interaction design. 
+The Android platform provides a new theme, new widgets and new API for custom shadows and animations.
 
-The following
-_styles.xml_
-XML file is an example for a style definition.
+Material design support that views are drawn on top of other views by assigning an elevation level to them.
+Views define an elevation level in dp (density-independent pixels). 
+To set the elevation of a view in a layout definition, use the android:elevation attribute. 
+To set the elevation of a view in the code of an activity, use the `View.setElevation()` method. 
+Android draws customizable shadows based on the value of the elevation.
+
+Material design also provides improved API for animations and provides several default animations.
+
+
+
+=== What are styles and themes
+
+Android allow you to define the look and feel, for example, colors and fonts, of Android components in XML resource files.
+This way you can set style related  attributes in one central place.
+
+If the entry in the resource file is used to style a view, it is referred to as a _style_.
+If it is used for styling an activity or application it is called a _theme_.
+
+To define a style or a theme, save an XML file in the _/res/values_ directory of your project. 
+The root node of the XML file must be the `<resources>` tag.
+To define a style or a theme, define an entry with the `style` tag and define the `name` attribute. 
+This entry can contains one or more items which define values for named attributes.
+
+The following listing is an example for a style definition.
 
 [source,java]
 ----
 include::res/styles/styles.xml[]
 ----
 
-You assign the style attribute to your elements, for example
-to
-the
-text elements via
-`style=”@style/text`
-.
+You assign the style attribute to entries in your layout file via the `style=”@style/text` attribute.
 
-=== Inheritance
-
-Styles (and themes) support inheritance by using the parent
-attribute of the
-style tag. This way the style inherits all settings
-from the parent style and can overwrite selected attributes.
+Styles (and themes) support inheritance by using the parent attribute of the style tag. 
+This way the style inherits all settings from the parent style and can overwrite selected attributes.
 
 === Referring attributes in the current theme
 
-Android lists all standard attributes which can be styled in the
-_R.attr_
-file. The reference for this file can be found online under the
-following URL:
-http://developer.android.com/reference/android/R.attr.html[R.attr]
-.
+Android lists all standard attributes which can be styled in the _R.attr_ file. 
+The reference for this file can be found online under the following URL: http://developer.android.com/reference/android/R.attr.html
 
-You can refer to individual attributes of the current Android
-theme
-via the
-`<![CDATA[?android:attr]]>`
-notation.
-This notation means that you are
-referring
-to a style
-attribute in the currently active theme.
 
-For example
-`<![CDATA[?android:attr/listPreferredItemHeight]]>`
-means: "use the value
-defined by the attribute called
-listPreferredItemHeight in the
-current theme.
+You can refer to individual attributes of the current Android theme via the `?android:attr` notation.
+This notation means that you are referring to a style attribute in the currently active theme.
 
-The following layout
-defines buttons with
-the Android 4.0
-button
-style.
+For example `?android:attr/listPreferredItemHeight` means: "use the value defined by the attribute called listPreferredItemHeight in the current theme.
+
+The following layout defines buttons with the Android 4.0 button style.
 
 [source,xml]
 ----
@@ -102,15 +72,10 @@ image::styling20.png[Screenshot of the running application with the menu open,pd
 
 === Themes
 
-A theme is a style applied to an entire
-activity
-or application,
-rather than an individual View (as in the example
-above). The
-technique of defining a theme is the same as defining a style.
+A theme is a style applied to an entire activity or application, rather than an individual view.
+The technique of defining a theme is the same as defining a style.
 
-The next example show how to define your own theme while
-extending a platform theme.
+The next example show how to define your own theme while extending a platform theme.
 
 [source,java]
 ----
