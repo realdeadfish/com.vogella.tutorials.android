@@ -7,12 +7,7 @@ Depending on the user selection the radio button arrangement changes from horizo
 
 === Add radio group and radio buttons to your layout
 
-Open your
-layout file
-and add a radio group with two radio buttons
-to
-your
-layout.
+Open your layout file and add a radio group with two radio buttons to your layout.
 
 
 Assign them based on the following table.
@@ -77,32 +72,18 @@ parameter.
 [TIP]
 ====
 
-`RadioGroup`
-allows you to add a
-`RadioGroup.OnCheckedChangeListener`
-from the
-`android.widget.RadioGroup`
-package
-via the
-`setOnCheckedChangeListener()`
-method. This listener is notified if the selection of the
-radio group
-changes.
+`RadioGroup` allows you to add a `RadioGroup.OnCheckedChangeListener` from the `android.widget.RadioGroup` package via the  setOnCheckedChangeListener()` method. 
+This listener is notified if the selection of the radio group changes.
 
-You can use the following code as template to implement the
-listener.
+You can use the following code as template to implement the listener.
 
 [source,java]
 ----
 include::res/exercise_radiogroup/listener.txt[]
 ----
-
 ====
 
 === Validating
 Run your application and select the different radio button.
-Ensure that the
-orientation of the buttons is changed
-based on your
-selection.
+Ensure that the orientation of the buttons is changed based on your selection.
 
