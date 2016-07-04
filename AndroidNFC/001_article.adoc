@@ -1,0 +1,23 @@
+= Android NFC- Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 1.3, 04.07.2016
+:docinfodir: ../
+:name: AndroidNFC
+
+[abstract]
+Developing Android Widgets.
+This article describes how to create widgets in Android. 
+It is based on Eclipse 3.6, Java 1.6 and Android 2.3.3 (Gingerbread).
+
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+

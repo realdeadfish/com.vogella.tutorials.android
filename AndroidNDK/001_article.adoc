@@ -1,0 +1,24 @@
+= Android NDK - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 04.07.2016
+:docinfodir: ../
+:name: AndroidNDK
+
+[abstract]
+Android NDK.
+This tutorial describes how to use native code in Android applications. 
+The tutorial is based on Android 6.0
+
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
+
