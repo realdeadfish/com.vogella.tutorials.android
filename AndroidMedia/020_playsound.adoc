@@ -1,0 +1,35 @@
+== Tutorial: Play sounds via SoundPool
+	
+We will create an application which will start playing a sound
+once
+the finger touches the display. Create an
+Android
+project called "de.vogella.android.soundpool" with an Activity called
+_PlaySound_.
+	
+Change the layout _main.xml_ to the following.
+
+[source,xml]
+----
+include::res/sound/main.xml[]
+----	
+	
+Download a sound which you want to play. 
+For example the Free Sound Effects at http://hamsterrepublic.com/ohrrpgce/Free_Sound_Effects.html
+site contains several free sound examples.
+	
+Put the sound file into your "res/raw" folder under the name
+"sound1.ogg". This assumes that you downloaded an ogg file.
+	
+Create the following coding for your activity. 
+	
+[source,java]
+----
+include::res/sound/PlaySound.java[]
+----	
+	
+If you touch your
+_activity_
+your sound should be played. It will use
+the current volume settings.
+	

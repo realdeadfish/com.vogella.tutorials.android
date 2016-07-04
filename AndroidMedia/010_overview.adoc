@@ -1,0 +1,83 @@
+== Android Sound and Media
+
+=== Playing sound
+		
+Android
+provides two main API's for playing sounds. The first one via
+the
+`SoundPool`
+class
+and
+the other one via the
+`MediaPlayer`
+class.
+		
+`SoundPool`
+can be used for small audio clips. It can
+repeat
+sounds and
+play several
+sounds simultaneously. The sound files
+played
+with
+`SoundPool`
+should not exceed 1 MB.
+		
+`SoundPool`
+does load the file asynchronously. As of Android API8
+it is possible
+to check if the loading is
+complete via a
+`OnLoadCompleteListener`.
+		
+Android supports different audio streams for different
+purposes.
+The phone volume button can be configured to control a
+specific audio
+stream, e.g. during a call the volume button allow
+increase /
+decrease
+the caller volume. To set the button to control the
+sound media stream
+set the audio type in your application.
+
+[source,txt]		
+----
+include::res/set/set.txt[]
+----
+		
+`MediaPlayer`
+is better
+suited for
+longer music and movies.
+		
+=== MediaRecorder
+		
+The
+`android.media.MediaRecorder`
+class can be used to record audio and video. To use
+`MediaRecorder`
+you need to set the source
+device and the format.
+		
+=== Adding to the Media library
+		
+You can add new Media to the Android media library.
+Via an
+`Intent`
+you can tell the media application on the device that new content is
+available. The following
+demonstrates that.
+		
+[source,java]
+----
+include::res/snippets/add.java[]
+----		
+	
+=== Supported formats
+		
+Android supports a variaty of formats.
+See
+http://developer.android.com/guide/appendix/media-formats.html - Supported Media Formats in the Android Developer Guide.
+		
+	
