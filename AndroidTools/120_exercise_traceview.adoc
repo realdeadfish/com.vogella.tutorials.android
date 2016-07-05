@@ -1,0 +1,71 @@
+== Exercise: Traceview
+
+=== Create example project
+
+Create an Android application with the top level package called
+`com.vogella.android.traceview`.
+
+Add the following key to your
+_values/strings.xml_
+file.
+
+[source,xml]
+----
+include::res/traceview/strings.xml[]
+----
+
+Create the following layout file called
+_rowlayout.xml_.
+
+[source,xml]
+----
+include::res/traceview/rowlayout.xml[]
+----
+
+Implement the following
+`adapter`
+for your
+`ListView`.
+
+[source,java]
+----
+include::res/traceview/MyArrayAdapter.java[]
+----
+
+Implement a
+`ListView`
+in the
+_activity_
+which shows 1000 random generated strings.
+
+[source,java]
+----
+include::res/traceview/MainActivity.java[]
+----
+
+Add the permission to write on external storage to your
+application.
+
+=== Perform trace
+
+Run your application. Afterwards connect to your device via adb
+and copy the resulting performance trace to your drive. Analyze the
+result.
+
+=== Solve performance problems
+
+Improve the performance based on the measurements of
+_Traceview_
+.
+Here are some pointers what to improve.
+
+* Replace the bold styling in the `getView()` method with the corresponding `android:textStyle="bold` attribute in your layout to avoid the
+`Html.fromHtml()` call.
+* Move the sorting to another place
+* Reuse convertView in your Adapter, if not null
+* Avoid the findViewById() method call by using the HolderPattern in your ListView
+
+NOTE: The layout is also not optimized. We reuse this exercise in the
+exercise for the
+_HierarchyView_
+

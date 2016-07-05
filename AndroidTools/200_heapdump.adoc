@@ -1,0 +1,6 @@
+== Memory Dumps
+	
+You can create a memory snapshot and analyze it with the
+http://www.vogella.com/tutorials/EclipseMemoryAnalyzer/article.html - Eclipse Memory Analyzer.
+	
+

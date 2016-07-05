@@ -1,0 +1,38 @@
+== Systrace
+	
+_Systrace_
+allows to measure the performance directly at kernel level. To enable
+systrace, select the Developer options and select the
+`Enable traces`
+entry. In the next dialog you can define what
+type of events should be
+profiled, e.g.
+Graphics and View.
+	
+image::systrace10.png[Enable traces,pdfwidth=60%]
+
+image::systrace20.png[Enable traces, select Graphics and View,pdfwidth=60%]
+	
+To use systrace, open a terminal and run
+_systrace.py_
+from the
+_android_sdk_installdir/tools/systrace_
+directory. You may have to set it to executable (chmod a+x systrace.py
+on Linux).
+	
+You can also start
+_Systrace_
+directly from Eclipse via the
+`DDMS`
+perspective.
+	
+image::systrace40.png[Systrace with ADT Part 1,pdfwidth=60%]
+
+image::systrace50.png[Systrace with ADT Part 2,pdfwidth=60%]
+	
+_Systrace_
+captures events for 5 seconds. As result
+_Systrace_
+creates a HTML file which allows you to analyze potential issues.
+	
+

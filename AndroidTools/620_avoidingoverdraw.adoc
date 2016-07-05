@@ -1,0 +1,59 @@
+== Analyzing Overdraw
+	
+_Overdraw_
+happens if you draw something on top of something else. For
+example an
+_activity_
+has a
+`Window`
+as background. If a
+`TextView`
+it added to the application, the
+`TextView`
+is drawn on top of the
+`Window`.
+	
+Overdrawn is therefore intended to happen. But unnecessary
+overdraw should be avoid to have the best performance possible.
+	
+Unnecessary
+overdraw can be caused by complex view hierarchies. In
+general a 2x overdraw (a pixel gets drawn three times) is standard and
+expected but
+more should be
+avoided.
+	
+You can enable a visualization of overdraw via the
+`Development Settings`
+with the
+`Show GPU overdraw`
+setting. This section adds colors to your screen based on the number
+of overdraws. The following table explains the used color schema.
+	
+.Overdrawn colors
+|===
+|Color |Meaning
+
+|No color
+|No overdraw
+
+|Blue
+|1x overdraw, pixel was painted twice
+
+|Green
+|2x
+
+|Light red
+|3x, might indicate a problem, small red areas are still ok
+
+|Dark red
+|4x, pixel was pained 5 times or more, indicates a problem.
+|===
+
+After visualization of potential problematic areas, you can
+analyze
+your
+`View`
+hierarchy with the
+`Hierarchy Viewer`.
+	

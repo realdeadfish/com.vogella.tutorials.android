@@ -1,0 +1,15 @@
+== Simulating pixel density
+	
+You can use the command line to simulate different device
+densities
+and display resolutions.
+	
+This allows you to use a device with a high device density and
+resolution to simulate other devices.
+	
+[source,java]
+----
+include::res/display/device.txt[]
+----	
+
+

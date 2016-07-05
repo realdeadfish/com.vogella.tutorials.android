@@ -1,0 +1,24 @@
+== Developer Settings
+	
+_Developer Settings_
+in your
+`Setting`
+application of your Android phone allow to set configurations which
+simplify the
+analysis of your application. For example you can enable
+that the touch area is highlighted.
+	
+If you
+have a Android 4.2 phone, try going to the About section in
+the
+Settings and
+tap the
+`Build number`
+entry 7
+times.
+	
+If you phone does not have this option try using an emulator.
+	
+In some cases you need to restart the application to make the
+setting work.
+	
