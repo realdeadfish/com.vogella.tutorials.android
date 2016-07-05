@@ -1,0 +1,9 @@
+== Getting the Android source code
+	
+To get the Android source code you need to use two tools,
+http://www.vogella.com/tutorials/Git/article.html[ Git]
+and an additional tool called
+_repo_
+.
+	
+

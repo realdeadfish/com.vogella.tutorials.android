@@ -1,0 +1,27 @@
+= Android Source Code - Notes
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.6, 05.07.2016
+:docinfodir: ../
+:vgwort: AndroidSourceCode
+
+[abstract]
+How to compile the Android source code.
+This article contains a few pointers to get the Android source code and to compile the Android source code. 
+It also looks how to download the source code for the Android Developer Tools (which are Eclipse plugins). 
+The description is based on Ubuntu.
+
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_introduction.adoc[]
+include::020_installation.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::040_cloningrepo.adoc[]
+include::060_buildingadt.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
