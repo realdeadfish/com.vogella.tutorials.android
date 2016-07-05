@@ -1,0 +1,25 @@
+== Android annotations
+	
+The Android support library provides additional annotations which allows the Android tooling to perform better
+checks
+of your Android code basis. The following is a list of the most common used annotations.
+
+* @MainThread - the method code should be executed in the main thread
+* @WorkerThread - the method code should not be executed in the main thread
+* @Nullable - defines that a method return value or parameter can be null
+* @NonNull - defines that a method return value or parameter cannot be null
+* @Size - allows to specify the length of an array or list, e.g., @Size(2) or @Size(min=1) or @Size(multiple=2).
+* @IntRange - allows to specify the range of possible integer values, e.g., @IntRange(from=0, to=255).
+* @FloatRange - same as @IntRange but for floats.
+* @CallSuper - specifies that classes that overrides such a method must call the override method in super
+
+To use these annotations add the following dependency to your Gradle build file.
+	
+[source,java]
+----
+include::res/anno/support.txt[]
+----
+	
+The Android tooling uses these annotations to find potential errors in your code, via the Android Lint tool.
+These checks are not perfect but can increase the code quality if considered during development.
+	
