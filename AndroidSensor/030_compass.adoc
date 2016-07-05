@@ -1,32 +1,27 @@
-<section id="compass">
-	<title>Tutorial: Building a compass
+== Tutorial: Building a compass
 	
-		Create a new Android project called
-		_de.vogella.android.sensor.compass_
-		with
-		an
-		_activity_
-		called
-		_MainActivity_.
+Create a new Android project called
+_de.vogella.android.sensor.compass_
+with
+an
+_activity_
+called
+_MainActivity_.
 	
+Create the following custom
+`View`
+class.
 	
-		Create the following custom
-		`View`
-		class.
+[source,java]
+----
+include::res/compass/MyCompassView.java[]
+----	
 	
+Change the coding of your
+_activity_.
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/compass/MyCompassView.java" />
-		</programlisting>
-	
-	
-		Change the coding of your
-		_activity_.
-	
-	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/compass/MainActivity.java" />
-		</programlisting>
+[source,java]
+----
+include::res/compass/MainActivity.java[]
+----
 	
