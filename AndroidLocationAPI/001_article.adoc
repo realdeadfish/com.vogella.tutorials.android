@@ -7,7 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 4.2, 30.06.2016
 :docinfodir: ../
-:name: AndroidLocationAPI
+:vgwort: AndroidLocationAPI
 
 [abstract]
 Android Location API.

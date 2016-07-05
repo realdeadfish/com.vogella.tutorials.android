@@ -7,7 +7,7 @@
 (c) 2014, 2016 vogella GmbH
 Version 1.8, 18.06.2016
 :docinfodir: ../
-:name: AndroidTestingEspresso
+:vgwort: AndroidTestingEspresso
 
 [abstract]
 This tutorial describes how to developer user interface tests for Android applications with the Espresso testing framework.

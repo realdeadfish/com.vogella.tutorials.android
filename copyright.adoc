@@ -11,5 +11,5 @@ This tutorial is published under the  http://creativecommons.org/licenses/by-nc-
 
 See http://www.vogella.com/license.html[Licence].
 
-include::./web/vgwort/{name}.adoc[]
+include::./web/vgwort/{vgwort}.adoc[]
 

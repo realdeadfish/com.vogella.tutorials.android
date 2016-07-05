@@ -7,7 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 0.3, 30.06.2016
 :docinfodir: ../
-:name: AndroidApplicationOptimization
+:vgwort: AndroidApplicationOptimization
 
 [abstract]
 Android memory and performance optimization. 
@@ -19,8 +19,6 @@ based on Android Studio.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
-include::012_avoidobjectallocation.adoc[]
-include::014_useefficientmemorystructures.adoc[]
 include::020_handlingbitmaps.adoc[]
 include::600_cache.adoc[]
 include::../support.adoc[]	

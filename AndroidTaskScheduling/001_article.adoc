@@ -7,7 +7,7 @@
 (c) 2015 vogella GmbH
 Version 0.1, 18.04.2016
 :docinfodir: ../
-:name: AndroidTaskScheduling
+:vgwort: AndroidTaskScheduling
 
 [abstract]
 This tutorial describes how to schedule tasks in Android with the JobScheduler API.

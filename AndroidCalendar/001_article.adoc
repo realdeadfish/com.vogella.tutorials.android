@@ -7,7 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 0.4, 30.06.2016
 :docinfodir: ../
-:name: AndroidCalendar
+:vgwort: AndroidCalendar
 
 [abstract]
 Using the Android Calendar API

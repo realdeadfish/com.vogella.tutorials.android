@@ -7,7 +7,7 @@
 Lars Vogel, Simon Scholz (c) 2012, 2016 vogella GmbH
 Version 2.0, 18.04.2016
 :docinfodir: ../
-:name: AndroidBuild
+:vgwort: AndroidBuild
 
 [abstract]
 This tutorial describes the usage of the Gradle build system for building Android applications.

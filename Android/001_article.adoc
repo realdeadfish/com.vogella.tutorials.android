@@ -7,7 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 14.4, 20.06.2016
 :docinfodir: ../
-:name: Android
+:vgwort: Android
 
 [abstract]
 This tutorial describes how to create Android applications with Android Studio.

@@ -6,7 +6,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 2.10, 29.06.2016
 :docinfodir: ../
-:name: AndroidServices
+:vgwort: AndroidServices
 
 [abstract] 
 Using styles and themes in Android.

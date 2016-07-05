@@ -7,7 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 1.3, 04.07.2016
 :docinfodir: ../
-:name: AndroidNFC
+:vgwort: AndroidNFC
 
 [abstract]
 Developing Android Widgets.

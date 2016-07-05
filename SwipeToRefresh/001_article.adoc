@@ -7,7 +7,7 @@
 (c) 2016 vogella GmbH
 Version 0.1, 18.06.2016
 :docinfodir: ../
-:name: SwipeToRefresh
+:vgwort: SwipeToRefresh
 
 [abstract]
 This tutorial contains information how to implement the swipe to refresh design pattern.

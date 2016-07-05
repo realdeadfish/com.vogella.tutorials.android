@@ -7,7 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 10.8, 25.06.2016
 :docinfodir: ../
-:name: AndroidResourceSelection
+:vgwort: AndroidResourceSelection
 
 [abstract]
 Android resource selectors. This tutorial describes how to the resource selectors work in Android. 

@@ -7,7 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 1.4, 28.06.2016
 :docinfodir: ../
-:name: AndroidXML
+:vgwort: AndroidXML
 
 [abstract]
 XML processing with Android. 

@@ -7,7 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 0.2, 30.06.2016
 :docinfodir: ../
-:name: AndroidButterknife
+:vgwort: AndroidButterknife
 
 [abstract]
 Using the Butterknife library for view injection in Android.

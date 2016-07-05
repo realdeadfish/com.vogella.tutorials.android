@@ -6,7 +6,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 0.3, 30.06.2016
 :docinfodir: ../
-:name: AndroidInternals
+:vgwort: AndroidInternals
 
 [abstract]
 Android Internal.

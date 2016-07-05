@@ -7,7 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 2.10, 28.06.2016
 :docinfodir: ../
-:name: AndroidAnimation
+:vgwort: AndroidAnimation
 
 [abstract]
 Android Property Animation API.

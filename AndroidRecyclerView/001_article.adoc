@@ -7,7 +7,7 @@
 (c) 2014, 2016 vogella GmbH
 Version 1.3, 20.06.2016
 :docinfodir: ../
-:name: AndroidRecyclerView
+:vgwort: AndroidRecyclerView
 
 [abstract]
 This tutorial describes how to use the RecylerView widget in  Android applications.

@@ -7,7 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 4.6, 30.06.2016
 :docinfodir: ../
-:name: AndroidGoogleMaps
+:vgwort: AndroidGoogleMaps
 
 [abstract]
 Android and Google Maps.

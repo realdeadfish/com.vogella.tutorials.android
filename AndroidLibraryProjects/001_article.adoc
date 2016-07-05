@@ -7,7 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 2.4, 27.06.2016
 :docinfodir: ../
-:name: AndroidLibraryProjects
+:vgwort: AndroidLibraryProjects
 
 [abstract]
 This tutorial describes how to create and use library projects in Android. 

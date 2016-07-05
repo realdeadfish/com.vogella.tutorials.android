@@ -7,7 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 2.10, 30.06.2016
 :docinfodir: ../
-:name: AndroidIPC
+:vgwort: AndroidIPC
 
 [abstract]
 How to do Android IPC with parceable and AIDLs.

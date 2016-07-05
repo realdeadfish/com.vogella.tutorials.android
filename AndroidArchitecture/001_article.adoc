@@ -7,7 +7,7 @@
 Lars Vogel, (c) 2015 vogella GmbH
 Version 0.1, 18.04.2016
 :docinfodir: ../
-:name: AndroidArchitecture
+:vgwort: AndroidArchitecture
 
 [abstract]
 == Android Architecture

@@ -7,7 +7,7 @@
 Lars Vogel (c) 2009, 2016 vogella GmbH
 Version 3.5, 27.06.2016
 :docinfodir: ../
-:name: AndroidCustomViews
+:vgwort: AndroidCustomViews
 
 [abstract]
  This tutorials describes how to create custom and combound views with Android. 

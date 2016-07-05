@@ -7,7 +7,7 @@
 Lars Vogel (c) 2013, 2016 vogella GmbH
 Version 2.0, 18.06.2016
 :docinfodir: ../
-:name: AndroidStudioTooling
+:vgwort: AndroidStudioTooling
 
 [abstract]
 This tutorial describes how to use Android Studio for Android development. 

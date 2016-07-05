@@ -7,7 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 3.4, 27.06.2016
 :docinfodir: ../
-:name: AndroidBackgroundProcessing
+:vgwort: AndroidBackgroundProcessing
 
 [abstract]
 Android Threads, Handlers AsyncTask. This tutorial describes the usage of asynchronous processing in Android applications.

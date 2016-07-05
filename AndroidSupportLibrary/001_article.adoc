@@ -7,7 +7,7 @@
 (c) 2014, 2016 vogella GmbH
 Version 0.4, 28.06.2016
 :docinfodir: ../
-:name: AndroidSupportLibrary
+:vgwort: AndroidSupportLibrary
 
 [abstract]
 This tutorial describes how to use (and how to avoid the usage) of the Android support library.

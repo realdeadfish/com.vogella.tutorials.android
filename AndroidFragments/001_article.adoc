@@ -7,7 +7,7 @@
 Lars Vogel (c) 2009, 2016 vogella GmbH
 Version 12.0, 18.04.2016
 :docinfodir: ../
-:name: AndroidFragments
+:vgwort: AndroidFragments
 
 [abstract]
 This tutorial describes how to use the Fragment class to create scalable and flexible Android applications.

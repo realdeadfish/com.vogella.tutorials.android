@@ -7,7 +7,7 @@
 (c) 2009, 2016 vogella GmbH
 Version 0.2, 28.06.2016
 :docinfodir: ../
-:name: AndroidHandlingImages
+:vgwort: AndroidHandlingImages
 
 [abstract]
 This tutorial describes how to download efficiently images using Google Glide.

@@ -7,7 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 2.8, 28.06.2016
 :docinfodir: ../
-:name: AndroidWidgets
+:vgwort: AndroidWidgets
 
 [abstract]
 Developing Android Widgets. 
