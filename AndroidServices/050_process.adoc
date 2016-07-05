@@ -7,7 +7,7 @@ You can also specify that your
 runs in
 a separate
 process via the
-`<![CDATA[ android:process=":process_description" ]]>`
+`<android:process=":process_description">
 attribute.
 
 [source,xml]

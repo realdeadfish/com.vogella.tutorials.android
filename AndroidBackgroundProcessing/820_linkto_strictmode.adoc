@@ -1,7 +1,0 @@
-== StrictMode
-	
-Android allows you to instruct the system to report any long running
-processes which are performed in the user interface thread. See
-http://www.vogella.com/tutorials/AndroidTools/article.html#strictmode[Using StrictMode in Android]
-for details.
-	

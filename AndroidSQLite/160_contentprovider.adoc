@@ -168,7 +168,7 @@ If you do not require that Android synchronizes data access to the
 provider,
 set the
 `android:multiprocess=true`
-attribute in your <![CDATA[<provider>]]>
+attribute in your <provider>
 definition in the
 _AndroidManifest.xml_
 file.

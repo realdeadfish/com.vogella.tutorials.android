@@ -40,7 +40,7 @@ The table give examples for SparseArrays.
 |===
 |Memory structure |Description
 
-|<![CDATA[SparseArray<E>]]>
+|SparseArray<E>
 |Maps integers to Objects, avoid the creation of Integer objects.
 
 |SparseBooleanArray

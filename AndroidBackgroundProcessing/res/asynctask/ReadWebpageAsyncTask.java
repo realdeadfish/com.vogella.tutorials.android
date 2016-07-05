@@ -1,20 +1,6 @@
 package de.vogella.android.asynctask;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-
-import de.vogella.android.asyntask.R;
-
-import android.app.Activity;
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
+// imports cut out for brevity 
 
 public class ReadWebpageAsyncTask extends Activity {
 	private TextView textView;
@@ -29,26 +15,18 @@ public class ReadWebpageAsyncTask extends Activity {
 	private class DownloadWebPageTask extends AsyncTask<String, Void, String> {
 		@Override
 		protected String doInBackground(String... urls) {
-			String response = "";
-			for (String url : urls) {
-				DefaultHttpClient client = new DefaultHttpClient();
-				HttpGet httpGet = new HttpGet(url);
-				try {
-					HttpResponse execute = client.execute(httpGet);
-					InputStream content = execute.getEntity().getContent();
-
-					BufferedReader buffer = new BufferedReader(
-							new InputStreamReader(content));
-					String s = "";
-					while ((s = buffer.readLine()) != null) {
-						response += s;
-					}
-
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
+			// we use the OkHttp library from https://github.com/square/okhttp
+			OkHttpClient client = new OkHttpClient();
+			Request request = 
+					new Request.Builder()
+					.url(urls[0])
+					.build();
+				 Response response = client.newCall(request).execute();
+				 if (response.isSuccessful()) {
+					 return response.body().string();
+				 }
 			}
-			return response;
+			return "Download failed";
 		}
 
 		@Override
@@ -59,7 +37,7 @@ public class ReadWebpageAsyncTask extends Activity {
 
 	public void onClick(View view) {
 		DownloadWebPageTask task = new DownloadWebPageTask();
-		task.execute(new String[] { "http://www.vogella.com" });
+		task.execute(new String[] { "http://www.vogella.com/index.html" });
 
 	}
 }

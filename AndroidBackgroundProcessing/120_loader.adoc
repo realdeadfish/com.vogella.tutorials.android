@@ -2,85 +2,31 @@
 
 === Purpose of the Loader class
 		
-The
-`Loader`
-class
-allow you to load data asynchronously in an activity or
-fragment. They can monitor the
-source of
-the
-data
-and
-deliver new results
-when the content
-changes. They
-also
-persist data
-between configuration
-changes.
+The `Loader` class allows you to load data asynchronously in an activity or fragment. 
+They can monitor the source of the data and deliver new results when the content changes. 
+They also persist data between configuration changes.
 		
-If the result is retrieved by the
-`Loader`
-after the object has been disconnected from its parent (activity or
-fragment), it can cache the data.
-		
-Loaders
-have been introduced in Android 3.0 and are part of the
-compatibility
-layer for Android versions as of 1.6.
+The data can be cached by the `Loader` and this caching can survive configuration changes. 
+Loaders have been introduced in Android 3.0 and are part of the compatibility layer for Android versions as of 1.6.
 		
 === Implementing a Loader
 
-You can use the abstract
-`AsyncTaskLoader`
-class as the basis for your own
-_Loader_
-implementations.
-		
-The
-`LoaderManager`
-of an activity or fragment manages one or more
-`Loader`
-instances.
-The creation of a
-_Loader_
-is done
-via the following method call.
+You can use the abstract `AsyncTaskLoader` class as the basis for your custom _Loader_ implementations.
+
+The `LoaderManager` of an activity or fragment manages one or more `Loader`  instances.
+The creation of a _Loader_ is done via the following method call.
 		
 [source,java]
 ----
 include::res/loader/init.java[]
 ----		
 
-The first parameter is a
-unique ID which
-can
-be used by
-the callback
-class to identify that
-_Loader_
-later. The second parameter is a bundle which can be
-given
-to the
-callback class for more information.
+The first parameter is a unique ID which can be used by the callback class to identify the _Loader_.
+The second parameter is a bundle which can be given to the callback class for more information.
 		
-The third parameter of
-`initLoader()`
-is the class which is called once
-the
-initialization has been started
-(callback class). This class must implement the
-`LoaderManager.LoaderCallbacks`
-interface.
-It is good practice that
-an
-activity or the fragment
-which
-uses a
-_Loader_
-implements the
-`LoaderManager.LoaderCallbacks`
-interface.
+The third parameter of `initLoader()` is the class which is called once the initialization has been started (callback class). 
+This class must implement the `LoaderManager.LoaderCallbacks` interface.
+It is common practice that an activity or the fragment which uses a _Loader_ implements the `LoaderManager.LoaderCallbacks` interface.
 
 The
 `Loader`

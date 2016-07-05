@@ -12,6 +12,7 @@ http://android-developers.blogspot.de/2010/07/multithreading-for-performance.htm
 		
 http://www.vogella.com/tutorials/Android/article.html - Introduction to Android Development
 
-http://www.vogella.com/tutorials/AndroidLocationAPI/article.html - Android Location API and Google Maps
+http://www.vogella.com/tutorials/AndroidFragments/article.html - Tutorial about the usage of fragments
 
+http://www.vogella.com/tutorials/AndroidServices/article.html - Tutorial about Android services
 

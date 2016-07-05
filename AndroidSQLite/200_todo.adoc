@@ -322,14 +322,7 @@ looks like the following.
 ----
 include::res/todo/AndroidManifest.xml[]
 ----
-		
-Please note
-that <![CDATA[android:windowSoftInputMode="stateVisible|adjustResize"]]>
-is defined for the
-`TodoDetailActivity`
-. This makes the keyboard harmonize better with the widgets, but it
-is
-not required for this tutorial.
+
 		
 === Start your application
 

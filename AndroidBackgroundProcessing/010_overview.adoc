@@ -1,66 +1,53 @@
-== Android's user interface thread
-
-=== Main thread
-		
-Android
-modifies the user interface and handles input events from one
-single
-_user interface thread_
-. This thread is
-also called the
-_main thread_
-.
-				
-Android collects all events in a queue and processed an instance of
-the
-`Looper`
-class.
-		
-image::looper_messagequeue10.png[Message Queue in Android with Looper,pdfwidth=60%]
+== Background processing in Android
 
 === Why using concurrency?
 		
-If the
-programmer does not use any concurrency
-constructs, all
-code
-of
-an
-Android
-application
-runs in the main thread and every statement
-is
-executed after each other.
+By default, application code  runs in the main thread. 
+Every statement is therefore executed in sequence.
+If you perform a long lasting operation, the application blocks until the corresponding operation has finished.
 		
-If
-you perform a long
-lasting operation, for example accessing
-data
-from
-the Internet, the application
-blocks
-until
-the corresponding
-operation has
-finished.
-		
-To provide a good user experience all
-potentially slow
-running
-operations in an
-Android
-application should
-run asynchronously, e.g. via
-some way of
-concurrency constructs of the Java
-language or the Android
-framework. This includes all potential slow operations, like
-network,
-file and database
-access and
-complex calculations.
+To provide a good user experience all potentially slow running operations in an Android application should run asynchronously.
+This can be archived via concurrency constructs of the Java language or of the Android framework. 
+Potentially slow operations are for example network, file and database access and complex calculations.
 		
 NOTE: Android enforces a worst case reaction time of applications.
 If an _activity_ does not react within 5 seconds to user input, the Android system displays an _Application not responding_ (ANR) dialog. 
 From this dialog the user can choose to stop the application.
 
+
+=== Main thread
+		
+Android modifies the user interface and handles input events from one single thread, called the  _main thread_. 
+Android collects all events in this thread in a queue and processes this queue with an instance of the `Looper` class.
+		
+image::looper_messagequeue10.png[Message Queue in Android with Looper,pdfwidth=60%]
+
+
+=== Threading in Android
+
+Android supports the usage of the `Thread`  class to perform asynchronous processing.
+Android also supplies the `java.util.concurrent` package to perform something in the background.
+For example, by using the `ThreadPools` and `Executor` classes.
+		
+If you need to update the user interface from a new `Thread`, you need to synchronize with the main thread.		
+Because of this restrictions, Android developer typically use Android specific code constructs. 
+	
+Android provides additional constructs to handle concurrently in comparison with standard Java.
+
+You can use the `android.os.Handler` class or the `AsyncTasks` classes. 
+More sophisticated approaches are based on the `Loader` class, retained fragments and services.
+	
+=== Providing feedback to a long running operation
+	
+If you are performing a long running operation it is good practice to provide feedback to the user about the running operation.
+	
+You can provide progress feedback via the _action bar_ for example via an _action view_. 
+Alternatively you can use a `ProgressBar` in your layout which you set to visible and update it during a long running operation. 
+Non blocking feedback is preferred so that the user can continue to interact with the applicatoin.
+	
+[TIP]
+==== 
+Avoid using the blocking `ProgressBar` dialog or similar approaches if possible. 
+Prefer providing inline feedback to that your user interface stays responsive.
+====
+	
