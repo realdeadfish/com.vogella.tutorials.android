@@ -36,7 +36,7 @@ The following code snippet demonstrates that.
 include::res/asynctask/parallel.txt[]
 ----
 		
-[NOTE}
+[NOTE]
 ====
 The `AsyncTask` does not handle configuration changes automatically, i.e. if the _activity_ is recreated.
 The programmer has to handle that in his coding.
