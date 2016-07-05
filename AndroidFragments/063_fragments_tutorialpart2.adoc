@@ -20,14 +20,18 @@ Create a file in your _res/values_ folder called _config.xml_ with the following
 		
 [source,xml]
 ----
-include::res/mode/config.xml[]
+<resources>
+    <item type="bool" name="twoPaneMode">false</item>
+</resources>
 ----	
 	
 Create the same file in your _res/values-land_ folder with a different value.
 
 [source,xml]
 ----
-include::res/mode/config2.xml[]
+<resources>
+    <item type="bool" name="twoPaneMode">true</item>
+</resources>
 ----
 
 === Adjust the RssfeedActivity activity
