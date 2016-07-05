@@ -1,43 +1,24 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
-		<title>Cross component and blackbox testing of Android applications with the UI Automator framework - Tutorial_
-		<author>
-			<firstname>Lars</firstname>
-			<surname>Vogel</surname>
-		</author>
-		<copyright>
-			<year>2011</year>
-			<year>2012</year>
-			<year>2013</year>
-			<year>2014</year>
-			<year>2015</year>
-			<holder>vogella GmbH</holder>
-		</copyright>
-		<pubdate>10.09.2015</pubdate>
-		<releaseinfo>
-			Version 2.1_
+= ACross component and blackbox testing of Android applications with the UI Automator framework - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 2.2, 05.07.2016
+:docinfodir: ../
+:vgwort: Android
 
-		</releaseinfo>
+[abstract]
+Cross component Android testing with UI Automator.
+This tutorial describes how go backbox testing for Android applications including applications to which you do not have the source code.
 
-		<abstract id="abstract">
-			<title>Cross component Android testing with UI Automator_
-			 This tutorial describes how go backbox testing for Android applications including applications to which you do
-				not have the source code.
-			_
-		</abstract>
-	</articleinfo>
-	
-	include::../web/advertisement/afterTableOfContent.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_installation.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../AndroidTestingEspresso/018_installtestingsupportlib.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_installation.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_exercise_uiautomator.xml" />
-	
-
-	include::../support.adoc[]	
-	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::020_installation.adoc[]
+include::../AndroidTestingEspresso/018_installtestingsupportlib.adoc[]
+include::100_exercise_uiautomator.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-	include::../web/vgwort/AndroidTesting"?>
-</article>
+include::../copyright.adoc[]
+

@@ -1,64 +1,49 @@
-<section id="android_userinterfacetesting" role="wrapper">
-	<title>Cross-component blackbox user interface testing _
-	<section id="android_userinterfacetesting1">
-		<title>Using UI Automator for cross component testing_
-		Functional or black-box user interface testing does test the
-			complete application and not single components of
-			your application.
-		_
-		
-			The Android SDK contains the
-			_uiautomator_
-			Java library for creating user interface tests and provides an engine
-			to run these user interface tests. Both tools
-			require
-			Android 4.3 (API level 18) on the device that is used for testing.
-		_
-		
-			Androids uiautomator provides the
-			`UiDevice`
-			class to communicate with the device, the
-			`UiSelector`
-			class to search for elements on the screen and the
-			`UiObject`
-			which presents user interface elements and is created based on the
-			`UiSelector`
-			class. The
-			`UiCollection`
-			class allows to select a number of user interface elements at the
-			same time and
-			`UiScrollable`
-			allows to scroll in a view to find an element.
-		_
+== Cross-component blackbox user interface testing
+
+=== Using UI Automator for cross component testing
+
+Functional or black-box user interface testing does test the
+complete application and not single components of
+your application.
+
+The Android SDK contains the
+_uiautomator_
+Java library for creating user interface tests and provides an engine
+to run these user interface tests. Both tools
+require
+Android 4.3 (API level 18) on the device that is used for testing.
+
+Androids uiautomator provides the
+`UiDevice`
+class to communicate with the device, the
+`UiSelector`
+class to search for elements on the screen and the
+`UiObject`
+which presents user interface elements and is created based on the
+`UiSelector`
+class. The
+`UiCollection`
+class allows to select a number of user interface elements at the
+same time and
+`UiScrollable`
+allows to scroll in a view to find an element.
 	
-	<section id="android_uiautomatorviewer">
-		<title>Accessing the view information with uiautomatorviewer_
-		
-			Android provides the
-			_uiautomatorviewer_
-			tool, which allows you to analyze the user interface of an
-			application. You can use this tool to find the index, text
-			or
-			attribute of the application.
-		_
-		
-			This tool allows non-programmers to analyze an application and
-			develop tests for it via the
-			_uiautomator_
-			library. It is depicted in the following screenshot.
-		_
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/uiautomatorviewer10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>uiautomatorviewer in usage</phrase>
-				</textobject>
-			</mediaobject>
-		_
-		To launch the uiautomatorviewer tool, switch on the command line to the android-sdk/tools/ directory and start
-			the tool via uiautomatorviewer.
-		_
-	
+=== Accessing the view information with uiautomatorviewer
+
+Android provides the
+_uiautomatorviewer_
+tool, which allows you to analyze the user interface of an
+application. You can use this tool to find the index, text
+or
+attribute of the application.
+
+This tool allows non-programmers to analyze an application and
+develop tests for it via the
+_uiautomator_
+library. It is depicted in the following screenshot.
+
+image::uiautomatorviewer10.png[uiautomatorviewer in usage,pdfwidth=60%]
+
+To launch the uiautomatorviewer tool, switch on the command line to the android-sdk/tools/ directory and start
+the tool via uiautomatorviewer.
 

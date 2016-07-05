@@ -1,39 +1,31 @@
-<section id="uiautomator_using">
-	<title>Making UI Automator available_
-	<section id="uiautomator_using2">
-		<title>Configuration in your project_
-		To use UI Automator for your tests, add the following dependency to the Gradle build file of your app.
-			You must also specify the
-			`AndroidJUnitRunner`
-			as value for the
-			`testInstrumentationRunner`
-			parameter in the build.gradle file of your app. The following listing is an example for that.
-		_
+== Making UI Automator available
 
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/uiautomator/androidjunitrunner.java" />
-			</programlisting>
-		_
+=== Configuration in your project
 
-		It is also recommended turning of the animation on the Android device which is used for testing. _
-	
-	<section id="uiautomator_using3">
-		<title>Location of your tests_
-		
-			UI Automator tests must be located by default in the
-			_app/src/androidTest_
-			folder.
-		_
-	
+To use UI Automator for your tests, add the following dependency to the Gradle build file of your app.
+You must also specify the
+`AndroidJUnitRunner`
+as value for the
+`testInstrumentationRunner`
+parameter in the build.gradle file of your app. The following listing is an example for that.
 
-	<section id="uiautomator_using4">
-		<title>Wrting test_
-		
-			Similar to Espresso tests, UI Automator tests should be annotated with the
-			`@RunWith(AndroidJUnit4.class)`
-			test runner and use
-			`ActivityTestRule` to configure itself. 
-		_
-	
+[source,java]
+----
+include::res/uiautomator/androidjunitrunner.java[]
+----
+
+It is also recommended turning of the animation on the Android device which is used for testing. _
+
+=== Location of your tests
+
+UI Automator tests must be located by default in the
+_app/src/androidTest_
+folder.
+
+=== Wrting test
+
+Similar to Espresso tests, UI Automator tests should be annotated with the
+`@RunWith(AndroidJUnit4.class)`
+test runner and use
+`ActivityTestRule` to configure itself. 
+
