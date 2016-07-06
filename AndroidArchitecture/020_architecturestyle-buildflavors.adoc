@@ -40,3 +40,4 @@ public class Injection {
 If you application code you can access the provided implementation via `Injection.provideNotesRepository()`.
 Depending which flavor you are build you would receive the mocked version or the real version.
 Your unit test would build again the mock flavor to mock away the external dependencies.
+

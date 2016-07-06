@@ -4,3 +4,4 @@ Dependency injection is another way of building testable applications.
 Android applications are using in most cases Dagger 2 for dependency injection.
 In case the tests are running mock or fake objects are injected.
 If the real application is started the correct objects are injected.
+
