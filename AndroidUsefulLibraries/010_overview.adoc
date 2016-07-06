@@ -1,0 +1,9 @@
+== Useful Android library projects
+	
+The nature of Android as Open Source project makes it easy for
+others to create useful libraries. This article lists popular open
+source libraries and useful example projects which makes it easier to
+create powerful Android
+projects.
+	
+
