@@ -1,0 +1,29 @@
+== Calling Webservices with Android
+
+=== Android and REST based webservices
+
+REST based webservices are based on HTTP calls. Hence you can
+simply the HTTP calls to perform these calls.
+
+Several open source projects exists to simplify this handling.
+For example Crest, which can be found under the following URL:
+http://crest.codegist.org/deeper/android.html
+
+[source,java]
+----
+include::res/Creast.java[]
+----
+
+Another popular REST framework is Restlet, which can be found
+under the following URL: http://www.restlet.org/
+
+=== Android and SOAP based webservices
+
+SOAP webservices are based on XML and you can handle them with
+pure XML. To simplify the handling of SOAP webservices you can also
+use Open Source projects.
+
+Relatively popular is the ksoap2-android project, which can be
+found under the following link: http://code.google.com/p/ksoap2-android/wiki/Links
+
+	
