@@ -95,10 +95,28 @@ Afterwards you can manually edit the generated file via the _Text_ tab or use th
 
 image::menu_resources30.png[Create new menu resources,pdfwidth=60%]
 
+
+=== Create preference file
+
+If you project does not have an _/app/res/xml_ folder create one.
+
+image::preferences_createxmlfolder10.png[Creating a xml folder,pdfwidth=60%]
+
+image::preferences_createxmlfolder20.png[Creating a xml folder,pdfwidth=60%]
+
+You can noew create an Android XML resource in the xml folder.
+
+image::preferences_createxmlfolder30.png[Creating a preference resource file,pdfwidth=60%]
+
+image::preferences_createxmlfolder40.png[Creating a preference resource file,pdfwidth=40%]
+
+
 [[androidstudio_viewinglogentries]]
 === See the log statements of your Android application
 		
 Use the _Android_ view (Shortcut: kbd:[Alt+6]) to see the log statements in Android Studio.
+
+
 
 		
 == Java programming tasks

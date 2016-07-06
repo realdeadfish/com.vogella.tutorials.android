@@ -90,3 +90,28 @@ Or if you defined a `String` with the `"titlepage"` key in an XML resource, you 
 		
 To use an Android system resource, include the `android` namespace into the references, e.g., `android.R.string.cancel`.
 		
+=== Using assets?
+		
+The _res_ directory contains structured values which predefined semantics for the Android platform.
+The _assets_ directory can be used to store any kind of data.
+You can access files stored in this folder based on their path. 
+The _assets_ directory also allows you to have sub-folders.
+
+[NOTE]
+====
+You could also store unstructured data in the _/res/raw_ folder. 
+But it is considered good practice to use the _assets_ directory for such data.
+====	
+		
+You access this data via the `AssetsManager` which you can access via the `getAssets()` method from an instance of the `Context` class.
+		
+The `AssetsManager` class allows you to read a file in the _assets_ folder as `InputStream` with the `open()` method. 
+The following code shows an example for this.
+		
+[source,java]
+----
+include::res/assets/assets.java[]
+----
+		
+
+		

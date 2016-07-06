@@ -1,44 +1,50 @@
-<section id="androidreferences">
+[[androidreferences]]
 == References
-	<section id="androidstudio_createimage">
+
+[[androidstudio_createimage]]
 === Create an image via Android studio
 		
-			See
-			http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_createimage">Creating an image asset</ulink>
-			to learn how to create an image asset with Android Studio.
+See http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_createimage[Creating an image asset] to learn how to create an image asset with Android Studio.
 		
 
-
-	<section id="androidstudio_creatingresourcefolder">
+[[androidstudio_creatingresourcefolder]]
 === Creating a resource folder
 		
-			See
-			http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_creatingresourcefolder">Creating a new resource folder</ulink>
-			to learn how to a new resource file with Android Studio.
+See http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_creatingresourcefolder[Creating a new resource folder] to learn how to a new resource file with Android Studio.
 		
-
-	<section id="androidstudio_creatingresourcefile">
+[[androidstudio_creatingresourcefile]]
 === Creating a resource file
 		
-			See
-			http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_creatingresourcefile">Creating a new resource file</ulink>
-			to learn how to a new resource file with Android Studio.
+See http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_creatingresourcefile[Creating a new resource file] to learn how to a new resource file with Android Studio.
 		
-
-	<section id="androidstudio_androidstudio_createmenu">
+[[androidstudio_androidstudio_createmenu]]
 === Add a new menu XML resource
 		
-			See
-			http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_createmenu">Add a new menu XML resource</ulink>
-			to learn how to a new XML menu resource with Android Studio.
+See http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_createmenu[Add a new menu XML resource] to learn how to a new XML menu resource with Android Studio.
 		
-
-	<section id="androidsupportlibrary_avoiding_remove">
+[[androidsupportlibrary_avoiding_remove]]
 === Remove the usage of the support library
 		
-			See
-			http://www.vogella.com/tutorials/AndroidSupportLibrary/article.html#androidsupportlibrary_avoiding_remove">Android support library</ulink>
-			how to remove the usage of the support library.
+See
+http://www.vogella.com/tutorials/AndroidSupportLibrary/article.html#androidsupportlibrary_avoiding_remove[Android support library] how to remove the usage of the support library.
+		
+
+[[androidstudio_creatingresourcefile]]
+=== Creating a resource file
+		
+See http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_creatingresourcefile[Creating a new resource file] to learn how to a new resource file with Android Studio.
+		
+
+[[androidstudio_androidstudio_createmenu]]
+=== Add a new menu XML resource
+		
+See http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_createmenu[Add a new menu XML resource] to learn how to a new XML menu resource with Android Studio.
+		
+
+[[androidsupportlibrary_avoiding_remove]]
+=== Remove the usage of the support library
+		
+See http://www.vogella.com/tutorials/AndroidSupportLibrary/article.html#androidsupportlibrary_avoiding_remove[Android support library] how to remove the usage of the support library.
 		
 
 

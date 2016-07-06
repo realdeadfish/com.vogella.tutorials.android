@@ -2,101 +2,38 @@
 
 === Determine the current geolocation
 
-Most
-Android
-devices allow to determine the current geolocation.
-This
-can be done
-via a GPS (Global
-Positioning
-System)
-module, via cell
-tower
-triangulation or via wifi networks.
+Most Android devices allow to determine the current geo location.
+This can be done via a GPS (Global Positioning System) module, via cell tower triangulation and via wifi networks.
 
-Android contains the
-`android.location`
-package which provides
-the
-API to
-determine the
-current geo
-position.
+Google Play provides the _fused location provider_ to retrieve the device's last known location. 
 
-=== LocationManager
+=== Installation
 
-The
-`LocationManager`
-class
-provides access to the Android location
-service. This services
-allows
-to access location providers, to register location update
-listeners
-and proximity alerts and more.
+To use the location manager make the Google play service available via your app build.gradle file.
 
-=== LocationProvider
+[source,gradle]
+----
+dependencies {
+	compile 'com.google.android.gms:play-services:9.2.0'
+	compile 'com.google.android.gms:play-services-location:9.2.0'
+    }
+----
 
-The
-`LocationProvider`
-class
-is the superclass of the different location providers
-which
-deliver the
-information about the current location. This information
-is stored in the
-`Location`
-class.
-
-The Android device might have several
-`LocationProvider`
-available
-and you can
-select which one you want to use. In most cases
-you have the
-followng
-`LocationProvider`
-available.
+Also specify the following required permission in your manifest.
 
 
+[source,xml]
+----
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+----
 
-.LocationProvider
-|===
-|LocationProvider |Description
+=== Using the LocationManager
 
-|network
-|Uses the mobile network or WI-Fi to determine the best location. Might have a higher precision in closed rooms then GPS.
-	
-|gps
-|Use the GPS receiver in the Android device to determine the best location via satellites. Usually better precision than network.
-	
-|passive
-|Allows to participate in location of updates of other components to save energy
-|===	
+Now you can access the last known location. 
+The fuse location provider provides a new simple API.
+The following is an example activity which uses it.
 
-=== Selecting LocationProvider via Criteria
 
-For a flexible selection of
-the best location
-provider use a
-`Criteria`
-object, in which you can define how the provider should be
-selected.
-
-You can register a
-`LocationListener`
-object with the
-`LocationManager`
-class to receive periodic updates about the geoposition.
-
-=== Proximity Alert
-
-You can also register an
-`Intent`
-which allows to define a proximity alert, this alert will be
-triggered if the device enters a area given by a longitude,
-latitude
-and radius (proximity alert).
 
 === Forward and reverse Geocoding
 

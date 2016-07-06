@@ -2,28 +2,12 @@
 
 === Target of this exercise
 
-In this exercise you allow the user to enter his preferred URL for an RSS feed via another activity. This
-activity uses a preference xml file to define the user interface. 
+In this exercise you allow the user to enter his preferred URL for an RSS feed via another activity. 
+This activity uses a preference xml file to define the user interface. 
 	
 === Create preference file
 
-If you project does not have an
-_/app/res/xml_
-folder create one.
-
-image::preferences_createxmlfolder10.png[Creating a xml folder,pdfwidth=60%]
-
-image::preferences_createxmlfolder20.png[Creating a xml folder,pdfwidth=60%]
-
-Create
-an Android XML resource called
-_mypreferences.xml_
-in the xml folder.
-
-image::preferences_createxmlfolder30.png[Creating a preference resource file,pdfwidth=60%]
-
-image::preferences_createxmlfolder40.png[Creating a preference resource file,pdfwidth=60%]
-
+Create an Android XML resource called _mypreferences.xml_ in the xml folder.
 Add entries to this file similar to the following listing. 
 
 [source,xml]
@@ -67,19 +51,14 @@ include::res/preferences/OverviewActivity2.java[]
 	
 === Use the preference value to load the RSS feed
 
-To make use of our new preference activity and the preference
-values
-we adjust the
-`MyListFragment`
-class. The following code snippet
-demonstrates how you can access the
-preference value in a method which triggers an
-`AsyncTask`
-to load the feed from the Internet.
+The following code snippet demonstrates how you can access the preference value in a method.
 
 [source,java]
 ----
-include::res/preferences/UpdateListContent.java[]
+// if you use this in a service or activity you can use this
+// if you use this in a fragment use getActivity() or getContent() as parameter
+SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+String url = settings.getString("url", "http://www.vogella.com/article.rss");
 ----
 
 === Validating

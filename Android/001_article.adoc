@@ -30,7 +30,6 @@ include::210_exercise_dynamiclayout.adoc[]
 include::../web/advertisement/inBetween03.adoc[]
 
 include::300_using_resources.adoc[]
-include::320_assets.adoc[]
 include::340_exercise_resource_imageview.adoc[]
 include::420_scrollview.adoc[]
 include::440_temperature.adoc[]

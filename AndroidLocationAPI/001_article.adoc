@@ -1,4 +1,4 @@
-= Android Location API  - Tutorial
+= Android Location API with the fused location provider  - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
@@ -10,16 +10,11 @@ Version 4.2, 30.06.2016
 :vgwort: AndroidLocationAPI
 
 [abstract]
-Android Location API.
-This tutorial describes the usage of the Android Location API.
-It is based on Eclipse 3.7, Java 1.6 and Android 4.0 (Ice Cream Sandwich).
+This tutorial describes the usage of the fused location provider.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
-include::001_prerequisites.adoc[]
 include::010_overview.adoc[]
-include::../web/advertisement/inBetween01.adoc[]
 include::020_activategps.adoc[]
-include::../web/advertisement/inBetween02.adoc[]
 include::100_tutorial_locationapi.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
