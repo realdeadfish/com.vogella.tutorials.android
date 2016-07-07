@@ -4,11 +4,10 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel (c) 2014, 2016 vogella GmbH
+(c) 2014, 2016 vogella GmbH
 Version 14.3, 29.06.2016
 :docinfodir: ../
 :vgwort: AndroidPermissions
-
 
 [abstract]
 Developing Android applications.
