@@ -9,6 +9,7 @@ Version 14.3, 29.06.2016
 :docinfodir: ../
 :vgwort: AndroidPermissions
 
+
 [abstract]
 Developing Android applications.
 This tutorial describes the security and permissions model for Android applications.
