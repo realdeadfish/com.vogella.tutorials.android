@@ -11,7 +11,7 @@ An Android application consists of Android components, Java source and resource 
 The existing Android components are described in the following table.
 
 
-.Table Android application components
+.Android application components
 [cols="1,3"]
 |===
 |Component |Description
