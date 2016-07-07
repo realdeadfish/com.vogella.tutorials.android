@@ -3,7 +3,7 @@
 		
 Create a new Android project with the following data.
 		
-.Table New Android project (1,1)
+.New Android project (1,1)
 [cols="1,3"]
 |===
 | Property | Value

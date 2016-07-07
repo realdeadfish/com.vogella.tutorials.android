@@ -12,7 +12,7 @@ Open your layout file and add a radio group with two radio buttons to your layou
 
 Assign them based on the following table.
 
-.Table ID Assignment
+.ID Assignment
 |===
 |ID|View
 

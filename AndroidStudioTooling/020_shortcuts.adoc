@@ -2,7 +2,7 @@
 
 The following is a list of useful shortcuts for Android Studio.
 
-.Table Useful shortcuts
+.Useful shortcuts
 |===
 |Shortcut|Mac |Description
 

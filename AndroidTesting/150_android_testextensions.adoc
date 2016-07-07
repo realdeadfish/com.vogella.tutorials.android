@@ -37,7 +37,7 @@ include::examples/groups/SecondActivityFunctionalTest.java[]
 
 You can annotate tests with annotations. The Android test runner allows to filter these tests.
 
-.Table Annotations for filtering tests
+.Annotations for filtering tests
 |===
 |Annotation |Description
 

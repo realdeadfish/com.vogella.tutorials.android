@@ -15,7 +15,7 @@ Use the following data of input for your project.
 Project location and package name are derived from your input. 
 If you want another package name, press the small _Edit_ hyperlink.
 
-.Table Setting for your Android project
+.Setting for your Android project
 |===
 |Property |Value
 

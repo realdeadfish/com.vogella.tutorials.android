@@ -24,7 +24,7 @@ This requires that Gradle is installed on the machine or that you use the Gradle
 The wrapper downloads Gradle if necessary.
 Here is an overview of the important Android Gradle tasks:
 
-.Table Android Gradle build targets
+.Android Gradle build targets
 |===
 |Command |Description
 

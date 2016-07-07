@@ -21,7 +21,7 @@ It also contains the Android Runtime, as well as the core Java libraries for run
 
 Android is published in different version, which are listed in the following table.
 
-.Table Android versions
+.Android versions
 |===
 |Code name	|Version	|API level
 |Nougat	| N	| 24

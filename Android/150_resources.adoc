@@ -45,7 +45,7 @@ standard folder
 prefixes.
 
 
-.Table Resources
+.Resources
 [cols="1,1,4"]
 |===
 |Resource |Folder |Description

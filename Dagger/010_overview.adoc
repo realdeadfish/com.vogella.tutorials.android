@@ -47,7 +47,7 @@ The methods defined on the interface are available to access the generated objec
 A `@Component` interface defines the connection between provider of objects (modules) and the objects which expresses a dependency.
 The following table gives an overview of the usage of the Dagger annotations.
 
-.Table Annotation summary of Dagger 2
+.Annotation summary of Dagger 2
 |===
 |Annotation |Usage
 

@@ -24,7 +24,7 @@ The `onData()` method returns an object of type `DataInteraction`.
 		
 The following table describes the available matchers.
 
-.Table Available ViewMatcher
+.Available ViewMatcher
 |===
 |ViewMatcher|Description
 
