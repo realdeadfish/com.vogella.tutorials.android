@@ -1,82 +1,49 @@
 == Life cycle
 
 === Life cycle events related to the window
+
 A view is displayed if it is attached to a layout hierarchy
 which is attached to a window. A view has several life cycle hooks.
 
 
-The
-`onAttachedToWindow()`
-is called once the window is available.
+The `onAttachedToWindow()` is called once the window is available.
 
 
-The
-`onDetachedFromWindow()`
-is used when the view is removed from its parent (and if the parent
-is
-attached to a window). This happens for example if the activity is
-recycled (e.g. via the
-`finished()`
-method call) or if the view is recycled in a
-`ListView`
-.
+The `onDetachedFromWindow()` is used when the view is removed from its parent (and if the parent is attached to a window). 
+This happens for example if the activity is recycled (e.g. via the `finished()` method call) or if the view is recycled.
 
-The
-`onDetachedFromWindow()`
-method can be used to stop animations and to clean up resources used
-by the view.
+The `onDetachedFromWindow()` method can be used to stop animations and to clean up resources used by the view.
 
 
-<section id="lifecycle_traveals">
-<title>Traversal life cycle events
+=== Traversal life cycle events
 
-Traversals life cycle events consists of
-_Animate_
-,
-_Measure_
-,
-_Layout_
-and
-_Draw_
-.
+Traversals life cycle events consists of _Animate_, _Measure_, _Layout_ and _Draw_.
 
 
 image::view_traversallifecycle10.png[View traversals life cycle, pdtwidth=60%]
 
 
-All views must know how to measure and layout themselves. The
-`requestLayout()`
-method call tells the view to measure and layout itself. As this
-operation may influence the layout of other views it calls also
-`requestLayout()`
-of its parent.
+All views must know how to measure and layout themselves. 
+The `requestLayout()` method call tells the view to measure and layout itself. 
+As this operation may influence the layout of other views it calls also `requestLayout()` of its parent.
 
 [TIP]
 ====
-This recursive call is the reason why you should not nestle
-layout to deeply as the measure and layout operation might be
-expensive if a lot of hierarchies are re-calculated.
+This recursive call is the reason why you should not nestle layout to deeply.
+The measure and layout operation might be expensive if a lot of hierarchies are re-calculated.
 ====
 
-The
-`onMeasure()`
-method determines the size for the view and its children. It must set
-the dimension via the
-`setMeasuredDimension()`
-method is this method call before returning.
+The `onMeasure()` method determines the size for the view and its children. 
+It must set the dimension via the `setMeasuredDimension()` method in this method call before returning.
 
 
-The
-`onLayout()`
-positions the views based on the result of the
-`onMeasure()`
-method call. This call happens typically once, which
-`onMeasure()`
-can happens once.
+The `onLayout()` positions the views based on the result of the `onMeasure()` method call. 
+This call happens typically once, while `onMeasure()` can happen more than once.
 
 === Activity life cycle
+
 Views don't have access to the life cycle events of the activities. 
-If views want to get informed about these events you should create an interface in the view which you call in the life cycle methods of the activity.
+If views want to get informed about these events, you should create an interface in the view which you call in the life cycle methods of the activity.
 
 
 

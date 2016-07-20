@@ -49,7 +49,7 @@ Change the layout file used by the activity to the following.
 ----
 include::res/compound/activity_main.xml[]
 ----		
-		
+	
 
 	
 === Create compound view
