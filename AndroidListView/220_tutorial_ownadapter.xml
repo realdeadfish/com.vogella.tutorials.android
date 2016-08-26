@@ -41,10 +41,10 @@
 				<imageobject>
 					<imagedata fileref="images/listlayoutIndividual10.png"
 						scale="60" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>ListView with different elements for each row</phrase>
 				</textobject>
-			</mediaobject>
+			
 		
 	

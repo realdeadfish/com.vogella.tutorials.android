@@ -1,0 +1,2 @@
+adb shell am instrument 
+  -w de.vogella.android.test.tester/android.test.InstrumentationTestRunner

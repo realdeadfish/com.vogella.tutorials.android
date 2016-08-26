@@ -40,11 +40,11 @@
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/listview_contextual10.png" scale="60"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Using the contextual ActionBar on ListView</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 

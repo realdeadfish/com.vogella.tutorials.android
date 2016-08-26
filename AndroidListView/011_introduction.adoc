@@ -60,11 +60,11 @@
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/listview_line10.png"/>
-				</imageobject>
+				
 				<textobject>
 					<phrase>Listview example layout</phrase>
 				</textobject>
-			</mediaobject>
+			
 		
 		
 			A layout file for a such a line might look like the following.

@@ -11,11 +11,11 @@
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/listview_scheme10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Listview example</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		Typically the user interacts with the list via the
@@ -34,10 +34,10 @@
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/listview_scheme20.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Listview example</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 

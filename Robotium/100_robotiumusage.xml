@@ -1,0 +1,23 @@
+<section id="robotium_usage">
+	<title>Example Robotium tests</title>
+	<para>The following code demonstrates the usage of Robotium in an
+		activity user interface test.</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/api/Initialize.java" />
+		</programlisting>
+	</para>
+
+	<para>The following shows another example for the Robotium test method
+		which tests a list implementation.
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/robotium/API.java" />
+		</programlisting>
+	</para>
+</section>

@@ -68,11 +68,11 @@
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/adapter10.png" scale="60" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Adapter provides data and defines the layout per row</phrase>
 				</textobject>
-			</mediaobject>
+			
 		
 
 		

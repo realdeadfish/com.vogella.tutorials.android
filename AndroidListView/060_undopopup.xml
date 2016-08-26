@@ -27,11 +27,11 @@
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/undobutton02.png"/>
-				</imageobject>
+				
 				<textobject>
 					<phrase>Undo button</phrase>
 				</textobject>
-			</mediaobject>
+			
 		
 
 
@@ -93,11 +93,11 @@
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/undobutton10.png"/>
-				</imageobject>
+				
 				<textobject>
 					<phrase>Undo button</phrase>
 				</textobject>
-			</mediaobject>
+			
 		
 
 

@@ -1,0 +1,4 @@
+dependencies {
+    // Unit testing dependencies
+    androidTestCompile 'com.jayway.android.robotium:robotium:5.4.12'
+}

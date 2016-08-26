@@ -42,10 +42,10 @@
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/listactivity10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>ListActivity shows the items</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 

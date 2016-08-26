@@ -1,0 +1,54 @@
+<section id="robotium">
+	<title>Robotium</title>
+	<para>
+		<wordasword>Robotium</wordasword>
+		is an extension of the Android test framework and was
+		created
+		to make
+		it
+		easy to write
+		user interface tests for
+		Android
+		applications.
+		Robotium
+		tests inherit from
+		<code>ActivityInstrumentationTestCase2</code>
+		and
+		allows you to define test
+		cases
+		across
+		Android
+		activities.
+	</para>
+	<note>
+		<para>Robotium tests perceive the application under test as black box,
+			i.e., it only interacts with the user interface
+			and not via the
+			internal code of the application.
+		</para>
+	</note>
+	<para>
+		The homepage of Robotium is currently located under the following URL:
+		<ulink url="http://code.google.com/p/robotium/">Robotium homepage</ulink>
+		but is moving to
+		<ulink url="https://github.com/RobotiumTech/">Robotium at Github</ulink>
+		.
+	</para>
+
+	<para>
+		Robotium extends the Android test framework to make it simpler to
+		write tests. The main class for testing with Robotium
+		is
+		<code>Solo</code>
+		.
+	</para>
+
+	<para>
+		<code>Solo</code>
+		is initialized with the
+		instrumentation of the testcase and
+		the first
+		activity to test.
+	</para>
+
+</section>

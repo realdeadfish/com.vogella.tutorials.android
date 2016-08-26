@@ -39,11 +39,11 @@
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/listlayout10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Displaying a ListView with a own layout</phrase>
 			</textobject>
-		</mediaobject>
+		
 
 	
 

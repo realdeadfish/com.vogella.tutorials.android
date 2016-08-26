@@ -15,11 +15,11 @@
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="images/interactive10.png"/>
-				</imageobject>
+				
 				<textobject>
 					<phrase>ListView with Interaction and full model</phrase>
 				</textobject>
-			</mediaobject>
+			
 		
 		Selection is just one possible example but you can imange other
 			interaction between your row and model.

@@ -1,0 +1,55 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	
+
+	<section id="resources_databinding">
+		<title>Android Resources</title>
+		
+		<para>
+			<ulink
+				url="http://www.vogella.com/tutorials/AndroidListView/article.html">
+				Android ListView and ListActivity</ulink>
+		</para>
+		<para>
+			<ulink
+				url="http://www.vogella.com/tutorials/AndroidLocationAPI/article.html">
+				Android Location API and Google Maps</ulink>
+		</para>
+			<para>
+			<ulink
+				url="http://www.vogella.com/tutorials/AndroidIntent/article.html">
+				Android Intents</ulink>
+		</para>
+		<para>
+			<ulink
+				url="http://www.vogella.com/tutorials/AndroidNetworking/article.html">
+				Android and Networking</ulink>
+		</para>
+		<para>
+			<ulink url="http://code.google.com/intl/de-DE/android/">
+				Android Homepage</ulink>
+		</para>
+		<para>
+			<ulink url="http://developer.android.com">
+				Android Developer Homepage</ulink>
+		</para>
+		<para>
+			<ulink url="http://code.google.com/p/android/issues/list">
+				Android Issues / Bugs</ulink>
+		</para>
+		<para>
+			<ulink url="http://groups.google.com/group/android-developers">
+				Android Google Groups</ulink>
+		</para>
+		<para>
+			<ulink url="http://android-ui-utils.googlecode.com/hg/asset-studio/dist/index.html">
+				Android Assets Studio</ulink>
+		</para>
+	
+
+	</section>
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+
+
+</section>

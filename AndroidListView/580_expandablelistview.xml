@@ -28,11 +28,11 @@
 				<imageobject>
 					<imagedata fileref="images/expandablelistview10.png"
 						scale="30" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Screenshot of ExpandableListView</phrase>
 				</textobject>
-			</mediaobject>
+			
 		
 		
 			Create a project called
