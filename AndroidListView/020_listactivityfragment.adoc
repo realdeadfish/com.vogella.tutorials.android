@@ -93,7 +93,7 @@
 				into your layout, the application crashes once you try to display
 				the activity or the fragment.
 			
-		</warning>
+		
 	
 	<section id="listactivity_emptyview">
 		<title>Placeholder for an empty list

@@ -104,7 +104,7 @@
 				`StackView`
 				.
 			
-		</tip>
+		
 	
 	<section id="androidlists_filtersort">
 		<title>Filtering and sorting

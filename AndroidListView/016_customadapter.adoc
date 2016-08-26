@@ -33,7 +33,7 @@
 				`BaseAdapter`
 				directly.
 			
-		</tip>
+		
 	
 	<section id="adapterown_inflating">
 		<title>Preparing a row for the list
@@ -101,7 +101,7 @@
 				`
 				method call.
 			
-		</note>
+		
 
 		
 			After the adapter inflated the layout, it searches for the relevant

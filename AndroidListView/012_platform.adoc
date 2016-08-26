@@ -76,7 +76,7 @@
 				class,
 				but not for arrays.
 			
-		</warning>
+		
 	
 
 
