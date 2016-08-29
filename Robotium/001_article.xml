@@ -35,8 +35,8 @@ Version 0.3, 06.07.2016
 				the
 				Android Robotium testing framework.
 			
-		</abstract>
-	</articleinfo>
+  
+  
 	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
