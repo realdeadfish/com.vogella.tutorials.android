@@ -30,20 +30,20 @@
 		</abstract>
 	</articleinfo>
 	
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_installation.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_robotiumusage.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="110_robotiumapi.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="120_runningtests.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="220_tutorial_robotium.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/Robotium"?>
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::020_installation.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::100_robotiumusage.adoc[]
+include::110_robotiumapi.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::120_runningtests.adoc[]
+include::220_tutorial_robotium.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+
 	
 	
-</article>
