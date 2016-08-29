@@ -1,7 +1,7 @@
 <section id="listview_undoaction">
-	<title>Implementing undo for an action
+== Implementing undo for an action
 	<section id="listview_undoaction1">
-		<title>When should you offer an undo action?
+=== When should you offer an undo action?
 		
 			It is good practice to allow the user to undo critical actions.
 			Such a critical action is, for example, the deletion of list items.
@@ -24,9 +24,7 @@
 			behavior.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/undobutton02.png"/>
+image::undobutton02.png[]
 				
 				<textobject>
 					<phrase>Undo button</phrase>
@@ -37,7 +35,7 @@
 
 	
 	<section id="listview_undoaction2">
-		<title>Example
+=== Example
 		
 			The following description contains an example for implementing
 			an undo action. It uses an animation to phase out the
@@ -90,9 +88,7 @@
 			the button bar becomes visible for 5 seconds.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/undobutton10.png"/>
+image::undobutton10.png[]
 				
 				<textobject>
 					<phrase>Undo button</phrase>

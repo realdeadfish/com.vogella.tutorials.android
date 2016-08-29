@@ -1,7 +1,7 @@
 <section id="adapterown" role="wrapper">
-	<title>Custom adapter implementations
+== Custom adapter implementations
 	<section id="adapterown_custom">
-		<title>Developing a custom adapter
+=== Developing a custom adapter
 		
 			The
 			`ArrayAdapter`
@@ -36,7 +36,7 @@
 		
 	
 	<section id="adapterown_inflating">
-		<title>Preparing a row for the list
+=== Preparing a row for the list
 		
 			The adapter needs to create a layout for each row of the list.
 			The
@@ -65,9 +65,7 @@
 		
 
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/adapter10.png" scale="60" />
+image::adapter10.png" scale="60" />
 				
 				<textobject>
 					<phrase>Adapter provides data and defines the layout per row</phrase>
@@ -117,7 +115,7 @@
 	
 
 	<section id="adapterown_example">
-		<title>Example for a custom adapter
+=== Example for a custom adapter
 		
 			The following code shows an implementation of a custom adapter. This
 			adapter
@@ -141,7 +139,7 @@
 
 
 	<section id="adapterown_interaction">
-		<title>Updating the data model from the adapter
+=== Updating the data model from the adapter
 
 		
 			The row can also contain

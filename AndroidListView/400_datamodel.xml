@@ -1,7 +1,7 @@
 <section id="listviewselection">
-	<title>Selecting multiple items in the ListView
+== Selecting multiple items in the ListView
 	<section id="listviewselection_data">
-		<title>Interaction between the model and Listview
+=== Interaction between the model and Listview
 		
 			Frequently you need to select items in your
 			`ListView`
@@ -12,9 +12,7 @@
 			level.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/interactive10.png"/>
+image::interactive10.png[]
 				
 				<textobject>
 					<phrase>ListView with Interaction and full model</phrase>
@@ -52,7 +50,7 @@
 
 
 	<section id="listadvanced_interactive">
-		<title>Tutorial: Domain Model and list view rows interaction
+=== Tutorial: Domain Model and list view rows interaction
 		
 			Continue to use the
 			`de.vogella.android.listactivity`

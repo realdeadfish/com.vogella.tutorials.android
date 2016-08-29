@@ -1,14 +1,14 @@
 
 <section id="robotium_api">
-	<title>Robotium API</title>
+== Robotium API
 
-	<para>
-		<code>Solo</code>
+	
+		`Solo`
 		provides methods to call the Android
 		user interface. The following
 		table lists several of these methods.
 		<table frame='all'>
-			<title>Test methods on Solo</title>
+	=== Test methods on Solo
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="3*" />
 				<colspec colname='c2' colwidth="2*" />
@@ -111,12 +111,12 @@
 						</entry>
 						<entry>
 							Saves a screenshot on the device in the
-							<filename class="directory">/sdcard/Robotium-Screenshots/</filename>
+							<filename class="directory">/sdcard/Robotium-Screenshots/`
 							folder. Requires the
-							<code>android.permission.WRITE_EXTERNAL_STORAGE</code>
+							`android.permission.WRITE_EXTERNAL_STORAGE`
 							permission
 							in the
-							<filename>AndroidManifest.xml</filename>
+							`AndroidManifest.xml`
 							of the application under
 							test.
 						</entry>
@@ -131,26 +131,26 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
-	<para>
+	
+	
 		Via the
-		<code>solo.setActivityOrientation(Solo.LANDSCAPE)</code>
+		`solo.setActivityOrientation(Solo.LANDSCAPE)`
 		method you can set the orientation of the activity.
-	</para>
+	
 
 
 
-	<para>
+	
 		To test internationalized strings you can access the string
 		resources
 		file from the project under test via the
-		<code>getString(id)</code>
+		`getString(id)`
 		method. For example:
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/robotium/getstring.txt" />
-		</programlisting>
-	</para>
+				parse="text" href="./examples/robotium/getstring.txt[]
+----
+	
 </section>

@@ -1,5 +1,5 @@
 <section id="listview_actionbar">
-	<title>Contextual action mode for ListViews
+== Contextual action mode for ListViews
 	
 		The following assumes that you already familiar with the concept of
 		the
@@ -27,8 +27,8 @@
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/actionbar/MyListActivityActionbar.java" />
-		</programlisting>
+				parse="text" href="./examples/actionbar/MyListActivityActionbar.java[]
+----
 	
 	
 		If you start your application and long press on an item in the
@@ -37,9 +37,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/listview_contextual10.png" scale="60"/>
+image::listview_contextual10.png" scale="60"/>
 			
 			<textobject>
 				<phrase>Using the contextual ActionBar on ListView</phrase>

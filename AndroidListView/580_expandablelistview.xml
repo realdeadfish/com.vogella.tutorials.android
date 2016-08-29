@@ -1,7 +1,7 @@
 <section id="expandablelistview">
-	<title>Implementing an expandable ListView
+== Implementing an expandable ListView
 	<section id="expandablelistview_concept">
-		<title>ExpandableListView
+=== ExpandableListView
 		
 			The
 			`ExpandableListView`
@@ -19,14 +19,12 @@
 		
 	
 	<section id="expandablelistview_example">
-		<title>ExpandableListView example
+=== ExpandableListView example
 		In the following example you create an expandable listview
 			similar to the following screenshot.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/expandablelistview10.png"
+image::expandablelistview10.png"
 						scale="30" />
 				
 				<textobject>

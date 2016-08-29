@@ -1,7 +1,7 @@
 <section id="listactivity" role="wrapper">
-	<title>ListActivity and ListFragment
+== ListActivity and ListFragment
 	<section id="listactivity_overview">
-		<title>Default container for using ListView
+=== Default container for using ListView
 		
 			Android provides specialized fragment and activity classes to
 			simplify list
@@ -64,7 +64,7 @@
 	
 
 	<section id="listactivity_layout">
-		<title>ListActivity and custom layout
+=== ListActivity and custom layout
 		
 			You can use a custom layout with
 			`ListActivity`
@@ -96,7 +96,7 @@
 		
 	
 	<section id="listactivity_emptyview">
-		<title>Placeholder for an empty list
+=== Placeholder for an empty list
 		
 			You can also use a view with the
 			`@android:id/empty`

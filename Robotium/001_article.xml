@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Android user interface testing with Robotium - Tutorial</title>
+=== Android user interface testing with Robotium - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -16,17 +16,17 @@
 		</copyright>
 		<pubdate>29.05.2015</pubdate>
 		<releaseinfo>
-			<para>Version 1.7</para>
+			Version 1.7
 
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Android Robotium</title>
-			<para> This tutorial describes how to test Android
+	=== Android Robotium
+			 This tutorial describes how to test Android
 				applications with
 				the
 				Android Robotium testing framework.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

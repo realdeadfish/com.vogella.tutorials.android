@@ -1,5 +1,5 @@
 <section id="androidlists_overview">
-	<title>Using lists in Android
+== Using lists in Android
 	
 		The display of elements in a list is a very common pattern in
 		mobile
@@ -8,9 +8,7 @@
 		them. Such an activity is depicted in the following picture.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/listview_scheme10.png"/>
+image::listview_scheme10.png[]
 			
 			<textobject>
 				<phrase>Listview example</phrase>
@@ -31,9 +29,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/listview_scheme20.png"/>
+image::listview_scheme20.png[]
 			
 			<textobject>
 				<phrase>Listview example</phrase>

@@ -1,5 +1,5 @@
 <section id="exercise_listsactivity_simple">
-	<title>Exercise: Using ListView and ListActivity
+== Exercise: Using ListView and ListActivity
 	
 		The following exercise demonstrates how to use a
 		`ListView`
@@ -34,14 +34,12 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/lists/MyListActivity.java" />
-		</programlisting>
+				parse="text" href="./examples/lists/MyListActivity.java[]
+----
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/listactivity10.png"/>
+image::listactivity10.png[]
 			
 			<textobject>
 				<phrase>ListActivity shows the items</phrase>

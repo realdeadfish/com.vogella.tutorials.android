@@ -1,5 +1,5 @@
 <section id="ipc">
-	<title>Parceable
+== Parceable
 	
 		A
 		_Parceable_
@@ -20,8 +20,8 @@
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/parcel/Student.java" />
-		</programlisting>
+				parse="text" href="./examples/parcel/Student.java[]
+----
 	
 
 	Once you have defined this, you can put it into the extra of an
@@ -29,8 +29,8 @@
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/parcel/intent.java" />
-		</programlisting>
+				parse="text" href="./examples/parcel/intent.java[]
+----
 	
 
 	To access the parcel on the other side, you can use the following
@@ -38,8 +38,8 @@
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/parcel/getParcel.java" />
-		</programlisting>
+				parse="text" href="./examples/parcel/getParcel.java[]
+----
 	
 
 

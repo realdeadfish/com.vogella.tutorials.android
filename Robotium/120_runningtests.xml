@@ -1,21 +1,21 @@
 <section id="robotium_executingtests">
-	<title>Executing tests</title>
-	<para>
+== Executing tests
+	
 		To run a Robotium test use the same approach you use to run  Eclipse, right-click the test class and
 		select
 		<menuchoice>
 			<guimenu>Run-As</guimenu>
 			<guisubmenu>Android JUnit Test</guisubmenu>
 		</menuchoice>
-	</para>
-	<para> You can run Robotium tests from the command line, too.</para>
+	
+	 You can run Robotium tests from the command line, too.
 
-	<para>
+	
 		<programlisting language="bourne">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/robotium/background.txt" />
-		</programlisting>
-	</para>
+				parse="text" href="./examples/robotium/background.txt[]
+----
+	
 	
 
 

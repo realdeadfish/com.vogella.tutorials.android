@@ -1,8 +1,8 @@
 <section id="listview_defaultadapter" role="wrapper">
-	<title>Default adapter
+== Default adapter
 
 	<section id="listview_defaultadapter">
-		<title>Default platform adapter
+=== Default platform adapter
 		
 			Android provides default
 			adapter implementations; the most important
@@ -25,7 +25,7 @@
 	
 
 	<section id="arrayAdapter">
-		<title>Using ArrayAdapter
+=== Using ArrayAdapter
 		
 			The
 			`ArrayAdapter`
@@ -81,7 +81,7 @@
 
 
 	<section id="listview_listviewexample">
-		<title>ListView example with ArrayAdapter
+=== ListView example with ArrayAdapter
 		
 			The following listing shows a layout file called
 			_activity_listviewexampleactivity.xml_

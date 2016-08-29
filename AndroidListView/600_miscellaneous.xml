@@ -1,7 +1,7 @@
 <section id="miscellaneous">
-	<title>Tutorial: Miscellaneous
+== Tutorial: Miscellaneous
 	<section id="miscellaneous_longclick">
-		<title>Adding a longclick listener to the list items
+=== Adding a longclick listener to the list items
 		
 			You can also add a
 			`LongItemClickListener`
@@ -20,7 +20,7 @@
 
 
 	<section id="miscellaneous_headerfooter">
-		<title>Header and footer
+=== Header and footer
 		
 			You can of course put arbitrary
 			views

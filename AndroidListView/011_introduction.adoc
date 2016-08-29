@@ -1,7 +1,7 @@
 <section id="androidlists" role="wrapper">
-	<title>Android and the ListView widget
+== Android and the ListView widget
 	<section id="androidlists_view">
-		<title>Views for handling lists
+=== Views for handling lists
 		
 			Android provides the
 			`ListView`
@@ -16,7 +16,7 @@
 		
 	
 	<section id="androidlists_inputtype">
-		<title>Possible input types for lists
+=== Possible input types for lists
 		
 			The input to the list (items in the list) can
 			be arbitrary Java
@@ -40,7 +40,7 @@
 
 
 	<section id="androidlists_adapterintro">
-		<title>Adapters
+=== Adapters
 		
 			An
 			_adapter_
@@ -57,9 +57,7 @@
 			following graphic.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/listview_line10.png"/>
+image::listview_line10.png[]
 				
 				<textobject>
 					<phrase>Listview example layout</phrase>
@@ -107,7 +105,7 @@
 		
 	
 	<section id="androidlists_filtersort">
-		<title>Filtering and sorting
+=== Filtering and sorting
 		
 			Filtering and sorting of the data is handled by the adapter. You
 			need to
@@ -117,7 +115,7 @@
 	
 
 	<section id="adapterown_updates">
-		<title>Data updates in the adapter
+=== Data updates in the adapter
 
 		
 			The
@@ -133,7 +131,7 @@
 	
 
 	<section id="listview_adapterlistener">
-		<title>Listener
+=== Listener
 		
 			To react to selections in the list, set an `OnItemClickListener` to
 			your

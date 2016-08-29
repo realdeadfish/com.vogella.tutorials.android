@@ -1,7 +1,7 @@
 <chapter id="android_updatetodate">
-	<title>Warning messages and screenshots
+== Warning messages and screenshots
 	<section id="android_warnings">
-		<title>Warning messages
+=== Warning messages
 
 		
 			The Android development tools show warnings in certain cases.
@@ -31,7 +31,7 @@
 	
 
 	<section id="android_screenshots">
-		<title>Screenshots and description
+=== Screenshots and description
 
 		Google is actively developing the tooling for Android
 			development. Therefore screenshots or certain

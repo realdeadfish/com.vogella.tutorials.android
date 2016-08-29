@@ -1,5 +1,5 @@
 <section id="listsactivity_layout">
-	<title>Exercise: ListActivity with custom layout
+== Exercise: ListActivity with custom layout
 	 In our
 		example your will define your layout for the rows and use
 		it in your adapter.
@@ -19,8 +19,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/listlayout/rowlayout.xml" />
-		</programlisting>
+				parse="text" href="./examples/listlayout/rowlayout.xml[]
+----
 	
 
 	
@@ -32,13 +32,11 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/listlayout/MyListActivity.java" />
-		</programlisting>
+				parse="text" href="./examples/listlayout/MyListActivity.java[]
+----
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/listlayout10.png"/>
+image::listlayout10.png[]
 			
 			<textobject>
 				<phrase>Displaying a ListView with a own layout</phrase>

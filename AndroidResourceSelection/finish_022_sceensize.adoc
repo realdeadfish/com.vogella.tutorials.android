@@ -1,5 +1,5 @@
 <section id="screensize">
-	<title>Supported Screen Size
+== Supported Screen Size
 	
 		After defining your resources you should define the supported
 		screen sizes in your _AndroidManifest.xml_ file.

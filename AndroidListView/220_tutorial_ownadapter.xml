@@ -1,5 +1,5 @@
 <section id="tutorial_ownadapter">
-	<title>Tutorial: Implementing your customer adapter
+== Tutorial: Implementing your customer adapter
 		The following uses
 			two images "no.png" and "ok.png". I placed it
 			in the
@@ -37,9 +37,7 @@
 			icons for the certain elements.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/listlayoutIndividual10.png"
+image::listlayoutIndividual10.png"
 						scale="60" />
 				
 				<textobject>

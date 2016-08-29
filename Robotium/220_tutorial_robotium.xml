@@ -1,8 +1,8 @@
 <section id="tutorial_robotium" role="wrapper">
-	<title>Exercise: Write Robotium tests</title>
+== Exercise: Write Robotium tests
 	<section id="tutorial_robotium1">
-		<title>Exercise: Writing Robotium tests</title>
-		<para>
+=== Exercise: Writing Robotium tests
+		
 			Create an Android project called
 			<wordasword>com.vogella.android.test.robotium.target</wordasword>
 			. Display three buttons in the first
@@ -12,60 +12,60 @@
 			a
 			list.
 
-		</para>
+		
 	</section>
 
 	<section id="tutorial_robotium2">
-		<title>Create test project and add Robotium</title>
-		<para>
+=== Create test project and add Robotium
+		
 			Create a test project called
 			<wordasword>com.vogella.android.test.robotium.targetTest</wordasword>
 			. Create a folder called
-			<filename>libs</filename>
+			`libs`
 			and place the Robotium
-			<filename>JAR</filename>
+			`JAR`
 			file into it.
-		</para>
+		
 
 
 		<tip>
-			<para>
+			
 				If you place the
-				<filename>JAR</filename>
+				`JAR`
 				file in this folder, the Android
 				tooling for Eclipse adds it
 				automatically to the build
 				path of your project. Putting
 				the
-				<filename>JAR</filename>
+				`JAR`
 				into a folder with a different
 				name, frequently
 				causes a
-				<code>ClassNotFoundExeception</code>
+				`ClassNotFoundExeception`
 				for the Solo class.
-			</para>
+			
 		
 
 	</section>
 	<section id="tutorial_robotium3">
-		<title>Create test project and add Robotium library</title>
-		<para>Define the following test class.
-		</para>
-		<para>
+=== Create test project and add Robotium library
+		Define the following test class.
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/robotium/SimpleActivityTest.java" />
 			</programlisting>
-		</para>
+		
 
 	</section>
 
 	<section id="tutorial_robotium4">
-		<title>Fix your application</title>
-		<para>Assume that the test is your specification and adjust your
+=== Fix your application
+		Assume that the test is your specification and adjust your
 			Android application
 			until the test passes correctly.
-		</para>
+		
 	</section>
 
 </section>

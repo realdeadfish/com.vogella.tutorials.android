@@ -1,7 +1,7 @@
 <section id="adapterperformance" role="wrapper">
-	<title>ListViews and performance
+== ListViews and performance
 	<section id="adapterperformance_motivation">
-		<title>Motivation
+=== Motivation
 		
 			Performance is especially important on Android as users expect
 			fast reaction times. Compared to desktop computers an Android
@@ -16,7 +16,7 @@
 		
 	
 	<section id="adapterperformance_problems">
-		<title>Time consuming operations
+=== Time consuming operations
 		
 			Every
 			view
@@ -39,7 +39,7 @@
 
 	
 	<section id="adapterperformance_convertview">
-		<title>Avoiding layout inflation and object creation
+=== Avoiding layout inflation and object creation
 		
 			A
 			`ListView`
@@ -87,7 +87,7 @@
 
 	
 	<section id="adapterperformance_holder">
-		<title>View holder pattern
+=== View holder pattern
 		
 			A
 			_ViewHolder_
@@ -132,7 +132,7 @@
 
 
 	<section id="adapterperformance_example">
-		<title>Example
+=== Example
 		
 			The following code shows a performance optimized adapter
 			implementation which reuses existing views and implements the holder

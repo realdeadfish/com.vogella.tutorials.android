@@ -1,5 +1,5 @@
 <section id="servicecommunication_ipc2">
-	<title>AIDL for services in a different process
+== AIDL for services in a different process
 	
 		To bind to a
 		service

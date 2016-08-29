@@ -1,17 +1,18 @@
 <section id="installation_robotium">
-	<title>Installation of Robotium</title>
-	<para>
+== Installation of Robotium
+	
 		To use Robotium in your Android test project, you need to add a dependency to the latest Robotium release to your
 		build file.
-	</para>
-	<para>
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gradle/simple.gradle" />
-		</programlisting>
-	</para>
+	
+	
+[source,java]
+----
+include::res/gradle/simple.gradle[]
+----
+	
 
-	<para>At the time of this writing the latest Robotium version is 5.4.1.
-	</para>
+	At the time of this writing the latest Robotium version is 5.4.1.
+	
 
 
 

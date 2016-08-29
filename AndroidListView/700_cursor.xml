@@ -1,5 +1,5 @@
 <section id="cursor">
-	<title>SimpleCursorAdapter
+== SimpleCursorAdapter
 	
 		In case you work with a content provider or directly with the database
 		you can use the
@@ -23,8 +23,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/cursor/MyListActivity.java" />
-		</programlisting>
+				parse="text" href="./examples/cursor/MyListActivity.java[]
+----
 	
 	 Make sure you give your application the permission to read the
 		contacts. (Uses Permissions "android.permission.READ_CONTACTS" in
