@@ -7,7 +7,7 @@
 			http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_createimage">Creating an image asset</ulink>
 			to learn how to create an image asset with Android Studio.
 		
-	</section>
+
 
 	<section id="androidstudio_creatingresourcefolder">
 === Creating a resource folder
@@ -16,7 +16,7 @@
 			http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_creatingresourcefolder">Creating a new resource folder</ulink>
 			to learn how to a new resource file with Android Studio.
 		
-	</section>
+
 	<section id="androidstudio_creatingresourcefile">
 === Creating a resource file
 		
@@ -24,7 +24,7 @@
 			http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_creatingresourcefile">Creating a new resource file</ulink>
 			to learn how to a new resource file with Android Studio.
 		
-	</section>
+
 	<section id="androidstudio_androidstudio_createmenu">
 === Add a new menu XML resource
 		
@@ -32,7 +32,7 @@
 			http://www.vogella.com/tutorials/AndroidStudioTooling/article.html#androidstudio_createmenu">Add a new menu XML resource</ulink>
 			to learn how to a new XML menu resource with Android Studio.
 		
-	</section>
+
 	<section id="androidsupportlibrary_avoiding_remove">
 === Remove the usage of the support library
 		
@@ -40,6 +40,5 @@
 			http://www.vogella.com/tutorials/AndroidSupportLibrary/article.html#androidsupportlibrary_avoiding_remove">Android support library</ulink>
 			how to remove the usage of the support library.
 		
-	</section>
 
-</section>
+

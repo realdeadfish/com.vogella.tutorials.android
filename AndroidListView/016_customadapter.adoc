@@ -132,8 +132,8 @@ image::adapter10.png" scale="60" />
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/MySimpleArrayAdapter.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/MySimpleArrayAdapter.java[]
+----
 		
 	
 

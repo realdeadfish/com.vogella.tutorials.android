@@ -66,8 +66,8 @@ image::interactive10.png[]
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/interactive/Model.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/interactive/Model.java[]
+----
 		
 		
 			Create the following new layout file called
@@ -76,8 +76,8 @@ image::interactive10.png[]
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/interactive/rowbuttonlayout.xml" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/interactive/rowbuttonlayout.xml[]
+----
 		
 
 		
@@ -100,8 +100,8 @@ image::interactive10.png[]
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/interactive/InteractiveArrayAdapter.java" />
-			</programlisting>
+					href="./examples/interactive/InteractiveArrayAdapter.java[]
+----
 		
 		
 			Finally change your
@@ -110,8 +110,8 @@ image::interactive10.png[]
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/interactive/MyList.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/interactive/MyList.java[]
+----
 		
 		 If you start your app you should be able to flag items. These
 			changes will be reflected in your model.

@@ -13,7 +13,7 @@
 			list.
 
 		
-	</section>
+
 
 	<section id="tutorial_robotium2">
 === Create test project and add Robotium
@@ -46,7 +46,7 @@
 			
 		
 
-	</section>
+
 	<section id="tutorial_robotium3">
 === Create test project and add Robotium library
 		Define the following test class.
@@ -54,11 +54,11 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/robotium/SimpleActivityTest.java" />
-			</programlisting>
+					href="./examples/robotium/SimpleActivityTest.java[]
+----
 		
 
-	</section>
+
 
 	<section id="tutorial_robotium4">
 === Fix your application
@@ -66,6 +66,5 @@
 			Android application
 			until the test passes correctly.
 		
-	</section>
 
-</section>
+

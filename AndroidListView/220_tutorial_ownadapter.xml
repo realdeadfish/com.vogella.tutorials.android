@@ -18,8 +18,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/simpleadapter/MySimpleArrayAdapter.java" />
-			</programlisting>
+					parse="text" href="./examples/simpleadapter/MySimpleArrayAdapter.java[]
+----
 		
 		
 			To use this adapter, change the
@@ -30,8 +30,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/simpleadapter/MyListActivity.java" />
-			</programlisting>
+					parse="text" href="./examples/simpleadapter/MyListActivity.java[]
+----
 		
 		 If you run this example you should get a list with different
 			icons for the certain elements.

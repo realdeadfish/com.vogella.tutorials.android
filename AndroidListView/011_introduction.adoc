@@ -70,8 +70,8 @@ image::listview_line10.png[]
 		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/rowlayout_complex.xml" />
-			</programlisting>
+					parse="text" href="./examples/snippets/rowlayout_complex.xml[]
+----
 		
 
 		
@@ -141,8 +141,8 @@ image::listview_line10.png[]
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/onitemclicklistener.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/onitemclicklistener.java[]
+----
 		
 	
 

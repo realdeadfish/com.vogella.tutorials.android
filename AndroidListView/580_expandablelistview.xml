@@ -48,8 +48,8 @@ image::expandablelistview10.png"
 		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/expandablelistview/activity_main.xml" />
-			</programlisting>
+					parse="text" href="./examples/expandablelistview/activity_main.xml[]
+----
 		
 
 		
@@ -61,8 +61,8 @@ image::expandablelistview10.png"
 		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/expandablelistview/listrow_group.xml" />
-			</programlisting>
+					parse="text" href="./examples/expandablelistview/listrow_group.xml[]
+----
 		
 		
 			The last required layout is
@@ -73,8 +73,8 @@ image::expandablelistview10.png"
 		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/expandablelistview/listrow_details.xml" />
-			</programlisting>
+					parse="text" href="./examples/expandablelistview/listrow_details.xml[]
+----
 		
 		
 			Create the following class which hold your domain model for the
@@ -84,8 +84,8 @@ image::expandablelistview10.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/expandablelistview/Group.java" />
-			</programlisting>
+					parse="text" href="./examples/expandablelistview/Group.java[]
+----
 		
 
 		Finally create the adapter as described by the following listing
@@ -95,14 +95,14 @@ image::expandablelistview10.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/expandablelistview/MyExpandableListAdapter.java" />
-			</programlisting>
+					parse="text" href="./examples/expandablelistview/MyExpandableListAdapter.java[]
+----
 		
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/expandablelistview/MainActivity.java" />
-			</programlisting>
+					parse="text" href="./examples/expandablelistview/MainActivity.java[]
+----
 		
 	
 

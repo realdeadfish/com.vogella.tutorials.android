@@ -44,8 +44,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/fragmentslist/MyListFragment.java" />
-			</programlisting>
+					parse="text" href="./examples/fragmentslist/MyListFragment.java[]
+----
 		
 
 		
@@ -57,8 +57,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/MyListActivity.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/MyListActivity.java[]
+----
 		
 
 	
@@ -83,8 +83,8 @@
 		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/lists/listid.xml" />
-			</programlisting>
+					parse="text" href="./examples/lists/listid.xml[]
+----
 		
 		<warning>
 			
