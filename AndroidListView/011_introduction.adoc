@@ -68,9 +68,9 @@ image::listview_line10.png[]
 			A layout file for a such a line might look like the following.
 		
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/rowlayout_complex.xml[]
+[source,xml]
+----
+include::res/snippets/rowlayout_complex.xml[]
 ----
 		
 
@@ -139,9 +139,9 @@ image::listview_line10.png[]
 			.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/onitemclicklistener.java[]
+[source,java]
+----
+include::res/snippets/onitemclicklistener.java[]
 ----
 		
 	

@@ -62,9 +62,9 @@ image::undobutton02.png[]
 		
 
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/undo/activity_main.xml[]
+[source,xml]
+----
+include::res/undo/activity_main.xml[]
 ----
 		
 		
@@ -76,9 +76,9 @@ image::undobutton02.png[]
 			entry.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/undo/MainActivity.java[]
+[source,java]
+----
+include::res/undo/MainActivity.java[]
 ----
 		
 

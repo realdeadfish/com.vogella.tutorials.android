@@ -91,9 +91,9 @@
 		
 
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/layoutwidthlist.xml[]
+[source,xml]
+----
+include::res/snippets/layoutwidthlist.xml[]
 ----
 		
 
@@ -108,9 +108,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/adapterusage.java[]
+[source,java]
+----
+include::res/snippets/adapterusage.java[]
 ----
 		
 	

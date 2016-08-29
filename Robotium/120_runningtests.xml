@@ -3,10 +3,7 @@
 	
 		To run a Robotium test use the same approach you use to run  Eclipse, right-click the test class and
 		select
-		<menuchoice>
-			<guimenu>Run-As</guimenu>
-			<guisubmenu>Android JUnit Test</guisubmenu>
-		</menuchoice>
+		menu:Run-As[Android JUnit Test]
 	
 	 You can run Robotium tests from the command line, too.
 

@@ -4,7 +4,7 @@
 === Exercise: Writing Robotium tests
 		
 			Create an Android project called
-			<wordasword>com.vogella.android.test.robotium.target</wordasword>
+			_com.vogella.android.test.robotium.target_
 			. Display three buttons in the first
 			activity.
 			If the first button is
@@ -19,7 +19,7 @@
 === Create test project and add Robotium
 		
 			Create a test project called
-			<wordasword>com.vogella.android.test.robotium.targetTest</wordasword>
+			_com.vogella.android.test.robotium.targetTest_
 			. Create a folder called
 			`libs`
 			and place the Robotium
