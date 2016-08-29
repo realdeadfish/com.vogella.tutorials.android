@@ -7,109 +7,112 @@
 		provides methods to call the Android
 		user interface. The following
 		table lists several of these methods.
-		<table frame='all'>
+
+.Table Title
+|===
+
 	=== Test methods on Solo
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="3*" />
 				<colspec colname='c2' colwidth="2*" />
-				<thead>
-					<row>
-						<entry>Method </entry>
-						<entry>Description</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>getView(int id)</entry>
-						<entry>Searches for the view with the specified ID in the current
+				
+					
+|Method 
+|Description
+					
+				
+				
+					
+|getView(int id)
+|Searches for the view with the specified ID in the current
 							activity.
-						</entry>
-					</row>
-					<row>
-						<entry>assertCurrentActivity(text, Activity.class)</entry>
-						<entry>Ensure that the current activity equals the second
+						
+					
+					
+|assertCurrentActivity(text, Activity.class)
+|Ensure that the current activity equals the second
 							parameter.
-						</entry>
-					</row>
-					<row>
-						<entry>getCurrentActivity()
+						
+					
+					
+|getCurrentActivity()
 							.getFragmentManager()
 							.findFragmentById()
-						</entry>
-						<entry>Searches for a fragment.</entry>
-					</row>
-					<row>
-						<entry>waitForText(text)</entry>
-						<entry>Waits for a text on the screen, default timeout 5 seconds.
-						</entry>
-					</row>
-					<row>
-						<entry>clickOnButton(text)</entry>
-						<entry>Clicks on a button with the "text" text.
-						</entry>
-					</row>
-					<row>
-						<entry>sendKey(Solo.MENU);</entry>
-						<entry>Sends the menu key event.
-						</entry>
-					</row>
-					<row>
-						<entry>clickOnText(text)</entry>
-						<entry>Search for text in the current user interface and clicks on
+						
+|Searches for a fragment.
+					
+					
+|waitForText(text)
+|Waits for a text on the screen, default timeout 5 seconds.
+						
+					
+					
+|clickOnButton(text)
+|Clicks on a button with the "text" text.
+						
+					
+					
+|sendKey(Solo.MENU);
+|Sends the menu key event.
+						
+					
+					
+|clickOnText(text)
+|Search for text in the current user interface and clicks on
 							it.
-						</entry>
-					</row>
-					<row>
-						<entry>enterText()</entry>
-						<entry>Enters a text.
-						</entry>
-					</row>
-					<row>
-						<entry>searchText(text)</entry>
-						<entry>Searches for a text in the current user interface, return
+						
+					
+					
+|enterText()
+|Enters a text.
+						
+					
+					
+|searchText(text)
+|Searches for a text in the current user interface, return
 							true if found.
-						</entry>
-					</row>
-					<row>
-						<entry>searchButton(text)</entry>
-						<entry>Searches for a button with the text in the current user
+						
+					
+					
+|searchButton(text)
+|Searches for a button with the text in the current user
 							interface.
-						</entry>
-					</row>
-					<row>
-						<entry>clickOnSearch()</entry>
-						<entry>Allows to click on part of the screen.
-						</entry>
-					</row>
-					<row>
-						<entry>goBack()</entry>
-						<entry>Press the back button.
-						</entry>
-					</row>
-					<row>
-						<entry>setDatePicker()</entry>
-						<entry>Sets the date in a DatePicker.
-						</entry>
-					</row>
-					<row>
-						<entry>clickInList(x);</entry>
-						<entry>Click on item number x in a ListView
-						</entry>
-					</row>
-					<row>
-						<entry>pressSpinnerItem(0,2);</entry>
-						<entry>Presses an item in a Spinner
-						</entry>
-					</row>
-					<row>
-						<entry>isCheckBoxChecked()</entry>
-						<entry>Checks if the checkbox is checked.
-						</entry>
-					</row>
-					<row>
-						<entry>takeScreenshot()
-						</entry>
-						<entry>
+						
+					
+					
+|clickOnSearch()
+|Allows to click on part of the screen.
+						
+					
+					
+|goBack()
+|Press the back button.
+						
+					
+					
+|setDatePicker()
+|Sets the date in a DatePicker.
+						
+					
+					
+|clickInList(x);
+|Click on item number x in a ListView
+						
+					
+					
+|pressSpinnerItem(0,2);
+|Presses an item in a Spinner
+						
+					
+					
+|isCheckBoxChecked()
+|Checks if the checkbox is checked.
+						
+					
+					
+|takeScreenshot()
+						
+|
 							Saves a screenshot on the device in the
 							<filename class="directory">/sdcard/Robotium-Screenshots/`
 							folder. Requires the
@@ -119,18 +122,18 @@
 							`AndroidManifest.xml`
 							of the application under
 							test.
-						</entry>
-					</row>
-					<row>
-						<entry>waitForActivity(SecondActivity.class, 2000)
-						</entry>
-						<entry>Waits for the specified activity for 2 seconds
-						</entry>
-					</row>
+						
+					
+					
+|waitForActivity(SecondActivity.class, 2000)
+						
+|Waits for the specified activity for 2 seconds
+						
+					
 
-				</tbody>
-			</tgroup>
-		</table>
+				
+			
+		|===
 	
 	
 		Via the
