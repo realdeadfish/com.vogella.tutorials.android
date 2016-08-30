@@ -4,7 +4,8 @@
 [[exercise_mockingcontext1]]
 === Target of this exercise
 
-It is not required to use this class in your Android application, as it has only be provided to demonstrate the usage of Mockito for a unit test.
+It is not required to use this class in your Android application.
+It is only used to demonstrate the usage of Mockito in a unit test.
 
             	
 [[exercise_mockingcontext_class]]		

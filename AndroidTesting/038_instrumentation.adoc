@@ -1,8 +1,8 @@
 [[androidsystem_tests]]
-==	Instrumentation - The underlying Android testing API
+==	Writing Instrumentation tests to run on the Android device
 
 [[androidtesting_instrumentation]]
-=== Instrumentation
+=== Instrumentation tests
 
 The Android testing API provides hooks into the Android component and application life cycle. 
 These hooks are called the _instrumentation API_ and allow your tests to control the life cycle and user interaction events.
@@ -10,22 +10,15 @@ These hooks are called the _instrumentation API_ and allow your tests to control
 Under normal circumstances your application cannot control the life cycle events and the user drives the application.
 For example, if Android creates your activity the `onCreate()` method is called. 
 Or if the user presses a button your corresponding code is called. 
-Via instrumentation you can control these events via your software tests.
-
-[[androidtesting_instrumentation_tests]]
-=== Instrumentation tests
+Via instrumentation you can control these events via your test code.
+For example, your instrumentation test can start the activity.
+Afterwards, it can call the `finish()` and restart the activity to test if the instance state of the activity is correctly restored.
 
 Instrumented unit tests are unit tests that run on Android devices and emulators instead of running on the Java virtual machine. 
 These tests have access to the real device and its resources and are useful to unit test functionality which cannot be easily mocked by mocking frameworks. 
-Also developer uses these tests if the framework functionality must be used to validate a functionality. 
-An example is a test which validates a `Parelable` implementation.
-
-Mockito as mocking framework can still be used to mock the parts of the Android system which are not interesting for the test.
+An example is a test which validates a `Parcelable` implementation.
 
 An instrumentation-based test class allows you to send key events (or touch events) to the application under test.
-
-For example, your instrumentation test can start the activity.
-Afterwards, it can call the `finish()` and restart the activity to test if the instance state of the activitiy is correctly restored.
 
 With user interface testing framework like Espresso, the developer rarely has to use the instrumentation API directly.
 
@@ -42,6 +35,13 @@ The test method controls the life cycle of the components of the application.
 
 The test runner also calls the `onCreate()` method of the application and activity under test during its initialization.
 
+[[mockingobjects]]
+=== Mocking objects in Android
+
+The mocking framework _Mockito_ can also be used for instrumentation tests.
+This allows you to replace parts of the Android system which are not interesting for the test.
+The Android framework provided in the past specialized mocking classes but these are not necessary anymore.
+
 
 [[androidtesting_instrumentationtests_location]]
 === Location of instrumentation tests
@@ -52,8 +52,8 @@ See <<androidtesting_creatingtestfolders>> for the creation of such a test folde
 [[androidtesting_instrumentationtests_gradledependencies]]
 === Define dependencies and testInstrumentationRunner in the Gradle build file
 
-To use JUnit tests for your Android application you need to add the dependency to JUnit and you other test dependencies to your Gradle build file. 
-You needs also to specify the default testInstrumentationRunner runner as `android.support.test.runner.AndroidJUnitRunner`.
+To use JUnit tests for your Android application you need to add the dependency to JUnit to your Gradle build file. 
+You also need to specify `android.support.test.runner.AndroidJUnitRunner` as testInstrumentationRunner in the build file.
 
 [source,grade]
 ----

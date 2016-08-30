@@ -23,7 +23,8 @@ include::examples/application/AndroidManifest.xml[]
 [[exercise_applicationtesting_test]] 
 === Create unit test for application object
 
-In your `app/src/test`directory create a new unit test and assert that the `MyApplication.list` field is not empty and has initially a size of zero.
+In your `app/src/test` directory create a new unit test.
+Assert that the `MyApplication.list` field is not empty and has initially a size of zero.
 
 [[exercise_applicationtesting_instrumentationtest]] 
 === Create instrumented test for application object

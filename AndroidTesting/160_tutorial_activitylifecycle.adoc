@@ -24,9 +24,8 @@ Add an `EditText` field to the layout of the `MainActivity` class.
 Add a button to the layout used by your `MainActivity` activity.
 If this button is clicked, the second activity should be started.
 
-Put the text `EditText` field as extra into the intent
-using "text" as key. Also put the "http://www.vogella.com" String as extra into the intent and use the key "URL" for
-this.
+Put the text `EditText` field as extra into the intent using "text" as key. 
+Also put the "http://www.vogella.com" String as extra into the intent and use the key "URL" for this.
 
 Here is some example code for the `MainActivity`.
 

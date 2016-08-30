@@ -4,15 +4,14 @@
 [[androidtesting_unittests_support]]
 ===	Unit testing in Android
 
-Android uses the term `unit tests` for tests which can run on a local JVM on the development machine instead of the Android Runtime.
+Android uses the term `unit tests` for tests which can run on a local JVM or the Android Runtime.
 
 A unit test verifies in isolation the functionality of a certain component.
 For example, assume a button in an Android activity is used to start another activity. 
-A unit test would determine if the corresponding intent was issued, not if the second activity was started.
+A unit test would determine, if the corresponding intent was issued, not if the second activity was started
 
 The unit tests are executed against a modified version of the `android.jar` Android library where all final modifiers have been stripped off. 
-This allow you to mocking libraries, like Mockito.
-All methods in the used `android.jar` file throw exceptions (by default). This is to make sure your unit tests only test your code and do not depend on any particular behavior of the Android platform. If you want specific behavior you can use a mocking framework to replace these call.
+This allow you to use mocking libraries, like Mockito.
 
 [[androidtesting_unittests_location]]
 === Location of unit tests
@@ -23,7 +22,7 @@ See <<androidtesting_creatingtestfolders>> for the creation of such a test folde
 [[androidtesting_unittests_gradledependencies]]
 === Required dependencies in the Gradle build file
 
-To use JUnit tests for your Android application you need to add the dependency to JUnit and you other test dependencies to your Gradle build file.
+To use JUnit tests for your Android application, you need to add the it as dependency to your Gradle build file.
 
 [source,gradle]
 ----
@@ -38,18 +37,22 @@ Run your unit tests with the `gradlew test`	command.
 [[androidtesting_projectstructure_runtunittestsas]]
 ===	Run the unit tests from Android Studio
 
-To run a unit test right-click on your test class in the _Project_ window and select _Run_.
+To run a unit test, right-click on your test class in the _Project_ window and select _Run_.
 
 image::runUnitTestInAndroidStudio10.png[Running Unit tests in Android Studio]
 
 [[androidtesting_projectstructure_testresults]]
 === Location of test reports
 
-The rest reports are created in the `app/build/reports/tests/debug/`directory. 
+The Test reports are created in the `app/build/reports/tests/debug/`directory. 
 The `index.html` gives an overview and links to the individual test pages.
 
 [[androidtesting_projectstructure_mockingmethods]]
 === Activating default return values for mocked methods in android.jar
+
+By default, all calls to methods in the modified `android.jar` file throw exceptions. 
+This default should ensure that your unit tests only test your code and do not depend on any particular behavior of the Android platform. 
+If you want to configure a certain behavior, you can use a mocking framework to replace these call.
 
 You can also instruct the Gradle build system to return default values for method calls in the `android.jar`with the following configuration in your Gradle build file.
 

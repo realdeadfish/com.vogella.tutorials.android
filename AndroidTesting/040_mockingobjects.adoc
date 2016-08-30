@@ -1,6 +1,0 @@
-[[mockingobjects]]
-== Mocking objects in Android
-
-For you unit tests you can use mocking a framework to mock Android objects. 
-This works also for tests running the a Android runtime. 
-The Android framework provided in the past specialized mocking classes but these are not necessary anymore.

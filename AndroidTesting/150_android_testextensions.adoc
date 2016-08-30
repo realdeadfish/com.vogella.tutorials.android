@@ -14,8 +14,8 @@ in addition to the standard JUnit `Assert` class.
 The `@SmallTest`, `@MediumTest`and `@LargeTest`annotations allows to classify tests.
 
 
-This allows you to run, for example, only tests which do not run very long. 
-Long running tests could than run only in the continuous integration server.
+This allows you to run, for example, only short running tests.
+You may run your long running tests on a continuous integration server.
 
 
 To run only selected tests you can configure the `InstrumentationTestRunner` via your Gradle plug-in.
@@ -53,5 +53,5 @@ You can annotate tests with annotations. The Android test runner allows to filte
 
 Actions in Android are sometimes time dependent. 
 To tell Android to repeat a test once it fails, use the `@FlakyTest` annotation. 
-Via the `tolerance` attribute of this annotation you can define how often the Android test framework should try to repeat a test before marking it as failed.
+Via the `tolerance` attribute of this annotation you can define how many times the test should be repeated before marking it as failed.
 

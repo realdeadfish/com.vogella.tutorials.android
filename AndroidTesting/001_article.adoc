@@ -5,26 +5,33 @@
 :icons:
 :imagesdir: ./img
 (c) 2012, 2016 vogella GmbH
-Version 2.1, 18.04.2016
+Version 2.2, 30.08.2016
 :docinfodir: ../
 :vgwort: AndroidTesting
 
 [abstract]
 This tutorial describes how to write unit and instrumentation tests for your Android application.
-It also covers the usage of Mockito for Android tests and describes how to execute these tests via Android studio and Gradle.
+It describes how to execute these tests via Android studio and Gradle.
 This tutorial assumes that you are familiar with Android programming in general.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::018_android_testproject_structure.adoc[]
 include::030_unittesting.adoc[]
+
+== Exercise: Write an Android unit test
+
 include::031_exercise_prep.adoc[]
+
+:leveloffset: 1
+
 include::032_exercise_unittesting.adoc[]
+
+:leveloffset: 0
+
 include::../web/advertisement/inBetween01.adoc[]
 include::038_instrumentation.adoc[]
-include::040_mockingobjects.adoc[]
 include::044_exercise_mockingcontext.adoc[]
-include::050_testingsupportlibrary.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
 include::100_activitytesting.adoc[]
 include::150_android_testextensions.adoc[]

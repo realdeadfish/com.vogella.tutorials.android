@@ -10,7 +10,7 @@ You can restrict Monkey to run only for a certain package and therefore instruct
 [[monkey_usage]]
 === How to use Monkey
 
-The following commands sends 2000 random events to the application with the `de.vogella.android.test.target` package.
+The following command sends 2000 random events to the application with the `de.vogella.android.test.target` package.
 
 [source,shell]
 ----

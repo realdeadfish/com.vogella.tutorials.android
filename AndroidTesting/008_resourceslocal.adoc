@@ -1,23 +1,23 @@
 [[androidtestinresources]]
 == Android testing resources
 
-https://github.com/googlesamples/android-testing - Android testing examples from Google]
+https://github.com/googlesamples/android-testing[Android testing examples from Google]
 
-https://github.com/googlesamples/android-testing-templates - Android testing template project from Google
+https://github.com/googlesamples/android-testing-templates[Android testing template project from Google]
 
-https://codelabs.developers.google.com/codelabs/android-testing/ Android Testing Code Lap from Google
+https://codelabs.developers.google.com/codelabs/android-testing[Android Testing Code Lab from Google]
 
-https://github.com/benbaxter/android-unit-test-kata Android Testing Kata
+https://github.com/benbaxter/android-unit-test-kata[Android Testing Kata]
 
-http://tools.android.com/tech-docs/unit-testing-support - Unit test support description from Google
+http://tools.android.com/tech-docs/unit-testing-support[Unit test support description from Google]
 
-http://www.vogella.com/tutorials/Robolectric/article.html - Using Robolectric for Android unit testing on the JVM
+http://www.vogella.com/tutorials/Robolectric/article.html[Using Robolectric for Android unit testing on the JVM]
 
-http://www.vogella.com/tutorials/AndroidTestingEspresso/article.html - Android user interface testing with Espresso
+http://www.vogella.com/tutorials/AndroidTestingEspresso/article.html[Android user interface testing with Espresso]
 
-http://blog.sqisland.com/2015/12/mock-application-in-espresso.html Chiu-Ki Chan about Mock Application in Espresso for Dependency Injection
+http://blog.sqisland.com/2015/12/mock-application-in-espresso.html[Chiu-Ki Chan about Mock Application in Espresso for Dependency Injection]
 
-https://artemzin.com/blog/how-to-mock-dependencies-in-unit-integration-and-functional-tests-dagger-robolectric-instrumentation/  Artem Zinnatullin blog post on How to mock dependencies in Unit, Integration and Functional tests; Dagger, Robolectric and Instrumentation
+https://artemzin.com/blog/how-to-mock-dependencies-in-unit-integration-and-functional-tests-dagger-robolectric-instrumentation[Artem Zinnatullin blog post on How to mock dependencies in Unit, Integration and Functional tests; Dagger, Robolectric and Instrumentation]
 
 
 

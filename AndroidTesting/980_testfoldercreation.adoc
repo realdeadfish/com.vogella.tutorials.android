@@ -2,7 +2,7 @@
 ==	Test folder creation in Android Studio
 
 The recent versions of Android Studio has added a test folder to its default project template. 
-In case you using a template which does not create a test folder, you have to create it manually. 
+In case you are using a template which does not create a test folder, you have to create it manually. 
 To create the test folder in Android Studio, switch to the _Project_ view, this shows you the directory structure of your project.
 
 image::unittestfoldecreation10.png[Switching to the Project view in Android Studio]
@@ -26,7 +26,7 @@ include::examples/unittests/simple.gradle[]
 ====
 The creation of the Java folder might add the new test directory as source file to your build.gradle file. 
 If you have the following entry in your `app/build.gradle` file you need to REMOVE it. 
-test should NOT be treated as normale source folder.
+test should NOT be treated as normal source folder.
 
 [source,java]
 ----
