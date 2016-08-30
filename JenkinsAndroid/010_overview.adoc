@@ -12,7 +12,7 @@ The Android SDk must be available on the server.
 If you build server has no display server, you need to install the Android SDK from the command line. 
 You also need to configure the location for the Android SKD for Jenkins.
         
-[source,terminal]
+[source,console]
 ----
 # download the Android SDK via wget
 # for the correct URL see http://developer.android.com/sdk/index.html
@@ -35,7 +35,7 @@ android update sdk --no-ui
         
 Use the `android list targets` command to see what ABIs are installed. 
 If no are listed you need to install one, as demonstrated in the following example:
-[source,terminal]
+[source,console]
 ----
 android update sdk --all --filter sys-img-armeabi-v7a-android-23 --no-ui --force
 ----

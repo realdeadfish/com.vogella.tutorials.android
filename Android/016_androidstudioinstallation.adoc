@@ -11,7 +11,7 @@ An SSD speeds up the  start of the Android emulator significantly.
 The Android SDK is 32-bit, therefore on a 64-bit Linux system you need to have the package `ia32-libs` installed. 
 For Ubuntu you can do this via the following command.
 
-[source,terminal]
+[source,console]
 ----
 apt-get install ia32-libs
 ----

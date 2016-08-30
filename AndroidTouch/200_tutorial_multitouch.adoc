@@ -6,11 +6,8 @@ you to track several fingers on your device. On the Android
 emulator
 you can only simulate singletouch with the mouse.
 	
-Create
-an Android project called
-_com.vogella.android.multitouch_
-with the
->activity
+Create an Android project called _com.vogella.android.multitouch_
+with an activity
 called
 _MainActivity_.
 	
