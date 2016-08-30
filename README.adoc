@@ -24,7 +24,7 @@ If these commands are run in the root directory all subprojects will be build.
 
 TIP: Single subprojects can be build when navigating into a subproject and for example run `../gradlew cH`
 
-NOTE
+[NOTE]
 ====
 On Windows OS  you can use `./gradlew.bat`
 See http://www.vogella.com/tutorials/Gradle/article.html[Gradle tutorial]
