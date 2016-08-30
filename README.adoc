@@ -1,4 +1,4 @@
-= Java tutorials from vogella.com
+= Android tutorials from vogella.com
 
 == How to build
 
@@ -24,9 +24,11 @@ If these commands are run in the root directory all subprojects will be build.
 
 TIP: Single subprojects can be build when navigating into a subproject and for example run `../gradlew cH`
 
-
-NOTE: On Windows OS `./gradlew.bat` must be used +
-See http://www.vogella.com/tutorials/CSS/article.html[CSS tutorial]
+NOTE
+====
+On Windows OS  you can use `./gradlew.bat`
+See http://www.vogella.com/tutorials/Gradle/article.html[Gradle tutorial]
+=====
 
 == Create a new tutorial
 
@@ -36,5 +38,5 @@ See http://www.vogella.com/tutorials/CSS/article.html[CSS tutorial]
 
 == Publish HTML task for Jenkins
 
-Currently the jenkins build server is used to copy the HTML tutorials from an '/output' folder to the actual webserver,
+Currently the Jenkins build server is used to copy the HTML tutorials from an '/output' folder to the actual webserver,
 therefore the _publishHtml_ task can be used to create the HTML Tutorials and copy the HTML tutorials to a '/asciidocOutput' folder.
