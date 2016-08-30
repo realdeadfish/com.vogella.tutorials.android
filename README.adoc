@@ -42,7 +42,7 @@ TIP: Single subprojects can be build when navigating into a subproject and for e
 ====
 On Windows OS  you can use `./gradlew.bat`
 See http://www.vogella.com/tutorials/Gradle/article.html[Gradle tutorial]
-=====
+====
 
 == Create a new tutorial
 
