@@ -1,5 +1,5 @@
 [[asynctasktesting_espresso_exericse]]
-== Exercise: Testing asynchronous code
+== Exercise: Testing asynchronous code with Espresso
 		
 Create an project with the package called `testing.android.vogella.com.asynctask` which allows to trigger an AsyncTask via a button.
 		

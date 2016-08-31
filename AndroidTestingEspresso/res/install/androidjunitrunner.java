@@ -18,15 +18,8 @@ android {
     lintOptions {
         abortOnError false
     }
-    productFlavors {
-    }
 }
 
 dependencies {
-    // App dependencies
-    compile 'com.android.support:support-annotations:22.2.0'
-    // Testing-only dependencies
-    androidTestCompile 'com.android.support.test:runner:0.3'
-    androidTestCompile 'com.android.support.test:rules:0.3'
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2'
+    // as before.......
 }

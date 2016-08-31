@@ -39,14 +39,7 @@ include::res/simple/MainActivity.java[]
 [[espresso_exercisesimple2]]
 === Adjust the app build.gradle
 		
-Add the AndroidJUnitRunner as value for the `testInstrumentationRunner` parameter. 
-Also add the corresponding entry in the _app/build.gradle_ file.
-
-
-[source,java]
-----
-include::res/simple/build.gradle[]
-----	
+Perform the setting as described in <<espresso_gradleconfiguration>>.
 		
 [[espresso_exercisesimple3]]
 === Create your Espresso test
@@ -59,6 +52,6 @@ include::res/simple/MainActivityEspressoTest.java[]
 [[espresso_exercisesimple4]]
 === Run your test
 
-Run your tests via your IDE or directly via Gradle. 
+Right-click on your test and select _Run_.
 See <<espresso_runningespressotests>> for details.
 

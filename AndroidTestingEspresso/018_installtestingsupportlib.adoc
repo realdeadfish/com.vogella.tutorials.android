@@ -1,7 +1,0 @@
-[[install_android_support_repository]]
-== Installation
-	
-Use the _Android SDK manager_ to install the _Android Support Repository_.
-	
-image::androidsupportrepositoryinstall10.png[Install Android Support Repository]
-	

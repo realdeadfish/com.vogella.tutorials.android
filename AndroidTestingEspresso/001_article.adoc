@@ -15,11 +15,10 @@ This tutorial assumes that you are familiar with Android programming in general.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
-include::018_installtestingsupportlib.adoc[]
 include::020_installation.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
+include::040_exercise.adoc[]
 include::100_usage.adoc[]
-include::200_exercise.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
 include::300_mockingintents.adoc[]
 include::420_tutorial_activityunittest.adoc[]

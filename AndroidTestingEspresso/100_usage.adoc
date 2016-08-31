@@ -11,7 +11,13 @@ This allows to access these methods without the class prefix.
 
 [source,java]
 ----
-include::res/imports/example.java[]
+import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.action.ViewActions.click;
+import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard;
+import static android.support.test.espresso.action.ViewActions.typeText;
+import static android.support.test.espresso.assertion.ViewAssertions.matches;
+import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static android.support.test.espresso.matcher.ViewMatchers.withText;
 ----
 
 [[espresso_usageintroduction_viewmatcher]]
@@ -24,7 +30,7 @@ The `onData()` method returns an object of type `DataInteraction`.
 		
 The following table describes the available matchers.
 
-.Available ViewMatcher
+[.Table Espresso matchers]
 |===
 |ViewMatcher|Description
 
@@ -71,21 +77,27 @@ The following gives a few examples:
 
 [source,java]
 ----
-
 onView(withText(startsWith("ABC"))).perform(click()); #<1>
- - matching a view which text ends with "YYZZ" pattern:
+
 onView(withText(endsWith("YYZZ"))).perform(click()); #<2>
- - assert that text of a particular view with specified R.id has content description which contains "YYZZ" string anywhere:
-onView(withId(R.id.viewId)).check(matches(withContentDescription(containsString("YYZZ"))));
- - matching a view which text is equal to the specified string, ignoring case:
-onView(withText(equalToIgnoringCase("xxYY"))).perform(click());
- - matching a view which text is equal to the specified text when whitespace differences are (mostly) ignored:
-onView(withText(equalToIgnoringWhiteSpace("XX YY ZZ"))).perform(click());
- - assert that text of a particular view with specified R.id does not contain "YYZZ" string:
-onView(withId(R.id.viewId)).check(matches(withText(not(containsString("YYZZ")))));
+
+onView(withId(R.id.viewId)).check(matches(withContentDescription(containsString("YYZZ")))); #<3>
+
+onView(withText(equalToIgnoringCase("xxYY"))).perform(click()); #<4>
+ - 
+onView(withText(equalToIgnoringWhiteSpace("XX YY ZZ"))).perform(click()); #<5> 
+
+onView(withId(R.id.viewId)).check(matches(withText(not(containsString("YYZZ"))))); #<6>
 ----
 
-<1> Match a view which text starts with "ABC" pattern
+<1> Matches a view which text starts with "ABC" pattern
+<2> Matches a view which text ends with "YYZZ" pattern
+<3> Matches that the text of the view with specified R.id has content description which contains "YYZZ" string anywhere
+<4> Matches a view which text is equal to the specified string, ignoring case:
+<5> Matches a view which text is equal to the specified text when whitespace differences are (mostly) ignored
+<6>  Matches that text of a particular view with specified R.id does not contain "YYZZ" string
+
+
 
 
 [[espresso_usageintroduction_instrumentationaccess]]
@@ -119,6 +131,63 @@ Android Studio provides an menu:Run[Record Espresso Test] menu entry which allow
 image::espresso-test-uirecorder10.png[]
 
 image::espresso-test-uirecorder20.png[]
+
+[[espresso_accessing_the_activity]]
+=== Configuring the activity under test
+
+You can also access the activity object which you are testing and call methods on it.
+For example, assume you want to call a method on your activity.
+
+[source,java]
+----
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    public void configureMainActivity(String Uri) {
+        // do something with this
+    }
+}
+----
+
+This `configureMainActivity` can be called in your test.
+
+[source,java]
+----
+package com.vogella.android.myapplication;
+
+import android.support.test.rule.ActivityTestRule;
+import android.support.test.runner.AndroidJUnit4;
+
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+@RunWith(AndroidJUnit4.class)
+
+public class ExampleInstrumentedTest {
+
+    @Rule
+    public ActivityTestRule<MainActivity> mActivityRule =
+            new ActivityTestRule<MainActivity>(MainActivity.class);
+
+    @Test
+    public void useAppContext() throws Exception {
+        MainActivity activity = mActivityRule.getActivity();
+        activity.configureMainActivity("http://www.vogella.com");
+        // do more
+    }
+}
+
+----
+
+[TIP]
+====
+You can also override methods in `ActivityTestRule`, for exmaple the `beforeActivityLaunched` and `afterActivityLaunched` methods.
+====
 
 
 [[espresso_runningespressotests]]

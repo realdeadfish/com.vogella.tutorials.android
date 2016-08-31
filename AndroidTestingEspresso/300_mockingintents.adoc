@@ -5,12 +5,8 @@ Espresso provides also the option to mock intents.
 This allows you to check if an activity has issued the correct intents and reacts correct if it receives the correct intent results.
 	
 
-To use Espressos intents test capabilities add the following to your build.gradle file
-
-[source,java]
-----
-include::res/intents/build.gradle[]
-----
+Espressos intents is provided by the `com.android.support.test.espresso:espresso-intents` library.
+For the setup see <<espresso_gradleconfiguration>>.
 
 	
 If you want to use Espresso intent in your Espresso tests, use the `IntentsTestRule` instead of `ActivityTestRule`.

@@ -1,5 +1,5 @@
 [[tutorial_unittestactivity]]
-== Exercise: unit test for an activity
+== Exercise: Write a test for an intent with Espresso
 
 === Create project which is tested
 		
