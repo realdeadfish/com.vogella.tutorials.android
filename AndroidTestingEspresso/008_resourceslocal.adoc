@@ -6,6 +6,8 @@ https://code.google.com/p/android-test-kit/wiki/Espresso[Android Espresso testin
 https://github.com/googlesamples/android-testing/blob/master/downloads/espresso-cheat-sheet-2.1.0.pdf[Espresso Cheat Sheat]
 	
 http://chiuki.github.io/advanced-android-espresso[Presentation of Chiu-Ki Chan about testing with Espresso]
+
+https://github.com/codepath/android_guides/wiki/UI-Testing-with-Espresso[Codepath Espresso guide]
 	
 http://blog.sqisland.com/2015/05/espresso-match-toolbar-title.html[How to write a customer matcher for the toolbar]
 	
