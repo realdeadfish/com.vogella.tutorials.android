@@ -1,0 +1,19 @@
+[[robotium_usage]]
+== Example Robotium tests
+
+The following code demonstrates the usage of Robotium in an
+activity user interface test.
+	
+[source,java]
+----
+include::res/api/Initialize.java[]
+----
+
+The following shows another example for the Robotium test method
+which tests a list implementation.
+	
+[source,java]
+----
+include::res/robotium/API.java[]
+----
+

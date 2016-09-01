@@ -1,0 +1,92 @@
+[[robotium_api]]
+== Robotium API
+
+
+`Solo`
+provides methods to call the Android
+user interface. The following
+table lists several of these methods.
+
+.Test methods on Solo
+|===
+|Method |Description
+
+|getView(int id)
+|Searches for the view with the specified ID in the current activity.
+
+|assertCurrentActivity(text, Activity.class)
+|Ensure that the current activity equals the second parameter.
+
+|getCurrentActivity() .getFragmentManager() .findFragmentById()
+|Searches for a fragment.
+
+|waitForText(text)
+|Waits for a text on the screen, default timeout 5 seconds.
+
+|clickOnButton(text)
+|Clicks on a button with the "text" text.
+
+|sendKey(Solo.MENU);
+|Sends the menu key event.
+
+|clickOnText(text)
+|Search for text in the current user interface and clicks on it.
+
+|enterText()
+|Enters a text.
+
+|searchText(text)
+|Searches for a text in the current user interface, return true if found.
+
+|searchButton(text)
+|Searches for a button with the text in the current user
+
+|clickOnSearch()
+|Allows to click on part of the screen.
+
+|goBack()
+|Press the back button.
+
+|setDatePicker()
+|Sets the date in a DatePicker.
+
+|clickInList(x);
+|Click on item number x in a ListView
+
+|pressSpinnerItem(0,2);
+|Presses an item in a Spinner
+
+|isCheckBoxChecked()
+|Checks if the checkbox is checked.
+
+|takeScreenshot()
+|Saves a screenshot on the device in the
+`/sdcard/Robotium-Screenshots/`
+folder. Requires the
+`android.permission.WRITE_EXTERNAL_STORAGE`
+permission
+in the
+`AndroidManifest.xml`
+of the application under
+test.
+
+|waitForActivity(SecondActivity.class, 2000)
+|Waits for the specified activity for 2 seconds
+
+|===
+
+Via the
+`solo.setActivityOrientation(Solo.LANDSCAPE)`
+method you can set the orientation of the activity.
+
+To test internationalized strings you can access the string
+resources
+file from the project under test via the
+`getString(id)`
+method. For example:
+
+[source,java]
+----
+include::res/robotium/getstring.txt[]
+----
+

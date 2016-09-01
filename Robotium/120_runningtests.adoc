@@ -1,0 +1,14 @@
+[[robotium_executingtests]]
+== Executing tests
+	
+To run a Robotium test use the same approach you use to run  Eclipse, right-click the test class and
+select
+menu:Run-As[Android JUnit Test]
+	
+You can run Robotium tests from the command line, too.
+	
+[source,bourne]
+----
+include::res/robotium/background.txt[]
+----
+
