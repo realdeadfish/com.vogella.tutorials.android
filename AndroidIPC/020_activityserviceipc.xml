@@ -1,4 +1,4 @@
-<section id="servicecommunication_ipc2">
+[[servicecommunication_ipc2">
 == AIDL for services in a different process
 	
 		To bind to a

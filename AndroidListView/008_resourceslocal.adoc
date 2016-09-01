@@ -1,12 +1,10 @@
 == resources_listview
 
-ListView Resources
+=== ListView Resources
 	
-https://github.com/renard314/ListView3d - ListView demo which uses 3D effects (GitHub)
+https://github.com/renard314/ListView3d[ListView demo which uses 3D effects (GitHub)]
 
-https://developer.android.com/training/material/lists-cards.html- Google documentation about RecylerView
+https://developer.android.com/training/material/lists-cards.html[Google documentation about RecylerView]
 	
-https://github.com/renard314/ListView3d - ListView demo which uses 3D effects (Github)
+https://github.com/renard314/ListView3d[ListView demo which uses 3D effects (Github)]
 	
-
-

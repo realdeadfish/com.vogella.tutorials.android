@@ -1,4 +1,4 @@
-<section id="installation_robotium">
+[[installation_robotium">
 == Installation of Robotium
 	
 		To use Robotium in your Android test project, you need to add a dependency to the latest Robotium release to your

@@ -1,4 +1,4 @@
-<section id="screensize">
+[[screensize">
 == Supported Screen Size
 	
 		After defining your resources you should define the supported

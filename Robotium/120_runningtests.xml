@@ -1,4 +1,4 @@
-<section id="robotium_executingtests">
+[[robotium_executingtests">
 == Executing tests
 	
 		To run a Robotium test use the same approach you use to run  Eclipse, right-click the test class and

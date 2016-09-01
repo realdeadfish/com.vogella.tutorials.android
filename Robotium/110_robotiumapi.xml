@@ -1,5 +1,5 @@
 
-<section id="robotium_api">
+[[robotium_api">
 == Robotium API
 
 	
@@ -151,9 +151,9 @@
 		method. For example:
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/robotium/getstring.txt[]
+[source,java]
+----
+include::res/robotium/getstring.txt[]
 ----
 	
 

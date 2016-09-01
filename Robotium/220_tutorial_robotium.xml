@@ -1,6 +1,6 @@
-<section id="tutorial_robotium" role="wrapper">
+[[tutorial_robotium" role="wrapper">
 == Exercise: Write Robotium tests
-	<section id="tutorial_robotium1">
+[[tutorial_robotium1">
 === Exercise: Writing Robotium tests
 		
 			Create an Android project called
@@ -15,7 +15,7 @@
 		
 
 
-	<section id="tutorial_robotium2">
+[[tutorial_robotium2">
 === Create test project and add Robotium
 		
 			Create a test project called
@@ -47,7 +47,7 @@
 		
 
 
-	<section id="tutorial_robotium3">
+[[tutorial_robotium3">
 === Create test project and add Robotium library
 		Define the following test class.
 		
@@ -60,7 +60,7 @@
 
 
 
-	<section id="tutorial_robotium4">
+[[tutorial_robotium4">
 === Fix your application
 		Assume that the test is your specification and adjust your
 			Android application
