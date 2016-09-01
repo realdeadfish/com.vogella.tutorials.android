@@ -1,16 +1,8 @@
 == Android Debugging Bridge - adb
 	
-You can access your Android device via the
-_adb_
-command on the command line.
-. An Android
-virtual device
-can be freely
-accessed, a normal Android
-phone needs to
-get
-_rooted_
-for full access. For non-rooted devices, adb still access
+You can access your Android device via the _adb_ command on the command line.
+An Android virtual device can be freely accessed, a normal Android phone needs to get _rooted_ for full access. 
+For non-rooted devices, adb still access
 them, but you
 only have common user permissions.
 	

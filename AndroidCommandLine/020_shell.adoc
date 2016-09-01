@@ -1,4 +1,18 @@
-== Shell access via adb
+== Using adb 
+
+=== Starting an activity via the command line
+
+=== Copy files from and to your device
+	
+You can copy a file from and to your device via the following commands.
+	
+[source,bourne]
+----
+adb shell am start -n yourpackagename/.activityname
+----
+
+
+=== Shell access via adb
 
 	
 You can get shell access to your Android device via the following
@@ -18,4 +32,13 @@ to the underlying file system, e.g. ls, rm, , cd, mkdir,
 etc. The
 application data is stored in the directory
 "/data/data/package_of_your_app".
+
+=== Copy files from and to your device
+	
+You can copy a file from and to your device via the following commands.
+	
+[source,bourne]
+----
+include::res/shell/adb3.txt[]
+----
 
