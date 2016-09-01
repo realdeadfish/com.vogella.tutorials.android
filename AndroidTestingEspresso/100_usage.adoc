@@ -1,5 +1,5 @@
 [[espresso_usageintroduction]]
-== Writing Espresso unit tests
+== More on writing Espresso unit tests
 
 [[espresso_usageintroduction_staticimports]]
 === Location of Espresso tests and required static imports
@@ -189,6 +189,44 @@ public class ExampleInstrumentedTest {
 You can also override methods in `ActivityTestRule`, for exmaple the `beforeActivityLaunched` and `afterActivityLaunched` methods.
 ====
 
+You can also access the current activity.
+
+[source,java]
+----
+@Test
+public void navigate() {
+
+        Activity instance = getActivityInstance();
+        onView(withText("Next")).perform(click());
+        Activity activity = getActivityInstance();
+        boolean b = (activity instanceof  SecondActivity);
+        assertTrue(b);
+        // do more
+    }
+
+    public Activity getActivityInstance() { #<1>
+        final Activity[] activity = new Activity[1];
+        InstrumentationRegistry.getInstrumentation().runOnMainSync(new Runnable( ) {
+            public void run() {
+                Activity currentActivity = null;
+                Collection resumedActivities = ActivityLifecycleMonitorRegistry.getInstance().getActivitiesInStage(RESUMED);
+                if (resumedActivities.iterator().hasNext()){
+                    currentActivity = (Activity) resumedActivities.iterator().next();
+                    activity[0] = currentActivity;
+                }
+            }
+        });
+
+        return activity[0];
+    }
+----
+ 
+<1> - Allows to access the currently active activity.
+
+[NOTE]
+====
+ActivityLifecycleMonitorRegistry is not API so this might change.
+====
 
 [[espresso_runningespressotests]]
 === Running Espresso tests
