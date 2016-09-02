@@ -26,3 +26,23 @@ android {
 }
 
 ----
+
+=== Specify a different keystore for your debug build
+
+
+You can define a keystore in your build.gradle file. 
+See http://tools.android.com/tech-docs/new-build-system/user-guide for details.
+
+For example, you can redefine the keystore for the debug variant:
+
+[source,gradle]
+----
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file("your.keystore")
+        }
+    }
+}
+----
